@@ -1,1 +1,6 @@
-POC - profe of concept
+1. POC - profe of concept
+
+2. A-B Testing - its experimet when you take 2 variants of page and display
+it to difference users. This test helps to determince what version of page's
+prefered, liked more by users. For example it can be done with Optimizely and
+google analytics a/b tests.
