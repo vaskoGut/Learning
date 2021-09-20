@@ -4,3 +4,5 @@
 it to difference users. This test helps to determince what version of page's
 prefered, liked more by users. For example it can be done with Optimizely and
 google analytics a/b tests.
+
+3. CDP - Customer data platform - software creating unified, persistent customer database for needs of other systems.
