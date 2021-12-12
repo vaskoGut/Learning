@@ -1,6 +1,0 @@
-/* aspect ratio helps us to set element ratio while resizing element.*/
-
-.square-ratio {
-  aspect-ratio: 1/1;
-  width: 300px;
-}
