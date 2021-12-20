@@ -13,3 +13,12 @@ google analytics a/b tests.
 administrative control or caching service, among other possibilities.
 In a personal computing context, proxy servers are used to enable user privacy 
 and anonymous surfing. Proxy servers are used for both legal and illegal purposes.
+
+6. what is DNS. The Domain Name System (DNS) turns domain 
+names into IP addresses, which browsers use to load internet pages.
+Every device connected to the internet has its own IP address,
+which is used by other devices to locate the device.
+
+7. what is Cname record?
+- CNAME is just an alias. A Canonical Name or CNAME record is a type of DNS record that maps an alias name to a true 
+or canonical domain name.
