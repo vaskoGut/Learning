@@ -1,2 +1,6 @@
-What are enums?
+1. What are enums?
 Enums allow a developer to define a set of named constants. Using enums can make it easier to document intent, or create a set of distinct cases. TypeScript provides both numeric and string-based enums.
+
+2. what is map type in typescript?
+TypeScript map is a new data structure added in ES6 version of JavaScript. It allows us to store data in a key-value pair and remembers the original insertion order 
+of the keys similar to other programming languages.
