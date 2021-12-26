@@ -39,3 +39,7 @@ Client side rendering. CSR renders the page on the client side. Server
 server will send a single page with js file. Later js turn the page into a fully rendered page.
 Data comes from api. Server will not send the page again, the client will rerender
 the page accodring to the route that client requested. So page is always same as the first request.
+
+10. kebab case, camel case.
+kebab case: descriptive-variable-name
+camel case: descriptiveVariableName
