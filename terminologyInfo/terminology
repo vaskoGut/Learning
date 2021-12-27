@@ -43,3 +43,7 @@ the page accodring to the route that client requested. So page is always same as
 10. kebab case, camel case.
 kebab case: descriptive-variable-name
 camel case: descriptiveVariableName
+
+11. What is canonical urls?
+A canonical URL is the URL of the best representative page from a group of duplicate pages, according to Google. For example, if you have two URLs for the same page (for example: example.com? dress=1234 and example.com/dresses/1234 ),
+Google chooses one as canonical.
