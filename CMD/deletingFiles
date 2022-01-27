@@ -1,7 +1,0 @@
-// rm - remove; -r -recursively; f - force;
-// to delete node modules for example run:
-rm -rf nodu_modules
-
-
-// to delete directory and all things inside directory
-rm -r someDirectory
