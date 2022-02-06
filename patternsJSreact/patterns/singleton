@@ -41,3 +41,4 @@ We rely on tools like Redux or React Context.
 Their global state - isn't mutable in comparison to
 Singleton. It's only readable.
 In redux pure function updating state.
+
