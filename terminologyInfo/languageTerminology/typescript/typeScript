@@ -26,3 +26,6 @@ JavaScript provides the Boolean() function that converts other types to a boolea
 
 var b2 = Boolean('h'); // true
 var b3 = Boolean(10); // true
+
+4. Renaming destructed variable:
+const { isXl: isDesktopType } = screenRecognitionContext;
