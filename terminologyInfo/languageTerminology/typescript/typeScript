@@ -21,6 +21,11 @@ Map(4) {'1' => 'abhishek', 1 => 'www.javatpoint.com', true => 'bool1', '2' => 'a
 3: {"2" => "ajay"}
 size: 4
 
+// get value
+map.get('1')
+'abhishek'
+
+
 3. What is boolean method in JS? 
 JavaScript provides the Boolean() function that converts other types to a boolean type. 
 
