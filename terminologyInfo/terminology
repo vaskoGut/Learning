@@ -47,3 +47,6 @@ camel case: descriptiveVariableName
 11. What is canonical urls?
 A canonical URL is the URL of the best representative page from a group of duplicate pages, according to Google. For example, if you have two URLs for the same page (for example: example.com? dress=1234 and example.com/dresses/1234 ),
 Google chooses one as canonical.
+
+12. What is timestamp?
+In JavaScript, a timestamp is the number of milliseconds that have passed since January 1, 1970.
