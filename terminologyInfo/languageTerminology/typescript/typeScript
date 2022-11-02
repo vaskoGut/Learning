@@ -34,3 +34,7 @@ var b3 = Boolean(10); // true
 
 4. Renaming destructed variable:
 const { isXl: isDesktopType } = screenRecognitionContext;
+
+5. Type aliases and interfaces're  similar, and it can be choosen what you needto use.
+ Almost all features of an interface are available in type. 
+ The key distinction is that a type cannot be re-opened to add new properties vs an interface which is always extendable.
