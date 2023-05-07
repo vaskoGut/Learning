@@ -38,3 +38,6 @@ const { isXl: isDesktopType } = screenRecognitionContext;
 5. Type aliases and interfaces're  similar, and it can be choosen what you needto use.
  Almost all features of an interface are available in type. 
  The key distinction is that a type cannot be re-opened to add new properties vs an interface which is always extendable.
+
+6. Is typescript compiled langauges?
+Yes, commonle it's used to say typescript's compiled language. It transpiles typescript to common javascript.
