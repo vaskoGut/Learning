@@ -41,3 +41,5 @@ const { isXl: isDesktopType } = screenRecognitionContext;
 
 6. Is typescript compiled langauges?
 Yes, commonle it's used to say typescript's compiled language. It transpiles typescript to common javascript.
+
+7. how to create typescipt.json? go node cmd -> your folder -> install typescript with help of npm and type: tsc --init.
