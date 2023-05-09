@@ -1,0 +1,19 @@
+What is Gatsby?
+
+
+
+Gatsby is a free, open source static site generator that harnesses React. Static site
+generators are software applications that create static pages from a template or component
+and supplement them with content from a source. 
+
+Static site generators are an alternative
+to a more traditional database-driven CMS, such as WordPress. In these conventional
+systems, content is managed and stored in a database. When the server receives a
+particular URL request, the server retrieves data from the database, mixes it with a
+template file, and generates an HTML page as its response. Generating HTML on demand
+can be a time-consuming process and can leave the user twiddling their thumbs or, worse,
+leaving your site.
+
+
+Gatsby is an open-source framework that combines functionality from React,
+ GraphQL and Webpack into a single tool for building static websites and apps
