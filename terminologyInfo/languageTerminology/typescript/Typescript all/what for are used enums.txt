@@ -1,0 +1,34 @@
+Enums allow a developer to define a set of named constants
+
+enum Direction {
+  Up,
+  Down,
+  Left,
+  Right,
+}
+
+every item in enum has position.
+
+So, for example Direction[0] - it will be 'UP'
+Direction[3] - it will be 'Right'
+
+
+// it can also be difened string enum
+enum Direction {
+  Up = "UP",
+  Down = "DOWN",
+  Left = "LEFT",
+  Right = "RIGHT",
+}
+
+// you can change also defaul order number position, it means
+
+enum Direction {
+  Up = 1, 
+  Down,
+  Left,
+  Right,
+}
+
+
+// now we start from 1, not from 1
