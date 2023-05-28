@@ -1,0 +1,10 @@
+he TypeScript object type represents all values that are not in primitive types.
+
+let employee: object;
+
+employee = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 25,
+    jobTitle: 'Web Developer'
+};
