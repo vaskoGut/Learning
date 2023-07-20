@@ -1,0 +1,12 @@
+GraphQL server describes a schema, the shape of your available data. 
+
+This schema defines a hierarchy of types with fields that are populated 
+from your back-end data stores. 
+
+
+The schema also specifies exactly which queries and mutations
+are available for clients to execute.
+
+
+Gatsby.js graphql schema difference
+Gatsby js schema combines  plugin or user defined schema information with data inferred (виведених) from the nodes shapes.
