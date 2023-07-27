@@ -1,0 +1,5 @@
+var:function-scoped and can be updated and redeclared.
+
+let : block-scoped, can be updated, but cannot be redeclared.
+
+const : block-scoped, cannot be updated and redeclared.
