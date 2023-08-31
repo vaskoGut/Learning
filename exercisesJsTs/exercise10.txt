@@ -66,3 +66,28 @@ const result = duplicatedsArr.reduce((total, currValue) => {
 console.log('result', result);
 
 
+// group by property
+
+const result = [
+    {subject: 'Physics', marks: 41},
+    {subject: 'Chemistry', marks: 59},
+    {subject: 'Pure Maths', marks: 36},
+    {subject: 'Applied Maths', marks: 90},
+    {subject: 'English', marks: 64},
+];
+
+
+const sortedValues = {
+    bigger: [],
+    smaller: []
+}
+
+const groupedResult = result.reduce((total:any, item:any) => {
+    if(item.marks > 50) total.bigger.push(item);
+    else total.smaller.push(item);
+
+    return total;
+}, sortedValues);
+
+
+console.log('groupedResult', groupedResult);
