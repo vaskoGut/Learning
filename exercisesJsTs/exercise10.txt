@@ -91,3 +91,90 @@ const groupedResult = result.reduce((total:any, item:any) => {
 
 
 console.log('groupedResult', groupedResult);
+
+
+// flatten them into a single array
+
+var arrays = [
+    ["1", "2", "3"],
+    [true],
+    [4, 5, 6]
+];
+
+const result = arrays.reduce((previousValue:any, currValue) => {
+    return previousValue.concat(currValue);
+}, []);
+
+console.log('result', result);
+
+// check how many persones voted
+
+var voters = [
+    {name:'Bob' , age: 30, voted: true},
+    {name:'Jake' , age: 32, voted: true},
+    {name:'Kate' , age: 25, voted: false},
+    {name:'Sam' , age: 20, voted: false},
+    {name:'Phil' , age: 21, voted: true},
+    {name:'Ed' , age:55, voted:true},
+    {name:'Tami' , age: 54, voted:true},
+    {name: 'Mary', age: 31, voted: false},
+    {name: 'Becky', age: 43, voted: false},
+    {name: 'Joey', age: 41, voted: true},
+    {name: 'Jeff', age: 30, voted: true},
+    {name: 'Zack', age: 19, voted: false}
+];
+
+const result = voters.reduce((previousValue, currValue) => {
+    if(currValue.voted) {
+        previousValue++
+    }
+
+    return previousValue;
+}, 0);
+
+console.log('result', result);
+
+// check number of voter in diff age group, 18-25, 26-35, 36-55
+
+var voters = [
+    {name:'Bob' , age: 30, voted: true},
+    {name:'Jake' , age: 32, voted: true},
+    {name:'Kate' , age: 25, voted: false},
+    {name:'Sam' , age: 20, voted: false},
+    {name:'Phil' , age: 21, voted: true},
+    {name:'Ed' , age:55, voted:true},
+    {name:'Tami' , age: 54, voted:true},
+    {name: 'Mary', age: 31, voted: false},
+    {name: 'Becky', age: 43, voted: false},
+    {name: 'Joey', age: 41, voted: true},
+    {name: 'Jeff', age: 30, voted: true},
+    {name: 'Zack', age: 19, voted: false}
+];
+
+const voteResults = {
+    numyoungVoters: 0,
+    numVotesYoung: 0,
+    numMidVoters: 0,
+    numVotesMidVoters: 0,
+    numAgedVoters: 0,
+    numVotesAgeVoterss: 0,
+}
+
+const result = voters.reduce((prevValue:any, currValue:any) => {
+    if(currValue.age < 26) {
+        prevValue.numyoungVoters++;
+        if(currValue.voted) prevValue.numVotesYoung++
+    }
+    if(currValue.age > 25 && currValue.age < 36) {
+        prevValue.numMidVoters++;
+        if(currValue.voted) prevValue.numVotesMidVoters++
+    }
+    if(currValue.age > 35) {
+        prevValue.numAgedVoters++;
+        if(currValue.voted) prevValue.numVotesAgeVoterss++
+    }
+
+    return prevValue;
+}, voteResults);
+
+console.log('resulte', result);
