@@ -1,0 +1,2 @@
+it's library for hashing data, for example if need some uniq value.
+For example you need to provide unique ariaId for each element on your page.

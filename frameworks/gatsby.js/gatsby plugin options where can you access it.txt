@@ -1,0 +1,19 @@
+it can be accessed as a 2nd parameter in gatsby node 
+
+A Gatsby plugin with options included makes those options available in the second argument of Gatsby Node, Browser, and SSR APIs. 
+
+module.exports = {
+  plugins: [
+    {
+      resolve: `gatsby-plugin-console-log`,
+      options: { optionA: true, optionB: false, message: "Hello world" },
+    },
+  ],
+}
+
+
+exports.onPreInit = (_, pluginOptions) => {
+  console.log(
+    `logging: "${pluginOptions.message}" to the console`
+  )
+}
