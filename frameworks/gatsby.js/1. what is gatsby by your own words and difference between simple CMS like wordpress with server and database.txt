@@ -17,3 +17,16 @@ leaving your site.
 
 Gatsby is an open-source framework that combines functionality from React,
  GraphQL and Webpack into a single tool for building static websites and apps
+
+
+VER IMPORTANT BELOW:
+
+
+ According to their site, “Gatsby is a free and open source framework based on React that helps 
+ developers build blazing fast websites and apps”. Gatsby allows the developers to make a site using
+  React and work with any data source (CMSs, Markdown, etc) of their choice. And then at the build time 
+  it pulls the data from these sources and spits out a bunch of static files that are optimized by 
+  Gatsby for performance. Gatsby loads only the critical HTML, CSS and JavaScript so that the site 
+  loads as fast as possible. Once loaded, Gatsby prefetches resources for other pages so
+  clicking around the 
+ site feels incredibly fast.
