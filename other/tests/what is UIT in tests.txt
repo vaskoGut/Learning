@@ -1,0 +1,2 @@
+UIT Testing means the Testing processes during the User Integration Test Phase that (a subset)
+ of DCC Service Users go through to test their processes and systems.

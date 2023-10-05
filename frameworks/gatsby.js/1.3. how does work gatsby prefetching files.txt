@@ -1,0 +1,1 @@
+once 1 page is loaded other pages're prefetched - коли 1 сторінка завантажена, інші теж префетчено завантажені.

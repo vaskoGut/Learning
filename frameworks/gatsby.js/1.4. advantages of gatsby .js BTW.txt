@@ -1,0 +1,11 @@
+Improved performance. Static site generators use the pre-render technique to generate pages in advance.
+Flexible customization. While hundreds of pre-built themes and plugins are available, developers can 
+create their own from the ground up using their preferred languages and frameworks.
+Technological advancements. Modern developer tools, including languages, frameworks, and libraries,
+ are some of the reasons behind static site migration. They enable developers to optimize performance 
+beyond the traditional web app stack’s limits.
+Lighter back-end. Static site generators don’t require an active back-end, as they only use it to source
+ data during build time. Also, they don’t need much server-side code as there’s no need to constantly 
+query the server for data fetching.
+Enhanced security. Static site generators enable developers to use a headless CMS system, separating 
+the front-end from the back-end. Therefore, static sites are more secure as they don’t have that many entry points.

@@ -1,0 +1,1 @@
+in the end gatsby spits out a bunch of static files. static web pages. based on templates and components.
