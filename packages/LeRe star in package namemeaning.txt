@@ -1,0 +1,1 @@
+"gatsby": "*" / it means any gatsby version
