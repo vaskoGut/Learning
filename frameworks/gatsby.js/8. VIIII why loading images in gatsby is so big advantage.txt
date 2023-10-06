@@ -1,0 +1,4 @@
+Gatsby performs magic for images within its application. It utilizes the sharp library
+(https://github.com/lovell/sharp) under the hood to convert your large
+images into smaller web-friendly sizes. When your website loads, it will first load in a
+smaller resolution version before blurring up to the maximum resolution required

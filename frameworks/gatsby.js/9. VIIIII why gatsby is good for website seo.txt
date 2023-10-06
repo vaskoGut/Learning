@@ -1,0 +1,1 @@
+cause gatsby.js sites are prerendered, and all content is available for crawlers to navigate through the site

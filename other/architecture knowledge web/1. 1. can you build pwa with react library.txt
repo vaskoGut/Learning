@@ -1,0 +1,1 @@
+yes, react is ideal tool library for building pwa

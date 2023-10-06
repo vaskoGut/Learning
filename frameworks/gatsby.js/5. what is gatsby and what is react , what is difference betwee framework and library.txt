@@ -1,0 +1,7 @@
+An essential distinction between Gatsby and React is that Gatsby is a
+"framework," not a "library." When using a library, you control your application
+flow; you call it when you need it. When using a framework, however, there is
+an inversion of control. Frameworks command that you adhere to a particular
+flow and layout defined by them. Working within a framework can often be
+seen as a benefit, as any developer familiar with the framework will know
+where to find relevant files and code.

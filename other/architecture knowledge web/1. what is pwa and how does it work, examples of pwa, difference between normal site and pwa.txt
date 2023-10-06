@@ -1,0 +1,15 @@
+The concept of the progressive web app (PWA) was approached by Google in late 2015. They are 
+basically web applications (Website) but have look and feel like other native mobile apps. 
+The progressive web app enabled websites can offer 
+functionalities such as working offline, push notifications, and device hardware access.
+
+sturbucks has pwa, twitter, instagram
+
+While both PWAs and responsive websites are designed to work across different devices and screen sizes,
+ PWAs provide additional features such as offline access, 
+push notifications, and a native-like experience
+
+
+
+While both PWAs and responsive websites are designed to work across different devices and screen sizes, 
+PWAs provide additional features such as offline access, push notifications, and a native-like experience

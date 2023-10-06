@@ -1,0 +1,5 @@
+To put it simply, SPAs are Jamstack sites, while not all Jamstack sites are SPAs. 
+The main difference between these two is that Jamstack sites consist of pre-rendering static 
+HTML files while SPAs load content when users request it first.
+
+

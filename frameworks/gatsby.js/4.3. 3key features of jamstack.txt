@@ -1,0 +1,9 @@
+JavaScript. 
+A programming language that lets developers create interactive web elements, such as clickable buttons, 
+interactive maps, animated graphics, and scrolling video effects.
+
+API. A set of programming code that enables data transmission between two or more software programs.
+ For example, an API allows users to log in to an application using Google, LinkedIn, and Facebook.
+
+Markup. Consisting of HTML and CSS, markup code provides formatting information to the browsers.
+ The former structures the web content, defining the title, headings, and paragraphs. Meanwhile, CSS styles the HTML content with fonts, colors, and columns.

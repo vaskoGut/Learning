@@ -1,0 +1,4 @@
+-H, --host: Set host URL/IP. Defaults to localhost.
+-p, --port: Set application port. Defaults to 8000.
+-o, --open: Automatically opens the site in your (default) browser.
+-S, --https: Use HTTPS. (More info on that can be found here.)
