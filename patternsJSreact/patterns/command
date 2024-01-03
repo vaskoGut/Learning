@@ -1,0 +1,29 @@
+class OrderManager {
+  orders: number[];
+ 
+  constructor() {
+    this.orders = [];
+  }
+ 
+  addOrder(id:number) {
+    return this.orders.push(id);
+  }
+
+  resetOrder(id:number) {
+    this.orders = this.orders.filter(orderId => orderId != id);
+  }
+
+  trackOrder(id:number) {
+    return `tracked order ${id}`;
+  }
+}
+ 
+let order = new OrderManager();
+order.addOrder(1);
+order.addOrder(2);
+
+// order.resetOrder(1);
+
+console.log(order.trackOrder(2));
+
+console.log(order);
