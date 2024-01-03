@@ -1,0 +1,14 @@
+const Person = ({name, surname } : { name:string, surname: string}) => ({
+  name,
+  surname,
+  fullName() {
+    return `${this.name} ${this.surname}`;
+  }
+});
+
+const Person1 = Person({
+  name: 'Vasyl',
+  surname: 'Gutnyk',
+});
+
+console.log('Person1', Person1.fullName());
