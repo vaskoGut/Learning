@@ -1,0 +1,5 @@
+null has object type
+undefined has undefined type
+
+we cann assign null value to some variable.
+If we declare variable, but not yest assign value to this, they are 'undefined'
