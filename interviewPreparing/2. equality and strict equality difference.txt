@@ -1,0 +1,7 @@
+before doing comparison js doing type conversions
+for example true == 'some'
+
+strict equality
+true === 'some' // false
+
+it's considered to be a good practice always to use ===
