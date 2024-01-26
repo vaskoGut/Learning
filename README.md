@@ -1,4 +1,4 @@
 JavaScript
 | Nm | #Question   |
 | :---:   | :---: |
-| Seconds | 301   |
+| 1 | Difference between let,const,var   |
