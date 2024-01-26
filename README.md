@@ -1,4 +1,4 @@
 JavaScript
-| Nm | #1    |
+| Nm | #Question   |
 | :---:   | :---: |
 | Seconds | 301   |
