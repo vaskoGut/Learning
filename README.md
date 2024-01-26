@@ -6,14 +6,14 @@
 
 
 1. ### what is difference between let const var
-  *Var* - scope is globar of function ( if var's used inside function ).
+  **Var** - scope is globar of function ( if var's used inside function ).
   Let, const - they have block scope.
   
   if(true) {
     let test = 'test'; // test variable is available only inside if block
   }
 
-  *Let* - can be reasigned.
-  *Const* - can't be reasigned.
+  **Let** - can be reasigned.
+  **Const** - can't be reasigned.
    
-3. ### what is what
+2. ### what is what
