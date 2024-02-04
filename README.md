@@ -24,6 +24,8 @@
 | 1   | [What is react](#what-is-react)                                     |
 | 2   | [What is unindirectional data flow](#what-is-unindirectional-data-flow) 
 | 3   | [What is state in react?](#what-is-state-in-react) 
+| 4   | [Can browser read JSX?](#can-browser-read-jsx) 
+| 5   | [What is babel?](#what-is-babel) 
 
 1. ### what is react
   **React** - is library. Main React features:
@@ -43,3 +45,17 @@ ______________
 
 3. ### what is state in react
    State in React - is object containing component an information. It can be changed. When state's changed, component is rerendered.
+   ______________
+
+4. ### can browser read jsx
+   Nope, it's used babel to transpile jsx code to regular JS.
+   ______________
+
+5. ### what is babel
+   1. Babel is transpiler, with help of it developers can use newest features of language.
+   2. 
+   3. 
+   4. 
+   5. 
+   
+
