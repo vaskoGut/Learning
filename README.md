@@ -23,6 +23,7 @@
 | :---:   | :---: |
 | 1   | [What is react](#what-is-react)                                     |
 | 2   | [What is unindirectional data flow](#what-is-unindirectional-data-flow) 
+| 3   | [What is state in react?](#what-is-state-in-react) 
 
 1. ### what is react
   **React** - is library. Main React features:
@@ -38,3 +39,7 @@ ______________
    Children component're placed inside parent component. Data's transfered from parent component to child component. Benefits unindirectional data-flow:
        1. Easy to debug - cause we know how and frome where data is coming.
        2. Less errors - more control on data.
+______________
+
+3. ### what is state in react
+   State in React - is object containing component an information. It can be changed. When state's changed, component is rerendered.
