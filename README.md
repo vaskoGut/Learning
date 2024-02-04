@@ -18,7 +18,7 @@
    
 2. ### what is what
 
-# REACT
+# React
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [What is react](#what-is-react)                                     |
@@ -31,6 +31,9 @@
    3. Virtual DOM - it's virtual copy of DOM, with help of it preformance is improved. With help of that we update only necessary things in DOM, not rebuilding all DOM tree.
    4. One way data-binding.
    5. high performance - while updating components - we don't refresh, update all application.
+      
+______________
+
 2. ### what is unindirectional data flow
    Children component're placed inside parent component. Data's transfered from parent component to child component. Benefits unindirectional data-flow:
        1. Easy to debug - cause we know how and frome where data is coming.
