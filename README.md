@@ -57,7 +57,8 @@ ______________
    3. Source target difference. Source - code written in a way Babel can understand it, target - code that should be in the end as output.
    4. How to configure babel for a specific framework? Each framework like react or angular has its own preset. Preset-react, preset-angular etc.
    5. @babel/runtime - helpers for optimisinig babel work. It helps for example to exclude repeatable code.
-   
+     ______________
+
 # Other
 | Nm | #Question   |
 | :---:   | :---: |
