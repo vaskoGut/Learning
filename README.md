@@ -53,9 +53,9 @@ ______________
 
 5. ### what is babel
    1. Babel is transpiler, with help of it developers can use newest features of language.
-   2. 
-   3. 
-   4. 
-   5. 
+   2. Babel configuration. You need node.js, npm. Later create configuration file, babelrc. NExt install plugins, presets. And finally creating build script.
+   3. Source target difference. Source - code written in a way Babel can understand it, target - code that should be in the end as output.
+   4. How to configure babel for a specific framework? Each framework like react or angular has its own preset. Preset-react, preset-angular etc.
+   5. @babel/runtime - helpers for optimisinig babel work. It helps for example to exclude repeatable code.
    
 
