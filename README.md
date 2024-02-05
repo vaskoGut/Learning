@@ -58,4 +58,22 @@ ______________
    4. How to configure babel for a specific framework? Each framework like react or angular has its own preset. Preset-react, preset-angular etc.
    5. @babel/runtime - helpers for optimisinig babel work. It helps for example to exclude repeatable code.
    
+# Other
+| Nm | #Question   |
+| :---:   | :---: |
+| 1   | [Monorepo and polyrepo difference](#monorepo-and-polyrepo-difference)                                     |
+| 2   | [What is what](#teste)  
+ 
+1. ### Monorepo and polyrepo difference
+  **Monorepo** - 
+  
+   **Polyrepo** - a repo for each team, application, project. It's often has a single build artifact, and simple build pipeline.
+   Build artifact - files produced by build ( different logs, reports, distribution pacakgs ).
+  
+![image](https://github.com/vaskoGut/Learning/assets/7413864/877fa3c9-bce1-48ef-9b1a-7c0db0cece9d)
 
+______________
+
+
+
+what is turborepo in few words
