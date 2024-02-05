@@ -16,7 +16,7 @@
   **Let** - can be reasigned.
   **Const** - can't be reasigned.
    
-2. ### what is what
+2. ### What is what
 
 # React
 | Nm | #Question   |
@@ -27,7 +27,7 @@
 | 4   | [Can browser read JSX?](#can-browser-read-jsx) 
 | 5   | [What is babel?](#what-is-babel) 
 
-1. ### what is react
+1. ### What is react
   **React** - is library. Main React features:
    1. JSX - js extension. We can write HTML structures inside JS.
    2. Components - we create reusable, independent components.
@@ -37,21 +37,21 @@
       
 ______________
 
-2. ### what is unindirectional data flow
+2. ### What is unindirectional data flow
    Children component're placed inside parent component. Data's transfered from parent component to child component. Benefits unindirectional data-flow:
        1. Easy to debug - cause we know how and frome where data is coming.
        2. Less errors - more control on data.
 ______________
 
-3. ### what is state in react
+3. ### What is state in react
    State in React - is object containing component an information. It can be changed. When state's changed, component is rerendered.
    ______________
 
-4. ### can browser read jsx
+4. ### Can browser read jsx
    Nope, it's used babel to transpile jsx code to regular JS.
    ______________
 
-5. ### what is babel
+5. ### What is babel
    1. Babel is transpiler, with help of it developers can use newest features of language.
    2. Babel configuration. You need node.js, npm. Later create configuration file, babelrc. NExt install plugins, presets. And finally creating build script.
    3. Source target difference. Source - code written in a way Babel can understand it, target - code that should be in the end as output.
