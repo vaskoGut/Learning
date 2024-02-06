@@ -66,11 +66,30 @@ ______________
 | 2   | [What is what](#teste)  
  
 1. ### Monorepo and polyrepo difference
-  **Monorepo** - 
+  **Monorepo** - its one repo, containing multiple applications, projects with well defined, structured relationships.
   
    **Polyrepo** - a repo for each team, application, project. It's often has a single build artifact, and simple build pipeline.
    Build artifact - files produced by build ( different logs, reports, distribution pacakgs ).
+
+   1.Is **Monolith** same as monorepo? No, monolith itj just repository containing a application, but there is no well prepared dependencies, it's not wel structured and encapsulated.
+   2. What is advantage of **polyrepo**? With help of it we can keep team autonomy. You can decide what you do with your repo, who can have access for it, when to deploy it etc.
+   3. What is disadvantages of **polyrepo**? 
+    - problem when you want to share code betweend different repos;
+    - problems with compability of third party libraries;
+    - time consuming configuration of each repo and synchronizing it.
+    - if each team works only on 1 repo, code can be repeated etc;
+    - if we have some share repo, library and you need to make change, it should be tested change for reach repo.
+    - each repo can have different settings tools
+    - it can be problem to use projects like that.
+    
+   4.What are advantages of **monorepo**? 
+     -easy to create new project;
+     - everything worges together at every commint 
+     - it's easy to test your change for different packages or applications. 
+     - all projects inside monorepo using same versions of thirls party libraries;
+     - it's better developer mobility and performance.
   
+   
 ![image](https://github.com/vaskoGut/Learning/assets/7413864/877fa3c9-bce1-48ef-9b1a-7c0db0cece9d)
 
 ______________
@@ -78,3 +97,7 @@ ______________
 
 
 what is turborepo in few words
+
+What is Encapsulation
+https://www.linkedin.com/pulse/what-encapsulation-javascript-amit-kumar/
+https://dev.to/kozlovzxc/js-interview-in-2-minutes-encapsulation-oop-2ico
