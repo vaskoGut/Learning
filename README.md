@@ -71,7 +71,7 @@ ______________
    **Polyrepo** - a repo for each team, application, project. It's often has a single build artifact, and simple build pipeline.
    Build artifact - files produced by build ( different logs, reports, distribution pacakgs ).
 
-   1.Is **Monolith** same as monorepo? No, monolith itj just repository containing a application, but there is no well prepared dependencies, it's not wel structured and encapsulated.
+   1. Is **Monolith** same as monorepo? No, monolith itj just repository containing a application, but there is no well prepared dependencies, it's not wel structured and encapsulated.
    2. What is advantage of **polyrepo**? With help of it we can keep team autonomy. You can decide what you do with your repo, who can have access for it, when to deploy it etc.
    3. What is disadvantages of **polyrepo**? 
    - problem when you want to share code betweend different repos;
