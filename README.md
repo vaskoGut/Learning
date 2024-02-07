@@ -24,8 +24,8 @@
 | 1   | [What is react](#what-is-react)                                     |
 | 2   | [What is unindirectional data flow](#what-is-unindirectional-data-flow) 
 | 3   | [What is state in react?](#what-is-state-in-react) 
-| 4   | [Can browser read JSX?](#can-browser-read-jsx) 
-| 5   | [What is babel?](#what-is-babel) 
+| 4   | [Can browser read JSX?](#can-browser-read-jsx)
+| 5   | [What is DOM, Virtual DOM?](#what-is-dom)
 
 1. ### What is react
   **React** - is library. Main React features:
@@ -50,13 +50,20 @@ ______________
 4. ### Can browser read jsx
    Nope, it's used babel to transpile jsx code to regular JS.
    ______________
-
+   
+5. ### what is dom
+   **Document Object Model** - is interface that treats HTML as a tree structure, in which each node is object representing a part of the document. DOM defines a way nodes are accessed and manipulated.
+   ![image](https://github.com/vaskoGut/Learning/assets/7413864/6c69442b-2d90-40a8-898d-f3e9d695c19a)
+   **Virtual DOM** - it's virtual copy of DOM, with help of it preformance is improved. With help of that we update only necessary things in DOM, not rebuilding all DOM tree.
+   React **Reconciliation** process of updating DOM. It updates the virtual DOM first and then uses the diffing algorithm to make efficient and optimized updates in the Real DOM.
+   ______________
 
 # Other
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [Monorepo and polyrepo difference](#monorepo-and-polyrepo-difference)                                     |
-| 2   | [What is webhooks?](#what-is-webhooks)  
+| 2   | [What is webhooks?](#what-is-webhooks) 
+| 3   | [What is babel?](#what-is-babel)
 | 3   | [What is what](#teste)  
  
 1. ### Monorepo and polyrepo difference
