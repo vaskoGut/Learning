@@ -28,6 +28,11 @@
 | 5   | [What is DOM, Virtual DOM?](#what-is-dom)
 | 6   | [What is difference between es5 and es6?](#difference-between-es6-es6)
 | 7   | [How to create basic React app?](#basic-react-app)
+| 8   | [what is event in React? What is synthetic event?](#what-is-event-in-react)
+
+
+
+
 
 1. ### What is react
    **React** - is library. Main React features:
@@ -68,6 +73,17 @@ ______________
    ______________
  7. ### basic react app
     Install node, instal crea-react-app. It's ready to use.
+   ______________
+ 8. ###  what is event in react
+   Event in React is action triggered on some change in the user interface. It can be click or key pressing for example.
+   **Synthetic event** - synthetic event is object we get after triggering some event. An example:
+
+   ```javascript
+      <button onClick={e => {
+        console.log(e); // React event object
+      }} />
+   ```
+  
   ______________
 
 # Other
@@ -129,3 +145,7 @@ https://dev.to/kozlovzxc/js-interview-in-2-minutes-encapsulation-oop-2ico
 
 arrow function with normal functino difference:
 https://bootcamp.uxdesign.cc/arrow-functions-vs-regular-functions-in-javascript-29db7928d696
+
+
+preventDefault(): Prevents the default browser action for the event.
+stopPropagation() - difference
