@@ -26,6 +26,8 @@
 | 3   | [What is state in react?](#what-is-state-in-react) 
 | 4   | [Can browser read JSX?](#can-browser-read-jsx)
 | 5   | [What is DOM, Virtual DOM?](#what-is-dom)
+| 6   | [What is difference between es5 and es6?](#difference-between-es6-es6)
+| 7   | [How to create basic React app?)(#basic-react-app)
 
 1. ### What is react
   **React** - is library. Main React features:
@@ -54,9 +56,19 @@ ______________
 5. ### what is dom
    **Document Object Model** - is interface that treats HTML as a tree structure, in which each node is object representing a part of the document. DOM defines a way nodes are accessed and manipulated.
    ![image](https://github.com/vaskoGut/Learning/assets/7413864/6c69442b-2d90-40a8-898d-f3e9d695c19a)
-   **Virtual DOM** - it's virtual copy of DOM, with help of it preformance is improved. With help of that we update only necessary things in DOM, not rebuilding all DOM tree.
+   **Virtual DOM** - it's virtual copy of DOM, with help of it preformance is improved. With help of that we update only necessary things in DOM, not rebuilding all DOM tree.  
    React **Reconciliation** process of updating DOM. It updates the virtual DOM first and then uses the diffing algorithm to make efficient and optimized updates in the Real DOM.
    ______________
+6. ### difference between es6 es6
+   - es6 ins newest version of js
+   - es6 has additional type Symbol
+   - es6 has 2 new ways of declaring variables: let and const
+   - es6 has arrow function
+   - little bit difference while importing, exporting components, declaring classes
+   ______________
+ 7. ### basic react app
+  Install node, instal crea-react-app. It's ready to use.
+  ______________
 
 # Other
 | Nm | #Question   |
@@ -113,3 +125,6 @@ what is turborepo in few words
 What is Encapsulation
 https://www.linkedin.com/pulse/what-encapsulation-javascript-amit-kumar/
 https://dev.to/kozlovzxc/js-interview-in-2-minutes-encapsulation-oop-2ico
+
+arrow function with normal functino difference:
+https://bootcamp.uxdesign.cc/arrow-functions-vs-regular-functions-in-javascript-29db7928d696
