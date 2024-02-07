@@ -106,17 +106,18 @@ ______________
 
 ______________
  2. ### what is webhooks
- **Webhooks** - automated messages sent from apps when something (event) happens. Example payPal sends you notification, when some of clients payed you some money. OR when some ecomerce shops notify you when you have some new order.
- It's a way one app push automatically notifications to other app.
- - what is difference between webhook and API? To put it simply - API does stuff when you ask it to. Webhooks does it when some situation, event is triggered. We can say it works on its own.
+  **Webhooks** - automated messages sent from apps when something (event) happens. Example payPal sends you notification, when some of clients payed you some money. OR when some ecomerce shops notify you when you have some new order.
+  It's a way one app push automatically notifications to other app.
+  - what is difference between webhook and API? To put it simply - API does stuff when you ask it to. Webhooks does it when some situation, event is triggered. We can say it works on its own.
  ______________
- 3. ### What is babel
+ 3. ### what is babel
 
-   1. Babel is transpiler, with help of it developers can use newest features of language.
-   2. Babel configuration. You need node.js, npm. Later create configuration file, babelrc. NExt install plugins, presets. And finally creating build script.
-   3. Source target difference. Source - code written in a way Babel can understand it, target - code that should be in the end as output.
-   4. How to configure babel for a specific framework? Each framework like react or angular has its own preset. Preset-react, preset-angular etc.
-   5. @babel/runtime - helpers for optimisinig babel work. It helps for example to exclude repeatable code.
+
+    1. Babel is transpiler, with help of it developers can use newest features of language.
+    2. Babel configuration. You need node.js, npm. Later create configuration file, babelrc. NExt install plugins, presets. And finally creating build script.
+    3. Source target difference. Source - code written in a way Babel can understand it, target - code that should be in the end as output.
+    4. How to configure babel for a specific framework? Each framework like react or angular has its own preset. Preset-react, preset-angular etc.
+    5. @babel/runtime - helpers for optimisinig babel work. It helps for example to exclude repeatable code.
 ______________
 
 What is cookies, sessiens, tokens 
