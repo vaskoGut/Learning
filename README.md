@@ -27,10 +27,10 @@
 | 4   | [Can browser read JSX?](#can-browser-read-jsx)
 | 5   | [What is DOM, Virtual DOM?](#what-is-dom)
 | 6   | [What is difference between es5 and es6?](#difference-between-es6-es6)
-| 7   | [How to create basic React app?)(#basic-react-app)
+| 7   | [How to create basic React app?](#basic-react-app)
 
 1. ### What is react
-  **React** - is library. Main React features:
+   **React** - is library. Main React features:
    1. JSX - js extension. We can write HTML structures inside JS.
    2. Components - we create reusable, independent components.
    3. Virtual DOM - it's virtual copy of DOM, with help of it preformance is improved. With help of that we update only necessary things in DOM, not rebuilding all DOM tree.
@@ -67,7 +67,7 @@ ______________
    - little bit difference while importing, exporting components, declaring classes
    ______________
  7. ### basic react app
-  Install node, instal crea-react-app. It's ready to use.
+    Install node, instal crea-react-app. It's ready to use.
   ______________
 
 # Other
@@ -78,40 +78,40 @@ ______________
 | 3   | [What is babel?](#what-is-babel)
 | 3   | [What is what](#teste)  
  
-1. ### Monorepo and polyrepo difference
+  1. ### Monorepo and polyrepo difference
   **Monorepo** - its one repo, containing multiple applications, projects with well defined, structured relationships.
   
    **Polyrepo** - a repo for each team, application, project. It's often has a single build artifact, and simple build pipeline.
    Build artifact - files produced by build ( different logs, reports, distribution pacakgs ).
 
-   1. Is **Monolith** same as monorepo? No, monolith itj just repository containing a application, but there is no well prepared dependencies, it's not wel structured and encapsulated.
-   2. What is advantage of **polyrepo**? With help of it we can keep team autonomy. You can decide what you do with your repo, who can have access for it, when to deploy it etc.
-   3. What is disadvantages of **polyrepo**? 
-   - problem when you want to share code betweend different repos;
-   - problems with compability of third party libraries;
-   - time consuming configuration of each repo and synchronizing it.
-   - if each team works only on 1 repo, code can be repeated etc;
-   - if we have some share repo, library and you need to make change, it should be tested change for reach repo.
-   - each repo can have different settings tools
-   - it can be problem to use projects like that.
-    
-   4.What are advantages of **monorepo**? 
-   - easy to create new project;
-   - it's easy to test your change for different packages or applications.
-   - it's better developer mobility and performance while working on monorepoy
-   - all projects inside monorepo using same versions of thirls party libraries;
-   - atomic commits - you dont need different projects, apps dependency after each commit, change
+    1. Is **Monolith** same as monorepo? No, monolith itj just repository containing a application, but there is no well prepared dependencies, it's not wel structured and encapsulated.
+    2. What is advantage of **polyrepo**? With help of it we can keep team autonomy. You can decide what you do with your repo, who can have access for it, when to deploy it etc.
+    3. What is disadvantages of **polyrepo**? 
+    - problem when you want to share code betweend different repos;
+    - problems with compability of third party libraries;
+    - time consuming configuration of each repo and synchronizing it.
+    - if each team works only on 1 repo, code can be repeated etc;
+    - if we have some share repo, library and you need to make change, it should be tested change for reach repo.
+    - each repo can have different settings tools
+    - it can be problem to use projects like that.
+    4.What are advantages of **monorepo**? 
+    - easy to create new project;
+    - it's easy to test your change for different packages or applications.
+    - it's better developer mobility and performance while working on monorepoy
+    - all projects inside monorepo using same versions of thirls party libraries;
+    - atomic commits - you dont need different projects, apps dependency after each commit, change
   
    
 ![image](https://github.com/vaskoGut/Learning/assets/7413864/877fa3c9-bce1-48ef-9b1a-7c0db0cece9d)
 
 ______________
  2. ### what is webhooks
-**Webhooks** - automated messages sent from apps when something (event) happens. Example payPal sends you notification, when some of clients payed you some money. OR when some ecomerce shops notify you when you have some new order.
-It's a way one app push automatically notifications to other app.
+ **Webhooks** - automated messages sent from apps when something (event) happens. Example payPal sends you notification, when some of clients payed you some money. OR when some ecomerce shops notify you when you have some new order.
+ It's a way one app push automatically notifications to other app.
  - what is difference between webhook and API? To put it simply - API does stuff when you ask it to. Webhooks does it when some situation, event is triggered. We can say it works on its own.
  ______________
  3. ### What is babel
+
    1. Babel is transpiler, with help of it developers can use newest features of language.
    2. Babel configuration. You need node.js, npm. Later create configuration file, babelrc. NExt install plugins, presets. And finally creating build script.
    3. Source target difference. Source - code written in a way Babel can understand it, target - code that should be in the end as output.
