@@ -2,7 +2,7 @@
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [Difference let const var](#what-is-difference-between-let-const-var)                                     |
-| 2   | [What is what](#what-is-what)                                                                             |
+| 2   | [Difference between arrow function and function declaration, expressions](#arrow-function-explanation)                                                                             |
 
 
 1. ### what is difference between let const var
@@ -16,7 +16,25 @@
    **Let** - can be reasigned.
    **Const** - can't be reasigned.
    
-2. ### What is what
+2. ### arrow function explanation
+   **Functional expression** - function defined inside an expression. Example:
+
+    ```javascript
+       const getRectArea = function (width, height) {
+        return width * height;
+       };
+       console.log(getRectArea(3, 4));
+   ```
+   **Functional declaration** - function declared with function keyword. Functional declaration creates binding of new function to a given name.
+
+    ```javascript
+       function calcRectArea(width, height) {
+          return width * height;
+       }
+       console.log(calcRectArea(5, 6)););
+   ```
+   **Arrow function** - don't have binding to this, arguments, super and shouldn't be used as methods.
+   They can't be used as a constructors - we can't call them with new keyword. Cannot be used as generator functions.
 
 # React
 | Nm | #Question   |
@@ -88,6 +106,11 @@
      ![image](https://github.com/vaskoGut/Learning/assets/7413864/9b735b91-5d29-48cd-80b0-ec723397786f)
 
  10. ###  keys in react lists
+     Key is a unique identifier and it is used to identify whhich element of list was updated, deleted or added. Keys also help to improve performance of rendering lists.
+
+     _____________
+
+ 11. ###  keys in react lists
      Key is a unique identifier and it is used to identify whhich element of list was updated, deleted or added. Keys also help to improve performance of rendering lists.
 
      _____________
