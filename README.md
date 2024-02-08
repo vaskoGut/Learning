@@ -3,6 +3,7 @@
 | :---:   | :---: |
 | 1   | [Difference let const var](#what-is-difference-between-let-const-var)                                     |
 | 2   | [Difference between arrow function and function declaration, expressions](#arrow-function-explanation)                                                                             |
+| 3   | [What is generator ](#generator-function)                                                                             |
 
 
 1. ### what is difference between let const var
@@ -35,6 +36,40 @@
    ```
    **Arrow function** - don't have binding to this, arguments, super and shouldn't be used as methods.
    They can't be used as a constructors - we can't call them with new keyword. Cannot be used as generator functions.
+
+ 3. ### Generator function
+    **Generator**  is a process that can be paused and resumed and can yield multiple values. Generator returns iterable Geneartor object.
+       ```javascript
+         function* generator(i) {
+            yield i;
+            yield i + 10;
+            yield i + 20;
+          }
+          
+          const gen = generator(10);
+          
+          console.log(gen.next().value);
+          // Expected output: 10
+          
+          console.log(gen.next().value);
+          // Expected output: 20
+          
+          console.log(gen.next().value);
+          // Expected output: 30
+
+          console.log(gen.next().value);
+          // Expected output: undefined
+       ```
+       Calling .next() returns an object in form:
+       ```javascript
+         { 
+           value // current value of the iterator, 
+           done  // boolean indicating if iteration is finished 
+         }
+       ```
+     
+      ______________
+   
 
 # React
 | Nm | #Question   |
