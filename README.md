@@ -73,29 +73,24 @@
    ______________
  7. ### basic react app
     Install node, instal crea-react-app. It's ready to use.
-   ______________
+    ______________
  8. ###  what is event in react
-   Event in React is action triggered on some change in the user interface. It can be click or key pressing for example.
-   **Synthetic event** - synthetic event is object we get after triggering some event. An example:
+     Event in React is action triggered on some change in the user interface. It can be click or key pressing for example.
+     **Synthetic event** - synthetic event is object we get after triggering some event. An example:
 
    ```javascript
       <button onClick={e => {
         console.log(e); // React event object
       }} />
    ```
-    ______________
  9. ###  lists-in-react
-   List is created with help of map method.
-   ![image](https://github.com/vaskoGut/Learning/assets/7413864/9b735b91-5d29-48cd-80b0-ec723397786f)
+     List is created with help of map method.
+     ![image](https://github.com/vaskoGut/Learning/assets/7413864/9b735b91-5d29-48cd-80b0-ec723397786f)
 
-______________
  10. ###  keys in react lists
-   Key is a unique identifier and it is used to identify whhich element of list was updated, deleted or added. Keys also help to improve performance of rendering lists.
+     Key is a unique identifier and it is used to identify whhich element of list was updated, deleted or added. Keys also help to improve performance of rendering lists.
 
-______________
- 11. ###  keys in react lists
-   Key is a unique identifier and it is used to identify whhich element of list was updated, deleted or added. Keys also help to improve performance of rendering lists.
-  ______________
+     _____________
 
 # Other
 | Nm | #Question   |
