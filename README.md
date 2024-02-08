@@ -6,15 +6,15 @@
 
 
 1. ### what is difference between let const var
-  **Var** - scope is globar of function ( if var's used inside function ).
-  Let, const - they have block scope.
-  
-  if(true) {
-    let test = 'test'; // test variable is available only inside if block
-  }
-
-  **Let** - can be reasigned.
-  **Const** - can't be reasigned.
+   **Var** - scope is globar or function ( if var's used inside function ).
+   Let, const - they have block scope.
+   
+   if(true) {
+     let test = 'test'; // test variable is available only inside if block
+   }
+ 
+   **Let** - can be reasigned.
+   **Const** - can't be reasigned.
    
 2. ### What is what
 
@@ -42,13 +42,13 @@
    4. One way data-binding.
    5. high performance - while updating components - we don't refresh, update all application.
       
-______________
+   ______________
 
 2. ### What is unindirectional data flow
    Children component're placed inside parent component. Data's transfered from parent component to child component. Benefits unindirectional data-flow:
        1. Easy to debug - cause we know how and frome where data is coming.
        2. Less errors - more control on data.
-______________
+   ______________
 
 3. ### What is state in react
    State in React - is object containing component an information. It can be changed. When state's changed, component is rerendered.
