@@ -156,7 +156,7 @@
 | 1   | [Monorepo and polyrepo difference](#monorepo-and-polyrepo-difference)                                     |
 | 2   | [What is webhooks?](#what-is-webhooks) 
 | 3   | [What is babel?](#what-is-babel)
-| 4   | [What is time complexity? Please provide examples](#time-complexity)  
+| 4   | [What is time complexity? Please provide examples](#time-complexity-space-complexity)  
 | 3   | [What is what](#teste)  
  
   1. ### Monorepo and polyrepo difference
@@ -201,9 +201,9 @@ ______________
     5. @babel/runtime - helpers for optimisinig babel work. It helps for example to exclude repeatable code.
 ______________
 
- 4. ### time-complexity
+ 4. ### time complexity space complexity
 
-      It calculates amount of time it takes to run an algorithm.
+     **Time complexity**. It calculates amount of time it takes to run an algorithm.
       - **O(1)** - constant. Run time is independent - we don't worry about the input size.
         ![image](https://github.com/vaskoGut/Learning/assets/7413864/b88820ea-d150-4fcf-89a4-8c4f89b62001)
         Examples: accessing an Array Element, REtrieving a Value from object. Retrieving element of array or object takes constant times.
@@ -211,7 +211,32 @@ ______________
         ![image](https://github.com/vaskoGut/Learning/assets/7413864/ff988dc4-2fdc-470c-a4bb-043047811af2)
       -  **O(n²)**  - quadratic algorithm - number of steps is square root of input size. For example if we have for loop inside another for loop, and these loops're manipuating on the same input.
         ![image](https://github.com/vaskoGut/Learning/assets/7413864/ea41b11f-1dd6-462f-aa80-2f02267c0baf)
+     **Space complexity** - amount of memory space required to solve some problem/algorithm. Examples:
+      - **O(1)** - constant. Run time is independent - we don't worry about the input size.
+       ```javascript
+          function add(n1, n2) {
+            const sum = n1 + n2
+            return sum
+          }
+       ```
 
+      Space complexity is constant. Cause input is constant. We'll always get 2 parameters.
+
+
+  - **O(n))** - Linear. Space complexity is increasing depending on parameter length.
+
+
+       
+       ```javascript
+          function sum(arr) {
+            const sum = 0
+            for (let i = 0; i < arr.length; i++) {
+              sum += arr[i]
+            }
+            return sum
+          }
+       ```
+       
 ______________
 
 What is cookies, sessiens, tokens 
