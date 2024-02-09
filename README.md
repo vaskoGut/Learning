@@ -156,6 +156,7 @@
 | 1   | [Monorepo and polyrepo difference](#monorepo-and-polyrepo-difference)                                     |
 | 2   | [What is webhooks?](#what-is-webhooks) 
 | 3   | [What is babel?](#what-is-babel)
+| 4   | [What is time complexity? Please provide examples](#time-complexity)  
 | 3   | [What is what](#teste)  
  
   1. ### Monorepo and polyrepo difference
@@ -198,6 +199,19 @@ ______________
     3. Source target difference. Source - code written in a way Babel can understand it, target - code that should be in the end as output.
     4. How to configure babel for a specific framework? Each framework like react or angular has its own preset. Preset-react, preset-angular etc.
     5. @babel/runtime - helpers for optimisinig babel work. It helps for example to exclude repeatable code.
+______________
+
+ 4. ### time-complexity
+
+      It calculates amount of time it takes to run an algorithm.
+      - **O(1)** - constant. Run time is independent - we don't worry about the input size.
+        ![image](https://github.com/vaskoGut/Learning/assets/7413864/b88820ea-d150-4fcf-89a4-8c4f89b62001)
+        Examples: accessing an Array Element, REtrieving a Value from object. Retrieving element of array or object takes constant times.
+      - **O(n)** - linear time algorithm - execution is proportional to the input size.
+        ![image](https://github.com/vaskoGut/Learning/assets/7413864/ff988dc4-2fdc-470c-a4bb-043047811af2)
+      -  **O(n²)**  - quadratic algorithm - number of steps is square root of input size. For example if we have for loop inside another for loop, and these loops're manipuating on the same input.
+        ![image](https://github.com/vaskoGut/Learning/assets/7413864/ea41b11f-1dd6-462f-aa80-2f02267c0baf)
+
 ______________
 
 What is cookies, sessiens, tokens 
