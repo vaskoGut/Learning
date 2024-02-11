@@ -1,32 +1,34 @@
-# JavaScript
+# JavaScript Typescript
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [Difference let const var](#what-is-difference-between-let-const-var)                                     |
 | 2   | [Difference between arrow function and function declaration, expressions](#arrow-function-explanation)                                                                             |
 | 3   | [What is generator ](#generator-function)                                                                             |
+| 4   | [Types Enums Interface ](#types-enums-interfaces)                                                                             |
 
 # React
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [What is react](#what-is-react)                                     |
-| 2   | [What is unindirectional data flow](#what-is-unindirectional-data-flow) 
-| 3   | [What is state in react?](#what-is-state-in-react) 
-| 4   | [Can browser read JSX?](#can-browser-read-jsx)
-| 5   | [What is DOM, Virtual DOM?](#what-is-dom)
-| 6   | [What is difference between es5 and es6?](#difference-between-es6-es6)
-| 7   | [How to create basic React app?](#basic-react-app)
-| 8   | [what is event in React? What is synthetic event?](#what-is-event-in-react)
-| 9   | [Explain how lists work in React?](#lists-in-react)
-| 10   | [Why key should be added to the list elements?](#keys-in-react-lists)
-| 11   | [What are the components in React?](#commponents-in-react)
+| 2   | [What is unindirectional data flow](#what-is-unindirectional-data-flow)                                     | 
+| 3   | [What is state in react?](#what-is-state-in-react)                                     | 
+| 4   | [Can browser read JSX?](#can-browser-read-jsx)                                     |
+| 5   | [What is DOM, Virtual DOM?](#what-is-dom)                                     |
+| 6   | [What is difference between es5 and es6?](#difference-between-es6-es6)                                     |
+| 7   | [How to create basic React app?](#basic-react-app)                                     |
+| 8   | [what is event in React? What is synthetic event?](#what-is-event-in-react)                                     |
+| 9   | [Explain how lists work in React?](#lists-in-react)                                     |
+| 10   | [Why key should be added to the list elements?](#keys-in-react-lists)                                     |
+| 11   | [What are the components in React?](#commponents-in-react)                                     |
+| 12   | [How to declare state in React?](#state-in-react)                                     |
 
 # Other
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [Monorepo and polyrepo difference](#monorepo-and-polyrepo-difference)                                     |
-| 2   | [What is webhooks?](#what-is-webhooks) 
-| 3   | [What is babel?](#what-is-babel)
-| 4   | [What is time complexity? Please provide examples](#time-complexity-space-complexity)  
+| 2   | [What is webhooks?](#what-is-webhooks)                                     | 
+| 3   | [What is babel?](#what-is-babel)                                     |
+| 4   | [What is time complexity? Please provide examples](#time-complexity-space-complexity)                                     |  
 
 1. ### what is difference between let const var
    **Var** - scope is globar or function ( if var's used inside function ).
@@ -89,7 +91,16 @@
            done  // boolean indicating if iteration is finished 
          }
        ```
-     
+   4. ### types enums interfaces
+      1. What are types, when do we use it? 
+       **Types** are definitions of data type. Typescript compiler use it to  detect errors.
+      2. What are **Tuples**?  
+      Tuples are typed arrays. 
+      3. What are  enums? When to use?
+         **Enums** are collection of constants
+      5. 
+      6. 
+      Here more:  https://blog.logrocket.com/typescript-enums-vs-types/
 __________________________________________________________________________________________________________________________________________
 
 
@@ -149,10 +160,12 @@ ________________________________________________________________________________
  10. ###  keys in react lists
      Key is a unique identifier and it is used to identify whhich element of list was updated, deleted or added. Keys also help to improve performance of rendering lists.
 
-     _____________
-
  11. ###  commponents in react
      React application consists of react component. Component is a reausable piece of code. Component can be stateless or statefull.
+
+ 12. ###  state in react
+     You needed constructor and set value to the this.state. Now you can just use useState hook.
+
 
   ________________________________________________________________________________________________________________________________
 
