@@ -20,6 +20,14 @@
 | 10   | [Why key should be added to the list elements?](#keys-in-react-lists)
 | 11   | [What are the components in React?](#commponents-in-react)
 
+# Other
+| Nm | #Question   |
+| :---:   | :---: |
+| 1   | [Monorepo and polyrepo difference](#monorepo-and-polyrepo-difference)                                     |
+| 2   | [What is webhooks?](#what-is-webhooks) 
+| 3   | [What is babel?](#what-is-babel)
+| 4   | [What is time complexity? Please provide examples](#time-complexity-space-complexity)  
+
 1. ### what is difference between let const var
    **Var** - scope is globar or function ( if var's used inside function ).
    Let, const - they have block scope.
@@ -149,13 +157,6 @@
 
      _____________
 
-# Other
-| Nm | #Question   |
-| :---:   | :---: |
-| 1   | [Monorepo and polyrepo difference](#monorepo-and-polyrepo-difference)                                     |
-| 2   | [What is webhooks?](#what-is-webhooks) 
-| 3   | [What is babel?](#what-is-babel)
-| 4   | [What is time complexity? Please provide examples](#time-complexity-space-complexity)  
  
   1. ### Monorepo and polyrepo difference
   **Monorepo** - its one repo, containing multiple applications, projects with well defined, structured relationships.
