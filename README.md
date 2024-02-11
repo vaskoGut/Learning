@@ -84,6 +84,7 @@
 | 8   | [what is event in React? What is synthetic event?](#what-is-event-in-react)
 | 9   | [Explain how lists work in React?](#lists-in-react)
 | 10   | [Why key should be added to the list elements?](#keys-in-react-lists)
+| 11   | [What are the components in React?](#commponents-in-react)
 
 
 
@@ -145,8 +146,8 @@
 
      _____________
 
- 11. ###  keys in react lists
-     Key is a unique identifier and it is used to identify whhich element of list was updated, deleted or added. Keys also help to improve performance of rendering lists.
+ 11. ###  commponents in react
+     React application consists of react component. Component is a reausable piece of code. Component can be stateless or statefull.
 
      _____________
 
