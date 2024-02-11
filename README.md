@@ -90,8 +90,7 @@
          }
        ```
      
-      ______________
-
+__________________________________________________________________________________________________________________________________________
 
 
 1. ### What is react
@@ -155,7 +154,8 @@
  11. ###  commponents in react
      React application consists of react component. Component is a reausable piece of code. Component can be stateless or statefull.
 
-     _____________
+  ________________________________________________________________________________________________________________________________
+
 
  
   1. ### Monorepo and polyrepo difference
