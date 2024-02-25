@@ -21,6 +21,7 @@
 | 10   | [Why key should be added to the list elements?](#keys-in-react-lists)                                     |
 | 11   | [What are the components in React?](#commponents-in-react)                                     |
 | 12   | [How to declare state in React?](#state-in-react)                                     |
+| 13   | [What are props in React?](#props-in-react)                                     |
 
 # Other
 | Nm | #Question   |
@@ -165,6 +166,10 @@ ________________________________________________________________________________
 
  12. ###  state in react
      You needed constructor and set value to the this.state. Now you can just use useState hook.
+
+ 13. ###  props in react
+     Props are short for properties. In React it's object, storing value of attributes, smth. like html attributes. We need it to pass data from component to the component.
+     Inside component we have an access to props in similar way as we have an access to the function parameters.
 
 
   ________________________________________________________________________________________________________________________________
