@@ -1,0 +1,4 @@
+class ClassWithPrivate {
+  #privateField;
+  #privateFieldWithInitializer = 42;
+}
