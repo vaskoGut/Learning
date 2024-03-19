@@ -22,6 +22,7 @@
 | 11   | [What are the components in React?](#commponents-in-react)                                     |
 | 12   | [How to declare state in React?](#state-in-react)                                     |
 | 13   | [What are props in React?](#props-in-react)                                     |
+| 14   | [What is state and props difference?](#state-props-difference)                                     |
 
 # Other
 | Nm | #Question   |
@@ -170,6 +171,9 @@ ________________________________________________________________________________
  13. ###  props in react
      Props are short for properties. In React it's object, storing value of attributes, smth. like html attributes. We need it to pass data from component to the component.
      Inside component we have an access to props in similar way as we have an access to the function parameters.
+
+ 14. ###  state props difference
+     State is muttable. Props are unmutable. State refers to internal data of component. Props are date transfered from parent component to the child.
 
 
   ________________________________________________________________________________________________________________________________
