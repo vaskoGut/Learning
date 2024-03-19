@@ -1,0 +1,1 @@
+React onBlur event is an event that triggers when an element loses focus
