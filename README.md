@@ -23,6 +23,7 @@
 | 12   | [How to declare state in React?](#state-in-react)                                     |
 | 13   | [What are props in React?](#props-in-react)                                     |
 | 14   | [What is state and props difference?](#state-props-difference)                                     |
+| 15   | [What is high ordered comopnent?](#high-ordered-component)                                     |
 
 # Other
 | Nm | #Question   |
@@ -175,6 +176,10 @@ ________________________________________________________________________________
  14. ###  state props difference
      State is muttable. Props are unmutable. State refers to internal data of component. Props are date transfered from parent component to the child.
 
+ 15. ###  high-ordered-component
+     High ordered component is wrapper for other components. They allow to reuse some logic across different components. 
+     F.e. you want to add logger HOC, which will be loging information about mounting, demounting component. 
+      export default withLogger(SomeComponent);
 
   ________________________________________________________________________________________________________________________________
 
