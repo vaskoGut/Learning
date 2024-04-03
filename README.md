@@ -24,6 +24,7 @@
 | 13   | [What are props in React?](#props-in-react)                                     |
 | 14   | [What is state and props difference?](#state-props-difference)                                     |
 | 15   | [What is high ordered comopnent?](#high-ordered-component)                                     |
+| 16   | [UseEffect with lifeCycle methods](#use-effect-lifecycle-methods)                                     |
 
 # Other
 | Nm | #Question   |
@@ -180,6 +181,12 @@ ________________________________________________________________________________
      High ordered component is wrapper for other components. They allow to reuse some logic across different components. 
      F.e. you want to add logger HOC, which will be loging information about mounting, demounting component. 
       export default withLogger(SomeComponent);
+
+ 16. ###  use-effect-lifecycle-methods
+    What are standart lifecycle React methods?
+    **getInitialState()**, **componentDidMount()**, **shouldComponentUpdate()**, **componentDidUpdate()**, **componentWillUnmount()**
+
+    
 
   ________________________________________________________________________________________________________________________________
 
