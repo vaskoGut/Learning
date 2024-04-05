@@ -187,7 +187,7 @@ ________________________________________________________________________________
     What are standart lifecycle React methods?
     **getInitialState()**, **componentDidMount()**, **shouldComponentUpdate()**, **componentDidUpdate()**, **componentWillUnmount()**
 
- 16. ###  use-memo
+ 17. ###  use-memo
     UseMemo() hook helps to cache, remember the result of calculations between rereners.
 
      // trivial example of using useMemo
