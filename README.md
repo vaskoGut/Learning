@@ -25,6 +25,7 @@
 | 14   | [What is state and props difference?](#state-props-difference)                                     |
 | 15   | [What is high ordered comopnent?](#high-ordered-component)                                     |
 | 16   | [UseEffect with lifeCycle methods](#use-effect-lifecycle-methods)                                     |
+| 17   | [what is useMemo?](#use-memo)                                     |
 
 # Other
 | Nm | #Question   |
@@ -186,7 +187,26 @@ ________________________________________________________________________________
     What are standart lifecycle React methods?
     **getInitialState()**, **componentDidMount()**, **shouldComponentUpdate()**, **componentDidUpdate()**, **componentWillUnmount()**
 
-    
+ 16. ###  use-memo
+    UseMemo() hook helps to cache, remember the result of calculations between rereners.
+
+     // trivial example of using useMemo
+
+      ```javascript
+        const sortedNames = useMemo(() => {
+         [...someValue].sort();
+        }, [names]);
+      ```
+      
+     ```
+
+    // if we wanna have different value of method, depending on url value:
+     ```javascript
+        const method = useMemo(() => {
+           method: "Post",
+           url
+        }, [url]);
+      ```
 
   ________________________________________________________________________________________________________________________________
 
