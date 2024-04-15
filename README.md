@@ -112,7 +112,10 @@ ________________________________________________________________________________
 
 1. ### What is react
    **React** - is library. Main React features:
-   1. JSX - js extension. We can write HTML structures inside JS.
+   1. JSX - js extension. We can write HTML structures inside JS. For example use HTML structures inside if structure:
+   ![image](https://github.com/vaskoGut/Learning/assets/7413864/7c2ec527-a760-46bf-ae67-a8d2e10d6f4b)
+
+
    2. Components - we create reusable, independent components.
    3. Virtual DOM - it's virtual copy of DOM, with help of it preformance is improved. With help of that we update only necessary things in DOM, not rebuilding all DOM tree.
    4. One way data-binding.
