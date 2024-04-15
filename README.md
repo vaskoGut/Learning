@@ -28,6 +28,7 @@
 | 17   | [what is useMemo?](#use-memo)                                     |
 | 18   | [what are controlled and uncontrolled components?](#controlled-uncontrolled-componenent)                                     |
 | 19   | [what are react hooks? what is bad practices using hooks?](#react-hooks)                                     |
+| 20   | [what is useEffect and when we use it? what is difference in comparison to useLayouteffect? When useEffect is called?](#use-effect-hook)                                     |
 
 # Other
 | Nm | #Question   |
@@ -221,8 +222,14 @@ ________________________________________________________________________________
   **Uncontrolled** components hold their state internally. And you query DOM using a ref to find its current value when you need it.
 
   19. ###  react-hooks
-  Hookw was added in React 16.8 to allow  function components to have access to state and other React features.
+  Hooks was added in React 16.8 to allow  function components to have access to state and other React features.
   Bad practices: - dont dynamically mutate a hook, dont dynamically use hook. Example: don't push hook as prop.
+
+  20. ###   use-effect-hook
+    1.  **UseEffect** allows to perform you side effects in your application ( fetchingdata, diretly update dom, setting timers).
+    2. useEffect is called after first render, and every time component is updated.
+    3. Difference between useEffect and UseLayoutEffect ( Useeffect runs after browser finishing painting,useLayoutEffect runs synchronically with painting browser). UseEffect  has built-in error handling, so it doesn't crush entire application,whiel  useLayoutEffect
+    doesn't have it.
 
   ________________________________________________________________________________________________________________________________
 
