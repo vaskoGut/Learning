@@ -27,6 +27,7 @@
 | 16   | [UseEffect with lifeCycle methods](#use-effect-lifecycle-methods)                                     |
 | 17   | [what is useMemo?](#use-memo)                                     |
 | 18   | [what are controlled and uncontrolled components?](#controlled-uncontrolled-componenent)                                     |
+| 19   | [what are react hooks? what is bad practices using hooks?](#react-hooks)                                     |
 
 # Other
 | Nm | #Question   |
@@ -218,6 +219,10 @@ ________________________________________________________________________________
   ![image](https://github.com/vaskoGut/Learning/assets/7413864/58c5e8a2-5102-4f45-a6c9-8b5ba7ce6ca7)
 
   **Uncontrolled** components hold their state internally. And you query DOM using a ref to find its current value when you need it.
+
+  19. ###  react-hooks
+  Hookw was added in React 16.8 to allow  function components to have access to state and other React features.
+  Bad practices: - dont dynamically mutate a hook, dont dynamically use hook. Example: don't push hook as prop.
 
   ________________________________________________________________________________________________________________________________
 
