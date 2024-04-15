@@ -213,11 +213,11 @@ ________________________________________________________________________________
         }, [url]);
       ```
   18. ###  controlled-uncontrolled-componenent
-  We used controlled or uncontrolled components inside form ( while dealing with inputs ).
+  We used **controlled** or **uncontrolled** components inside form ( while dealing with inputs ).
   If we have input connected to the state, and handle that value. It's controlled component. Displayed data is syncronized with the state of component.
   ![image](https://github.com/vaskoGut/Learning/assets/7413864/58c5e8a2-5102-4f45-a6c9-8b5ba7ce6ca7)
 
-  Uncontrolled components hold their state internally. And you query DOM using a ref to find its current value when you need it.
+  **Uncontrolled** components hold their state internally. And you query DOM using a ref to find its current value when you need it.
 
   ________________________________________________________________________________________________________________________________
 
