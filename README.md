@@ -235,6 +235,7 @@ ________________________________________________________________________________
     doesn't have it.
 
   21. ###   use-callback
+      
     If you need call function, but don't want it toretriggered in useEffect, then you will need useCallback.
     If we want to pass some function, to the component, and we don't want that component to be rerendered.
     Then can use useCallback. Example:
