@@ -12,6 +12,7 @@
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [What will be result of the next code?](#for-each-result-exercise)                                     |
+| 2  | [Split string by some string?](#split-string-exercise)                                     |
 
 # React
 | Nm | #Question   |
@@ -144,6 +145,12 @@ ________________________________________________________________________________
     ```
 
     Answer: it will be undefined, cause forEach doesn't return any walue, it just runs function for each element of array
+
+2. ### split-string-exercise
+   ```javascript
+     var s = 'john smith~123 Street~Apt 4~New York~NY~12345';
+     s.split('~')
+    ``
 __________________________________________________________________________________________________________________________________________
 
 
