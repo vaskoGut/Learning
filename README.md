@@ -29,7 +29,7 @@
 | 18   | [what are controlled and uncontrolled components?](#controlled-uncontrolled-componenent)                                     |
 | 19   | [what are react hooks? what is bad practices using hooks?](#react-hooks)                                     |
 | 20   | [what is useEffect and when we use it? what is difference in comparison to useLayouteffect? When useEffect is called?](#use-effect-hook)                                     |
-| 21   | [when do you need to use useCallback? When useEffect is called?](#use-callback)                                     |
+| 21   | [when do you need to use useCallback?](#use-callback)                                     |
 
 
 # Other
@@ -230,7 +230,8 @@ ________________________________________________________________________________
   20. ###   use-effect-hook
     1.  **UseEffect** allows to perform you side effects in your application ( fetchingdata, diretly update dom, setting timers).
     2. useEffect is called after first render, and every time component is updated.
-    3. Difference between useEffect and UseLayoutEffect ( Useeffect runs after browser finishing painting,useLayoutEffect runs synchronically with painting browser). UseEffect  has built-in error handling, so it doesn't crush entire application,whiel  useLayoutEffect
+    3. Difference between useEffect and UseLayoutEffect ( Useeffect runs after browser finishing painting,useLayoutEffect runs synchronically with painting browser). 
+    UseEffect  has built-in error handling, so it doesn't crush entire application,whiel  useLayoutEffect
     doesn't have it.
 
   21. ###   use-callback
