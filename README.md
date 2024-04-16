@@ -30,7 +30,7 @@
 | 19   | [what are react hooks? what is bad practices using hooks?](#react-hooks)                                     |
 | 20   | [what is useEffect and when we use it? what is difference in comparison to useLayouteffect? When useEffect is called?](#use-effect-hook)                                     |
 | 21   | [when do you need to use useCallback?](#use-callback)                                     |
-
+| 22   | [what is useRef hook? Example of use. Is value that useRef returns is mutable?](#use-ref)     
 
 # Other
 | Nm | #Question   |
@@ -240,6 +240,14 @@ ________________________________________________________________________________
     If we want to pass some function, to the component, and we don't want that component to be rerendered.
     Then can use useCallback. Example:
     ![image](https://github.com/vaskoGut/Learning/assets/7413864/b131c944-ff04-4800-8e52-c9e9fbde5161)
+
+   22. ###   use-ref
+       1. UseREf is hook, which we need if we want to operate directly with DOM.
+       2. Example of use: if we need for example some input in form to be auto  focused. We need to find that element in DOM and autofocus.
+       3. UseReff return object with current property.
+          ```javascript
+            const refValue = useRef(0); // this will return { current: 0 } object.
+          ```
 
     
     
