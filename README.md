@@ -29,6 +29,8 @@
 | 18   | [what are controlled and uncontrolled components?](#controlled-uncontrolled-componenent)                                     |
 | 19   | [what are react hooks? what is bad practices using hooks?](#react-hooks)                                     |
 | 20   | [what is useEffect and when we use it? what is difference in comparison to useLayouteffect? When useEffect is called?](#use-effect-hook)                                     |
+| 21   | [when do you need to use useCallback? When useEffect is called?](#use-callback)                                     |
+
 
 # Other
 | Nm | #Question   |
@@ -230,6 +232,14 @@ ________________________________________________________________________________
     2. useEffect is called after first render, and every time component is updated.
     3. Difference between useEffect and UseLayoutEffect ( Useeffect runs after browser finishing painting,useLayoutEffect runs synchronically with painting browser). UseEffect  has built-in error handling, so it doesn't crush entire application,whiel  useLayoutEffect
     doesn't have it.
+
+  21. ###   use-callback
+    If you need call function, but don't want it toretriggered in useEffect, then you will need useCallback.
+    If we want to pass some function, to the component, and we don't want that component to be rerendered. Thenwe can use useCallback. Example:
+    ![image](https://github.com/vaskoGut/Learning/assets/7413864/b131c944-ff04-4800-8e52-c9e9fbde5161)
+
+    
+    
 
   ________________________________________________________________________________________________________________________________
 
