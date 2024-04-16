@@ -5,6 +5,12 @@
 | 2   | [Difference between arrow function and function declaration, expressions](#arrow-function-explanation)                                                                             |
 | 3   | [What is generator ](#generator-function)                                                                             |
 | 4   | [Types Enums Interface ](#types-enums-interfaces)                                                                             |
+| 5   | [Difference between map and forEach ](#map-foreach-difference)                                                                             |
+
+# Exercises Javascript Typescript
+| Nm | #Question   |
+| :---:   | :---: |
+| 1   | [What will be result of the next code?](#for-each-result-exercise)                                     |
 
 # React
 | Nm | #Question   |
@@ -114,7 +120,24 @@
       5. 
       6. 
       Here more:  https://blog.logrocket.com/typescript-enums-vs-types/
+
+  4. ### map-foreach-difference
+      **Map** return array. But doesn't modify initial array.
+      **ForEach** doesn't return array. But runs function for each element of array. Foreach returns original array.
+
 __________________________________________________________________________________________________________________________________________
+
+# Exercises Javascript Typescript
+1. ### for-each-result-exercise
+
+    ```javascript
+       const names = ["Rohit","Aakash","Vinay","Ashish","Vasu"];
+       const tes = names.forEach((item) => item + 'lolo');
+    ```
+
+    Answer: it will be undefined, cause forEach doesn't return any walue, it just runs function for each element of array
+__________________________________________________________________________________________________________________________________________
+
 
 
 1. ### What is react
