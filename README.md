@@ -235,11 +235,10 @@ ________________________________________________________________________________
     doesn't have it.
 
   21. ###   use-callback
-      
-    If you need call function, but don't want it toretriggered in useEffect, then you will need useCallback.
-    If we want to pass some function, to the component, and we don't want that component to be rerendered.
-    Then can use useCallback. Example:
-    ![image](https://github.com/vaskoGut/Learning/assets/7413864/b131c944-ff04-4800-8e52-c9e9fbde5161)
+      If you need call function, but don't want it toretriggered in useEffect, then you will need useCallback.
+      If we want to pass some function, to the component, and we don't want that component to be rerendered.
+      Then can use useCallback. Example:
+      ![image](https://github.com/vaskoGut/Learning/assets/7413864/b131c944-ff04-4800-8e52-c9e9fbde5161)
 
    22. ###   use-ref
        1. UseREf is hook, which we need if we want to operate directly with DOM.
