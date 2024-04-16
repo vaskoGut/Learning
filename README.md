@@ -6,6 +6,7 @@
 | 3   | [What is generator ](#generator-function)                                                                             |
 | 4   | [Types Enums Interface ](#types-enums-interfaces)                                                                             |
 | 5   | [Difference between map and forEach ](#map-foreach-difference)                                                                             |
+| 6   | [What is this in js? Can you change value of this? What is this alone, inside object, inside event handler, inside function? What is for are used call,apply methods?](#this-meaning)                                                                             |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -121,9 +122,16 @@
       6. 
       Here more:  https://blog.logrocket.com/typescript-enums-vs-types/
 
-  4. ### map-foreach-difference
+  5. ### map-foreach-difference
       **Map** return array. But doesn't modify initial array.
       **ForEach** doesn't return array. But runs function for each element of array. Foreach returns original array.
+
+  6. ### this-meaning
+
+       1. This is keyword. It refers to different objects depending on how and where it used.
+       2. You can't change this value.
+       3. ALone **this** refers to the global object.  INside function - this refers to the global object also. In event handlers this refers to the hTML object.
+       4. Call and apply methods are used to call 1 object method on another object as argument
 
 __________________________________________________________________________________________________________________________________________
 
