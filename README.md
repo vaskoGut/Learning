@@ -228,11 +228,11 @@ ________________________________________________________________________________
   Bad practices: - dont dynamically mutate a hook, dont dynamically use hook. Example: don't push hook as prop.
 
   20. ###   use-effect-hook
-    1.  **UseEffect** allows to perform you side effects in your application ( fetchingdata, diretly update dom, setting timers).
-    2. useEffect is called after first render, and every time component is updated.
-    3. Difference between useEffect and UseLayoutEffect ( Useeffect runs after browser finishing painting,useLayoutEffect runs synchronically with painting browser). 
-    UseEffect  has built-in error handling, so it doesn't crush entire application,whiel  useLayoutEffect
-    doesn't have it.
+      1.  **UseEffect** allows to perform you side effects in your application ( fetchingdata, diretly update dom, setting timers).
+      2. useEffect is called after first render, and every time component is updated.
+      3. Difference between useEffect and UseLayoutEffect ( Useeffect runs after browser finishing painting,useLayoutEffect runs synchronically with painting browser). 
+      UseEffect  has built-in error handling, so it doesn't crush entire application,whiel  useLayoutEffect
+      doesn't have it.
 
   21. ###   use-callback
       If you need call function, but don't want it toretriggered in useEffect, then you will need useCallback.
