@@ -30,7 +30,9 @@
 | 19   | [what are react hooks? what is bad practices using hooks?](#react-hooks)                                     |
 | 20   | [what is useEffect and when we use it? what is difference in comparison to useLayouteffect? When useEffect is called?](#use-effect-hook)                                     |
 | 21   | [when do you need to use useCallback?](#use-callback)                                     |
-| 22   | [what is useRef hook? Example of use. Is value that useRef returns is mutable?](#use-ref)     
+| 22   | [what is useRef hook? Example of use. Is value that useRef returns is mutable?](#use-ref)                                     |     
+| 23   | [what is useRef useState difference?](#use-state-use-ref-diff)                                     |
+| 24   | [what is react context? when do we need it? Please list example of data stored in context](#react-context)                                     |
 
 # Other
 | Nm | #Question   |
@@ -250,9 +252,14 @@ ________________________________________________________________________________
        UseRef example:
        ![image](https://github.com/vaskoGut/Learning/assets/7413864/51454d23-3adb-4503-aabd-a5fdd38c19af)
 
+    23. ### use-state-use-ref-diff
+       With help of both you can save some value.
+       Whatever you store in useRef is not reactive, it means it will not cause component rerender.
 
-    
-    
+    24. ### react-context
+        React context is alternative to the 'prop drilling' ( passing data from parent to children ). Context is often consideredas  lighter, simpler solution to using Redux for state management.
+        With context API we have 1 store where all data is passed to and from all data is extracted from.
+        Example of data stored in context: template language, user authentificated data
 
   ________________________________________________________________________________________________________________________________
 
