@@ -44,7 +44,7 @@
 | 5   | [Please name some frameworks](#name-some-front-end-frameworks)                                     |  
 
 1. ### what is difference between let const var
-   **Var** - scope is globar or function ( if var's used inside function ).
+   **Var** - scope is global or function ( if var's used inside function ).
    Let, const - they have block scope.
    
    if(true) {
