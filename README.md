@@ -46,7 +46,7 @@
 | 27   | [what is react dev tools? When do you need it as rule?](#react-dev-tools)                                     |
 | 28   | [what is create portal? Provide some example of using it. What are downsides of useing portals?](#react-portals)                                     |
 | 29   | [what is code splitting? What is lazy and suspense in react? Provide some example. What is Suspense built-int ](#code-splitting)                                     |
-| 30   | [what is SSR and CSR?  Does Gatsby.js, NExt.js supports CSR or SSR? When pages are built in ssr in gatsby.js and when page are built in csr?](#ssr-csr)                                     |
+| 30   | [what is SSR and CSR?  Does Gatsby.js, NExt.js supports CSR or SSR? When pages are built in ssr in gatsby.js and when page are built in csr? What is advantage of using SSR?](#ssr-csr)                                     |
 
 # Other
 | Nm | #Question   |
@@ -340,6 +340,7 @@ ________________________________________________________________________________
          1. **SSR** -  Server side rendering. **CSR** - CLient side rendering.
          2. Gatsby.js and Next.js supports both CSR and SSR.
          3. Static Pages are built during build time. SSR allow to render a page during run-time. You can deal with data  that is fetched when a user visits the page.
+         4. 1 of the most importa benefits oF SSR can be improving performance of your website. You can reduce the amount of work the users's browser needs to do.
        
   ________________________________________________________________________________________________________________________________
 
