@@ -448,3 +448,11 @@ const FILTERABLE_CAPITALS = [
 ];
 
 //////////////
+
+
+//////
+How to pass data from child to parent:
+
+![image](https://github.com/vaskoGut/Learning/assets/7413864/ab1fb73e-d2b6-4396-a542-38fa3299f136)
+
+//////
