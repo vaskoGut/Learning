@@ -26,7 +26,7 @@
 | 7   | [How to create basic React app?](#basic-react-app)                                     |
 | 8   | [what is event in React? What is synthetic event?](#what-is-event-in-react)                                     |
 | 9   | [Explain how lists work in React?](#lists-in-react)                                     |
-| 10   | [Why key should be added to the list elements?](#keys-in-react-lists)                                     |
+| 10   | [Why key should be added to the list elements? Why index shouldn't be added as index?](#keys-in-react-lists)                                     |
 | 11   | [What are the components in React?](#commponents-in-react)                                     |
 | 12   | [How to declare state in React?](#state-in-react)                                     |
 | 13   | [What are props in React?](#props-in-react)                                     |
@@ -215,27 +215,28 @@ ________________________________________________________________________________
      ![image](https://github.com/vaskoGut/Learning/assets/7413864/9b735b91-5d29-48cd-80b0-ec723397786f)
 
  10. ###  keys in react lists
-     Key is a unique identifier and it is used to identify whhich element of list was updated, deleted or added. Keys also help to improve performance of rendering lists.
+     1. Key is a unique identifier and it is used to identify whhich element of list was updated, deleted or added. Keys also help to improve performance of rendering lists.
+     2. Index should be added as index cause, if you for example filter  your list - elements of list will get new indexes - other than you initialized  at first.
 
- 11. ###  commponents in react
+ 12. ###  commponents in react
      React application consists of react component. Component is a reausable piece of code. Component can be stateless or statefull.
 
- 12. ###  state in react
+ 13. ###  state in react
      You needed constructor and set value to the this.state. Now you can just use useState hook.
 
- 13. ###  props in react
+ 14. ###  props in react
      Props are short for properties. In React it's object, storing value of attributes, smth. like html attributes. We need it to pass data from component to the component.
      Inside component we have an access to props in similar way as we have an access to the function parameters.
 
- 14. ###  state props difference
+ 15. ###  state props difference
      State is muttable. Props are unmutable. State refers to internal data of component. Props are date transfered from parent component to the child.
 
- 15. ###  high-ordered-component
+ 16. ###  high-ordered-component
      High ordered component is wrapper for other components. They allow to reuse some logic across different components. 
      F.e. you want to add logger HOC, which will be loging information about mounting, demounting component. 
       export default withLogger(SomeComponent);
 
- 16. ###  use-effect-lifecycle-methods
+ 17. ###  use-effect-lifecycle-methods
     What are standart lifecycle React methods?
     **getInitialState()**, **componentDidMount()**, **shouldComponentUpdate()**, **componentDidUpdate()**, **componentWillUnmount()**
 
