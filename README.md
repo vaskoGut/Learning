@@ -45,6 +45,7 @@
 | 26   | [what is good way to test your reactapplications?what is end-2-end testing? what is unit testing? What yuu use for unit  testse](#react-test-how-work)                                     |
 | 27   | [what is react dev tools? When do you need it as rule?](#react-dev-tools)                                     |
 | 28   | [what is create portal? Provide some example of using it. What are downsides of useing portals?](#react-portals)                                     |
+| 29   | [what is code splitting? What is lazy and suspense in react? Provide some example.](#code-splitting)                                     |
 
 # Other
 | Nm | #Question   |
@@ -325,8 +326,9 @@ ________________________________________________________________________________
       Example createPortal:
   ![image](https://github.com/vaskoGut/Learning/assets/7413864/a4673b20-a45a-45cc-84be-ced9a5c92691)
 
-      
-  
+   28. ###  code-splitting                                |
+       Code splitting what is it...  
+
   ________________________________________________________________________________________________________________________________
 
 
