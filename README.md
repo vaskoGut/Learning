@@ -11,7 +11,7 @@
 # Exercises Javascript Typescript
 | Nm | #Question   |
 | :---:   | :---: |
-| 1   | [What will be result of the next code?](#for-each-result-exercise)                                     |
+| 1   | [What will be result of the next code?](#for-each-result-exercise)                                     |f
 | 2  | [Split string by some string?](#split-string-exercise)                                     |
 
 # React
@@ -297,7 +297,7 @@ ________________________________________________________________________________
     24. ### react-context
         React context is alternative to the 'prop drilling' ( passing data from parent to children ). Context is often consideredas  lighter, simpler solution to using Redux for state management.
         With context API we have 1 store where all data is passed to and from all data is extracted from.
-        Example of data stored in context: template language, user authentificated data
+        Example of data stored in context: template language, user authentificated data. ANother good example is dark mode - if you want an access to it from each component.
 
   ________________________________________________________________________________________________________________________________
 
