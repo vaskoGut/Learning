@@ -43,7 +43,7 @@
 | 24   | [what is react context? when do we need it? Please list example of data stored in context](#react-context)                                     |
 | 25   | [what is the recommended way to structure your React code?](#react-structuring-code)                                     |
 | 26   | [what is good way to test your reactapplications?what is end-2-end testing? what is unit testing? What yuu use for unit  testse](#react-test-how-work)                                     |
-| 27   | what is react dev tools? When do you need it as rule?](#react-dev-tools)                                     |
+| 27   | [what is react dev tools? When do you need it as rule?](#react-dev-tools)                                     |
 
 # Other
 | Nm | #Question   |
