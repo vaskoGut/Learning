@@ -7,6 +7,8 @@
 | 4   | [Types Enums Interface ](#types-enums-interfaces)                                                                             |
 | 5   | [Difference between map and forEach ](#map-foreach-difference)                                                                             |
 | 6   | [What is this in js? Can you change value of this? What is this alone, inside object, inside event handler, inside function? What is for are used call,apply methods?](#this-meaning)                                                                             |
+| 7  | [Is setTimeOut async?](#settimeout-async)                                                                             |
+| 8  | [What is Promise? Example of promise?](#example-promise)                                                                             |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -139,6 +141,15 @@
        2. You can't change this value.
        3. ALone **this** refers to the global object.  INside function - this refers to the global object also. In event handlers this refers to the hTML object.
        4. Call and apply methods are used to call 1 object method on another object as argument
+    
+  7. ### settimeout-async
+        Yes setTimeout is async
+
+  7. ### example-promise
+        Example login function:
+        ![image](https://github.com/vaskoGut/Learning/assets/7413864/e627bed4-169b-4366-9de8-2fa87aabbd8c)
+
+
 
 __________________________________________________________________________________________________________________________________________
 
