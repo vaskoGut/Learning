@@ -420,3 +420,31 @@ https://bootcamp.uxdesign.cc/arrow-functions-vs-regular-functions-in-javascript-
 
 preventDefault(): Prevents the default browser action for the event.
 stopPropagation() - difference
+
+
+
+/////////////
+react exercises :
+
+// create a simple react app that display a list of countris and their capitals
+// requiremeites:
+// the list of countries and capitsls should be fetched from the API
+// the list should be displayed in the CountiriesPage
+// each country should be displayed in a seperate component
+// the user should be able to filter the list by capital
+
+const BASE_URL = "https://restcountries.com/v3.1/all";
+
+/**
+ * To filter by capital city, use the '/capital/{capital}' endpoint
+ */
+const FILTERABLE_CAPITALS = [
+  "Talinn",
+  "Helsinki",
+  "Stockholm",
+  "Oslo",
+  "Copenthagen",
+  "Reykjavik",
+];
+
+//////////////
