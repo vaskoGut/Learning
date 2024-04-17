@@ -145,7 +145,8 @@
   7. ### settimeout-async
         Yes setTimeout is async
 
-  7. ### example-promise
+  8. ### example-promise
+        Promise object represents eventual completion or failure of asynchronous function.
         Example login function:
         ![image](https://github.com/vaskoGut/Learning/assets/7413864/e627bed4-169b-4366-9de8-2fa87aabbd8c)
 
