@@ -327,13 +327,12 @@ ________________________________________________________________________________
   ![image](https://github.com/vaskoGut/Learning/assets/7413864/a4673b20-a45a-45cc-84be-ced9a5c92691)
 
    29. ###  code-splitting
-                                    |
-       Splitting code is technique which allows to optimize the performance of React application.  With help of it you can split your code into smaller chunks and loading the on-deman.
-       You can reduce load time. React provides built-in tools. Like lazy, suspend.
-
-       ```javascript
-         const SalsifyColumnsText = React.lazy(() => import('~/components/SomeComponnent')
-        ```
+         Splitting code is technique which allows to optimize the performance of React application.  With help of it you can split your code into smaller chunks and loading the on-deman.
+         You can reduce load time. React provides built-in tools. Like lazy, suspend.
+  
+         ```javascript
+           const SalsifyColumnsText = React.lazy(() => import('~/components/SomeComponnent')
+          ```
   ________________________________________________________________________________________________________________________________
 
 
