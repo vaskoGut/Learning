@@ -42,6 +42,8 @@
 | 23   | [what is useRef useState difference?](#use-state-use-ref-diff)                                     |
 | 24   | [what is react context? when do we need it? Please list example of data stored in context](#react-context)                                     |
 | 25   | [what is the recommended way to structure your React code?](#react-structuring-code)                                     |
+| 26   | [what is good way to test your reactapplications?what is end-2-end testing? what is unit testing? What yuu use for unit  testse](#react-test-how-work)                                     |
+| 27   | what is react dev tools? When do you need it as rule?](#react-dev-tools)                                     |
 
 # Other
 | Nm | #Question   |
@@ -305,7 +307,14 @@ ________________________________________________________________________________
        You need specific folder for your components ( it can be also seperate folder for your common components ), for hooks, constants. 
        It's good to have proper structure - it's easier to find what you need, it's easier to make onboarding for new team members.
        It's god to use absoolute imports.
-       
+
+  26. ###  react-test-how-work
+          1. YOu can use e2e tests ( when you test your whole applications ( all components connected 1 to another) on real scenarious, data ). You can also make unit tests ( when you testing behaviour of each component)
+          2. We use react-test-library. You operate on real DOM, while using this library. You can  find element by role or by data-testid. It can be also simulated events with help of that library.
+
+  27. ###  react-dev-tools   
+      React dev tools is extension, it can be installed for any browser. As rule we use it if we have some problem with performance ( for example component is rendered too many times ).
+      
   
   ________________________________________________________________________________________________________________________________
 
