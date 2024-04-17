@@ -302,9 +302,9 @@ ________________________________________________________________________________
       Example of data stored in context: template language, user authentificated data. ANother good example is dark mode - if you want an access to it from each component.
   
   25. ###  react-structuring-code
-     You need specific folder for your components ( it can be also seperate folder for your common components ), for hooks, constants. 
-     It's good to have proper structure - it's easier to find what you need, it's easier to make onboarding for new team members.
-     It's god to use absoolute imports.
+       You need specific folder for your components ( it can be also seperate folder for your common components ), for hooks, constants. 
+       It's good to have proper structure - it's easier to find what you need, it's easier to make onboarding for new team members.
+       It's god to use absoolute imports.
        
   
   ________________________________________________________________________________________________________________________________
