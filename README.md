@@ -317,12 +317,13 @@ ________________________________________________________________________________
   27. ###  react-dev-tools   
       React dev tools is extension, it can be installed for any browser. As rule we use it if we have some problem with performance ( for example component is rendered too many times ).
 
-  28. ###  react-portals   
+  28. ###  react-portals
+
           1. React portals let you render some component outside your normal react component structure.
           2. Example: you can use it for creating modals.
           3. portal will not inherit parent css styles. Remember using stopPropagation() - event emmited from a portal component - will propagate to the Reactt tree and trigger event on  ancestor component.
           Example createPortal:
-          ![image](https://github.com/vaskoGut/Learning/assets/7413864/a4673b20-a45a-45cc-84be-ced9a5c92691)
+      ![image](https://github.com/vaskoGut/Learning/assets/7413864/a4673b20-a45a-45cc-84be-ced9a5c92691)
 
       
   
