@@ -311,19 +311,19 @@ ________________________________________________________________________________
        It's god to use absoolute imports.
 
   26. ###  react-test-how-work
-          1. YOu can use e2e tests ( when you test your whole applications ( all components connected 1 to another) on real scenarious, data ). You can also make unit tests ( when you testing behaviour of each component)
-          2. We use react-test-library. You operate on real DOM, while using this library. You can  find element by role or by data-testid. It can be also simulated events with help of that library.
+        1. YOu can use e2e tests ( when you test your whole applications ( all components connected 1 to another) on real scenarious, data ). You can also make unit tests ( when you testing behaviour of each component)
+        2. We use react-test-library. You operate on real DOM, while using this library. You can  find element by role or by data-testid. It can be also simulated events with help of that library.
 
   27. ###  react-dev-tools   
       React dev tools is extension, it can be installed for any browser. As rule we use it if we have some problem with performance ( for example component is rendered too many times ).
 
   28. ###  react-portals
 
-          1. React portals let you render some component outside your normal react component structure.
-          2. Example: you can use it for creating modals.
-          3. portal will not inherit parent css styles. Remember using stopPropagation() - event emmited from a portal component - will propagate to the Reactt tree and trigger event on  ancestor component.
-          Example createPortal:
-      ![image](https://github.com/vaskoGut/Learning/assets/7413864/a4673b20-a45a-45cc-84be-ced9a5c92691)
+      1. React portals let you render some component outside your normal react component structure.
+      2. Example: you can use it for creating modals.
+      3. portal will not inherit parent css styles. Remember using stopPropagation() - event emmited from a portal component - will propagate to the Reactt tree and trigger event on  ancestor component.
+      Example createPortal:
+  ![image](https://github.com/vaskoGut/Learning/assets/7413864/a4673b20-a45a-45cc-84be-ced9a5c92691)
 
       
   
