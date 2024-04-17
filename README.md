@@ -280,8 +280,9 @@ ________________________________________________________________________________
       If we want to pass some function, to the component, and we don't want that component to be rerendered.
       Then can use useCallback. Example:
       ![image](https://github.com/vaskoGut/Learning/assets/7413864/b131c944-ff04-4800-8e52-c9e9fbde5161)
+      
 
-   22. ###   use-ref
+  23. ###   use-ref
        1. UseREf is hook, which we need if we want to operate directly with DOM.
        2. Example of use: if we need for example some input in form to be auto  focused. We need to find that element in DOM and autofocus.
        3. UseReff return object with current property.
@@ -291,19 +292,19 @@ ________________________________________________________________________________
        UseRef example:
        ![image](https://github.com/vaskoGut/Learning/assets/7413864/51454d23-3adb-4503-aabd-a5fdd38c19af)
 
-    23. ### use-state-use-ref-diff
-       With help of both you can save some value.
-       Whatever you store in useRef is not reactive, it means it will not cause component rerender.
+  23. ###    use-state-use-ref-diff
+      With help of both you can save some value.
+      Whatever you store in useRef is not reactive, it means it will not cause component rerender.
 
-    24. ### react-context
-        React context is alternative to the 'prop drilling' ( passing data from parent to children ). Context is often consideredas  lighter, simpler solution to using Redux for state management.
-        With context API we have 1 store where all data is passed to and from all data is extracted from.
-        Example of data stored in context: template language, user authentificated data. ANother good example is dark mode - if you want an access to it from each component.
-
-    25. ### react-structuring-code
-       You need specific folder for your components ( it can be also seperate folder for your common components ), for hooks, constants. 
-       It's good to have proper structure - it's easier to find what you need, it's easier to make onboarding for new team members.
-       It's god to use absoolute imports.
+  24. ###  react-context
+      React context is alternative to the 'prop drilling' ( passing data from parent to children ). Context is often consideredas  lighter, simpler solution to using Redux for state management.
+      With context API we have 1 store where all data is passed to and from all data is extracted from.
+      Example of data stored in context: template language, user authentificated data. ANother good example is dark mode - if you want an access to it from each component.
+  
+  25. ###  react-structuring-code
+     You need specific folder for your components ( it can be also seperate folder for your common components ), for hooks, constants. 
+     It's good to have proper structure - it's easier to find what you need, it's easier to make onboarding for new team members.
+     It's god to use absoolute imports.
        
   
   ________________________________________________________________________________________________________________________________
