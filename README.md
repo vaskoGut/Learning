@@ -45,7 +45,7 @@
 | 26   | [what is good way to test your reactapplications?what is end-2-end testing? what is unit testing? What yuu use for unit  testse](#react-test-how-work)                                     |
 | 27   | [what is react dev tools? When do you need it as rule?](#react-dev-tools)                                     |
 | 28   | [what is create portal? Provide some example of using it. What are downsides of useing portals?](#react-portals)                                     |
-| 29   | [what is code splitting? What is lazy and suspense in react? Provide some example.](#code-splitting)                                     |
+| 29   | [what is code splitting? What is lazy and suspense in react? Provide some example. What is Suspense built-int ](#code-splitting)                                     |
 
 # Other
 | Nm | #Question   |
@@ -327,12 +327,13 @@ ________________________________________________________________________________
   ![image](https://github.com/vaskoGut/Learning/assets/7413864/a4673b20-a45a-45cc-84be-ced9a5c92691)
 
    29. ###  code-splitting
-         Splitting code is technique which allows to optimize the performance of React application.  With help of it you can split your code into smaller chunks and loading the on-deman.
+         1. Splitting code is technique which allows to optimize the performance of React application.  With help of it you can split your code into smaller chunks and loading the on-deman.
          You can reduce load time. React provides built-in tools. Like lazy, suspend.
   
          ```javascript
-           const SalsifyColumnsText = React.lazy(() => import('~/components/SomeComponnent')
+           const SomeComponent = React.lazy(() => import('~/components/SomeComponnent')
           ```
+         2. SUspense let you load fallback, while yoru children components are loading.
   ________________________________________________________________________________________________________________________________
 
 
