@@ -41,6 +41,7 @@
 | 22   | [what is useRef hook? Example of use. Is value that useRef returns is mutable?](#use-ref)                                     |     
 | 23   | [what is useRef useState difference?](#use-state-use-ref-diff)                                     |
 | 24   | [what is react context? when do we need it? Please list example of data stored in context](#react-context)                                     |
+| 25   | [what is the recommended way to structure your React code?](#react-structuring-code)                                     |
 
 # Other
 | Nm | #Question   |
@@ -299,6 +300,12 @@ ________________________________________________________________________________
         With context API we have 1 store where all data is passed to and from all data is extracted from.
         Example of data stored in context: template language, user authentificated data. ANother good example is dark mode - if you want an access to it from each component.
 
+    25. ### react-structuring-code
+       You need specific folder for your components ( it can be also seperate folder for your common components ), for hooks, constants. 
+       It's good to have proper structure - it's easier to find what you need, it's easier to make onboarding for new team members.
+       It's god to use absoolute imports.
+       
+  
   ________________________________________________________________________________________________________________________________
 
 
