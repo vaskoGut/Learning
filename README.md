@@ -59,7 +59,8 @@
 | 2   | [What is webhooks?](#what-is-webhooks)                                     | 
 | 3   | [What is babel?](#what-is-babel)                                     |
 | 4   | [What is time complexity? Please provide examples](#time-complexity-space-complexity)                                     |  
-| 5   | [Please name some frameworks](#name-some-front-end-frameworks)                                     |  
+| 5   | [Please name some frameworks](#name-some-front-end-frameworks)                                     |
+| 6   | [What is continues integration?](#continues-integration)                                     |
 
 1. ### what is difference between let const var
    **Var** - scope is global or function ( if var's used inside function ).
@@ -452,10 +453,12 @@ ______________
       It can be also logarithmic O(log n) time complexity or quadratic O(n^2) f.e.
 ______________
 
- 5. ###  name some front end frameworks
-Next.js, Gatsby.js.
+ 5. ###  What is continues integration
+    **Continuous integration** refers to the build and unit testing stages of the software release process ( you can implement it with jenkins for example in your project)
    
 ______________
+ 6. ###  name some front end frameworks
+Next.js, Gatsby.js.
 
 What is cookies, sessiens, tokens 
 what is turborepo in few words
