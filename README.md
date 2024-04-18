@@ -17,6 +17,7 @@
 | 1   | [What will be result of the next code?](#for-each-result-exercise)                                     |
 | 2  | [Split string by some string?](#split-string-exercise)                                     |
 | 3  | [Previoius state exampe?](#previous-state-example)                                     |
+| 4  | [Spread object with new key value?](#spread-object-kay-value)                                     |
 
 # React
 | Nm | #Question   |
@@ -183,6 +184,12 @@ ________________________________________________________________________________
     Count example:
     ![image](https://github.com/vaskoGut/Learning/assets/7413864/5d05d3e0-9ac9-4032-a425-940e49c9b27d)
 
+4. ### spread-object-kay-value
+    ```javascript
+    const test = { test: 'test '};
+    {...test, name: 'pame'}
+     ``
+     
 __________________________________________________________________________________________________________________________________________
 
 
