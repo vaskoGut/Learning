@@ -14,8 +14,9 @@
 # Exercises Javascript Typescript
 | Nm | #Question   |
 | :---:   | :---: |
-| 1   | [What will be result of the next code?](#for-each-result-exercise)                                     |f
+| 1   | [What will be result of the next code?](#for-each-result-exercise)                                     |
 | 2  | [Split string by some string?](#split-string-exercise)                                     |
+| 3  | [Previoius state exampe?](#previous-state-example)                                     |
 
 # React
 | Nm | #Question   |
@@ -178,6 +179,10 @@ ________________________________________________________________________________
      var s = 'john smith~123 Street~Apt 4~New York~NY~12345';
      s.split('~')
     ``
+3. ### previous-state-example
+    Count example:
+    ![image](https://github.com/vaskoGut/Learning/assets/7413864/5d05d3e0-9ac9-4032-a425-940e49c9b27d)
+
 __________________________________________________________________________________________________________________________________________
 
 
