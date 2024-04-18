@@ -70,6 +70,7 @@
 | :---:   | :---: |
 | 1   | [What is box model ( what are parts of box model)? ](#box-model)                                     |
 | 2   | [What for wee need picture and sources ](#picture-sources)                                     |
+| 3   | [What is viewport? ](#viewport-what)                                     |
 
 1. ### what is difference between let const var
    **Var** - scope is global or function ( if var's used inside function ).
@@ -505,6 +506,14 @@ ______________
       Picture and source are used if we want to add alternative versions of image depending on size of screen for example.
 
 ______________
+   
+   3. ### viewport-what
+       The viewport is the user's visible area of a web page. The viewport varies with the device.
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"> - we  set width of peage  to follow screen-width of the device.
+       Initial-scale=1.0 defines zoom defult level.
+
+______________
+
 
 What is cookies, sessiens, tokens 
 what is turborepo in few words
