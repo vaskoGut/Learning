@@ -50,6 +50,7 @@
 | 28   | [what is create portal? Provide some example of using it. What are downsides of useing portals?](#react-portals)                                     |
 | 29   | [what is code splitting? What is lazy and suspense in react? Provide some example. What is Suspense built-int ](#code-splitting)                                     |
 | 30   | [what is SSR and CSR?  Does Gatsby.js, NExt.js supports CSR or SSR? When pages are built in ssr in gatsby.js and when page are built in csr? What is advantage of using SSR? Provide some practical example of using SSR](#ssr-csr)                                     |
+| 31   | [what is fragment?](#fragment-explanation)                                     |
 
 # Other
 | Nm | #Question   |
@@ -361,6 +362,10 @@ ________________________________________________________________________________
          3. Static Pages are built during build time. SSR allow to render a page during run-time. You can deal with data  that is fetched when a user visits the page.
          4. 1 of the most importa benefits oF SSR can be improving performance of your website. You can reduce the amount of work the users's browser needs to do.
          5. Practical example: you need to call some script and add smth to the header only after some behaviour user on page.  In gatsby.js pages are rendered statically during build, to do smth like that you need SSR.
+
+
+   31. ###  fragment-explanation
+          **Fragment** alows you to return group ofchildren elments without need of extra DOM component.
        
   ________________________________________________________________________________________________________________________________
 
