@@ -460,7 +460,7 @@ ______________
 Next.js, Gatsby.js.
 ______________
 
- 6. ###  What is continues integration
+ 6. ###  continues-integrationn
     **Continuous integration** refers to the build and unit testing stages of the software release process ( you can implement it with jenkins for example in your project)
 
 What is cookies, sessiens, tokens 
