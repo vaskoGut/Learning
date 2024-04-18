@@ -10,6 +10,7 @@
 | 7  | [Is setTimeOut async?](#settimeout-async)                                                                             |
 | 8  | [What is Promise? Example of promise? What status promis returns?](#example-promise)                                                                             |
 | 9  | [What is Closure? Please provide examples. If variable is declared without keyword, is it global?](#closure-explanation)                                                                             |
+| 10  | [What is differene between sppread and rest operator - name practical examples?](#rest-spread-operator-difference)                                                                             |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
