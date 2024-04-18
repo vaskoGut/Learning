@@ -402,7 +402,7 @@ ________________________________________________________________________________
           **Fragment** alows you to return group ofchildren elments without need of extra DOM component.
 
    32. ###  use-effect-empty-array
-          Your effect will run only initial render.
+          Your effect will run only after initial render.
   ________________________________________________________________________________________________________________________________
 
 
