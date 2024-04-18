@@ -54,6 +54,7 @@
 | 29   | [what is code splitting? What is lazy and suspense in react? Provide some example. What is Suspense built-int ](#code-splitting)                                     |
 | 30   | [what is SSR and CSR?  Does Gatsby.js, NExt.js supports CSR or SSR? When pages are built in ssr in gatsby.js and when page are built in csr? What is advantage of using SSR? Provide some practical example of using SSR](#ssr-csr)                                     |
 | 31   | [what is fragment?](#fragment-explanation)                                     |
+| 32   | [what does mean useEffect with emtpy array?](#use-effect-empty-array)                                     |
 
 # Other
 | Nm | #Question   |
@@ -399,7 +400,9 @@ ________________________________________________________________________________
 
    31. ###  fragment-explanation
           **Fragment** alows you to return group ofchildren elments without need of extra DOM component.
-       
+
+   32. ###  use-effect-empty-array
+          Your effect will run only initial render.
   ________________________________________________________________________________________________________________________________
 
 
