@@ -71,6 +71,7 @@
 | 1   | [What is box model ( what are parts of box model)? ](#box-model)                                     |
 | 2   | [What for wee need picture and sources ](#picture-sources)                                     |
 | 3   | [What is viewport? ](#viewport-what)                                     |
+| 4   | [What are possible values of position property? ](#position-property)                                     |
 
 1. ### what is difference between let const var
    **Var** - scope is global or function ( if var's used inside function ).
@@ -511,6 +512,11 @@ ______________
        The viewport is the user's visible area of a web page. The viewport varies with the device.
        <meta name="viewport" content="width=device-width, initial-scale=1.0"> - we  set width of peage  to follow screen-width of the device.
        Initial-scale=1.0 defines zoom defult level.
+
+______________
+
+  4. ### position-property
+     Relative, absoulte, static, fixed, sticky.
 
 ______________
 
