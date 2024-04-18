@@ -56,6 +56,7 @@
 | 30   | [what is SSR and CSR?  Does Gatsby.js, NExt.js supports CSR or SSR? When pages are built in ssr in gatsby.js and when page are built in csr? What is advantage of using SSR? Provide some practical example of using SSR](#ssr-csr)                                     |
 | 31   | [what is fragment?](#fragment-explanation)                                     |
 | 32   | [what does mean useEffect with emtpy array?](#use-effect-empty-array)                                     |
+| 33   | [asd some example of hook?](#example-hook)                                     |
 
 # Other
 | Nm | #Question   |
@@ -410,6 +411,11 @@ ________________________________________________________________________________
 
    32. ###  use-effect-empty-array
           Your effect will run only after initial render.
+
+   33. ###  example-hook
+        **Hooks** are reusable functions. Example: hook for fetching data, or another example hook for recognition screen size.
+       ![image](https://github.com/vaskoGut/Learning/assets/7413864/c895a2bf-3b3d-4ac1-9922-589c079f583a)
+
   ________________________________________________________________________________________________________________________________
 
 
