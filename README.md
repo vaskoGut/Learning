@@ -72,6 +72,7 @@
 | 2   | [What for wee need picture and sources ](#picture-sources)                                     |
 | 3   | [What is viewport? ](#viewport-what)                                     |
 | 4   | [What are possible values of position property? ](#position-property)                                     |
+| 5   | [What are types of selectors in css? ](#selectors-css)                                     |
 
 1. ### what is difference between let const var
    **Var** - scope is global or function ( if var's used inside function ).
@@ -519,6 +520,12 @@ ______________
      Relative, absoulte, static, fixed, sticky.
 
 ______________
+
+  5. ### selectors-css
+     Id, Classs, Element, * - all. We have also Descender, children sibling selectors.
+
+______________
+
 
 
 What is cookies, sessiens, tokens 
