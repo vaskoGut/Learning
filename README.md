@@ -1,4 +1,4 @@
-![image](https://github.com/vaskoGut/Learning/assets/7413864/59e1fc2d-54d8-4750-abdc-91bee50905c6)![image](https://github.com/vaskoGut/Learning/assets/7413864/0d6a0314-31ed-48ec-b8d1-50ee496dde76)# JavaScript Typescript
+
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [Difference let const var](#what-is-difference-between-let-const-var)                                     |
@@ -11,6 +11,7 @@
 | 8  | [What is Promise? Example of promise? What status promis returns? Is promise aycnronious?](#example-promise)                                                                             |
 | 9  | [What is Closure? Please provide examples. If variable is declared without keyword, is it global?](#closure-explanation)                                                                             |
 | 10  | [What is differene between sppread and rest operator - name practical examples?](#rest-spread-operator-difference)                                                                             |
+| 11  | [What are sets? Example.](#set-object)                                                                             |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -186,6 +187,19 @@
              const {a, ...rest} = {a: 1, b: 2, c: 3};
             console.log(rest); // {b: 2, c: 3}
           ```
+
+   11. ### set-object
+      1. Set object allows you to store any unique value:
+     
+          ```javascript
+             const a = new Set([1, 2, 3]);
+          ```
+    
+    Set Object provides:
+    A size property that contains a number.
+    A has() method that takes an element and returns a boolean.
+    A keys() method that returns an iterator of the elements in the set.
+          
 
 __________________________________________________________________________________________________________________________________________
 
