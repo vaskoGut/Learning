@@ -65,6 +65,12 @@
 | 5   | [Please name some frameworks](#name-some-front-end-frameworks)                                     |
 | 6   | [What is continues integration?](#continues-integration)                                     |
 
+# CSS
+| Nm | #Question   |
+| :---:   | :---: |
+| 1   | [What is box model ( what are parts of box model)? ](#box-model)                                     |
+
+
 1. ### what is difference between let const var
    **Var** - scope is global or function ( if var's used inside function ).
    Let, const - they have block scope.
@@ -485,6 +491,15 @@ ______________
 
  6. ###  continues-integration
     **Continuous integration** refers to the build and unit testing stages of the software release process ( you can implement it with jenkins for example in your project)
+
+
+ ________________________________________________________________________________________________________________________________
+
+   1. ### box-model
+  **box model** - it's box which wraps every HTML element. Box model consists of content, padding, bordery, margin.
+   ![image](https://github.com/vaskoGut/Learning/assets/7413864/dbfb2b61-3e0f-41fe-8657-c82a3e8f9885)
+
+______________
 
 What is cookies, sessiens, tokens 
 what is turborepo in few words
