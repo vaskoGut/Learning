@@ -1,4 +1,4 @@
-# JavaScript Typescript
+![image](https://github.com/vaskoGut/Learning/assets/7413864/59e1fc2d-54d8-4750-abdc-91bee50905c6)![image](https://github.com/vaskoGut/Learning/assets/7413864/0d6a0314-31ed-48ec-b8d1-50ee496dde76)# JavaScript Typescript
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [Difference let const var](#what-is-difference-between-let-const-var)                                     |
@@ -19,6 +19,7 @@
 | 2  | [Split string by some string?](#split-string-exercise)                                     |
 | 3  | [Previoius state exampe?](#previous-state-example)                                     |
 | 4  | [Spread object with new key value?](#spread-object-kay-value)                                     |
+| 5  | [How to  fix this infinite rendering problem in provided example?](#infinite-rendering)                                     |
 
 # React
 | Nm | #Question   |
@@ -210,6 +211,11 @@ ________________________________________________________________________________
     const test = { test: 'test '};
     {...test, name: 'pame'}
      ``
+5. ### infinite-rendering
+    ![image](https://github.com/vaskoGut/Learning/assets/7413864/b5fd215f-ac97-422d-9f8e-0dc9b8a19805)
+    Answer -setCounter should be used out of useEffect here to prevent infinite rendering problem.
+
+    
      
 __________________________________________________________________________________________________________________________________________
 
