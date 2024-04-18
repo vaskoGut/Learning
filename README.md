@@ -69,7 +69,7 @@
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [What is box model ( what are parts of box model)? ](#box-model)                                     |
-
+| 2   | [What for wee need picture and sources ](#picture-sources)                                     |
 
 1. ### what is difference between let const var
    **Var** - scope is global or function ( if var's used inside function ).
@@ -498,6 +498,11 @@ ______________
    1. ### box-model
   **box model** - it's box which wraps every HTML element. Box model consists of content, padding, bordery, margin.
    ![image](https://github.com/vaskoGut/Learning/assets/7413864/dbfb2b61-3e0f-41fe-8657-c82a3e8f9885)
+
+______________
+
+   2. ### picture-sources
+      Picture and source are used if we want to add alternative versions of image depending on size of screen for example.
 
 ______________
 
