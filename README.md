@@ -161,8 +161,18 @@
         1. If we speak about closure , we need to mention **local** and **global** scope. Functions have its local, private scope. Variables can be global or private - depending where they'are declared.
         2. if variable is declared without keyword, it is global. Even if it's declared inside the function.
 
+ 10. ### rest-spread-operator-difference
+      1. You can use spread operator to merge 2 objects,or 2 arrays. In React you can use spread operator to pass properties to the component:
+          ```javascript
+           const props = {firstName: 'John', lastName: 'Doe'};
+            const component = <UserComponent {...props} />;
+          ```
 
-
+          **rest** operator can be used to extract the remaining properties.
+          ```javascript
+             const {a, ...rest} = {a: 1, b: 2, c: 3};
+            console.log(rest); // {b: 2, c: 3}
+          ```
 
 __________________________________________________________________________________________________________________________________________
 
