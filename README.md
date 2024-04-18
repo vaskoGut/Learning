@@ -453,12 +453,15 @@ ______________
       It can be also logarithmic O(log n) time complexity or quadratic O(n^2) f.e.
 ______________
 
- 5. ###  What is continues integration
-    **Continuous integration** refers to the build and unit testing stages of the software release process ( you can implement it with jenkins for example in your project)
+
    
 ______________
- 6. ###  name some front end frameworks
+ 5. ###  name some front end frameworks
 Next.js, Gatsby.js.
+______________
+
+ 6. ###  What is continues integration
+    **Continuous integration** refers to the build and unit testing stages of the software release process ( you can implement it with jenkins for example in your project)
 
 What is cookies, sessiens, tokens 
 what is turborepo in few words
