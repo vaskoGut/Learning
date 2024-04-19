@@ -8,7 +8,7 @@
 | 5   | [Difference between map and forEach ](#map-foreach-difference)                                                                             |
 | 6   | [What is this in js? Can you change value of this? What is this alone, inside object, inside event handler, inside function? What is for are used call,apply methods?](#this-meaning)                                                                             |
 | 7  | [Is setTimeOut async?](#settimeout-async)                                                                             |
-| 8  | [What is Promise? Example of promise? What status promis returns? Is promise aycnronious?](#example-promise)                                                                             |
+| 8  | [What is Promise? Example of promise? What status promis returns? Is promise aycnronious? Name wayss of handling promises.](#example-promise)                                                                             |
 | 9  | [What is Closure? Please provide examples. If variable is declared without keyword, is it global?](#closure-explanation)                                                                             |
 | 10  | [What is differene between sppread and rest operator - name practical examples?](#rest-spread-operator-difference)                                                                             |
 | 11  | [What are sets? Example.](#set-object)                                                                             |
@@ -165,11 +165,35 @@
         Yes setTimeout is async
 
   8. ### example-promise
-        Promise object represents eventual completion or failure of asynchronous function.
+        Promise object represents eventual completion or failure of asynchronous function. Whenever tasks should be executed asynchronouslo. Promisess are used.
         Example login function:
         ![image](https://github.com/vaskoGut/Learning/assets/7413864/e627bed4-169b-4366-9de8-2fa87aabbd8c)
         Promise returns fullfilled or rejected status.
         Promise is asyncchronous function.
+        Promises can be handled with:
+
+        **then catch**:
+        ```javascript
+          Promise.then(() => datafetch).then(result => result).catch(()=>'error fetching data')
+        ```
+        **asyn await try catch**
+       ```javascript
+        async function main() {
+          try {
+            const doc = await db.doc("user/" + uid).get()
+        
+            if (doc.exists) {
+              console.log("User data:", doc.data());
+              // use fetched data, for example in setState()
+            } else {
+              console.warn("No user data.");
+            }
+          }
+          catch(error) {
+            console.log("Error getting user data:", error);
+          }
+        }
+        ```
 
   8. ### closure-explanation
         1. If we speak about closure , we need to mention **local** and **global** scope. Functions have its local, private scope. Variables can be global or private - depending where they'are declared.
