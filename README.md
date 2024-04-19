@@ -71,6 +71,7 @@
 | 4   | [What is time complexity? Please provide examples](#time-complexity-space-complexity)                                     |  
 | 5   | [Please name some frameworks](#name-some-front-end-frameworks)                                     |
 | 6   | [What is continues integration?](#continues-integration)                                     |
+| 7   | [Functional and OOP programming difference?](#functional-oop-programming)                                     |
 
 # CSS
 | Nm | #Question   |
@@ -564,7 +565,10 @@ ______________
  6. ###  continues-integration
     **Continuous integration** refers to the build and unit testing stages of the software release process ( you can implement it with jenkins for example in your project)
 
+______________
 
+ 7. ###  functional-oop-programming
+  In OOP, the fundamental basis is classes, instances of which can be stored in variables. In functional programming, however, there are no variables; there are functions and functions only.
  ________________________________________________________________________________________________________________________________
 
    1. ### box-model
