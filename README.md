@@ -13,6 +13,7 @@
 | 10  | [What is differene between sppread and rest operator - name practical examples?](#rest-spread-operator-difference)                                                                             |
 | 11  | [What are sets? Example.](#set-object)                                                                             |
 | 12  | [Why using try catch wrapper  instead just async await?](#try-catch)                                                                             |
+| 13  | types and interfaces diff?](#type-interface-diff)                                                                             |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -228,6 +229,11 @@
           
   12. ### try-catch
       Wraps code that can fail and pass errortothe catch instead of crashing the app.
+  
+  13. ### type-interface-diff
+      Types in TypeScript are more flexible and can define primitive, intersection, union, tuple, or different types of data, while interfaces are used to describe the shape of an object
+
+      
 
 __________________________________________________________________________________________________________________________________________
 
