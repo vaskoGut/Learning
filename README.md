@@ -59,6 +59,7 @@
 | 31   | [what is fragment?](#fragment-explanation)                                     |
 | 32   | [what does mean useEffect with emtpy array?](#use-effect-empty-array)                                     |
 | 33   | [asd some example of hook?](#example-hook)                                     |
+| 34   | [Provide example of using event listener in react?](#event-listener)                                     |
 
 # Other
 | Nm | #Question   |
@@ -456,6 +457,11 @@ ________________________________________________________________________________
    33. ###  example-hook
         **Hooks** are reusable functions. Example: hook for fetching data, or another example hook for recognition screen size.
        ![image](https://github.com/vaskoGut/Learning/assets/7413864/c895a2bf-3b3d-4ac1-9922-589c079f583a)
+
+   33. ###  event-listener
+        **Hooks** are reusable functions. Example: hook for fetching data, or another example hook for recognition screen size.
+        ![image](https://github.com/vaskoGut/Learning/assets/7413864/6a2f472f-eb8f-4c6a-8237-0ed27deb947b)
+
 
   ________________________________________________________________________________________________________________________________
 
