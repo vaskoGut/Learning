@@ -12,6 +12,7 @@
 | 9  | [What is Closure? Please provide examples. If variable is declared without keyword, is it global?](#closure-explanation)                                                                             |
 | 10  | [What is differene between sppread and rest operator - name practical examples?](#rest-spread-operator-difference)                                                                             |
 | 11  | [What are sets? Example.](#set-object)                                                                             |
+| 12  | [Why using try catch wrapper  instead just async await?](#try-catch)                                                                             |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -224,6 +225,8 @@
     A has() method that takes an element and returns a boolean.
     A keys() method that returns an iterator of the elements in the set.
           
+  12. ### try-catch
+      Wraps code that can fail and pass errortothe catch instead of crashing the app.
 
 __________________________________________________________________________________________________________________________________________
 
