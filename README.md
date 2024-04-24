@@ -61,6 +61,7 @@
 | 32   | [what does mean useEffect with emtpy array?](#use-effect-empty-array)                                     |
 | 33   | [asd some example of hook?](#example-hook)                                     |
 | 34   | [Provide example of using event listener in react?](#event-listener)                                     |
+| 35   | [What is wrong with too many useEffect?](#too-many-useeffect-explain)                                     |
 
 # Other
 | Nm | #Question   |
@@ -468,6 +469,13 @@ ________________________________________________________________________________
    33. ###  event-listener
         **Hooks** are reusable functions. Example: hook for fetching data, or another example hook for recognition screen size.
         ![image](https://github.com/vaskoGut/Learning/assets/7413864/6a2f472f-eb8f-4c6a-8237-0ed27deb947b)
+
+   
+   35. ### #too-many-useeffect-explain
+        ![image](https://github.com/vaskoGut/Learning/assets/7413864/b2924d25-2088-4928-b941-4c79820fa729)
+        solution: it's better to drop it in 1 useEffect and handle different cases. Or you can drop it in distinct function.
+
+
 
 
   ________________________________________________________________________________________________________________________________
