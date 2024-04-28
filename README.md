@@ -14,6 +14,7 @@
 | 11  | [What are sets? Example.](#set-object)                                                                             |
 | 12  | [Why using try catch wrapper  instead just async await?](#try-catch)                                                                             |
 | 13  | types and interfaces diff?](#type-interface-diff)                                                                             |
+| 14   | [How to make array from collections js?](#collection-js-array)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -235,7 +236,14 @@
   13. ### type-interface-diff
       Types in TypeScript are more flexible and can define primitive, intersection, union, tuple, or different types of data, while interfaces are used to describe the shape of an object
 
-      
+  14. ### collection-js-array
+      Eather
+       ```javascript
+      const arrray = [...yourObjectCollection];
+      // Or make it with Array.from
+       Array.from(yourObjectCollection)
+       ```
+       
 
 __________________________________________________________________________________________________________________________________________
 
