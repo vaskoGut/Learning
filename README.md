@@ -15,6 +15,7 @@
 | 12  | [Why using try catch wrapper  instead just async await?](#try-catch)                                                                             |
 | 13  | types and interfaces diff?](#type-interface-diff)                                                                             |
 | 14   | [How to make array from collections js?](#collection-js-array)                                     |
+| 15   | [what is 3rd stringify parameter?](#stringify-3rd-parameter)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -243,7 +244,9 @@
       // Or make it with Array.from
        Array.from(yourObjectCollection)
        ```
-       
+
+   15. ### stringify-3rd-parametes
+     it adds additional spacing
 
 __________________________________________________________________________________________________________________________________________
 
