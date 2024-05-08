@@ -75,6 +75,7 @@
 | 5   | [Please name some frameworks](#name-some-front-end-frameworks)                                     |
 | 6   | [What is continues integration?](#continues-integration)                                     |
 | 7   | [Functional and OOP programming difference?](#functional-oop-programming)                                     |
+| 8   | [what is dependencies and devdependencies difference?](#dependencies-devdependencies-difference)                                     |
 
 # CSS
 | Nm | #Question   |
@@ -588,6 +589,12 @@ ______________
 
  7. ###  functional-oop-programming
   In OOP, the fundamental basis is classes, instances of which can be stored in variables. In functional programming, however, there are no variables; there are functions and functions only.
+
+______________
+
+ 8. ###  dependencies-devdependencies-difference
+  Dependencies are crucial for your production build. While Devdependencies are needed only while dev work, but we don't need in production build.
+  
  ________________________________________________________________________________________________________________________________
 
    1. ### box-model
