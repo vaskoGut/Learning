@@ -76,6 +76,8 @@
 | 6   | [What is continues integration?](#continues-integration)                                     |
 | 7   | [Functional and OOP programming difference?](#functional-oop-programming)                                     |
 | 8   | [what is dependencies and devdependencies difference?](#dependencies-devdependencies-difference)                                     |
+| 9   | [what does it mean in package.json (scripts-typecheck)?](#package-json-scripts-typecheck)                                     |
+
 
 # CSS
 | Nm | #Question   |
@@ -594,6 +596,11 @@ ______________
 
  8. ###  dependencies-devdependencies-difference
   Dependencies are crucial for your production build. While Devdependencies are needed only while dev work, but we don't need in production build.
+
+______________
+
+ 9. ###  package-json-scripts-typecheck
+  When you run npm run typecheck or yarn typecheck, the TypeScript compiler will analyze your TypeScript code and perform type checking based on your type annotations and configuration
   
  ________________________________________________________________________________________________________________________________
 
