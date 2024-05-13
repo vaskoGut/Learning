@@ -16,6 +16,7 @@
 | 13  | types and interfaces diff?](#type-interface-diff)                                                                             |
 | 14   | [How to make array from collections js?](#collection-js-array)                                     |
 | 15   | [what is 3rd stringify parameter?](#stringify-3rd-parameter)                                     |
+| 16   | [what is difference between try block - catch/finally ?](#try-catch-finally)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -251,6 +252,18 @@
 
    15. ### stringify-3rd-parametes
      it adds additional spacing
+
+   16. ### try-catch-finally
+     ```javascript
+       try {
+          // try_statements
+       } catch(error) {
+        // catch_statements  
+      }
+      finally() {
+        // codes that gets executed anyway
+      }
+    ```
 
 __________________________________________________________________________________________________________________________________________
 
