@@ -79,6 +79,8 @@
 | 8   | [what is dependencies and devdependencies difference?](#dependencies-devdependencies-difference)                                     |
 | 9   | [what does it mean in package.json (scripts-typecheck)?](#package-json-scripts-typecheck)                                     |
 | 10   | [what does mean extensinos word in your paackage.json?](#extensions-word-package-json)                                     |
+| 11   | [Explain this line ("transpile:clean": "rimraf ./gatsby-*.js ./src/**/*.js") of packages.json scripots configuration?](#transiple-clean-explanation)      |
+
 
 
 # CSS
@@ -622,6 +624,10 @@ ______________
    This option specifies the file extensions that Babel should consider for transpilation
   ![image](https://github.com/vaskoGut/Learning/assets/7413864/256915d9-4291-4530-a875-9327c57cbc74)
 
+______________
+
+ 11. ###  transiple-clean-explanation
+   This line cleans all transpile files inside chooden folders, to make sure project runs properly and without transpilesd files leftovers.
   
  ________________________________________________________________________________________________________________________________
 
