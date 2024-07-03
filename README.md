@@ -285,7 +285,7 @@ ________________________________________________________________________________
      s.split('~')
     ``
 3. ### previous-state-example
-    Count example:
+    Count example (to get previous state we need to put callback function):
     ![image](https://github.com/vaskoGut/Learning/assets/7413864/5d05d3e0-9ac9-4032-a425-940e49c9b27d)
 
 4. ### spread-object-kay-value
