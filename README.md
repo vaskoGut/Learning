@@ -26,6 +26,8 @@
 | 3  | [Previoius state exampe?](#previous-state-example)                                     |
 | 4  | [Spread object with new key value?](#spread-object-kay-value)                                     |
 | 5  | [How to  fix this infinite rendering problem in provided example?](#infinite-rendering)                                     |
+| 6  | [How recursion works in javascript?](#recursion-javascript)                                     |
+
 
 # React
 | Nm | #Question   |
@@ -296,6 +298,10 @@ ________________________________________________________________________________
 5. ### infinite-rendering
     ![image](https://github.com/vaskoGut/Learning/assets/7413864/b5fd215f-ac97-422d-9f8e-0dc9b8a19805)
     Answer -setCounter should be used out of useEffect here to prevent infinite rendering problem.
+
+6. ### recursion-javascript
+   ![image](https://github.com/vaskoGut/Learning/assets/7413864/8111159a-b481-405b-8613-fa1bfd39761f)
+   ![image](https://github.com/vaskoGut/Learning/assets/7413864/9e6b69bf-da64-4603-8ff6-955c0c4c3881)
 
     
      
