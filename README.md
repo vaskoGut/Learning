@@ -68,6 +68,12 @@
 | 34   | [Provide example of using event listener in react?](#event-listener)                                     |
 | 35   | [What is wrong with too many useEffect?](#too-many-useeffect-explain)                                     |
 
+# GATSBY.JS
+| Nm | #Question   |
+| :---:   | :---: |
+| 1   | [What is gatsby.js?](#gatsby-framework)                                     |
+
+
 # Other
 | Nm | #Question   |
 | :---:   | :---: |
@@ -82,7 +88,6 @@
 | 9   | [what does it mean in package.json (scripts-typecheck)?](#package-json-scripts-typecheck)                                     |
 | 10   | [what does mean extensinos word in your paackage.json?](#extensions-word-package-json)                                     |
 | 11   | [Explain this line ("transpile:clean": "rimraf ./gatsby-*.js ./src/**/*.js") of packages.json scripots configuration?](#transiple-clean-explanation)      |
-
 
 
 # CSS
@@ -716,3 +721,10 @@ How to pass data from child to parent:
 ![image](https://github.com/vaskoGut/Learning/assets/7413864/ab1fb73e-d2b6-4396-a542-38fa3299f136)
 
 //////
+
+
+________________________________________________________________________________________________________________________________
+
+ 1. ### gatsby-framework
+ 
+ Gatsby.js is framework - used to generate static pages during build. Main feautres of gatsby.js: - it's based on React.js - it used Graphql to plull data nad structure it.
