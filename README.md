@@ -643,7 +643,7 @@ ______________
 ______________
 
  12. ###  markdown-explanation
-    Markdown - markup language used to add formatting for your text ( healdlines, lists etc. )
+  Markdown - markup language used to add formatting for your text ( healdlines, lists etc. )
   
  ________________________________________________________________________________________________________________________________
 
