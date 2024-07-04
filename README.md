@@ -88,7 +88,7 @@
 | 9   | [what does it mean in package.json (scripts-typecheck)?](#package-json-scripts-typecheck)                                     |
 | 10   | [what does mean extensinos word in your paackage.json?](#extensions-word-package-json)                                     |
 | 11   | [Explain this line ("transpile:clean": "rimraf ./gatsby-*.js ./src/**/*.js") of packages.json scripots configuration?](#transiple-clean-explanation)      |
-
+| 12   | [What is markdown?](#markdown-explanation)      |
 
 # CSS
 | Nm | #Question   |
@@ -639,6 +639,11 @@ ______________
 
  11. ###  transiple-clean-explanation
    This line cleans all transpile files inside chooden folders, to make sure project runs properly and without transpilesd files leftovers.
+
+______________
+
+ 12. ###  markdown-explanation
+    Markdown - markup language used to add formatting for your text ( healdlines, lists etc. )
   
  ________________________________________________________________________________________________________________________________
 
