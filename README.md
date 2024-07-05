@@ -744,4 +744,4 @@ ________________________________________________________________________________
 
 # GIT, DEPLOYMENT, PIPELINES
  1. ### continuos-deployment
- Continuos deployment - software development practice where code changes are automatically deployed to a production envrionment after passing predefined testing and qualisty assurance stages. It helps to reduce manual intervention and to ensure new code (feats, fixes etc) are delivered to users as quickly as possible.
+ Continuos deployment - software development practice where code changes are automatically deployed to a production envrionment after passing predefined testing and qualisty assurance stages. It helps to reduce manual intervention and to ensure new code (feats, fixes etc) are delivered to users as quickly as possible. You can configure it in netlify for example.
