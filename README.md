@@ -99,6 +99,12 @@
 | 4   | [What are possible values of position property? ](#position-property)                                     |
 | 5   | [What are types of selectors in css? ](#selectors-css)                                     |
 
+
+# GIT, DEPLOYMENT, PIPELINES
+| Nm | #Question   |
+| :---:   | :---: |
+| 1   | [What is continuos deployment  ( what is continues deployment)? ](#continuos-deployment)                                     |
+
 1. ### what is difference between let const var
    **Var** - scope is global or function ( if var's used inside function ).
    Let, const - they have block scope.
@@ -733,3 +739,9 @@ ________________________________________________________________________________
  1. ### gatsby-framework
  
  Gatsby.js is framework - used to generate static pages during build. Main feautres of gatsby.js: - it's based on React.js - it used Graphql to plull data nad structure it.
+
+________________________________________________________________________________________________________________________________
+
+# GIT, DEPLOYMENT, PIPELINES
+ 1. ### continuos-deployment
+ Continuos deployment - software development practice where code changes are automatically deployed to a production envrionment after passing predefined testing and qualisty assurance stages. It helps to reduce manual intervention and to ensure new code (feats, fixes etc) are delivered to users as quickly as possible.
