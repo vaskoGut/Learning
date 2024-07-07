@@ -19,6 +19,8 @@
 | 15   | [what is 3rd stringify parameter?](#stringify-3rd-parameter)                                     |
 | 16   | [what is difference between try block - catch/finally ?](#try-catch-finally)                                     |
 | 17   | [what will be result of displaying this inside arrow function ?](#arrow-function)                                     |
+| 18   | [what is object assign ?](#object-assign)                                     |
+
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -286,6 +288,18 @@
 
     This inside arrow function is referenced, pointed to the global object. We normal function declaration - it points to the inner scope.
 
+  18. ### object-assign
+
+    Object assign method is used to clone or copy proeperties from 1 object to another.
+    const obj = { a: 1 };
+    const copy = Object.assign({}, obj);
+    console.log(copy); // { a: 1 }
+
+    You can add 1 target object, and 2 source objects like that:
+    
+    Object.assign({}, product, {
+      votes: product.votes + 1,
+    });
 __________________________________________________________________________________________________________________________________________
 
 # Exercises Javascript Typescript
