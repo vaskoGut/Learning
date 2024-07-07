@@ -180,7 +180,7 @@
       Here more:  https://blog.logrocket.com/typescript-enums-vs-types/
 
   5. ### map-foreach-difference
-      **Map** return array. But doesn't modify initial array.
+      **Map** return NEW array. It doesn't modify initial array.
       **ForEach** doesn't return array. But runs function for each element of array. Foreach returns original array.
 
   6. ### this-meaning
