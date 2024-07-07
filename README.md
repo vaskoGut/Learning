@@ -1,4 +1,5 @@
 
+# JAVASCRIPT
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [Difference let const var](#what-is-difference-between-let-const-var)                                     |
@@ -17,6 +18,7 @@
 | 14   | [How to make array from collections js?](#collection-js-array)                                     |
 | 15   | [what is 3rd stringify parameter?](#stringify-3rd-parameter)                                     |
 | 16   | [what is difference between try block - catch/finally ?](#try-catch-finally)                                     |
+| 17   | [what will be result of displaying this inside arrow function ?](#arrow-function)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -279,6 +281,10 @@
         // codes that gets executed anyway
       }
     ```
+
+  17. ### arrow-function
+
+    This inside arrow function is referenced, pointed to the global object. We normal function declaration - it points to the inner scope.
 
 __________________________________________________________________________________________________________________________________________
 
