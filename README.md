@@ -20,7 +20,7 @@
 | 16   | [what is difference between try block - catch/finally ?](#try-catch-finally)                                     |
 | 17   | [what will be result of displaying this inside arrow function ?](#arrow-function)                                     |
 | 18   | [what is object assign ?](#object-assign)                                     |
-
+| 19   | [How does owrk object create? ?](#object-create)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -300,6 +300,34 @@
     Object.assign({}, product, {
       votes: product.votes + 1,
     });
+
+   19. ### object-create
+       
+      With help of Object.create we can create an object from a given prototype object. It retrns a new object with the prototype set to given object. 
+
+      ```javascript
+        const myPrototype = {
+          size: 'large',
+          getSize() {
+            return this.size;
+          }
+        };
+
+
+        const myObject = Object.create(myPrototype);
+        console.log(myObject.getSize()); // 'large'
+      ```
+
+      It can also be used Object.create to create subobject, which inherits properties and methods from their parent objects.
+
+       ```javascript
+            const mySubObject = Object.create(myObject, { 
+            color: { value: 'red' } 
+        });
+      ```
+      console.log(mySubObject.getSize()); // 'large' 
+      console.log(mySubObject.color); // 'red'
+   
 __________________________________________________________________________________________________________________________________________
 
 # Exercises Javascript Typescript
