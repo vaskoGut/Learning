@@ -9,7 +9,7 @@
 | 5   | [Difference between map and forEach ](#map-foreach-difference)                                                                             |
 | 6   | [What is this in js? Can you change value of this? What is this alone, inside object, inside event handler, inside function? What is for are used call,apply methods?](#this-meaning)                                                                             |
 | 7  | [Is setTimeOut async?](#settimeout-async)                                                                             |
-| 8  | [What is Promise? Example of promise? What status promis returns? Is promise aycnronious? Name wayss of handling promises.](#example-promise)                                                                             |
+| 8  | [What is Promise? Example of promise? What status promis returns? Is promise aycnronious? Name wayss of handling promises. What is promise all?](#example-promise)                                                                             |
 | 9  | [What is Closure? Please provide examples. If variable is declared without keyword, is it global?](#closure-explanation)                                                                             |
 | 10  | [What is differene between sppread and rest operator - name practical examples?](#rest-spread-operator-difference)                                                                             |
 | 11  | [What are sets? Example.](#set-object)                                                                             |
@@ -225,6 +225,18 @@
           }
         }
         ```
+       Promise all (method) takes an array of promises and returns a single promise. The returned promise fullfills if all promises are executed, and noone fails.
+      ```javascript
+        const promise1 = Promise.resolve(3);
+        const promise2 = 42;
+        const promise3 = new Promise((resolve, reject) => {
+          setTimeout(resolve, 100, 'foo');
+        });
+        
+        Promise.all([promise1, promise2, promise3]).then((values) => {
+          console.log(values);
+        });
+       ```
 
   8. ### closure-explanation
         1. If we speak about closure , we need to mention **local** and **global** scope. Functions have its local, private scope. Variables can be global or private - depending where they'are declared.
