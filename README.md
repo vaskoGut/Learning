@@ -129,6 +129,7 @@
        };
        console.log(getRectArea(3, 4));
    ```
+   
    **Functional declaration** - function declared with function keyword. Functional declaration creates binding of new function to a given name.
 
     ```javascript
@@ -137,6 +138,26 @@
        }
        console.log(calcRectArea(5, 6)););
    ```
+
+      ```javascript
+      function print() {
+        console.log(arguments)
+      }
+
+      print(1,2,3,4);
+
+      /*
+        result below:
+        {
+          "0": 1,
+          "1": 2,
+          "2": 3,
+          "3": 4
+        } 
+      */
+   ```
+   Remember arrow function don't have acces to the arguments.
+      
    **Arrow function** - don't have binding to this, arguments, super and shouldn't be used as methods.
    They can't be used as a constructors - we can't call them with new keyword. Cannot be used as generator functions.
 
