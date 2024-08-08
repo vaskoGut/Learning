@@ -157,6 +157,17 @@
       */
    ```
    Remember arrow function don't have acces to the arguments.
+
+   ```javascript
+      const obj = {
+      name: 'deeecode',
+      print: function() {
+        console.log(this)
+      }
+    }
+    obj.print()
+   ```
+   You can't do smth like above with arrow function.
       
    **Arrow function** - don't have binding to this, arguments, super and shouldn't be used as methods.
    They can't be used as a constructors - we can't call them with new keyword. Cannot be used as generator functions.
