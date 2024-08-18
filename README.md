@@ -5,7 +5,7 @@
 | 1   | [Difference let const var](#what-is-difference-between-let-const-var)                                     |
 | 2   | [Difference between arrow function and function declaration, expressions](#arrow-function-explanation)                                                                             |
 | 3   | [What is generator ](#generator-function)                                                                             |
-| 4   | [Types Enums Interface ](#types-enums-interfaces)                                                                             |
+| 4   | [Types Enums Interface. What for are used types? ](#types-enums-interfaces)                                                                             |
 | 5   | [Difference between map and forEach ](#map-foreach-difference)                                                                             |
 | 6   | [What is this in js? Can you change value of this? What is this alone, inside object, inside event handler, inside function? What is for are used call,apply methods?](#this-meaning)                                                                             |
 | 7  | [Is setTimeOut async?](#settimeout-async)                                                                             |
@@ -209,9 +209,18 @@
       Tuples are typed arrays. 
       3. What are  enums? When to use?
          **Enums** are collection of constants
-      5. 
-      6. 
-      Here more:  https://blog.logrocket.com/typescript-enums-vs-types/
+      4. Types is used to type your values, to avoid errors and bugs.
+      Here more:  https://blog.logrocket.com/typescript-enums-vs-types
+      5. Enums example:
+
+      ```javascript
+       enum Names {
+          Vasyl,
+          Yaroslav,
+          Igor
+        }
+        var test = Names.Yaroslav;// 1
+     ```
 
   5. ### map-foreach-difference
       **Map** return NEW array. It doesn't modify initial array.
