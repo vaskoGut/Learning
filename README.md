@@ -206,12 +206,19 @@
       1. What are types, when do we use it? 
        **Types** are definitions of data type. Typescript compiler use it to  detect errors.
       2. What are **Tuples**?  
-      Tuples are typed arrays. 
-      3. What are  enums? When to use?
+      Tuples are typed arrays.
+      3. What are **Unions**?
+         A union type describes a value that can be one of several types.
+          ```javascript
+           function printStatusCode(code: string | number) {
+              console.log(`My status code is ${code}.`)
+            }
+          ```
+      5. What are  enums? When to use?
          **Enums** are collection of constants
-      4. Types is used to type your values, to avoid errors and bugs.
+      6. Types is used to type your values, to avoid errors and bugs.
       Here more:  https://blog.logrocket.com/typescript-enums-vs-types
-      5. Enums example:
+      7. Enums example:
 
       ```javascript
        enum Names {
@@ -221,6 +228,7 @@
         }
         var test = Names.Yaroslav;// 1
      ```
+      6. Interface: An interface is used to define a structure for an object.
 
   5. ### map-foreach-difference
       **Map** return NEW array. It doesn't modify initial array.
