@@ -205,16 +205,19 @@
    4. ### types enums interfaces
       1. What are types, when do we use it? 
        **Types** are definitions of data type. Typescript compiler use it to  detect errors.
-      2. What are **Tuples**?  
+      2. What are **Tuples**? 
+          ```javascript
+            let ourTuple: [number, boolean, string];
+          ``
       Tuples are typed arrays.
-      3. What are **Unions**?
+      4. What are **Unions**?
          A union type describes a value that can be one of several types.
           ```javascript
            function printStatusCode(code: string | number) {
               console.log(`My status code is ${code}.`)
             }
           ```
-      4. An **intersection type** is a type that merges several kinds into one.
+      5. An **intersection type** is a type that merges several kinds into one.
          ```javascript   
           interface Student { 
             student_id: number; 
@@ -253,6 +256,7 @@
         var test = Names.Yaroslav;// 1
      ```
       8. Interface: An interface is used to define a structure for an object.
+
 
   5. ### map-foreach-difference
       **Map** return NEW array. It doesn't modify initial array.
