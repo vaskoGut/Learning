@@ -7,7 +7,7 @@
 | 3   | [What is generator ](#generator-function)                                                                             |
 | 4   | [Types Enums Interface. What for are used types? What is union, intersection? What is intersection types?](#types-enums-interfaces)                                                                             |
 | 5   | [Difference between map and forEach ](#map-foreach-difference)                                                                             |
-| 6   | [What is this in js? Can you change value of this? What is this alone, inside object, inside event handler, inside function? What is for are used call,apply methods?](#this-meaning)                                                                             |
+| 6   | [What is this in js? Can you change value of this? What is this alone, inside object, inside event handler, inside function? What is for are used call,apply methods? If yout type this in console - what will you get?](#this-meaning)                                                                             |
 | 7  | [Is setTimeOut async?](#settimeout-async)                                                                             |
 | 8  | [What is Promise? Example of promise? What status promis returns? Is promise aycnronious? Name wayss of handling promises. What is promise all?](#example-promise)                                                                             |
 | 9  | [What is Closure? Please provide examples. If variable is declared without keyword, is it global?](#closure-explanation)                                                                             |
@@ -268,6 +268,7 @@
        2. You can't change this value.
        3. ALone **this** refers to the global object.  INside function - this refers to the global object also. In event handlers this refers to the hTML object.
        4. Call and apply methods are used to call 1 object method on another object as argument
+       5. If yout type this in console, you will get Window object.
     
   7. ### settimeout-async
         Yes setTimeout is async
