@@ -267,8 +267,13 @@
        1. This is keyword. It refers to different objects depending on how and where it used.
        2. You can't change this value.
        3. ALone **this** refers to the global object.  INside function - this refers to the global object also. In event handlers this refers to the hTML object.
+        ```javascript
+          function dotest() {
+              console.log(this); // here we'll get Windows object
+          }
+        ``` 
        4. Call and apply methods are used to call 1 object method on another object as argument
-       5. If yout type this in console, you will get Window object.
+       6. If yout type this in console, you will get Window object.
     
   7. ### settimeout-async
         Yes setTimeout is async
