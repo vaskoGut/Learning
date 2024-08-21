@@ -169,10 +169,35 @@
    ```
    You can't do smth like above with arrow function.
       
-   **Arrow function** - don't have binding to this, arguments, super and shouldn't be used as methods.
+   **Arrow function** - don't have binding to this ( in inherits this from outside look code example below), arguments, super and shouldn't be used as methods.
    They can't be used as a constructors - we can't call them with new keyword. Cannot be used as generator functions.
 
- 3. ### Generator function
+   Explain next examples:
+   ```javascript
+     function Person() {
+      this.age = 0;
+  
+      setInterval(() => {
+          this.age++; // `this` refers to the `Person` instance
+          console.log(this.age); // Correctly logs the incremented age
+      }, 1000);
+    }
+
+   let p = new Person();
+  ```
+  ```javascript
+    function Person() {
+      this.age = 0;
+  
+      setInterval(function() {
+          this.age++; // `this` refers to the global object or `undefined` in strict mode
+          console.log(this.age); // NaN or throws error in strict mode
+      }, 1000);
+    }
+    let p = new Person();
+  ```
+
+ 4. ### Generator function
     **Generator**  is a process that can be paused and resumed and can yield multiple values. Generator returns iterable Geneartor object.
        ```javascript
          function* generator(i) {
@@ -202,7 +227,7 @@
            done  // boolean indicating if iteration is finished 
          }
        ```
-   4. ### types enums interfaces
+   5. ### types enums interfaces
       1. What are types, when do we use it? 
        **Types** are definitions of data type. Typescript compiler use it to  detect errors.
       2. What are **Tuples**? 
