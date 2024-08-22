@@ -313,6 +313,16 @@
 
         **then catch**:
         ```javascript
+          const doPromise = () => {
+              new Promise((resolve, reject) => {
+                  resolve({result: 5 });
+              }).then((data) => console.log(data));
+          }
+          
+          doPromise();
+        ```
+
+        ```javascript
           Promise.then(() => datafetch).then(result => result).catch(()=>'error fetching data')
         ```
         **asyn await try catch**
