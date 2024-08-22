@@ -9,7 +9,7 @@
 | 5   | [Difference between map and forEach ](#map-foreach-difference)                                                                             |
 | 6   | [What is this in js? Can you change value of this? What is this alone, inside object, inside event handler, inside function? What is for are used call,apply methods? If yout type this in console - what will you get?](#this-meaning)                                                                             |
 | 7  | [Is setTimeOut async?](#settimeout-async)                                                                             |
-| 8  | [What is Promise? Example of promise? What status promis returns? Is promise aycnronious? Name wayss of handling promises. What is promise all?](#example-promise)                                                                             |
+| 8  | [What is Promise? Example of promise? What status promis returns? Is promise aycnronious? Name wayss of handling promises. What is promise all? Make a simple example of promise and promise.all](#example-promise)                                                                             |
 | 9  | [What is Closure? Please provide examples. If variable is declared without keyword, is it global?](#closure-explanation)                                                                             |
 | 10  | [What is differene between sppread and rest operator - name practical examples?](#rest-spread-operator-difference)                                                                             |
 | 11  | [What are sets? Example.](#set-object)                                                                             |
