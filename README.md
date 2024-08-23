@@ -112,15 +112,16 @@
 1. ### what is difference between let const var
    **Var** - scope is global or function ( if var's used inside function ).
    Let, const - they have block scope.
-   
-   if(true) {
-     let test = 'test'; // test variable is available only inside if block
-   }
- 
+
+   ```javascript
+     if(true) {
+       let test = 'test'; // test variable is available only inside if block
+     }
+   ```
    **Let** - can be reasigned.
    **Const** - can't be reasigned.
    
-2. ### arrow function explanation
+1. ### arrow function explanation
    **Functional expression** - function defined inside an expression. Example:
 
     ```javascript
