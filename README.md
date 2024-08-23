@@ -6,7 +6,7 @@
 | 2   | [Difference between arrow function and function declaration, expressions](#arrow-function-explanation)                                                                             |
 | 3   | [What is generator ](#generator-function)                                                                             |
 | 4   | [Types Enums Interface. What for are used types? What is union, intersection? What is intersection types?](#types-enums-interfaces)                                                                             |
-| 5   | [Difference between map and forEach ](#map-foreach-difference)                                                                             |
+| 5   | [Difference between map and forEach. Does filter, slice methods create new array or mutationg source? ](#map-foreach-difference)                                                                             |
 | 6   | [What is this in js? Can you change value of this? What is this alone, inside object, inside event handler, inside function? What is for are used call,apply methods? If yout type this in console - what will you get?](#this-meaning)                                                                             |
 | 7  | [Is setTimeOut async?](#settimeout-async)                                                                             |
 | 8  | [What is Promise? Example of promise? What status promis returns? Is promise aycnronious? Name wayss of handling promises. What is promise all? Make a simple example of promise and promise.all](#example-promise)                                                                             |
@@ -287,8 +287,9 @@
   5. ### map-foreach-difference
       **Map** return NEW array. It doesn't modify initial array.
       **ForEach** doesn't return array. But runs function for each element of array. Foreach returns original array.
+      **Filter, slice** returns new array. They dont mutate initial array.
 
-  6. ### this-meaning
+  7. ### this-meaning
 
        1. This is keyword. It refers to different objects depending on how and where it used.
        2. You can't change this value.
@@ -301,10 +302,10 @@
        4. Call and apply methods are used to call 1 object method on another object as argument
        6. If yout type this in console, you will get Window object.
     
-  7. ### settimeout-async
+  8. ### settimeout-async
         Yes setTimeout is async
 
-  8. ### example-promise
+  9. ### example-promise
         Promise object represents eventual completion or failure of asynchronous function. Whenever tasks should be executed asynchronouslo. Promisess are used.
         Example login function:
         ![image](https://github.com/vaskoGut/Learning/assets/7413864/e627bed4-169b-4366-9de8-2fa87aabbd8c)
@@ -357,7 +358,7 @@
         });
        ```
 
-  9. ### closure-explanation
+  10. ### closure-explanation
         1. If we speak about closure , we need to mention **local** and **global** scope. Functions have its local, private scope. Variables can be global or private - depending where they'are declared.
         2. if variable is declared without keyword, it is global. Even if it's declared inside the function.
 
@@ -369,7 +370,7 @@
           console.log(test); // 5
         ```
     
- 10. ### rest-spread-operator-difference
+ 11. ### rest-spread-operator-difference
       1. You can use spread operator to merge 2 objects,or 2 arrays. In React you can use spread operator to pass properties to the component:
           ```javascript
            const props = {firstName: 'John', lastName: 'Doe'};
@@ -382,7 +383,7 @@
             console.log(rest); // {b: 2, c: 3}
           ```
 
-   11. ### set-object
+   12. ### set-object
       1. Set object allows you to store any unique value:
      
           ```javascript
