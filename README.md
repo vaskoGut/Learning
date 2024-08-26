@@ -318,7 +318,10 @@
           const doPromise = () => {
               new Promise((resolve, reject) => {
                   resolve({result: 5 });
-              }).then((data) => console.log(data));
+              }).then((data) => console.log(data))
+              .catch((error) => {
+                console.error('Promise rejected with error: ' + error);
+              });;
           }
           
           doPromise();
@@ -327,6 +330,8 @@
         ```javascript
           Promise.then(() => datafetch).then(result => result).catch(()=>'error fetching data')
         ```
+
+        
         **asyn await try catch**
        ```javascript
         async function main() {
