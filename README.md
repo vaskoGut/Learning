@@ -235,7 +235,7 @@
           ```javascript
             let ourTuple: [number, boolean, string];
           ``
-      Tuples are typed arrays.
+      Tuples are typed arrays
       4. What are **Unions**?
          A union type describes a value that can be one of several types.
           ```javascript
@@ -375,18 +375,49 @@
           console.log(test); // 5
         ```
     
- 11. ### rest-spread-operator-difference
-      1. You can use spread operator to merge 2 objects,or 2 arrays. In React you can use spread operator to pass properties to the component:
+ 10. ### rest-spread-operator-difference
+      1. ***Spread*** operator is mostly used with arrays. It's used to efficientl merge, cop arrays, pass elements to functions.
+         
+         You can use spread operator to merge 2 objects,or 2 arrays. In React you can use spread operator to pass properties to the component:
           ```javascript
            const props = {firstName: 'John', lastName: 'Doe'};
             const component = <UserComponent {...props} />;
           ```
+         Example of copying array with spread operator:
+         ```javascript
+           const arr = [1,2,3];
+           const copyArr = [...arr]
+         ```
+         Example of merging 2 objects:
+         ```javascript
+           const nameObject = { name: 'John' };
+           const surnameObject = { surname: 'Cool' };
+           const mergedObject = { ...nameObject, ...surnameObject };
+          ```
+          Example passing arguments to functions:
+           ```javascript
+           function sum(a, b, c) {
+              return a + b + c;
+            }
+          
+            const nums = [1, 2, 3];
+             const result = sum(...nums);
+            console.log("Result of sum:", result); // 6
+           ```
 
-          **rest** operator can be used to extract the remaining properties.
+          **rest** operator can be used to extract the remaining properties. WHile spread operator used to exapand elements, rest operator used to condense elements into a single enti
           ```javascript
              const {a, ...rest} = {a: 1, b: 2, c: 3};
             console.log(rest); // {b: 2, c: 3}
           ```
+
+           It helps to get all arguments into an one array named numbers:
+          ```javascript
+          function sum(...numbers) {
+              return numbers.reduce((total, num) => total + num, 0);
+          }
+           ```
+
 
    12. ### set-object
       1. Set object allows you to store any unique value:
