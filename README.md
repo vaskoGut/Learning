@@ -198,7 +198,7 @@
     let p = new Person();
   ```
 
- 4. ### Generator function
+ 3. ### Generator function
     **Generator**  is a process that can be paused and resumed and can yield multiple values. Generator returns iterable Geneartor object.
        ```javascript
          function* generator(i) {
@@ -228,7 +228,7 @@
            done  // boolean indicating if iteration is finished 
          }
        ```
-   5. ### types enums interfaces
+   4. ### types enums interfaces
       1. What are types, when do we use it? 
        **Types** are definitions of data type. Typescript compiler use it to  detect errors.
       2. What are **Tuples**? 
@@ -289,7 +289,7 @@
       **ForEach** doesn't return array. But runs function for each element of array. Foreach returns original array.
       **Filter, slice** returns new array. They dont mutate initial array.
 
-  7. ### this-meaning
+  6. ### this-meaning
 
        1. This is keyword. It refers to different objects depending on how and where it used.
        2. You can't change this value.
@@ -302,10 +302,10 @@
        4. Call and apply methods are used to call 1 object method on another object as argument
        6. If yout type this in console, you will get Window object.
     
-  8. ### settimeout-async
+  7. ### settimeout-async
         Yes setTimeout is async
 
-  9. ### example-promise
+  8. ### example-promise
         Promise object represents eventual completion or failure of asynchronous function. Whenever tasks should be executed asynchronouslo. Promisess are used.
         Example login function:
         ![image](https://github.com/vaskoGut/Learning/assets/7413864/e627bed4-169b-4366-9de8-2fa87aabbd8c)
@@ -363,7 +363,7 @@
         });
        ```
 
-  10. ### closure-explanation
+  9. ### closure-explanation
         1. If we speak about closure , we need to mention **local** and **global** scope. Functions have its local, private scope. Variables can be global or private - depending where they'are declared.
         2. if variable is declared without keyword, it is global. Even if it's declared inside the function.
 
