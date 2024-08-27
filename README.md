@@ -165,8 +165,8 @@
       print: function() {
         console.log(this)
       }
-    }
-      obj.print() // {name: 'deeecode', print: ƒ}
+     }
+     obj.print() // {name: 'deeecode', print: ƒ}
    ```
    You can't do smth like above with arrow function.
       
