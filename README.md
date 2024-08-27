@@ -283,7 +283,7 @@
         var test = Names.Yaroslav;// 1
       ```
 
-    9. Interface: An interface is used to define a structure for an object.
+      9. Interface: An interface is used to define a structure for an object.
 
 
   5. ### map-foreach-difference
