@@ -166,7 +166,7 @@
         console.log(this)
       }
     }
-    obj.print()
+      obj.print() // {name: 'deeecode', print: ƒ}
    ```
    You can't do smth like above with arrow function.
       
