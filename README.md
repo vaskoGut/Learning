@@ -186,6 +186,7 @@
 
    let p = new Person();
   ```
+
   ```javascript
     function Person() {
       this.age = 0;
