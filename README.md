@@ -418,6 +418,13 @@
           }
            ```
 
+          ```javascript
+            function printNumbers(...numbers) {
+                console.log(numbers); //
+            }
+`            
+            printNumbers(1,2,3,4,5); // [1,2,3,4,5] 
+          ```
 
    12. ### set-object
       1. Set object allows you to store any unique value:
