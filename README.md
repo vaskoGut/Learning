@@ -175,29 +175,29 @@
 
    Explain next examples:
    ```javascript
-     function Person() {
-      this.age = 0;
+       function Person() {
+        this.age = 0;
+    
+        setInterval(() => {
+            this.age++; // `this` refers to the `Person` instance
+            console.log(this.age); // Correctly logs the incremented age
+        }, 1000);
+      }
   
-      setInterval(() => {
-          this.age++; // `this` refers to the `Person` instance
-          console.log(this.age); // Correctly logs the incremented age
-      }, 1000);
-    }
+     let p = new Person();
+    ```
 
-   let p = new Person();
-  ```
-
-  ```javascript
-    function Person() {
-      this.age = 0;
-  
-      setInterval(function() {
-          this.age++; // `this` refers to the global object or `undefined` in strict mode
-          console.log(this.age); // NaN or throws error in strict mode
-      }, 1000);
-    }
-    let p = new Person();
-  ```
+    ```javascript
+      function Person() {
+        this.age = 0;
+    
+        setInterval(function() {
+            this.age++; // `this` refers to the global object or `undefined` in strict mode
+            console.log(this.age); // NaN or throws error in strict mode
+        }, 1000);
+      }
+      let p = new Person();
+    ```
 
  3. ### Generator function
     **Generator**  is a process that can be paused and resumed and can yield multiple values. Generator returns iterable Geneartor object.
