@@ -113,11 +113,11 @@
    **Var** - scope is global or function ( if var's used inside function ).
    Let, const - they have block scope.
 
-   ```javascript
+    ```javascript
      if(true) {
        let test = 'test'; // test variable is available only inside if block
      }
-   ```
+    ```
    **Let** - can be reasigned.
    **Const** - can't be reasigned.
    
@@ -129,7 +129,7 @@
         return width * height;
        };
        console.log(getRectArea(3, 4));
-   ```
+    ```
    
    **Functional declaration** - function declared with function keyword. Functional declaration creates binding of new function to a given name.
 
@@ -138,9 +138,9 @@
           return width * height;
        }
        console.log(calcRectArea(5, 6)););
-   ```
+    ```
 
-      ```javascript
+    ```javascript
       function print() {
         console.log(arguments)
       }
@@ -156,10 +156,10 @@
           "3": 4
         } 
       */
-   ```
+    ```
    Remember arrow function don't have acces to the arguments.
 
-   ```javascript
+    ```javascript
       const obj = {
       name: 'deeecode',
       print: function() {
@@ -167,7 +167,7 @@
       }
      }
      obj.print() // {name: 'deeecode', print: ƒ}
-   ```
+    ```
    You can't do smth like above with arrow function.
       
    **Arrow function** - don't have binding to this ( in inherits this from outside look code example below), arguments, super and shouldn't be used as methods.
