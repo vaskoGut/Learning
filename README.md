@@ -274,15 +274,15 @@
       Here more:  https://blog.logrocket.com/typescript-enums-vs-types
       8. Enums example:
 
-      ```javascript
+    ```javascript
        enum Names {
           Vasyl,
           Yaroslav,
           Igor
         }
         var test = Names.Yaroslav;// 1
-     ```
-      8. Interface: An interface is used to define a structure for an object.
+    ```
+      9. Interface: An interface is used to define a structure for an object.
 
 
   5. ### map-foreach-difference
