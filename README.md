@@ -12,7 +12,7 @@
 | 8  | [What is Promise? Example of promise? What status promis returns? Is promise aycnronious? Name wayss of handling promises. What is promise all? Make a simple example of promise and promise.all](#example-promise)                                                                             |
 | 9  | [What is Closure? Please provide examples. If variable is declared without keyword, is it global?](#closure-explanation)                                                                             |
 | 10  | [What is differene between sppread and rest operator - name practical examples?](#rest-spread-operator-difference)                                                                             |
-| 11  | [What are sets? Example.](#set-object)                                                                             |
+| 11  | [What are sets? How to convert Set type to the array? Example.](#set-object)                                                                             |
 | 12  | [Why using try catch wrapper  instead just async await?](#try-catch)                                                                             |
 | 13  | types and interfaces diff?](#type-interface-diff)                                                                             |
 | 14   | [How to make array from collections js?](#collection-js-array)                                     |
@@ -429,10 +429,16 @@
           ```
 
    12. ### set-object
-      1. Set object allows you to store any unique value:
+      1. Ses are collections of unique values:
      
           ```javascript
-             const a = new Set([1, 2, 3]);
+             const testArr = [1, 2, 1, 1];
+             console.log(testArr); // { 0:1, 1:2 }
+          ```
+
+          if you want to convert it to the arr:
+          ```javascript
+            console.log([...setValue]);
           ```
     
     Set Object provides:
