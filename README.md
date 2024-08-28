@@ -81,7 +81,7 @@
 # Other
 | Nm | #Question   |
 | :---:   | :---: |
-| 1   | [Monorepo and polyrepo difference](#monorepo-and-polyrepo-difference)                                     |
+| 1   | [Monorepo and polyrepo (microservices) difference, advantages, disadvantages](#monorepo-and-polyrepo-difference)                                     |
 | 2   | [What is webhooks?](#what-is-webhooks)                                     | 
 | 3   | [What is babel?](#what-is-babel)                                     |
 | 4   | [What is time complexity? Please provide examples](#time-complexity-space-complexity)                                     |  
@@ -781,7 +781,7 @@ ________________________________________________________________________________
     - problem when you want to share code betweend different repos;
     - problems with compability of third party libraries;
     - time consuming configuration of each repo and synchronizing it.
-    - if each team works only on 1 repo, code can be repeated etc;
+    - if each team works only on 1 repo, code can be repeated etc; its easier to standartize work of teams.
     - if we have some share repo, library and you need to make change, it should be tested change for reach repo.
     - each repo can have different settings tools
     - it can be problem to use projects like that.
@@ -791,7 +791,13 @@ ________________________________________________________________________________
     - it's better developer mobility and performance while working on monorepoy
     - all projects inside monorepo using same versions of thirls party libraries;
     - atomic commits - you dont need different projects, apps dependency after each commit, change
-  
+
+    Advantages of microfrontends ( polyrepo ):
+    ![MicroServicesIamge](https://github.com/user-attachments/assets/e5049a98-d0cb-4fdd-a965-48f63f4456fe)
+    1. Independence and autonomy - teams can work on different parts of the frontend without interfering each other. Each team can use its own stack, library, deployment pipelines.
+    2. Technology diversity - freedom to choose any technology.
+    3. Resilience and fault isolation - if one micro fails, it doesn't bring down the entire application.
+    4. Its easeier to maintain test and refactor distinct micro frontend.
    
 ![image](https://github.com/vaskoGut/Learning/assets/7413864/877fa3c9-bce1-48ef-9b1a-7c0db0cece9d)
 
