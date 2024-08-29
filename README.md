@@ -14,7 +14,7 @@
 | 10  | [What is differene between sppread and rest operator - name practical examples?](#rest-spread-operator-difference)                                                                             |
 | 11  | [What are sets? How to convert Set type to the array? Example.](#set-object)                                                                             |
 | 12  | [Why using try catch wrapper  instead just async await?](#try-catch)                                                                             |
-| 13  | types and interfaces diff?](#type-interface-diff)                                                                             |
+| 13  | [types and interfaces diff?](#type-interface-diff)                                                                             |
 | 14   | [How to make array from collections js?](#collection-js-array)                                     |
 | 15   | [what is 3rd stringify parameter?](#stringify-3rd-parameter)                                     |
 | 16   | [what is difference between try block - catch/finally ?](#try-catch-finally)                                     |
