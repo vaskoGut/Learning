@@ -448,7 +448,7 @@
     A keys() method that returns an iterator of the elements in the set.
           
   12. ### try-catch
-      Wraps code that can fail and pass errortothe catch instead of crashing the app.
+      Wraps code that can fail and pass error to the catch instead of crashing the app.
   
   13. ### type-interface-diff
       Types in TypeScript are more flexible and can define primitive, intersection, union, tuple, or different types of data, while interfaces are used to describe the shape of an object
