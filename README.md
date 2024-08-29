@@ -428,7 +428,7 @@
             printNumbers(1,2,3,4,5); // [1,2,3,4,5] 
           ```
 
-   12. ### set-object
+   11. ### set-object
       1. Ses are collections of unique values:
      
           ```javascript
