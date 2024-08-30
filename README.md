@@ -474,6 +474,15 @@
       finally() {
         // codes that gets executed anyway
       }
+
+      Example:
+      openMyFile();
+      try {
+        // tie up a resource
+        writeMyFile(theData);
+      } finally {
+        closeMyFile(); // always close the resource
+      }
     ```
 
   17. ### arrow-function
