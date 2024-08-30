@@ -489,6 +489,25 @@
 
     This inside arrow function is referenced, pointed to the global object. We normal function declaration - it points to the inner scope.
 
+    ```javascript
+      function RegularFunction() {
+      this.value = 10;
+        setTimeout(function () {
+          console.log(this.value); // undefined, because `this` refers to the global object or is undefined in strict mode
+        }, 100);
+      }
+      
+      function ArrowFunction() {
+        this.value = 20;
+        setTimeout(() => {
+          console.log(this.value); // 20, because `this` is inherited from ArrowFunction's scope
+        }, 100);
+      }
+  
+      new RegularFunction(); // Logs: undefined
+      new ArrowFunction();   // Logs: 20
+    ```
+
   18. ### object-assign
 
     Object assign method is used to clone or copy proeperties from 1 object to another.
