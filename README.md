@@ -461,7 +461,7 @@
        Array.from(yourObjectCollection)
        ```
 
-   15. ### stringify-3rd-parametes
+   15. ### stringify-3rd-parameter
      it adds additional spacing
 
    16. ### try-catch-finally
