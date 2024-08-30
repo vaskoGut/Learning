@@ -17,7 +17,7 @@
 | 13  | [types and interfaces diff?](#type-interface-diff)                                                                             |
 | 14   | [How to make array from collections js?](#collection-js-array)                                     |
 | 15   | [what is 3rd stringify parameter?](#stringify-3rd-parameter)                                     |
-| 16   | [what is difference between try block - catch/finally ?](#try-catch-finally)                                     |
+| 16   | [what is difference between try block - catch/finally? Please provide an example](#try-catch-finally)                                     |
 | 17   | [what will be result of displaying this inside arrow function ?](#arrow-function)                                     |
 | 18   | [what is object assign ?](#object-assign)                                     |
 | 19   | [How does owrk object create? ?](#object-create)                                     |
