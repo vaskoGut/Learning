@@ -493,7 +493,7 @@
       function RegularFunction() {
       this.value = 10;
         setTimeout(function () {
-          console.log(this.value); // undefined, because `this` refers to the global object or is undefined in strict mode
+          console.log(this.value); // undefined, because `this` refers to the global object or is undefined in strict mode. It should be remembered that for example in chrome, it can console 10 instead of undefined ( it's connected with specific chrome console aspects ).
         }, 100);
       }
       
