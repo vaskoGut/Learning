@@ -511,15 +511,18 @@
   18. ### object-assign
 
     Object assign method is used to clone or copy proeperties from 1 object to another.
-    const obj = { a: 1 };
-    const copy = Object.assign({}, obj);
-    console.log(copy); // { a: 1 }
 
-    You can add 1 target object, and 2 source objects like that:
-    
-    Object.assign({}, product, {
-      votes: product.votes + 1,
-    });
+    ```javascript
+      const obj = { a: 1 };
+      const copy = Object.assign({}, obj);
+      console.log(copy); // { a: 1 }
+  
+      You can add 1 target object, and 2 source objects like that:
+      
+      Object.assign({}, product, {
+        votes: product.votes + 1,
+      });
+    ```
 
    19. ### object-create
        
