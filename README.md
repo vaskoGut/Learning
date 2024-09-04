@@ -430,8 +430,8 @@
 
         ```javascript
           const testArr = [1, 2, 1, 1];
-           const newSet = new Set(testArr);
-           console.log(testArr); // { 0:1, 1:2 }
+          const newSet = new Set(testArr);
+          console.log(testArr); // { 0:1, 1:2 }
         ```
           
   13. ### try-catch
