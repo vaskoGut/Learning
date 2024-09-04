@@ -426,19 +426,14 @@
         ```
 
    11. ### set-object
-      
-  1. Set are collections of unique values:
+        Set are collections of unique values:
      
-          ```javascript
              const testArr = [1, 2, 1, 1];
              const newSet = new Set(testArr);
              console.log(testArr); // { 0:1, 1:2 }
-          ```
 
           if you want to convert it to the arr:
-          ```javascript
             console.log([...setValue]);
-          ```
     
     Set Object provides:
     A size property that contains a number.
