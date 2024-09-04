@@ -427,19 +427,7 @@
 
    11. ### set-object
         Set are collections of unique values:
-     
-             const testArr = [1, 2, 1, 1];
-             const newSet = new Set(testArr);
-             console.log(testArr); // { 0:1, 1:2 }
 
-          if you want to convert it to the arr:
-            console.log([...setValue]);
-          ```
-    
-          Set Object provides:
-          A size property that contains a number.
-          A has() method that takes an element and returns a boolean.
-          A keys() method that returns an iterator of the elements in the set.
           
   13. ### try-catch
       Wraps code that can fail and pass error to the catch instead of crashing the app.
