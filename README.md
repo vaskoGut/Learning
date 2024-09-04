@@ -404,8 +404,7 @@
         
            const nums = [1, 2, 3];
            const result = sum(...nums);
-           console.log("Result of sum:", result); // 6
-         ```
+           console.log("Result of sum:", result); //6
 
         **rest** operator can be used to extract the remaining properties. WHile spread operator used to exapand elements, rest operator used to condense elements into a single enti
         ```javascript
