@@ -378,7 +378,7 @@
         ```
     
  10. ### rest-spread-operator-difference
-       1. ***Spread*** operator is mostly used with arrays. It's used to efficientl merge, cop arrays, pass elements to functions.
+      1. ***Spread*** operator is mostly used with arrays. It's used to efficientl merge, cop arrays, pass elements to functions.
          
        You can use spread operator to merge 2 objects,or 2 arrays. In React you can use spread operator to pass properties to the component:
         ```javascript
@@ -413,7 +413,7 @@
           console.log(rest); // {b: 2, c: 3}
         ```
 
-         It helps to get all arguments into an one array named numbers:
+     It helps to get all arguments into an one array named numbers:
 
         ```javascript
           function sum(...numbers) {
