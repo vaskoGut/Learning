@@ -414,6 +414,7 @@
         ```
 
          It helps to get all arguments into an one array named numbers:
+
         ```javascript
           function sum(...numbers) {
             return numbers.reduce((total, num) => total + num, 0);
@@ -427,7 +428,7 @@
           printNumbers(1,2,3,4,5); // [1,2,3,4,5] 
         ```
 
-   11. ### set-object
+   12. ### set-object
       1. Ses are collections of unique values:
      
           ```javascript
