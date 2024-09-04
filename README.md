@@ -433,6 +433,10 @@
           const newSet = new Set(testArr);
           console.log(testArr); // { 0:1, 1:2 }
         ```
+        if you want to convert it to the arr:
+        ```javascript
+          console.log([...setValue]);
+        ```
           
   13. ### try-catch
       Wraps code that can fail and pass error to the catch instead of crashing the app.
