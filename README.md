@@ -419,9 +419,7 @@
           function sum(...numbers) {
             return numbers.reduce((total, num) => total + num, 0);
           }
-         ```
 
-        ```javascript
           function printNumbers(...numbers) {
             console.log(numbers); //
           }
