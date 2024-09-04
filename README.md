@@ -434,19 +434,20 @@
 
           if you want to convert it to the arr:
             console.log([...setValue]);
+          ```
     
-    Set Object provides:
-    A size property that contains a number.
-    A has() method that takes an element and returns a boolean.
-    A keys() method that returns an iterator of the elements in the set.
+          Set Object provides:
+          A size property that contains a number.
+          A has() method that takes an element and returns a boolean.
+          A keys() method that returns an iterator of the elements in the set.
           
-  12. ### try-catch
+  13. ### try-catch
       Wraps code that can fail and pass error to the catch instead of crashing the app.
   
-  13. ### type-interface-diff
+  14. ### type-interface-diff
       Types in TypeScript are more flexible and can define primitive, intersection, union, tuple, or different types of data, while interfaces are used to describe the shape of an object
 
-  14. ### collection-js-array
+  15. ### collection-js-array
       Eather
        ```javascript
       const arrray = [...yourObjectCollection];
@@ -454,7 +455,7 @@
        Array.from(yourObjectCollection)
        ```
 
-   15. ### stringify-3rd-parameter
+   16. ### stringify-3rd-parameter
      it adds additional spacing
 
    16. ### try-catch-finally
