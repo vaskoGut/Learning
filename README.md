@@ -94,6 +94,7 @@
 | 11   | [Explain this line ("transpile:clean": "rimraf ./gatsby-*.js ./src/**/*.js") of packages.json scripots configuration?](#transiple-clean-explanation)      |
 | 12   | [What is markdown?](#markdown-explanation)      |
 | 13   | [What is web component? Key features. What is difference between iframe and web compnents](#web-components)      |
+| 14   | [what is lit library](#lit-library)      |
 
 # CSS
 | Nm | #Question   |
@@ -109,6 +110,7 @@
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [What is continuos deployment  ( what is continues deployment)? ](#continuos-deployment)                                     |
+
 
 1. ### what is difference between let const var
    **Var** - scope is global or function ( if var's used inside function ).
@@ -929,8 +931,14 @@ ______________
 ______________
 
  13. ###  web-components
-   Web components - it helps to create reusable, encapsulated HTML elements.
+   ***Web components*** - it helps to create reusable, encapsulated HTML elements.
      Key features: creating custom element, shadow dom ( scoped style, eventy ), html template. You have alss lifeceycle methods, you can cahange attributes etc.
+
+______________
+
+ 14. ###  lit-library
+    ***Lit library*** - is library for building web components. It's fast and provides reactive compnent ( components are automatically updated after data change ).
+    It has shado dom suppoort, lifecycle managements, typescript support etc.
      
   
  ________________________________________________________________________________________________________________________________
