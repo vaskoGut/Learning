@@ -98,6 +98,7 @@
 | 14   | [what is lit library](#lit-library)      |
 | 15   | [what is lit library](#web-api)      |
 | 16   | [What is ways to improve performance of front-end application? What is prefetching? Code splitting?](#improving-performance)      |
+| 17   | [Ways to improve front-end security](#front-end-security)      |
 
 # CSS
 | Nm | #Question   |
@@ -1011,8 +1012,13 @@ ______________
      5. Prefetching in front-end development is a performance optimization technique that involves loading resources (like data, images, scripts, or other assets) in advance, before they are actually needed by the user.
      6. Caching - in next.js, gatsby.js it's is configured by the default.
      7. Code splitting - is the practice of splitting your codebase into multiple bundles or chunks that can be loaded on demand, rather than loading the entire codebase at once.
-     
 
+______________
+
+ 16. ###  front-end-security
+     1. CSP -  setting csp data in meta tag, header.It helps against  Cross-Site Scripting and data-injection attacks.
+     2. Keep authorization data in env variables.
+     3. Most commont types of attacks: Malware, cross-site scripting, data-injections, DOS ataki ( it depends alot what is your server capable of ).
 
      
  ________________________________________________________________________________________________________________________________
