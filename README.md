@@ -100,6 +100,7 @@
 | 16   | [What is ways to improve performance of front-end application? What is prefetching? Code splitting?](#improving-performance)      |
 | 17   | [Ways to improve front-end security](#front-end-security)      |
 | 18   | [How to improve WCAG standarts in your front-end app](#wcag-standarts))      |
+| 19   | [Best practices for front-end](#best-practices-frontend))      |
 
 # CSS
 | Nm | #Question   |
@@ -1031,7 +1032,22 @@ ______________
      5. responsive images
      6. aria links, CEO settings
 
-     
+______________
+
+ 16. ###   best-practices-frontend
+     1. SOLID
+            1. Component or function should have oneresponsibility, purpose
+            2. Open for extension
+            3. Subsitituion Principe - input should work with all types of input.
+            4. Interface Segratgateion Principle - dont pass something, you dont need to component.
+            5. Dependency inversion - high level modules should  not depend on low-level modules directly.
+            here more Info: https://chatgpt.com/c/66d99613-6570-800c-8416-bd259966b6a3
+     2. Clead readable code
+     3. Component designs - sepearate login, view in different files. Dont-write to larga components
+     4. Avoid rerenders, implement lazy loading.
+     5. Accessibility
+     6. Testing debugging
+     7. Avoid  inline javascript and css
  ________________________________________________________________________________________________________________________________
 
    1. ### box-model
