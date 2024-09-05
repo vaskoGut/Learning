@@ -96,6 +96,7 @@
 | 12   | [What is markdown?](#markdown-explanation)      |
 | 13   | [What is web component? Key features. What is difference between iframe and web compnents](#web-components)      |
 | 14   | [what is lit library](#lit-library)      |
+| 15   | [what is lit library](#web-api)      |
 
 # CSS
 | Nm | #Question   |
@@ -967,7 +968,39 @@ ______________
       1. Property - iit's like external prop
       2. state - it's something like react state
       3. Callback - it's lifecycle method.
-  
+
+______________
+
+ 15. ### web-api
+     ***Forms Api*** - helps validate forms.
+     ```javascript
+       const inpObj = document.getElementById("id1");
+       if (!inpObj.checkValidity()) {
+     ```
+     ***History API*** - accessing windows.history object.
+     ```javascript
+       window.history.back();
+     ```
+     ***Web Storage API*** - geting, setting storage.
+     ```javascript
+      localStorage.setItem("name", "John Doe");
+      localStorage.getItem("name");
+     ```
+      ***Fetch api***
+     ```javascript
+      fetch(file)
+      .then(x => x.text())
+      .then(y => myDisplay(y));
+     ```
+     ***Geolocation api***
+      ```javascript
+          ...
+         navigator.geolocation.getCurrentPosition
+          ...
+       ```
+     
+     
+     
  ________________________________________________________________________________________________________________________________
 
    1. ### box-model
