@@ -97,6 +97,7 @@
 | 13   | [What is web component? Key features. What is difference between iframe and web compnents](#web-components)      |
 | 14   | [what is lit library](#lit-library)      |
 | 15   | [what is lit library](#web-api)      |
+| 16   | [What is ways to improve performance of front-end application? What is prefetching? Code splitting?](#improving-performance)      |
 
 # CSS
 | Nm | #Question   |
@@ -999,7 +1000,20 @@ ______________
           ...
        ```
      Other examples: window.location, window open etc.
+
+______________
+
+ 16. ###  improving-performance
+     1. Clean html - check if app has appropriate html5 tags
+     2. Reduce number of server calls if possible - lazy loading for example
+     3. Css - prefetch fonts for example, check if there is no leftovers in css, simplify selectors. Splitting css modules - css that we don't need on page loading. Can be loaded later.
+     4. Optimize videos, images - compress size, resize for different viewports, lazy loading.
+     5. Prefetching in front-end development is a performance optimization technique that involves loading resources (like data, images, scripts, or other assets) in advance, before they are actually needed by the user.
+     6. Caching - in next.js, gatsby.js it's is configured by the default.
+     7. Code splitting - is the practice of splitting your codebase into multiple bundles or chunks that can be loaded on demand, rather than loading the entire codebase at once.
      
+
+
      
  ________________________________________________________________________________________________________________________________
 
