@@ -939,7 +939,10 @@ ______________
  14. ###  lit-library
     ***Lit library*** - is library for building web components. It's fast and provides reactive compnent ( components are automatically updated after data change ).
     It has shado dom suppoort, lifecycle managements, typescript support etc.
-     
+     ![litComponentExplain](https://github.com/user-attachments/assets/8cd45ee5-13ce-46da-84b4-a3d4f894aaf3)
+      1. Property - iit's like external prop
+      2. state - it's something like react state
+      3. Callback - it's lifecycle method.
   
  ________________________________________________________________________________________________________________________________
 
