@@ -93,6 +93,7 @@
 | 10   | [what does mean extensinos word in your paackage.json?](#extensions-word-package-json)                                     |
 | 11   | [Explain this line ("transpile:clean": "rimraf ./gatsby-*.js ./src/**/*.js") of packages.json scripots configuration?](#transiple-clean-explanation)      |
 | 12   | [What is markdown?](#markdown-explanation)      |
+| 13   | [What is web component? Key features. What is difference between iframe and web compnents](#web-components)      |
 
 # CSS
 | Nm | #Question   |
@@ -924,6 +925,13 @@ ______________
 
  12. ###  markdown-explanation
   Markdown - markup language used to add formatting for your text ( healdlines, lists etc. )
+
+______________
+
+ 13. ###  web-components
+   Web components - it helps to create reusable, encapsulated HTML elements.
+     Key features: creating custom element, shadow dom ( scoped style, eventy ), html template. You have alss lifeceycle methods, you can cahange attributes etc.
+     
   
  ________________________________________________________________________________________________________________________________
 
