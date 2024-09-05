@@ -71,6 +71,7 @@
 | 33   | [asd some example of hook?](#example-hook)                                     |
 | 34   | [Provide example of using event listener in react?](#event-listener)                                     |
 | 35   | [What is wrong with too many useEffect?](#too-many-useeffect-explain)                                     |
+| 36   | [JS design patterns used in React?](#design-patterns-react)                                     |
 
 # GATSBY.JS
 | Nm | #Question   |
@@ -793,8 +794,31 @@ ________________________________________________________________________________
         ![image](https://github.com/vaskoGut/Learning/assets/7413864/b2924d25-2088-4928-b941-4c79820fa729)
         solution: it's better to drop it in 1 useEffect and handle different cases. Or you can drop it in distinct function.
 
-
-
+   36. ### #design-patterns-react
+        ***Observer patterns*** - it's actually using state in React. When state data changed, component ( dependent properties ) are updated. 
+         ***Singleton Pattern*** - singleton pattern, when global state is shared across the application.Singleton can only have 1 instance.
+         ***Proxy pattern*** - For example handling lazy loading of images. Example: when you have RealImage class, but access to it provides ProxyImage class.
+        ```javascript
+            class RealImage {
+              display() {
+                console.log("Displaying the real image.");
+              }
+            }
+            
+            class ProxyImage {
+              constructor() {
+                this.realImage = new RealImage();
+              }
+            
+              display() {
+                console.log("Loading the image...");
+                this.realImage.display();
+              }
+            }
+            
+            const image = new ProxyImage();
+            image.display();
+        ```
 
   ________________________________________________________________________________________________________________________________
 
