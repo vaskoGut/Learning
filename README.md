@@ -998,7 +998,7 @@ ______________
          navigator.geolocation.getCurrentPosition
           ...
        ```
-     
+     Other examples: window.location, window open etc.
      
      
  ________________________________________________________________________________________________________________________________
