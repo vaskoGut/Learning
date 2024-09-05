@@ -99,6 +99,7 @@
 | 15   | [what is lit library](#web-api)      |
 | 16   | [What is ways to improve performance of front-end application? What is prefetching? Code splitting?](#improving-performance)      |
 | 17   | [Ways to improve front-end security](#front-end-security)      |
+| 18   | [How to improve WCAG standarts in your front-end app](#wcag-standarts))      |
 
 # CSS
 | Nm | #Question   |
@@ -1019,6 +1020,16 @@ ______________
      1. CSP -  setting csp data in meta tag, header.It helps against  Cross-Site Scripting and data-injection attacks.
      2. Keep authorization data in env variables.
      3. Most commont types of attacks: Malware, cross-site scripting, data-injections, DOS ataki ( it depends alot what is your server capable of ).
+    
+______________
+
+ 16. ###   wcag-standarts
+     1. semantic html
+     2. keyboard navigatoin (  tabindex)
+     3. color contrast, focus contrast
+     4. text alternatives for images , aria-labels for buttons forms
+     5. responsive images
+     6. aria links, CEO settings
 
      
  ________________________________________________________________________________________________________________________________
