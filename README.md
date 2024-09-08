@@ -101,6 +101,17 @@
 | 17   | [Ways to improve front-end security](#front-end-security)      |
 | 18   | [How to improve WCAG standarts in your front-end app](#wcag-standarts))      |
 | 19   | [Best practices for front-end](#best-practices-frontend))      |
+| 20   | [SPA-PWA difference](#spa-pwa-difference))      |
+
+
+SPA:
+Works by loading a single HTML page and dynamically updating the content as the user interacts with the app.
+Uses AJAX calls to interact with the server, fetching and rendering data without reloading the entire page.
+
+
+PWA:
+Extends the functionality of traditional web apps with features like offline access, background sync, and push notifications, thanks to Service Workers.
+Can be installed on a user's home screen like a native app and can run independently of the browser.
 
 # CSS
 | Nm | #Question   |
@@ -1049,6 +1060,19 @@ ______________
      6. Testing debugging
      7. Avoid  inline javascript and css
  ________________________________________________________________________________________________________________________________
+
+  17. ###   spa-pwa-difference
+ SPA:
+Works by loading a single HTML page and dynamically updating the content as the user interacts with the app.
+Uses AJAX calls to interact with the server, fetching and rendering data without reloading the entire page.
+
+
+PWA:
+Extends the functionality of traditional web apps with features like offline access, background sync, and push notifications, thanks to Service Workers.
+Can be installed on a user's home screen like a native app and can run independently of the browser.
+ ________________________________________________________________________________________________________________________________
+
+ 
 
    1. ### box-model
   **box model** - it's box which wraps every HTML element. Box model consists of content, padding, bordery, margin.
