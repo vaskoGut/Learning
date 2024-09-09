@@ -121,6 +121,7 @@ Can be installed on a user's home screen like a native app and can run independe
 | 3   | [What is viewport? ](#viewport-what)                                     |
 | 4   | [What are possible values of position property? ](#position-property)                                     |
 | 5   | [What are types of selectors in css? ](#selectors-css)                                     |
+| 6   | [What is rem in css? ](#rem-css)                                     |
 
 
 # GIT, DEPLOYMENT, PIPELINES
@@ -1112,7 +1113,10 @@ ______________
 
 ______________
 
-
+  6. ### rem-css
+     ***Rem*** - dictate an element's font size relative to the size of the root element. In most cases 16px is default.
+     1 of the most valuable advantages of rem is scalability and consistency.
+______________
 
 What is cookies, sessiens, tokens 
 what is turborepo in few words
