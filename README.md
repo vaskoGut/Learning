@@ -98,7 +98,7 @@
 | 14   | [what is lit library](#lit-library)      |
 | 15   | [what is lit library](#web-api)      |
 | 16   | [What is ways to improve performance of front-end application? What is prefetching? Code splitting?](#improving-performance)      |
-| 17   | [Ways to improve front-end security](#front-end-security)      |
+| 17   | [1. Ways to improve front-end security? 2. how can be done XSS attack on your page? ](#front-end-security)      |
 | 18   | [How to improve WCAG standarts in your front-end app](#wcag-standarts))      |
 | 19   | [Best practices for front-end](#best-practices-frontend))      |
 | 20   | [SPA-PWA difference](#spa-pwa-difference))      |
@@ -1029,14 +1029,17 @@ ______________
 
 ______________
 
- 16. ###  front-end-security
-     1. CSP -  setting csp data in meta tag, header.It helps against  Cross-Site Scripting and data-injection attacks.
-     2. Keep authorization data in env variables.
-     3. Most commont types of attacks: Malware, cross-site scripting, data-injections, DOS ataki ( it depends alot what is your server capable of ).
+ 17. ###  front-end-security
+     1. Question answer:
+       1. CSP -  setting csp data in meta tag, header.It helps against  Cross-Site Scripting and data-injection attacks.
+       2. Keep authorization data in env variables.
+       3. Most commont types of attacks: Malware, cross-site scripting, data-injections, DOS ataki ( it depends alot what is your server capable of ).
+     2. question naswer:
+        IT can be posted some content, script, maleware to the form if it's not sanitized.
     
 ______________
 
- 16. ###   wcag-standarts
+ 18. ###   wcag-standarts
      1. semantic html
      2. keyboard navigatoin (  tabindex)
      3. color contrast, focus contrast
@@ -1046,7 +1049,7 @@ ______________
 
 ______________
 
- 16. ###   best-practices-frontend
+ 19. ###   best-practices-frontend
      1. SOLID
             1. Component or function should have oneresponsibility, purpose
             2. Open for extension
@@ -1062,7 +1065,7 @@ ______________
      7. Avoid  inline javascript and css
  ________________________________________________________________________________________________________________________________
 
-  17. ###   spa-pwa-difference 
+  20. ###   spa-pwa-difference 
    **SPA** Works by loading a single HTML page ( file) and dynamically updating the content as the user interacts with the app.
      Key parts:
       - onlly parts of application are updating, refreshing not the whole application
