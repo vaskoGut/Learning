@@ -102,7 +102,7 @@
 | 18   | [How to improve WCAG standarts in your front-end app](#wcag-standarts))      |
 | 19   | [Best practices for front-end](#best-practices-frontend))      |
 | 20   | [SPA-PWA difference](#spa-pwa-difference))      |
-
+| 21   | [Difference betwen SPA and gatsby.js, next.js pages](#spa-gatsby-next-difference)      |
 
 SPA:
 Works by loading a single HTML page and dynamically updating the content as the user interacts with the app.
@@ -1073,7 +1073,15 @@ ______________
     Can be installed on a user's home screen like a native app and can run independently of the browser.
     Examples: spotify, uber, telegram, PWA 
  ________________________________________________________________________________________________________________________________
+  
+  18. ###  spa-gatsby-next-difference
+   ***SPA*** renders pages on client side. Content is updated without reloading pages. Single html file. Problems withs SEO. 
+   Best suited for dynamic, highly interactive applications like dashboards, social networks, or apps that need frequent, real-time updates.
+   ***GATSBY, NEXT*** are SSG ( static site geeneration ) - pages are served as statisc files, it's super SEO friendly, provides benefits of both spa and server-rendered pages. Good SEO.
+   Ideal for content-heavy sites, blogs, marketing pages, or e-commerce sites where performance, SEO, and fast initial loads are crucial.
 
+  
+   
  
 
    1. ### box-model
