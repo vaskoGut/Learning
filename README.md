@@ -1061,15 +1061,17 @@ ______________
      7. Avoid  inline javascript and css
  ________________________________________________________________________________________________________________________________
 
-  17. ###   spa-pwa-difference
- SPA:
-Works by loading a single HTML page and dynamically updating the content as the user interacts with the app.
-Uses AJAX calls to interact with the server, fetching and rendering data without reloading the entire page.
+  17. ###   spa-pwa-difference 
+   **SPA** Works by loading a single HTML page ( file) and dynamically updating the content as the user interacts with the app.
+     Key parts:
+      - onlly parts of application are updating, refreshing not the whole application
+      - less loading - better user experience
+      - SPA: gamil, google maps, twitter
+      - there is probles with SEO - cause it's all 1 file and dynamic reloading of content. IT's why sometimes google has problem with crawling such site.
 
-
-PWA:
-Extends the functionality of traditional web apps with features like offline access, background sync, and push notifications, thanks to Service Workers.
-Can be installed on a user's home screen like a native app and can run independently of the browser.
+   **PWA** Extends the functionality of traditional web apps with features like offline access, background sync, and push notifications, thanks to Service Workers.
+    Can be installed on a user's home screen like a native app and can run independently of the browser.
+    Examples: spotify, uber, telegram, PWA 
  ________________________________________________________________________________________________________________________________
 
  
