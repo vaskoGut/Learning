@@ -1074,7 +1074,7 @@ ______________
     Examples: spotify, uber, telegram, PWA 
  ________________________________________________________________________________________________________________________________
   
-  18. ###  spa-gatsby-next-difference
+  21. ###  spa-gatsby-next-difference
    ***SPA*** renders pages on client side. Content is updated without reloading pages. Single html file. Problems withs SEO. 
    Best suited for dynamic, highly interactive applications like dashboards, social networks, or apps that need frequent, real-time updates.
    ***GATSBY, NEXT*** are SSG ( static site geeneration ) - pages are served as statisc files, it's super SEO friendly, provides benefits of both spa and server-rendered pages. Good SEO.
