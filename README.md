@@ -500,15 +500,14 @@ Can be installed on a user's home screen like a native app and can run independe
 
       Example:
 
-       
       ```javascript
-          openMyFile();
+        openMyFile();
           try {
             // tie up a resource
             writeMyFile(theData);
           } finally {
             closeMyFile(); // always close the resource
-          }
+        }
       ```
 
   17. ### arrow-function
