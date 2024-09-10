@@ -487,18 +487,9 @@ Can be installed on a user's home screen like a native app and can run independe
        it adds additional spacing
 
    16. ### try-catch-finally
-       ```javascript
-        try {
-           // try_statements
-        } catch(error) {
-          // catch_statements  
-        }
-        finally() {
-          // codes that gets executed anyway
-        }
-      ```
+   werwre
 
-  17. ### arrow-function
+   17. ### arrow-function
 
     This inside arrow function is referenced, pointed to the global object. We normal function declaration - it points to the inner scope.
 
