@@ -488,9 +488,9 @@ Can be installed on a user's home screen like a native app and can run independe
 
    16. ### try-catch-finally
         ```javascript
-         try {
-            // try_statements
-         } catch(error) {
+        try {
+           // try_statements
+        } catch(error) {
           // catch_statements  
         }
         finally() {
@@ -499,6 +499,7 @@ Can be installed on a user's home screen like a native app and can run independe
         ```
 
       Example:
+
       ```javascript
         openMyFile();
         try {
