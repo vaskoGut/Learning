@@ -487,25 +487,27 @@ Can be installed on a user's home screen like a native app and can run independe
        it adds additional spacing
 
    16. ### try-catch-finally
-     ```javascript
-       try {
-          // try_statements
-       } catch(error) {
-        // catch_statements  
-      }
-      finally() {
-        // codes that gets executed anyway
-      }
+       ```javascript
+         try {
+            // try_statements
+         } catch(error) {
+          // catch_statements  
+        }
+        finally() {
+          // codes that gets executed anyway
+        }
+      ```
 
       Example:
-      openMyFile();
-      try {
-        // tie up a resource
-        writeMyFile(theData);
-      } finally {
-        closeMyFile(); // always close the resource
-      }
-    ```
+      ```javascript
+        openMyFile();
+        try {
+          // tie up a resource
+          writeMyFile(theData);
+        } finally {
+          closeMyFile(); // always close the resource
+        }
+      ```
 
   17. ### arrow-function
 
