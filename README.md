@@ -498,8 +498,6 @@ Can be installed on a user's home screen like a native app and can run independe
         }
       ```
 
-      Example:
-
       ```javascript
         openMyFile();
           try {
