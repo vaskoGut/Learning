@@ -22,6 +22,7 @@
 | 18   | [what is object assign ?](#object-assign)                                     |
 | 19   | [How does owrk object create? ?](#object-create)                                     |
 | 20   | [Name difference between copying primitive and object ( reference ) ? explain why let a = {};let b = {} not equal objects](#object-primitive-reference)                                     |
+| 21   | [Does nested function have an access to the outer function in JavaScript? And vice versa ( opposite) ](#inner-outer-function-scope)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -593,6 +594,9 @@ Can be installed on a user's home screen like a native app and can run independe
     let b = {}; // two independent objects
     
     alert( a == b ); // false
+
+  21. ### inner-outer-function-scope
+    Outer function doesn't have an access to the inner functions. But inner functions have an access to the outer functions. It's how lexical scope does work.
 
    
 __________________________________________________________________________________________________________________________________________
