@@ -487,7 +487,12 @@ Can be installed on a user's home screen like a native app and can run independe
        it adds additional spacing
 
    16. ### try-catch-finally
-   werwre
+       Eather
+       ```javascript
+      const arrray = [...yourObjectCollection];
+      // Or make it with Array.from
+       Array.from(yourObjectCollection)
+       ```
 
    17. ### arrow-function
 
