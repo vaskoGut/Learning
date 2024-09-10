@@ -498,18 +498,6 @@ Can be installed on a user's home screen like a native app and can run independe
         }
         ```
 
-      Example:
-
-        ```javascript
-          openMyFile();
-          try {
-            // tie up a resource
-            writeMyFile(theData);
-          } finally {
-            closeMyFile(); // always close the resource
-          }
-        ```
-
   17. ### arrow-function
 
     This inside arrow function is referenced, pointed to the global object. We normal function declaration - it points to the inner scope.
