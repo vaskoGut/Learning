@@ -489,9 +489,13 @@ Can be installed on a user's home screen like a native app and can run independe
   16. ### try-catch-finally
       Eather
        ```javascript
-      const arrray = [...yourObjectCollection];
-      // Or make it with Array.from
-       Array.from(yourObjectCollection)
+      openMyFile();
+      try {
+        // tie up a resource
+        writeMyFile(theData);
+      } finally {
+        closeMyFile(); // always close the resource
+      }
        ```
 
    17. ### arrow-function
