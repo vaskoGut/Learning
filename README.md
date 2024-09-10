@@ -129,6 +129,8 @@ Can be installed on a user's home screen like a native app and can run independe
 | :---:   | :---: |
 | 1   | [What is continuos deployment  ( what is continues deployment)? ](#continuos-deployment)                                     |
 | 2   | [Git merge rebase difference? ](#merge-rebase-difference)                                     |
+| 3   | [What is cherry pick? ](#cherry-pick)                                     |
+
 
 
 1. ### what is difference between let const var
@@ -1205,3 +1207,7 @@ ___________
 
 ___________
   
+  3. ### cherry-pick
+  In simple terms, git **cherry-pick** picks a specific commit from one branch and apply it to another branch without merging the entire branch.
+  
+___________
