@@ -487,7 +487,7 @@ Can be installed on a user's home screen like a native app and can run independe
        it adds additional spacing
 
    16. ### try-catch-finally
-        ```javascript
+       ```javascript
         try {
            // try_statements
         } catch(error) {
@@ -496,12 +496,12 @@ Can be installed on a user's home screen like a native app and can run independe
         finally() {
           // codes that gets executed anyway
         }
-        ```
+      ```
 
-Example:
+      Example:
 
        
-       ```javascript
+        ```javascript
           openMyFile();
           try {
             // tie up a resource
