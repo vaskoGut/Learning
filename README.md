@@ -499,7 +499,14 @@ Can be installed on a user's home screen like a native app and can run independe
        ```
 
        ```javascript
-       test
+       try {
+           // try_statements
+       } catch(error) {
+          // catch_statements  
+       }
+       finally() {
+          // codes that gets executed anyway
+       }
        ```
 
    17. ### arrow-function
