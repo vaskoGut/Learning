@@ -473,9 +473,9 @@ Can be installed on a user's home screen like a native app and can run independe
       Wraps code that can fail and pass error to the catch instead of crashing the app.
   
   14. ### type-interface-diff
-      Types in TypeScript are more flexible and can define primitive, intersection, union, tuple, or different types of data, while interfaces are used to describe the shape of an object
+        Types in TypeScript are more flexible and can define primitive, intersection, union, tuple, or different types of data, while interfaces are used to describe the shape of an object
 
-  15. ### collection-js-array
+  16. ### collection-js-array
       Eather
        ```javascript
       const arrray = [...yourObjectCollection];
@@ -483,7 +483,7 @@ Can be installed on a user's home screen like a native app and can run independe
        Array.from(yourObjectCollection)
        ```
 
-   16. ### stringify-3rd-parameter
+   17. ### stringify-3rd-parameter
      it adds additional spacing
 
    16. ### try-catch-finally
