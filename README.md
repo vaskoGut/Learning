@@ -469,13 +469,13 @@ Can be installed on a user's home screen like a native app and can run independe
         A  **has()** method that takes an element and returns a boolean.
         A  **keys()** method that returns an iterator of the elements in the set.
           
-  13. ### try-catch
+  12. ### try-catch
       Wraps code that can fail and pass error to the catch instead of crashing the app.
   
-  14. ### type-interface-diff
+  13. ### type-interface-diff
         Types in TypeScript are more flexible and can define primitive, intersection, union, tuple, or different types of data, while interfaces are used to describe the shape of an object
 
-  16. ### collection-js-array
+  14. ### collection-js-array
       Eather
        ```javascript
       const arrray = [...yourObjectCollection];
@@ -483,8 +483,8 @@ Can be installed on a user's home screen like a native app and can run independe
        Array.from(yourObjectCollection)
        ```
 
-   17. ### stringify-3rd-parameter
-     it adds additional spacing
+   15. ### stringify-3rd-parameter
+       it adds additional spacing
 
    16. ### try-catch-finally
      ```javascript
