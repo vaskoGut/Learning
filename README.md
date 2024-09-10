@@ -21,6 +21,7 @@
 | 17   | [what will be result of displaying this inside arrow function ?](#arrow-function)                                     |
 | 18   | [what is object assign ?](#object-assign)                                     |
 | 19   | [How does owrk object create? ?](#object-create)                                     |
+| 20   | [Name difference between copying primitive and object ( reference ) ? explain why let a = {};let b = {} not equal objects](#object-primitive-reference)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -570,6 +571,29 @@ Can be installed on a user's home screen like a native app and can run independe
       ```
       console.log(mySubObject.getSize()); // 'large' 
       console.log(mySubObject.color); // 'red'
+
+  20. ### object-primitive-reference
+    Object is stored and copied "by reference", whereas primitive values strings, numbers, booleans copied as a whole value.
+     ```javascript
+      let message = "Hello!";
+      let phrase = message;
+    ```
+    In the end we have 2 independent variables.
+    A variable assigned to an object = stores not object itslef, but its address in memory, in other words - a reference to it.
+    ```javascript
+      let user = { name: "John" };
+      let admin = user;
+    ```
+    ![image](https://github.com/user-attachments/assets/b687fb14-9572-4f85-bdc9-5ca86afb1a21)
+
+    When objects are equal?
+    ![image](https://github.com/user-attachments/assets/9f1bf005-6efc-4d44-8125-c56089341c29)
+    Two independent objects are not equal:
+    let a = {};
+    let b = {}; // two independent objects
+    
+    alert( a == b ); // false
+
    
 __________________________________________________________________________________________________________________________________________
 
