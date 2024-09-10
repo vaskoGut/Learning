@@ -483,11 +483,11 @@ Can be installed on a user's home screen like a native app and can run independe
        Array.from(yourObjectCollection)
        ```
 
-   15. ### stringify-3rd-parameter
+  15. ### stringify-3rd-parameter
        it adds additional spacing
 
-   16. ### try-catch-finally
-       Eather
+  16. ### try-catch-finally
+      Eather
        ```javascript
       const arrray = [...yourObjectCollection];
       // Or make it with Array.from
