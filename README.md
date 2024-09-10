@@ -128,6 +128,7 @@ Can be installed on a user's home screen like a native app and can run independe
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [What is continuos deployment  ( what is continues deployment)? ](#continuos-deployment)                                     |
+| 2   | [Git merge rebase difference? ](#merge-rebase-difference)                                     |
 
 
 1. ### what is difference between let const var
@@ -1183,3 +1184,24 @@ ________________________________________________________________________________
 # GIT, DEPLOYMENT, PIPELINES
  1. ### continuos-deployment
  Continuos deployment - software development practice where code changes are automatically deployed to a production envrionment after passing predefined testing and qualisty assurance stages. It helps to reduce manual intervention and to ensure new code (feats, fixes etc) are delivered to users as quickly as possible. You can configure it in netlify for example.
+
+___________
+
+ 2. ### merge-rebase-difference
+    **merge** - combining changes from one ( source branch) into another branch ( target branch). It combines history of 2 branches.
+     Git merge pulls in the latest changes from main into the feature branch creating a new "merge commit" in the process.
+     Use merge if you need to keep, save history of both branches. Whe fewe people collaborates on same branch. See example below:
+    ![image](https://github.com/user-attachments/assets/5c131938-14b0-47b8-af15-a5705ecd5961)
+
+    **rebase** - is moving the changes from one branch onto another branch. It puts commits from one branch to another in linear way. See below:
+    ![image](https://github.com/user-attachments/assets/56f95e9e-6da1-4c5a-95e9-93011a2e4ba9)
+
+
+    Use merge if you need to keep, save history of both branches. Whe fewe people collaborates on same branch.
+    Use rebase if you you want clean, linear project history. Use it to update branch with the lst changes from min branch before merging.
+    
+    Below you can see difference between git merge and git rebase. Main difference is while you doing rebase, you keep consisten commit history.
+    ![image](https://github.com/user-attachments/assets/56610431-4d51-4d1f-8ab6-eba83c5fa0a4)
+
+___________
+  
