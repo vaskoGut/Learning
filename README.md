@@ -497,7 +497,7 @@ Can be installed on a user's home screen like a native app and can run independe
         closeMyFile(); // always close the resource
       }
        ```
-
+      or
        ```javascript
        try {
            // try_statements
