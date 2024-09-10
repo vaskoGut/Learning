@@ -497,8 +497,7 @@ Can be installed on a user's home screen like a native app and can run independe
           // codes that gets executed anyway
         }
       ```
-
-    ```javascript
+      ```javascript
         openMyFile();
           try {
             // tie up a resource
@@ -506,7 +505,7 @@ Can be installed on a user's home screen like a native app and can run independe
           } finally {
             closeMyFile(); // always close the resource
         }
-    ```
+      ```
 
   17. ### arrow-function
 
