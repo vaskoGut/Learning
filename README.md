@@ -107,6 +107,7 @@
 | 21   | [Difference betwen SPA and gatsby.js, next.js pages](#spa-gatsby-next-difference)      |
 | 22   | [What is cookies? What is localstorage? What does have bigger size, bigger capacity? What do we store in localStorage nad what as rule do we store in cookies?](#localstorage-cookies)                                     |
 | 23   | [1. What is webpack? 2. Name difference between dev and prod webpack configuration. 3. Where is webpack configuration in gatsby.js, next.js frameworks?](#webpack-explanation)                                     |
+| 24   | [How to create ( generate ) packages.json file?](#creating-package-json))      |
 
 SPA:
 Works by loading a single HTML page and dynamically updating the content as the user interacts with the app.
@@ -1141,6 +1142,10 @@ ________________________________________________________________________________
          3. Tree shaking - removes unused code.
          4. Ensure that any debug or tet code is stripped out and not included in production mode.
       3. Frameworks like gatsby.js, next.js have its own webpack.config. But both that framework allow to add your own additional webpack configurations.
+     
+________________________________________________________________________________________________________________________________
+   24. ###  creating-package-json
+   You can create it manually or you can use npm init command.
    
 
  
