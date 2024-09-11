@@ -1130,8 +1130,9 @@ ________________________________________________________________________________
   23. ###  webpack-explanation  
   1. Webpack is a tool for configuration your project environment, it helps to bundle your project modules.
    
- 
 
+ 
+________________________________________________________________________________________________________________________________
    1. ### box-model
   **box model** - it's box which wraps every HTML element. Box model consists of content, padding, bordery, margin.
    ![image](https://github.com/vaskoGut/Learning/assets/7413864/dbfb2b61-3e0f-41fe-8657-c82a3e8f9885)
