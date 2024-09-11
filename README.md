@@ -23,7 +23,6 @@
 | 19   | [How does owrk object create? ?](#object-create)                                     |
 | 20   | [Name difference between copying primitive and object ( reference ) ? explain why let a = {};let b = {} not equal objects](#object-primitive-reference)                                     |
 | 21   | [Does nested function have an access to the outer function in JavaScript? And vice versa ( opposite) ](#inner-outer-function-scope)                                     |
-| 22   | [What is cookies? What is localstorage? What does have bigger size, bigger capacity? What do we store in localStorage nad what as rule do we store in cookies?](#localstorage-cookies)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -106,6 +105,7 @@
 | 19   | [Best practices for front-end](#best-practices-frontend))      |
 | 20   | [SPA-PWA difference](#spa-pwa-difference))      |
 | 21   | [Difference betwen SPA and gatsby.js, next.js pages](#spa-gatsby-next-difference)      |
+| 22   | [What is cookies? What is localstorage? What does have bigger size, bigger capacity? What do we store in localStorage nad what as rule do we store in cookies?](#localstorage-cookies)                                     |
 
 SPA:
 Works by loading a single HTML page and dynamically updating the content as the user interacts with the app.
