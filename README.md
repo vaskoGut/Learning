@@ -1122,9 +1122,9 @@ ________________________________________________________________________________
   
   22. ###  localstorage-cookies
     
-    The most important difference is - __localstorage__ has bigger capacity ( 5mb), while **cookies** have only 4kb.
-    In cookie we can save some small data, like info about user session durability.
-    In localstorage we can store bigger chungs of data.
+  The most important difference is - __localstorage__ has bigger capacity ( 5mb), while **cookies** have only 4kb.
+  In cookie we can save some small data, like info about user session durability.
+  In localstorage we can store bigger chungs of data.
   
    
  
