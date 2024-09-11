@@ -1128,7 +1128,9 @@ ________________________________________________________________________________
 ________________________________________________________________________________________________________________________________
 
   23. ###  webpack-explanation  
-      1. Webpack is a tool for configuration your project environment, it helps to bundle your project modules.
+      1. Webpack is a tool for configuration your project environment, it helps to bundle your project modules.\
+      2. In **dev** we want features like:
+         1. strong source mapping - allows developers to see the original source code (e.g., TypeScript, SCSS, or ES6+) in the browser’s developer tools instead of the compiled or minified code that is actually running in the browse.
    
 
  
