@@ -23,6 +23,7 @@
 | 19   | [How does owrk object create? ?](#object-create)                                     |
 | 20   | [Name difference between copying primitive and object ( reference ) ? explain why let a = {};let b = {} not equal objects](#object-primitive-reference)                                     |
 | 21   | [Does nested function have an access to the outer function in JavaScript? And vice versa ( opposite) ](#inner-outer-function-scope)                                     |
+| 22   | [What is cookies? What is localstorage? What does have bigger size, bigger capacity? What do we store in localStorage nad what as rule do we store in cookies?](#localstorage-cookies)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1117,6 +1118,13 @@ ______________
    ***GATSBY, NEXT*** are SSG ( static site geeneration ) - pages are served as statisc files, it's super SEO friendly, provides benefits of both spa and server-rendered pages. Good SEO.
    Ideal for content-heavy sites, blogs, marketing pages, or e-commerce sites where performance, SEO, and fast initial loads are crucial.
 
+________________________________________________________________________________________________________________________________
+  
+  22. ###  localstorage-cookies
+    
+    The most important difference is - __localstorage__ has bigger capacity ( 5mb), while **cookies** have only 4kb.
+    In cookie we can save some small data, like info about user session durability.
+    In localstorage we can store bigger chungs of data.
   
    
  
