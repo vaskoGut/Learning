@@ -1131,6 +1131,15 @@ ________________________________________________________________________________
       1. Webpack is a tool for configuration your project environment, it helps to bundle your project modules.\
       2. In **dev** we want features like:
          1. strong source mapping - allows developers to see the original source code (e.g., TypeScript, SCSS, or ES6+) in the browser’s developer tools instead of the compiled or minified code that is actually running in the browse.
+            Frameworks like gatsby.js, next.js have it by default.
+         2. Localhost, live reloading, hot moudle replacement - monitoring chamges, updating modules, replacing moudules, callback execution.
+         3. Envrionment variables.
+            So dev is about dubugging,efficient workflow.
+         In **prod** we focus on:
+         1. minifiying and optimizing sources, files, assests.
+         2. code splitting - create smaller chunks, and load them if only you need it.
+         3. Tree shaking - removes unused code.
+         4. Ensure that any debug or tet code is stripped out and not included in production mode.
       3. Frameworks like gatsby.js, next.js have its own webpack.config. But both that framework allow to add your own additional webpack configurations.
    
 
