@@ -106,6 +106,7 @@
 | 20   | [SPA-PWA difference](#spa-pwa-difference))      |
 | 21   | [Difference betwen SPA and gatsby.js, next.js pages](#spa-gatsby-next-difference)      |
 | 22   | [What is cookies? What is localstorage? What does have bigger size, bigger capacity? What do we store in localStorage nad what as rule do we store in cookies?](#localstorage-cookies)                                     |
+| 23   | [1. What is webpack? 2. Name difference between dev and prod webpack configuration](#webpack-explanation)                                     |
 
 SPA:
 Works by loading a single HTML page and dynamically updating the content as the user interacts with the app.
@@ -1121,11 +1122,13 @@ ______________
 ________________________________________________________________________________________________________________________________
   
   22. ###  localstorage-cookies
-    
   The most important difference is - __localstorage__ has bigger capacity ( 5mb), while **cookies** have only 4kb.
   In cookie we can save some small data, like info about user session durability.
   In localstorage we can store bigger chungs of data.
-  
+________________________________________________________________________________________________________________________________
+
+  22. ###  webpack-explanation
+    1. Webpack is a tool for configuration your project environment, it helps to bundle your project modules.
    
  
 
