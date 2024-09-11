@@ -85,7 +85,7 @@
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [Monorepo and polyrepo (microservices) difference, advantages, disadvantages](#monorepo-and-polyrepo-difference)                                     |
-| 2   | [What is webhooks?](#what-is-webhooks)                                     | 
+| 2   | [What is webhooks? Name some real example. ](#what-is-webhooks)                                     | 
 | 3   | [What is babel?](#what-is-babel)                                     |
 | 4   | [What is time complexity? Please provide examples](#time-complexity-space-complexity)                                     |  
 | 5   | [Please name some frameworks](#name-some-front-end-frameworks)                                     |
