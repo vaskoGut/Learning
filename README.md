@@ -106,7 +106,7 @@
 | 20   | [SPA-PWA difference](#spa-pwa-difference))      |
 | 21   | [Difference betwen SPA and gatsby.js, next.js pages](#spa-gatsby-next-difference)      |
 | 22   | [What is cookies? What is localstorage? What does have bigger size, bigger capacity? What do we store in localStorage nad what as rule do we store in cookies?](#localstorage-cookies)                                     |
-| 23   | [1. What is webpack? 2. Name difference between dev and prod webpack configuration. 3. Where is webpack configuration in gatsby.js, next.js frameworks?](#webpack-explanation)                                     |
+| 23   | [1. What is webpack? 2. Name difference between dev and prod webpack configuration. 3. Where is webpack configuration in gatsby.js, next.js frameworks? 4. "build": "webpack --mode production" - what will be result of this command?](#webpack-explanation)                                     |
 | 24   | [How to create ( generate ) packages.json file?](#creating-package-json))      |
 
 SPA:
@@ -1142,6 +1142,7 @@ ________________________________________________________________________________
          3. Tree shaking - removes unused code.
          4. Ensure that any debug or tet code is stripped out and not included in production mode.
       3. Frameworks like gatsby.js, next.js have its own webpack.config. But both that framework allow to add your own additional webpack configurations.
+      4.  "build": "webpack --mode production" - result will be file main.js in your dist folder. In the end you will get main.js file with minified, optimized code.  process.env.NODE_ENV - in that file will be set to the 'production' mode.
      
 ________________________________________________________________________________________________________________________________
    24. ###  creating-package-json
