@@ -1128,7 +1128,7 @@ ________________________________________________________________________________
 ________________________________________________________________________________________________________________________________
 
   23. ###  webpack-explanation  
-    1. Webpack is a tool for configuration your project environment, it helps to bundle your project modules.
+      1. Webpack is a tool for configuration your project environment, it helps to bundle your project modules.
    
 
  
