@@ -106,7 +106,7 @@
 | 20   | [SPA-PWA difference](#spa-pwa-difference))      |
 | 21   | [Difference betwen SPA and gatsby.js, next.js pages](#spa-gatsby-next-difference)      |
 | 22   | [What is cookies? What is localstorage? What does have bigger size, bigger capacity? What do we store in localStorage nad what as rule do we store in cookies?](#localstorage-cookies)                                     |
-| 23   | [1. What is webpack? 2. Name difference between dev and prod webpack configuration](#webpack-explanation)                                     |
+| 23   | [1. What is webpack? 2. Name difference between dev and prod webpack configuration. 3. Where is webpack configuration in gatsby.js, next.js frameworks?](#webpack-explanation)                                     |
 
 SPA:
 Works by loading a single HTML page and dynamically updating the content as the user interacts with the app.
@@ -1131,6 +1131,7 @@ ________________________________________________________________________________
       1. Webpack is a tool for configuration your project environment, it helps to bundle your project modules.\
       2. In **dev** we want features like:
          1. strong source mapping - allows developers to see the original source code (e.g., TypeScript, SCSS, or ES6+) in the browser’s developer tools instead of the compiled or minified code that is actually running in the browse.
+      3. Frameworks like gatsby.js, next.js have its own webpack.config. But both that framework allow to add your own additional webpack configurations.
    
 
  
