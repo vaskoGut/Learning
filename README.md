@@ -1127,8 +1127,8 @@ ________________________________________________________________________________
   In localstorage we can store bigger chungs of data.
 ________________________________________________________________________________________________________________________________
 
-  22. ###  webpack-explanation
-    1. Webpack is a tool for configuration your project environment, it helps to bundle your project modules.
+  23. ###  webpack-explanation  
+  1. Webpack is a tool for configuration your project environment, it helps to bundle your project modules.
    
  
 
