@@ -66,15 +66,16 @@
 | 26   | [what is good way to test your reactapplications?what is end-2-end testing? what is unit testing? What yuu use for unit  testse](#react-test-how-work)                                     |
 | 27   | [what is react dev tools? When do you need it as rule?](#react-dev-tools)                                     |
 | 28   | [what is create portal? Provide some example of using it. What are downsides of useing portals?](#react-portals)                                     |
-| 29   | [what is code splitting? What is lazy and suspense in react? Provide some example. What is Suspense built-int ](#code-splitting)                                     |
-| 30   | [what is SSR and CSR?  Does Gatsby.js, NExt.js supports CSR or SSR? When pages are built in ssr in gatsby.js and when page are built in csr? What is advantage of using SSR? Provide some practical example of using SSR](#ssr-csr)                                     |
-| 31   | [what is fragment?](#fragment-explanation)                                     |
-| 32   | [what does mean useEffect with emtpy array?](#use-effect-empty-array)                                     |
-| 33   | [asd some example of hook?](#example-hook)                                     |
-| 34   | [Provide example of using event listener in react?](#event-listener)                                     |
-| 35   | [What is wrong with too many useEffect?](#too-many-useeffect-explain)                                     |
-| 36   | [JS design patterns used in React?](#design-patterns-react)                                     |
-| 37   | [How can you improve performance of  react application with caching?](#caching-react)                                     |
+| 30   | [what is lazy loading? Explain when you need it. What is difference between lazy loading and dynamic imports ](#lazy-loading-dynamic-imports)                                     |
+| 31   | [what is code splitting? What is lazy and suspense in react? Provide some example. What is Suspense built-int ](#code-splitting)                                     |
+| 32   | [what is SSR and CSR?  Does Gatsby.js, NExt.js supports CSR or SSR? When pages are built in ssr in gatsby.js and when page are built in csr? What is advantage of using SSR? Provide some practical example of using SSR](#ssr-csr)                                     |
+| 33   | [what is fragment?](#fragment-explanation)                                     |
+| 34   | [what does mean useEffect with emtpy array?](#use-effect-empty-array)                                     |
+| 35   | [asd some example of hook?](#example-hook)                                     |
+| 36   | [Provide example of using event listener in react?](#event-listener)                                     |
+| 37   | [What is wrong with too many useEffect?](#too-many-useeffect-explain)                                     |
+| 38   | [JS design patterns used in React?](#design-patterns-react)                                     |
+| 39   | [How can you improve performance of  react application with caching?](#caching-react)                                     |
 
 
 # GATSBY.JS
@@ -813,7 +814,16 @@ ________________________________________________________________________________
       Example createPortal:
   ![image](https://github.com/vaskoGut/Learning/assets/7413864/a4673b20-a45a-45cc-84be-ced9a5c92691)
 
-   29. ###  code-splitting
+   29. ###  lazy-loading-dynamic-imports
+         1. Imagine you have component, that appears afoter in some scenarios. It's allways displayed in your app. But it still exists in your bundle. To fix it you can use lazy loading or dynamic imports.
+         2. Below you can see lazy loading of component.
+            ![image](https://github.com/user-attachments/assets/692a44c2-b19b-4ad7-a973-879c6e3d3299)
+            Now inside our component we can use it with react suspense.
+         3. Example of dynamic import: if some condition is met, then we import our component:
+            ![image](https://github.com/user-attachments/assets/772da3e6-c332-4090-a5ef-1dd589dd6200)
+            Here you will have error, cause you can't render Promise with appropriate handling of it. Acually its why is better to use lazy loading - it handles Promise issue of importing components.
+
+   30. ###  code-splitting
          1. Splitting code is technique which allows to optimize the performance of React application.  With help of it you can split your code into smaller chunks and loading the on-deman.
          You can reduce load time. React provides built-in tools. Like lazy, suspend.
   
@@ -822,7 +832,7 @@ ________________________________________________________________________________
           ```
          2. SUspense let you load fallback, while yoru children components are loading.
 
-   30. ###  ssr-csr
+   31. ###  ssr-csr
          1. **SSR** -  Server side rendering. **CSR** - CLient side rendering.
          2. Gatsby.js and Next.js supports both CSR and SSR.
          3. Static Pages are built during build time. SSR allow to render a page during run-time. You can deal with data  that is fetched when a user visits the page.
@@ -830,26 +840,26 @@ ________________________________________________________________________________
          5. Practical example: you need to call some script and add smth to the header only after some behaviour user on page.  In gatsby.js pages are rendered statically during build, to do smth like that you need SSR.
 
 
-   31. ###  fragment-explanation
+   32. ###  fragment-explanation
           **Fragment** alows you to return group ofchildren elments without need of extra DOM component.
 
-   32. ###  use-effect-empty-array
+   33. ###  use-effect-empty-array
           Your effect will run only after initial render.
 
-   33. ###  example-hook
+   34. ###  example-hook
         **Hooks** are reusable functions. Example: hook for fetching data, or another example hook for recognition screen size.
        ![image](https://github.com/vaskoGut/Learning/assets/7413864/c895a2bf-3b3d-4ac1-9922-589c079f583a)
 
-   33. ###  event-listener
+   35. ###  event-listener
         **Hooks** are reusable functions. Example: hook for fetching data, or another example hook for recognition screen size.
         ![image](https://github.com/vaskoGut/Learning/assets/7413864/6a2f472f-eb8f-4c6a-8237-0ed27deb947b)
 
    
-   35. ### #too-many-useeffect-explain
+   36. ### #too-many-useeffect-explain
         ![image](https://github.com/vaskoGut/Learning/assets/7413864/b2924d25-2088-4928-b941-4c79820fa729)
         solution: it's better to drop it in 1 useEffect and handle different cases. Or you can drop it in distinct function.
 
-   36. ### #design-patterns-react
+   37. ### #design-patterns-react
         ***Observer patterns*** - it's actually using state in React. When state data changed, component ( dependent properties ) are updated. 
          ***Singleton Pattern*** - singleton pattern, when global state is shared across the application.Singleton can only have 1 instance.
          ***Proxy pattern*** - For example handling lazy loading of images. Example: when you have RealImage class, but access to it provides ProxyImage class.
@@ -875,7 +885,7 @@ ________________________________________________________________________________
             image.display();
         ```
 
-  37. ### #caching-react
+  38. ### #caching-react
       1 of possible solutions: You can set some flag with help of localstorage f.e. after you fetch data. And the you check if this flag is true, if it's you aren't fetching data 2nd time.
 
         
