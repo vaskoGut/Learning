@@ -50,7 +50,7 @@
 | 10   | [Why key should be added to the list elements? Why index shouldn't be added as index?](#keys-in-react-lists)                                     |
 | 11   | [What are the components in React?](#commponents-in-react)                                     |
 | 12   | [How to declare state in React?](#state-in-react)                                     |
-| 13   | [What are props in React?](#props-in-react)                                     |
+| 13   | [What are props in React?Are props mutable?](#props-in-react)                                     |
 | 14   | [What is state and props difference?](#state-props-difference)                                     |
 | 15   | [What is high ordered comopnent?](#high-ordered-component)                                     |
 | 16   | [UseEffect with lifeCycle methods](#use-effect-lifecycle-methods)                                     |
@@ -717,16 +717,17 @@ ________________________________________________________________________________
  14. ###  props in react
      Props are short for properties. In React it's object, storing value of attributes, smth. like html attributes. We need it to pass data from component to the component.
      Inside component we have an access to props in similar way as we have an access to the function parameters.
+     Props aren't mutable in React.
 
- 15. ###  state props difference
+ 16. ###  state props difference
      State is muttable. Props are unmutable. State refers to internal data of component. Props are date transfered from parent component to the child.
 
- 16. ###  high-ordered-component
+ 17. ###  high-ordered-component
      High ordered component is wrapper for other components. They allow to reuse some logic across different components. 
      F.e. you want to add logger HOC, which will be loging information about mounting, demounting component. 
       export default withLogger(SomeComponent);
 
- 17. ###  use-effect-lifecycle-methods
+ 18. ###  use-effect-lifecycle-methods
     What are standart lifecycle React methods?
     **getInitialState()**, **componentDidMount()**, **shouldComponentUpdate()**, **componentDidUpdate()**, **componentWillUnmount()**
 
