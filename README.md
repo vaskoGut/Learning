@@ -53,7 +53,7 @@
 | 13   | [What are props in React?Are props mutable?](#props-in-react)                                     |
 | 14   | [What is state and props difference?](#state-props-difference)                                     |
 | 15   | [What is high ordered comopnent?](#high-ordered-component)                                     |
-| 16   | [UseEffect with lifeCycle methods](#use-effect-lifecycle-methods)                                     |
+| 16   | [UseEffect with lifeCycle methods. Useeffect and useState difference](#use-effect-lifecycle-methods)                                     |
 | 17   | [what is useMemo?](#use-memo)                                     |
 | 18   | [what are controlled and uncontrolled components?](#controlled-uncontrolled-componenent)                                     |
 | 19   | [what are react hooks? what is bad practices using hooks?](#react-hooks)                                     |
@@ -671,27 +671,27 @@ ________________________________________________________________________________
    Remember not to mutate directly React's state, cause it can lead to different problems, bugs
    ______________
 
-5. ### Can browser read jsx
+4. ### Can browser read jsx
    Nope, it's used babel to transpile jsx code to regular JS.
    ______________
    
-6. ### what is dom
+5. ### what is dom
    **Document Object Model** - is interface that treats HTML as a tree structure, in which each node is object representing a part of the document. DOM defines a way nodes are accessed and manipulated.
    ![image](https://github.com/vaskoGut/Learning/assets/7413864/6c69442b-2d90-40a8-898d-f3e9d695c19a)
    **Virtual DOM** - it's virtual copy of DOM, with help of it preformance is improved. With help of that we update only necessary things in DOM, not rebuilding all DOM tree.  
    React **Reconciliation** process of updating DOM. It updates the virtual DOM first and then uses the diffing algorithm to make efficient and optimized updates in the Real DOM.
    ______________
-7. ### difference between es6 es6
+6. ### difference between es6 es6
    - es6 ins newest version of js
    - es6 has additional type Symbol
    - es6 has 2 new ways of declaring variables: let and const
    - es6 has arrow function
    - little bit difference while importing, exporting components, declaring classes
    ______________
- 8. ### basic react app
+ 7. ### basic react app
     Install node, instal crea-react-app. It's ready to use.
     ______________
- 9. ###  what is event in react
+ 8. ###  what is event in react
      Event in React is action triggered on some change in the user interface. It can be click or key pressing for example.
      **Synthetic event** - synthetic event is object we get after triggering some event. An example:
 
@@ -708,28 +708,29 @@ ________________________________________________________________________________
      1. Key is a unique identifier and it is used to identify whhich element of list was updated, deleted or added. Keys also help to improve performance of rendering lists.
      2. Index should be added as index cause, if you for example filter  your list - elements of list will get new indexes - other than you initialized  at first.
 
- 12. ###  commponents in react
+ 11. ###  commponents in react
      React application consists of react component. Component is a reausable piece of code. Component can be stateless or statefull.
 
- 13. ###  state in react
+ 12. ###  state in react
      You needed constructor and set value to the this.state. Now you can just use useState hook.
 
- 14. ###  props in react
+ 13. ###  props in react
      Props are short for properties. In React it's object, storing value of attributes, smth. like html attributes. We need it to pass data from component to the component.
      Inside component we have an access to props in similar way as we have an access to the function parameters.
      Props aren't mutable in React.
 
- 16. ###  state props difference
+ 14. ###  state props difference
      State is muttable. Props are unmutable. State refers to internal data of component. Props are date transfered from parent component to the child.
 
- 17. ###  high-ordered-component
+ 15. ###  high-ordered-component
      High ordered component is wrapper for other components. They allow to reuse some logic across different components. 
      F.e. you want to add logger HOC, which will be loging information about mounting, demounting component. 
       export default withLogger(SomeComponent);
 
- 18. ###  use-effect-lifecycle-methods
+ 16. ###  use-effect-lifecycle-methods
     What are standart lifecycle React methods?
-    **getInitialState()**, **componentDidMount()**, **shouldComponentUpdate()**, **componentDidUpdate()**, **componentWillUnmount()**
+    **getInitialState()**, **componentDidMount()**, **shouldComponentUpdate()**, **componentDidUpdate()**, **componentWillUnmount()**.
+    UseEffect is used for handling sideEffects - like getting some data, or handling some event.
 
  17. ###  use-memo
     UseMemo() hook helps to cache, remember the result of calculations between rereners.
