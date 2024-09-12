@@ -74,6 +74,7 @@
 | 34   | [Provide example of using event listener in react?](#event-listener)                                     |
 | 35   | [What is wrong with too many useEffect?](#too-many-useeffect-explain)                                     |
 | 36   | [JS design patterns used in React?](#design-patterns-react)                                     |
+| 37   | [How can you improve performance of  react application with caching?](#caching-react)                                     |
 
 # GATSBY.JS
 | Nm | #Question   |
@@ -872,6 +873,11 @@ ________________________________________________________________________________
             const image = new ProxyImage();
             image.display();
         ```
+
+  37. ### #caching-react
+      1 of possible solutions: You can set some flag with help of localstorage f.e. after you fetch data. And the you check if this flag is true, if it's you aren't fetching data 2nd time.
+
+        
 
   ________________________________________________________________________________________________________________________________
 
