@@ -832,6 +832,7 @@ ________________________________________________________________________________
            const SomeComponent = React.lazy(() => import('~/components/SomeComponnent')
           ```
          2. SUspense let you load fallback, while yoru children components are loading.
+         3. One more way - is using dynamic imports ( for example for functions ).
 
    31. ###  ssr-csr
          1. **SSR** -  Server side rendering. **CSR** - CLient side rendering.
