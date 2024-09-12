@@ -76,6 +76,7 @@
 | 36   | [JS design patterns used in React?](#design-patterns-react)                                     |
 | 37   | [How can you improve performance of  react application with caching?](#caching-react)                                     |
 
+
 # GATSBY.JS
 | Nm | #Question   |
 | :---:   | :---: |
