@@ -802,7 +802,7 @@ ________________________________________________________________________________
 
   26. ###  react-test-how-work
         1. YOu can use e2e tests ( when you test your whole applications ( all components connected 1 to another) on real scenarious, data ). You can also make unit tests ( when you testing behaviour of each component)
-        2. We use react-test-library. You operate on real DOM, while using this library. You can  find element by role or by data-testid. It can be also simulated events with help of that library.
+        2. We use ***react-test-library*** and **react-test-renderer** ( to render yoru components to js objects ). You operate on real DOM, while using this library. You can  find element by role or by data-testid. It can be also simulated events with help of that library.
 
   27. ###  react-dev-tools   
       React dev tools is extension, it can be installed for any browser. As rule we use it if we have some problem with performance ( for example component is rendered too many times ).
