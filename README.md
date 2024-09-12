@@ -769,6 +769,7 @@ ________________________________________________________________________________
       doesn't have it.
 
   21. ###   use-callback
+      **Usecallback** memoizes a function definition and returns momoized function during rerenders, it improves performance in that way.
       If you need call function, but don't want it toretriggered in useEffect, then you will need useCallback.
       If we want to pass some function, to the component, and we don't want that component to be rerendered.
       Then can use useCallback. Example:
