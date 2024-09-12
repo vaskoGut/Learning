@@ -1154,6 +1154,7 @@ ________________________________________________________________________________
          2. Localhost, live reloading, hot moudle replacement - monitoring chamges, updating modules, replacing moudules, callback execution.
          3. Envrionment variables.
             So dev is about dubugging,efficient workflow.
+
          In **prod** we focus on:
          1. minifiying and optimizing sources, files, assests.
          2. code splitting - create smaller chunks, and load them if only you need it.
