@@ -66,16 +66,16 @@
 | 26   | [what is good way to test your reactapplications?what is end-2-end testing? what is unit testing? What yuu use for unit  testse](#react-test-how-work)                                     |
 | 27   | [what is react dev tools? When do you need it as rule?](#react-dev-tools)                                     |
 | 28   | [what is create portal? Provide some example of using it. What are downsides of useing portals?](#react-portals)                                     |
-| 30   | [what is lazy loading? Explain when you need it. What is difference between lazy loading and dynamic imports ](#lazy-loading-dynamic-imports)                                     |
-| 31   | [what is code splitting? What is lazy and suspense in react? Provide some example. What is Suspense built-int ](#code-splitting)                                     |
-| 32   | [what is SSR and CSR?  Does Gatsby.js, NExt.js supports CSR or SSR? When pages are built in ssr in gatsby.js and when page are built in csr? What is advantage of using SSR? Provide some practical example of using SSR](#ssr-csr)                                     |
-| 33   | [what is fragment?](#fragment-explanation)                                     |
-| 34   | [what does mean useEffect with emtpy array?](#use-effect-empty-array)                                     |
-| 35   | [asd some example of hook?](#example-hook)                                     |
-| 36   | [Provide example of using event listener in react?](#event-listener)                                     |
-| 37   | [What is wrong with too many useEffect?](#too-many-useeffect-explain)                                     |
-| 38   | [JS design patterns used in React?](#design-patterns-react)                                     |
-| 39   | [How can you improve performance of  react application with caching?](#caching-react)                                     |
+| 29   | [what is lazy loading? Explain when you need it. What is difference between lazy loading and dynamic imports ](#lazy-loading-dynamic-imports)                                     |
+| 30   | [what is code splitting? What is lazy and suspense in react? Provide some example. What is Suspense built-int ](#code-splitting)                                     |
+| 31   | [what is SSR and CSR?  Does Gatsby.js, NExt.js supports CSR or SSR? When pages are built in ssr in gatsby.js and when page are built in csr? What is advantage of using SSR? Provide some practical example of using SSR](#ssr-csr)                                     |
+| 32   | [what is fragment?](#fragment-explanation)                                     |
+| 33   | [what does mean useEffect with emtpy array?](#use-effect-empty-array)                                     |
+| 34   | [asd some example of hook?](#example-hook)                                     |
+| 35   | [Provide example of using event listener in react?](#event-listener)                                     |
+| 36   | [What is wrong with too many useEffect?](#too-many-useeffect-explain)                                     |
+| 37   | [JS design patterns used in React?](#design-patterns-react)                                     |
+| 38   | [How can you improve performance of  react application with caching?](#caching-react)                                     |
 
 
 # GATSBY.JS
