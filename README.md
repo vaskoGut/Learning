@@ -111,6 +111,7 @@
 | 22   | [What is cookies? What is localstorage? What does have bigger size, bigger capacity? What do we store in localStorage nad what as rule do we store in cookies?](#localstorage-cookies)                                     |
 | 23   | [1. What is webpack? 2. Name difference between dev and prod webpack configuration. 3. Where is webpack configuration in gatsby.js, next.js frameworks? 4. "build": "webpack --mode production" - what will be result of this command?](#webpack-explanation)                                     |
 | 24   | [How to create ( generate ) packages.json file?](#creating-package-json))      |
+| 25   | [Does react testing library work on rendered react components or on dom?](#react-testing-library))      |
 
 SPA:
 Works by loading a single HTML page and dynamically updating the content as the user interacts with the app.
@@ -1169,6 +1170,11 @@ ________________________________________________________________________________
 ________________________________________________________________________________________________________________________________
    24. ###  creating-package-json
    You can create it manually or you can use npm init command.
+
+________________________________________________________________________________________________________________________________
+   25. ###  react-testing-library
+   React testing library works on real DOM. 
+   You can find form elements by their label text, finding links and buttons from their text. You can use also datatest-id in places, where you can't use other methods.
    
 
  
