@@ -112,6 +112,7 @@
 | 23   | [1. What is webpack? 2. Name difference between dev and prod webpack configuration. 3. Where is webpack configuration in gatsby.js, next.js frameworks? 4. "build": "webpack --mode production" - what will be result of this command?](#webpack-explanation)                                     |
 | 24   | [How to create ( generate ) packages.json file?](#creating-package-json))      |
 | 25   | [Does react testing library work on rendered react components or on dom?](#react-testing-library))      |
+| 26   | [What for are used render, screen methods imported from react testing library?](#render-screen-testing-react-library))      |
 
 SPA:
 Works by loading a single HTML page and dynamically updating the content as the user interacts with the app.
@@ -1176,6 +1177,9 @@ ________________________________________________________________________________
    React testing library works on real DOM. 
    You can find form elements by their label text, finding links and buttons from their text. You can use also datatest-id in places, where you can't use other methods.
    
+________________________________________________________________________________________________________________________________
+   26. ###  render-screen-testing-react-library
+   Render method is used to render component, screen method is used to find element, what you need by role, label or testid.
 
  
 ________________________________________________________________________________________________________________________________
