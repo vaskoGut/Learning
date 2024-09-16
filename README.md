@@ -113,6 +113,7 @@
 | 24   | [How to create ( generate ) packages.json file?](#creating-package-json))      |
 | 25   | [Does react testing library work on rendered react components or on dom?](#react-testing-library))      |
 | 26   | [What for are used render, screen methods imported from react testing library?](#render-screen-testing-react-library))      |
+| 27   | [What is advantages of react-query?](#react-query))      |
 
 SPA:
 Works by loading a single HTML page and dynamically updating the content as the user interacts with the app.
@@ -1181,7 +1182,10 @@ ________________________________________________________________________________
    26. ###  render-screen-testing-react-library
    Render method is used to render component, screen method is used to find element, what you need by role, label or testid.
 
- 
+ ________________________________________________________________________________________________________________________________
+   27. ###  react-query
+     Advantages of react query: - simplified data fetching; - caching; - updating data in background
+   
 ________________________________________________________________________________________________________________________________
    1. ### box-model
   **box model** - it's box which wraps every HTML element. Box model consists of content, padding, bordery, margin.
