@@ -142,6 +142,11 @@ Can be installed on a user's home screen like a native app and can run independe
 | 2   | [Git merge rebase difference? ](#merge-rebase-difference)                                     |
 | 3   | [What is cherry pick? ](#cherry-pick)                                     |
 
+# REDUX, REACT CONTEXT, REACT QUERY, STATE MANAGEMENT
+| Nm | #Question   |
+| :---:   | :---: |
+| 1   | [Difference beteen react context and redux ](#react-context-redux)                                     |
+
 
 
 1. ### what is difference between let const var
@@ -1219,6 +1224,15 @@ ______________
      ***Rem*** - dictate an element's font size relative to the size of the root element. In most cases 16px is default.
      1 of the most valuable advantages of rem is scalability and consistency.
 ______________
+
+
+
+REACT REDUX STATE MANAGEMENT LIBRARIES
+  1. ### react-context-redux
+     Context react is more useful when you work with simple application.
+     Redux is used when more complicated cases, applications.
+______________
+
 
 What is cookies, sessiens, tokens 
 what is turborepo in few words
