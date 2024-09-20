@@ -76,6 +76,7 @@
 | 36   | [What is wrong with too many useEffect?](#too-many-useeffect-explain)                                     |
 | 37   | [JS design patterns used in React?](#design-patterns-react)                                     |
 | 38   | [How can you improve performance of  react application with caching?](#caching-react)                                     |
+| 39   | [Is it good practice to assign state value directly to the input inside form?](#form-input-react-handling)                                     |
 
 
 # GATSBY.JS
@@ -900,6 +901,10 @@ ________________________________________________________________________________
 
   38. ### #caching-react
       1 of possible solutions: You can set some flag with help of localstorage f.e. after you fetch data. And the you check if this flag is true, if it's you aren't fetching data 2nd time.
+
+  39. ### #form-input-react-handling
+      It's better use controlled components - assign some 'handleChange' function, and control state of input inside it. It's better approach for testing, debugging approaches.
+
 
         
 
