@@ -676,30 +676,31 @@ ________________________________________________________________________________
 
 3. ### What is state in react
    State in React - is object containing component an information. It can be changed. When state's changed, component is rerendered.
-   Remember not to mutate directly React's state, cause it can lead to different problems, bugs
+   Remember not to mutate directly React's state, cause it can lead to different problems, bugs.
+   When state's updated, react calls render() method and component's updated.
    ______________
 
-4. ### Can browser read jsx
+5. ### Can browser read jsx
    Nope, it's used babel to transpile jsx code to regular JS.
    ______________
    
-5. ### what is dom
+6. ### what is dom
    **Document Object Model** - is interface that treats HTML as a tree structure, in which each node is object representing a part of the document. DOM defines a way nodes are accessed and manipulated.
    ![image](https://github.com/vaskoGut/Learning/assets/7413864/6c69442b-2d90-40a8-898d-f3e9d695c19a)
    **Virtual DOM** - it's virtual copy of DOM, with help of it preformance is improved. With help of that we update only necessary things in DOM, not rebuilding all DOM tree.  
    React **Reconciliation** process of updating DOM. It updates the virtual DOM first and then uses the diffing algorithm to make efficient and optimized updates in the Real DOM.
    ______________
-6. ### difference between es6 es6
+7. ### difference between es6 es6
    - es6 ins newest version of js
    - es6 has additional type Symbol
    - es6 has 2 new ways of declaring variables: let and const
    - es6 has arrow function
    - little bit difference while importing, exporting components, declaring classes
    ______________
- 7. ### basic react app
+ 8. ### basic react app
     Install node, instal crea-react-app. It's ready to use.
     ______________
- 8. ###  what is event in react
+ 9. ###  what is event in react
      Event in React is action triggered on some change in the user interface. It can be click or key pressing for example.
      **Synthetic event** - synthetic event is object we get after triggering some event. An example:
 
