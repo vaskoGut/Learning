@@ -116,6 +116,7 @@
 | 25   | [Does react testing library work on rendered react components or on dom?](#react-testing-library))      |
 | 26   | [What for are used render, screen methods imported from react testing library?](#render-screen-testing-react-library))      |
 | 27   | [What is advantages of react-query?](#react-query))      |
+| 28   | [What is UTC time?](#utc-time-explanation))      |
 
 SPA:
 Works by loading a single HTML page and dynamically updating the content as the user interacts with the app.
@@ -1208,6 +1209,10 @@ ________________________________________________________________________________
  ________________________________________________________________________________________________________________________________
    27. ###  react-query
      Advantages of react query: - simplified data fetching; - caching; - updating data in background
+
+________________________________________________________________________________________________________________________________
+   28. ###  utc-time-explanation
+     This termin stands for Coordinated Universal Time. An example - New York City is in the UTC-5 time zone, which means the time in NYC is five hours behind UTC.
    
 ________________________________________________________________________________________________________________________________
    1. ### box-model
