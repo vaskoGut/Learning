@@ -620,6 +620,7 @@ Can be installed on a user's home screen like a native app and can run independe
 
   22. ### immidietly-invoked-function-expression
     Function runs as soon as it's defined.
+
         ```javascript
            (function () {
              // …
