@@ -530,24 +530,24 @@ Can be installed on a user's home screen like a native app and can run independe
    17. ### arrow-function
        This inside arrow function is referenced, pointed to the global object. We normal function declaration - it points to the inner scope.
 
-      ```javascript
-        function RegularFunction() {
-        this.value = 10;
-          setTimeout(function () {
-            console.log(this.value); // undefined, because `this` refers to the global object or is undefined in strict mode. It should be remembered that for example in chrome, it can console 10 instead of undefined ( it's connected with specific chrome console aspects ).
-          }, 100);
-        }
-        
-        function ArrowFunction() {
-          this.value = 20;
-          setTimeout(() => {
-            console.log(this.value); // 20, because `this` is inherited from ArrowFunction's scope
-          }, 100);
-        }
-    
-        new RegularFunction(); // Logs: undefined
-        new ArrowFunction();   // Logs: 20
-      ```
+        ```javascript
+          function RegularFunction() {
+          this.value = 10;
+            setTimeout(function () {
+              console.log(this.value); // undefined, because `this` refers to the global object or is undefined in strict mode. It should be remembered that for example in chrome, it can console 10 instead of undefined ( it's connected with specific chrome console aspects ).
+            }, 100);
+          }
+          
+          function ArrowFunction() {
+            this.value = 20;
+            setTimeout(() => {
+              console.log(this.value); // 20, because `this` is inherited from ArrowFunction's scope
+            }, 100);
+          }
+      
+          new RegularFunction(); // Logs: undefined
+          new ArrowFunction();   // Logs: 20
+        ```
 
   18. ### object-assign
 
