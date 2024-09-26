@@ -24,6 +24,7 @@
 | 20   | [Name difference between copying primitive and object ( reference ) ? explain why let a = {};let b = {} not equal objects](#object-primitive-reference)                                     |
 | 21   | [Does nested function have an access to the outer function in JavaScript? And vice versa ( opposite) ](#inner-outer-function-scope)                                     |
 | 22   | [What is IIFE (immidietly invoked function expression](#immidietly-invoked-function-expression)                                     |
+| 23   | [What are module exports in js?])(module-exports)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -617,7 +618,7 @@ Can be installed on a user's home screen like a native app and can run independe
   21. ### inner-outer-function-scope
     Outer function doesn't have an access to the inner functions. But inner functions have an access to the outer functions. It's how lexical scope does work.
 
-  21. ### immidietly-invoked-function-expression
+  23. ### immidietly-invoked-function-expression
     Function runs as soon as it's defined.
     ```javascript
        (function () {
@@ -628,6 +629,19 @@ Can be installed on a user's home screen like a native app and can run independe
         // …
       })();
     ```
+
+  23. ### module-exports
+    Module exports - is a way to expose  functions, objects and primitives from module, so they can be used later in your code.
+    An example:
+    ![image](https://github.com/user-attachments/assets/a3c13743-8d3f-46f7-ac68-3329555350fc)
+    And if we need to import it, we do it that way:
+    ![image](https://github.com/user-attachments/assets/d3a5b924-7903-45e2-a11b-ba2f1a28090f)
+    Module has different properties, one of them is exports, if you will do console.log(module).
+
+    Remember also yuo have 2 other options ( its expecially often is used in React.jss) export default and export.
+    ![image](https://github.com/user-attachments/assets/d2e368e5-b53f-4c18-9892-1cf61d6f16ed)
+
+
    
 __________________________________________________________________________________________________________________________________________
 
