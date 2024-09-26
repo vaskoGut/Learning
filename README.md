@@ -24,7 +24,7 @@
 | 20   | [Name difference between copying primitive and object ( reference ) ? explain why let a = {};let b = {} not equal objects](#object-primitive-reference)                                     |
 | 21   | [Does nested function have an access to the outer function in JavaScript? And vice versa ( opposite) ](#inner-outer-function-scope)                                     |
 | 22   | [What is IIFE (immidietly invoked function expression](#immidietly-invoked-function-expression)                                     |
-| 23   | [What are module exports in js?])(module-exports)                                     |
+| 23   | [What are module exports in js?](#module-exports)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
