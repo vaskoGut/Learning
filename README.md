@@ -118,6 +118,7 @@
 | 26   | [What for are used render, screen methods imported from react testing library?](#render-screen-testing-react-library))      |
 | 27   | [What is advantages of react-query?](#react-query))      |
 | 28   | [What is UTC time?](#utc-time-explanation))      |
+| 29   | [If we want to run express server, that serves react-app - how to do it in short?](#express-server-react))      |
 
 SPA:
 Works by loading a single HTML page and dynamically updating the content as the user interacts with the app.
@@ -1227,7 +1228,12 @@ ________________________________________________________________________________
 ________________________________________________________________________________________________________________________________
    28. ###  utc-time-explanation
      This termin stands for Coordinated Universal Time. An example - New York City is in the UTC-5 time zone, which means the time in NYC is five hours behind UTC.
-   
+
+________________________________________________________________________________________________________________________________
+   29. ###  express-server-react
+     To run an Express server that serves a React app, the typical approach is to first build the React app into static assets (HTML, CSS, JS), and then use Express to serve those assets.
+
+  
 ________________________________________________________________________________________________________________________________
    1. ### box-model
   **box model** - it's box which wraps every HTML element. Box model consists of content, padding, bordery, margin.
