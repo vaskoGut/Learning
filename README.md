@@ -119,7 +119,8 @@
 | 27   | [What is advantages of react-query?](#react-query))      |
 | 28   | [What is UTC time?](#utc-time-explanation))      |
 | 29   | [If we want to run express server, that serves react-app - how to do it in short?](#express-server-react))      |
-| 30   | [what is middleware functin?](#middleware-function))      |
+| 30   | [what is middleware function?](#middleware-function))      |
+| 31   | [what is fs module in node.js?](#fs-module))      |
 
 SPA:
 Works by loading a single HTML page and dynamically updating the content as the user interacts with the app.
@@ -1239,6 +1240,9 @@ ________________________________________________________________________________
        ![image](https://github.com/user-attachments/assets/d69ae5d0-955a-4756-8f18-97288d0c2913)
        So as it can be seen. Middleware it's something between request and response. Middleware is also accessible to change the requests and response objects, and can also terminate the response cycle, if necessary.
 
+________________________________________________________________________________________________________________________________
+   31. ###  fs-module
+       Fs moudule - the built-in Node.js file system module helps us store, access, and manage data
 
 
   
