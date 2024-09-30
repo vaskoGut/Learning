@@ -119,6 +119,7 @@
 | 27   | [What is advantages of react-query?](#react-query))      |
 | 28   | [What is UTC time?](#utc-time-explanation))      |
 | 29   | [If we want to run express server, that serves react-app - how to do it in short?](#express-server-react))      |
+| 30   | [what is middleware functin?](#middleware-function))      |
 
 SPA:
 Works by loading a single HTML page and dynamically updating the content as the user interacts with the app.
@@ -1232,6 +1233,13 @@ ________________________________________________________________________________
 ________________________________________________________________________________________________________________________________
    29. ###  express-server-react
      To run an Express server that serves a React app, the typical approach is to first build the React app into static assets (HTML, CSS, JS), and then use Express to serve those assets.
+
+________________________________________________________________________________________________________________________________
+   30. ###  middleware-function
+       ![image](https://github.com/user-attachments/assets/d69ae5d0-955a-4756-8f18-97288d0c2913)
+       So as it can be seen. Middleware it's something between request and response. Middleware is also accessible to change the requests and response objects, and can also terminate the response cycle, if necessary.
+
+
 
   
 ________________________________________________________________________________________________________________________________
