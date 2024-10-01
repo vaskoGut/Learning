@@ -79,6 +79,7 @@
 | 37   | [JS design patterns used in React?](#design-patterns-react)                                     |
 | 38   | [How can you improve performance of  react application with caching?](#caching-react)                                     |
 | 39   | [Is it good practice to assign state value directly to the input inside form?](#form-input-react-handling)                                     |
+| 40   | [Difference react hook and service](#react-hook-service-difference)                                     |
 
 
 # GATSBY.JS
@@ -934,6 +935,10 @@ ________________________________________________________________________________
 
   39. ### #form-input-react-handling
       It's better use controlled components - assign some 'handleChange' function, and control state of input inside it. It's better approach for testing, debugging approaches.
+
+  40. ### #react-hook-service-difference
+      Reeact custom hook used to work with reused stateful logic. While service is used when you need something independent from react. Service can be used in next cases: Managing API requests and responses.
+Storing business logic that can be shared across the application (not just in React components).
 
 
         
