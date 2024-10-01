@@ -25,6 +25,7 @@
 | 21   | [Does nested function have an access to the outer function in JavaScript? And vice versa ( opposite) ](#inner-outer-function-scope)                                     |
 | 22   | [What is IIFE (immidietly invoked function expression](#immidietly-invoked-function-expression)                                     |
 | 23   | [What are module exports in js?](#module-exports)                                     |
+| 24   | [Why code .then(someFunction) works same as .then((data)=>someFunction(data)) ?](#calling-function-reference)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -645,6 +646,9 @@ Can be installed on a user's home screen like a native app and can run independe
       Remember also yuo have 2 other options ( its expecially often is used in React.jss) export default and export.
       ![image](https://github.com/user-attachments/assets/d2e368e5-b53f-4c18-9892-1cf61d6f16ed)
 
+
+  23. ### calling-function-reference
+      IN js when we pass a function by reference it is automatically called with the argument that the previous 'then' resolves to.
 
    
 __________________________________________________________________________________________________________________________________________
