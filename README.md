@@ -26,6 +26,7 @@
 | 22   | [What is IIFE (immidietly invoked function expression](#immidietly-invoked-function-expression)                                     |
 | 23   | [What are module exports in js?](#module-exports)                                     |
 | 24   | [Why code .then(someFunction) works same as .then((data)=>someFunction(data)) ?](#calling-function-reference)                                     |
+| 25   | [When you want to send json data to the server in what format should it be sent ?](#json-data-to-server)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -647,8 +648,11 @@ Can be installed on a user's home screen like a native app and can run independe
       ![image](https://github.com/user-attachments/assets/d2e368e5-b53f-4c18-9892-1cf61d6f16ed)
 
 
-  23. ### calling-function-reference
+  24. ### calling-function-reference
       IN js when we pass a function by reference it is automatically called with the argument that the previous 'then' resolves to.
+
+  25. ### json-data-to-server
+      Yes, before sending json to the server. You should convert it to the string.
 
    
 __________________________________________________________________________________________________________________________________________
