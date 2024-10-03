@@ -82,7 +82,7 @@
 | 38   | [How can you improve performance of  react application with caching?](#caching-react)                                     |
 | 39   | [Is it good practice to assign state value directly to the input inside form?](#form-input-react-handling)                                     |
 | 40   | [Difference react hook and service](#react-hook-service-difference)                                     |
-
+| 41   | [virtual-dom-shadow-dom-difference](#virtual-dom-shadow-dom-difference)                                     |
 
 # GATSBY.JS
 | Nm | #Question   |
@@ -947,6 +947,11 @@ ________________________________________________________________________________
   40. ### #react-hook-service-difference
       Reeact custom hook used to work with reused stateful logic. While service is used when you need something independent from react. Service can be used in next cases: Managing API requests and responses.
 Storing business logic that can be shared across the application (not just in React components).
+
+  41. ### #virtual-dom-shadow-dom-difference
+      Virtual dom - The Virtual DOM is a tree of JavaScript objects that represent the real DOM elements
+      Shadow dom-is a form of encapsulation on our element. In simple words, Shadow DOM is a way to create a "mini DOM" inside a web component that is hidden and separated from the rest of the page.
+      This means that the styles and elements inside the shadow DOM are encapsulated (protected or isolated) so they don’t get affected by, or affect, anything outside of it
 
 
         
