@@ -84,6 +84,7 @@
 | 40   | [Difference react hook and service](#react-hook-service-difference)                                     |
 | 41   | [virtual-dom-shadow-dom-difference](#virtual-dom-shadow-dom-difference)                                     |
 | 42   | [If we created element with react.createElement and want to render it in React 16. How to do it? Why it's deperecated and what is used now to render elment?](#react-create-element-react-dom)                                     |
+| 43   | [Why we don't use react proptypes in projects What is alternative??](#react-proptypes-question)                                     |
 
 # GATSBY.JS
 | Nm | #Question   |
@@ -957,6 +958,9 @@ Storing business logic that can be shared across the application (not just in Re
   42. ### #react-create-element-react-dom
       At first we creating elment with React.createElement() then we render it with ReactDOM.render(ourElmenet, mountElemnent). Now is used jsx. Youjust render elment in that way:
       function renderElement() { return <div><p>test<p></div> }. Main reason why it's better- it's syntax. You can create element a lot easier.
+
+  43. ### #react-proptypes-question
+      We dont use react proptypes ( which were running during runtime ). Cause in new projects we can use typescript and static types in development process.
 
 
 
