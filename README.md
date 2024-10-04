@@ -83,6 +83,7 @@
 | 39   | [Is it good practice to assign state value directly to the input inside form?](#form-input-react-handling)                                     |
 | 40   | [Difference react hook and service](#react-hook-service-difference)                                     |
 | 41   | [virtual-dom-shadow-dom-difference](#virtual-dom-shadow-dom-difference)                                     |
+| 42   | [If we created element with react.createElement and want to render it in React 16. How to do it? Why it's deperecated and what is used now to render elment?](#react-create-element-react-dom)                                     |
 
 # GATSBY.JS
 | Nm | #Question   |
@@ -953,8 +954,11 @@ Storing business logic that can be shared across the application (not just in Re
       Shadow dom-is a form of encapsulation on our element. In simple words, Shadow DOM is a way to create a "mini DOM" inside a web component that is hidden and separated from the rest of the page.
       This means that the styles and elements inside the shadow DOM are encapsulated (protected or isolated) so they don’t get affected by, or affect, anything outside of it
 
+  42. ### #react-create-element-react-dom
+      At first we creating elment with React.createElement() then we render it with ReactDOM.render(ourElmenet, mountElemnent). Now is used jsx. Youjust render elment in that way:
+      function renderElement() { return <div><p>test<p></div> }. Main reason why it's better- it's syntax. You can create element a lot easier.
 
-        
+
 
   ________________________________________________________________________________________________________________________________
 
