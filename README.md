@@ -720,6 +720,8 @@ ________________________________________________________________________________
    State in React - is object containing component an information. It can be changed. When state's changed, component is rerendered.
    Remember not to mutate directly React's state, cause it can lead to different problems, bugs.
    When state's updated, react calls render() method and component's updated.
+
+   Generally speaking, any time a component needs to hold a dnynamic piece of data - you need a state to use it.
    ______________
 
 5. ### Can browser read jsx
