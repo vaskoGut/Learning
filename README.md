@@ -27,6 +27,8 @@
 | 23   | [What are module exports in js?](#module-exports)                                     |
 | 24   | [Why code .then(someFunction) works same as .then((data)=>someFunction(data)) ?](#calling-function-reference)                                     |
 | 25   | [When you want to send json data to the server in what format should it be sent ?](#json-data-to-server)                                     |
+| 26   | [What is anonymous function in JS ?](#anonymous-function)                                     |
+
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -655,6 +657,10 @@ Can be installed on a user's home screen like a native app and can run independe
 
   25. ### json-data-to-server
       Yes, before sending json to the server. You should convert it to the string.
+
+  26. ### anonymous-function
+      Anonymous function - is function declared without function name.There is 2 different ways of using it.
+      ![image](https://github.com/user-attachments/assets/8a13a700-5395-400f-b75e-4d2c8a93cec0)
 
    
 __________________________________________________________________________________________________________________________________________
