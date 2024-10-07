@@ -829,7 +829,7 @@ ________________________________________________________________________________
       ![image](https://github.com/vaskoGut/Learning/assets/7413864/b131c944-ff04-4800-8e52-c9e9fbde5161)
       
 
-  23. ###   use-ref
+  22. ###   use-ref
        1. UseREf is hook, which we need if we want to operate directly with DOM.
        2. Example of use: if we need for example some input in form to be auto  focused. We need to find that element in DOM and autofocus.
        3. UseReff return object with current property.
@@ -853,6 +853,13 @@ ________________________________________________________________________________
       ```
 
       If you don't provide provider with specific value, all your components will get  thi 1 default value.
+
+      Context also lets you read info from components above. For example let's imagine you have structure like that:
+      ![image](https://github.com/user-attachments/assets/da6b4d53-12bc-42ce-a806-7e272fbe0694)
+
+      It can be provided context like that. So in that way you don't need to provide context info for each specific section component.
+      ![image](https://github.com/user-attachments/assets/ce333824-9911-49ba-909e-1f112662fb9b)
+
   
   26. ###  react-structuring-code
        You need specific folder for your components ( it can be also seperate folder for your common components ), for hooks, constants. 
