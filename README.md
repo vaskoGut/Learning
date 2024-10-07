@@ -860,6 +860,9 @@ ________________________________________________________________________________
       It can be provided context like that. So in that way you don't need to provide context info for each specific section component.
       ![image](https://github.com/user-attachments/assets/ce333824-9911-49ba-909e-1f112662fb9b)
 
+      Real life cases: 1) if you need to keep info about theme (f.e. dark/light). 2) Keeping info about logined/authorised user 3) With help of context  are handled routing - active route in most cases.
+      4) it can be used to pass state to distance children.
+
   
   26. ###  react-structuring-code
        You need specific folder for your components ( it can be also seperate folder for your common components ), for hooks, constants. 
