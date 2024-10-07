@@ -847,20 +847,26 @@ ________________________________________________________________________________
       React context is alternative to the 'prop drilling' ( passing data from parent to children ). Context is often consideredas  lighter, simpler solution to using Redux for state management.
       With context API we have 1 store where all data is passed to and from all data is extracted from.
       Example of data stored in context: template language, user authentificated data. ANother good example is dark mode - if you want an access to it from each component.
+
+      ```javascript
+        export const LevelContext = createContext(1); // now context has default value 1
+      ```
+
+      If you don't provide provider with specific value, all your components will get  thi 1 default value.
   
-  25. ###  react-structuring-code
+  26. ###  react-structuring-code
        You need specific folder for your components ( it can be also seperate folder for your common components ), for hooks, constants. 
        It's good to have proper structure - it's easier to find what you need, it's easier to make onboarding for new team members.
        It's god to use absoolute imports.
 
-  26. ###  react-test-how-work
+  27. ###  react-test-how-work
         1. YOu can use e2e tests ( when you test your whole applications ( all components connected 1 to another) on real scenarious, data ). You can also make unit tests ( when you testing behaviour of each component)
         2. We use ***react-test-library*** and **react-test-renderer** ( to render yoru components to js objects ). You operate on real DOM, while using this library. You can  find element by role or by data-testid. It can be also simulated events with help of that library.
 
-  27. ###  react-dev-tools   
+  28. ###  react-dev-tools   
       React dev tools is extension, it can be installed for any browser. As rule we use it if we have some problem with performance ( for example component is rendered too many times ).
 
-  28. ###  react-portals
+  29. ###  react-portals
 
       1. React portals let you render some component outside your normal react component structure.
       2. Example: you can use it for creating modals.
@@ -868,7 +874,7 @@ ________________________________________________________________________________
       Example createPortal:
   ![image](https://github.com/vaskoGut/Learning/assets/7413864/a4673b20-a45a-45cc-84be-ced9a5c92691)
 
-   29. ###  lazy-loading-dynamic-imports
+   30. ###  lazy-loading-dynamic-imports
          1. Imagine you have component, that appears afoter in some scenarios. It's allways displayed in your app. But it still exists in your bundle. To fix it you can use lazy loading or dynamic imports.
          2. Below you can see lazy loading of component.
             ![image](https://github.com/user-attachments/assets/692a44c2-b19b-4ad7-a973-879c6e3d3299)
@@ -877,7 +883,7 @@ ________________________________________________________________________________
             ![image](https://github.com/user-attachments/assets/772da3e6-c332-4090-a5ef-1dd589dd6200)
             Here you will have error, cause you can't render Promise with appropriate handling of it. Acually its why is better to use lazy loading - it handles Promise issue of importing components.
 
-   30. ###  code-splitting
+   31. ###  code-splitting
          1. Splitting code is technique which allows to optimize the performance of React application.  With help of it you can split your code into smaller chunks and loading the on-deman.
          You can reduce load time. React provides built-in tools. Like lazy, suspend.
   
@@ -887,7 +893,7 @@ ________________________________________________________________________________
          2. SUspense let you load fallback, while yoru children components are loading.
          3. One more way - is using dynamic imports ( for example for functions ).
 
-   31. ###  ssr-csr
+   32. ###  ssr-csr
          1. **SSR** -  Server side rendering. **CSR** - CLient side rendering.
          2. Gatsby.js and Next.js supports both CSR and SSR.
          3. Static Pages are built during build time. SSR allow to render a page during run-time. You can deal with data  that is fetched when a user visits the page.
@@ -895,26 +901,26 @@ ________________________________________________________________________________
          5. Practical example: you need to call some script and add smth to the header only after some behaviour user on page.  In gatsby.js pages are rendered statically during build, to do smth like that you need SSR.
 
 
-   32. ###  fragment-explanation
+   33. ###  fragment-explanation
           **Fragment** alows you to return group ofchildren elments without need of extra DOM component.
 
-   33. ###  use-effect-empty-array
+   34. ###  use-effect-empty-array
           Your effect will run only after initial render.
 
-   34. ###  example-hook
+   35. ###  example-hook
         **Hooks** are reusable functions. Example: hook for fetching data, or another example hook for recognition screen size.
        ![image](https://github.com/vaskoGut/Learning/assets/7413864/c895a2bf-3b3d-4ac1-9922-589c079f583a)
 
-   35. ###  event-listener
+   36. ###  event-listener
         **Hooks** are reusable functions. Example: hook for fetching data, or another example hook for recognition screen size.
         ![image](https://github.com/vaskoGut/Learning/assets/7413864/6a2f472f-eb8f-4c6a-8237-0ed27deb947b)
 
    
-   36. ### #too-many-useeffect-explain
+   37. ### #too-many-useeffect-explain
         ![image](https://github.com/vaskoGut/Learning/assets/7413864/b2924d25-2088-4928-b941-4c79820fa729)
         solution: it's better to drop it in 1 useEffect and handle different cases. Or you can drop it in distinct function.
 
-   37. ### #design-patterns-react
+   38. ### #design-patterns-react
         ***Observer patterns*** - it's actually using state in React. When state data changed, component ( dependent properties ) are updated. 
          ***Singleton Pattern*** - singleton pattern, when global state is shared across the application.Singleton can only have 1 instance.
          ***Proxy pattern*** - For example handling lazy loading of images. Example: when you have RealImage class, but access to it provides ProxyImage class.
@@ -940,26 +946,26 @@ ________________________________________________________________________________
             image.display();
         ```
 
-  38. ### #caching-react
+  39. ### #caching-react
       1 of possible solutions: You can set some flag with help of localstorage f.e. after you fetch data. And the you check if this flag is true, if it's you aren't fetching data 2nd time.
 
-  39. ### #form-input-react-handling
+  40. ### #form-input-react-handling
       It's better use controlled components - assign some 'handleChange' function, and control state of input inside it. It's better approach for testing, debugging approaches.
 
-  40. ### #react-hook-service-difference
+  41. ### #react-hook-service-difference
       Reeact custom hook used to work with reused stateful logic. While service is used when you need something independent from react. Service can be used in next cases: Managing API requests and responses.
 Storing business logic that can be shared across the application (not just in React components).
 
-  41. ### #virtual-dom-shadow-dom-difference
+  42. ### #virtual-dom-shadow-dom-difference
       Virtual dom - The Virtual DOM is a tree of JavaScript objects that represent the real DOM elements
       Shadow dom-is a form of encapsulation on our element. In simple words, Shadow DOM is a way to create a "mini DOM" inside a web component that is hidden and separated from the rest of the page.
       This means that the styles and elements inside the shadow DOM are encapsulated (protected or isolated) so they don’t get affected by, or affect, anything outside of it
 
-  42. ### #react-create-element-react-dom
+  43. ### #react-create-element-react-dom
       At first we creating elment with React.createElement() then we render it with ReactDOM.render(ourElmenet, mountElemnent). Now is used jsx. Youjust render elment in that way:
       function renderElement() { return <div><p>test<p></div> }. Main reason why it's better- it's syntax. You can create element a lot easier.
 
-  43. ### #react-proptypes-question
+  44. ### #react-proptypes-question
       We dont use react proptypes ( which were running during runtime ). Cause in new projects we can use typescript and static types in development process.
 
 
