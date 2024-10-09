@@ -90,6 +90,11 @@
 | 42   | [If we created element with react.createElement and want to render it in React 16. How to do it? Why it's deperecated and what is used now to render elment?](#react-create-element-react-dom)                                     |
 | 43   | [Why we don't use react proptypes in projects What is alternative??](#react-proptypes-question)                                     |
 
+# React-native
+| Nm | #Question   |
+| :---:   | :---: |
+| 1   | [What is react native](#what-is-react-native)                                     |
+
 # GATSBY.JS
 | Nm | #Question   |
 | :---:   | :---: |
