@@ -94,6 +94,7 @@
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [What is react native](#what-is-react-native)                                     |
+| 2   | [How create class names, styles in react native?](#react-native-styling)                                     |
 
 # GATSBY.JS
 | Nm | #Question   |
@@ -1000,6 +1001,16 @@ Storing business logic that can be shared across the application (not just in Re
       We dont use react proptypes ( which were running during runtime ). Cause in new projects we can use typescript and static types in development process.
 
 
+________________________________________________________________________________________________________________________________
+   2. ### #react-native-styling
+      We create style classses with help of react-native api stylesheet. Check next example:
+      ```javascript
+        const styles = StyleSheet.create({
+          container: {
+            backgroundColor: 'green'
+          }
+        });
+      ```
 
   ________________________________________________________________________________________________________________________________
 
