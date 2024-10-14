@@ -89,6 +89,7 @@
 | 41   | [virtual-dom-shadow-dom-difference](#virtual-dom-shadow-dom-difference)                                     |
 | 42   | [If we created element with react.createElement and want to render it in React 16. How to do it? Why it's deperecated and what is used now to render elment?](#react-create-element-react-dom)                                     |
 | 43   | [Why we don't use react proptypes in projects What is alternative??](#react-proptypes-question)                                     |
+| 44   | [What is event handler in React?](#react-event-handler)                                     |
 
 # React-native
 | Nm | #Question   |
@@ -999,6 +1000,12 @@ Storing business logic that can be shared across the application (not just in Re
 
   44. ### #react-proptypes-question
       We dont use react proptypes ( which were running during runtime ). Cause in new projects we can use typescript and static types in development process.
+
+  
+  44. ### #react-event-handler
+      Event handler - is function which is called on some action inside our component. F.e. onclick or onchange
+
+      
 
 
 ________________________________________________________________________________________________________________________________
