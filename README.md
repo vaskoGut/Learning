@@ -91,6 +91,11 @@
 | 43   | [Why we don't use react proptypes in projects What is alternative??](#react-proptypes-question)                                     |
 | 44   | [What is event handler in React?](#react-event-handler)                                     |
 
+# Redux
+| Nm | #Question   |
+| :---:   | :---: |
+| 1   | [What is redux?](#what-is-redux)                                     |
+
 # React-native
 | Nm | #Question   |
 | :---:   | :---: |
@@ -1004,6 +1009,11 @@ Storing business logic that can be shared across the application (not just in Re
   
   44. ### #react-event-handler
       Event handler - is function which is called on some action inside our component. F.e. onclick or onchange
+
+ ________________________________________________________________________________________________________________________________
+  1. ### #what-is-redux
+      Redux is library for managing global application state.
+
 
       
 
