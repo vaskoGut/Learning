@@ -95,6 +95,7 @@
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [What is redux?](#what-is-redux)                                     |
+| 2   | [What is redux action, store, reducer?](#redux-action-store-reducer)                                     |
 
 # React-native
 | Nm | #Question   |
@@ -1014,7 +1015,17 @@ Storing business logic that can be shared across the application (not just in Re
   1. ### #what-is-redux
       Redux is library for managing global application state.
 
+  2. ### #redux-action-store-reducer
+      ***Actions*** are plain objects with a type field, and describe "what happened" in the app
+      ***Reducers*** are functions that calculate a new state value based on previous state + an action
+      ***store*** runs the root reducer whenever an action is dispatched
 
+      Redux uses 1 way data flow through app structure.
+
+      When something happens in the app:
+      The UI dispatches an action
+      The store runs the reducers, and the state is updated based on what occurred
+      The store notifies the UI that the state has changedv
       
 
 
