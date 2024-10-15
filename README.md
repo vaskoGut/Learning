@@ -96,6 +96,7 @@
 | :---:   | :---: |
 | 1   | [What is redux?](#what-is-redux)                                     |
 | 2   | [What is redux action, store, reducer, dispatch?](#redux-action-store-reducer)                                     |
+| 3   | [Difference between redux, redux tools, react-redux library?](#redux-redux-tools-react-redux)                                     |
 
 # React-native
 | Nm | #Question   |
@@ -1029,6 +1030,13 @@ Storing business logic that can be shared across the application (not just in Re
       The store notifies the UI that the state has changedv
       Graph describing redux technology:
       ![image](https://github.com/user-attachments/assets/801c71d4-f642-4128-8780-cda138f64f95)
+
+   3. ### #redux-redux-tools-react-redux
+        ***Redux*** - library for managing global state. It's main source library.
+        ***Redux-toolkit*** - its abstraction over redux, it simplifes redux develpment by reducing some code. It provides utilities like createSlice, configureStore, creatAsyncThunk for easier state management
+        ***React-Redux*** - it's additional library. It helps to connect Redux to React components, allows to access Redux state and dispatch actions within React app using hooks like ***useSelector*** and ***useDispatch***.
+
+        You can combine Redux-toolkit with React-redux.
 
 ________________________________________________________________________________________________________________________________
    2. ### #react-native-styling
