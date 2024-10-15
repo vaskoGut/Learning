@@ -95,7 +95,7 @@
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [What is redux?](#what-is-redux)                                     |
-| 2   | [What is redux action, store, reducer?](#redux-action-store-reducer)                                     |
+| 2   | [What is redux action, store, reducer, dispatch?](#redux-action-store-reducer)                                     |
 
 # React-native
 | Nm | #Question   |
@@ -1019,6 +1019,7 @@ Storing business logic that can be shared across the application (not just in Re
       ***Actions*** are plain objects with a type field, and describe "what happened" in the app
       ***Reducers*** are functions that calculate a new state value based on previous state + an action
       ***store*** runs the root reducer whenever an action is dispatched
+      ***dispatch*** is a function to update the state. Dispatching is smth like calling, triggering an event. In another words "something happened and we want store konw about it".
 
       Redux uses 1 way data flow through app structure.
 
