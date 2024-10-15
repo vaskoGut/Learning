@@ -1036,7 +1036,7 @@ Storing business logic that can be shared across the application (not just in Re
         ***Redux-toolkit*** - its abstraction over redux, it simplifes redux develpment by reducing some code. It provides utilities like createSlice, configureStore, creatAsyncThunk for easier state management
         ***React-Redux*** - it's additional library. It helps to connect Redux to React components, allows to access Redux state and dispatch actions within React app using hooks like ***useSelector*** and ***useDispatch***.
 
-        You can combine Redux-toolkit with React-redux.
+        You can combine Redux-toolkit with React-redux it's common pattern for React applications.
 
 ________________________________________________________________________________________________________________________________
    2. ### #react-native-styling
