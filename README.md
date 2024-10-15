@@ -1026,8 +1026,8 @@ Storing business logic that can be shared across the application (not just in Re
       The UI dispatches an action
       The store runs the reducers, and the state is updated based on what occurred
       The store notifies the UI that the state has changedv
-      
-
+      Graph describing redux technology:
+      ![image](https://github.com/user-attachments/assets/801c71d4-f642-4128-8780-cda138f64f95)
 
 ________________________________________________________________________________________________________________________________
    2. ### #react-native-styling
