@@ -1053,7 +1053,11 @@ Storing business logic that can be shared across the application (not just in Re
            Illutstratiopn to above principles:
           ![image](https://github.com/user-attachments/assets/fc0164bf-8ed7-4efe-8ea4-759433ca7071)
 
-  4. ### #redux-mobx-difference
+      Below you can see simple example of Redux action, store,reducer, dispatch:
+      ![image](https://github.com/user-attachments/assets/76359509-96b4-43c2-8a89-db875336afba)
+
+
+  5. ### #redux-mobx-difference
      In redux you can have only 1 store, 1 single source of truth. In larger app it can become little bit messy.
      In mobx you can have few stores. You can split yoru state into multiple store, each represeinting different slice of your app logic. Mobx store can also communicate if needed.
      So for bigger applications Mob'x is more modular and scalable.
