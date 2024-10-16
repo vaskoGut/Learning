@@ -1045,6 +1045,10 @@ Storing business logic that can be shared across the application (not just in Re
       As you can see we have react library and redux library. Ract-redux is smth like bridge between that 2 library. It's binding library for React and Redux.
       ![image](https://github.com/user-attachments/assets/a1c81255-6f23-4a3f-bf08-44e7a44d3ac8)
 
+      3 core react principles:
+        1. We have global state of app that is stored as an object inside a single store. We have cake shop with number of cakes: 10.
+        2. The only way to to change the state is to dispatch an action ( we should define type ). Make an order, our action will be CAKE_ORDERED.
+        3. How should state be updated? - with help of reducer. Reducer is shopkeeper, will take cake, reduce one and print invoice. 
 
 ________________________________________________________________________________________________________________________________
    2. ### #react-native-styling
