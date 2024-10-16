@@ -1032,7 +1032,7 @@ Storing business logic that can be shared across the application (not just in Re
       ![image](https://github.com/user-attachments/assets/801c71d4-f642-4128-8780-cda138f64f95)
 
    3. ### #redux-redux-tools-react-redux
-        ***Redux*** - library for managing global state. It's main source library.
+        ***Redux*** - library for managing global state. It's main source library. We should use redux if we have large application state that is needed in many paces of app.
         ***Redux-toolkit*** - its abstraction ( set of tools ) over redux, it simplifes redux develpment by reducing some code. It provides utilities like createSlice, configureStore, creatAsyncThunk for easier state management.
       It helps also to reduce boilerplate code.
         ***React-Redux*** - it's additional library. It helps to connect Redux to React components, allows to access Redux state and dispatch actions within React app using hooks like ***useSelector*** and ***useDispatch***.
