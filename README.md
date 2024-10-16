@@ -1038,6 +1038,9 @@ Storing business logic that can be shared across the application (not just in Re
         ***React-Redux*** - it's additional library. It helps to connect Redux to React components, allows to access Redux state and dispatch actions within React app using hooks like ***useSelector*** and ***useDispatch***.
 
         You can combine Redux-toolkit with React-redux it's common pattern for React applications.
+      As you can see we have react library and redux library. Ract-redux is smth like bridge between that 2 library. It's binding library for React and Redux.
+      ![image](https://github.com/user-attachments/assets/a1c81255-6f23-4a3f-bf08-44e7a44d3ac8)
+
 
 ________________________________________________________________________________________________________________________________
    2. ### #react-native-styling
