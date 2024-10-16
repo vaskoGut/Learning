@@ -1022,6 +1022,10 @@ Storing business logic that can be shared across the application (not just in Re
       ***store*** runs the root reducer whenever an action is dispatched
       ***dispatch*** is a function to update the state. Dispatching is smth like calling, triggering an event. In another words "something happened and we want store konw about it".
 
+      Simple illlustration (cake shop scenario) to show what are core redux concepts ( action, store, reducer ):
+      ![image](https://github.com/user-attachments/assets/dcaa55ad-7a57-44f8-9439-0069953fc0d9)
+
+
       Redux uses 1 way data flow through app structure.
 
       When something happens in the app:
@@ -1031,7 +1035,7 @@ Storing business logic that can be shared across the application (not just in Re
       Graph describing redux technology:
       ![image](https://github.com/user-attachments/assets/801c71d4-f642-4128-8780-cda138f64f95)
 
-   3. ### #redux-redux-tools-react-redux
+   4. ### #redux-redux-tools-react-redux
         ***Redux*** - library for managing global state. It's main source library. We should use redux if we have large application state that is needed in many paces of app.
         ***Redux-toolkit*** - its abstraction ( set of tools ) over redux, it simplifes redux develpment by reducing some code. It provides utilities like createSlice, configureStore, creatAsyncThunk for easier state management.
       It helps also to reduce boilerplate code.
