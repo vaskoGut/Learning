@@ -97,6 +97,7 @@
 | 1   | [What is redux?](#what-is-redux)                                     |
 | 2   | [What is redux action, store, reducer, dispatch?](#redux-action-store-reducer)                                     |
 | 3   | [Difference between redux, redux tools, react-redux library?](#redux-redux-tools-react-redux)                                     |
+| 4   | [Redux mobx difference?](#redux-mobx-difference)                                     |
 
 # React-native
 | Nm | #Question   |
@@ -1035,7 +1036,7 @@ Storing business logic that can be shared across the application (not just in Re
       Graph describing redux technology:
       ![image](https://github.com/user-attachments/assets/801c71d4-f642-4128-8780-cda138f64f95)
 
-   4. ### #redux-redux-tools-react-redux
+   3. ### #redux-redux-tools-react-redux
         ***Redux*** - library for managing global state. It's main source library. We should use redux if we have large application state that is needed in many paces of app.
         ***Redux-toolkit*** - its abstraction ( set of tools ) over redux, it simplifes redux develpment by reducing some code. It provides utilities like createSlice, configureStore, creatAsyncThunk for easier state management.
       It helps also to reduce boilerplate code.
@@ -1051,6 +1052,14 @@ Storing business logic that can be shared across the application (not just in Re
         3. How should state be updated? - with help of reducer. Reducer is shopkeeper, will take cake, reduce one and print invoice.
            Illutstratiopn to above principles:
           ![image](https://github.com/user-attachments/assets/fc0164bf-8ed7-4efe-8ea4-759433ca7071)
+
+  4. ### #redux-mobx-difference
+     In redux you can have only 1 store, 1 single source of truth. In larger app it can become little bit messy.
+     In mobx you can have few stores. You can split yoru state into multiple store, each represeinting different slice of your app logic. Mobx store can also communicate if needed.
+     So for bigger applications Mob'x is more modular and scalable.
+     
+
+
 
 
 ________________________________________________________________________________________________________________________________
