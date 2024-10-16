@@ -1048,7 +1048,10 @@ Storing business logic that can be shared across the application (not just in Re
       3 core react principles:
         1. We have global state of app that is stored as an object inside a single store. We have cake shop with number of cakes: 10.
         2. The only way to to change the state is to dispatch an action ( we should define type ). Make an order, our action will be CAKE_ORDERED.
-        3. How should state be updated? - with help of reducer. Reducer is shopkeeper, will take cake, reduce one and print invoice. 
+        3. How should state be updated? - with help of reducer. Reducer is shopkeeper, will take cake, reduce one and print invoice.
+           Illutstratiopn to above principles:
+          ![image](https://github.com/user-attachments/assets/fc0164bf-8ed7-4efe-8ea4-759433ca7071)
+
 
 ________________________________________________________________________________________________________________________________
    2. ### #react-native-styling
