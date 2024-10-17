@@ -98,6 +98,8 @@
 | 2   | [What is redux action, store, reducer, dispatch?](#redux-action-store-reducer)                                     |
 | 3   | [Difference between redux, redux tools, react-redux library?](#redux-redux-tools-react-redux)                                     |
 | 4   | [Redux mobx difference?](#redux-mobx-difference)                                     |
+| 5   | [Why is it better to have few reducers sometimes??](#redux-reducers)                                     |
+
 
 # React-native
 | Nm | #Question   |
@@ -1057,11 +1059,14 @@ Storing business logic that can be shared across the application (not just in Re
       ![image](https://github.com/user-attachments/assets/76359509-96b4-43c2-8a89-db875336afba)
 
 
-  5. ### #redux-mobx-difference
+  4. ### #redux-mobx-difference
      In redux you can have only 1 store, 1 single source of truth. In larger app it can become little bit messy.
      In mobx you can have few stores. You can split yoru state into multiple store, each represeinting different slice of your app logic. Mobx store can also communicate if needed.
      So for bigger applications Mob'x is more modular and scalable.
-     
+
+  5. ### #redux-reducers
+     ![image](https://github.com/user-attachments/assets/4e2a68ec-1a3f-4b91-af59-01ebc6fb86ab)
+     In short reasons for using reducers are: ***maintability***, ***performance***, ***scalability***.
 
 
 
