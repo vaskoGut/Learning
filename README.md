@@ -99,6 +99,7 @@
 | 3   | [Difference between redux, redux tools, react-redux library?](#redux-redux-tools-react-redux)                                     |
 | 4   | [Redux mobx difference?](#redux-mobx-difference)                                     |
 | 5   | [Why is it better to have few reducers sometimes??](#redux-reducers)                                     |
+| 6   | [Which library can be used to handle state immutability in redux, to improve work with redux state?](#redux-state-immutability)                                     |
 
 
 # React-native
@@ -1067,6 +1068,12 @@ Storing business logic that can be shared across the application (not just in Re
   5. ### #redux-reducers
      ![image](https://github.com/user-attachments/assets/4e2a68ec-1a3f-4b91-af59-01ebc6fb86ab)
      In short reasons for using reducers are: ***maintability***, ***performance***, ***scalability***.
+
+  6. ### #redux-state-immutability
+     You can use immer library. Example of use:
+     ![ImmerLibrary](https://github.com/user-attachments/assets/d757bcad-9825-4721-be15-9af53b800147)
+     Illustration which shows how immer works:
+     ![image](https://github.com/user-attachments/assets/34a730dc-a13f-45bb-b282-b817d6e400da)
 
 
 
