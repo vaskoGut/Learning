@@ -100,6 +100,7 @@
 | 4   | [Redux mobx difference?](#redux-mobx-difference)                                     |
 | 5   | [Why is it better to have few reducers sometimes??](#redux-reducers)                                     |
 | 6   | [Which library can be used to handle state immutability in redux, to improve work with redux state?](#redux-state-immutability)                                     |
+| 7   | [Is redux state immutable?](#redux-state-immutability-more)                                     |
 
 
 # React-native
@@ -1075,7 +1076,8 @@ Storing business logic that can be shared across the application (not just in Re
      Illustration which shows how immer works:
      ![image](https://github.com/user-attachments/assets/34a730dc-a13f-45bb-b282-b817d6e400da)
 
-
+  6. ### #redux-state-immutability-more
+     Yes redux state is immutable. We don't make changes to Redux state, instead of it we're providing new state object whenever there is redux state change.
 
 
 ________________________________________________________________________________________________________________________________
