@@ -101,7 +101,7 @@
 | 5   | [Why is it better to have few reducers sometimes??](#redux-reducers)                                     |
 | 6   | [Which library can be used to handle state immutability in redux, to improve work with redux state?](#redux-state-immutability)                                     |
 | 7   | [Is redux state immutable?](#redux-state-immutability-more)                                     |
-
+| 8   | [Immer library with redux state - why it's usefull?](#redux-immer-library)                                     |
 
 # React-native
 | Nm | #Question   |
@@ -1076,8 +1076,17 @@ Storing business logic that can be shared across the application (not just in Re
      Illustration which shows how immer works:
      ![image](https://github.com/user-attachments/assets/34a730dc-a13f-45bb-b282-b817d6e400da)
 
-  6. ### #redux-state-immutability-more
+  7. ### #redux-state-immutability-more
      Yes redux state is immutable. We don't make changes to Redux state, instead of it we're providing new state object whenever there is redux state change.
+
+  8. ### #redux-immer-library
+     Immer library helps to work, edit, mutate redux state directly. Below you can find reducer created with immer and without it:
+     ![Uploading image.png…]()
+
+
+
+
+![image](https://github.com/user-attachments/assets/daa4f130-4255-4287-9df6-d4b0db546e08)
 
 
 ________________________________________________________________________________________________________________________________
