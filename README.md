@@ -159,7 +159,7 @@ PWA:
 Extends the functionality of traditional web apps with features like offline access, background sync, and push notifications, thanks to Service Workers.
 Can be installed on a user's home screen like a native app and can run independently of the browser.
 
-# CSS
+# CSS STYLING
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [What is box model ( what are parts of box model)? ](#box-model)                                     |
@@ -168,6 +168,7 @@ Can be installed on a user's home screen like a native app and can run independe
 | 4   | [What are possible values of position property? ](#position-property)                                     |
 | 5   | [What are types of selectors in css? ](#selectors-css)                                     |
 | 6   | [What is rem in css? ](#rem-css)                                     |
+| 7   | [What is benefit of styled components in comparison to normal css, style styling? ](#styled-components)                                     |
 
 
 # GIT, DEPLOYMENT, PIPELINES
@@ -1081,7 +1082,7 @@ Storing business logic that can be shared across the application (not just in Re
 
   8. ### #redux-immer-library
      Immer library helps to work, edit, mutate redux state directly. Below you can find reducer created with immer and without it:
-     ![Uploading image.png…]()
+     ![image](https://github.com/user-attachments/assets/37bd6b95-5a4c-45e0-bb8b-d75ac282e412)
 
 
 
@@ -1442,7 +1443,22 @@ ______________
      1 of the most valuable advantages of rem is scalability and consistency.
 ______________
 
+  7. ### styled-components
+     ***styled components**
+     Difference between simple styling and styled components:
+        1. **Scoping**. **Regular CSS files** are global by default. You need to be careful with naming conventions and avoid classnamecollisions. **Styled components** generate unique class names 
+        for each component ensuring that styles are always scoped to the component they belong to. Every styled component is scoped by default.
+        2. **Dynamic styling** - with playin CSS, you can't access JavaScript variables and states to create dynamic states. Styled components allows you to use JS directly in your styles.
+        3. **Component based styling**. Styles apre placed along with js code of component.
+        4. **Theming** - with css variables you can create basic theming. Styled components has built-in them suporting using themProvider.
+        5. **Performance**.  Regular css files - style loading is separated from JavaScript, which can be better for performance in certain cases Styled components - Styled components injects
+            styles as javaScript executes. It can be beneficial for dynamic styles but may cause slight performance problems.
 
+        Summary:
+         ![Uploading image.png…]()
+
+     
+______________
 
 REACT REDUX STATE MANAGEMENT LIBRARIES
   1. ### react-context-redux
