@@ -169,6 +169,7 @@ Can be installed on a user's home screen like a native app and can run independe
 | 5   | [What are types of selectors in css? ](#selectors-css)                                     |
 | 6   | [What is rem in css? ](#rem-css)                                     |
 | 7   | [What is benefit of styled components in comparison to normal css, style styling? ](#styled-components)                                     |
+| 8   | [Styled components and extending styles. how does it work (how can you create basic component and extended or just  different version of component)? ](#styled-components-extending-styles)                                     |
 
 
 # GIT, DEPLOYMENT, PIPELINES
@@ -1457,7 +1458,11 @@ ______________
         Summary:
          ![Uploading image.png…]()
 
-     
+______________
+
+  8. ### styled-components-extending-styles
+     ![Uploading image.png…]()
+
 ______________
 
 REACT REDUX STATE MANAGEMENT LIBRARIES
