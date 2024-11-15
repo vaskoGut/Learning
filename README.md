@@ -106,6 +106,7 @@
 | 10   | [What is middleware?](#what-is-middleware)                                     |
 | 11   | [What is redux thunk?](#what-is-redux-thunk)                                     |
 | 12   | [What is redux saga?](#what-is-redux-saga)                                     |
+| 13   | [Why do we use redux toolkit?](#redux-toolkit)                                     |
 
 # React-native
 | Nm | #Question   |
@@ -1100,8 +1101,12 @@ Storing business logic that can be shared across the application (not just in Re
       The thunk can be used to delay the dispatch of an action, or to dispatch only if a certain condition is met We use redux thunk to fetch some data for example
       @reduxjs/toolkit includes redux thunk by befault.
 
- 11. ### #what-is-redux-saga
+  12. ### #what-is-redux-saga
       **Redux saga** - is a library that aims to make application side effects (i.e. asynchronous things like data fetching and impure things like accessing the browser cache) easier to manage, more efficient to execute, easy to test, and better at handling failures
+
+  12. ### #redux-toolkit
+      **Redux toolkit**. Main reason is boilderlating, it's a problem while using redux.
+      ![image](https://github.com/user-attachments/assets/a8c48bf0-2b94-4d7b-b88d-58a055f88987)
 
 
 ________________________________________________________________________________________________________________________________
