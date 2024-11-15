@@ -1097,7 +1097,7 @@ Storing business logic that can be shared across the application (not just in Re
 
   11. ### #what-is-redux-thunk
       **Redux thunk** - Redux Thunk middleware allows you to write action creators that return a function instead of an action.
-      The thunk can be used to delay the dispatch of an action, or to dispatch only if a certain condition is met
+      The thunk can be used to delay the dispatch of an action, or to dispatch only if a certain condition is met We use redux thunk to fetch some data for example
       @reduxjs/toolkit includes redux thunk by befault.
 
  11. ### #what-is-redux-saga
