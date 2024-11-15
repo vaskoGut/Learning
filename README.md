@@ -1090,11 +1090,9 @@ Storing business logic that can be shared across the application (not just in Re
      ![image](https://github.com/user-attachments/assets/37bd6b95-5a4c-45e0-bb8b-d75ac282e412)
 
    10. ### #what-is-middleware
-     Middleware - is some extendsion between dispatching an action and reaching it to the reducer. Often middleware is used for logging, cach reporting, performance asynch tasks.
+     Middleware - is some extendsion between dispatching an action and reaching it to the reducer. Often middleware is used for logging,
+     cach reporting, performance asynch tasks.
 
-
-
-![image](https://github.com/user-attachments/assets/daa4f130-4255-4287-9df6-d4b0db546e08)
 
 
 ________________________________________________________________________________________________________________________________
