@@ -105,6 +105,7 @@
 | 9   | [What is store subscribe?](#store-subscribe)                                     |
 | 10   | [What is middleware?](#what-is-middleware)                                     |
 | 11   | [What is redux thunk?](#what-is-redux-thunk)                                     |
+| 12   | [What is redux saga?](#what-is-redux-saga)                                     |
 
 # React-native
 | Nm | #Question   |
@@ -1098,7 +1099,8 @@ Storing business logic that can be shared across the application (not just in Re
       **Redux thunk** - Redux Thunk middleware allows you to write action creators that return a function instead of an action.
       The thunk can be used to delay the dispatch of an action, or to dispatch only if a certain condition is met
 
-
+ 11. ### #what-is-redux-saga
+      **Redux saga** - is a library that aims to make application side effects (i.e. asynchronous things like data fetching and impure things like accessing the browser cache) easier to manage, more efficient to execute, easy to test, and better at handling failures
 
 
 ________________________________________________________________________________________________________________________________
