@@ -1108,6 +1108,13 @@ Storing business logic that can be shared across the application (not just in Re
       **Redux toolkit**. Main reason is boilderlating, it's a problem while using redux.
       ![image](https://github.com/user-attachments/assets/a8c48bf0-2b94-4d7b-b88d-58a055f88987)
 
+      What is cool with redux-toolkit we can directly mutate state. We don't need to copy it as it we should do with normal redux.
+      ![image](https://github.com/user-attachments/assets/babcbc48-82c8-4092-ba4a-822a0976e391)
+      We just create reducer and mutate here ordererd state directly.
+      What does createSlice:
+      ![image](https://github.com/user-attachments/assets/fa716136-309d-4989-b60c-d6d6e7e47835)
+
+
 
 ________________________________________________________________________________________________________________________________
    2. ### #react-native-styling
