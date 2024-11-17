@@ -1104,7 +1104,7 @@ Storing business logic that can be shared across the application (not just in Re
   12. ### #what-is-redux-saga
       **Redux saga** - is a library that aims to make application side effects (i.e. asynchronous things like data fetching and impure things like accessing the browser cache) easier to manage, more efficient to execute, easy to test, and better at handling failures
 
-  12. ### #redux-toolkit
+  13. ### #redux-toolkit
       **Redux toolkit**. Main reason is boilderlating, it's a problem while using redux.
       ![image](https://github.com/user-attachments/assets/a8c48bf0-2b94-4d7b-b88d-58a055f88987)
 
@@ -1113,6 +1113,11 @@ Storing business logic that can be shared across the application (not just in Re
       We just create reducer and mutate here ordererd state directly.
       What does createSlice:
       ![image](https://github.com/user-attachments/assets/fa716136-309d-4989-b60c-d6d6e7e47835)
+
+      Redux toolkit createSlice - is reducer version, you define your reducer actions and initial state
+      ![image](https://github.com/user-attachments/assets/49ca4cdf-591d-49d1-9589-2af40743174d)
+
+  
 
 
 
