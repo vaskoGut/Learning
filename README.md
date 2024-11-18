@@ -107,6 +107,7 @@
 | 11   | [What is redux thunk?](#what-is-redux-thunk)                                     |
 | 12   | [What is redux saga?](#what-is-redux-saga)                                     |
 | 13   | [Why do we use redux toolkit?](#redux-toolkit)                                     |
+| 14   | [Why do you need redux extra reducer?](#redux-extrareducer)                                     |
 
 # React-native
 | Nm | #Question   |
@@ -1117,6 +1118,10 @@ Storing business logic that can be shared across the application (not just in Re
       Redux toolkit createSlice - is reducer version, you define your reducer actions and initial state
       ![image](https://github.com/user-attachments/assets/49ca4cdf-591d-49d1-9589-2af40743174d)
 
+  14. ### #redux-toolkit
+      ***redux-extrareducer***. We need it if for example you have to 2 different reducers, and you need to respond on some action from another reducer.
+      ![image](https://github.com/user-attachments/assets/9e727ee9-5dbf-44c5-8483-3ffd00455ef4)
+      Here in icecreamReducer we respond on cakeOrdered type of action.
   
 
 
