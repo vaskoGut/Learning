@@ -109,6 +109,7 @@
 | 13   | [Why do we use redux toolkit?](#redux-toolkit)                                     |
 | 14   | [Why do you need redux extra reducer?](#redux-extrareducer)                                     |
 | 15   | [What is for redux toolkit asynch thunks?](#redux-toolkit-async-thunk)                                     |
+| 16   | [What is for redux toolkit useSelector?](#redux-toolkit-use-selector)                                     |
 
 # React-native
 | Nm | #Question   |
@@ -1128,7 +1129,9 @@ Storing business logic that can be shared across the application (not just in Re
       It's used for handling asynch requests.
       ![image](https://github.com/user-attachments/assets/b89cee88-227a-438c-aa85-742ef65a2656)
 
-  
+  16. ### #redux-toolkit-use-selector
+      Imagine your Redux store is like a library, and it has a catalog of books (the state). If you want to find out how many books are in the library, you can use useSelector to "select" and read that specific piece of information.
+
 
 
 
