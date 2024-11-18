@@ -108,6 +108,7 @@
 | 12   | [What is redux saga?](#what-is-redux-saga)                                     |
 | 13   | [Why do we use redux toolkit?](#redux-toolkit)                                     |
 | 14   | [Why do you need redux extra reducer?](#redux-extrareducer)                                     |
+| 15   | [What is for redux toolkit asynch thunks?](#redux-toolkit-async-thunk)                                     |
 
 # React-native
 | Nm | #Question   |
@@ -1122,6 +1123,11 @@ Storing business logic that can be shared across the application (not just in Re
       ***redux-extrareducer***. We need it if for example you have to 2 different reducers, and you need to respond on some action from another reducer.
       ![image](https://github.com/user-attachments/assets/9e727ee9-5dbf-44c5-8483-3ffd00455ef4)
       Here in icecreamReducer we respond on cakeOrdered type of action.
+
+  15. ### #redux-toolkit-async-thunk
+      It's used for handling asynch requests.
+      ![image](https://github.com/user-attachments/assets/b89cee88-227a-438c-aa85-742ef65a2656)
+
   
 
 
