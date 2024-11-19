@@ -1506,6 +1506,9 @@ ______________
         ![image](https://github.com/user-attachments/assets/c6f9e696-e693-45a3-bc5e-0e671e5461d5)
         And inside styled:
         ![Uploading image.png…]()
+        Add color with help of theme:
+        ![Uploading image.png…]()
+
 
 
 ______________
