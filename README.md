@@ -157,6 +157,7 @@
 | 29   | [If we want to run express server, that serves react-app - how to do it in short?](#express-server-react))      |
 | 30   | [what is middleware function?](#middleware-function))      |
 | 31   | [what is fs module in node.js?](#fs-module))      |
+| 32   | [what is an advantage or react hook form?](#react-hook-form)      |
 
 SPA:
 Works by loading a single HTML page and dynamically updating the content as the user interacts with the app.
@@ -1451,6 +1452,12 @@ ________________________________________________________________________________
 ________________________________________________________________________________________________________________________________
    31. ###  fs-module
        Fs moudule - the built-in Node.js file system module helps us store, access, and manage data
+
+________________________________________________________________________________________________________________________________
+   32. ###  react-hook-form
+       Main advantage of react-hook-form its performance is very well improved. It stands out for its performance and minimal re-rendering, which is achieved using uncontrolled components.
+       This means that form inputs are not directly managed by the React component state, reducing the re-renders required when users type in data
+       
 
 
   
