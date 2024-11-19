@@ -1505,9 +1505,12 @@ ______________
         Examples of using. How to use props wity styled component:
         ![image](https://github.com/user-attachments/assets/c6f9e696-e693-45a3-bc5e-0e671e5461d5)
         And inside styled:
-        ![Uploading image.png…]()
+        ![image](https://github.com/user-attachments/assets/bf9bff96-4bf4-450d-819c-359b7e473f20)
         Add color with help of theme:
         ![Uploading image.png…]()
+        You can add also optional styles like that:
+        ![Uploading image.png…]()
+
 
 
 
