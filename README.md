@@ -1500,7 +1500,13 @@ ______________
             styles as javaScript executes. It can be beneficial for dynamic styles but may cause slight performance problems.
 
         Summary:
-         ![Uploading image.png…]()
+         ![image](https://github.com/user-attachments/assets/7df32de5-0b04-49a5-b19a-2258f7af3df4)
+
+        Examples of using. How to use props wity styled component:
+        ![image](https://github.com/user-attachments/assets/c6f9e696-e693-45a3-bc5e-0e671e5461d5)
+        And inside styled:
+        ![Uploading image.png…]()
+
 
 ______________
 
