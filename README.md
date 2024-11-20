@@ -1524,12 +1524,14 @@ ______________
   7. ### styled-components
      ***styled components**
      Difference between simple styling and styled components:
-        1. **Scoping**. **Regular CSS files** are global by default. You need to be careful with naming conventions and avoid classnamecollisions. **Styled components** generate unique class names 
+        1. **Automatic critic css** - when you page is loaded. Styled components keeps tracking of which components are rendered. ANd injectes only necessary styles.
+        2. **No class names bugys** - library generates unique clssanames for components. You don't have to worry about dublication, misspeling and similar problems.
+        3. **Scoping**. **Regular CSS files** are global by default. You need to be careful with naming conventions and avoid classnamecollisions. **Styled components** generate unique class names 
         for each component ensuring that styles are always scoped to the component they belong to. Every styled component is scoped by default.
-        2. **Dynamic styling** - with playin CSS, you can't access JavaScript variables and states to create dynamic states. Styled components allows you to use JS directly in your styles.
-        3. **Component based styling**. Styles apre placed along with js code of component.
-        4. **Theming** - with css variables you can create basic theming. Styled components has built-in them suporting using themProvider.
-        5. **Performance**.  Regular css files - style loading is separated from JavaScript, which can be better for performance in certain cases Styled components - Styled components injects
+        4. **Dynamic styling** - with playin CSS, you can't access JavaScript variables and states to create dynamic states. Styled components allows you to use JS directly in your styles.
+        5. **Component based styling**. Styles apre placed along with js code of component.
+        6. **Theming** - with css variables you can create basic theming. Styled components has built-in them suporting using themProvider.
+        7. **Performance**.  Regular css files - style loading is separated from JavaScript, which can be better for performance in certain cases Styled components - Styled components injects
             styles as javaScript executes. It can be beneficial for dynamic styles but may cause slight performance problems.
 
         Summary:
