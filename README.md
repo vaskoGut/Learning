@@ -285,6 +285,32 @@ Can be installed on a user's home screen like a native app and can run independe
       let p = new Person();
     ```
 
+    So arrow functions do not have their own this. Instead, they inherit the value of this from the surrounding (lexical) context, which means the value of this is determined by where the arrow function is defined, not by how it is called.
+
+    1 more example:
+     normal function:
+    ```javascript
+     const obj = {
+        name: "Alice",
+        greet: function() {
+          console.log(this.name); // `this` refers to `obj`
+        }
+      };
+    ```
+    arrorw function:
+      ```javascript
+        const obj = {
+          name: "Alice",
+          greet: () => {
+            console.log(this.name); // `this` does NOT refer to `obj`, but to the surrounding context (possibly `window` in non-strict mode or `undefined` in strict mode)
+          }
+      };
+
+obj.greet(); // Output: undefined or global object, because `this` is inherited from the lexical scope
+      ```
+
+obj.greet(); // Output: Alice
+
  3. ### Generator function
     **Generator**  is a process that can be paused and resumed and can yield multiple values. Generator returns iterable Geneartor object.
        ```javascript
