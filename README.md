@@ -1542,7 +1542,7 @@ ______________
         And inside styled:
         ![image](https://github.com/user-attachments/assets/bf9bff96-4bf4-450d-819c-359b7e473f20)
         Add color with help of theme:
-        ![Uploading image.png…]()
+        ![image](https://github.com/user-attachments/assets/79486119-8c20-40e5-a2b8-3938eed25038)
         You can add also optional styles like that:
         ![Uploading image.png…]()
 
@@ -1552,7 +1552,8 @@ ______________
 ______________
 
   8. ### styled-components-extending-styles
-     ![Uploading image.png…]()
+    ![Uploading image.png…]()
+
 
 ______________
 
