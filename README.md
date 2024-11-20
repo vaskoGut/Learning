@@ -1552,7 +1552,7 @@ ______________
 ______________
 
   8. ### styled-components-extending-styles
-    ![Uploading image.png…]()
+        ![Uploading image.png…]()
 
 
 ______________
