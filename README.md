@@ -1548,11 +1548,14 @@ ______________
 
 
 
-
 ______________
 
   8. ### styled-components-extending-styles
         ![image](https://github.com/user-attachments/assets/d13b5115-9ce4-437a-b13b-0b662f38c0b0)
+
+        Also check example of setting css attribute:
+        ![image](https://github.com/user-attachments/assets/c72564da-9848-47fa-96fa-4428a1e29bb3)
+
 
 
 ______________
