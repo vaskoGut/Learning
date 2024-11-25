@@ -158,6 +158,8 @@
 | 30   | [what is middleware function?](#middleware-function))      |
 | 31   | [what is fs module in node.js?](#fs-module))      |
 | 32   | [what is an advantage or react hook form?](#react-hook-form)      |
+| 33   | [what will do next axios header ''Content-Type': 'application/json'' in axios??](#axios-json-header)      |
+
 
 SPA:
 Works by loading a single HTML page and dynamically updating the content as the user interacts with the app.
@@ -1486,8 +1488,10 @@ ________________________________________________________________________________
    32. ###  react-hook-form
        Main advantage of react-hook-form its performance is very well improved. It stands out for its performance and minimal re-rendering, which is achieved using uncontrolled components.
        This means that form inputs are not directly managed by the React component state, reducing the re-renders required when users type in data
-       
 
+________________________________________________________________________________________________________________________________
+   33. ###  axios-json-header
+        headers: { 'Content-Type': 'application/json' } = it will automatically convert your data to json. When you make post request for example
 
   
 ________________________________________________________________________________________________________________________________
