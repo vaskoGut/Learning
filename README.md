@@ -185,7 +185,7 @@ Can be installed on a user's home screen like a native app and can run independe
 | 6   | [What is rem in css? ](#rem-css)                                     |
 | 7   | [What is benefit of styled components in comparison to normal css, style styling? ](#styled-components)                                     |
 | 8   | [Styled components and extending styles. how does it work (how can you create basic component and extended or just  different version of component)? ](#styled-components-extending-styles)                                     |
-
+| 9   | [Difference betweein relative, absoulte, fixed, sticky? ](#relative-absolute-fixed-sticky)                                     |
 
 # GIT, DEPLOYMENT, PIPELINES
 | Nm | #Question   |
@@ -1568,6 +1568,16 @@ ______________
         6. **Theming** - with css variables you can create basic theming. Styled components has built-in them suporting using themProvider.
         7. **Performance**.  Regular css files - style loading is separated from JavaScript, which can be better for performance in certain cases Styled components - Styled components injects
             styles as javaScript executes. It can be beneficial for dynamic styles but may cause slight performance problems.
+
+______________
+  8. ### relative-absolute-fixed-sticky
+     ***static*** - default element position. The element will flow winto the page as it normally would.
+     ***Relative*** - the element is positioned relatively to its normal position. It really means 'relative to yourself'. You can use now top. left, bottom. right properties to set position of that element.
+      When you set relative positioning - we can you z-index on that element. Other thing - it limits the scope of absolutely positioned child elements. Any element that is a child ot the relatively positioned elmemnt, can be be absolutely positioned.
+     ***Absolute*** - when we want to place any page element exactly where we want it. An element with this type of positioning is not affected by other elements and it dones'nt affect other element.
+     ***Fixed*** - positioned realteve to the viewport. The viewport doesn't change when the window is scrolled, so element stays right where it is when the page is scrolled.
+     ***Sticky*** - a sticky element will stick like a static elemen until some scrolling position. Then it will behave like fixed element.
+
 
         Summary:
          ![image](https://github.com/user-attachments/assets/7df32de5-0b04-49a5-b19a-2258f7af3df4)
