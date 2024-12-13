@@ -34,6 +34,7 @@
 | 30   | [Difference between inline and external js? What is an advantage of external js loading?](#inline-external-js)                                     |
 | 31   | [how can you test if a script has loaded successfully??](#loading-script-successfully)                                     |
 | 32   | [How can you prevent the browser from caching a JavaScript file?](#prevent-caching)                                     |
+| 33   | [What tools ( script loaders ) can you use for script loading?](#script-loaders)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -747,12 +748,17 @@ obj.greet(); // Output: Alice
   31. ### #loading-script-successfully
       We can test if a scripthas loadded successfully by checking  if a global variable or function defined in the script ia available.
 
-  31. ### #prevent-caching
+  32. ### #prevent-caching
       WE can prevent the browser from caching a js file by providing some unique query string to the URL of the file.
       An example:
       ```javascript
         <script src="hellojs.js?v=1"></script>
       ```
+
+  33. ### #script-loaders
+      It can be used Require.js or webPack for example.It provides advanced functionality for loading and managing Javascript files such as lazyLoading, dependency management, error handling.
+
+
    
 __________________________________________________________________________________________________________________________________________
 
