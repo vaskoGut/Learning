@@ -29,7 +29,7 @@
 | 25   | [When you want to send json data to the server in what format should it be sent ?](#json-data-to-server)                                     |
 | 26   | [What is anonymous function in JS ?](#anonymous-function)                                     |
 | 27   | [What is nullish coalescing operator?](#nullish-coalescing)                                     |
-
+| 28   | [What is script diff, async difference?](#script-async-deffer)                                     |
 
 
 # Exercises Javascript Typescript
@@ -725,11 +725,13 @@ obj.greet(); // Output: Alice
       Anonymous function - is function declared without function name.There is 2 different ways of using it.
       ![image](https://github.com/user-attachments/assets/8a13a700-5395-400f-b75e-4d2c8a93cec0)
 
-  26. ### #nullish-coalescing
+  27. ### #nullish-coalescing
       The nullish coalescing (??) operator is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.
       ![image](https://github.com/user-attachments/assets/54977902-f564-4a58-a264-bf122ae07267)
 
-       
+  28. ### #script-async-deffer
+      ![image](https://github.com/user-attachments/assets/a62346cd-23e2-4110-8a90-c4056095af25)
+
 
    
 __________________________________________________________________________________________________________________________________________
