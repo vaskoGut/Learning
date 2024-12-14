@@ -415,7 +415,7 @@ obj.greet(); // Output: Alice
 
   6. ### this-meaning
 
-       1. This is keyword. It refers to different objects depending on how and where it used.
+       1. This is keyword. It refers to different objects depending on how and where it used. The this keyword refers to the context where a piece of code, such as a function's body, is supposed to run.
        2. You can't change this value.
        3. ALone **this** refers to the global object.  INside function - this refers to the global object also. In event handlers this refers to the hTML object.
         ```javascript
