@@ -349,7 +349,7 @@ obj.greet(); // Output: Alice
        ```
    4. ### types enums interfaces
       1. What are types, when do we use it? 
-       **Types** are definitions of data type. Typescript compiler use it to  detect errors.
+       **Types** are definitions of data type. Both're used to define type of data. Typescript compiler use it to  detect errors.
       2. What are **Tuples**? 
           ```javascript
             let ourTuple: [number, boolean, string];
