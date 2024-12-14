@@ -404,6 +404,7 @@ obj.greet(); // Output: Alice
       9. Interface: An interface is used to define a structure for an object.
       10. Record is a utility type in TypeScript that constructs an object type with keys of type K and values of type T. An example:
           Record<string, any> is a mapped type that creates an object type where the keys are strings, and the values can be of any type.
+          So, generally speaking, Record is type that helps to define an object with specific keys and values.
           
 
 
