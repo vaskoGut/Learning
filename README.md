@@ -645,7 +645,7 @@ obj.greet(); // Output: Alice
           new ArrowFunction();   // Logs: 20
         ```
 
-  19. ### object-assign
+  18. ### object-assign
 
       Object assign method is used to clone or copy proeperties from 1 object to another.
 
@@ -661,9 +661,9 @@ obj.greet(); // Output: Alice
             });
         ```
 
-   20. ### object-create
+   19. ### object-create
        
-      With help of Object.create we can create an object from a given prototype object. It retrns a new object with the prototype set to given object. 
+      With help of Object.create we can create an new object from a given prototype object. It retrns a new object with the prototype set to given object. 
 
       ```javascript
         const myPrototype = {
