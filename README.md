@@ -498,6 +498,8 @@ obj.greet(); // Output: Alice
           doTest();
           console.log(test); // 5
         ```
+
+        Examples of global scope: window does have global scope. Variable declared with var outside of the fnction has global scop.e
     
  10. ### rest-spread-operator-difference
       1. ***Spread*** operator is mostly used with arrays. It's used to efficientl merge, cop arrays, pass elements to functions.
