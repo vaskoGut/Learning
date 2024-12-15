@@ -575,7 +575,8 @@ obj.greet(); // Output: Alice
         Types in TypeScript are more flexible and can define primitive, intersection, union, tuple, or different types of data, while interfaces are used to describe the shape of an object
       Yes you can use types to define typf of object.
          ```javascript
-             interface Base {
+            // With interface
+            interface Base {
               id: number;
             }
             interface User extends Base {
