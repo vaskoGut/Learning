@@ -15,7 +15,7 @@
 | 11  | [What are sets? How to convert Set type to the array? Example.](#set-object)                                                                             |
 | 12  | [Why using try catch wrapper  instead just async await?](#try-catch)                                                                             |
 | 13  | [types and interfaces diff?](#type-interface-diff)                                                                             |
-| 14   | [How to make array from collections js?](#collection-js-array)                                     |
+| 14   | [How to make array from collections js? What is js collection?](#collection-js-array)                                     |
 | 15   | [what is 3rd stringify parameter?](#stringify-3rd-parameter)                                     |
 | 16   | [what is difference between try block - catch/finally? Please provide an example](#try-catch-finally)                                     |
 | 17   | [what will be result of displaying this inside arrow function ?](#arrow-function)                                     |
@@ -578,6 +578,8 @@ obj.greet(); // Output: Alice
       // Or make it with Array.from
        Array.from(yourObjectCollection)
        ```
+
+       In JavaScript, collections refer to data structures that store multiple elements or values. Examples include arrays, objects, maps, and sets
 
   15. ### stringify-3rd-parameter
        it adds additional spacing
