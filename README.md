@@ -55,7 +55,7 @@
 | 3   | [What is state in react?](#what-is-state-in-react)                                     | 
 | 4   | [Can browser read JSX?](#can-browser-read-jsx)                                     |
 | 5   | [What is DOM, Virtual DOM?](#what-is-dom)                                     |
-| 6   | [What is difference between es5 and es6?](#difference-between-es6-es6)                                     |
+| 6   | [What is difference between es5 and es6?](#difference-between-es5-es6)                                     |
 | 7   | [How to create basic React app?](#basic-react-app)                                     |
 | 8   | [what is event in React? What is synthetic event?](#what-is-event-in-react)                                     |
 | 9   | [Explain how lists work in React?](#lists-in-react)                                     |
@@ -871,7 +871,7 @@ ________________________________________________________________________________
    **Virtual DOM** - it's virtual copy of DOM, with help of it preformance is improved. With help of that we update only necessary things in DOM, not rebuilding all DOM tree.  
    React **Reconciliation** process of updating DOM. It updates the virtual DOM first and then uses the diffing algorithm to make efficient and optimized updates in the Real DOM.
    ______________
-7. ### difference between es6 es6
+7. ### difference between es5 es6
    - es6 ins newest version of js
    - es6 has additional type Symbol
    - es6 has 2 new ways of declaring variables: let and const
