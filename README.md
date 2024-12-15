@@ -14,7 +14,7 @@
 | 10  | [What is differene between sppread and rest operator - name practical examples?](#rest-spread-operator-difference)                                                                             |
 | 11  | [What are sets? How to convert Set type to the array? Example.](#set-object)                                                                             |
 | 12  | [Why using try catch wrapper  instead just async await?](#try-catch)                                                                             |
-| 13  | [types and interfaces diff?](#type-interface-diff)                                                                             |
+| 13  | [types and interfaces diff? Can you shape type of object with types not interface?](#type-interface-diff)                                                                             |
 | 14   | [How to make array from collections js? What is js collection?](#collection-js-array)                                     |
 | 15   | [what is 3rd stringify parameter?](#stringify-3rd-parameter)                                     |
 | 16   | [what is difference between try block - catch/finally? Please provide an example](#try-catch-finally)                                     |
@@ -573,8 +573,21 @@ obj.greet(); // Output: Alice
   
   13. ### type-interface-diff
         Types in TypeScript are more flexible and can define primitive, intersection, union, tuple, or different types of data, while interfaces are used to describe the shape of an object
-
-  14. ### collection-js-array
+      Yes you can use types to define typf of object.
+          ```javascript
+            // With interface
+            interface Base {
+              id: number;
+            }
+            interface User extends Base {
+              name: string;
+            }
+            
+            // With type
+            type Base = { id: number };
+            type User = Base & { name: string };
+          ```
+  15. ### collection-js-array
       Eather
        ```javascript
       const arrray = [...yourObjectCollection];
@@ -584,10 +597,10 @@ obj.greet(); // Output: Alice
 
        In JavaScript, collections refer to data structures that store multiple elements or values. Examples include arrays, objects, maps, and sets
 
-  15. ### stringify-3rd-parameter
+  16. ### stringify-3rd-parameter
        it adds additional spacing
 
-  16. ### try-catch-finally
+  17. ### try-catch-finally
       Eather
        ```javascript
       openMyFile();
@@ -610,7 +623,7 @@ obj.greet(); // Output: Alice
        }
        ```
 
-   17. ### arrow-function
+   18. ### arrow-function
        This inside arrow function is referenced, pointed to the global object. We normal function declaration - it points to the inner scope.
 
         ```javascript
@@ -632,7 +645,7 @@ obj.greet(); // Output: Alice
           new ArrowFunction();   // Logs: 20
         ```
 
-  18. ### object-assign
+  19. ### object-assign
 
       Object assign method is used to clone or copy proeperties from 1 object to another.
 
@@ -648,7 +661,7 @@ obj.greet(); // Output: Alice
             });
         ```
 
-   19. ### object-create
+   20. ### object-create
        
       With help of Object.create we can create an object from a given prototype object. It retrns a new object with the prototype set to given object. 
 
