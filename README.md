@@ -25,7 +25,7 @@
 | 21   | [Does nested function have an access to the outer function in JavaScript? And vice versa ( opposite) ](#inner-outer-function-scope)                                     |
 | 22   | [What is IIFE (immidietly invoked function expression](#immidietly-invoked-function-expression)                                     |
 | 23   | [What are module exports in js? What is module in js?](#module-exports)                                     |
-| 24   | [Why code .then(someFunction) works same as .then((data)=>someFunction(data)) ?](#calling-function-reference)                                     |
+| 24   | [Why code .then(someFunction) works same as .then((data)=>someFunction(data)) ? What are functions in JS - and what can you do with function in JS?](#calling-function-reference)                                     |
 | 25   | [When you want to send json data to the server in what format should it be sent ?](#json-data-to-server)                                     |
 | 26   | [What is anonymous function in JS ?](#anonymous-function)                                     |
 | 27   | [What is nullish coalescing operator?](#nullish-coalescing)                                     |
@@ -745,43 +745,51 @@ obj.greet(); // Output: Alice
       A module is a chunk of code in an external file that performs a specific task or function. It is a separate entity within a program, allowing for modularity and code reusability.
       By encapsulating related code into modules, developers can organize their programs more efficiently and make them easier to maintain
 
+
   24. ### calling-function-reference
       IN js when we pass a function by reference it is automatically called with the argument that the previous 'then' resolves to.
+      JavaScript functions are first-class objects, meaning:
 
-  26. ### json-data-to-server
+      Functions can be assigned to variables or properties.
+      Functions can be passed as arguments to other functions.
+      Functions can be returned from other functions.
+
+      What is ***"Reference"***? A reference is essentially a pointer to the actual location of the function in memory. When you pass a function to another variable or as an argument, you're providing access to the same function, not creating a copy.
+
+  25. ### json-data-to-server
       Yes, before sending json to the server. You should convert it to the string.
 
-  27. ### anonymous-function
+  26. ### anonymous-function
       Anonymous function - is function declared without function name.There is 2 different ways of using it.
       ![image](https://github.com/user-attachments/assets/8a13a700-5395-400f-b75e-4d2c8a93cec0)
 
-  28. ### #nullish-coalescing
+  27. ### #nullish-coalescing
       The nullish coalescing (??) operator is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.
       ![image](https://github.com/user-attachments/assets/54977902-f564-4a58-a264-bf122ae07267)
 
-  29. ### #script-async-deffer
+  28. ### #script-async-deffer
       ![image](https://github.com/user-attachments/assets/a62346cd-23e2-4110-8a90-c4056095af25)
       ***Defer*** attribute is useful when script is using for DOM manipulations. Means script will apply on document html.
       ***Async*** attribute is useful when script is not using for DOM manipulation. Some time you need script only for server side operations or for handling cache or cookie but not for DOM manipulations
 
-  30. ### #script-tag
+  29. ### #script-tag
       Script tag is used to load some javascript code into your page.
 
-  31. ### #inline-external-js
+  30. ### #inline-external-js
       Inline javascript is used directly in your html. External JS is contained as a sepearate file.
       External scripts is preferred - cause  it can be cached by the browser and reused across multiple pages.
 
-  32. ### #loading-script-successfully
+  31. ### #loading-script-successfully
       We can test if a scripthas loadded successfully by checking  if a global variable or function defined in the script ia available.
 
-  33. ### #prevent-caching
+  32. ### #prevent-caching
       WE can prevent the browser from caching a js file by providing some unique query string to the URL of the file.
       An example:
       ```javascript
         <script src="hellojs.js?v=1"></script>
       ```
 
-  34. ### #script-loaders
+  33. ### #script-loaders
       It can be used Require.js or webPack for example.It provides advanced functionality for loading and managing Javascript files such as lazyLoading, dependency management, error handling.
 
 
