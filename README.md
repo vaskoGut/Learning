@@ -714,7 +714,7 @@ obj.greet(); // Output: Alice
       Outer function doesn't have an access to the inner functions. But inner functions have an access to the outer functions. It's how lexical scope does work.
 
   22. ### immidietly-invoked-function-expression
-    Function runs as soon as it's defined.
+      Function runs as soon as it's defined.
 
         ```javascript
            (function () {
