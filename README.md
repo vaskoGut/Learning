@@ -569,6 +569,7 @@ obj.greet(); // Output: Alice
           
   12. ### try-catch
       Wraps code that can fail and pass error to the catch instead of crashing the app.
+      So generally speaking we need it to handle errors.
   
   13. ### type-interface-diff
         Types in TypeScript are more flexible and can define primitive, intersection, union, tuple, or different types of data, while interfaces are used to describe the shape of an object
