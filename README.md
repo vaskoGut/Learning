@@ -94,6 +94,8 @@
 | 42   | [If we created element with react.createElement and want to render it in React 16. How to do it? Why it's deperecated and what is used now to render elment?](#react-create-element-react-dom)                                     |
 | 43   | [Why we don't use react proptypes in projects What is alternative??](#react-proptypes-question)                                     |
 | 44   | [What is event handler in React?](#react-event-handler)                                     |
+| 45   | [When to use forwardRef?](#forward-ref)                                     |
+
 
 # Redux
 | Nm | #Question   |
@@ -1120,6 +1122,14 @@ Storing business logic that can be shared across the application (not just in Re
   
   44. ### #react-event-handler
       Event handler - is function which is called on some action inside our component. F.e. onclick or onchange
+
+  45. ### #forward-ref
+      When to Use forwardRef
+      You need direct access to a DOM element in a child functional component.
+      Your component serves as a wrapper for other components, and you want to ensure the ref reaches the underlying DOM node.
+      You are working with third-party libraries or animations that require direct DOM access.
+      You are building reusable, customizable components where consumers might need ref access.
+
 
  ________________________________________________________________________________________________________________________________
   1. ### #what-is-redux
