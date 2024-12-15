@@ -725,6 +725,11 @@ obj.greet(); // Output: Alice
             // …
           })();
         ```
+      When to Use IIFEs:
+      Creating private scope for variables.
+      Avoiding global namespace pollution in scripts.
+      Simulating modules or public/private APIs in legacy code.
+      Executing setup or initialization code immediately.
 
   23. ### module-exports
       Module exports - is a way to expose  functions, objects and primitives from module, so they can be used later in your code.
