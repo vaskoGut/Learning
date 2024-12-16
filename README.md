@@ -148,7 +148,7 @@
 | 14   | [what is lit library](#lit-library)      |
 | 15   | [what is lit library](#web-api)      |
 | 16   | [What is ways to improve performance of front-end application? What is prefetching? Code splitting?](#improving-performance)      |
-| 17   | [1. Ways to improve front-end security? 2. how can be done XSS attack on your page? ](#front-end-security)      |
+| 17   | [1. Ways to improve front-end security? 2. how can be done XSS (cross site scripting ) attack on your page? ](#front-end-security)      |
 | 18   | [How to improve WCAG standarts in your front-end app](#wcag-standarts))      |
 | 19   | [Best practices for front-end](#best-practices-frontend))      |
 | 20   | [SPA-PWA difference](#spa-pwa-difference))      |
