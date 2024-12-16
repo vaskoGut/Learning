@@ -1194,14 +1194,16 @@ Storing business logic that can be shared across the application (not just in Re
      Illustration which shows how immer works:
      ![image](https://github.com/user-attachments/assets/34a730dc-a13f-45bb-b282-b817d6e400da)
 
-  8. ### #redux-state-immutability-more
+     Reducers in Redux must return a new state object rather than modifying the existing state.State in Redux is not mutable.
+
+  9. ### #redux-state-immutability-more
      Yes redux state is immutable. We don't make changes to Redux state, instead of it we're providing new state object whenever there is redux state change.
 
-  9. ### #redux-immer-library
+  10. ### #redux-immer-library
      Immer library helps to work, edit, mutate redux state directly. Below you can find reducer created with immer and without it:
      ![image](https://github.com/user-attachments/assets/37bd6b95-5a4c-45e0-bb8b-d75ac282e412)
 
-  10. ### #what-is-middleware
+  11. ### #what-is-middleware
      Middleware - is some extendsion between dispatching an action and reaching it to the reducer. Often middleware is used for logging,
      cach reporting, performance asynch tasks.
 
