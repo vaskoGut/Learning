@@ -1,0 +1,12 @@
+  const resizeAnimationFrame = useRef<number | null>(null); // stores the ID of the current animation frame
+  const handleResize = (event: any, { size }: any) => {
+    // Before scheduling a new animation frame, the code below
+    //  checks if there is already a pending animation frame stored in resizeAnimationFrame.current
+    if (resizeAnimationFrame.current) { 
+      cancelAnimationFrame(resizeAnimationFrame.current); // If a previous animation frame exists, it is cancelled
+    }
+
+    resizeAnimationFrame.current = requestAnimationFrame(() => { // Schedule a New Animation Frame
+      handleWidth(size); // () => handleWidth(size)) will be executed on the next animation frame.
+    });
+  };

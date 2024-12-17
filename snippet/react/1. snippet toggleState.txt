@@ -1,0 +1,22 @@
+const useToggle =(initialState: any) => {
+    const [state, setState] = useState(initialState);
+
+    const toggle = useCallback(() => {
+      setState((prev:any) => {
+  
+      console.log('prev', prev);
+      return  !prev
+      });
+    }, []);
+
+    return [state, toggle];
+  }
+
+  const [test, toggleTest] = useToggle(false);
+
+
+<button
+  onClick={() => toggleTest()}
+>
+ test click
+</button>
