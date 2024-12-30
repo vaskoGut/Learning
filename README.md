@@ -35,6 +35,8 @@
 | 31   | [how can you test if a script has loaded successfully??](#loading-script-successfully)                                     |
 | 32   | [How can you prevent the browser from caching a JavaScript file?](#prevent-caching)                                     |
 | 33   | [What tools ( script loaders ) can you use for script loading?](#script-loaders)                                     |
+| 34   | [What are inferrede types in ts?](#inferred-types)                                     |
+
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -793,6 +795,11 @@ obj.greet(); // Output: Alice
 
   33. ### #script-loaders
       It can be used Require.js or webPack for example.It provides advanced functionality for loading and managing Javascript files such as lazyLoading, dependency management, error handling.
+
+  34. ### #inferred-types
+      
+   ![image](https://github.com/user-attachments/assets/49fb5f79-3432-41b9-b8b7-eb86c8e59083)
+   ![image](https://github.com/user-attachments/assets/fa71ab01-962d-47a3-b672-8b28bbb08131)
 
 
    
