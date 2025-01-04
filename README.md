@@ -1,4 +1,4 @@
-
+eact-context
 # JAVASCRIPT
 | Nm | #Question   |
 | :---:   | :---: |
@@ -1012,6 +1012,8 @@ ________________________________________________________________________________
 
       Real life cases: 1) if you need to keep info about theme (f.e. dark/light). 2) Keeping info about logined/authorised user 3) With help of context  are handled routing - active route in most cases.
       4) it can be used to pass state to distance children.
+      5) Global data requirement: When multiple components need access to the same data (for example: user authentication status, theme preferences, and so on), using context makes it accessible without redundant prop passing
+      6) When prop drilling becomes complicated
 
   
   26. ###  react-structuring-code
