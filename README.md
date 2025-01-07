@@ -195,6 +195,11 @@ Can be installed on a user's home screen like a native app and can run independe
 | 8   | [Styled components and extending styles. how does it work (how can you create basic component and extended or just  different version of component)? ](#styled-components-extending-styles)                                     |
 | 9   | [Difference betweein relative, absoulte, fixed, sticky? ](#relative-absolute-fixed-sticky)                                     |
 
+# HTML
+| Nm | #Question   |
+| :---:   | :---: |
+| 1   | [What is HTML? Why we use it? ](#html-explanation)                                     |
+
 # GIT, DEPLOYMENT, PIPELINES
 | Nm | #Question   |
 | :---:   | :---: |
@@ -1666,6 +1671,11 @@ ______________
         ![image](https://github.com/user-attachments/assets/c72564da-9848-47fa-96fa-4428a1e29bb3)
 
 
+______________
+
+
+  1. ### html-explanations
+        We use HTML ( HYPERTEXT MARKUP LANGUAGE ) to define structure and content of our page.
 
 ______________
 
