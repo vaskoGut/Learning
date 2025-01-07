@@ -47,7 +47,11 @@ eact-context
 | 4  | [Spread object with new key value?](#spread-object-kay-value)                                     |
 | 5  | [How to  fix this infinite rendering problem in provided example?](#infinite-rendering)                                     |
 | 6  | [How recursion works in javascript?](#recursion-javascript)                                     |
+| 7  | [How to check if value is undefuined or null, if yes return other value ( some operator )?](#nullish coalescing)                                     |
 
+
+let result = value ?? "default"; 
+// If `value` is null or undefined, `result` will be "default"
 
 # React
 | Nm | #Question   |
@@ -837,7 +841,10 @@ ________________________________________________________________________________
    ![image](https://github.com/vaskoGut/Learning/assets/7413864/8111159a-b481-405b-8613-fa1bfd39761f)
    ![image](https://github.com/vaskoGut/Learning/assets/7413864/9e6b69bf-da64-4603-8ff6-955c0c4c3881)
 
-    
+7. ### nullish coalescing
+   let result = value ?? "default"; 
+   // If `value` is null or undefined, `result` will be "default"
+   // Otherwise, `result` will be the value of `value`
      
 __________________________________________________________________________________________________________________________________________
 
