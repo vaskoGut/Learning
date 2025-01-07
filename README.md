@@ -1674,7 +1674,7 @@ ______________
 ______________
 
 
-  1. ### html-explanations
+  1. ### html-explanation
         We use HTML ( HYPERTEXT MARKUP LANGUAGE ) to define structure and content of our page.
 
 ______________
