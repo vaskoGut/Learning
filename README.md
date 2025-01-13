@@ -48,6 +48,7 @@ eact-context
 | 5  | [How to  fix this infinite rendering problem in provided example?](#infinite-rendering)                                     |
 | 6  | [How recursion works in javascript?](#recursion-javascript)                                     |
 | 7  | [How to check if value is undefuined or null, if yes return other value ( some operator )?](#nullish coalescing)                                     |
+| 8  | [How can be used useRef to fix rerender ( multipla calling code inside useEffect f.e.) of compnent?](#useRef rerendering explanation)                                     |
 
 
 let result = value ?? "default"; 
@@ -850,7 +851,22 @@ ________________________________________________________________________________
    let result = value ?? "default"; 
    // If `value` is null or undefined, `result` will be "default"
    // Otherwise, `result` will be the value of `value`
-     
+
+8. ### useRef rerendering explanation
+     const isInitialRender = useRef(true);
+
+      useEffect(() => {
+        if (isInitialRender.current) {
+          isInitialRender.current = false;
+          fetchData(pagination.current, pagination.pageSize);
+        }
+      }, []);
+
+   Explanation: Component renders for the first time. UseRef created reference object.
+   useEffect runs:
+   isInitialRender.current is true, fetches data.
+   Sets isInitialRender.current to false.
+   On subsequent renders, useEffect does not run again (due to the empty dependency array), and fetchData is not called.
 __________________________________________________________________________________________________________________________________________
 
 
