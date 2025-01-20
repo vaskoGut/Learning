@@ -1578,7 +1578,11 @@ ________________________________________________________________________________
 
  ________________________________________________________________________________________________________________________________
    27. ###  react-query
-   Advantages of react query: - simplified data fetching; - caching; - updating data in background
+   Advantages of react query:   
+     1. - simplified data fetching;
+     2. - caching;
+     3. - updating data in background
+     
 
 ________________________________________________________________________________________________________________________________
    28. ###  utc-time-explanation
