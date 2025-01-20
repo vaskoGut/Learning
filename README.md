@@ -1582,10 +1582,11 @@ ________________________________________________________________________________
     1. simplified data fetching
     2. caching
     3. updating data in background
+    
      
-     ***stale:infinity:***
-     Static or rarely-changing data: Content like country lists, configuration settings, or other data that is unlikely to change frequently.
-     Optimized performance: Avoids unnecessary refetches when data changes infrequently and does not require constant validation.
+   ***stale:infinity:***
+   Static or rarely-changing data: Content like country lists, configuration settings, or other data that is unlikely to change frequently.
+   Optimized performance: Avoids unnecessary refetches when data changes infrequently and does not require constant validation.
 
 ________________________________________________________________________________________________________________________________
    28. ###  utc-time-explanation
