@@ -165,7 +165,7 @@ let result = value ?? "default";
 | 24   | [How to create ( generate ) packages.json file?](#creating-package-json))      |
 | 25   | [Does react testing library work on rendered react components or on dom?](#react-testing-library))      |
 | 26   | [What for are used render, screen methods imported from react testing library?](#render-screen-testing-react-library))      |
-| 27   | [What is advantages of react-query? when do we use stale:infinity? ](#react-query))      |
+| 27   | [What is advantages of react-query? when do we use stale:infinity? so if i don't set staleTime what does it mean? will be my query cached? ](#react-query))      |
 | 28   | [What is UTC time?](#utc-time-explanation))      |
 | 29   | [If we want to run express server, that serves react-app - how to do it in short?](#express-server-react))      |
 | 30   | [what is middleware function?](#middleware-function))      |
@@ -1587,6 +1587,15 @@ ________________________________________________________________________________
    ***stale:infinity:***
    Static or rarely-changing data: Content like country lists, configuration settings, or other data that is unlikely to change frequently.
    Optimized performance: Avoids unnecessary refetches when data changes infrequently and does not require constant validation.
+
+   is reqact query mutations smth like redux state handling?
+   ***React query*** Designed to handle server-side data updates such as creating, updating, or deleting resources
+   Mutations trigger side effects like API calls to modify data on a server and manage the status of these operations (loading, success, error).
+   Example: useMutation for a form submission that saves data to a backend.
+
+   ***Redux state*** Manages application state on the client-side, including UI states and data persistence within the app.
+
+   Yes, even if you do not set a staleTime in React Query, your query will still be cached by default
 
 ________________________________________________________________________________________________________________________________
    28. ###  utc-time-explanation
