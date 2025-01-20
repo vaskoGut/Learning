@@ -165,7 +165,7 @@ let result = value ?? "default";
 | 24   | [How to create ( generate ) packages.json file?](#creating-package-json))      |
 | 25   | [Does react testing library work on rendered react components or on dom?](#react-testing-library))      |
 | 26   | [What for are used render, screen methods imported from react testing library?](#render-screen-testing-react-library))      |
-| 27   | [What is advantages of react-query?](#react-query))      |
+| 27   | [What is advantages of react-query? when do we use stale:infinity? ](#react-query))      |
 | 28   | [What is UTC time?](#utc-time-explanation))      |
 | 29   | [If we want to run express server, that serves react-app - how to do it in short?](#express-server-react))      |
 | 30   | [what is middleware function?](#middleware-function))      |
@@ -1582,7 +1582,9 @@ ________________________________________________________________________________
     1. simplified data fetching
     2. caching
     3. updating data in background
-     
+     ***stale:infinity:***
+     Static or rarely-changing data: Content like country lists, configuration settings, or other data that is unlikely to change frequently.
+     Optimized performance: Avoids unnecessary refetches when data changes infrequently and does not require constant validation.
 
 ________________________________________________________________________________________________________________________________
    28. ###  utc-time-explanation
