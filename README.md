@@ -1597,6 +1597,8 @@ ________________________________________________________________________________
 
    Yes, even if you do not set a staleTime in React Query, your query will still be cached by default
 
+   queryKey - it serves as a unique identifier for a specific query.  It allows React Query to manage caching, refetching, and updating data efficiently
+
 ________________________________________________________________________________________________________________________________
    28. ###  utc-time-explanation
      This termin stands for Coordinated Universal Time. An example - New York City is in the UTC-5 time zone, which means the time in NYC is five hours behind UTC.
