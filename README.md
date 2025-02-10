@@ -1,4 +1,3 @@
-eact-context
 # JAVASCRIPT
 | Nm | #Question   |
 | :---:   | :---: |
