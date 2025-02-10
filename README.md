@@ -46,8 +46,8 @@
 | 4  | [Spread object with new key value?](#spread-object-kay-value)                                     |
 | 5  | [How to  fix this infinite rendering problem in provided example?](#infinite-rendering)                                     |
 | 6  | [How recursion works in javascript?](#recursion-javascript)                                     |
-| 7  | [How to check if value is undefuined or null, if yes return other value ( some operator )?](#nullish coalescing)                                     |
-| 8  | [How can be used useRef to fix rerender ( multipla calling code inside useEffect f.e.) of compnent?](#useRef rerendering explanation)                                     |
+| 7  | [How to check if value is undefuined or null, if yes return other value ( some operator )?](#nullish-coalescing)                                 |
+| 8  | [How can be used useRef to fix rerender ( multipla calling code inside useEffect f.e.) of compnent?](#useRef-urerendering-explanation)                                     |
 | 9  | [Why do we use sometimes _ in js methods?](#underscore_js_methods_explanation)                                     |
 
 
