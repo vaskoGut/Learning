@@ -169,13 +169,12 @@ let result = value ?? "default";
 | 24   | [How to create ( generate ) packages.json file?](#creating-package-json))      |
 | 25   | [Does react testing library work on rendered react components or on dom?](#react-testing-library))      |
 | 26   | [What for are used render, screen methods imported from react testing library?](#render-screen-testing-react-library))      |
-| 27   | [What is advantages of react-query? when do we use stale:infinity? so if i don't set staleTime what does it mean? will be my query cached? ](#react-query))      |
-| 28   | [What is UTC time?](#utc-time-explanation))      |
-| 29   | [If we want to run express server, that serves react-app - how to do it in short?](#express-server-react))      |
-| 30   | [what is middleware function?](#middleware-function))      |
-| 31   | [what is fs module in node.js?](#fs-module))      |
-| 32   | [what is an advantage or react hook form?](#react-hook-form)      |
-| 33   | [what will do next axios header ''Content-Type': 'application/json'' in axios??](#axios-json-header)      |
+| 27   | [What is UTC time?](#utc-time-explanation))      |
+| 28   | [If we want to run express server, that serves react-app - how to do it in short?](#express-server-react))      |
+| 29   | [what is middleware function?](#middleware-function))      |
+| 30   | [what is fs module in node.js?](#fs-module))      |
+| 31   | [what is an advantage or react hook form?](#react-hook-form)      |
+| 32   | [what will do next axios header ''Content-Type': 'application/json'' in axios??](#axios-json-header)      |
 
 
 SPA:
