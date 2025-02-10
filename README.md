@@ -138,7 +138,7 @@ let result = value ?? "default";
 # REACT-QUERY
 | Nm | #Question   |
 | :---:   | :---: |
-| 1   | [What is advantages of react-query? when do we use stale:infinity? so if i don't set staleTime what does it mean? will be my query cached? ](#react-query)      |
+| 1   | [What is advantages of react-query? when do we use stale:infinity? so if i don't set staleTime what does it mean? will be my query cached? ](#react-query-questions)      |
 
 # Other
 | Nm | #Question   |
@@ -1790,7 +1790,7 @@ ________________________________________________________________________________
  # REACT-QUERY
 
  # GIT, DEPLOYMENT, PIPELINES
- 1. ### continuos-deployment
+ 1. ### react query questions
  Continuos deployment - software development practice where code changes are automatically deployed to a production envrionment after passing predefined testing and qualisty assurance stages. It helps to reduce manual intervention and to ensure new code (feats, fixes etc) are delivered to users as quickly as possible. You can configure it in netlify for example.
 
 ___________
