@@ -138,7 +138,7 @@ let result = value ?? "default";
 # REACT-QUERY
 | Nm | #Question   |
 | :---:   | :---: |
-| 1   | [What is advantages of react-query? when do we use stale:infinity? so if i don't set staleTime what does it mean? will be my query cached? ](#react-query))      |
+| 1   | [What is advantages of react-query? when do we use stale:infinity? so if i don't set staleTime what does it mean? will be my query cached? ](#react-query)      |
 
 # Other
 | Nm | #Question   |
