@@ -49,6 +49,7 @@ eact-context
 | 6  | [How recursion works in javascript?](#recursion-javascript)                                     |
 | 7  | [How to check if value is undefuined or null, if yes return other value ( some operator )?](#nullish coalescing)                                     |
 | 8  | [How can be used useRef to fix rerender ( multipla calling code inside useEffect f.e.) of compnent?](#useRef rerendering explanation)                                     |
+| 9  | [Why do we use sometimes _ in js methods?](#underscore_js_methods_explanation)                                     |
 
 
 let result = value ?? "default"; 
@@ -871,6 +872,16 @@ ________________________________________________________________________________
    isInitialRender.current is true, fetches data.
    Sets isInitialRender.current to false.
    On subsequent renders, useEffect does not run again (due to the empty dependency array), and fetchData is not called.
+
+9. ### underscore js methods explanation
+    ```javascript
+      (_, index) => ({
+          title: `Col ${index + 1}`,
+          dataIndex: `col${index + 1}`,
+          key: `col${index + 1}`,
+      })
+   ``
+   _ (underscore): Represents the current value (not needed since we're just using the index). So if you see it, in most cases it's just suggests that this value will not be used.
 __________________________________________________________________________________________________________________________________________
 
 
