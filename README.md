@@ -49,7 +49,7 @@
 | 7  | [How to check if value is undefuined or null, if yes return other value ( some operator )?](#nullish-coalescing)                                 |
 | 8  | [How can be used useRef to fix rerender ( multipla calling code inside useEffect f.e.) of compnent?](#useRef-urerendering-explanation)                                     |
 | 9  | [Why do we use sometimes _ in js methods?](#underscore-js-methods-explanation)                                     |
-
+| 10  |[Which method do you need if you want to create empty array, map trhough it and fill it with some data?](#empty-array-mapping)                                     |
 
 let result = value ?? "default"; 
 // If `value` is null or undefined, `result` will be "default"
@@ -881,6 +881,17 @@ ________________________________________________________________________________
       })
    ```
    _ (underscore): Represents the current value (not needed since we're just using the index). So if you see it, in most cases it's just suggests that this value will not be used.
+
+10. ### empty-array-mapping
+    ```javascript
+      const columns = Array.from({ length: 11 }, (_, index) => ({
+        title: `Col ${index + 1}`,
+        dataIndex: `col${index + 1}`,
+        key: `col${index + 1}`,
+      }));
+   ```
+   First part creates array with empty values.
+   2nd part iterates through empty slots and fills it with data.
 __________________________________________________________________________________________________________________________________________
 
 
