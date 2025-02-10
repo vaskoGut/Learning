@@ -833,7 +833,7 @@ ________________________________________________________________________________
    ```javascript
      var s = 'john smith~123 Street~Apt 4~New York~NY~12345';
      s.split('~')
-    ``
+   ```
 3. ### previous-state-example
     Count example (to get previous state we need to put callback function):
     ![image](https://github.com/vaskoGut/Learning/assets/7413864/5d05d3e0-9ac9-4032-a425-940e49c9b27d)
@@ -842,7 +842,7 @@ ________________________________________________________________________________
     ```javascript
     const test = { test: 'test '};
     {...test, name: 'pame'}
-     ``
+    ```
 5. ### infinite-rendering
     ![image](https://github.com/vaskoGut/Learning/assets/7413864/b5fd215f-ac97-422d-9f8e-0dc9b8a19805)
     Answer -setCounter should be used out of useEffect here to prevent infinite rendering problem.
@@ -879,7 +879,7 @@ ________________________________________________________________________________
           dataIndex: `col${index + 1}`,
           key: `col${index + 1}`,
       })
-   ``
+   ```
    _ (underscore): Represents the current value (not needed since we're just using the index). So if you see it, in most cases it's just suggests that this value will not be used.
 __________________________________________________________________________________________________________________________________________
 
