@@ -135,6 +135,10 @@ let result = value ?? "default";
 | :---:   | :---: |
 | 1   | [What is gatsby.js?](#gatsby-framework)                                     |
 
+# REACT-QUERY
+| Nm | #Question   |
+| :---:   | :---: |
+| 1   | [What is advantages of react-query? when do we use stale:infinity? so if i don't set staleTime what does it mean? will be my query cached? ](#react-query))      |
 
 # Other
 | Nm | #Question   |
@@ -1776,12 +1780,21 @@ How to pass data from child to parent:
 
 //////
 
-
+ # GATSBY.JS
 ________________________________________________________________________________________________________________________________
 
  1. ### gatsby-framework
  
  Gatsby.js is framework - used to generate static pages during build. Main feautres of gatsby.js: - it's based on React.js - it used Graphql to plull data nad structure it.
+
+
+ # REACT-QUERY
+
+ # GIT, DEPLOYMENT, PIPELINES
+ 1. ### continuos-deployment
+ Continuos deployment - software development practice where code changes are automatically deployed to a production envrionment after passing predefined testing and qualisty assurance stages. It helps to reduce manual intervention and to ensure new code (feats, fixes etc) are delivered to users as quickly as possible. You can configure it in netlify for example.
+
+___________
 
 ________________________________________________________________________________________________________________________________
 
