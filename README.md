@@ -102,6 +102,8 @@ let result = value ?? "default";
 | 43   | [Why we don't use react proptypes in projects What is alternative??](#react-proptypes-question)                                     |
 | 44   | [What is event handler in React?](#react-event-handler)                                     |
 | 45   | [When to use forwardRef?](#forward-ref)                                     |
+| 46   | [When is pure function in react?](#pure-function)                                     |
+
 
 
 # Redux
@@ -1194,7 +1196,10 @@ Storing business logic that can be shared across the application (not just in Re
       You are working with third-party libraries or animations that require direct DOM access.
       You are building reusable, customizable components where consumers might need ref access.
 
+  45. ### #pure-function
+      A pure functional component is a functional component that behaves like a pure function: it renders the same output for the same props and does not have side effects. If your functional component does something like data fetching or modifies state, it's not considered pure
 
+      
  ________________________________________________________________________________________________________________________________
   1. ### #what-is-redux
       Redux is library for managing global application state.
