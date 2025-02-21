@@ -103,7 +103,7 @@ let result = value ?? "default";
 | 44   | [What is event handler in React?](#react-event-handler)                                     |
 | 45   | [When to use forwardRef?](#forward-ref)                                     |
 | 46   | [When is pure function in react?](#pure-function)                                     |
-
+| 47   | [If i want to run something on component unmount. How to implement it in react??](#component-unmount)                                     |
 
 
 # Redux
@@ -1196,8 +1196,20 @@ Storing business logic that can be shared across the application (not just in Re
       You are working with third-party libraries or animations that require direct DOM access.
       You are building reusable, customizable components where consumers might need ref access.
 
-  45. ### #pure-function
+  46. ### #pure-function
       A pure functional component is a functional component that behaves like a pure function: it renders the same output for the same props and does not have side effects. If your functional component does something like data fetching or modifies state, it's not considered pure
+
+  47. ### #component-unmount
+         ```javascript
+            useEffect(() => {
+              return () => {
+                clearFilters();
+              };
+            }, []);
+         ```
+
+
+
 
       
  ________________________________________________________________________________________________________________________________
