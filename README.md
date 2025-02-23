@@ -1195,11 +1195,36 @@ Storing business logic that can be shared across the application (not just in Re
       Your component serves as a wrapper for other components, and you want to ensure the ref reaches the underlying DOM node.
       You are working with third-party libraries or animations that require direct DOM access.
       You are building reusable, customizable components where consumers might need ref access.
+        ```javascript
+         import React, { useRef, forwardRef } from 'react';
+          // Child Component (receives ref)
+          const InputComponent = forwardRef((props, ref) => {
+            return <input ref={ref} {...props} />;
+          });
+          
+          // Parent Component (passes ref)
+          const Parent = () => {
+            const inputRef = useRef();
+          
+            const focusInput = () => {
+              inputRef.current.focus(); // Access child input
+            };
+          
+            return (
+              <div>
+                <InputComponent ref={inputRef} placeholder="Type here..." />
+                <button onClick={focusInput}>Focus Input</button>
+              </div>
+            );
+          };
+        
+        export default Parent;
+      ```
 
-  46. ### #pure-function
+  47. ### #pure-function
       A pure functional component is a functional component that behaves like a pure function: it renders the same output for the same props and does not have side effects. If your functional component does something like data fetching or modifies state, it's not considered pure
 
-  47. ### #component-unmount
+  48. ### #component-unmount
          ```javascript
             useEffect(() => {
               return () => {
