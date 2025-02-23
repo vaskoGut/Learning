@@ -104,6 +104,7 @@ let result = value ?? "default";
 | 45   | [When to use forwardRef?](#forward-ref)                                     |
 | 46   | [When is pure function in react?](#pure-function)                                     |
 | 47   | [If i want to run something on component unmount. How to implement it in react??](#component-unmount)                                     |
+| 48   | [FC and simple () => function component declaration difference?](#fc-function-difference)                                     |
 
 
 # Redux
@@ -1232,6 +1233,11 @@ Storing business logic that can be shared across the application (not just in Re
               };
             }, []);
          ```
+
+ 49. ### (#fc-function-difference
+     Seo component name is just for example.
+
+     ![image](https://github.com/user-attachments/assets/823f1c8d-f5a6-4870-9607-2db0d60b117e)
 
 
 
