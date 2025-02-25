@@ -1240,6 +1240,9 @@ Storing business logic that can be shared across the application (not just in Re
 
      ![image](https://github.com/user-attachments/assets/823f1c8d-f5a6-4870-9607-2db0d60b117e)
 
+50. ### #parent-use-child-state
+     ![UsingChildstateInParent](https://github.com/user-attachments/assets/c04efb74-8dc2-492d-93a9-d057d242a57f)
+
 
 
 
