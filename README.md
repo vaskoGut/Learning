@@ -35,7 +35,7 @@
 | 32   | [How can you prevent the browser from caching a JavaScript file?](#prevent-caching)                                     |
 | 33   | [What tools ( script loaders ) can you use for script loading?](#script-loaders)                                     |
 | 34   | [What are inferrede types in ts?](#inferred-types)                                     |
-
+| 35   | [What if you destructe some value and that value doesn't exist in object??](#destructing-object)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -819,6 +819,10 @@ obj.greet(); // Output: Alice
    ![image](https://github.com/user-attachments/assets/49fb5f79-3432-41b9-b8b7-eb86c8e59083)
    ![image](https://github.com/user-attachments/assets/fa71ab01-962d-47a3-b672-8b28bbb08131)
 
+ 35. ### #inferred-types
+    
+ ![image](https://github.com/user-attachments/assets/6d31559c-69d9-431d-a76e-22cb75ff6c6c)
+  result will be undefined.
 
    
 __________________________________________________________________________________________________________________________________________
