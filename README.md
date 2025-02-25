@@ -105,6 +105,7 @@ let result = value ?? "default";
 | 46   | [When is pure function in react?](#pure-function)                                     |
 | 47   | [If i want to run something on component unmount. How to implement it in react??](#component-unmount)                                     |
 | 48   | [FC and simple () => function component declaration difference?](#fc-function-difference)                                     |
+| 49   | [How to use child state inside parent?](#parent-use-child-state)                                     |
 
 
 # Redux
