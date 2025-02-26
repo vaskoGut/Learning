@@ -36,6 +36,7 @@
 | 33   | [What tools ( script loaders ) can you use for script loading?](#script-loaders)                                     |
 | 34   | [What are inferrede types in ts?](#inferred-types)                                     |
 | 35   | [What if you destructe some value and that value doesn't exist in object??](#destructing-object)                                     |
+| 36   | [If you filter 1 array through another array. Why it's bettr to use set (  it can be done with arrays filter method but... ) ?](#set-filtering-array)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -823,6 +824,17 @@ obj.greet(); // Output: Alice
     
  ![image](https://github.com/user-attachments/assets/6d31559c-69d9-431d-a76e-22cb75ff6c6c)
   result will be undefined.
+
+ 36. ### #set-filtering-array
+   ```javascript
+      const arr1 = ['apple', 'banana', 'orange', 'red'];
+      const arr2 = ['green', 'yeelo', 'red', 'blue', 'orange'];
+
+      const arrWithSet = new Set(arr1);
+      const resultWithSet = arr2.filter(elem => arrWithSet.has(elem));
+   ```
+  Set is better cause it's faster. Includes array method will loop through each element. But set will directly find it via hash key.
+  Set.has() O(1) Instead of O(n)
 
    
 __________________________________________________________________________________________________________________________________________
