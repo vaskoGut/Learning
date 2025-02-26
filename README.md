@@ -145,6 +145,7 @@ let result = value ?? "default";
 | :---:   | :---: |
 | 1   | [What is advantages of react-query? when do we use stale:infinity? so if i don't set staleTime what does it mean? will be my query cached? ](#react-query-questions)      |
 | 2   | [What is invalidating queries? Which cases of using do you know? ](#invalidating-queries)      |
+| 3   | [How does work refetchOnMount: false? ](#refetch-mount-false)      |
 
 # Other
 | Nm | #Question   |
@@ -1885,6 +1886,10 @@ ________________________________________________________________________________
  
  2. ### invalidating queries
  ![InvalidatingQueries](https://github.com/user-attachments/assets/af0c7123-81d9-4f33-ae80-80b12fdc6c93)
+
+ 3. ### refetch mount false
+ ![image](https://github.com/user-attachments/assets/1b2649db-607f-4463-832a-f5fb4432e7cc)
+
 
 
 ___________
