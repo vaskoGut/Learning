@@ -37,6 +37,7 @@
 | 34   | [What are inferrede types in ts?](#inferred-types)                                     |
 | 35   | [What if you destructe some value and that value doesn't exist in object??](#destructing-object)                                     |
 | 36   | [If you filter 1 array through another array. Why it's bettr to use set (  it can be done with arrays filter method but... ) ?](#set-filtering-array)                                     |
+| 37   | [What are recursive types?](#recursive-types)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -836,6 +837,17 @@ obj.greet(); // Output: Alice
    ```
   Set is better cause it's faster. Includes array method will loop through each element. But set will directly find it via hash key.
   Set.has() O(1) Instead of O(n)
+
+37. ### #recursive-types
+  example of recursive types:
+   ```javascript
+    export type TreeNode = {
+      key: string;
+      title: React.ReactNode;
+      children?: TreeNode[];
+    };
+ ```
+
 
    
 __________________________________________________________________________________________________________________________________________
