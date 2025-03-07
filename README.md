@@ -38,6 +38,8 @@
 | 35   | [What if you destructe some value and that value doesn't exist in object??](#destructing-object)                                     |
 | 36   | [If you filter 1 array through another array. Why it's bettr to use set (  it can be done with arrays filter method but... ) ?](#set-filtering-array)                                     |
 | 37   | [What are recursive types?](#recursive-types)                                     |
+| 38   | [For ... of, forEach difference?](#for-loops)                                     |
+
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -847,6 +849,13 @@ obj.greet(); // Output: Alice
       children?: TreeNode[];
     };
  ```
+
+37. ### #for-loops
+ forEach does not support returning values
+ Unlike a regular for loop, forEach does not return values or allow return to stop execution.
+
+
+
 
 
    
