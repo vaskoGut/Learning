@@ -110,6 +110,7 @@ let result = value ?? "default";
 | 47   | [If i want to run something on component unmount. How to implement it in react??](#component-unmount)                                     |
 | 48   | [FC and simple () => function component declaration difference?](#fc-function-difference)                                     |
 | 49   | [How to use child state inside parent?](#parent-use-child-state)                                     |
+| 50   | [Rules of using custom hooks React?](#rules-custom-hooks-react)                                     |
 
 
 # Redux
@@ -1280,12 +1281,14 @@ Storing business logic that can be shared across the application (not just in Re
 
      ![image](https://github.com/user-attachments/assets/823f1c8d-f5a6-4870-9607-2db0d60b117e)
 
-50. ### #parent-use-child-state
+ 49. ### #parent-use-child-state
      ![UsingChildstateInParent](https://github.com/user-attachments/assets/c04efb74-8dc2-492d-93a9-d057d242a57f)
 
-
-
-
+ 50. ### #rules-custom-hooks-react
+     * Always Start Hook Names with "use"
+     * Use Only Inside Functional Components or Other Hooks, don't use inside if constructions
+     * Encapsulate reusable logic - create it in distinct file to not repeat same code in diffrent paces.
+     * Use dependencies correctly in useEffect
       
  ________________________________________________________________________________________________________________________________
   1. ### #what-is-redux
