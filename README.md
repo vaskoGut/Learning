@@ -858,17 +858,20 @@ obj.greet(); // Output: Alice
  Unlike a regular for loop, forEach does not return values or allow return to stop execution.
 
 
-38. ### #settimeout-asynchronous-functions
+39. ### #settimeout-asynchronous-functions
  Functions running in parallel with other functions are called ***asynchronous***.
  SetTimeout is asynchronous, but it does not return a Promise like async functions do. Instead, it uses callback-based execution.
  JavaScript runs synchronously by default, but async operations (e.g., setTimeout, fetch, Promise) use the event loop.
  The function inside ****setTimeout**** is executed by the event loop after the specified delay.
  
  Common problem interview with settimeout inside loops:
+ 
  ![image](https://github.com/user-attachments/assets/ba27c58b-b11d-4f9a-bf36-05432be8e3ea)
  Common question:
+ 
  ![image](https://github.com/user-attachments/assets/9fb16c51-d41b-40fa-a0c1-7d71d5211fe4)
  How to use setTimeout inside async function?
+ 
  ![image](https://github.com/user-attachments/assets/759fc9e7-174a-4e2d-a71e-a2ef0415d2b2)
 
 
