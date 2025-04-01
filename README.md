@@ -869,6 +869,7 @@ obj.greet(); // Output: Alice
  
  Common question:
  ![image](https://github.com/user-attachments/assets/9fb16c51-d41b-40fa-a0c1-7d71d5211fe4)
+ var is function-scoped, so all setTimeout callbacks share the same i reference.
  
  How to use setTimeout inside async function?
  ![image](https://github.com/user-attachments/assets/759fc9e7-174a-4e2d-a71e-a2ef0415d2b2)
