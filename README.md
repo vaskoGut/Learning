@@ -186,6 +186,8 @@ let result = value ?? "default";
 | 31   | [what is an advantage or react hook form?](#react-hook-form)      |
 | 32   | [what will do next axios header ''Content-Type': 'application/json'' in axios??](#axios-json-header)      |
 | 33   | [Difference ssr, ssg, isr?](#ssr-ssg-isr-difference)      |
+| 34   | [EXplain how SSG approach are used in more details?](#ssg-details)      |  
+
 
 SPA:
 Works by loading a single HTML page and dynamically updating the content as the user interacts with the app.
@@ -1771,7 +1773,13 @@ ________________________________________________________________________________
       ***Example ISR***:
       ![image](https://github.com/user-attachments/assets/2a9ed844-d5f9-47ca-94ca-53cc62ce5fdd)
 
-
+________________________________________________________________________________________________________________________________
+   34. ###  ssg-details
+       HTML files are pre-built and stored on a server or CDN, ready to be sent instantly to users without running server-side code for each request.
+       How Does It Work? At Build Time:
+       The website’s HTML pages are generated once during the deployment process.
+       These pages are then stored as static files (HTML, CSS, JS) on a server or CDN.
+       When a User Requests a Page: he server or CDN immediately sends the pre-built HTML page to the browser. No database queries or backend processing happen at request time. The page loads super fast because it's just a static file.
   
 ________________________________________________________________________________________________________________________________
    1. ### box-model
