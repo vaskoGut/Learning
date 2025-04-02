@@ -1,4 +1,4 @@
-# JAVASCRIPT
+# JAVASCRIPT TYPESCRIPT
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [Difference let const var](#what-is-difference-between-let-const-var)                                     |
