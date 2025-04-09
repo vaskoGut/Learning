@@ -446,7 +446,15 @@ obj.greet(); // Output: Alice
   6. ### this-meaning
 
        1. This is keyword. It refers to different objects depending on how and where it used. The this keyword refers to the context where a piece of code, such as a function's body, is supposed to run.
-       2. You can't change this value.
+       2. You can explicitly control or change the value of this using methods like .call(), .apply(), or .bind(). For instance, using .bind() creates a new function with this permanently set to a specific value:
+        function greet() {
+          console.log(this.name);
+        }
+        
+        const person = { name: 'Alice' };
+        const boundGreet = greet.bind(person);
+        boundGreet(); // logs "Alice".
+     
        3. ALone **this** refers to the global object.  INside function - this refers to the global object also. In event handlers this refers to the hTML object.
         ```javascript
           function dotest() {
@@ -456,10 +464,10 @@ obj.greet(); // Output: Alice
        4. Call and apply methods are used to call 1 object method on another object as argument
        6. If yout type this in console, you will get Window object.
     
-  7. ### settimeout-async
+  8. ### settimeout-async
         Yes setTimeout is async
 
-  8. ### example-promise
+  9. ### example-promise
         Promise object represents eventual completion or failure of asynchronous function. Whenever tasks should be executed asynchronouslo. Promisess are used.
         Example login function:
         ![image](https://github.com/vaskoGut/Learning/assets/7413864/e627bed4-169b-4366-9de8-2fa87aabbd8c)
@@ -517,7 +525,7 @@ obj.greet(); // Output: Alice
         });
        ```
 
-  9. ### closure-explanation
+  10. ### closure-explanation
         1. If we speak about closure , we need to mention **local** and **global** scope. Functions have its local, private scope. Variables can be global or private - depending where they'are declared.
         2. if variable is declared without keyword, it is global. Even if it's declared inside the function.
 
@@ -531,7 +539,7 @@ obj.greet(); // Output: Alice
 
         Examples of global scope: window does have global scope. Variable declared with var outside of the fnction has global scop.e
     
- 10. ### rest-spread-operator-difference
+ 11. ### rest-spread-operator-difference
       1. ***Spread*** operator is mostly used with arrays. It's used to efficientl merge, cop arrays, pass elements to functions.
          
        You can use spread operator to merge 2 objects,or 2 arrays. In React you can use spread operator to pass properties to the component:
@@ -579,7 +587,7 @@ obj.greet(); // Output: Alice
           printNumbers(1,2,3,4,5); // [1,2,3,4,5] 
         ```
 
-   11. ### set-object
+   12. ### set-object
         Set are collections of unique values:
 
         ```javascript
@@ -597,11 +605,11 @@ obj.greet(); // Output: Alice
         A  **has()** method that takes an element and returns a boolean.
         A  **keys()** method that returns an iterator of the elements in the set.
           
-  12. ### try-catch
+  13. ### try-catch
       Wraps code that can fail and pass error to the catch instead of crashing the app.
       So generally speaking we need it to handle errors.
   
-  13. ### type-interface-diff
+  14. ### type-interface-diff
         Types in TypeScript are more flexible and can define primitive, intersection, union, tuple, or different types of data, while interfaces are used to describe the shape of an object
       Yes you can use types to define typf of object.
          ```javascript
