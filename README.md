@@ -40,6 +40,7 @@
 | 37   | [What are recursive types?](#recursive-types)                                     |
 | 38   | [For ... of, forEach difference?](#for-loops)                                     |
 | 39   | [Settimeout and asynchronous functions?](#settimeout-asynchronous-functions)                                     |
+| 40   | [ForEach, for...of difference??](#forEach-forOfDifference)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -886,7 +887,10 @@ obj.greet(); // Output: Alice
  
  ![image](https://github.com/user-attachments/assets/759fc9e7-174a-4e2d-a71e-a2ef0415d2b2)
 
-
+40. ### #forEach-forOfDifference
+  ***for...of*** supports break, continue.
+  ***forEach*** - Can access index as a second argument
+  forEach is used for simpler problems.
    
 __________________________________________________________________________________________________________________________________________
 
