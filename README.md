@@ -5,7 +5,7 @@
 | 2   | [Difference between arrow function and function declaration, expressions](#arrow-function-explanation)                                                                             |
 | 3   | [What is generator ](#generator-function)                                                                             |
 | 4   | [Types Enums Interface. What for are used types? What are tuples? What is union, intersection? What is intersection types? What is record type - provide example](#types-enums-interfaces)                                                                             |
-| 5   | [Difference between map, filter and forEach. Does filter, slice methods create new array or mutating source? ](#map-foreach-difference)                                                                             |
+| 5   | [Difference between map, filter and forEach. Does filter, slice methods create new array or mutating source? What about reduce? ](#map-foreach-difference)                                                                             |
 | 6   | [What is this in js? Can you change value of this? What is this alone, inside object, inside event handler, inside function? What is for are used call,apply methods? If yout type this in console - what will you get?](#this-meaning)                                                                             |
 | 7  | [Is setTimeOut async?](#settimeout-async)                                                                             |
 | 8  | [What is Promise? Example of promise? What status promis returns? Is promise aycnronious? Name wayss of handling promises. What is promise all? Make a simple example of promise and promise.all](#example-promise)                                                                             |
@@ -437,13 +437,13 @@ obj.greet(); // Output: Alice
           So, generally speaking, Record is type that helps to define an object with specific keys and values.
           
 
-
   5. ### map-foreach-difference
       **Map** return NEW array. It doesn't modify initial array.
       **ForEach** doesn't return array. But runs function for each element of array. Foreach returns original array.
       **Filter, slice** returns new array. They dont mutate initial array.
+      **Reduce** returns single accumulated value not an array.
 
-  6. ### this-meaning
+  7. ### this-meaning
 
        1. This is keyword. It refers to different objects depending on how and where it used. The this keyword refers to the context where a piece of code, such as a function's body, is supposed to run.
        2. You can explicitly control or change the value of this using methods like .call(), .apply(), or .bind(). For instance, using .bind() creates a new function with this permanently set to a specific value:
