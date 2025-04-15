@@ -41,7 +41,7 @@
 | 38   | [For ... of, forEach difference?](#for-loops)                                     |
 | 39   | [Settimeout and asynchronous functions?](#settimeout-asynchronous-functions)                                     |
 | 40   | [ForEach, for...of difference??](#forEach-forOfDifference)                                     |
-| 41   | [Difference between rewriting value and reference?](#value-reference-difference)                                     |
+| 41   | [Passing value reference difference in JS?](#value-reference-difference)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
