@@ -41,6 +41,7 @@
 | 38   | [For ... of, forEach difference?](#for-loops)                                     |
 | 39   | [Settimeout and asynchronous functions?](#settimeout-asynchronous-functions)                                     |
 | 40   | [ForEach, for...of difference??](#forEach-forOfDifference)                                     |
+| 41   | [Difference between rewriting value and reference?](#value-reference-difference)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -892,6 +893,32 @@ obj.greet(); // Output: Alice
   ***for...of*** supports break, continue.
   ***forEach*** - Can access index as a second argument
   forEach is used for simpler problems.
+
+41. ### #value-reference-difference
+    In JavaScript, "Pass by Value" and "Pass by Reference" refer to how values are passed into functions (or assigned to variables).
+    In example below copy of valuse is passed. Original valude wasn't changed.
+     ```javascript
+       let a = 10;
+      function modify(x) {
+        x = 20;
+      }
+      modify(a);
+      console.log(a); // Output: 10
+     ```
+    But here reference of object was passed. Original object was changed by refference:
+    
+     ```javascript
+      let obj = { name: "Alice" };
+    
+      function modify(o) {
+        o.name = "Bob";
+      }
+      
+      modify(obj);
+      console.log(obj.name); // Output: "Bob"
+     ```
+
+ 
    
 __________________________________________________________________________________________________________________________________________
 
