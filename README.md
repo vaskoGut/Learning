@@ -42,6 +42,7 @@
 | 39   | [Settimeout and asynchronous functions?](#settimeout-asynchronous-functions)                                     |
 | 40   | [ForEach, for...of difference??](#forEach-forOfDifference)                                     |
 | 41   | [Passing value reference difference in JS?](#value-reference-difference)                                     |
+| 42   | [Difference betweeen map filter?](#filter-map-difference)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -918,7 +919,9 @@ obj.greet(); // Output: Alice
       console.log(obj.name); // Output: "Bob"
      ```
 
- 
+42. ### #filter-map-difference
+     ***map*** Purpose: Transforms each item in a list (or other iterable).
+     ***filter*** Purpose: Filters out items based on a condition.
    
 __________________________________________________________________________________________________________________________________________
 
