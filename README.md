@@ -447,17 +447,19 @@ obj.greet(); // Output: Alice
       **Filter, slice** returns new array. They dont mutate initial array.
       **Reduce** returns single accumulated value not an array.
 
-  7. ### this-meaning
+  6. ### this-meaning
 
        1. This is keyword. It refers to different objects depending on how and where it used. The this keyword refers to the context where a piece of code, such as a function's body, is supposed to run.
        2. You can explicitly control or change the value of this using methods like .call(), .apply(), or .bind(). For instance, using .bind() creates a new function with this permanently set to a specific value:
-        function greet() {
-          console.log(this.name);
-        }
-        
-        const person = { name: 'Alice' };
-        const boundGreet = greet.bind(person);
-        boundGreet(); // logs "Alice".
+         ```javascript
+          function greet() {
+            console.log(this.name);
+          }
+          
+          const person = { name: 'Alice' };
+          const boundGreet = greet.bind(person);
+          boundGreet(); // logs "Alice".
+        ``` 
      
        3. ALone **this** refers to the global object.  INside function - this refers to the global object also. In event handlers this refers to the hTML object.
         ```javascript
