@@ -452,21 +452,21 @@ obj.greet(); // Output: Alice
        1. This is keyword. It refers to different objects depending on how and where it used. The this keyword refers to the context where a piece of code, such as a function's body, is supposed to run.
        2. You can explicitly control or change the value of this using methods like .call(), .apply(), or .bind(). For instance, using .bind() creates a new function with this permanently set to a specific value:
          ```javascript
-          function greet() {
-            console.log(this.name);
-          }
-          
-          const person = { name: 'Alice' };
-          const boundGreet = greet.bind(person);
-          boundGreet(); // logs "Alice".
+            function greet() {
+              console.log(this.name);
+            }
+            
+            const person = { name: 'Alice' };
+            const boundGreet = greet.bind(person);
+            boundGreet(); // logs "Alice".
         ``` 
      
        3. ALone **this** refers to the global object.  INside function - this refers to the global object also. In event handlers this refers to the hTML object.
-        ```javascript
-          function dotest() {
-              console.log(this); // here we'll get Windows object
-          }
-        ``` 
+          ```javascript
+              function dotest() {
+                  console.log(this); // here we'll get Windows object
+              }
+          ``` 
        4. Call and apply methods are used to call 1 object method on another object as argument
        6. If yout type this in console, you will get Window object.
     
