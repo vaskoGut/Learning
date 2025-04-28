@@ -43,6 +43,7 @@
 | 40   | [ForEach, for...of difference??](#forEach-forOfDifference)                                     |
 | 41   | [Passing value reference difference in JS?](#value-reference-difference)                                     |
 | 42   | [Difference betweeen map filter?](#filter-map-difference)                                     |
+| 43   | [Difference betweeen expression and statement?](#expression-statement-diff)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -893,7 +894,7 @@ obj.greet(); // Output: Alice
  ![image](https://github.com/user-attachments/assets/759fc9e7-174a-4e2d-a71e-a2ef0415d2b2)
 
 40. ### #forEach-forOfDifference
-  ***for...of*** supports break, continue.
+  ***for...of*** supports break, continue. You can't directly use a for...of loop inside JSX, because React needs expressions — not statements like for.
   ***forEach*** - Can access index as a second argument
   forEach is used for simpler problems.
 
@@ -924,6 +925,11 @@ obj.greet(); // Output: Alice
 42. ### #filter-map-difference
      ***map*** Purpose: Transforms each item in a list (or other iterable).
      ***filter*** Purpose: Filters out items based on a condition.
+
+43. ### #expression-statement-diff
+     Expression	produces a value. Statement performes an action.
+
+   
    
 __________________________________________________________________________________________________________________________________________
 
