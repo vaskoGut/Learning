@@ -928,8 +928,12 @@ obj.greet(); // Output: Alice
 
 43. ### #expression-statement-diff
      Expression	produces a value. Statement performes an action.
+     ```javascript
+        let name = "Alice";
+     ```
 
-   
+    This is a variable declaration statement
+
    
 __________________________________________________________________________________________________________________________________________
 
