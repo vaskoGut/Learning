@@ -115,6 +115,7 @@ let result = value ?? "default";
 | 48   | [FC and simple () => function component declaration difference?](#fc-function-difference)                                     |
 | 49   | [How to use child state inside parent?](#parent-use-child-state)                                     |
 | 50   | [Rules of using custom hooks React?](#rules-custom-hooks-react)                                     |
+| 51   | [Unmount with React?](#handling-unmount-React)                                     |
 
 
 # Redux
@@ -1362,6 +1363,17 @@ Storing business logic that can be shared across the application (not just in Re
      * Use Only Inside Functional Components or Other Hooks, don't use inside if constructions
      * Encapsulate reusable logic - create it in distinct file to not repeat same code in diffrent paces.
      * Use dependencies correctly in useEffect
+    
+ 51. ### #handling-unmount-React
+      ```javascript
+         useEffect(() => {
+          // Setup logic here (e.g. event listeners, subscriptions, timers)
+        
+          return () => {
+            // Cleanup logic here (runs when component unmounts)
+          };
+        }, []); // Empty dependency array = run once on mount, cleanup on unmount
+      ```
       
  ________________________________________________________________________________________________________________________________
   1. ### #what-is-redux
