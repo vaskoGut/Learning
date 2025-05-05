@@ -116,7 +116,7 @@ let result = value ?? "default";
 | 49   | [How to use child state inside parent?](#parent-use-child-state)                                     |
 | 50   | [Rules of using custom hooks React?](#rules-custom-hooks-react)                                     |
 | 51   | [Unmount with React?](#handling-unmount-React)                                     |
-
+| 52   | [How to detect path location change in React?](#handling-path-change-react)                                     |
 
 # Redux
 | Nm | #Question   |
@@ -1374,6 +1374,18 @@ Storing business logic that can be shared across the application (not just in Re
           };
         }, []); // Empty dependency array = run once on mount, cleanup on unmount
       ```
+
+ 52. ### #handling-path-change-react
+      ```javascript
+         const location = useLocation();
+
+          useEffect(() => {
+            // Reset filter whenever the path changes
+            setFilter(defaultFilterValue);
+          }, [location.pathname]); // Runs on route/pathname change
+      ```
+
+      
       
  ________________________________________________________________________________________________________________________________
   1. ### #what-is-redux
