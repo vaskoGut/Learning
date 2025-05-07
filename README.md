@@ -236,6 +236,12 @@ Can be installed on a user's home screen like a native app and can run independe
 | 1   | [Difference beteen react context and redux ](#react-context-redux)                                     |
 
 
+# Design components/system questions
+| Nm | #Question   |
+| :---:   | :---: |
+| 1   | [ 𝗛𝗼𝘄 𝘄𝗼𝘂𝗹𝗱 𝘆𝗼𝘂 𝗶𝗺𝗽𝗹𝗲𝗺𝗲𝗻𝘁 𝗮 𝘁𝗼𝗮𝘀𝘁 𝗻𝗼𝘁𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝘀𝘆𝘀𝘁𝗲𝗺 𝗶𝗻 𝗥𝗲𝗮𝗰𝘁? When better to use custom event system? How would you queue multiple notifications, set timeouts, and avoid overlapping?](#toast-react)                                     |
+
+
 
 1. ### what is difference between let const var
    **Var** - scope is global or function ( if var's used inside function ).
@@ -2089,3 +2095,13 @@ ___________
   In simple terms, git **cherry-pick** picks a specific commit from one branch and apply it to another branch without merging the entire branch.
   
 ___________
+
+________________________________________________________________________________________________________________________________
+ 1. ### #toast-react
+    Use ***React Context + useReducer*** for modular apps, or Redux if your app already uses it.
+    ***Custom event system*** - it's better for decoupled microfrontends.
+    ***Limitting overlapping***:
+    Each toast has a timeout.
+    You can limit max concurrent toasts by truncating the state array (e.g. state.slice(-3)).
+    For overlapping prevention, add a unique hash to check duplicates if needed.
+    How would you queue multiple notifications, set timeouts, and avoid overlapping?
