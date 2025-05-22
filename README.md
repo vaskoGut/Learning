@@ -479,7 +479,17 @@ obj.greet(); // Output: Alice
          6. If yout type this in console, you will get Window object.
     
   8. ### settimeout-async
-        Yes setTimeout is async
+        Yes setTimeout is async functino. 
+
+        How to use it with promise?
+
+        ```javascript
+          function delay(ms) {
+            return new Promise((resolve) => setTimeout(resolve, ms));
+          }
+        ```
+        
+        await delay(1000); // pauses for 1 second
 
   9. ### example-promise
         Promise object represents eventual completion or failure of asynchronous function. Whenever tasks should be executed asynchronouslo. Promisess are used.
