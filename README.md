@@ -157,7 +157,7 @@ let result = value ?? "default";
 | 3   | [How does work refetchOnMount: false? ](#refetch-mount-false)      |
 | 4   | What is onSettled in react-query? ](#react-query-onsettled)      |
 | 5   | What is retry in react-query? ](#react-query-retry)      |
-| 6   | What is retry in react-query? ](#refetchOnWindowFocus react query)
+| 6   | What is retry in react-query? ](#refetchOnWindowFocus react query)      |
 
 
 # Other
