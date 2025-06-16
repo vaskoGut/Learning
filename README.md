@@ -156,6 +156,9 @@ let result = value ?? "default";
 | 2   | [What is invalidating queries? Which cases of using do you know? ](#invalidating-queries)      |
 | 3   | [How does work refetchOnMount: false? ](#refetch-mount-false)      |
 | 4   | What is onSettled in react-query? ](#react-query-onsettled)      |
+| 5   | What is retry in react-query? ](#react-query-retry)      |
+| 6   | What is retry in react-query? ](#refetchOnWindowFocus react query)
+
 
 # Other
 | Nm | #Question   |
@@ -2072,6 +2075,11 @@ ________________________________________________________________________________
    ****onSettled**** is a callback that is triggered when the mutation process is completed, regardless of whether it was successful or resulted in an error.
    This allows you to perform any final operations that should occur after the mutation is done, such as invalidating cache, refetching data, or updating the UI in some way.
 
+5. ### react query retry
+  Retry tells if we need to retry fetching data, if api call fails
+
+6. ### refetchOnWindowFocus react query
+  Example of using: You have a dashboard open, you switch to another tab for a few minutes, then come back.
 
 ___________
 
