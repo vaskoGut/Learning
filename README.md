@@ -155,9 +155,9 @@ let result = value ?? "default";
 | 1   | [What is advantages of react-query? when do we use stale:infinity? so if i don't set staleTime what does it mean? will be my query cached? ](#react-query-questions)      |
 | 2   | [What is invalidating queries? Which cases of using do you know? ](#invalidating-queries)      |
 | 3   | [How does work refetchOnMount: false? ](#refetch-mount-false)      |
-| 4   | What is onSettled in react-query? ](#react-query-onsettled)      |
-| 5   | What is retry in react-query? ](#react-query-retry)      |
-| 6   | What is retry in react-query? ](#refetchOnWindowFocus react query)      |
+| 4   | [What is onSettled in react-query?  ](#react-query-onsettle)      |
+| 5   | [What is retry in react-query? ](#react-query-retry)      |
+| 6   | [What is retry in react-query? ](#refetchOnWindowFocus-react-query)      |
 
 
 # Other
