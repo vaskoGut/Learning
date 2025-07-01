@@ -1912,9 +1912,9 @@ ________________________________________________________________________________
       Cloud Functions: Serverless backend logic.
       Push Notifications: Send messages to users' devices.
       ✅ Perfect for: Quick app prototyping, MVPs, real-time apps like chats.
-
-    36. ### brandwidth-explanation
-        To limit na transfer danych — ile łącznie „megabajtów” lub „gigabajtów” treści (np. tekstów, obrazków, plików, API) CMS może wysłać do osób odwiedzających Twoją stronę lub korzystających z aplikacji
+   
+   36. ### brandwidth-explanation
+       To limit na transfer danych — ile łącznie „megabajtów” lub „gigabajtów” treści (np. tekstów, obrazków, plików, API) CMS może wysłać do osób odwiedzających Twoją stronę lub korzystających z aplikacji
   
 ________________________________________________________________________________________________________________________________
    1. ### box-model
