@@ -198,7 +198,7 @@ let result = value ?? "default";
 | 33   | [Difference ssr, ssg, isr?](#ssr-ssg-isr-difference)      |
 | 34   | [EXplain how SSG approach are used in more details?](#ssg-details)      | 
 | 35   | [What is firebase generally speaking?](#firebase-description)      |
-
+| 36   | [What is brandwidth?](#brandwidth-explanation)      |
 
 SPA:
 Works by loading a single HTML page and dynamically updating the content as the user interacts with the app.
@@ -1912,6 +1912,9 @@ ________________________________________________________________________________
       Cloud Functions: Serverless backend logic.
       Push Notifications: Send messages to users' devices.
       ✅ Perfect for: Quick app prototyping, MVPs, real-time apps like chats.
+
+    36. ### brandwidth-explanation
+        To limit na transfer danych — ile łącznie „megabajtów” lub „gigabajtów” treści (np. tekstów, obrazków, plików, API) CMS może wysłać do osób odwiedzających Twoją stronę lub korzystających z aplikacji
   
 ________________________________________________________________________________________________________________________________
    1. ### box-model
