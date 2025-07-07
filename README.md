@@ -162,7 +162,6 @@ let result = value ?? "default";
 # DESIGN-SYSTEM FRONT-END
 | Nm | #Question   |
 | :---:   | :---: |
-## ARCHITECTURE
 | 1   | [SSR - server side rendering ? what is difference between SSR and SSG? what does have better performance? please name  use cases for SSG and SSR](#ssr-server-side-rendering)      |
 
 # Other
