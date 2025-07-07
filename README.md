@@ -159,6 +159,11 @@ let result = value ?? "default";
 | 5   | [What is retry in react-query? ](#react-query-retry)      |
 | 6   | [What is retry in react-query? ](#refetchOnWindowFocus-react-query)      |
 
+# DESIGN-SYSTEM FRONT-END
+| Nm | #Question   |
+| :---:   | :---: |
+## ARCHITECTURE
+| 1   | [SSR - server side rendering ? what is difference between SSR and SSG? what does have better performance? please name  use cases for SSG and SSR] (#ssr-server-side-rendering)      |
 
 # Other
 | Nm | #Question   |
@@ -2098,6 +2103,12 @@ ________________________________________________________________________________
   Example of using: You have a dashboard open, you switch to another tab for a few minutes, then come back.
 
 ___________
+
+ # FRONT END SYSTEM DESIGN
+1. ### ssr server side rendering
+   ![image](https://github.com/user-attachments/assets/248eed64-1055-44da-a361-73d07b37cac6)
+   performance:
+   Initial Load Time	Extremely fast (HTML served instantly)	Slower (HTML generated on request)
 
 ________________________________________________________________________________________________________________________________
 
