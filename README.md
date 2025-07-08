@@ -40,7 +40,7 @@
 | 37   | [What are recursive types?](#recursive-types)                                     |
 | 38   | [For ... of, forEach difference?](#for-loops)                                     |
 | 39   | [Settimeout and asynchronous functions?](#settimeout-asynchronous-functions)                                     |
-| 40   | [ForEach, for...of difference??](#forEach-forOfDifference)                                     |
+| 40   | [ForEach, for...of difference? For andfor of difference](#forEach-forOfDifference)                                     |
 | 41   | [Passing value reference difference in JS?](#value-reference-difference)                                     |
 | 42   | [Difference betweeen map filter?](#filter-map-difference)                                     |
 | 43   | [Difference betweeen expression and statement?](#expression-statement-diff)                                     |
@@ -923,6 +923,11 @@ obj.greet(); // Output: Alice
   ***forEach*** - Can access index as a second argument
   forEach is used for simpler problems.
 
+   ***for...of*** - ***for*** difference. When you need what? 
+  Use for...of when you just need the values.
+  Use classic for when you need indexes or more control.
+
+
 41. ### #value-reference-difference
     In JavaScript, "Pass by Value" and "Pass by Reference" refer to how values are passed into functions (or assigned to variables).
     In example below copy of valuse is passed. Original valude wasn't changed.
@@ -956,8 +961,6 @@ obj.greet(); // Output: Alice
      ```javascript
         let name = "Alice";
      ```
-
-    This is a variable declaration statement
 
    
 __________________________________________________________________________________________________________________________________________
