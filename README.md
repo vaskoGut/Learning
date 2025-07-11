@@ -836,33 +836,36 @@ obj.greet(); // Output: Alice
   27. ### #nullish-coalescing
       The nullish coalescing (??) operator is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.
       ![image](https://github.com/user-attachments/assets/54977902-f564-4a58-a264-bf122ae07267)
+      ***Nullish Assignment*** - 
+      let retries;        // currently undefined // you need to declare that value
+      retries ??= 3;      // assigns 3 because retries is nullish
 
-  28. ### #script-async-deffer
+  29. ### #script-async-deffer
       ![image](https://github.com/user-attachments/assets/a62346cd-23e2-4110-8a90-c4056095af25)
       ***Defer*** attribute is useful when script is using for DOM manipulations. Means script will apply on document html.
       ***Async*** attribute is useful when script is not using for DOM manipulation. Some time you need script only for server side operations or for handling cache or cookie but not for DOM manipulations
 
-  29. ### #script-tag
+  30. ### #script-tag
       Script tag is used to load some javascript code into your page.
 
-  30. ### #inline-external-js
+  31. ### #inline-external-js
       Inline javascript is used directly in your html. External JS is contained as a sepearate file.
       External scripts is preferred - cause  it can be cached by the browser and reused across multiple pages.
 
-  31. ### #loading-script-successfully
+  32. ### #loading-script-successfully
       We can test if a scripthas loadded successfully by checking  if a global variable or function defined in the script ia available.
 
-  32. ### #prevent-caching
+  33. ### #prevent-caching
       WE can prevent the browser from caching a js file by providing some unique query string to the URL of the file.
       An example:
       ```javascript
         <script src="hellojs.js?v=1"></script>
       ```
 
-  33. ### #script-loaders
+  34. ### #script-loaders
       It can be used Require.js or webPack for example.It provides advanced functionality for loading and managing Javascript files such as lazyLoading, dependency management, error handling.
 
-  34. ### #inferred-types
+  35. ### #inferred-types
       
    ![image](https://github.com/user-attachments/assets/49fb5f79-3432-41b9-b8b7-eb86c8e59083)
    ![image](https://github.com/user-attachments/assets/fa71ab01-962d-47a3-b672-8b28bbb08131)
