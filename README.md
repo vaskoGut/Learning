@@ -44,6 +44,7 @@
 | 41   | [Passing value reference difference in JS?](#value-reference-difference)                                     |
 | 42   | [Difference betweeen map filter?](#filter-map-difference)                                     |
 | 43   | [Difference betweeen expression and statement?](#expression-statement-diff)                                     |
+| 44   | [Best way to check type of value?](#typeof-checking-type-value)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -965,6 +966,8 @@ obj.greet(); // Output: Alice
         let name = "Alice";
      ```
 
+44. ### #typeof-checking-type-value
+    <img width="747" height="212" alt="image" src="https://github.com/user-attachments/assets/28b28322-c42c-4b32-8b4a-f537dcb51966" />
    
 __________________________________________________________________________________________________________________________________________
 
