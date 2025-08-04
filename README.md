@@ -44,7 +44,7 @@
 | 41   | [Passing value reference difference in JS?](#value-reference-difference)                                     |
 | 42   | [Difference betweeen map filter?](#filter-map-difference)                                     |
 | 43   | [Difference betweeen expression and statement?](#expression-statement-diff)                                     |
-| 44   | [Best way to check type of value? What is typeof Null? what is typeof Undefined? Can you use Object.keys, Object.values with arrays? ](#typeof-checking-type-value)                                     |
+| 44   | [Best way to check type of value? What is typeof Null? what is typeof Undefined? Can you use Object.keys, Object.values with arrays? What is typeof NaN?](#typeof-checking-type-value)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -971,7 +971,8 @@ obj.greet(); // Output: Alice
     
     Typeof null; // object typeof undefined; // undefined
     
-    Yes, we can use Object.keys, Object.values with arrays  
+    Yes, we can use Object.keys, Object.values with arrays
+    Typeof NaN is number.
    
 __________________________________________________________________________________________________________________________________________
 
