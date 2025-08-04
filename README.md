@@ -968,8 +968,8 @@ obj.greet(); // Output: Alice
 
 44. ### #typeof-checking-type-value
     <img width="747" height="212" alt="image" src="https://github.com/user-attachments/assets/28b28322-c42c-4b32-8b4a-f537dcb51966" />
-    Typeof null; // object typeof undefined; // undefined  
-    Yes, we can use Object.keys, Object.values with arrays
+    Typeof null; // object typeof undefined; // undefined
+    Yes, we can use Object.keys, Object.values with arrays  
    
 __________________________________________________________________________________________________________________________________________
 
