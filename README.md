@@ -1430,8 +1430,11 @@ Storing business logic that can be shared across the application (not just in Re
 
   52. ### #react-router
       a) React router - library that enables dynamic routing in react applications. It allows for navigation without refreshing the page ( spa behaviour ).
+      
       b) <Link> component is used to navigate without reloading page. <a> performs full page reload.
+      
       c) Dynamic route parameters are variable parts of a URL that can chang. For example user id: /users/123, /users/abc, /users/john-doe. You can access it with help of useParams ( import { useParams } from 'react-router-dom' ).
+      
       d) <Outlet/> used to render child route component or nothing, if child doesn't exist.
        ```javascript
          import { Outlet } from "react-router";
@@ -1444,6 +1447,7 @@ Storing business logic that can be shared across the application (not just in Re
             );
           }
       ```
+       
       e) Nested routes - when 1 route is rendered inside another route.
       <Routes>
         <Route path="/dashboard" element={<Dashboard />}>
