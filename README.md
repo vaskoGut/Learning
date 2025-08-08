@@ -1428,10 +1428,10 @@ Storing business logic that can be shared across the application (not just in Re
           }, [location.pathname]); // Runs on route/pathname change
       ```
 
-  52. ### #react-router
+  53. ### #react-router
       a) React router - library that enables dynamic routing in react applications. It allows for navigation without refreshing the page ( spa behaviour ).
       
-      b) <Link> component is used to navigate without reloading page. <a> performs full page reload.
+      b) ***<Link>*** component is used to navigate without reloading page. ***<a>*** tag performs full page reload.
       
       c) Dynamic route parameters are variable parts of a URL that can chang. For example user id: /users/123, /users/abc, /users/john-doe. You can access it with help of useParams ( import { useParams } from 'react-router-dom' ).
       
