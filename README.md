@@ -45,6 +45,7 @@
 | 42   | [Difference betweeen map filter?](#filter-map-difference)                                     |
 | 43   | [Difference betweeen expression and statement?](#expression-statement-diff)                                     |
 | 44   | [Best way to check type of value? What is typeof Null? what is typeof Undefined? Can you use Object.keys, Object.values with arrays? What is typeof NaN?](#typeof-checking-type-value)                                     |
+| 45   | [Are map, foreach, filter high-order functions?](#high-order-functions)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -973,7 +974,10 @@ obj.greet(); // Output: Alice
     
     Yes, we can use Object.keys, Object.values with arrays
     Typeof NaN is number.
-   
+
+45. ### #high-order-functions
+    Yes,map foreach filter are high-order functions.
+    A higher-order function is a function that does at least one of the following: Takes one or more functions as arguments or Returns a function
 __________________________________________________________________________________________________________________________________________
 
 # Exercises Javascript Typescript
