@@ -119,7 +119,7 @@ let result = value ?? "default";
 | 50   | [Rules of using custom hooks React?](#rules-custom-hooks-react)                                     |
 | 51   | [Unmount with React?](#handling-unmount-React)                                     |
 | 52   | [How to detect path location change in React?](#handling-path-change-react)                                     |
-| 53   | [What is react-router and what are advanteges of react-router?](#react-router)                                     |
+| 53   | [What is react-router and what are advanteges of react-router? What is hiostory api?](#react-router)                                     |
 
 # Redux
 | Nm | #Question   |
@@ -1459,6 +1459,7 @@ Storing business logic that can be shared across the application (not just in Re
       <img width="675" height="446" alt="image" src="https://github.com/user-attachments/assets/2b288455-2b81-4db7-a260-c570d06acc4e" />
       h) difference between useEffect and React Router Loader:
       <img width="562" height="620" alt="image" src="https://github.com/user-attachments/assets/9cb342f9-d35a-49a2-a86a-f79b918c0836" />
+      k) The History API provides access to the browser's session histor. But in React project you should use just React Router library, it has bilt in hiostory functionality.
 
       
       
