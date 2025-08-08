@@ -119,6 +119,7 @@ let result = value ?? "default";
 | 50   | [Rules of using custom hooks React?](#rules-custom-hooks-react)                                     |
 | 51   | [Unmount with React?](#handling-unmount-React)                                     |
 | 52   | [How to detect path location change in React?](#handling-path-change-react)                                     |
+| 53   | [What is react-router and what are advanteges of react-router?](#react-router)                                     |
 
 # Redux
 | Nm | #Question   |
@@ -1426,6 +1427,34 @@ Storing business logic that can be shared across the application (not just in Re
             setFilter(defaultFilterValue);
           }, [location.pathname]); // Runs on route/pathname change
       ```
+
+  52. ### #react-router
+      a) React router - library that enables dynamic routing in react applications. It allows for navigation without refreshing the page ( spa behaviour ).
+      b) <Link> component is used to navigate without reloading page. <a> performs full page reload.
+      c) Dynamic route parameters are variable parts of a URL that can chang. For example user id: /users/123, /users/abc, /users/john-doe. You can access it with help of useParams ( import { useParams } from 'react-router-dom' ).
+      d) <Outlet/> used to render child route component or nothing, if child doesn't exist.
+       ```javascript
+         import { Outlet } from "react-router";
+          export default function SomeParent() {
+            return (
+              <div>
+                <h1>Parent Content</h1>
+                <Outlet />
+              </div>
+            );
+          }
+      ```
+      e) Nested routes - when 1 route is rendered inside another route.
+      <Routes>
+        <Route path="/dashboard" element={<Dashboard />}>
+          <Route path="profile" element={<Profile />} />
+          <Route path="settings" element={<Settings />} />
+        </Route>
+      </Routes>
+      i) defer, await, suspense example:
+      <img width="675" height="446" alt="image" src="https://github.com/user-attachments/assets/2b288455-2b81-4db7-a260-c570d06acc4e" />
+      h) difference between useEffect and React Router Loader:
+      <img width="562" height="620" alt="image" src="https://github.com/user-attachments/assets/9cb342f9-d35a-49a2-a86a-f79b918c0836" />
 
       
       
