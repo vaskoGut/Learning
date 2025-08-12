@@ -46,6 +46,7 @@
 | 43   | [Difference betweeen expression and statement?](#expression-statement-diff)                                     |
 | 44   | [Best way to check type of value? What is typeof Null? what is typeof Undefined? Can you use Object.keys, Object.values with arrays? What is typeof NaN?](#typeof-checking-type-value)                                     |
 | 45   | [Are map, foreach, filter high-order functions?](#high-order-functions)                                     |
+| 46   | [What returns js push method - length of array or array itself? How to use it in reduce method f.e. to get array](#push-method-js)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
