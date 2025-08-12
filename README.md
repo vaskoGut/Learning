@@ -230,6 +230,7 @@ Can be installed on a user's home screen like a native app and can run independe
 | 7   | [What is benefit of styled components in comparison to normal css, style styling? ](#styled-components)                                     |
 | 8   | [Styled components and extending styles. how does it work (how can you create basic component and extended or just  different version of component)? ](#styled-components-extending-styles)                                     |
 | 9   | [Difference betweein relative, absoulte, fixed, sticky? ](#relative-absolute-fixed-sticky)                                     |
+|10   | [Is css rendering before or after dom is constracted in critical rendering path?](#rendering-css-after-before)                                     | 
 
 # HTML
 | Nm | #Question   |
@@ -2061,8 +2062,10 @@ ______________
         Also check example of setting css attribute:
         ![image](https://github.com/user-attachments/assets/c72564da-9848-47fa-96fa-4428a1e29bb3)
 
-
-
+  9. ### #rendering-css-after-before
+    DOM construction	Begins immediately with HTML parsing
+    CSS parsing	Happens in parallel after <link> found
+    Rendering (paint to screen)	After both DOM & CSSOM are ready
 ______________ ______________ ______________ ______________ __________________________________________
 ______________ ______________ ______________ ______________ __________________________________________
 HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTMLHTML HTML HTML HTML HTML HTML HTML
