@@ -980,6 +980,10 @@ obj.greet(); // Output: Alice
 45. ### #high-order-functions
     Yes,map foreach filter are high-order functions.
     A higher-order function is a function that does at least one of the following: Takes one or more functions as arguments or Returns a function
+
+45. ### #push-method-js
+    If you use push inside reduce function for example. you need to declare value at start, and then asign to this value .push(smth).
+    Because if you use smth like return test.push(smth) it will return length of array.       
 __________________________________________________________________________________________________________________________________________
 
 # Exercises Javascript Typescript
