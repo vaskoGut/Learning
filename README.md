@@ -47,6 +47,7 @@
 | 44   | [Best way to check type of value? What is typeof Null? what is typeof Undefined? Can you use Object.keys, Object.values with arrays? What is typeof NaN?](#typeof-checking-type-value)                                     |
 | 45   | [Are map, foreach, filter high-order functions?](#high-order-functions)                                     |
 | 46   | [What returns js push method - length of array or array itself? How to use it in reduce method f.e. to get array](#push-method-js)                                     |
+| 47   | [If you have array. You modify that array with map and filter functions. Will array stay Immutable?](#immutable-array)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -981,9 +982,12 @@ obj.greet(); // Output: Alice
     Yes,map foreach filter are high-order functions.
     A higher-order function is a function that does at least one of the following: Takes one or more functions as arguments or Returns a function
 
-45. ### #push-method-js
+46. ### #push-method-js
     If you use push inside reduce function for example. you need to declare value at start, and then asign to this value .push(smth).
-    Because if you use smth like return test.push(smth) it will return length of array.       
+    Because if you use smth like return test.push(smth) it will return length of array.
+
+47. ### #immutable-array
+    if you modify array with map, filter methods. You don't modify initial array. So it stays immutable
 __________________________________________________________________________________________________________________________________________
 
 # Exercises Javascript Typescript
