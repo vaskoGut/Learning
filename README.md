@@ -7,7 +7,7 @@
 | 4   | [Types Enums Interface. What for are used types? What are tuples? What is union, intersection? What is intersection types? What is record type - provide example](#types-enums-interfaces)                                                                             |
 | 5   | [Difference between map, filter and forEach. Does filter, slice methods create new array or mutating source? What about reduce? ](#map-foreach-difference)                                                                             |
 | 6   | [What is this in js? Can you change value of this? What is this alone, inside object, inside event handler, inside function? What is for are used call,apply methods? If yout type this in console - what will you get?](#this-meaning)                                                                             |
-| 7  | [Is setTimeOut async?](#settimeout-async)                                                                             |
+| 7  | [What is setTimeout? Is setTimeOut async?](#settimeout-async)                                                                             |
 | 8  | [What is Promise? Example of promise? What status promis returns? Is promise aycnronious? Name wayss of handling promises. What is promise all? Make a simple example of promise and promise.all](#example-promise)                                                                             |
 | 9  | [What is Closure? Please provide examples. If variable is declared without keyword, is it global?](#closure-explanation)                                                                             |
 | 10  | [What is differene between sppread and rest operator - name practical examples?](#rest-spread-operator-difference)                                                                             |
@@ -494,19 +494,20 @@ obj.greet(); // Output: Alice
      7. In strict mode, this will be undefined. Otherwise, this refers to the global object (window in browsers).
     
   8. ### settimeout-async
-        Yes setTimeout is async functino. 
+      1. setTiimeout is function used to scheduling code for some specific delay, time.
+      2. Yes setTimeout is async functino. 
 
-        How to use it with promise?
+      How to use it with promise?
 
-        ```javascript
-          function delay(ms) {
-            return new Promise((resolve) => setTimeout(resolve, ms));
-          }
-        ```
-        
-        await delay(1000); // pauses for 1 second
+      ```javascript
+        function delay(ms) {
+          return new Promise((resolve) => setTimeout(resolve, ms));
+        }
+      ```
+      
+      await delay(1000); // pauses for 1 second
 
-  9. ### example-promise
+  10. ### example-promise
         Promise object represents eventual completion or failure of asynchronous function. Whenever tasks should be executed asynchronouslo. Promisess are used.
         Example login function:
         ![image](https://github.com/vaskoGut/Learning/assets/7413864/e627bed4-169b-4366-9de8-2fa87aabbd8c)
@@ -564,7 +565,7 @@ obj.greet(); // Output: Alice
         });
        ```
 
-  10. ### closure-explanation
+  11. ### closure-explanation
         1. If we speak about closure , we need to mention **local** and **global** scope. Functions have its local, private scope. Variables can be global or private - depending where they'are declared.
         2. if variable is declared without keyword, it is global. Even if it's declared inside the function.
 
@@ -578,7 +579,7 @@ obj.greet(); // Output: Alice
 
         Examples of global scope: window does have global scope. Variable declared with var outside of the fnction has global scop.e
     
- 11. ### rest-spread-operator-difference
+ 12. ### rest-spread-operator-difference
       1. ***Spread*** operator is mostly used with arrays. It's used to efficientl merge, cop arrays, pass elements to functions.
          
        You can use spread operator to merge 2 objects,or 2 arrays. In React you can use spread operator to pass properties to the component:
@@ -626,7 +627,7 @@ obj.greet(); // Output: Alice
           printNumbers(1,2,3,4,5); // [1,2,3,4,5] 
         ```
 
-   12. ### set-object
+   13. ### set-object
         Set are collections of unique values:
 
         ```javascript
@@ -644,11 +645,11 @@ obj.greet(); // Output: Alice
         A  **has()** method that takes an element and returns a boolean.
         A  **keys()** method that returns an iterator of the elements in the set.
           
-  13. ### try-catch
+  14. ### try-catch
       Wraps code that can fail and pass error to the catch instead of crashing the app.
       So generally speaking we need it to handle errors.
   
-  14. ### type-interface-diff
+  15. ### type-interface-diff
         Types in TypeScript are more flexible and can define primitive, intersection, union, tuple, or different types of data, while interfaces are used to describe the shape of an object
       Yes you can use types to define typf of object.
          ```javascript
@@ -664,7 +665,7 @@ obj.greet(); // Output: Alice
             type Base = { id: number };
             type User = Base & { name: string };
         ```
-  15. ### collection-js-array
+  16. ### collection-js-array
       Eather
        ```javascript
       const arrray = [...yourObjectCollection];
@@ -674,10 +675,10 @@ obj.greet(); // Output: Alice
 
        In JavaScript, collections refer to data structures that store multiple elements or values. Examples include arrays, objects, maps, and sets
 
-  16. ### stringify-3rd-parameter
+  17. ### stringify-3rd-parameter
        it adds additional spacing
 
-  17. ### try-catch-finally
+  18. ### try-catch-finally
       Eather
        ```javascript
       openMyFile();
@@ -700,7 +701,7 @@ obj.greet(); // Output: Alice
        }
        ```
 
-   18. ### arrow-function
+   19. ### arrow-function
        This inside arrow function is referenced, pointed to the global object. We normal function declaration - it points to the inner scope.
 
         ```javascript
