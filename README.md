@@ -40,7 +40,7 @@
 | 37   | [What are recursive types?](#recursive-types)                                     |
 | 38   | [For ... of, forEach difference?](#for-loops)                                     |
 | 39   | [Settimeout and asynchronous functions?](#settimeout-asynchronous-functions)                                     |
-| 40   | [ForEach, for...of difference? For andfor of difference](#forEach-forOfDifference)                                     |
+| 40   | [ForEach, for...of difference? For andfor of difference. Difference between for ... in for ... of](#forEach-forOfDifference)                                     |
 | 41   | [Passing value reference difference in JS?](#value-reference-difference)                                     |
 | 42   | [Difference betweeen map filter?](#filter-map-difference)                                     |
 | 43   | [Difference betweeen expression and statement?](#expression-statement-diff)                                     |
@@ -938,6 +938,16 @@ obj.greet(); // Output: Alice
   Use for...of when you just need the values.
   Use classic for when you need indexes or more control.
 
+  Both for..of and for..in statements iterate over lists; the values iterated on are different though, for..in returns a list of keys on the object being iterated, whereas for..of returreturns a list of values of the numeric properties of the object being iterated.
+  Here is an example that demonstrates this distinction:
+
+   ```javascript
+      let list = [4, 5, 6];
+      
+      for (let i in list) {
+         console.log(i); // "0", "1", "2",
+      }
+   ```
 
 41. ### #value-reference-difference
     In JavaScript, "Pass by Value" and "Pass by Reference" refer to how values are passed into functions (or assigned to variables).
