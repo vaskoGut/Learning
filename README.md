@@ -9,7 +9,7 @@
 | 6   | [What is this in js? Can you change value of this? What is this alone, inside object, inside event handler, inside function? What is for are used call,apply methods? If yout type this in console - what will you get?](#this-meaning)                                                                             |
 | 7  | [What is setTimeout? Is setTimeOut async?](#settimeout-async)                                                                             |
 | 8  | [What is Promise? Example of promise? What status promis returns? Is promise aycnronious? Name wayss of handling promises. What is promise all? Make a simple example of promise and promise.all](#example-promise)                                                                             |
-| 9  | [What is Closure? Please provide examples. When closure is created when we speak about functions? If variable is declared without keyword, is it global?](#closure-explanation)                                                                             |
+| 9  | [What is Closure? Please provide examples. When closure is created when we speak about functions? If variable is declared without keyword, is it global? Does inner function has an access to outer function? ](#closure-explanation)                                                                             |
 | 10  | [What is differene between sppread and rest operator - name practical examples?](#rest-spread-operator-difference)                                                                             |
 | 11  | [What are sets? How to convert Set type to the array? Example.](#set-object)                                                                             |
 | 12  | [Why using try catch wrapper  instead just async await?](#try-catch)                                                                             |
@@ -579,9 +579,22 @@ obj.greet(); // Output: Alice
         ```
 
         Examples of global scope: window does have global scope. Variable declared with var outside of the fnction has global scop.e
-        
+
+        4. Yes, inner function has an access to outer function:
+
+        ```javascript
+          function init() {
+            var name = "Mozilla"; // name is a local variable created by init
+            function displayName() {
+              // displayName() is the inner function, that forms a closure
+              console.log(name); // use variable declared in the parent function
+            }
+            displayName();
+          }
+          init();
+         ```
     
- 13. ### rest-spread-operator-difference
+ 12. ### rest-spread-operator-difference
       1. ***Spread*** operator is mostly used with arrays. It's used to efficientl merge, cop arrays, pass elements to functions.
          
        You can use spread operator to merge 2 objects,or 2 arrays. In React you can use spread operator to pass properties to the component:
