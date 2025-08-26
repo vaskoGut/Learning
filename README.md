@@ -168,6 +168,7 @@ let result = value ?? "default";
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [ARCHITECTURE: SSR - server side rendering ? what is difference between SSR and SSG? what does have better performance? please name  use cases for SSG and SSR](#ssr-server-side-rendering)      |
+| 2   | [ARCHITECTURE: create react starter - is it what type of architecture? explain? Frameworks like next.js, gatsby.js what type? ](#SSR-CSR-SSG)      |
 
 # Other
 | Nm | #Question   |
@@ -2204,6 +2205,15 @@ ___________
    ![image](https://github.com/user-attachments/assets/248eed64-1055-44da-a361-73d07b37cac6)
    performance:
    Initial Load Time	Extremely fast (HTML served instantly)	Slower (HTML generated on request)
+
+2. ### SSR-CSR-SSG
+   A normal React SPA (Single Page Application) — the kind you build with create-react-app, Vite, or similar, without frameworks like Next.js — is **CSR** (Client-Side Rendering) by default.
+     The server usually just serves a single index.html file with an empty <div id="root"></div>.
+     The React bundle (bundle.js) is loaded in the browser.
+     React then builds the UI entirely in the client’s browser, fetching data as needed.
+     Until the JS runs, the user might just see a blank page or loading spinner (this is why CSR apps can have poor SEO if not handled carefully).
+
+     Frameworks like Next.js, Remix, or Nuxt (Vue) extend React/Vue with SSR, SSG, ISR, etc.
 
 ________________________________________________________________________________________________________________________________
 
