@@ -170,6 +170,7 @@ let result = value ?? "default";
 | 1   | [ARCHITECTURE: SSR - server side rendering ? what is difference between SSR and SSG? what does have better performance? please name  use cases for SSG and SSR](#ssr-server-side-rendering)      |
 | 2   | [ARCHITECTURE: create react starter - is it what type of architecture? explain? Frameworks like next.js, gatsby.js what type? ](#SSR-CSR-SSG)      |
 | 3   | [ARCHITECTURE: what is iSR? what is main advantage of ISR? What is disadvantages of ISR - problem with partially stale page? ](#ISR-explanation)      |
+| 4   | [ARCHITECTURE: what is edge computing? ](#edge-computing)      |
 
 # Other
 | Nm | #Question   |
@@ -2223,6 +2224,10 @@ ___________
 
   Disadvantage:
   <img width="666" height="363" alt="image" src="https://github.com/user-attachments/assets/663a5e36-fd5f-4c60-bd17-59a275863d21" />
+
+4. ### edge-computing
+    
+  Edge computing means running code and delivering content closer to the user, on servers at the “edge” of the network (CDN nodes, regional data centers), instead of only at a central server.
 
 
 
