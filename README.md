@@ -169,6 +169,7 @@ let result = value ?? "default";
 | :---:   | :---: |
 | 1   | [ARCHITECTURE: SSR - server side rendering ? what is difference between SSR and SSG? what does have better performance? please name  use cases for SSG and SSR](#ssr-server-side-rendering)      |
 | 2   | [ARCHITECTURE: create react starter - is it what type of architecture? explain? Frameworks like next.js, gatsby.js what type? ](#SSR-CSR-SSG)      |
+| 3   | [ARCHITECTURE: what is iSR? what is main advantage of ISR? What is disadvantages of ISR - problem with partially stale page? ](#ISR-explanation)      |
 
 # Other
 | Nm | #Question   |
@@ -2208,12 +2209,22 @@ ___________
 
 2. ### SSR-CSR-SSG
    A normal React SPA (Single Page Application) — the kind you build with create-react-app, Vite, or similar, without frameworks like Next.js — is **CSR** (Client-Side Rendering) by default.
-     The server usually just serves a single index.html file with an empty <div id="root"></div>.
-     The React bundle (bundle.js) is loaded in the browser.
-     React then builds the UI entirely in the client’s browser, fetching data as needed.
-     Until the JS runs, the user might just see a blank page or loading spinner (this is why CSR apps can have poor SEO if not handled carefully).
+   The server usually just serves a single index.html file with an empty <div id="root"></div>.
+   The React bundle (bundle.js) is loaded in the browser.
+   React then builds the UI entirely in the client’s browser, fetching data as needed.
+   Until the JS runs, the user might just see a blank page or loading spinner (this is why CSR apps can have poor SEO if not handled carefully).
 
-     Frameworks like Next.js, Remix, or Nuxt (Vue) extend React/Vue with SSR, SSG, ISR, etc.
+3. ### ISR-explanation
+   ISR lets you statically generate pages at build time and update them later in the background — without rebuilding the whole site.
+   You set a revalidate time in getStaticProps. After that interval, the next request will trigger a background regeneration.
+
+  Advantages:
+  <img width="560" height="315" alt="image" src="https://github.com/user-attachments/assets/4c03a7a1-d8ed-42e7-bc08-c2ff435ac76a" />
+
+  Disadvantage:
+  <img width="666" height="363" alt="image" src="https://github.com/user-attachments/assets/663a5e36-fd5f-4c60-bd17-59a275863d21" />
+
+
 
 ________________________________________________________________________________________________________________________________
 
