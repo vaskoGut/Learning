@@ -720,7 +720,7 @@ obj.greet(); // Output: Alice
        ```
 
    20. ### arrow-function
-       This inside arrow function is referenced, pointed to the global object. We normal function declaration - it points to the inner scope.
+       Arrow fuction inherits this from outside function. In normal function this points out to global object.
 
         ```javascript
           function RegularFunction() {
