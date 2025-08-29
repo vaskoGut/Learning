@@ -785,31 +785,33 @@ obj.greet(); // Output: Alice
       console.log(mySubObject.color); // 'red'
 
   20. ### object-primitive-reference
-    Object is stored and copied "by reference", whereas primitive values strings, numbers, booleans copied as a whole value.
-     ```javascript
-      let message = "Hello!";
-      let phrase = message;
-    ```
-    In the end we have 2 independent variables.
-    A variable assigned to an object = stores not object itslef, but its address in memory, in other words - a reference to it.
-    ```javascript
-      let user = { name: "John" };
-      let admin = user;
-    ```
-    ![image](https://github.com/user-attachments/assets/b687fb14-9572-4f85-bdc9-5ca86afb1a21)
+      Object is stored and copied "by reference", whereas primitive values strings, numbers, booleans copied as a whole value.
+       ```javascript
+        let message = "Hello!";
+        let phrase = message;
+      ```
+      In the end we have 2 independent variables.
+      A variable assigned to an object = stores not object itslef, but its address in memory, in other words - a reference to it.
+      ```javascript
+        let user = { name: "John" };
+        let admin = user;
+      ```
+      
+      ![image](https://github.com/user-attachments/assets/b687fb14-9572-4f85-bdc9-5ca86afb1a21)
+  
+      When objects are equal?
 
-    When objects are equal?
-    ![image](https://github.com/user-attachments/assets/9f1bf005-6efc-4d44-8125-c56089341c29)
-    Two independent objects are not equal:
-    let a = {};
-    let b = {}; // two independent objects
-    
-    alert( a == b ); // false
+      ![image](https://github.com/user-attachments/assets/9f1bf005-6efc-4d44-8125-c56089341c29)
+      Two independent objects are not equal:
+      let a = {};
+      let b = {}; // two independent objects
+      
+      alert( a == b ); // false
 
-  21. ### inner-outer-function-scope
+  22. ### inner-outer-function-scope
       Outer function doesn't have an access to the inner functions. But inner functions have an access to the outer functions. It's how lexical scope does work.
 
-  22. ### immidietly-invoked-function-expression
+  23. ### immidietly-invoked-function-expression
       Function runs as soon as it's defined.
 
         ```javascript
@@ -827,7 +829,7 @@ obj.greet(); // Output: Alice
       Simulating modules or public/private APIs in legacy code.
       Executing setup or initialization code immediately.
 
-  23. ### module-exports
+  24. ### module-exports
       Module exports - is a way to expose  functions, objects and primitives from module, so they can be used later in your code.
       An example:
       ![image](https://github.com/user-attachments/assets/a3c13743-8d3f-46f7-ac68-3329555350fc)
@@ -842,7 +844,7 @@ obj.greet(); // Output: Alice
       By encapsulating related code into modules, developers can organize their programs more efficiently and make them easier to maintain
 
 
-  24. ### calling-function-reference
+  25. ### calling-function-reference
       IN js when we pass a function by reference it is automatically called with the argument that the previous 'then' resolves to.
       JavaScript functions are first-class objects, meaning:
 
@@ -852,14 +854,14 @@ obj.greet(); // Output: Alice
 
       What is ***"Reference"***? A reference is essentially a pointer to the actual location of the function in memory. When you pass a function to another variable or as an argument, you're providing access to the same function, not creating a copy.
 
-  25. ### json-data-to-server
+  26. ### json-data-to-server
       Yes, before sending json to the server. You should convert it to the string.
 
-  26. ### anonymous-function
+  27. ### anonymous-function
       Anonymous function - is function declared without function name.There is 2 different ways of using it.
       ![image](https://github.com/user-attachments/assets/8a13a700-5395-400f-b75e-4d2c8a93cec0)
 
-  27. ### #nullish-coalescing
+  28. ### #nullish-coalescing
       The nullish coalescing (??) operator is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.
       ![image](https://github.com/user-attachments/assets/54977902-f564-4a58-a264-bf122ae07267)
       ***Nullish Assignment*** - 
