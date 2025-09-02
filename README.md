@@ -24,7 +24,7 @@
 | 21   | [Does nested function have an access to the outer function in JavaScript? And vice versa ( opposite) ](#inner-outer-function-scope)                                     |
 | 22   | [What is IIFE (immidietly invoked function expression](#immidietly-invoked-function-expression)                                     |
 | 23   | [What are module exports in js? What is module in js?](#module-exports)                                     |
-| 24   | [Why code .then(someFunction) works same as .then((data)=>someFunction(data)) ? What are functions in JS - and what can you do with function in JS?](#calling-function-reference)                                     |
+| 24   | [Why code .then(someFunction) works same as .then((data)=>someFunction(data)) ? What are functions in JS - and what can you do with function in JS? What is reference in JS?](#calling-function-reference)                                     |
 | 25   | [When you want to send json data to the server in what format should it be sent ?](#json-data-to-server)                                     |
 | 26   | [What is anonymous function in JS ?](#anonymous-function)                                     |
 | 27   | [What is nullish coalescing operator?](#nullish-coalescing)                                     |
