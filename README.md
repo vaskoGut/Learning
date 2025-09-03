@@ -858,8 +858,9 @@ obj.greet(); // Output: Alice
       Yes, before sending json to the server. You should convert it to the string.
 
   27. ### anonymous-function
-      Anonymous function - is function declared without function name.There is 2 different ways of using it.
-      ![image](https://github.com/user-attachments/assets/8a13a700-5395-400f-b75e-4d2c8a93cec0)
+      Anonymous function - is function declared without function name.
+      <img width="725" height="815" alt="image" src="https://github.com/user-attachments/assets/c8274e2b-8749-4d15-96dc-6c7296989076" />
+
 
   28. ### #nullish-coalescing
       The nullish coalescing (??) operator is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.
