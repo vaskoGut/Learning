@@ -900,7 +900,7 @@ obj.greet(); // Output: Alice
    ![image](https://github.com/user-attachments/assets/49fb5f79-3432-41b9-b8b7-eb86c8e59083)
    ![image](https://github.com/user-attachments/assets/fa71ab01-962d-47a3-b672-8b28bbb08131)
 
- 35. ### #inferred-types
+ 35. ### #destructing-object
     
  ![image](https://github.com/user-attachments/assets/6d31559c-69d9-431d-a76e-22cb75ff6c6c)
   result will be undefined.
