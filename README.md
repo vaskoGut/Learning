@@ -2114,6 +2114,7 @@ ______________
       Utility-first → Build designs quickly with prebuilt classes.
       Consistency → Enforces a design system across the app.
       Customization → Easily configurable with tailwind.config.js.
+      You can build your own design system. 
     Disadvantages:
       Readability issues → HTML can get cluttered with long class lists.
       Learning curve → Requires getting used to utility-first thinking.
