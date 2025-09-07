@@ -1821,7 +1821,7 @@ ______________
      4. Optimize videos, images - compress size, resize for different viewports, lazy loading.
      5. Prefetching in front-end development is a performance optimization technique that involves loading resources (like data, images, scripts, or other assets) in advance, before they are actually needed by the user.
      6. Caching - in next.js, gatsby.js it's is configured by the default.
-     7. Code splitting - is the practice of splitting your codebase into multiple bundles or chunks that can be loaded on demand, rather than loading the entire codebase at once.
+     7. Code splitting - is the practice of splitting your codebase into multiple bundles or chunks that can be loaded on demand, rather than loading the entire codebase at once. Only loads the JS needed for the current page
 
 ______________
 
