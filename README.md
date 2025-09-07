@@ -234,6 +234,7 @@ Can be installed on a user's home screen like a native app and can run independe
 | 8   | [Styled components and extending styles. how does it work (how can you create basic component and extended or just  different version of component)? ](#styled-components-extending-styles)                                     |
 | 9   | [Difference betweein relative, absoulte, fixed, sticky? ](#relative-absolute-fixed-sticky)                                     |
 |10   | [Is css rendering before or after dom is constracted in critical rendering path?](#rendering-css-after-before)                                     | 
+|11   | [What is tailwind.css?](#tailwind-css)                                     | 
 
 # HTML
 | Nm | #Question   |
@@ -2103,6 +2104,21 @@ ______________
     DOM construction	Begins immediately with HTML parsing
     CSS parsing	Happens in parallel after <link> found
     Rendering (paint to screen)	After both DOM & CSSOM are ready
+
+
+  11. ### #tailwind-css
+    Tailwind.css - is massive collections of css classes and utilities.
+    Generally you can style everything with help of css tailwind classes.
+    Bad thing - you have big awfull files with repetetive class names.
+    Advantages:
+      Utility-first → Build designs quickly with prebuilt classes.
+      Consistency → Enforces a design system across the app.
+      Customization → Easily configurable with tailwind.config.js.
+    Disadvantages:
+      Readability issues → HTML can get cluttered with long class lists.
+      Learning curve → Requires getting used to utility-first thinking.
+      Less semantic CSS → Custom styles may feel buried in markup.
+    
 ______________ ______________ ______________ ______________ __________________________________________
 ______________ ______________ ______________ ______________ __________________________________________
 HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTMLHTML HTML HTML HTML HTML HTML HTML
