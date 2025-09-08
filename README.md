@@ -928,9 +928,8 @@ obj.greet(); // Output: Alice
     };
  ```
 
-37. ### #for-loops
- forEach does not support returning values
- Unlike a regular for loop, forEach does not return values or allow return to stop execution.
+38. ### #for-loops
+ forEach does not support returning values. And it doesn't have break, continue, return statements in comparison too for ... of.
 
 
 39. ### #settimeout-asynchronous-functions
