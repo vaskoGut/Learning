@@ -39,7 +39,7 @@
 | 36   | [If you filter 1 array through another array. Why it's bettr to use set (  it can be done with arrays filter method but... ) ? What is set hash key in set?](#set-filtering-array)                                     |
 | 37   | [What are recursive types?](#recursive-types)                                     |
 | 38   | [For ... of, forEach difference?](#for-loops)                                     |
-| 39   | [Settimeout and asynchronous functions?](#settimeout-asynchronous-functions)                                     |
+| 39   | [What are asynchronous functinos in js? Settimeout and asynchronous functions?](#settimeout-asynchronous-functions)                                     |
 | 40   | [ForEach, for...of difference? For andfor of difference. Difference between for ... in for ... of](#forEach-forOfDifference)                                     |
 | 41   | [Passing value reference difference in JS?](#value-reference-difference)                                     |
 | 42   | [Difference betweeen map filter?](#filter-map-difference)                                     |
@@ -978,7 +978,7 @@ obj.greet(); // Output: Alice
 
 41. ### #value-reference-difference
     In JavaScript, "Pass by Value" and "Pass by Reference" refer to how values are passed into functions (or assigned to variables).
-    In example below copy of valuse is passed. Original valude wasn't changed.
+    In example below copy of valuse is passed. Original value wasn't changed.
      ```javascript
        let a = 10;
       function modify(x) {
