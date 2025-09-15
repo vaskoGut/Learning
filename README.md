@@ -48,6 +48,7 @@
 | 45   | [Are map, foreach, filter high-order functions?](#high-order-functions)                                     |
 | 46   | [What returns js push method - length of array or array itself? How to use it in reduce method f.e. to get array](#push-method-js)                                     |
 | 47   | [If you have array. You modify that array with map and filter functions. Will array stay Immutable?](#immutable-array)                                     |
+| 48   | [What is result of using Object.keys, Object.values and Object.keys?](#object-methods)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1028,6 +1029,22 @@ obj.greet(); // Output: Alice
 
 47. ### #immutable-array
     if you modify array with map, filter methods. You don't modify initial array. So it stays immutable
+
+48. ### #object-methods
+     ```javascript
+        const test = {
+          name: 'Vasyl',
+          surname: 'Gutnyk'
+        }
+
+       // Object.keys(test) // name, surname
+       // Object.values(test) / vasyl, gutnyk
+       // Object.entries // ['name', 'vasyl], ['surname', 'Gutnyk']
+     ```
+     Some example of using:
+     <img width="667" height="787" alt="image" src="https://github.com/user-attachments/assets/f765d679-d6d4-4e8e-be0e-09e4763b9e8a" />
+
+
 __________________________________________________________________________________________________________________________________________
 
 # Exercises Javascript Typescript
