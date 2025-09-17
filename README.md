@@ -1031,18 +1031,18 @@ obj.greet(); // Output: Alice
     if you modify array with map, filter methods. You don't modify initial array. So it stays immutable
 
 48. ### #object-methods
- ```javascript
-  const test = {
-    name: 'Vasyl',
-    surname: 'Gutnyk'
-  }
-
- // Object.keys(test) // name, surname
- // Object.values(test) / vasyl, gutnyk
- // Object.entries // ['name', 'vasyl], ['surname', 'Gutnyk']
- ```
-     Some example of using:
-     <img width="667" height="787" alt="image" src="https://github.com/user-attachments/assets/f765d679-d6d4-4e8e-be0e-09e4763b9e8a" />
+   ```javascript
+    const test = {
+      name: 'Vasyl',
+      surname: 'Gutnyk'
+    }
+  
+   // Object.keys(test) // name, surname
+   // Object.values(test) / vasyl, gutnyk
+   // Object.entries // ['name', 'vasyl], ['surname', 'Gutnyk']
+   ```
+       Some example of using:
+       <img width="667" height="787" alt="image" src="https://github.com/user-attachments/assets/f765d679-d6d4-4e8e-be0e-09e4763b9e8a" />
 
 
 __________________________________________________________________________________________________________________________________________
