@@ -1118,8 +1118,8 @@ ________________________________________________________________________________
         key: `col${index + 1}`,
       }));
    ```
-   First part creates array with empty values.
-   2nd part iterates through empty slots and fills it with data.
+     First part creates array with empty values.
+     2nd part iterates through empty slots and fills it with data.
 __________________________________________________________________________________________________________________________________________
 
 
