@@ -1107,19 +1107,20 @@ ________________________________________________________________________________
           dataIndex: `col${index + 1}`,
           key: `col${index + 1}`,
       })
-   ```
+    ```
    _ (underscore): Represents the current value (not needed since we're just using the index). So if you see it, in most cases it's just suggests that this value will not be used.
 
 10. ### empty-array-mapping
-    ```javascript
-      const columns = Array.from({ length: 11 }, (_, index) => ({
-        title: `Col ${index + 1}`,
-        dataIndex: `col${index + 1}`,
-        key: `col${index + 1}`,
-      }));
-   ```
-     First part creates array with empty values.
-     2nd part iterates through empty slots and fills it with data.
+       First part creates array with empty values.
+       2nd part iterates through empty slots and fills it with data.
+      ```javascript
+        const columns = Array.from({ length: 11 }, (_, index) => ({
+          title: `Col ${index + 1}`,
+          dataIndex: `col${index + 1}`,
+          key: `col${index + 1}`,
+        }));
+      ```
+    
 __________________________________________________________________________________________________________________________________________
 
 
