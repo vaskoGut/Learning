@@ -73,7 +73,7 @@ let result = value ?? "default";
 | 1   | [What is react](#what-is-react)                                     |
 | 2   | [What is unindirectional data flow](#what-is-unindirectional-data-flow)                                     | 
 | 3   | [What is state in react?](#what-is-state-in-react)                                     | 
-| 4   | [Can browser read JSX?](#can-browser-read-jsx)                                     |
+| 4   | [Can browser read JSX? What is used to browser be able read jsx?](#can-browser-read-jsx)                                     |
 | 5   | [What is DOM, Virtual DOM?](#what-is-dom)                                     |
 | 6   | [What is difference between es5 and es6?](#difference-between-es5-es6)                                     |
 | 7   | [How to create basic React app?](#basic-react-app)                                     |
