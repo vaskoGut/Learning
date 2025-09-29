@@ -1168,6 +1168,9 @@ ________________________________________________________________________________
    - es6 has 2 new ways of declaring variables: let and const
    - es6 has arrow function
    - little bit difference while importing, exporting components, declaring classes
+   - es6- promises. IN es5 it was handled with callbacks.
+   - Modules - export, import.
+   - It was introduced in es6 class syntax
    ______________
  8. ### basic react app
     Install node, instal crea-react-app. It's ready to use.
