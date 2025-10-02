@@ -1,7 +1,7 @@
 # JAVASCRIPT TYPESCRIPT
 | Nm | #Question   |
 | :---:   | :---: |
-| 1   | [Write reverse string function using map, reduce](#reverse-string)                                     |
+| 1   | [Write reverse string function using map, reduce methods](#reverse-string)                                     |
 | 2   | [Difference between arrow function and function declaration, expressions](#arrow-function-explanation)                                                                             |
 
 
