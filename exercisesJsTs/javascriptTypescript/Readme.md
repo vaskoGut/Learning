@@ -31,6 +31,14 @@
       }
     ```
 
+   Using **recursion** method:
+   ```javascript
+      function reverseStringRecursion(str) {
+        if(!str) return '';
+      
+        return reverseStringRecursion(str.substring(1)) + str[0];
+      } 
+    ```
 
 3. ### arrow function explanation
    **Functional expression** - function defined inside an expression. Example:
