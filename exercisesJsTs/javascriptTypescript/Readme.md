@@ -1,20 +1,38 @@
 # JAVASCRIPT TYPESCRIPT
 | Nm | #Question   |
 | :---:   | :---: |
-| 1   | [Write reverse string function using map, reduce methods](#reverse-string)                                     |
+| 1   | [Write reverse string function using map, reduce methods, for loop](#reverse-string)                                     |
 | 2   | [Difference between arrow function and function declaration, expressions](#arrow-function-explanation)                                                                             |
 
 
 
 1. ### reverse string
    Using **map** method:
-
+   
     ```javascript
       const str = 'hello';
       const result = str.split('').map((_, i, arr) => arr[arr.length-1-i]).join('');
     ```
 
-2. ### arrow function explanation
+   Using **reduce** method:
+
+    ```javascript
+      const result = str.split('').reduce((acc, curr) => {
+        acc = curr + acc;
+        return acc;
+      }, '');
+    ```
+
+   Using **for** method:
+    ```javascript
+      let outPut = '';
+      for (var i = str.length-1; i >= 0; i--) {
+        outPut += str[i];
+      }
+    ```
+
+
+3. ### arrow function explanation
    **Functional expression** - function defined inside an expression. Example:
 
     ```javascript
