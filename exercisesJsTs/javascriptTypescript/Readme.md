@@ -1,23 +1,19 @@
 # JAVASCRIPT TYPESCRIPT
 | Nm | #Question   |
 | :---:   | :---: |
-| 1   | [Difference let const var](#what-is-difference-between-let-const-var)                                     |
+| 1   | [Write reverse string function using map, reduce](#reverse-string)                                     |
 | 2   | [Difference between arrow function and function declaration, expressions](#arrow-function-explanation)                                                                             |
 
 
 
-1. ### what is difference between let const var
-   **Var** - scope is global or function ( if var's used inside function ).
-   Let, const - they have block scope.
+1. ### reverse string
+   Using **map** method:
 
     ```javascript
-     if(true) {
-       let test = 'test'; // test variable is available only inside if block
-     }
+      const str = 'hello';
+      const result = str.split('').map((_, i, arr) => arr[arr.length-1-i]).join('');
     ```
-   **Let** - can be reasigned.
-   **Const** - can't be reasigned.
-   
+
 2. ### arrow function explanation
    **Functional expression** - function defined inside an expression. Example:
 
