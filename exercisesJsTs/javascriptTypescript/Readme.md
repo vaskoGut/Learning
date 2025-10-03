@@ -40,6 +40,24 @@
       } 
     ```
 
+   using **recursion memoization**:
+   ```javascript
+      const fib = '0, 1, 1, 2, 3, 5, 8, 13, 21';
+
+      function fibNumber(num, memo) {
+        if(num in memo) return memo[num];
+        if(num == 1 || num == 0) return num;
+      
+        memo[num] = fibNumber(num-1, memo) + fibNumber(num-2, memo);
+        
+        return memo[num];
+      }
+      
+      console.log(fibNumber(7, {}));
+   ```
+
+
+
 3. ### arrow function explanation
    **Functional expression** - function defined inside an expression. Example:
 
