@@ -56,6 +56,29 @@
       console.log(fibNumber(7, {}));
    ```
 
+    using **for loop**:
+   ```javascript
+       const fib = '0, 1, 1, 2, 3, 5, 8, 13, 21';
+
+      function fibNumber(num) {
+        if(num == 0) return 0;
+        if(num == 1) return 1;
+      
+        let firstElem = 0;
+        let secondElem = 1;
+        let temp;
+        for (var i = 2; i <= num; i++) {
+          temp = firstElem + secondElem;
+        
+          firstElem = secondElem;
+          secondElem = temp;
+        }
+      
+        return temp;
+      }
+      
+      console.log(fibNumber(7));
+   ```
 
 
 3. ### arrow function explanation
