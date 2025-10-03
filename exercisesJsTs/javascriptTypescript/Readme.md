@@ -60,7 +60,7 @@
    ```javascript
        const fib = '0, 1, 1, 2, 3, 5, 8, 13, 21';
 
-      function fibNumber(num) {
+       function fibNumber(num) {
         if(num == 0) return 0;
         if(num == 1) return 1;
       
