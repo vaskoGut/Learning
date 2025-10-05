@@ -1350,24 +1350,27 @@ ________________________________________________________________________________
 
    33. ###  fragment-explanation
           **Fragment** alows you to return group ofchildren elments without need of extra DOM component.
+          Advantages:
+            1. Avoid Unnecessary DOM Nodes
+            2. Better Performance
 
-   34. ###  use-effect-empty-array
+   35. ###  use-effect-empty-array
           Your effect will run only after initial render.
 
-   35. ###  example-hook
+   36. ###  example-hook
         **Hooks** are reusable functions. Example: hook for fetching data, or another example hook for recognition screen size.
        ![image](https://github.com/vaskoGut/Learning/assets/7413864/c895a2bf-3b3d-4ac1-9922-589c079f583a)
 
-   36. ###  event-listener
+   37. ###  event-listener
         **Hooks** are reusable functions. Example: hook for fetching data, or another example hook for recognition screen size.
         ![image](https://github.com/vaskoGut/Learning/assets/7413864/6a2f472f-eb8f-4c6a-8237-0ed27deb947b)
 
    
-   37. ### #too-many-useeffect-explain
+   38. ### #too-many-useeffect-explain
         ![image](https://github.com/vaskoGut/Learning/assets/7413864/b2924d25-2088-4928-b941-4c79820fa729)
         solution: it's better to drop it in 1 useEffect and handle different cases. Or you can drop it in distinct function.
 
-   38. ### #design-patterns-react
+   39. ### #design-patterns-react
         ***Observer patterns*** - it's actually using state in React. When state data changed, component ( dependent properties ) are updated. 
          ***Singleton Pattern*** - singleton pattern, when global state is shared across the application.Singleton can only have 1 instance.
          ***Proxy pattern*** - For example handling lazy loading of images. Example: when you have RealImage class, but access to it provides ProxyImage class.
@@ -1393,26 +1396,26 @@ ________________________________________________________________________________
             image.display();
         ```
 
-  39. ### #caching-react
+  40. ### #caching-react
       1 of possible solutions: You can set some flag with help of localstorage f.e. after you fetch data. And the you check if this flag is true, if it's you aren't fetching data 2nd time.
 
-  40. ### #form-input-react-handling
+  41. ### #form-input-react-handling
       It's better use controlled components - assign some 'handleChange' function, and control state of input inside it. It's better approach for testing, debugging approaches.
 
-  41. ### #react-hook-service-difference
+  42. ### #react-hook-service-difference
       Reeact custom hook used to work with reused stateful logic. While service is used when you need something independent from react. Service can be used in next cases: Managing API requests and responses.
 Storing business logic that can be shared across the application (not just in React components).
 
-  42. ### #virtual-dom-shadow-dom-difference
+  43. ### #virtual-dom-shadow-dom-difference
       Virtual dom - The Virtual DOM is a tree of JavaScript objects that represent the real DOM elements
       Shadow dom-is a form of encapsulation on our element. In simple words, Shadow DOM is a way to create a "mini DOM" inside a web component that is hidden and separated from the rest of the page.
       This means that the styles and elements inside the shadow DOM are encapsulated (protected or isolated) so they don’t get affected by, or affect, anything outside of it
 
-  43. ### #react-create-element-react-dom
+  44. ### #react-create-element-react-dom
       At first we creating elment with React.createElement() then we render it with ReactDOM.render(ourElmenet, mountElemnent). Now is used jsx. Youjust render elment in that way:
       function renderElement() { return <div><p>test<p></div> }. Main reason why it's better- it's syntax. You can create element a lot easier.
 
-  44. ### #react-proptypes-question
+  45. ### #react-proptypes-question
       We dont use react proptypes ( which were running during runtime ). Cause in new projects we can use typescript and static types in development process.
 
   
