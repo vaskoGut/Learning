@@ -80,9 +80,9 @@
    ```
 
 2. ### palindrom recursion solving
-      using **simple looping**:
+   using **simple looping**:
 
-      ```javascript
+   ```javascript
          function reverseString(str) {
             return str.split('').reverse().join('');
          }
@@ -93,20 +93,19 @@
          }
          
          console.log(checkPalindrom('parem'));
-       ```
+   ```
 
-      using **recursion**:
+   using **recursion**:
 
-
-      ```javascript
-         function palindromRecursion(str) {
-              function checkStr(start, end) {
-                if(start >= end) return true;
-                if(str[start] !== str[end]) return false;
-                if(str[start] === str[end]) {
-                  return checkStr(start + 1, end - 1);
-               }
-              }
-           return checkStr(0, str.length-1); 
-         }
-      ```
+   ```javascript
+      function palindromRecursion(str) {
+           function checkStr(start, end) {
+             if(start >= end) return true;
+             if(str[start] !== str[end]) return false;
+             if(str[start] === str[end]) {
+               return checkStr(start + 1, end - 1);
+            }
+           }
+        return checkStr(0, str.length-1); 
+      }
+   ```
