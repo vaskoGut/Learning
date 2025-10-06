@@ -80,7 +80,7 @@ let result = value ?? "default";
 | 8   | [what is event in React? What is synthetic event?](#what-is-event-in-react)                                     |
 | 9   | [Explain how lists work in React?](#lists-in-react)                                     |
 | 10   | [Why key should be added to the list elements? Why index shouldn't be added as index?](#keys-in-react-lists)                                     |
-| 11   | [What are the components in React?](#commponents-in-react)                                     |
+| 11   | [What are the components in React?Which types of components are in react?](#commponents-in-react)                                     |
 | 12   | [How to declare state in React?](#state-in-react)                                     |
 | 13   | [What are props in React?Are props mutable?](#props-in-react)                                     |
 | 14   | [What is state and props difference?](#state-props-difference)                                     |
