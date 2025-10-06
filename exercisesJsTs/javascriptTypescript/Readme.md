@@ -79,7 +79,7 @@
       console.log(fibNumber(7));
    ```
 
-2. ### padlindrom-function
+2. ### palindrom recursion solving
       using **simple looping**:
 
       ```javascript
