@@ -1191,6 +1191,7 @@ ________________________________________________________________________________
  10. ###  keys in react lists
      1. Key is a unique identifier and it is used to identify whhich element of list was updated, deleted or added. Keys also help to improve performance of rendering lists.
      2. If you use index ( 2nd param in map method ) as the key, then after filtering, the index values change, and React will treat items as new — breaking component identity.
+      Key help React identify which items have changed, been added, or removed. So React can update the DOM efficiently, instead of re-rendering everything.
 
  11. ###  commponents in react
      React application consists of react component. Component is a reausable piece of code. Component can be stateless or statefull.
