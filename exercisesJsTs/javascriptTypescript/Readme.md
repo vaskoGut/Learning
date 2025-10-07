@@ -132,3 +132,17 @@
            );
          }
    ```
+
+   using **map method**:
+   ```javascript
+         function removeDuplicates(arr) {
+           const outputArray = [];
+           
+           arr.map(elem => {
+             if(!outputArray.includes(elem)) outputArray.push(elem);
+           });
+         
+           return outputArray;
+         }
+   ```j
+
