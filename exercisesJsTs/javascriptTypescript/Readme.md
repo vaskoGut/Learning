@@ -3,7 +3,7 @@
 | :---:   | :---: |
 | 1   | [Write reverse string function using map, reduce methods, memoization, for loop](#reverse-string)                                                                                                |
 | 2   | [Write palindrom function - with regular aproach and with help of recursion](#palindrom-recursion-solving)                                                                             |
-| 3   | [Remove duplicates from array](#remove-duplicates)                                                                             |
+| 3   | [Remove duplicates from array. What is difference in complexity or reduce and map solution ( check code below )?](#remove-duplicates)                                                                             |
 
 1. ### reverse string
    Using **map** method:
@@ -144,5 +144,12 @@
          
            return outputArray;
          }
-   ```j
+   ```
+   Time Complexity: O(n)
+
+   <img width="457" height="302" alt="image" src="https://github.com/user-attachments/assets/987ee096-63a3-4965-a3fa-afbaf44c85c5" />
+   map, reduce + includes inside have  On2 complexity because for each item, includes does another loop inside the main loop.
+
+
+   
 
