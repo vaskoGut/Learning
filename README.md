@@ -123,6 +123,7 @@ let result = value ?? "default";
 | 51   | [Unmount with React?](#handling-unmount-React)                                     |
 | 52   | [How to detect path location change in React?](#handling-path-change-react)                                     |
 | 53   | [What is react-router and what are advanteges of react-router? What is hiostory api? How do you get url params in react?](#react-router)                                     |
+| 54   | [What is advantage of react in comparison to javascript?](#react-plain-js)                                     |
 
 # Redux
 | Nm | #Question   |
@@ -1535,7 +1536,17 @@ Storing business logic that can be shared across the application (not just in Re
       <img width="562" height="620" alt="image" src="https://github.com/user-attachments/assets/9cb342f9-d35a-49a2-a86a-f79b918c0836" />
       k) The History API provides access to the browser's session histor. But in React project you should use just React Router library, it has bilt in hiostory functionality.
       l) import { useSearchParams } from 'react-router-dom'; And with help useSEarchParams you can get params.
+
+  54. ### #react-plain-js
+      1) Manual DOM Updates - You have to explicitly tell the browser what changed every time your app’s data changes. For example, if a user’s name updates, you might need to find the DOM node, clear old content, insert the new text, and handle edge cases (like event listeners disappearing).  As your UI grows more dynamic, this gets unmanageable. React uses a Virtual DOM that automatically figures out what changed and updates the real DOM efficiently. You just describe what the UI should look like for the current state, and React takes care of syncing it.
+      2) State Management Is Messy - It’s hard to keep the UI consistent with plain js. React introduces component state (useState, useReducer) and a reactive render cycle — when state changes, React automatically re-renders the UI to match it
+      3) Code Reuse and Structure Are Weak
+      4) JSX - you can use in 1 file react and html.
+      5) performance - updating the real DOM frequently is expensive — especially when you modify large trees.
+      6) unidirectional data flow — data moves top-down from parent to child components.
+This makes state changes predictable and easier to debug
       
+
       
       
  ________________________________________________________________________________________________________________________________
