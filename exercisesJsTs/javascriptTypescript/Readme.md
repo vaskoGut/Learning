@@ -3,7 +3,7 @@
 | :---:   | :---: |
 | 1   | [Write reverse string function using map, reduce methods, memoization, for loop](#reverse-string)                                                                                                |
 | 2   | [Write palindrom function - with regular aproach and with help of recursion](#palindrom-recursion-solving)                                                                             |
-
+| 3   | [Remove duplicates from array](#remove-duplicates)                                                                             |
 
 1. ### reverse string
    Using **map** method:
@@ -108,4 +108,27 @@
            }
         return checkStr(0, str.length-1); 
       }
+   ```
+
+   3. ### remove duplicates
+   using **new Set**:
+
+   ```javascript
+        const testArr = [4, 5, 6, 7, 8, 5, 6, 6, 9, 8];
+
+         function removeDuplicates(arr) {
+           return [...new Set(arr)];
+         }
+   ```
+   using **reduce method**:
+
+   ```javascript
+         function removeDuplicates(arr) {
+           return Object.values(
+             arr.reduce((total, curr) => {
+               total[curr] = curr;
+               return total;
+             }, {})
+           );
+         }
    ```
