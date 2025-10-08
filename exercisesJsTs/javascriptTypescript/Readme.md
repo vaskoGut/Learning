@@ -5,6 +5,7 @@
 | 2   | [Write palindrom function - with regular aproach and with help of recursion](#palindrom-recursion-solving)                                                                             |
 | 3   | [Remove duplicates from array. What is difference in complexity or reduce and map solution ( check code below )?](#remove-duplicates)                                                            |
 | 4   | [Flatten 1 level array ( with simple looping )?](#flatten-array)                                                            |
+| 5   | [Check similarity of arrays. Bonus question - does return breaks for loop?](#similarity-arrays)                                                            |
 
 1. ### reverse string
    Using **map** method:
@@ -238,7 +239,21 @@
       console.log([...flattenArrayGenerator(nestedarr)]) // remember to convert result of generator to arrray
     ```
 
-   
+   5. ### similarity arrays
+      ```javascript
+         function checkArraySimilarity(arr1, arr2) {
+           if (arr1.length !== arr2.length) return false;
+         
+           for (let i = 0; i < arr1.length; i++) {
+             if (arr1[i] !== arr2[i]) return false; 
+           }
+         
+           return true;
+         }
+      ```
+   Note: yes, return exists for loop.
+
+
 
 
 
