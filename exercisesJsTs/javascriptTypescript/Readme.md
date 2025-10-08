@@ -234,9 +234,11 @@
           } else yield i;
          }
       }
+
+      console.log([...flattenArrayGenerator(nestedarr)]) // remember to convert result of generator to arrray
     ```
 
-   console.log([...flattenArrayGenerator(nestedarr)]) // remember to convert result of generator to arrray
+   
 
 
 
