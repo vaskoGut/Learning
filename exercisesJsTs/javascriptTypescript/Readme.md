@@ -150,6 +150,18 @@
    <img width="457" height="302" alt="image" src="https://github.com/user-attachments/assets/987ee096-63a3-4965-a3fa-afbaf44c85c5" />
    map, reduce + includes inside have  On2 complexity because for each item, includes does another loop inside the main loop.
 
+   using **recursion**:
+   ```javascript
+      function removeDuplicates(arr, result) {
+        if(!arr.length) return result;
+        if(!result.includes(arr[0])) result.push(arr[0]);
+        arr.shift();
+      
+        return removeDuplicates(arr, result);
+      }
+   ```
+  
+
 
    
 
