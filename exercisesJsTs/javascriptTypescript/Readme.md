@@ -225,7 +225,18 @@
         return flattenArray(rest, result);
       }
    ```
-   
+   using **generator**
+   ```javascript
+      function* flattenArrayGenerator(arr) {
+         for(var i of arr) {
+          if(Array.isArray(i)) {
+            yield* i;
+          } else yield i;
+         }
+      }
+    ```
+
+   console.log([...flattenArrayGenerator(nestedarr)]) // remember to convert result of generator to arrray
 
 
 
