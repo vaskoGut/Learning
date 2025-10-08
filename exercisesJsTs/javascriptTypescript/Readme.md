@@ -160,6 +160,18 @@
         return removeDuplicates(arr, result);
       }
    ```
+   p.s. You can also use retur outside function. But in that case you can have side  effects in 'normal developer life', it will not be pure ( function that doesn't have side effects) function. Better to store result as above in params.
+   Example with result outside of function:
+   ```javascript
+      let result = [];
+         function removeDuplicates(arr) {
+           if(!arr.length) return result;
+           if(!result.includes(arr[0])) result.push(arr[0]);
+           arr.shift();
+         
+           return removeDuplicates(arr);
+      }
+   ```
   
 
 
