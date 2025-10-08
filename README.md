@@ -2304,7 +2304,7 @@ ___________
     
   Edge computing means running code and delivering content closer to the user, on servers at the “edge” of the network (CDN nodes, regional data centers), instead of only at a central server.
 
-5. ### etechnical-vision-react-ecosystem
+5. ### technical-vision-react-ecosystem
 
 🎯 Understanding Business Goals
 
