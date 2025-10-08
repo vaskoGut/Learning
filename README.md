@@ -2072,6 +2072,7 @@ ________________________________________________________________________________
   Declarative -  	What you want done
 
   **Imperative**: A recipe — "First chop the onions, then heat the pan, then fry..."
+  
   **Declarative**: Ordering food — "I want a veggie burger."
 
 ________________________________________________________________________________________________________________________________
