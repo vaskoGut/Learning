@@ -110,7 +110,7 @@
       }
    ```
 
-   3. ### remove duplicates
+3. ### remove duplicates
    using **new Set**:
 
    ```javascript
