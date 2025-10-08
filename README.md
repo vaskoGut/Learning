@@ -213,6 +213,7 @@ let result = value ?? "default";
 | 34   | [EXplain how SSG approach are used in more details?](#ssg-details)      | 
 | 35   | [What is firebase generally speaking?](#firebase-description)      |
 | 36   | [What is brandwidth?](#brandwidth-explanation)      |
+| 37   | [Difference between declarative-imperative?](#declarative-imperative)      |
 
 SPA:
 Works by loading a single HTML page and dynamically updating the content as the user interacts with the app.
@@ -2061,7 +2062,18 @@ ________________________________________________________________________________
    
    36. ### brandwidth-explanation
        To limit na transfer danych — ile łącznie „megabajtów” lub „gigabajtów” treści (np. tekstów, obrazków, plików, API) CMS może wysłać do osób odwiedzających Twoją stronę lub korzystających z aplikacji
-  
+
+   37. ### declarative-imperative
+  If we speak about f.e. array - difference between imperative and declartive
+  Imperative	- How to do it:	for, if, while
+  Declarative - What to do:	map, filter, Set
+
+  Feature	Imperative	- Focus	How to do something
+  Declarative -  	What you want done
+
+  **Imperative**: A recipe — "First chop the onions, then heat the pan, then fry..."
+  **Declarative**: Ordering food — "I want a veggie burger."
+
 ________________________________________________________________________________________________________________________________
    1. ### box-model
   **box model** - it's box which wraps every HTML element. Box model consists of content, padding, bordery, margin.
