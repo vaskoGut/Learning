@@ -190,17 +190,19 @@
    ```
 
    using **for of**:
-   function flattenArray(arr) {
-     const result = [];
-     for (let arrElem of arr) {
-       if(Array.isArray(arrElem)) {
-         for (let i=0; i < arrElem.length; i++) {
-           result.push(arrElem[i]);
-         }
-       } else result.push(arrElem);
-     }
-     return result;
-   }
+   ```javascript
+      function flattenArray(arr) {
+        const result = [];
+        for (let arrElem of arr) {
+          if(Array.isArray(arrElem)) {
+            for (let i=0; i < arrElem.length; i++) {
+              result.push(arrElem[i]);
+            }
+          } else result.push(arrElem);
+        }
+        return result;
+      }
+   ```
 
    Note: there is also flat array built-in method.
    
