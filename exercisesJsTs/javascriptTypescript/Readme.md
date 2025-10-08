@@ -3,7 +3,8 @@
 | :---:   | :---: |
 | 1   | [Write reverse string function using map, reduce methods, memoization, for loop](#reverse-string)                                                                                                |
 | 2   | [Write palindrom function - with regular aproach and with help of recursion](#palindrom-recursion-solving)                                                                             |
-| 3   | [Remove duplicates from array. What is difference in complexity or reduce and map solution ( check code below )?](#remove-duplicates)                                                                             |
+| 3   | [Remove duplicates from array. What is difference in complexity or reduce and map solution ( check code below )?](#remove-duplicates)                                                            |
+| 4   | [Flatten 1 level array ( with simple looping )?](#flatten-array)                                                            |
 
 1. ### reverse string
    Using **map** method:
@@ -172,7 +173,22 @@
            return removeDuplicates(arr);
       }
    ```
-  
+
+4. ### flatten array
+   ```javascript
+   const nestedarr = [1, [2, 3], [4, 5], 6];
+   const result = nestedarr.reduce((total, curr) => {
+     if(Array.isArray(curr)) { // (curr.length > 1) { -  it can lead to problems with string, so  better to use isArray
+       curr.forEach(currElem => {
+         total.push(currElem);
+       })
+     } else total.push(curr);
+   
+     return total;
+   }, []);
+   ```
+
+
 
 
    
