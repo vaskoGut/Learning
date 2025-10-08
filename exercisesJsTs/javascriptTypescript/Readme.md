@@ -239,7 +239,7 @@
       console.log([...flattenArrayGenerator(nestedarr)]) // remember to convert result of generator to arrray
     ```
 
-   5. ### similarity arrays
+5. ### similarity arrays
       ```javascript
          function checkArraySimilarity(arr1, arr2) {
            if (arr1.length !== arr2.length) return false;
