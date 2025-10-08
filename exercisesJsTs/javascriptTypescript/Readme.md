@@ -155,7 +155,7 @@
       function removeDuplicates(arr, result) {
         if(!arr.length) return result;
         if(!result.includes(arr[0])) result.push(arr[0]);
-        arr.shift();
+        arr.shift(); // or instead of shift  const [first, ...rest] = arr;
       
         return removeDuplicates(arr, result);
       }
