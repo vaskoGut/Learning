@@ -205,8 +205,27 @@
    ```
 
    Note: there is also flat array built-in method.
-   
 
+   using **recursion**:
+
+   ```javascript
+      function flattenArray(arr, result) {
+        if(!arr.length) return result;
+      
+        const [arrFirstItem, ...rest] = arr;
+        
+        if(Array.isArray(arrFirstItem)) {
+          arrFirstItem.forEach(elem => {
+            result.push(elem);
+          })
+        } else {
+          result.push(arrFirstItem);
+        }
+      
+        return flattenArray(rest, result);
+      }
+   ```
+   
 
 
 
