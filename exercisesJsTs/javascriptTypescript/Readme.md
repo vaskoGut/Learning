@@ -256,6 +256,7 @@
 
 6. ### max min array element
 
+    using **sort**:
     ```javascript
         const arr = [ 3, 55, 0, 42, 6, 7 ];
 
@@ -270,6 +271,25 @@
       ```
    Note: Sort is less efficient than simple loop solution, it has bigger algorithm complexity.
 
+   using **for loop**:
+
+      ```javascript
+        const arr = [ 3, 55, 0, 42, 6, 7 ];
+         function findMaxMin(array) {
+           let max = arr[0];
+           let min = arr[0];
+           
+           for(var i = 0; i < arr.length; i ++) {
+             if(max < arr[i]) max = arr[i];
+             if(min > arr[i]) min = arr[i];
+           }
+         
+           return {
+             min: min,
+             max: max
+           };
+         }
+      ```
 
    
 
