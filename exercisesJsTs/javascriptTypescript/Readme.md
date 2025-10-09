@@ -6,6 +6,7 @@
 | 3   | [Remove duplicates from array. What is difference in complexity or reduce and map solution ( check code below )?](#remove-duplicates)                                                            |
 | 4   | [Flatten 1 level array ( with simple looping )?](#flatten-array)                                                            |
 | 5   | [Check similarity of arrays. Bonus question - does return breaks for loop?](#similarity-arrays)                                                            |
+| 6   | [Find max min in array ( with help of sort, with help simple looping )?](#max-min-array-element)                                                            |
 
 1. ### reverse string
    Using **map** method:
@@ -240,7 +241,7 @@
     ```
 
 5. ### similarity arrays
-      ```javascript
+     ```javascript
          function checkArraySimilarity(arr1, arr2) {
            if (arr1.length !== arr2.length) return false;
          
@@ -253,8 +254,21 @@
       ```
    Note: yes, return exists for loop.
 
+6. ### max min array element
 
+    ```javascript
+        const arr = [ 3, 55, 0, 42, 6, 7 ];
 
+         function findMaxMin(array) {
+           const modifiedArray = [...array].sort((elem1, elem2) => elem1 - elem2); // sort is overkill, cause it modifies original array
+         
+           return {
+             minNum: modifiedArray[0],
+             maxNum: modifiedArray[modifiedArray.length-1]
+           }
+         }
+      ```
+   Note: Sort is less efficient than simple loop solution, it has bigger algorithm complexity.
 
 
    
