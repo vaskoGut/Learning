@@ -314,7 +314,7 @@
 
 8. ### convert obj to array
     ```javascript
-        const arr = [1, 2, 3];
+      const arr = [1, 2, 3];
 
       const result = arr.reduce((total, curr, i) => {
         total[i] = curr;
