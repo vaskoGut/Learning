@@ -297,15 +297,15 @@
    A simple soluition:
 
        ```javascript
-         const arr = [1 ,2 ,3 , 'sdfsdf', 5];
-
-         const reulst = arr.reduce((total, curr) => {
-           if(typeof(curr) !== "number") return total + 0;
-         
-           return total + curr;
-         }, 0)
-         
-         console.log(reulst);
+            const arr = [1 ,2 ,3 , 'sdfsdf', 5];
+   
+            const reulst = arr.reduce((total, curr) => {
+              if(typeof(curr) !== "number") return total + 0;
+            
+              return total + curr;
+            }, 0)
+            
+            console.log(reulst);
        ```
 
       <img width="522" height="257" alt="image" src="https://github.com/user-attachments/assets/9cd707f7-fb16-49d4-ae66-a70e9a32a562" />
