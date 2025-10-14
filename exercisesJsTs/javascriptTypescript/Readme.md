@@ -7,6 +7,7 @@
 | 4   | [Flatten 1 level array ( with simple looping )?](#flatten-array)                                                            |
 | 5   | [Check similarity of arrays. Bonus question - does return breaks for loop?](#similarity-arrays)                                                            |
 | 6   | [Find max min in array ( with help of sort, with help simple looping )?](#max-min-array-element)                                                            |
+| 7   | [Summ all numbers in array ](#all-numbers-array)                                                            |
 
 1. ### reverse string
    Using **map** method:
@@ -291,5 +292,23 @@
          }
       ```
 
-   
+7. ### all numbers array
+   We  need to ask more questions when we get task like that - what an interviewer expects  from us.
+   A simple soluition:
+
+       ```javascript
+         const arr = [1 ,2 ,3 , 'sdfsdf', 5];
+
+         const reulst = arr.reduce((total, curr) => {
+           if(typeof(curr) !== "number") return total + 0;
+         
+           return total + curr;
+         }, 0)
+         
+         console.log(reulst);
+       ```
+
+      <img width="522" height="257" alt="image" src="https://github.com/user-attachments/assets/9cd707f7-fb16-49d4-ae66-a70e9a32a562" />
+      <img width="656" height="441" alt="image" src="https://github.com/user-attachments/assets/7397819c-c3fb-4f84-9c28-434ccce5aa78" />
+
 
