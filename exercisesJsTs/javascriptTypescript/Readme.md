@@ -8,6 +8,7 @@
 | 5   | [Check similarity of arrays. Bonus question - does return breaks for loop?](#similarity-arrays)                                                            |
 | 6   | [Find max min in array ( with help of sort, with help simple looping )?](#max-min-array-element)                                                            |
 | 7   | [Summ all numbers in array ](#all-numbers-array)                                                            |
+| 8   | [Convert array to object ](#convert-obj-to-array)                                                            |
 
 1. ### reverse string
    Using **map** method:
@@ -310,5 +311,16 @@
 
 <img width="522" height="257" alt="image" src="https://github.com/user-attachments/assets/9cd707f7-fb16-49d4-ae66-a70e9a32a562" />
 <img width="656" height="441" alt="image" src="https://github.com/user-attachments/assets/7397819c-c3fb-4f84-9c28-434ccce5aa78" />
+
+8. ### convert obj  to array
+    ```javascript
+        const arr = [1, 2, 3];
+
+      const result = arr.reduce((total, curr, i) => {
+        total[i] = curr;
+      
+        return total;
+      }, {});
+   ```
 
 
