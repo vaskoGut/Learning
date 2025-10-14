@@ -312,7 +312,7 @@
 <img width="522" height="257" alt="image" src="https://github.com/user-attachments/assets/9cd707f7-fb16-49d4-ae66-a70e9a32a562" />
 <img width="656" height="441" alt="image" src="https://github.com/user-attachments/assets/7397819c-c3fb-4f84-9c28-434ccce5aa78" />
 
-8. ### convert obj  to array
+8. ### convert obj to array
     ```javascript
         const arr = [1, 2, 3];
 
