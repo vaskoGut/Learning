@@ -338,6 +338,7 @@
       }, {})
    ```
 
+   // an example wit hnullish coalescing:
    ```javascript
       const modifiedArr = arr.reduce((total, curr) => {
         total[curr] = (total[curr] ?? 0) + 1;
