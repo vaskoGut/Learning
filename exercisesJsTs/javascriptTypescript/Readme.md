@@ -9,6 +9,9 @@
 | 6   | [Find max min in array ( with help of sort, with help simple looping )?](#max-min-array-element)                                                            |
 | 7   | [Summ all numbers in array ](#all-numbers-array)                                                            |
 | 8   | [Convert array to object ](#convert-obj-to-array)                                                            |
+| 9   | [Find the frequency of elements in an array ](#freequency-elements-array)                                                            |
+
+
 
 1. ### reverse string
    Using **map** method:
@@ -323,4 +326,15 @@
       }, {});
    ```
 
+9. ### freequency elements array
+   ```javascript
+      const arr = [4, 2, 4, 3, 2, 4, 1];
+
+      const modifiedArr = arr.reduce((total, curr) => {
+        if(total[curr]) total[curr] += 1;
+        else total[curr] = 1;
+      
+        return total;
+      }, {})
+   ```
 
