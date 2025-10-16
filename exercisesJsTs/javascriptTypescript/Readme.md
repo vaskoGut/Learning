@@ -9,7 +9,7 @@
 | 6   | [Find max min in array ( with help of sort, with help simple looping )?](#max-min-array-element)                                                            |
 | 7   | [Summ all numbers in array ](#all-numbers-array)                                                            |
 | 8   | [Convert array to object ](#convert-obj-to-array)                                                            |
-| 9   | [Find the frequency of elements in an array. Make 1 example with optional chaining ](#freequency-elements-array)                                                            |
+| 9   | [Find the frequency of elements in an array. Make 1 example with nullish coalescing](#freequency-elements-array)                                                            |
 
 
 
@@ -336,5 +336,12 @@
       
         return total;
       }, {})
+   ```
+
+   ```javascript
+      const modifiedArr = arr.reduce((total, curr) => {
+        total[curr] = (total[curr] ?? 0) + 1;
+        return total;
+      }, {});
    ```
 
