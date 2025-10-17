@@ -348,20 +348,20 @@
 
 10. ### capitalize first letter
    ```javascript
-      const arr = 'Hello, how are you man';
-      const result = arr.split(' ').map(elem => elem[0].toUpperCase() + elem.slice(1)).join(' ');
-      console.log('result', result);
+         const arr = 'Hello, how are you man';
+         const result = arr.split(' ').map(elem => elem[0].toUpperCase() + elem.slice(1)).join(' ');
+         console.log('result', result);
    ```
 
    // an example with regex
    
    ```javascript
-      const arr = 'Hello, how are you man';
-      const regex = /\b(the|of|for|an|are)\b/g
-      
-      const result = arr.split(' ').map(
-        elem => { 
-          if(elem.match(regex)) return elem;
-          return elem[0].toUpperCase() + elem.slice(1)
-      }).join(' ');
+         const arr = 'Hello, how are you man';
+         const regex = /\b(the|of|for|an|are)\b/g
+         
+         const result = arr.split(' ').map(
+           elem => { 
+             if(elem.match(regex)) return elem;
+             return elem[0].toUpperCase() + elem.slice(1)
+         }).join(' ');
    ```
