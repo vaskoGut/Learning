@@ -353,7 +353,7 @@
          console.log('result', result);
     ```
 
-   // an example with regex
+     // an example with regex
 
      ```javascript
          const arr = 'Hello, how are you man';
