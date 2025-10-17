@@ -365,3 +365,17 @@
              return elem[0].toUpperCase() + elem.slice(1)
          }).join(' ');
      ```
+
+11. ### count vowels
+     ```javascript
+         const arr = 'Hello, how are you man';
+
+         const regex = /[aoeiyu]/gi;
+         let count = 0;
+         
+         arr.split('').forEach(char => {
+           if (char.match(regex)) {
+             count++;
+           }
+         });
+     ```
