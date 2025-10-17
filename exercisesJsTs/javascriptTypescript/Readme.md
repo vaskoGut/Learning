@@ -354,7 +354,8 @@
    ```
 
    // an example with regex
-    ```javascript
+   
+   ```javascript
       const arr = 'Hello, how are you man';
       const regex = /\b(the|of|for|an|are)\b/g
       
