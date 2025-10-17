@@ -11,6 +11,8 @@
 | 8   | [Convert array to object ](#convert-obj-to-array)                                                            |
 | 9   | [Find the frequency of elements in an array. Make 1 example with nullish coalescing](#freequency-elements-array)                                                            |
 | 10  | [Capitalize the first letter of every word in a sentence. Make also veersion with filtering articles like 'the a an of for etc'](#capitalize-first-letter)                                                            |
+| 11  | [Count vowels](#count-vowels)                                                            |
+
 
 
 1. ### reverse string
