@@ -10,7 +10,7 @@
 | 7   | [Summ all numbers in array ](#all-numbers-array)                                                            |
 | 8   | [Convert array to object ](#convert-obj-to-array)                                                            |
 | 9   | [Find the frequency of elements in an array. Make 1 example with nullish coalescing](#freequency-elements-array)                                                            |
-
+| 10  | [Capitalize the first letter of every word in a sentence](#capitalize-first-letter)                                                            |
 
 
 1. ### reverse string
@@ -345,4 +345,14 @@
         return total;
       }, {});
    ```
+
+10. ### capitalize first letter
+   ```javascript
+      const arr = 'Hello, how are you man';
+      const result = arr.split(' ').map(elem => elem[0].toUpperCase() + elem.slice(1)).join(' ');
+      console.log('result', result);
+   ```
+
+
+
 
