@@ -347,15 +347,15 @@
    ```
 
 10. ### capitalize first letter
-   ```javascript
+    ```javascript
          const arr = 'Hello, how are you man';
          const result = arr.split(' ').map(elem => elem[0].toUpperCase() + elem.slice(1)).join(' ');
          console.log('result', result);
-   ```
+    ```
 
    // an example with regex
    
-   ```javascript
+    ```javascript
          const arr = 'Hello, how are you man';
          const regex = /\b(the|of|for|an|are)\b/g
          
@@ -364,4 +364,4 @@
              if(elem.match(regex)) return elem;
              return elem[0].toUpperCase() + elem.slice(1)
          }).join(' ');
-   ```
+    ```
