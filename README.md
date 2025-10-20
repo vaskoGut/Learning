@@ -1223,31 +1223,31 @@ ________________________________________________________________________________
       withLogger(Hello) →    (props) => <Hello {...props} />;
 
     Logger example:
-      ```javascript
-       export function withLogger(Component, name) {
-          return function WithLogger(props) {
-            useEffect(() => {
-              console.log(`component ${name} mounted`);
+        ```javascript
+         export function withLogger(Component, name) {
+            return function WithLogger(props) {
+              useEffect(() => {
+                console.log(`component ${name} mounted`);
+          
+                return () => {
+                  console.log(`component ${name} unmounted`);
+                };
+              }, []);
+          
+              useEffect(() => {
+                console.log(`[${name}] updated props`, props);
+              });
+          
+              return <Component {...props} />;
+            };
+        }
         
-              return () => {
-                console.log(`component ${name} unmounted`);
-              };
-            }, []);
+        export function Hello(props) {
+          return <div>{props.name}</div>;
+        }
         
-            useEffect(() => {
-              console.log(`[${name}] updated props`, props);
-            });
-        
-            return <Component {...props} />;
-          };
-      }
-      
-      export function Hello(props) {
-        return <div>{props.name}</div>;
-      }
-      
-      const LoggedHello = withLogger(Hello, 'Hello');
-      ```
+        const LoggedHello = withLogger(Hello, 'Hello');
+        ```
 
  16. ###  use-effect-lifecycle-methods
     What are standart lifecycle React methods?
