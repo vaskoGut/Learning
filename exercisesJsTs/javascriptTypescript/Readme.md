@@ -12,7 +12,7 @@
 | 9   | [Find the frequency of elements in an array. Make 1 example with nullish coalescing](#freequency-elements-array)                                                            |
 | 10  | [Capitalize the first letter of every word in a sentence. Make also veersion with filtering articles like 'the a an of for etc'](#capitalize-first-letter)                                                            |
 | 11  | [Count vowels](#count-vowels)                                                            |
-
+| 12  | [Write high ordered component](#high-ordered-component)                                                            |
 
 
 1. ### reverse string
@@ -381,3 +381,52 @@
            }
          });
      ```
+
+12. ### high ordered component
+High-order components (HOCs) are wrappers for other components. They allow you to reuse logic across different components. 
+
+For example, you might want to add a logger HOC, which logs information about mounting and unmounting of a component:
+
+```javascript
+export default withLogger(SomeComponent);
+```
+
+When a React component is created, it receives `props`:
+
+```
+You write:             React sees:
+---------------------------------------------------
+const LoggedHello =    const LoggedHello =
+ withLogger(Hello) →    (props) => <Hello {...props} />;
+```
+
+Logger example:
+
+```javascript
+import { useEffect } from 'react';
+
+export function withLogger(Component, name) {
+  return function WithLogger(props) {
+    useEffect(() => {
+      console.log(`component ${name} mounted`);
+
+      return () => {
+        console.log(`component ${name} unmounted`);
+      };
+    }, []);
+
+    useEffect(() => {
+      console.log(`[${name}] updated props`, props);
+    });
+
+    return <Component {...props} />;
+  };
+}
+
+export function Hello(props) {
+  return <div>{props.name}</div>;
+}
+
+const LoggedHello = withLogger(Hello, 'Hello');
+```
+
