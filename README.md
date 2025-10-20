@@ -1210,7 +1210,7 @@ ________________________________________________________________________________
  14. ###  state props difference
      State is muttable. Props are unmutable. State refers to internal data of component. Props are date transfered from parent component to the child.
 
-15. ### High Order Component
+15. ### high ordered component
 High-order components (HOCs) are wrappers for other components. They allow you to reuse logic across different components. 
 
 For example, you might want to add a logger HOC, which logs information about mounting and unmounting of a component:
