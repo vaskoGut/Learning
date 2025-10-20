@@ -1211,45 +1211,46 @@ ________________________________________________________________________________
      State is muttable. Props are unmutable. State refers to internal data of component. Props are date transfered from parent component to the child.
 
  15. ###  high-ordered-component
-     High ordered component is wrapper for other components. They allow to reuse some logic across different components. 
-     F.e. you want to add logger HOC, which will be loging information about mounting, demounting component. 
-      export default withLogger(SomeComponent);
-
-     When react component is created, it gets props:
+       High ordered component is wrapper for other components. They allow to reuse some logic across different components. 
+       F.e. you want to add logger HOC, which will be loging information about mounting, demounting component. 
+        export default withLogger(SomeComponent);
+  
+       When react component is created, it gets props:
+       
+           You write:             React sees:
+      ---------------------------------------------------
+      const LoggedHello =    const LoggedHello =
+        withLogger(Hello) →    (props) => <Hello {...props} />;
+  
+      Logger example:
      
-         You write:             React sees:
-    ---------------------------------------------------
-    const LoggedHello =    const LoggedHello =
-      withLogger(Hello) →    (props) => <Hello {...props} />;
+          ```javascript
+           export function withLogger(Component, name) {
+              return function WithLogger(props) {
+                useEffect(() => {
+                  console.log(`component ${name} mounted`);
+            
+                  return () => {
+                    console.log(`component ${name} unmounted`);
+                  };
+                }, []);
+            
+                useEffect(() => {
+                  console.log(`[${name}] updated props`, props);
+                });
+            
+                return <Component {...props} />;
+              };
+          }
+          
+          export function Hello(props) {
+            return <div>{props.name}</div>;
+          }
+          
+          const LoggedHello = withLogger(Hello, 'Hello');
+          ```
 
-    Logger example:
-        ```javascript
-         export function withLogger(Component, name) {
-            return function WithLogger(props) {
-              useEffect(() => {
-                console.log(`component ${name} mounted`);
-          
-                return () => {
-                  console.log(`component ${name} unmounted`);
-                };
-              }, []);
-          
-              useEffect(() => {
-                console.log(`[${name}] updated props`, props);
-              });
-          
-              return <Component {...props} />;
-            };
-        }
-        
-        export function Hello(props) {
-          return <div>{props.name}</div>;
-        }
-        
-        const LoggedHello = withLogger(Hello, 'Hello');
-        ```
-
- 16. ###  use-effect-lifecycle-methods
+ 17. ###  use-effect-lifecycle-methods
     What are standart lifecycle React methods?
     **getInitialState()**, **componentDidMount()**, **shouldComponentUpdate()**, **componentDidUpdate()**, **componentWillUnmount()**.
     UseEffect is used for handling sideEffects - like getting some data, or handling some event.
