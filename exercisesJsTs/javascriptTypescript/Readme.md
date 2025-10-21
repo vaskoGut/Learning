@@ -133,6 +133,17 @@
       }
    ```
 
+   using **recursion** 2nd solution:
+
+   ```javascript
+      function checkPalindrom(ourStr, startPosition) {
+        if(startPosition > ourStr.length / 2) return true;
+      
+        if(ourStr[startPosition] !== ourStr[ourStr.length - 1 - startPosition]) return false;
+        else return checkPalindrom(ourStr, startPosition + 1);
+      };
+   ```
+
 3. ### remove duplicates
    using **new Set**:
 
