@@ -3,7 +3,6 @@
 | :---:   | :---: |
 | 1   | [What is render prop pattern in React?](#render-prop)                                                                                                |
 
-***REACT***
 1. ### render-prop
 
 // Simple renderCompoent function for rendering different version of header:
