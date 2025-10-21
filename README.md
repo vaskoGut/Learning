@@ -1265,6 +1265,8 @@ export function Hello(props) {
 const LoggedHello = withLogger(Hello, 'Hello');
 ```
 
+It's worth to mention we use high order components with keyword with.
+
  16. ###  use-effect-lifecycle-methods
     What are standart lifecycle React methods?
     **getInitialState()**, **componentDidMount()**, **shouldComponentUpdate()**, **componentDidUpdate()**, **componentWillUnmount()**.
