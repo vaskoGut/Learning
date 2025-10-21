@@ -1,4 +1,4 @@
-# JAVASCRIPT TYPESCRIPT
+# REACT PATTERNS
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [What is render prop pattern in React?](#render-prop)                                                                                                |
