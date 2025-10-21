@@ -105,7 +105,7 @@
          console.log(checkPalindrom('parem'));
    ```
 
-   using **for loop***:
+   using **for loop**:
    ```javascript
          function checkPalindrom(ourStr) {
            for(var i = 0; i < ourStr.length/2; i++) {
