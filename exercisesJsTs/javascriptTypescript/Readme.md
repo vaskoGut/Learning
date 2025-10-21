@@ -105,6 +105,19 @@
          console.log(checkPalindrom('parem'));
    ```
 
+   using **for loop***:
+   ```javascript
+         function checkPalindrom(ourStr) {
+           for(var i = 0; i < ourStr.length/2; i++) {
+             if(ourStr[i] !== ourStr[ourStr.length - 1 - i]) return false
+           };
+         
+           return true;
+         };
+         
+         console.log(checkPalindrom('parem'));
+   ```
+
    using **recursion**:
 
    ```javascript
