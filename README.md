@@ -20,7 +20,7 @@
 | 17   | [what will be result of displaying this inside arrow function ?](#arrow-function)                                     |
 | 18   | [what is object assign ?](#object-assign)                                     |
 | 19   | [How does work object create? ?](#object-create)                                     |
-| 20   | [Name difference between copying primitive and object ( reference ) ? explain why let a = {};let b = {} not equal objects. Same example: arr1 = [1, 2], arr2 = [1,2]] (#object-primitive-reference)                                     |
+| 20   | [Name difference between copying primitive and object ( reference ) ? explain why let a = {};let b = {} not equal objects. Same example: arr1 = [1, 2], arr2 = [1,2] ] (#object-primitive-reference)                                     |
 | 21   | [Does nested function have an access to the outer function in JavaScript? And vice versa ( opposite) ](#inner-outer-function-scope)                                     |
 | 22   | [What is IIFE (immidietly invoked function expression](#immidietly-invoked-function-expression)                                     |
 | 23   | [What are module exports in js? What is module in js?](#module-exports)                                     |
