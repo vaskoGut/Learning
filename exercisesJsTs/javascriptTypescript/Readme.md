@@ -13,7 +13,7 @@
 | 10  | [Capitalize the first letter of every word in a sentence. Make also veersion with filtering articles like 'the a an of for etc'](#capitalize-first-letter)                                                            |
 | 11  | [Count vowels](#count-vowels)                                                            |
 | 12  | [Write high ordered component](#high-ordered-component)                                                            |
-
+| 13  | [Check if object is empty](#object-empty-check)                                                            |
 
 1. ### reverse string
    Using **map** method:
@@ -454,3 +454,14 @@ export function Hello(props) {
 const LoggedHello = withLogger(Hello, 'Hello');
 ```
 
+13. ### object empty check
+```javascript
+   const obj = {};
+   if (!Object.keys(obj).length) console.log('empty');
+```
+// it can be worth also to check if obj value is Object
+```javascript
+   if (obj && typeof obj === 'object' && !Object.keys(obj).length) { // first obj check - checks if it's not null
+     console.log('empty');
+   }
+```
