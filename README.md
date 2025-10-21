@@ -1,3 +1,5 @@
+[Patterns ( react, js ) question. Info](https://github.com/vaskoGut/Learning/blob/main/patternsJSreact/Readme.md#render-prop)
+
 # JAVASCRIPT TYPESCRIPT
 | Nm | #Question   |
 | :---:   | :---: |
