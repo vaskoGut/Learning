@@ -1,7 +1,7 @@
 # REACT PATTERNS
 | Nm | #Question   |
 | :---:   | :---: |
-| 1   | [What is render prop pattern in React?](#render-prop)                                                                                                |
+| 1   | [What is render prop pattern in React? Create example  with just ui, with state passing to the components](#render-prop)                                                                                                |
 
 1. ### render-prop
 
