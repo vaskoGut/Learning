@@ -40,3 +40,16 @@
 ```
 
 NOTE: Nowwadays in most cases is better to use hooks. That way code can be more readable. Also inside hooks you can use life cycle react methods/hooks. You can't pass it with help of render props.
+
+// Example with list:
+```javascript
+   export function List({ data, renderItem }) {
+     return <div>{data.map(elem => renderItem(elem))}</div>;
+   }
+   
+   export function User(item) {
+     return <p>{item.name}</p>;
+   }
+   
+   <List data={dataOur} renderItem={(data) =>  <User {...data} />} />
+```
