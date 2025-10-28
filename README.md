@@ -1551,6 +1551,7 @@ Storing business logic that can be shared across the application (not just in Re
      * Encapsulate reusable logic - create it in distinct file to not repeat same code in diffrent paces.
      * Use dependencies correctly in useEffect
     
+     Worth to mention: 2 or more components using 1 hook dont share state. Hooks are way to reuse state logic.
  51. ### #handling-unmount-React
       ```javascript
          useEffect(() => {
