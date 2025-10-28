@@ -1040,6 +1040,7 @@ obj.greet(); // Output: Alice
     Because if you use smth like return test.push(smth) it will return length of array.
 
      ```javascript
+       // Array.prototype.push() mutates the array and returns its new length, not the array itself
       const result = [1, 2, 3].reduce((acc, val) => {
         return acc.push(val * 2);
       }, []);
