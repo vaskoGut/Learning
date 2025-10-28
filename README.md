@@ -1039,10 +1039,22 @@ obj.greet(); // Output: Alice
     If you use push inside reduce function for example. you need to declare value at start, and then asign to this value .push(smth).
     Because if you use smth like return test.push(smth) it will return length of array.
 
-47. ### #immutable-array
+     ```javascript
+      const result = [1, 2, 3].reduce((acc, val) => {
+        return acc.push(val * 2);
+      }, []);
+  
+      // correct way
+      const result = [1, 2, 3].reduce((acc, val) => {
+        acc.push(val * 2);
+        return acc; // return the array, not push() result
+      }, []);
+     ```   
+
+48. ### #immutable-array
     if you modify array with map, filter methods. You don't modify initial array. So it stays immutable
 
-48. ### #object-methods
+49. ### #object-methods
    ```javascript
     const test = {
       name: 'Vasyl',
