@@ -1,0 +1,13 @@
+import { Navigate, Outlet } from 'react-router-dom';
+
+// Mocked auth function (replace with real logic)
+const useAuth = () => {
+  const user = JSON.parse(localStorage.getItem('user'));
+  return !!user;
+};
+
+export default function PrivateRoute() {
+  const isAuthenticated = useAuth();
+
+  return isAuthenticated ? <Outlet /> : <Navigate to="/login" replace />;
+}
