@@ -417,6 +417,20 @@ obj.greet(); // Output: Alice
        Difference between generator and normal function:
       <img width="610" height="207" alt="image" src="https://github.com/user-attachments/assets/2939f82f-dde3-4366-8ae4-29a651b345f2" />
 
+       ```javascript
+         // just check console.logs to see generator returning value:
+        function* numbers() {
+          yield 1;
+          yield 2;
+          yield 3;
+        }
+        const gen = numbers();
+        console.log(gen.next()); // { value: 1, done: false }
+        console.log(gen.next()); // { value: 2, done: false }
+        console.log(gen.next()); // { value: 3, done: false }
+        console.log(gen.next()); // { value: undefined, done: true }
+      ```
+
   
    5. ### types enums interfaces
       1. What are types, when do we use it? 
