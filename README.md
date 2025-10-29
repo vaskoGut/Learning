@@ -413,7 +413,12 @@ obj.greet(); // Output: Alice
            done  // boolean indicating if iteration is finished 
          }
        ```
-   4. ### types enums interfaces
+
+       Difference between generator and normal function:
+      <img width="610" height="207" alt="image" src="https://github.com/user-attachments/assets/2939f82f-dde3-4366-8ae4-29a651b345f2" />
+
+  
+   5. ### types enums interfaces
       1. What are types, when do we use it? 
        **Types** are definitions of data type. Both're used to define type of data. Typescript compiler use it to  detect errors.
       2. What are **Tuples**? 
@@ -473,13 +478,13 @@ obj.greet(); // Output: Alice
           So, generally speaking, Record is type that helps to define an object with specific keys and values.
           
 
-  5. ### map-foreach-difference
+  6. ### map-foreach-difference
       **Map** return NEW array. It doesn't modify initial array.
       **ForEach** doesn't return array. But runs function for each element of array. Foreach returns original array.
       **Filter, slice** returns new array. They dont mutate initial array.
       **Reduce** returns single accumulated value not an array.
 
-  6. ### this-meaning
+  7. ### this-meaning
 
      1. This is keyword. It refers to different objects depending on how and where it used. The this keyword refers to the context where a piece of code, such as a function's body, is supposed to run.
      2. You can explicitly control or change the value of this using methods like .call(), .apply(), or .bind(). For instance, using .bind() creates a new function with this permanently set to a specific value:
