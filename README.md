@@ -1400,6 +1400,7 @@ It's worth to mention we use high order components with keyword with.
   28. ###  react-test-how-work
         1. YOu can use e2e tests ( when you test your whole applications ( all components connected 1 to another) on real scenarious, data ). You can also make unit tests ( when you testing behaviour of each component)
         2. We use ***react-test-library*** and **react-test-renderer** ( to render yoru components to js objects ). You operate on real DOM, while using this library. You can  find element by role or by data-testid. It can be also simulated events with help of that library.
+        
         3. <img width="788" height="79" alt="image" src="https://github.com/user-attachments/assets/5e615baf-b712-4c59-b594-a3b5d2b89af8" />
            <img width="863" height="296" alt="image" src="https://github.com/user-attachments/assets/5c6eaa90-b0b4-4e88-a498-9ed163b00a63" />
 
