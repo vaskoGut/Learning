@@ -97,7 +97,7 @@ let result = value ?? "default";
 | 23   | [what is useRef useState difference?](#use-state-use-ref-diff)                                     |
 | 24   | [what is react context? when do we need it? Please list example of data stored in context](#react-context)                                     |
 | 25   | [what is the recommended way to structure your React code?](#react-structuring-code)                                     |
-| 26   | [what is good way to test your reactapplications?what is end-2-end testing? what is unit testing? What yuu use for unit  testse](#react-test-how-work)                                     |
+| 26   | [what is good way to test your reactapplications?what is end-2-end testing? what is unit testing? What yuu use for unit  tests. What are integration tests?](#react-test-how-work)                                     |
 | 27   | [what is react dev tools? When do you need it as rule?](#react-dev-tools)                                     |
 | 28   | [what is create portal? Provide some example of using it. What are downsides of useing portals?](#react-portals)                                     |
 | 29   | [what is lazy loading? Explain when you need it. What is difference between lazy loading and dynamic imports ](#lazy-loading-dynamic-imports)                                     |
@@ -1395,15 +1395,20 @@ It's worth to mention we use high order components with keyword with.
        You need specific folder for your components ( it can be also seperate folder for your common components ), for hooks, constants. 
        It's good to have proper structure - it's easier to find what you need, it's easier to make onboarding for new team members.
        It's god to use absoolute imports.
+      
 
-  27. ###  react-test-how-work
+  28. ###  react-test-how-work
         1. YOu can use e2e tests ( when you test your whole applications ( all components connected 1 to another) on real scenarious, data ). You can also make unit tests ( when you testing behaviour of each component)
         2. We use ***react-test-library*** and **react-test-renderer** ( to render yoru components to js objects ). You operate on real DOM, while using this library. You can  find element by role or by data-testid. It can be also simulated events with help of that library.
+        3. <img width="788" height="79" alt="image" src="https://github.com/user-attachments/assets/5e615baf-b712-4c59-b594-a3b5d2b89af8" />
+           <img width="863" height="296" alt="image" src="https://github.com/user-attachments/assets/5c6eaa90-b0b4-4e88-a498-9ed163b00a63" />
 
-  28. ###  react-dev-tools   
+
+
+  29. ###  react-dev-tools   
       React dev tools is extension, it can be installed for any browser. As rule we use it if we have some problem with performance ( for example component is rendered too many times ).
 
-  29. ###  react-portals
+  30. ###  react-portals
 
       1. React portals let you render some component outside your normal react component structure.
       2. Example: you can use it for creating modals.
@@ -1411,7 +1416,7 @@ It's worth to mention we use high order components with keyword with.
       Example createPortal:
   ![image](https://github.com/vaskoGut/Learning/assets/7413864/a4673b20-a45a-45cc-84be-ced9a5c92691)
 
-   30. ###  lazy-loading-dynamic-imports
+   31. ###  lazy-loading-dynamic-imports
          1. Imagine you have component, that appears afoter in some scenarios. It's allways displayed in your app. But it still exists in your bundle. To fix it you can use lazy loading or dynamic imports.
          2. Below you can see lazy loading of component.
             ![image](https://github.com/user-attachments/assets/692a44c2-b19b-4ad7-a973-879c6e3d3299)
@@ -1420,7 +1425,7 @@ It's worth to mention we use high order components with keyword with.
             ![image](https://github.com/user-attachments/assets/772da3e6-c332-4090-a5ef-1dd589dd6200)
             Here you will have error, cause you can't render Promise with appropriate handling of it. Acually its why is better to use lazy loading - it handles Promise issue of importing components.
 
-   31. ###  code-splitting
+   32. ###  code-splitting
          1. Splitting code is technique which allows to optimize the performance of React application.  With help of it you can split your code into smaller chunks and loading the on-deman.
          You can reduce load time. React provides built-in tools. Like lazy, suspend.
   
@@ -1430,7 +1435,7 @@ It's worth to mention we use high order components with keyword with.
          2. SUspense let you load fallback, while yoru children components are loading.
          3. One more way - is using dynamic imports ( for example for functions ).
 
-   32. ###  ssr-csr
+   33. ###  ssr-csr
          1. **SSR** -  Server side rendering. **CSR** - CLient side rendering.
          2. Gatsby.js and Next.js supports both CSR and SSR.
          3. Static Pages are built during build time. SSR allow to render a page during run-time. You can deal with data  that is fetched when a user visits the page.
@@ -1438,7 +1443,7 @@ It's worth to mention we use high order components with keyword with.
          5. Practical example: you need to call some script and add smth to the header only after some behaviour user on page.  In gatsby.js pages are rendered statically during build, to do smth like that you need SSR.
 
 
-   33. ###  fragment-explanation
+   34. ###  fragment-explanation
           **Fragment** alows you to return group ofchildren elments without need of extra DOM component.
           Advantages:
             1. Avoid Unnecessary DOM Nodes
