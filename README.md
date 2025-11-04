@@ -538,7 +538,10 @@ obj.greet(); // Output: Alice
       await delay(1000); // pauses for 1 second
 
   10. ### example-promise
-        Promise object represents eventual completion or failure of asynchronous function. Whenever tasks should be executed asynchronouslo. Promisess are used.
+        Promise object represents eventual completion or failure of asynchronous function. Whenever tasks should be executed asynchronously.
+
+        <img width="639" height="389" alt="image" src="https://github.com/user-attachments/assets/5da1eb2c-5bd5-4a74-852a-fc3e0f8526a7" />
+      
         Example login function:
         ![image](https://github.com/vaskoGut/Learning/assets/7413864/e627bed4-169b-4366-9de8-2fa87aabbd8c)
         Promise returns fullfilled or rejected status.
@@ -595,7 +598,7 @@ obj.greet(); // Output: Alice
         });
        ```
 
-  11. ### closure-explanation
+  12. ### closure-explanation
         1. In JavaScript, closures are created every time a function is created, at function creation time.
         2. If we speak about closure , we need to mention **local** and **global** scope. Functions have its local, private scope. Variables can be global or private - depending where they'are declared.
         3. if variable is declared without keyword, it is global. Even if it's declared inside the function.
@@ -624,7 +627,7 @@ obj.greet(); // Output: Alice
           init();
          ```
     
- 12. ### rest-spread-operator-difference
+ 13. ### rest-spread-operator-difference
       1. ***Spread*** operator is mostly used with arrays. It's used to efficientl merge, cop arrays, pass elements to functions.
          
        You can use spread operator to merge 2 objects,or 2 arrays. In React you can use spread operator to pass properties to the component:
