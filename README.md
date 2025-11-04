@@ -1644,7 +1644,7 @@ Storing business logic that can be shared across the application (not just in Re
       6) unidirectional data flow — data moves top-down from parent to child components.
 This makes state changes predictable and easier to debug
 
-  56. ### #react-hoc-functions
+  56. ### #hoc-functions
       ***A Higher-Order Function*** (HOF) is a function that does at least one of the following:
       Takes another function as an argument, or Returns a new function.
       Built in functions in js: map, filter, reduce.
