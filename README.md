@@ -605,8 +605,8 @@ obj.greet(); // Output: Alice
       ***Promise.race()***	Resolves/rejects as soon as one promise settles.
 
   12. ### closure-explanation
-        1. In JavaScript, closures are created every time a function is created, at function creation time.
-        2. If we speak about closure , we need to mention **local** and **global** scope. Functions have its local, private scope. Variables can be global or private - depending where they'are declared.
+        1. Every function creates a closure when defined — it keeps a reference to the lexical scope.
+        2. Function uses a closure only when it accesses variables from that captured scopeIf we speak about closure.  We need to mention **local** and **global** scope. Functions have its local, private scope. Variables can be global or private - depending where they'are declared.
         3. if variable is declared without keyword, it is global. Even if it's declared inside the function.
 
         ```javascript
@@ -632,6 +632,7 @@ obj.greet(); // Output: Alice
           }
           init();
          ```
+        5. Some time ago closures were used to imitate block scoping. It wasn't available in later versions of JS
     
  13. ### rest-spread-operator-difference
       1. ***Spread*** operator is mostly used with arrays. It's used to efficientl merge, cop arrays, pass elements to functions.
