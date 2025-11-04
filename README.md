@@ -1601,6 +1601,7 @@ Storing business logic that can be shared across the application (not just in Re
 
   53. ### #react-router
       a) React router - library that enables dynamic routing in react applications. It allows for navigation without refreshing the page ( spa behaviour ).
+      React doesn'thave buit in router functionality.
       
       b) ***Link*** component is used to navigate without reloading page. ***a*** tag performs full page reload.
       
@@ -1633,7 +1634,7 @@ Storing business logic that can be shared across the application (not just in Re
       k) The History API provides access to the browser's session histor. But in React project you should use just React Router library, it has bilt in hiostory functionality.
       l) import { useSearchParams } from 'react-router-dom'; And with help useSEarchParams you can get params.
 
-  54. ### #react-plain-js
+  55. ### #react-plain-js
       1) Manual DOM Updates - You have to explicitly tell the browser what changed every time your app’s data changes. For example, if a user’s name updates, you might need to find the DOM node, clear old content, insert the new text, and handle edge cases (like event listeners disappearing).  As your UI grows more dynamic, this gets unmanageable. React uses a Virtual DOM that automatically figures out what changed and updates the real DOM efficiently. You just describe what the UI should look like for the current state, and React takes care of syncing it.
       2) State Management Is Messy - It’s hard to keep the UI consistent with plain js. React introduces component state (useState, useReducer) and a reactive render cycle — when state changes, React automatically re-renders the UI to match it
       3) Code Reuse and Structure Are Weak
