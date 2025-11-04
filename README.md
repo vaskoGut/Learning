@@ -124,7 +124,7 @@ let result = value ?? "default";
 | 50   | [Rules of using custom hooks React?](#rules-custom-hooks-react)                                     |
 | 51   | [Unmount with React?](#handling-unmount-React)                                     |
 | 52   | [How to detect path location change in React?](#handling-path-change-react)                                     |
-| 53   | [What is react-router and what are advanteges of react-router? What is hiostory api? How do you get url params in react?](#react-router)                                     |
+| 53   | [What is react-router and what are advanteges of it? Does react have buit-in router functionality? What is hiostory api? How do you get url params in react?](#react-router)                                     |
 | 54   | [What is advantage of react in comparison to javascript?](#react-plain-js)                                     |
 
 # Redux
