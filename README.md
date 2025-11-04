@@ -127,6 +127,7 @@ let result = value ?? "default";
 | 53   | [What is react-router and what are advanteges of it? Does react have buit-in router functionality? What is hiostory api? How do you get url params in react?](#react-router)                                     |
 | 54   | [What is advantage of react in comparison to javascript?](#react-plain-js)                                     |
 | 55   | [What are HOC functions?](#hoc-functions)                                     |
+| 56   | [What are advantages of using react over vanillajs ?](#react-vanilla-js)                                     |
 
 # Redux
 | Nm | #Question   |
@@ -1655,10 +1656,11 @@ This makes state changes predictable and easier to debug
   56. ### #hoc-functions
       ***A Higher-Order Function*** (HOF) is a function that does at least one of the following:
       Takes another function as an argument, or Returns a new function.
-      Built in functions in js: map, filter, reduce.
+      Built in functions in js: map, filter, reduce.\
 
+ 56. ### #react-vanilla-js
+      <img width="819" height="323" alt="image" src="https://github.com/user-attachments/assets/e29c70e3-570f-464f-930b-da2ed6c800a2" />
 
-      
       
  ________________________________________________________________________________________________________________________________
   1. ### #what-is-redux
