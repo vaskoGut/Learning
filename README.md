@@ -556,7 +556,7 @@ obj.greet(); // Output: Alice
               }).then((data) => console.log(data))
               .catch((error) => {
                 console.error('Promise rejected with error: ' + error);
-              });;
+              }).finally(() => console.log("Done!"));  // Runs no matter what;
           }
           
           doPromise();
