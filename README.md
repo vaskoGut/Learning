@@ -126,6 +126,7 @@ let result = value ?? "default";
 | 52   | [How to detect path location change in React?](#handling-path-change-react)                                     |
 | 53   | [What is react-router and what are advanteges of it? Does react have buit-in router functionality? What is hiostory api? How do you get url params in react?](#react-router)                                     |
 | 54   | [What is advantage of react in comparison to javascript?](#react-plain-js)                                     |
+| 55   | [What are HOC functions?](#hoc-functions)                                     |
 
 # Redux
 | Nm | #Question   |
@@ -1642,7 +1643,12 @@ Storing business logic that can be shared across the application (not just in Re
       5) performance - updating the real DOM frequently is expensive — especially when you modify large trees.
       6) unidirectional data flow — data moves top-down from parent to child components.
 This makes state changes predictable and easier to debug
-      
+
+  56. ### #react-hoc-functions
+      ***A Higher-Order Function*** (HOF) is a function that does at least one of the following:
+      Takes another function as an argument, or Returns a new function.
+      Built in functions in js: map, filter, reduce.
+
 
       
       
