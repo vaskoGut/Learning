@@ -1,0 +1,8 @@
+function* myGenerator(val) {
+  yield val + 1;
+  yield val + 2;
+}
+
+const myGen = myGenerator(10);
+console.log(myGen.next().value);
+console.log(myGen.next().value);
