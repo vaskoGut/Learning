@@ -14,6 +14,7 @@
 | 11  | [Count vowels](#count-vowels)                                                            |
 | 12  | [Write high ordered component](#high-ordered-component)                                                            |
 | 13  | [Check if object is empty](#object-empty-check)                                                            |
+| 14  | [Write a function that returns another function, which remembers a number and adds it to its argument.](#closure-function-task)                                                            |
 
 1. ### reverse string
    Using **map** method:
@@ -463,5 +464,22 @@ const LoggedHello = withLogger(Hello, 'Hello');
 ```javascript
    if (obj && typeof obj === 'object' && !Object.keys(obj).length) { // first obj check - checks if it's not null
      console.log('empty');
+   }
+```
+
+14. ### closure function task
+```javascript
+   function add(a) {
+     return function() {
+       return a + 5;
+     }
+   }
+   console.log(add(5)());
+
+   // or with IIFE (immidiately invoked function expression):
+   function add(a) {
+     return (function() {
+       return a + 5;
+     })();
    }
 ```
