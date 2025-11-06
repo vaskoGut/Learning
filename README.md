@@ -51,6 +51,10 @@
 | 46   | [What returns js push method - length of array or array itself? How to use it in reduce method f.e. to get array](#push-method-js)                                     |
 | 47   | [If you have array. You modify that array with map and filter functions. Will array stay Immutable?](#immutable-array)                                     |
 | 48   | [What is result of using Object.keys, Object.values and Object.keys?](#object-methods)                                     |
+| 50   | [Using Closures makes JavaScript consume more... cpu or ram?](#closure-ram-cpu)                                     |
+
+
+
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1098,6 +1102,11 @@ obj.greet(); // Output: Alice
    ```
        Some example of using:
        <img width="667" height="787" alt="image" src="https://github.com/user-attachments/assets/f765d679-d6d4-4e8e-be0e-09e4763b9e8a" />
+
+50. ### #closure-ram-cpu
+Using closure maka javascript consum more RAM ( temporary memory ).
+CPU executes instruction.
+RAM stores data temporarily.
 
 
 __________________________________________________________________________________________________________________________________________
