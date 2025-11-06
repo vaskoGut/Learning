@@ -16,6 +16,7 @@
 | 13  | [Check if object is empty](#object-empty-check)                                                            |
 | 14  | [Write a function that returns another function, which remembers a number and adds it to its argument.](#closure-function-task)                                                            |
 | 15  | [Create a functin createCounter that returns a function which increments and returns a counter each time it’s called.](#closure-function-task-two)                                                            |
+| 16  | [Create a function person that allows getting and setting a private name variable.](#getting-setting-private-name)                                                            |
 
 1. ### reverse string
    Using **map** method:
@@ -502,3 +503,22 @@ const LoggedHello = withLogger(Hello, 'Hello');
    console.log(counter()); // 3
 ```
 
+16. ### getting setting private name
+
+```javascript
+   function person(per1) {
+     let currName = per1;
+     return {
+       getName: () => currName,
+       setName: (newName) => { 
+         currName = newName
+       }
+     }
+   }
+   
+   // Usage:
+   const p = person("Alice");
+   console.log(p.getName()); // Alice
+   p.setName("Bob");
+   console.log(p.getName()); // Bob
+```
