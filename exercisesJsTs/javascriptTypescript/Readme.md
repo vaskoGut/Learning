@@ -15,6 +15,7 @@
 | 12  | [Write high ordered component](#high-ordered-component)                                                            |
 | 13  | [Check if object is empty](#object-empty-check)                                                            |
 | 14  | [Write a function that returns another function, which remembers a number and adds it to its argument.](#closure-function-task)                                                            |
+| 15  | [Create a functin createCounter that returns a function which increments and returns a counter each time it’s called.](#closure-function-task-two)                                                            |
 
 1. ### reverse string
    Using **map** method:
@@ -483,3 +484,21 @@ const LoggedHello = withLogger(Hello, 'Hello');
      })();
    }
 ```
+
+15. ### closure function task two
+```javascript
+   function createCounter() {
+     let count = 0;
+     return function() {
+       count++;
+       return count;
+     };
+   }
+
+   // Usage:
+   const counter = createCounter();
+   console.log(counter()); // 1
+   console.log(counter()); // 2
+   console.log(counter()); // 3
+```
+
