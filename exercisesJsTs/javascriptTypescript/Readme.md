@@ -17,6 +17,7 @@
 | 14  | [Write a function that returns another function, which remembers a number and adds it to its argument.](#closure-function-task)                                                            |
 | 15  | [Create a functin createCounter that returns a function which increments and returns a counter each time it’s called.](#closure-function-task-two)                                                            |
 | 16  | [Create a function person that allows getting and setting a private name variable.](#getting-setting-private-name)                                                            |
+| 17  | [Fix code exercise: Fix problem with functions inside the loop.](#fix-closure-problem-function)                                                            |
 
 1. ### reverse string
    Using **map** method:
@@ -521,4 +522,45 @@ const LoggedHello = withLogger(Hello, 'Hello');
    console.log(p.getName()); // Alice
    p.setName("Bob");
    console.log(p.getName()); // Bob
+```
+
+17. ### fix closure problem function
+// Wrong version:
+
+```javascript
+   const funcs = [];
+   for (var i = 0; i < 3; i++) {
+     funcs.push(function() {
+       console.log(i);
+     });
+   }
+   funcs[0](); // 3
+   funcs[1](); // 3
+   funcs[2](); // 3
+```
+
+```javascript
+   // Fixed version with IIFE:
+   const funcs = [];
+   for (var i = 0; i < 3; i++) {
+     funcs.push((function(j) {
+       return function() { console.log(j) };
+     })(i));
+   }
+   funcs[0](); // 3
+   funcs[1](); // 3
+   funcs[2](); // 3
+```
+
+```javascript
+   // Fixed version with let:
+   const funcs = [];
+   for (var i = 0; i < 3; i++) { // var donsnt' have block scope, so all functions reference to the last updated version of that variable. If you set it to 'let', you have now block scope and everything works as expected
+     funcs.push((function(j) {
+       return function() { console.log(j) };
+     })(i));
+   }
+   funcs[0](); // 3
+   funcs[1](); // 3
+   funcs[2](); // 3
 ```
