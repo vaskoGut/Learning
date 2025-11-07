@@ -18,6 +18,7 @@
 | 15  | [Create a functin createCounter that returns a function which increments and returns a counter each time it’s called.](#closure-function-task-two)                                                            |
 | 16  | [Create a function person that allows getting and setting a private name variable.](#getting-setting-private-name)                                                            |
 | 17  | [Fix code exercise: Fix problem with functions inside the loop.](#fix-closure-problem-function)                                                            |
+| 18  | [Create a function memoize that remembers results of an expensive function.](#memoization-function)                                                            |
 
 1. ### reverse string
    Using **map** method:
@@ -563,4 +564,19 @@ const LoggedHello = withLogger(Hello, 'Hello');
    funcs[0](); // 3
    funcs[1](); // 3
    funcs[2](); // 3
+```
+
+18. ### memoization function
+
+```javascript
+   function memoize(fn) {
+     const cache = {};
+   
+     return (n) => {
+       if (n in cache) return cache[n]; // use "in" to handle falsy results like 0
+       const result = fn(n);
+       cache[n] = result;
+       return result;
+     };
+   }
 ```
