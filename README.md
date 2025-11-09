@@ -65,7 +65,7 @@
 | 4  | [Spread object with new key value?](#spread-object-kay-value)                                     |
 | 5  | [How to  fix this infinite rendering problem in provided example?](#infinite-rendering)                                     |
 | 6  | [How recursion works in javascript?](#recursion-javascript)                                     |
-| 7  | [How to check if value is undefuined or null, if yes return other value ( some operator )?](#nullish-coalescing)                                 |
+| 7  | [How to check if value is undefuined or null, if yes return other value ( some operator )? How to check if object is date type?](#nullish-coalescing)                                 |
 | 8  | [How can be used useRef to fix rerender ( multipla calling code inside useEffect f.e.) of compnent?](#useRef-urerendering-explanation)                                     |
 | 9  | [Why do we use sometimes _ in js methods?](#underscore-js-methods-explanation)                                     |
 | 10  |[Which method do you need if you want to create empty array, map trhough it and fill it with some data?](#empty-array-mapping)                                     |
@@ -917,32 +917,38 @@ obj.greet(); // Output: Alice
       let retries;        // currently undefined // you need to declare that value
       retries ??= 3;      // assigns 3 because retries is nullish
 
-  29. ### #script-async-deffer
+      ***check if Date type***
+
+      ```javascript
+        if(obj instanceof Date) ...
+      ```
+
+  30. ### #script-async-deffer
       ![image](https://github.com/user-attachments/assets/a62346cd-23e2-4110-8a90-c4056095af25)
       ***Defer*** attribute is useful when script is using for DOM manipulations. Means script will apply on document html.
       ***Async*** attribute is useful when script is not using for DOM manipulation. Some time you need script only for server side operations or for handling cache or cookie but not for DOM manipulations
 
-  30. ### #script-tag
+  31. ### #script-tag
       Script tag is used to load some javascript code into your page.
 
-  31. ### #inline-external-js
+  32. ### #inline-external-js
       Inline javascript is used directly in your html. External JS is contained as a sepearate file.
       External scripts is preferred - cause  it can be cached by the browser and reused across multiple pages.
 
-  32. ### #loading-script-successfully
+  33. ### #loading-script-successfully
       We can test if a scripthas loadded successfully by checking  if a global variable or function defined in the script ia available.
 
-  33. ### #prevent-caching
+  34. ### #prevent-caching
       WE can prevent the browser from caching a js file by providing some unique query string to the URL of the file.
       An example:
       ```javascript
         <script src="hellojs.js?v=1"></script>
       ```
 
-  34. ### #script-loaders
+  35. ### #script-loaders
       It can be used Require.js or webPack for example.It provides advanced functionality for loading and managing Javascript files such as lazyLoading, dependency management, error handling.
 
-  35. ### #inferred-types
+  36. ### #inferred-types
       
    ![image](https://github.com/user-attachments/assets/49fb5f79-3432-41b9-b8b7-eb86c8e59083)
    ![image](https://github.com/user-attachments/assets/fa71ab01-962d-47a3-b672-8b28bbb08131)
