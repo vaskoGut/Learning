@@ -19,6 +19,7 @@
 | 16  | [Create a function person that allows getting and setting a private name variable.](#getting-setting-private-name)                                                            |
 | 17  | [Fix code exercise: Fix problem with functions inside the loop.](#fix-closure-problem-function)                                                            |
 | 18  | [Create a function memoize that remembers results of an expensive function.](#memoization-function)                                                            |
+| 19  | [Find factorial.](#factorial-function)                                                            |
 
 1. ### reverse string
    Using **map** method:
@@ -578,5 +579,15 @@ const LoggedHello = withLogger(Hello, 'Hello');
        cache[n] = result;
        return result;
      };
+   }
+```
+
+19. ### factorial function
+
+```javascript
+   function factorial(n) {
+     if(n === 1) return 1;
+   
+     return n * factorial(n-1);
    }
 ```
