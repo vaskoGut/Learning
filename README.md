@@ -1114,7 +1114,7 @@ Using closure maka javascript consum more RAM ( temporary memory ).
 CPU executes instruction.
 RAM stores data temporarily.
 
-51. ### #scope in js
+51. ### #scope js
 Scope defines where a variable is accessible in the code.
 Types of scope in JS:
 Global scope – accessible everywhere.
