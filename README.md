@@ -52,7 +52,7 @@
 | 47   | [If you have array. You modify that array with map and filter functions. Will array stay Immutable?](#immutable-array)                                     |
 | 48   | [What is result of using Object.keys, Object.values and Object.keys?](#object-methods)                                     |
 | 50   | [Using Closures makes JavaScript consume more... cpu or ram?](#closure-ram-cpu)                                     |
-
+| 51   | [what is scope in js?](#scope-js)                                     |
 
 
 
@@ -1114,6 +1114,12 @@ Using closure maka javascript consum more RAM ( temporary memory ).
 CPU executes instruction.
 RAM stores data temporarily.
 
+51. ### #scope in js
+Scope defines where a variable is accessible in the code.
+Types of scope in JS:
+Global scope – accessible everywhere.
+Function scope – accessible only inside the function.
+Block scope – accessible only inside {} (for let and const
 
 __________________________________________________________________________________________________________________________________________
 
