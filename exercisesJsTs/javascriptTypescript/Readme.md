@@ -20,6 +20,7 @@
 | 17  | [Fix code exercise: Fix problem with functions inside the loop.](#fix-closure-problem-function)                                                            |
 | 18  | [Create a function memoize that remembers results of an expensive function.](#memoization-function)                                                            |
 | 19  | [Find factorial.](#factorial-function)                                                            |
+| 20  | [If you have 2 functions outer and inner. Will inner function return stop running outer function?](#inner-outer-function)                                                            |
 
 1. ### reverse string
    Using **map** method:
@@ -591,3 +592,24 @@ const LoggedHello = withLogger(Hello, 'Hello');
      return n * factorial(n-1);
    }
 ```
+
+20. ### inner outer function
+
+```javascript
+   function inner() {
+     console.log("Inner starts");
+     return false;
+     console.log("Inner ends"); // never runs
+   }
+   
+   function outer() {
+     console.log("Outer starts");
+     inner();
+     console.log("Outer ends"); // ← this still runs
+   }
+   
+   outer();
+
+   // answer: no, inner function return will not stup running outer function
+```
+
