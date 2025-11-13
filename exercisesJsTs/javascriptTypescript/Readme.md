@@ -21,6 +21,7 @@
 | 18  | [Create a function memoize that remembers results of an expensive function.](#memoization-function)                                                            |
 | 19  | [Find factorial.](#factorial-function)                                                            |
 | 20  | [If you have 2 functions outer and inner. Will inner function return stop running outer function?](#inner-outer-function)                                                            |
+| 21  | [Why variant with arow function doesnt work when you want to console.log 'this' inside object method?](#arrow-declaration-function-prototype)                                                            |
 
 1. ### reverse string
    Using **map** method:
@@ -613,3 +614,12 @@ const LoggedHello = withLogger(Hello, 'Hello');
    // answer: no, inner function return will not stup running outer function
 ```
 
+21. ### arrow-declaration-function-prototype
+```javascript
+   function Person(name) {
+     this.name = name;
+   }
+   const vasyl = new Person('vasyl');
+   Person.prototype.getName = function() { console.log(this.name)}; // workcs, this is takent from outside context
+   Person.prototype.getName = () => console.log(this.name); // doesnt work because this isn't taken from outside context
+```javascript
