@@ -53,6 +53,7 @@
 | 48   | [What is result of using Object.keys, Object.values and Object.keys?](#object-methods)                                     |
 | 50   | [Using Closures makes JavaScript consume more... cpu or ram?](#closure-ram-cpu)                                     |
 | 51   | [what is scope in js?](#scope-js)                                     |
+| 52   | [what is event loop?](#event-loop)                                     |
 
 
 
@@ -1120,6 +1121,23 @@ Types of scope in JS:
 Global scope – accessible everywhere.
 Function scope – accessible only inside the function.
 Block scope – accessible only inside {} (for let and const
+
+52. ### ##event loop
+Javascript is single threated.
+But uses event loop to handle async operations/tasks without blocks.
+<img width="252" height="156" alt="image" src="https://github.com/user-attachments/assets/a4454bd6-fa00-4596-a901-8c7401edbea5" />
+diagram represents here that code:
+<img width="637" height="286" alt="image" src="https://github.com/user-attachments/assets/cd70a828-3e6d-4516-86dd-1108ac0d81e4" />
+1. callstack - where js runs your synchronous code.
+2. web api - where timers run
+3. task quie ( macrotask queue ) - where the timer finishes. The callback console.log waits here.
+4. Event loop continiusly checks: -is the call stack empty? if yes moves tasks  from task quie into call stack.
+So in our example:
+After “First” and “Third” run, the Call Stack becomes empty
+The event loop moves the setTimeout callback into the call stack
+It runs console.log('Second');
+
+
 
 __________________________________________________________________________________________________________________________________________
 
