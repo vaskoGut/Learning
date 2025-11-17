@@ -54,6 +54,7 @@
 | 50   | [Using Closures makes JavaScript consume more... cpu or ram?](#closure-ram-cpu)                                     |
 | 51   | [what is scope in js?](#scope-js)                                     |
 | 52   | [what is event loop?](#event-loop)                                     |
+| 53   | [what is hoisting? How are hoisted let, var, const? What happens when you access a var variable before it is declared? Do function declaration hoisted? How about function expression and arrow functions?](#hoisting)                                     |
 
 
 
@@ -1137,7 +1138,14 @@ After “First” and “Third” run, the Call Stack becomes empty
 The event loop moves the setTimeout callback into the call stack
 It runs console.log('Second');
 
-
+53. ### ##hoisting
+  1. ***hoisting*** - process where interpreter appears to move the declaration of functions, variables, classes, or imports to the top of their scope, prior to execution of the code
+  2. var → hoisted and initialized with undefined. let / const → hoisted but not initialize
+  3. ```javascript
+       console.log(a); // undefined. It gives undefined (because it's hoisted and initialized).
+       var a = 10;
+     ```
+  4. ***Function declarations*** → fully hoisted (body and name). ***Function expressions / arrow functions*** → only the variable is hoisted, not the function value.
 
 __________________________________________________________________________________________________________________________________________
 
