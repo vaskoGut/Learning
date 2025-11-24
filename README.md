@@ -249,6 +249,7 @@ Can be installed on a user's home screen like a native app and can run independe
 | 9   | [Difference betweein relative, absoulte, fixed, sticky? ](#relative-absolute-fixed-sticky)                                     |
 |10   | [Is css rendering before or after dom is constracted in critical rendering path?](#rendering-css-after-before)                                     | 
 |11   | [What is tailwind.css?](#tailwind-css)                                     | 
+|12   | [Srcset advantage?](#srcset-advantage)                                     | 
 
 # HTML
 | Nm | #Question   |
@@ -2347,6 +2348,12 @@ ______________
       Readability issues → HTML can get cluttered with long class lists.
       Learning curve → Requires getting used to utility-first thinking.
       Less semantic CSS → Custom styles may feel buried in markup.
+
+  12. ### #srcset-advantage
+      srcset lets the browser choose the most appropriate image size based on:
+      ***device screen resolution (1x, 2x, 3x, etc.)***
+      ***viewport size***
+      This means mobile users don’t download huge desktop images, saving bandwidth and improving page-load speed.
     
 ______________ ______________ ______________ ______________ __________________________________________
 ______________ ______________ ______________ ______________ __________________________________________
