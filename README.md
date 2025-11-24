@@ -134,6 +134,7 @@ let result = value ?? "default";
 | 54   | [What is advantage of react in comparison to javascript?](#react-plain-js)                                     |
 | 55   | [What are HOC functions?](#hoc-functions)                                     |
 | 56   | [What are advantages of using react over vanillajs ?](#react-vanilla-js)                                     |
+| 57   | [Why do we say React is declarative rather than imperative?](#declarative-imperative-react)                                     |
 
 # Redux
 | Nm | #Question   |
@@ -1724,6 +1725,9 @@ This makes state changes predictable and easier to debug
  56. ### #react-vanilla-js
       <img width="819" height="323" alt="image" src="https://github.com/user-attachments/assets/e29c70e3-570f-464f-930b-da2ed6c800a2" />
 
+ 57. ### #declarative-imperative-react
+   React automatically manages DOM updates and re-rendering. So you generally speaking are describing what you want. Not doing it yourself.
+   Vanila js - is more imperative approach. When you doing things 'by your hand'.
       
  ________________________________________________________________________________________________________________________________
   1. ### #what-is-redux
