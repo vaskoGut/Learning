@@ -101,7 +101,7 @@ let result = value ?? "default";
 | 21   | [when do you need to use useCallback?](#use-callback)                                     |
 | 22   | [what is useRef hook? Example of use. Is value that useRef returns is mutable?](#use-ref)                                     |     
 | 23   | [what is useRef useState difference?](#use-state-use-ref-diff)                                     |
-| 24   | [what is react context? when do we need it? Please list example of data stored in context](#react-context)                                     |
+| 24   | [what is react context? when do we need it? Please list example of data stored in context. Is react context mutable?](#react-context)                                     |
 | 25   | [what is the recommended way to structure your React code?](#react-structuring-code)                                     |
 | 26   | [what is good way to test your reactapplications?what is end-2-end testing? what is unit testing? What yuu use for unit  tests. What are integration tests?](#react-test-how-work)                                     |
 | 27   | [what is react dev tools? When do you need it as rule?](#react-dev-tools)                                     |
@@ -1447,7 +1447,21 @@ It's worth to mention we use high order components with keyword with.
       4) it can be used to pass state to distance children.
       5) Global data requirement: When multiple components need access to the same data (for example: user authentication status, theme preferences, and so on), using context makes it accessible without redundant prop passing
       6) When prop drilling becomes complicated
-
+     
+      React Context values can be technically mutable, but mutating them directly is ineffective because consumers do not re-render unless the context value’s reference changes.
+      ```javascript
+        function App() {
+          const [user, setUser] = useState({ name: "John" });
+        
+          const contextValue = { user, setUser };
+        
+          return (
+            <UserContext.Provider value={contextValue}>
+              <Profile />
+            </UserContext.Provider>
+          );
+        }
+      ```
   
   26. ###  react-structuring-code
        You need specific folder for your components ( it can be also seperate folder for your common components ), for hooks, constants. 
