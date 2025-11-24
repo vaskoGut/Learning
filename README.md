@@ -2354,6 +2354,18 @@ ______________
       ***device screen resolution (1x, 2x, 3x, etc.)***
       ***viewport size***
       This means mobile users don’t download huge desktop images, saving bandwidth and improving page-load speed.
+       ```javascript
+        <img
+          src="small.jpg"
+          srcset="
+            small.jpg 480w,
+            medium.jpg 768w,
+            large.jpg 1200w
+          "
+          sizes="(max-width: 600px) 100vw, 50vw"
+          alt="example"
+        />
+       ```  
     
 ______________ ______________ ______________ ______________ __________________________________________
 ______________ ______________ ______________ ______________ __________________________________________
