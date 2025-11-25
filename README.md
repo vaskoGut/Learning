@@ -8,7 +8,7 @@
 | 3   | [What is generator ](#generator-function)                                                                             |
 | 4   | [Types Enums Interface. What for are used types? What are tuples? What is union, intersection? What is intersection types? What is record type - provide example](#types-enums-interfaces)                                                                             |
 | 5   | [Difference between map, filter and forEach. Does filter, slice methods create new array or mutating source? What about reduce? ](#map-foreach-difference)                                                                             |
-| 6   | [What is this in js? Can you change value of this? What is this alone, inside object, inside event handler, inside function? What is for are used call,apply methods? If yout type this in console - what will you get?](#this-meaning)                                                                             |
+| 6   | [What is this in js? Can you change value of this? What is this alone, inside object, inside event handler, inside function? What is for are used call,apply methods? If yout type this in console - what will you get? What if funcion is called as object property?](#this-meaning)                                                                             |
 | 7  | [What is setTimeout? Is setTimeOut async?](#settimeout-async)                                                                             |
 | 8  | [What is Promise? Example of promise? What status promis returns? Is promise aycnronious? Name wayss of handling promises. What is promise all? Make a simple example of promise and promise.all. What does return .then while working with Promise? What is difference between promise.all and promise.race](#example-promise)                                                                             |
 | 9  | [What is Closure? Please provide examples. When closure is created when we speak about functions? If variable is declared without keyword, is it global? Does inner function has an access to outer function? ](#closure-explanation)                                                                             |
@@ -528,9 +528,18 @@ obj.greet(); // Output: Alice
                 console.log(this); // the button itself
               });
           ``` 
-     4. Call and apply methods are used to call 1 object method on another object as argument
-     6. If yout type this in console, you will get Window object.
-     7. In strict mode, this will be undefined. Otherwise, this refers to the global object (window in browsers).
+          In strict mode, this will be undefined.
+     4. When a function is called as a property of an object, this refers to that object.
+          ```javascript
+             const obj = {
+              a: 10,
+              show() {
+                console.log(this.a);
+              }
+            };
+            
+            obj.show();  // this → obj, logs 10
+          ``` 
     
   8. ### settimeout-async
       1. setTiimeout is function used to scheduling code for some specific delay, time.
