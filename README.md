@@ -614,6 +614,7 @@ obj.greet(); // Output: Alice
 
   12. ### closure-explanation
         1. Every function creates a closure when defined — it keeps a reference to the lexical scope. A closure is formed at function creation, not execution.
+            The inner function keeps a persistent link to the scope in which it was created — this preserved scope is the ***closure***.
             A closure is created when:
             A function is defined inside another function (a nested function).
             The inner function references variables from the outer function.
