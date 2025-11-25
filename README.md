@@ -613,7 +613,11 @@ obj.greet(); // Output: Alice
       ***Promise.race()***	Resolves/rejects as soon as one promise settles.
 
   12. ### closure-explanation
-        1. Every function creates a closure when defined — it keeps a reference to the lexical scope.
+        1. Every function creates a closure when defined — it keeps a reference to the lexical scope. A closure is formed at function creation, not execution.
+            A closure is created when:
+            A function is defined inside another function (a nested function).
+            The inner function references variables from the outer function.
+            The outer function returns the inner function (or otherwise exposes it).
         2. Function uses a closure only when it accesses variables from that captured scopeIf we speak about closure.  We need to mention **local** and **global** scope. Functions have its local, private scope. Variables can be global or private - depending where they'are declared.
         3. if variable is declared without keyword, it is global. Even if it's declared inside the function.
 
