@@ -263,6 +263,7 @@ Can be installed on a user's home screen like a native app and can run independe
 | 1   | [What is continuos deployment  ( what is continues deployment)? ](#continuos-deployment)                                     |
 | 2   | [Git merge rebase difference? ](#merge-rebase-difference)                                     |
 | 3   | [What is cherry pick? ](#cherry-pick)                                     |
+| 4   | [Git pull git fetch difference? ](#pull-fetch)                                     |
 
 # REDUX, REACT CONTEXT, REACT QUERY, STATE MANAGEMENT
 | Nm | #Question   |
@@ -2566,6 +2567,17 @@ ___________
   In simple terms, git **cherry-pick** picks a specific commit from one branch and apply it to another branch without merging the entire branch.
   
 ___________
+
+  4. ### pull-fetch
+     **git fetch**  Fetches updateds but doesn't merge them.
+     **git pull** It makes git fetch at start. And then it merges changes ( if your logal branch is set to be following orign branch ).
+
+     It's better to use git fetch. Becaese with git pull you commit history can look terribly. Your commit can be merged with commit another person and it's created additional merged commit.
+     <img width="507" height="462" alt="image" src="https://github.com/user-attachments/assets/e004c973-e23e-483a-b51b-bc084367192e" />
+
+     
+
+  
 
 ________________________________________________________________________________________________________________________________
  1. ### #toast-react
