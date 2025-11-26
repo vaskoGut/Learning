@@ -2389,6 +2389,9 @@ ______________
        ```
    13. ### #grid-css
    CSS Grid is a 2-dimensional layout system (rows + columns) used to create complex, responsive layouts easily.
+   An example of 3 columns layout:
+   <img width="1639" height="408" alt="image" src="https://github.com/user-attachments/assets/35656b40-6d9c-43bf-9093-9f8fc08a0a2a" />
+   
 
        
     
