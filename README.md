@@ -1156,14 +1156,18 @@ After “First” and “Third” run, the Call Stack becomes empty
 The event loop moves the setTimeout callback into the call stack
 It runs console.log('Second');
 
+
 53. ### ##hoisting
-  1. ***hoisting*** - process where interpreter appears to move the declaration of functions, variables, classes, or imports to the top of their scope, prior to execution of the code
-  2. var → hoisted and initialized with undefined. let / const → hoisted but not initialize
-  3. ```javascript
-       console.log(a); // undefined. It gives undefined (because it's hoisted and initialized).
-       var a = 10;
-     ```
-  4. ***Function declarations*** → fully hoisted (body and name). ***Function expressions / arrow functions*** → only the variable is hoisted, not the function value.
+1. ***hoisting*** - process where interpreter appears to move the declaration of functions, variables, classes, or imports to the top of their scope, prior to execution of the code
+2. var → hoisted and initialized with undefined. let / const → hoisted but not initialize
+<img width="647" height="295" alt="image" src="https://github.com/user-attachments/assets/3291407f-99d8-4225-83a2-ea072cdd576e" />
+3. ```javascript
+     console.log(a); // undefined. It gives undefined (because it's hoisted and initialized).
+     var a = 10;
+   ```
+4. ***Function declarations*** → fully hoisted (body and name). ***Function expressions / arrow functions*** → only the variable is hoisted, not the function value.
+<img width="643" height="257" alt="image" src="https://github.com/user-attachments/assets/7c6c22ca-3a5a-458c-9758-bbb59a57768b" />
+5. Arrow functions are NOT hoisted like function declarations.
 
 __________________________________________________________________________________________________________________________________________
 
