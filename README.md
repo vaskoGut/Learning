@@ -2388,7 +2388,7 @@ ______________
         />
        ```
    13. ### #grid-css
-      CSS Grid is a 2-dimensional layout system (rows + columns) used to create complex, responsive layouts easily.
+   CSS Grid is a 2-dimensional layout system (rows + columns) used to create complex, responsive layouts easily.
 
        
     
