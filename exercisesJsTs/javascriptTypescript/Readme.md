@@ -30,6 +30,7 @@
       const str = 'hello';
       const result = str.split('').map((_, i, arr) => arr[arr.length-1-i]).join('');
     ```
+   **map** method isn't ideal here. We create new array. Better just to use for loop or reduce method.
 
    Using **reduce** method:
 
@@ -97,7 +98,7 @@
       console.log(fibNumber(7));
    ```
 
-2. ### palindrom recursion solving
+1. ### palindrom recursion solving
    using **simple looping**:
 
    ```javascript
@@ -152,7 +153,7 @@
       };
    ```
 
-3. ### remove duplicates
+2. ### remove duplicates
    using **new Set**:
 
    ```javascript
@@ -215,7 +216,7 @@
       }
    ```
 
-4. ### flatten array
+3. ### flatten array
    using simple **looping**:
    ```javascript
    const nestedarr = [1, [2, 3], [4, 5], 6];
@@ -279,7 +280,7 @@
       console.log([...flattenArrayGenerator(nestedarr)]) // remember to convert result of generator to arrray
     ```
 
-5. ### similarity arrays
+4. ### similarity arrays
      ```javascript
          function checkArraySimilarity(arr1, arr2) {
            if (arr1.length !== arr2.length) return false;
@@ -293,7 +294,7 @@
       ```
    Note: yes, return exists for loop.
 
-6. ### max min array element
+5. ### max min array element
 
     using **sort**:
     ```javascript
@@ -330,7 +331,7 @@
          }
       ```
 
-7. ### all numbers array
+6. ### all numbers array
    We  need to ask more questions when we get task like that - what an interviewer expects  from us.
    A simple soluition:
 
