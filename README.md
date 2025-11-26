@@ -251,7 +251,7 @@ Can be installed on a user's home screen like a native app and can run independe
 |10   | [Is css rendering before or after dom is constracted in critical rendering path?](#rendering-css-after-before)                                     | 
 |11   | [What is tailwind.css?](#tailwind-css)                                     | 
 |12   | [Srcset advantage?](#srcset-advantage)                                     |
-|13   | [What is generally speaking grid in css?](#grid-css)                                     | 
+|13   | [What is generally speaking grid in css? What is advantage of grid according to the flex?](#grid-css)                                     | 
 
 # HTML
 | Nm | #Question   |
@@ -2388,11 +2388,10 @@ ______________
         />
        ```
    13. ### #grid-css
-   CSS Grid is a 2-dimensional layout system (rows + columns) used to create complex, responsive layouts easily.
+   1. CSS Grid is a 2-dimensional layout system (rows + columns) used to create complex, responsive layouts easily.
    An example of 3 columns layout:
    <img width="1639" height="408" alt="image" src="https://github.com/user-attachments/assets/35656b40-6d9c-43bf-9093-9f8fc08a0a2a" />
-   
-
+   2. Flexbox is 1 dimensional. Grid is 2 dimensia ( You control rows AND columns together ). 
        
     
 ______________ ______________ ______________ ______________ __________________________________________
