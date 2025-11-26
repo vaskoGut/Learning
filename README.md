@@ -55,6 +55,7 @@
 | 51   | [what is scope in js?](#scope-js)                                     |
 | 52   | [what is event loop?](#event-loop)                                     |
 | 53   | [what is hoisting? How are hoisted let, var, const? What happens when you access a var variable before it is declared? Do function declaration hoisted? How about function expression and arrow functions?](#hoisting)                                     |
+| 54   | [Javascript datatypes and how they're checked?](#javascript-datatypes)                                     |
 
 
 
@@ -1169,6 +1170,8 @@ It runs console.log('Second');
 <img width="643" height="257" alt="image" src="https://github.com/user-attachments/assets/7c6c22ca-3a5a-458c-9758-bbb59a57768b" />
 5. Arrow functions are NOT hoisted like function declarations.
 
+54. ### ##javascript-datatypes
+JavaScript has 8 data types: 7 primitive types (number, string, boolean, undefined, null, symbol, bigint)  and 1 non-primitive type, which is object. Arrays, functions, and everything else besides primitives are objects
 __________________________________________________________________________________________________________________________________________
 
 # Exercises Javascript Typescript
