@@ -250,7 +250,8 @@ Can be installed on a user's home screen like a native app and can run independe
 | 9   | [Difference betweein relative, absoulte, fixed, sticky? ](#relative-absolute-fixed-sticky)                                     |
 |10   | [Is css rendering before or after dom is constracted in critical rendering path?](#rendering-css-after-before)                                     | 
 |11   | [What is tailwind.css?](#tailwind-css)                                     | 
-|12   | [Srcset advantage?](#srcset-advantage)                                     | 
+|12   | [Srcset advantage?](#srcset-advantage)                                     |
+|13   | [What is generally speaking grid in css?](#grid-css)                                     | 
 
 # HTML
 | Nm | #Question   |
@@ -2385,7 +2386,11 @@ ______________
           sizes="(max-width: 600px) 100vw, 50vw"
           alt="example"
         />
-       ```  
+       ```
+   13. ### #grid-css
+      CSS Grid is a 2-dimensional layout system (rows + columns) used to create complex, responsive layouts easily.
+
+       
     
 ______________ ______________ ______________ ______________ __________________________________________
 ______________ ______________ ______________ ______________ __________________________________________
