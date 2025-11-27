@@ -53,7 +53,7 @@
 | 48   | [What is result of using Object.keys, Object.values and Object.keys?](#object-methods)                                     |
 | 50   | [Using Closures makes JavaScript consume more... cpu or ram?](#closure-ram-cpu)                                     |
 | 51   | [what is scope in js?](#scope-js)                                     |
-| 52   | [what is event loop?](#event-loop)                                     |
+| 52   | [what is event loop? What are microtasks and macrotasks when we speak about event loop?](#event-loop)                                     |
 | 53   | [what is hoisting? How are hoisted let, var, const? What happens when you access a var variable before it is declared? Do function declaration hoisted? How about function expression and arrow functions?](#hoisting)                                     |
 | 54   | [Javascript datatypes and how they're checked?](#javascript-datatypes)                                     |
 
@@ -1156,6 +1156,10 @@ So in our example:
 After “First” and “Third” run, the Call Stack becomes empty
 The event loop moves the setTimeout callback into the call stack
 It runs console.log('Second');
+
+Macro tasks micro tasks explanation with example:
+<img width="777" height="766" alt="image" src="https://github.com/user-attachments/assets/3510e1c0-fe6a-4ddd-90d4-29a490c2362d" />
+
 
 
 53. ### ##hoisting
