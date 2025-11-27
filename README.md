@@ -1157,8 +1157,10 @@ After “First” and “Third” run, the Call Stack becomes empty
 The event loop moves the setTimeout callback into the call stack
 It runs console.log('Second');
 
-Macro tasks micro tasks explanation with example:
+***Macro tasks micro*** tasks explanation with example:
 <img width="777" height="766" alt="image" src="https://github.com/user-attachments/assets/3510e1c0-fe6a-4ddd-90d4-29a490c2362d" />
+***Microtasks macro tasks***:
+<img width="863" height="298" alt="image" src="https://github.com/user-attachments/assets/d5da146a-b918-4c9c-8f87-5f4f9161f8e7" />
 
 
 
