@@ -1182,6 +1182,11 @@ JavaScript has 8 data types: 7 primitive types (number, string, boolean, undefin
 
 55. ### ##null-undefined-diff
 <img width="512" height="91" alt="image" src="https://github.com/user-attachments/assets/6d1b17f2-6d81-45fc-b332-5bf5b30fcc8e" />
+
+Rememeber also:
+
+Type of null is object.
+Type of undefined is undefined.
 __________________________________________________________________________________________________________________________________________
 
 # Exercises Javascript Typescript
