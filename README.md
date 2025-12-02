@@ -56,6 +56,7 @@
 | 52   | [what is event loop? What are microtasks and macrotasks when we speak about event loop?](#event-loop)                                     |
 | 53   | [what is hoisting? How are hoisted let, var, const? What happens when you access a var variable before it is declared? Do function declaration hoisted? How about function expression and arrow functions?](#hoisting)                                     |
 | 54   | [Javascript datatypes and how they're checked?](#javascript-datatypes)                                     |
+| 55   | [Difference null and undefined?](#null-undefined-diff)                                     |
 
 
 
@@ -1178,6 +1179,9 @@ It runs console.log('Second');
 
 54. ### ##javascript-datatypes
 JavaScript has 8 data types: 7 primitive types (number, string, boolean, undefined, null, symbol, bigint)  and 1 non-primitive type, which is object. Arrays, functions, and everything else besides primitives are objects
+
+55. ### ##null-undefined-diff
+<img width="512" height="91" alt="image" src="https://github.com/user-attachments/assets/6d1b17f2-6d81-45fc-b332-5bf5b30fcc8e" />
 __________________________________________________________________________________________________________________________________________
 
 # Exercises Javascript Typescript
