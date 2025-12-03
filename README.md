@@ -58,7 +58,7 @@
 | 54   | [Javascript datatypes and how they're checked?](#javascript-datatypes)                                     |
 | 55   | [Difference null and undefined?](#null-undefined-diff)                                     |
 | 56   | [What is callback function in js?](#callback-function)                                     |
-| 57   | [How you handle errors in Javascript?](#errors-javascript)                                     |
+| 57   | [How you handle errors in Javascript?What about axios and react-query?](#errors-javascript)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1200,6 +1200,9 @@ You can throw custom errors:
 ```javascript
   throw new Error("Cannot divide by zero");
 ```
+In terms of axios and react query:
+  ***Axios*** - Use try...catch -  we should handle each handling for request
+  ***react-query*** - it has built in error handling, built-in 'onerror' and 'error'.
 
 
 __________________________________________________________________________________________________________________________________________
