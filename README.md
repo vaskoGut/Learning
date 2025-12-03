@@ -1194,7 +1194,6 @@ Type of undefined is undefined.
 
 57. ### ##errors-javascript
 <img width="561" height="264" alt="image" src="https://github.com/user-attachments/assets/daee7537-74e8-4ae1-a7c0-34f54f82a737" />
-
 Promises have 'catch' for errors:
 <img width="848" height="310" alt="image" src="https://github.com/user-attachments/assets/49acc80d-37cc-4341-98f4-821826621f04" />
 
