@@ -58,7 +58,7 @@
 | 54   | [Javascript datatypes and how they're checked?](#javascript-datatypes)                                     |
 | 55   | [Difference null and undefined?](#null-undefined-diff)                                     |
 | 56   | [What is callback function in js?](#callback-function)                                     |
-| 57   | [How you handle errors in Javascript?What about axios and react-query?](#errors-javascript)                                     |
+| 57   | [How you handle errors in Javascript?What about axios and react-query?Erorr boundary in react?](#errors-javascript)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1210,6 +1210,10 @@ You can throw custom errors:
 In terms of axios and react query:
   ***Axios*** - Use try...catch -  we should handle each handling for request
   ***react-query*** - it has built in error handling, built-in 'onerror' and 'error'.
+
+Note: Error boundary ( it's taken from rEact docs ), using for handling error - displaying some fallback inside component, if some error occurs:
+<img width="884" height="802" alt="image" src="https://github.com/user-attachments/assets/81f313a2-c55a-483b-946e-e88d32c83681" />
+
 
 
 __________________________________________________________________________________________________________________________________________
