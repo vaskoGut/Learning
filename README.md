@@ -57,7 +57,7 @@
 | 53   | [what is hoisting? How are hoisted let, var, const? What happens when you access a var variable before it is declared? Do function declaration hoisted? How about function expression and arrow functions?](#hoisting)                                     |
 | 54   | [Javascript datatypes and how they're checked?](#javascript-datatypes)                                     |
 | 55   | [Difference null and undefined?](#null-undefined-diff)                                     |
-
+| 56   | [What is callback function in js?](#callback-function)                                     |
 
 
 # Exercises Javascript Typescript
@@ -1187,6 +1187,12 @@ Rememeber also:
 
 Type of null is object.
 Type of undefined is undefined.
+
+56. ### ##callback-function
+**A callback function** in JavaScript is a function that is passed as an argument to another function and is executed later, usually after some task or operation is completed.
+<img width="673" height="308" alt="image" src="https://github.com/user-attachments/assets/409291a9-cb32-41bb-91f9-c108b2aed081" />
+
+
 __________________________________________________________________________________________________________________________________________
 
 # Exercises Javascript Typescript
