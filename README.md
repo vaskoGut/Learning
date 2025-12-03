@@ -15,7 +15,7 @@
 | 10  | [What is differene between sppread and rest operator - name practical examples?](#rest-spread-operator-difference)                                                                             |
 | 11  | [What are sets? How to convert Set type to the array? Example.](#set-object)                                                                             |
 | 12  | [Why using try catch wrapper  instead just async await?](#try-catch)                                                                             |
-| 13  | [types and interfaces diff? Can you shape type of object with types not interface?](#type-interface-diff)                                                                             |
+| 13  | [types and interfaces diff? Can you shape type of object with types not interface?](#type-interface-diff)                                               f                              |
 | 14   | [How to make array from collections js? What is js collection?](#collection-js-array)                                     |
 | 15   | [what is 3rd stringify parameter?](#stringify-3rd-parameter)                                     |
 | 16   | [what is difference between try block - catch/finally? Please provide an example](#try-catch-finally)                                     |
@@ -1195,6 +1195,7 @@ Type of undefined is undefined.
 57. ### ##errors-javascript
 <img width="561" height="264" alt="image" src="https://github.com/user-attachments/assets/daee7537-74e8-4ae1-a7c0-34f54f82a737" />
 Promises have 'catch' for errors:
+
 <img width="848" height="310" alt="image" src="https://github.com/user-attachments/assets/49acc80d-37cc-4341-98f4-821826621f04" />
 
 You can throw custom errors:
