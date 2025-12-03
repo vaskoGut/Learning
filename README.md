@@ -1196,12 +1196,16 @@ Type of undefined is undefined.
 <img width="561" height="264" alt="image" src="https://github.com/user-attachments/assets/daee7537-74e8-4ae1-a7c0-34f54f82a737" />
 
 Promises have 'catch' for errors:
-<img width="848" height="310" alt="image" src="https://github.com/user-attachments/assets/49acc80d-37cc-4341-98f4-821826621f04" />
+  ```javascript
+    fetchData()
+      .then(data => console.log(data))
+      .catch(err => console.error("Error:", err));
+  ```
 
 You can throw custom errors:
-```javascript
-  throw new Error("Cannot divide by zero");
-```
+  ```javascript
+    throw new Error("Cannot divide by zero");
+  ```
 
 In terms of axios and react query:
   ***Axios*** - Use try...catch -  we should handle each handling for request
