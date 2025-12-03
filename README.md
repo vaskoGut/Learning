@@ -1192,7 +1192,7 @@ Type of undefined is undefined.
 **A callback function** in JavaScript is a function that is passed as an argument to another function and is executed later, usually after some task or operation is completed.
 <img width="673" height="308" alt="image" src="https://github.com/user-attachments/assets/409291a9-cb32-41bb-91f9-c108b2aed081" />
 
-56. ### ##errors-javascript
+57. ### ##errors-javascript
 <img width="561" height="264" alt="image" src="https://github.com/user-attachments/assets/daee7537-74e8-4ae1-a7c0-34f54f82a737" />
 Promises have 'catch' for errors:
 <img width="848" height="310" alt="image" src="https://github.com/user-attachments/assets/49acc80d-37cc-4341-98f4-821826621f04" />
