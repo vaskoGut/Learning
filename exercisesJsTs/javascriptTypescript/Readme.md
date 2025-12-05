@@ -635,6 +635,6 @@ const LoggedHello = withLogger(Hello, 'Hello');
    }
    
    console.log(factorial(5));
-```javascript
+```
 
 
