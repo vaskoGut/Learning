@@ -22,6 +22,7 @@
 | 19  | [Find factorial.](#factorial-function)                                                            |
 | 20  | [If you have 2 functions outer and inner. Will inner function return stop running outer function?](#inner-outer-function)                                                            |
 | 21  | [Why variant with arow function doesnt work when you want to console.log 'this' inside object method?](#arrow-declaration-function-prototype)                                                            |
+| 22  | [get factorial with recursion](#factorial-recursion)                                                            |
 
 1. ### reverse string
    Using **map** method:
@@ -623,4 +624,17 @@ const LoggedHello = withLogger(Hello, 'Hello');
    const vasyl = new Person('vasyl');
    Person.prototype.getName = function() { console.log(this.name)}; // workcs, this is takent from outside context
    Person.prototype.getName = () => console.log(this.name); // doesnt work because this isn't taken from outside context
+```
+
+22. ### factorial-recursion
 ```javascript
+   function factorial(n) {
+     if (n < 1) return 1;
+   
+     return n * factorial(n-1);
+   }
+   
+   console.log(factorial(5));
+```javascript
+
+
