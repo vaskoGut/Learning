@@ -59,6 +59,7 @@
 | 55   | [Difference null and undefined?](#null-undefined-diff)                                     |
 | 56   | [What is callback function in js?](#callback-function)                                     |
 | 57   | [How you handle errors in Javascript?What about axios and react-query?Erorr boundary in react?](#errors-javascript)                                     |
+| 58   | [Difference between settimeout setinterval?](#settimeout-setinterval-difference)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -137,6 +138,9 @@ let result = value ?? "default";
 | 55   | [What are HOC functions?](#hoc-functions)                                     |
 | 56   | [What are advantages of using react over vanillajs ?](#react-vanilla-js)                                     |
 | 57   | [Why do we say React is declarative rather than imperative?](#declarative-imperative-react)                                     |
+| 58   | [Settimeout setinterval difference?](#setimeout-setinterval)                                     |
+
+
 
 # Redux
 | Nm | #Question   |
@@ -1213,6 +1217,10 @@ In terms of axios and react query:
 
 Note: Error boundary ( it's taken from rEact docs ), using for handling error - displaying some fallback inside component, if some error occurs:
 <img width="884" height="802" alt="image" src="https://github.com/user-attachments/assets/81f313a2-c55a-483b-946e-e88d32c83681" />
+
+58. ### ##settimeout-setinterval-difference
+***setTimeout*** executes a function once after a specified delay (in milliseconds).
+***setInterval*** executes a function repeatedly at a specified intervall.
 
 
 
