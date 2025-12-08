@@ -14,7 +14,7 @@
 | 9  | [What is Closure? Please provide examples. When closure is created when we speak about functions? If variable is declared without keyword, is it global? Does inner function has an access to outer function? ](#closure-explanation)                                                                             |
 | 10  | [What is differene between sppread and rest operator - name practical examples?](#rest-spread-operator-difference)                                                                             |
 | 11  | [What are sets? How to convert Set type to the array? Example.](#set-object)                                                                             |
-| 12  | [Why using try catch wrapper  instead just async await?](#try-catch)                                                                             |
+| 12  | [Does async await simplify js code? Why using try catch wrapper instead just async await?](#try-catch)                                                                             |
 | 13  | [types and interfaces diff? Can you shape type of object with types not interface?](#type-interface-diff)                                               f                              |
 | 14   | [How to make array from collections js? What is js collection?](#collection-js-array)                                     |
 | 15   | [what is 3rd stringify parameter?](#stringify-3rd-parameter)                                     |
@@ -735,6 +735,8 @@ obj.greet(); // Output: Alice
         A  **keys()** method that returns an iterator of the elements in the set.
           
   15. ### try-catch
+      Async awaits - before it we had to use callbacks to handle situation.
+      
       Wraps code that can fail and pass error to the catch instead of crashing the app.
       So generally speaking we need it to handle errors.
   
@@ -754,7 +756,7 @@ obj.greet(); // Output: Alice
             type Base = { id: number };
             type User = Base & { name: string };
         ```
-  17. ### collection-js-array
+  18. ### collection-js-array
       Eather
        ```javascript
       const arrray = [...yourObjectCollection];
@@ -764,10 +766,10 @@ obj.greet(); // Output: Alice
 
        In JavaScript, collections refer to data structures that store multiple elements or values. Examples include arrays, objects, maps, and sets
 
-  18. ### stringify-3rd-parameter
+  19. ### stringify-3rd-parameter
        it adds additional spacing
 
-  19. ### try-catch-finally
+  20. ### try-catch-finally
       Eather
        ```javascript
       openMyFile();
@@ -790,7 +792,7 @@ obj.greet(); // Output: Alice
        }
        ```
 
-   20. ### arrow-function
+   21. ### arrow-function
        Arrow fuction inherits this from outside function. In normal function this points out to global object.
 
         ```javascript
