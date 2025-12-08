@@ -271,7 +271,7 @@ Can be installed on a user's home screen like a native app and can run independe
 | 2   | [Git merge rebase difference? ](#merge-rebase-difference)                                     |
 | 3   | [What is cherry pick? ](#cherry-pick)                                     |
 | 4   | [Git pull git fetch difference? ](#pull-fetch)                                     |
-| 5   | [Majour minor patch difference?](#majour-minor-patch)                                     |
+| 5   | [Major minor patch difference?](#majour-minor-patch)                                     |
 
 # REDUX, REACT CONTEXT, REACT QUERY, STATE MANAGEMENT
 | Nm | #Question   |
