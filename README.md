@@ -2645,7 +2645,7 @@ ___________
 
 ___________
 
-  5. ### majour-minor-patch
+  5. ### major-minor-patch
      **major** - big change, breaking change.
      **patch** - bug fix etc.
      **minor** - some fieatcher added.
