@@ -271,6 +271,7 @@ Can be installed on a user's home screen like a native app and can run independe
 | 2   | [Git merge rebase difference? ](#merge-rebase-difference)                                     |
 | 3   | [What is cherry pick? ](#cherry-pick)                                     |
 | 4   | [Git pull git fetch difference? ](#pull-fetch)                                     |
+| 5   | [Majour minor patch difference?](#majour-minor-patch)                                     |
 
 # REDUX, REACT CONTEXT, REACT QUERY, STATE MANAGEMENT
 | Nm | #Question   |
@@ -2642,6 +2643,12 @@ ___________
      It's better to use git fetch. Becaese with git pull you commit history can look terribly. Your commit can be merged with commit another person and it's created additional merged commit.
      <img width="507" height="462" alt="image" src="https://github.com/user-attachments/assets/e004c973-e23e-483a-b51b-bc084367192e" />
 
+___________
+
+  5. ### majour-minor-patch
+     **major** - big change, breaking change.
+     **patch** - bug fix etc.
+     **minor** - some fieatcher added.
      
 
   
