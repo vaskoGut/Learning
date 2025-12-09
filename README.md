@@ -60,6 +60,7 @@
 | 56   | [What is callback function in js?](#callback-function)                                     |
 | 57   | [How you handle errors in Javascript?What about axios and react-query?Erorr boundary in react?](#errors-javascript)                                     |
 | 58   | [Difference between settimeout setinterval?](#settimeout-setinterval-difference)                                     |
+| 59   | [How do you handle multiple promises simultaneously??](#multiple-promises)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1227,6 +1228,9 @@ Note: Error boundary ( it's taken from rEact docs ), using for handling error - 
 58. ### ##settimeout-setinterval-difference
 ***setTimeout*** executes a function once after a specified delay (in milliseconds).
 ***setInterval*** executes a function repeatedly at a specified intervall.
+
+59. ### ##multiple-promises
+with promise.all and promise.race we can handle multiple promises.
 
 
 
