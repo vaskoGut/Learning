@@ -61,6 +61,7 @@
 | 57   | [How you handle errors in Javascript?What about axios and react-query?Erorr boundary in react?](#errors-javascript)                                     |
 | 58   | [Difference between settimeout setinterval?](#settimeout-setinterval-difference)                                     |
 | 59   | [How do you handle multiple promises simultaneously??](#multiple-promises)                                     |
+| 60   | [What is desctructing?](#destructing-js)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1232,6 +1233,8 @@ Note: Error boundary ( it's taken from rEact docs ), using for handling error - 
 59. ### ##multiple-promises
 with promise.all and promise.race we can handle multiple promises.
 
+60. ### ##destructing-js
+***Destructuring*** is a JavaScript feature that lets you pull values out of an object or array and store them in variables, in a clean and short way.
 
 
 __________________________________________________________________________________________________________________________________________
