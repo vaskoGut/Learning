@@ -62,6 +62,8 @@
 | 58   | [Difference between settimeout setinterval?](#settimeout-setinterval-difference)                                     |
 | 59   | [How do you handle multiple promises simultaneously??](#multiple-promises)                                     |
 | 60   | [What is desctructing?](#destructing-js)                                     |
+| 61   | [What are template literals?](#template-literals)                                     |
+
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1236,6 +1238,8 @@ with promise.all and promise.race we can handle multiple promises.
 60. ### ##destructing-js
 ***Destructuring*** is a JavaScript feature that lets you pull values out of an object or array and store them in variables, in a clean and short way.
 
+61. ### ##template-literals
+Template literals are a special way to create strings in JavaScript using backticks (`)
 
 __________________________________________________________________________________________________________________________________________
 
