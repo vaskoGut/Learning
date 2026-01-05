@@ -23,6 +23,11 @@
 | 20  | [If you have 2 functions outer and inner. Will inner function return stop running outer function?](#inner-outer-function)                                                            |
 | 21  | [Why variant with arow function doesnt work when you want to console.log 'this' inside object method?](#arrow-declaration-function-prototype)                                                            |
 | 22  | [get factorial with recursion](#factorial-recursion)                                                            |
+| 23  | [Explain code](#this-arrow-function)                                                            |
+
+
+
+
 
 1. ### reverse string
    Using **map** method:
@@ -636,5 +641,10 @@ const LoggedHello = withLogger(Hello, 'Hello');
    
    console.log(factorial(5));
 ```
+
+23. ### this-arrow-function
+<img width="632" height="455" alt="image" src="https://github.com/user-attachments/assets/7f67a0bf-f353-4443-8ac5-c92b99a3d6cd" />
+Arrow function doesn't have its own this. It inherits it from out context.
+
 
 
