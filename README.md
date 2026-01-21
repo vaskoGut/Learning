@@ -523,7 +523,7 @@ obj.greet(); // Output: Alice
 
   7. ### this-meaning
 
-     1. This is keyword. It refers to different objects depending on how and where it used. The this keyword refers to the context where a piece of code, such as a function's body, is supposed to run.
+     1. This is keyword refers to the context where a piece of code, such as a function's body, is supposed to run. It refers to different objects depending on how and where it used.
      2. You can explicitly control or change the value of this using methods like .call(), .apply(), or .bind(). For instance, using .bind() creates a new function with this permanently set to a specific value:
          ```javascript
             function greet() {
