@@ -302,7 +302,7 @@ Can be installed on a user's home screen like a native app and can run independe
    **Let** - can be reasigned.
    **Const** - can't be reasigned.
    
-1. ### arrow function explanation
+2. ### arrow function explanation
    **Functional expression** - function defined inside an expression. Example:
 
     ```javascript
@@ -455,7 +455,7 @@ obj.greet(); // Output: Alice
       ```
 
   
-   5. ### types enums interfaces
+   4. ### types enums interfaces
       1. What are types, when do we use it? 
        **Types** are definitions of data type. Both're used to define type of data. Typescript compiler use it to  detect errors.
       2. What are **Tuples**? 
@@ -515,13 +515,13 @@ obj.greet(); // Output: Alice
           So, generally speaking, Record is type that helps to define an object with specific keys and values.
           
 
-  6. ### map-foreach-difference
+  5. ### map-foreach-difference
       **Map** return NEW array. It doesn't modify initial array.
       **ForEach** doesn't return array. But runs function for each element of array. Foreach returns original array.
       **Filter, slice** returns new array. They dont mutate initial array.
       **Reduce** returns single accumulated value not an array.
 
-  7. ### this-meaning
+  6. ### this-meaning
 
      1. This is keyword refers to the context where a piece of code, such as a function's body, is supposed to run. It refers to different objects depending on how and where it used.
      2. You can explicitly control or change the value of this using methods like .call(), .apply(), or .bind(). For instance, using .bind() creates a new function with this permanently set to a specific value:
@@ -554,7 +554,7 @@ obj.greet(); // Output: Alice
             obj.show();  // this → obj, logs 10
           ``` 
     
-  8. ### settimeout-async
+  7. ### settimeout-async
       1. setTiimeout is function used to scheduling code for some specific delay, time.
       2. Yes setTimeout is async functino. 
 
@@ -569,6 +569,7 @@ obj.greet(); // Output: Alice
       ```
 
       <img width="565" height="557" alt="image" src="https://github.com/user-attachments/assets/b56bc659-c976-473c-aece-398c6fcc4fd6" />
+      
       SetTimeout  without promises returns timer immidiatelly.
 
 
