@@ -564,9 +564,13 @@ obj.greet(); // Output: Alice
         function delay(ms) {
           return new Promise((resolve) => setTimeout(resolve, ms));
         }
+
+        await delay(1000); // pauses for 1 second
       ```
-      
-      await delay(1000); // pauses for 1 second
+
+      <img width="565" height="557" alt="image" src="https://github.com/user-attachments/assets/b56bc659-c976-473c-aece-398c6fcc4fd6" />
+      SetTimeout  without promises returns timer immidiatelly.
+
 
   10. ### example-promise
         Promise object represents eventual completion or failure of asynchronous function. Whenever tasks should be executed asynchronously.
