@@ -727,6 +727,17 @@ obj.greet(); // Output: Alice
           printNumbers(1,2,3,4,5); // [1,2,3,4,5] 
         ```
 
+       ```javascript
+          function sayThings(tone, ...quotes){ 
+            console.log(Array.isArray(quotes)); //true 
+            console.log(`In ${tone} voice, I say ${quotes}`) 
+          }
+          sayThings("Morgan Freeman","Something serious",
+           " Imploding Universe"," Amen");
+          //In Morgan Freeman voice, I say Something serious,
+           Imploding Universe,Amen
+       ```
+
    14. ### set-object
         Set are collections of unique values:
 
