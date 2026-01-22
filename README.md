@@ -8,7 +8,7 @@
 | 3   | [What is generator ](#generator-function)                                                                             |
 | 4   | [Types Enums Interface. What for are used types? What are tuples? What is union, intersection? What is intersection types? What is record type - provide example](#types-enums-interfaces)                                                                             |
 | 5   | [Difference between map, filter and forEach. Does filter, slice methods create new array or mutating source? What about reduce? ](#map-foreach-difference)                                                                             |
-| 6   | [What is this in js? Can you change value of this? What is this alone, inside object, inside event handler, inside function? What is for are used call,apply methods? If yout type this in console - what will you get? What if funcion is called as object property?](#this-meaning)                                                                             |
+| 6   | [What is this in js? Can you change value of this? What is this alone, inside object, inside event handler, inside function? What is for are used call,apply methods? If yout type this in console - what will you get? What if funcion is called as object property? What will be result of console.log this in strict mode function?](#this-meaning)                                                                             |
 | 7  | [What is setTimeout? Is setTimeOut async?](#settimeout-async)                                                                             |
 | 8  | [What is Promise? Example of promise? What status promis returns? Is promise aycnronious? Name wayss of handling promises. What is promise all? Make a simple example of promise and promise.all. What does return .then while working with Promise? What is difference between promise.all and promise.race? What is then method in promise?](#example-promise)                                                                             |
 | 9  | [What is Closure? Please provide examples. When closure is created when we speak about functions? If variable is declared without keyword, is it global? Does inner function has an access to outer function? ](#closure-explanation)                                                                             |
@@ -552,7 +552,9 @@ obj.greet(); // Output: Alice
             };
             
             obj.show();  // this → obj, logs 10
-          ``` 
+          ```
+
+      5. in strict mode, if you console.log inside function - you will get undefined.
     
   7. ### settimeout-async
       1. setTiimeout is function used to scheduling code for some specific delay, time.
