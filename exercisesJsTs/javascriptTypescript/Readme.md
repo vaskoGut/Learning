@@ -24,9 +24,14 @@
 | 21  | [Why variant with arow function doesnt work when you want to console.log 'this' inside object method?](#arrow-declaration-function-prototype)                                                            |
 | 22  | [get factorial with recursion](#factorial-recursion)                                                            |
 | 23  | [Explain code](#this-arrow-function)                                                            |
+| 24  | [Explain code](#setTimeOut-promise)                                                            |
 
-
-
+```javascript
+   // why it doesnt work?
+   function delay(ms) {
+      return new Promise((resolve) => setTimeout(resolve('delay is done'), ms));
+   }
+```
 
 
 1. ### reverse string
