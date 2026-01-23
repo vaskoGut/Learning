@@ -649,6 +649,7 @@ const LoggedHello = withLogger(Hello, 'Hello');
 
 23. ### this-arrow-function
 <img width="632" height="455" alt="image" src="https://github.com/user-attachments/assets/7f67a0bf-f353-4443-8ac5-c92b99a3d6cd" />
+
 Arrow function doesn't have its own this. It inherits it from out context.
 
 24. ### setTimeOut-promise
