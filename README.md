@@ -1,6 +1,6 @@
 [PATTERNS ( react, js ) question. Info](https://github.com/vaskoGut/Learning/blob/main/patternsJSreact/Readme.md)
 
-# JAVASCRIPT TYPESCRIPT
+# JAVASCRIPT TYPESCRIPT GENERAL QUESTIONS
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [Difference let const var](#what-is-difference-between-let-const-var)                                     |
