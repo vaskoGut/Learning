@@ -1,12 +1,7 @@
 [PATTERNS ( react, js ) question. Info](https://github.com/vaskoGut/Learning/blob/main/patternsJSreact/Readme.md)                                     |
+
 [NEXT.JS questions](https://github.com/vaskoGut/Learning/blob/main/patternsJSreact/Readdme.md)                                     |
 
-| :---:   | :---: |
-| 1   | [Difference let const var](#what-is-difference-between-let-const-var)                                     |
-
-| 2   | [Difference between arrow function and function declaration, expressions](#arrow-function-explanation)                                                                             |
-
-| 3   | [What is generator ](#generator-function)                                                                                   |
 
 # JAVASCRIPT TYPESCRIPT GENERAL QUESTIONS
 | Nm | #Question   |
