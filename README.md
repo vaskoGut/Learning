@@ -1,4 +1,5 @@
 [PATTERNS ( react, js ) question. Info](https://github.com/vaskoGut/Learning/blob/main/patternsJSreact/Readme.md)
+[NEXT.JS questions](https://github.com/vaskoGut/Learning/blob/main/patternsJSreact/Readme.md)
 
 # JAVASCRIPT TYPESCRIPT GENERAL QUESTIONS
 | Nm | #Question   |
