@@ -1,0 +1,4 @@
+// write promise with then catch syntax
+// if some var true resolve true value
+// if no reject
+// add finally some console.log

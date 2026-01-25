@@ -1,0 +1,5 @@
+const result = new Promise((resolve, reject) => {
+  const success = true;
+  if(success) resolve(5);
+  else reject(3);
+}).then(value => console.log('value', value)).catch(error => console.log(error)).finally(() => console.log("Done!"));  // Runs no matter what;
