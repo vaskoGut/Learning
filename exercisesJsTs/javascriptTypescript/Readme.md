@@ -32,7 +32,15 @@
       return new Promise((resolve) => setTimeout(resolve('delay is done'), ms));
    }
 ```
+| 25  | [Why it doesn't work?](#promise-exercise)                                                            |
 
+```javascript
+   // why it doesnt work? Nothing happening after writing this code.
+   const test = new Promise((resolve, reject) => setTimeout(() => {
+       resolve('test');
+     }, 1000)
+   )
+```
 
 1. ### reverse string
    Using **map** method:
@@ -669,6 +677,13 @@ Arrow function doesn't have its own this. It inherits it from out context.
    test();
 ```
 
-
+25. ### promise-exercise
+```javascript
+   // nothing happening because u need to handle result of promise. You dont don anything with it.
+   const test = new Promise((resolve, reject) => setTimeout(() => {
+       resolve('test');
+     }, 1000)
+   ).then(value => console.log(value))
+```
 
 
