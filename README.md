@@ -645,6 +645,9 @@ obj.greet(); // Output: Alice
       ***then()*** is used to handle the result after a Promise is fulfilled (successfully completed).
 
   12. ### closure-explanation
+        SO it's private place for you variables. Imagine scenario, where you have outer function and inner function. And this inner function has access to the variable from outer function.
+      
+        
         1. Every function creates a closure when defined — it keeps a reference to the lexical scope. A closure is formed at function creation, not execution.
             The inner function keeps a persistent link to the scope in which it was created — this preserved scope is the ***closure***.
             A closure is created when:
@@ -679,7 +682,7 @@ obj.greet(); // Output: Alice
          ```
         5. Some time ago closures were used to imitate block scoping. It wasn't available in later versions of JS
     
- 13. ### rest-spread-operator-difference
+ 14. ### rest-spread-operator-difference
       1. ***Spread*** operator is mostly used with arrays. It's used to efficientl merge, cop arrays, pass elements to functions.
          
        You can use spread operator to merge 2 objects,or 2 arrays. In React you can use spread operator to pass properties to the component:
@@ -738,7 +741,7 @@ obj.greet(); // Output: Alice
            Imploding Universe,Amen
        ```
 
-   14. ### set-object
+   15. ### set-object
         Set are collections of unique values:
 
         ```javascript
@@ -756,13 +759,13 @@ obj.greet(); // Output: Alice
         A  **has()** method that takes an element and returns a boolean.
         A  **keys()** method that returns an iterator of the elements in the set.
           
-  15. ### try-catch
+  16. ### try-catch
       Async awaits - before it we had to use callbacks to handle situation.
       
       Wraps code that can fail and pass error to the catch instead of crashing the app.
       So generally speaking we need it to handle errors.
   
-  16. ### type-interface-diff
+  17. ### type-interface-diff
         Types in TypeScript are more flexible and can define primitive, intersection, union, tuple, or different types of data, while interfaces are used to describe the shape of an object
       Yes you can use types to define typf of object.
          ```javascript
