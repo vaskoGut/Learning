@@ -2,10 +2,6 @@
 
 [NEXT.js questions](https://github.com/vaskoGut/Learning/blob/main/frameworks/next.js/Readme.md)                                     |
 
-[NEXT.js questions]([https://github.com/vaskoGut/Learning/blob/main/patternsJSreact/Readme.md](https://github.com/vaskoGut/Learning/blob/main/frameworks/next.js/Readme.md))                                     |
-
-
-
 # JAVASCRIPT TYPESCRIPT GENERAL QUESTIONS
 | Nm | #Question   |
 | :---:   | :---: |
