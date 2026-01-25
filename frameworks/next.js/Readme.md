@@ -14,3 +14,6 @@ Next.js is a React framework that adds features like server-side rendering (SSR)
 
 ***Difference SSR, CSR, SSG***:
 <img width="645" height="195" alt="image" src="https://github.com/user-attachments/assets/71a1a4b5-819b-46ce-aece-48a407ec148c" />
+
+***File based routing***:
+<img width="700" height="583" alt="image" src="https://github.com/user-attachments/assets/381786c5-11c2-46d3-b74a-b65c89d8ce54" />
