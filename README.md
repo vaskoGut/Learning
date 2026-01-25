@@ -1,6 +1,6 @@
 [PATTERNS(react, js) questions](https://github.com/vaskoGut/Learning/blob/main/patternsJSreact/Readme.md)                                     |
 
-[NEXT.js questions](https://github.com/vaskoGut/Learning/blob/main/patternsJSreact/Readme.md)                                     |
+[NEXT.js questions]([https://github.com/vaskoGut/Learning/blob/main/patternsJSreact/Readme.md](https://github.com/vaskoGut/Learning/blob/main/frameworks/next.js/Readme.md))                                     |
 
 [NEXT.JS](https://github.com/vaskoGut/Learning/blob/main/patternsJSreact/Readdme.md((https://github.com/vaskoGut/Learning/blob/main/frameworks/next.js/Readme.md)                                     |
 
