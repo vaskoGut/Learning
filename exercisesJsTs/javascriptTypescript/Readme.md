@@ -32,7 +32,7 @@
       return new Promise((resolve) => setTimeout(resolve('delay is done'), ms));
    }
 ```
-| :---:   | :---: |
+
 | 25  | [Why it doesn't work?](#promise-exercise)                                                            |
 
 ```javascript
