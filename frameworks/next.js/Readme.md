@@ -17,3 +17,8 @@ Next.js is a React framework that adds features like server-side rendering (SSR)
 
 ***File based routing***:
 <img width="700" height="583" alt="image" src="https://github.com/user-attachments/assets/381786c5-11c2-46d3-b74a-b65c89d8ce54" />
+
+***api routes out of the box***:
+API routes out of the box means Next.js gives you a backend without setting anything up. You just create files and you instantly have APIs.
+<img width="692" height="245" alt="image" src="https://github.com/user-attachments/assets/41f11598-2d95-499f-8572-f2774c6fca6e" />
+<img width="458" height="363" alt="image" src="https://github.com/user-attachments/assets/f446966c-5e5d-4a6d-879a-60d7743c5f72" />
