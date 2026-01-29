@@ -1,0 +1,12 @@
+console.log(Promise.all([Promise.resolve(5), Promise.resolve(9)]))
+
+/*
+Promise
+[[PromiseState]]
+: 
+"fulfilled"
+[[PromiseResult]]
+: Array(2)0: 5
+1: 9 length : 2
+[[Prototype]] : Array(0)
+*/

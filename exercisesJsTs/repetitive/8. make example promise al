@@ -1,0 +1,4 @@
+const arrays = [50, Promise.resolve(555), new Promise((resolve, rejest) => resolve(333))];
+
+const result = Promise.all(arrays).then((values) => console.log('values', values));
+console.log('result', result);
