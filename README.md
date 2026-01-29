@@ -2,6 +2,8 @@
 
 [NEXT.js questions](https://github.com/vaskoGut/Learning/blob/main/frameworks/next.js/Readme.md)                                     |
 
+[Project structure](https://github.com/vaskoGut/Learning/blob/main/frameworks/next.js/Readme.md)                                     |
+
 # JAVASCRIPT TYPESCRIPT GENERAL QUESTIONS
 | Nm | #Question   |
 | :---:   | :---: |
