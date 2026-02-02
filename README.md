@@ -67,6 +67,7 @@
 | 59   | [How do you handle multiple promises simultaneously??](#multiple-promises)                                     |
 | 60   | [What is desctructing?](#destructing-js)                                     |
 | 61   | [What are template literals?](#template-literals)                                     |
+| 62   | [Execution context and call stack difference?](#execution-contenxt-call-stack)                                     |
 
 
 # Exercises Javascript Typescript
@@ -1265,6 +1266,11 @@ with promise.all and promise.race we can handle multiple promises.
 
 61. ### ##template-literals
 Template literals are a special way to create strings in JavaScript using backticks (`)
+
+62. ### ##execution-contenxt-call-stack
+Execution context is the environment in which JavaScript code is executed. It contains variables, functions, scope, and the value of this.
+JavaScript creates a global execution context first, and a new execution context for each function call.
+These contexts are managed using the call stack, which follows LIFO order — when a function is called its context is pushed onto the stack, and when it finishes it’s popped off.
 
 __________________________________________________________________________________________________________________________________________
 
