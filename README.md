@@ -2082,6 +2082,7 @@ ______________
 
  8. ###  dependencies-devdependencies-difference
   Dependencies are crucial for your production build. While Devdependencies are needed only while dev work, but we don't need in production build.
+  Dev  dependencies  examples: diffrent linters, babel, webpack, how reload packages etc
 
 ______________
 
