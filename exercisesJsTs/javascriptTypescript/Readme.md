@@ -54,6 +54,7 @@ const user = {
 };
 ```
 | 29  | [Write your own throttle function implementation ?](#throttle-implementation)                                                            |
+
 | 30  | [In which order does it run ?](#microtasks-macrotasks)                                                            |
 <img width="540" height="147" alt="image" src="https://github.com/user-attachments/assets/e780c2f3-9b3b-4f2b-9497-8d1e964b9444" />
 
