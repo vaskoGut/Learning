@@ -1290,10 +1290,11 @@ Event delegation example:
 
 64. ### ##debounce-throttle-difference
 <img width="650" height="390" alt="image" src="https://github.com/user-attachments/assets/2e20fb1e-26ef-4275-bd13-b4eb20e1b8dc" />
-Debounce - runs once. THrottle runs every some time span.
+Debounce - runs once after delay. THrottle runs every some time span.
+Throttle allows the first event, then ignores the others until the delay passes.
+After the delay, the next event is allowed again
 Using throttle and debounce diff:
 <img width="466" height="433" alt="image" src="https://github.com/user-attachments/assets/d009beeb-b477-4b7f-b940-7223556ea6af" />
-
 
 
 __________________________________________________________________________________________________________________________________________
