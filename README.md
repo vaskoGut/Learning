@@ -69,6 +69,10 @@
 | 61   | [What are template literals?](#template-literals)                                     |
 | 62   | [Execution context and call stack difference?](#execution-contenxt-call-stack)                                     |
 | 63   | [Diff between event bubbling, capturing and delegation?](#event-bubbling-delegation-capturing)                                     |
+| 64   | [Diff between throttle and debounce?](#debounce-throttle-difference)                                     |
+
+<img width="650" height="390" alt="image" src="https://github.com/user-attachments/assets/93c5d535-cd08-4eb5-9f9d-77c88732dcf0" />
+
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1283,6 +1287,12 @@ Event delegation example:
     }
   });
 ```
+
+64. ### ##debounce-throttle-difference
+<img width="650" height="390" alt="image" src="https://github.com/user-attachments/assets/2e20fb1e-26ef-4275-bd13-b4eb20e1b8dc" />
+Debounce - runs once. THrottle runs every some time span.
+
+
 
 __________________________________________________________________________________________________________________________________________
 
