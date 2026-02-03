@@ -53,7 +53,7 @@ const user = {
   }
 };
 ```
-| 29  | [Write your own throttle function implementation ?](#prototype-chain)                                                            |
+| 29  | [Write your own throttle function implementation ?](#throttle-implementation)                                                            |
 
 
 
@@ -752,3 +752,25 @@ const user = {
 console.log(user.greet());
 ```
 
+29. ### throttle-implementation
+```javascript
+function throttle(fn, delay) {
+  let timer = null;
+
+  return function (...args) {
+    if (timer) return;
+
+    timer = setTimeout(() => {
+      fn(...args);
+      timer = null;
+    }, delay);
+  };
+}
+
+const sayHello = () => {
+  console.log('hello');
+};
+
+const throttledHello = throttle(sayHello, 100); // 2 seconds delay
+throttledHello();
+```
