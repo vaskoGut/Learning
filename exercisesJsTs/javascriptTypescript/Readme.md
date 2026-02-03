@@ -54,10 +54,9 @@ const user = {
 };
 ```
 | 29  | [Write your own throttle function implementation ?](#throttle-implementation)                                                            |
+| 30  | [In which order does it run ?](#microtasks-macrotasks)                                                            |
+<img width="540" height="147" alt="image" src="https://github.com/user-attachments/assets/e780c2f3-9b3b-4f2b-9497-8d1e964b9444" />
 
-
-
-console.log(user.greet());
 
 1. ### reverse string
    Using **map** method:
@@ -774,3 +773,6 @@ const sayHello = () => {
 const throttledHello = throttle(sayHello, 100); // 2 seconds delay
 throttledHello();
 ```
+
+30. ### microtasks-macrotasks
+<img width="173" height="90" alt="image" src="https://github.com/user-attachments/assets/6fc687cd-e9c5-4122-b149-f35a49886d1a" />
