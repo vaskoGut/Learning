@@ -70,9 +70,7 @@
 | 62   | [Execution context and call stack difference?](#execution-contenxt-call-stack)                                     |
 | 63   | [Diff between event bubbling, capturing and delegation?](#event-bubbling-delegation-capturing)                                     |
 | 64   | [Diff between throttle and debounce?](#debounce-throttle-difference)                                     |
-
-<img width="650" height="390" alt="image" src="https://github.com/user-attachments/assets/93c5d535-cd08-4eb5-9f9d-77c88732dcf0" />
-
+| 65   | [What happens inside Promise.then()](#promise-then-happens)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1295,6 +1293,26 @@ Throttle allows the first event, then ignores the others until the delay passes.
 After the delay, the next event is allowed again
 Using throttle and debounce diff:
 <img width="466" height="433" alt="image" src="https://github.com/user-attachments/assets/d009beeb-b477-4b7f-b940-7223556ea6af" />
+
+65. ### ##promise-then-happens
+Promise.then() registers fulfillment and rejection handlers that are executed asynchronously as microtasks once the promise settles. It returns a new promise whose state depends on the return value or error thrown by the handler.
+
+as rule we dont use these event handlers:
+```javascript
+promise.then(onFulfilled, onRejected);
+onFulfilled → runs if the promise resolves
+onRejected → runs if the promise rejects
+```
+we just use then catch syntax.
+
+```javascript
+Promise.resolve(42).then(v => console.log(v));
+console.log('done');
+```
+At first runs console.log. Then Promise.resolve. Cause it's always scheduled to run later.
+
+1 more example to explore:
+<img width="610" height="377" alt="image" src="https://github.com/user-attachments/assets/fb9286ce-bea8-401e-8fc6-a6a10428aa8d" />
 
 
 __________________________________________________________________________________________________________________________________________
