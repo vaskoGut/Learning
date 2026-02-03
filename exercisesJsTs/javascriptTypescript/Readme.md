@@ -33,7 +33,6 @@
 ```
 
 | 25  | [Why it doesn't work?](#promise-exercise)                                                            |
-
 ```javascript
    // why it doesnt work? Nothing happening after writing this code.
    const test = new Promise((resolve, reject) => setTimeout(() => {
@@ -41,8 +40,24 @@
      }, 1000)
    )
 ```
-| 26  | [Write debounce function?](#debounce-function)                                                            |
+| 26  | [Write your own debounce function implementation?](#debounce-function)                                                            |
 | 27  | [Write simple example of using prototype chain?](#prototype-chain)                                                            |
+| 28  | [Why code below doesn't work?](#arrow-this-err)                                                            |
+```javascript
+const user = {
+  name: "Alex",
+  greet: function() {
+    () => {
+      console.log(this.name);
+    }
+  }
+};
+```
+| 29  | [Write your own throttle function implementation ?](#prototype-chain)                                                            |
+
+
+
+console.log(user.greet());
 
 1. ### reverse string
    Using **map** method:
@@ -721,3 +736,19 @@ useDebounce(5);
 parent is the prototype of child.
 child inherits the greet method from parent.
 The chain consists of child → parent → Object.prototype → null.
+
+28. ### arrow-this-err
+```javascript
+functino () => {...} isn't called. Correct code:
+const user = {
+  name: "Alex",
+  greet: function() {
+    (() => {
+      console.log(this.name);
+    })();
+  }
+}
+
+console.log(user.greet());
+```
+
