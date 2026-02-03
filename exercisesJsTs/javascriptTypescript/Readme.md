@@ -25,8 +25,6 @@
 | 22  | [get factorial with recursion](#factorial-recursion)                                                            |
 | 23  | [Explain code](#this-arrow-function)                                                            |
 | 24  | [Explain code below doesn't work?](#setTimeOut-promise)                                                            |
-| 25  | [Write debounce function?](#debounce-function)                                                            |
-
 const logSmth = (a) => console.log('smth:', a);
 const useDebounce = debounce(logSmth);
 useDebounce(5);
@@ -47,6 +45,7 @@ useDebounce(5);
      }, 1000)
    )
 ```
+| 26  | [Write debounce function?](#debounce-function)                                                            |
 
 1. ### reverse string
    Using **map** method:
