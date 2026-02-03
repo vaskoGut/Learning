@@ -68,7 +68,7 @@
 | 60   | [What is desctructing?](#destructing-js)                                     |
 | 61   | [What are template literals?](#template-literals)                                     |
 | 62   | [Execution context and call stack difference?](#execution-contenxt-call-stack)                                     |
-
+| 63   | [Diff between event bubbling, capturing and delegation?](#event-bubbling-delegation-capturing)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1271,6 +1271,18 @@ Template literals are a special way to create strings in JavaScript using backti
 Execution context is the environment in which JavaScript code is executed. It contains variables, functions, scope, and the value of this.
 JavaScript creates a global execution context first, and a new execution context for each function call.
 These contexts are managed using the call stack, which follows LIFO order — when a function is called its context is pushed onto the stack, and when it finishes it’s popped off.
+
+63. ### ##event-bubbling-delegation-capturing
+<img width="377" height="63" alt="image" src="https://github.com/user-attachments/assets/fbf7a569-560d-4dc0-affb-ba7fb703151b" />
+
+Event delegation example:
+```javascript
+  document.getElementById("list").addEventListener("click", (e) => {
+    if (e.target.tagName === "LI") {
+      console.log(e.target.textContent);
+    }
+  });
+```
 
 __________________________________________________________________________________________________________________________________________
 
