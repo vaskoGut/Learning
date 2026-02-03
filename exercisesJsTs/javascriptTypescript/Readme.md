@@ -25,6 +25,11 @@
 | 22  | [get factorial with recursion](#factorial-recursion)                                                            |
 | 23  | [Explain code](#this-arrow-function)                                                            |
 | 24  | [Explain code below doesn't work?](#setTimeOut-promise)                                                            |
+| 25  | [Write debounce function?](#debounce-function)                                                            |
+
+const logSmth = (a) => console.log('smth:', a);
+const useDebounce = debounce(logSmth);
+useDebounce(5);
 
 ```javascript
    // why it doesnt work?
@@ -687,4 +692,18 @@ Arrow function doesn't have its own this. It inherits it from out context.
    ).then(value => console.log(value))
 ```
 
+26. ### debounce-function
+```javascript
+   function debounce(func, dlay=1000) {
+     let timer;
+   
+     return function(...arg) {
+       clearTimeout(timer);
+       
+       timer = setTimeout(() => {
+         func(...arg);
+       }, dlay)
+     };
+   }
+```
 
