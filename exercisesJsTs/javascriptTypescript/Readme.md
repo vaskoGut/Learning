@@ -42,6 +42,7 @@
    )
 ```
 | 26  | [Write debounce function?](#debounce-function)                                                            |
+| 27  | [Write simple example of using prototype chain?](#prototype-chain)                                                            |
 
 1. ### reverse string
    Using **map** method:
@@ -706,3 +707,17 @@ Arrow function doesn't have its own this. It inherits it from out context.
 useDebounce(5);
 ```
 
+27. ### prototype-chain
+```javascript
+   const user = {
+     sayHi: () => console.log('hi')
+   }
+   
+   user.sayHi();
+   
+   const user2 = Object.create(user);
+   user2.sayHi();
+```
+parent is the prototype of child.
+child inherits the greet method from parent.
+The chain consists of child → parent → Object.prototype → null.
