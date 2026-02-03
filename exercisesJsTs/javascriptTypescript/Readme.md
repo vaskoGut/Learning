@@ -25,10 +25,6 @@
 | 22  | [get factorial with recursion](#factorial-recursion)                                                            |
 | 23  | [Explain code](#this-arrow-function)                                                            |
 | 24  | [Explain code below doesn't work?](#setTimeOut-promise)                                                            |
-const logSmth = (a) => console.log('smth:', a);
-const useDebounce = debounce(logSmth);
-useDebounce(5);
-
 ```javascript
    // why it doesnt work?
    function delay(ms) {
@@ -704,5 +700,9 @@ Arrow function doesn't have its own this. It inherits it from out context.
        }, dlay)
      };
    }
+
+   const logSmth = (a) => console.log('smth:', a);
+   const useDebounce = debounce(logSmth);
+useDebounce(5);
 ```
 
