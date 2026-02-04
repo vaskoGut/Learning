@@ -9,6 +9,21 @@
 | 6   | [What if used async or defer?](#parsing-html-async-defer)                               |
 | 7   | [Normal script, defer, async diff? What are best real  life cases for defer, best for async?](#script-async-defer-diff)                               |
 | 8   | [What is intersection observer?](#intersection-observer)                               |
+| 9   | [Service worker?](#service-worker)                               |
+
+What is a Service Worker?
+
+A Service Worker is a background JavaScript worker that sits between your web app and the network.
+
+Think of it as a programmable network proxy inside the browser.
+
+It can:
+
+Intercept network requests
+
+Decide where responses come from (network, cache, custom logic)
+
+Work even when the page is closed (with limits)
 
 1. ### domain-explanatio
 A domain is basically a human-readable name for an IP address.
@@ -60,6 +75,14 @@ HTML parsing is not blocked while downloading, but parsing pauses briefly during
 Both async and defer avoid blocking HTML parsing. defer preserves order and runs after DOM parsing, while async runs as soon as the script is ready, without order guarantees
 
 <img width="677" height="462" alt="image" src="https://github.com/user-attachments/assets/7e8530ca-0ac5-444a-817c-5607c19a2cdf" />
-
+                           
 8. ### intersection-observer
 Intersection Observer is a browser API that lets you know when an element enters or leaves the viewport (or another container) — without constantly listening to scroll events.
+
+9. ### service-worker
+A Service Worker is a background JavaScript worker that sits between your web app and the network.
+Think of it as a programmable network proxy inside the browser.
+It can:
+Intercept network requests
+Decide where responses come from (network, cache, custom logic)
+Work even when the page is closed (with limits) 
