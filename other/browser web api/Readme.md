@@ -8,6 +8,7 @@
 | 5   | [How browser works when it parsing html to dom and see <script> tag?](#parsing-html-script)                               |
 | 6   | [What if used async or defer?](#parsing-html-async-defer)                               |
 | 7   | [Normal script, defer, async diff? What are best real  life cases for defer, best for async?](#script-async-defer-diff)                               |
+| 8   | [What is intersection observer?](#intersection-observer)                               |
 
 1. ### domain-explanatio
 A domain is basically a human-readable name for an IP address.
@@ -60,5 +61,5 @@ Both async and defer avoid blocking HTML parsing. defer preserves order and runs
 
 <img width="677" height="462" alt="image" src="https://github.com/user-attachments/assets/7e8530ca-0ac5-444a-817c-5607c19a2cdf" />
 
-
-
+8. ### intersection-observer
+Intersection Observer is a browser API that lets you know when an element enters or leaves the viewport (or another container) — without constantly listening to scroll events.
