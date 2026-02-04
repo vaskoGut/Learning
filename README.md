@@ -71,6 +71,7 @@
 | 63   | [Diff between event bubbling, capturing and delegation?](#event-bubbling-delegation-capturing)                                     |
 | 64   | [Diff between throttle and debounce?](#debounce-throttle-difference)                                     |
 | 65   | [What happens inside Promise.then()](#promise-then-happens)                                     |
+| 66   | [How does async/await work under the hood? What async function does return?](#async-await-under-hood)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1314,6 +1315,11 @@ At first runs console.log. Then Promise.resolve. Cause it's always scheduled to 
 1 more example to explore:
 <img width="610" height="377" alt="image" src="https://github.com/user-attachments/assets/fb9286ce-bea8-401e-8fc6-a6a10428aa8d" />
 
+66. ### ##async-await-under-hood
+async/await is syntax sugar on top of Promises.
+It lets you write asynchronous code that looks synchronous, but nothing is actually blocking.
+When you use await it means “Pause this function here, let other stuff run, and come back when this Promise settles.”
+An async function always returns a Promise.
 
 __________________________________________________________________________________________________________________________________________
 
