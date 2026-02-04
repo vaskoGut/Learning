@@ -5,6 +5,9 @@
 | 2   | [What happens when you type a URL and press Enter?](#page-loading)                               |
 | 3   | [When we say the browser parses HTML in a streaming way - what we mean?](#streaming-parsing)                               |
 | 4   | [What is CORS and how does it work simply speaking? Why CORS important, what can be without it, what is default mechanism? Why not to use * sign](#cors-explanation)                               |
+| 5   | [How browser works when it parsing html to dom and see <script> tag?](#parsing-html-script)                               |
+| 6   | [What if used async or defer?](#parsing-html-async-defer)                               |
+| 7   | [Normal script, defer, async diff?](#script-async-defer-diff)                               |
 
 1. ### domain-explanatio
 A domain is basically a human-readable name for an IP address.
@@ -27,3 +30,28 @@ Any website could read responses from another website
 This would be a huge security risk
 So browsers block cross-origin responses by default.
 * sign means u generally speaking allow everything.
+
+5. ### parsing-html-script
+Default behavior:
+HTML parsing stops
+JS is downloaded
+JS is executed
+Parsing resumes
+
+6. ### parsing-html-async-defe
+defer → run after HTML parsing
+async → run ASAP, unordered
+
+7. ### script-async-defer-diff
+<img width="222" height="42" alt="image" src="https://github.com/user-attachments/assets/7aa36db3-809e-406c-a261-b35814e45d19" />
+Normally this blocks rendering html.
+
+<img width="257" height="62" alt="image" src="https://github.com/user-attachments/assets/ed76c293-df36-4f22-9028-6a7b8e2a9147" />
+<img width="287" height="137" alt="image" src="https://github.com/user-attachments/assets/609c5d74-2e54-4311-819a-a19156d3e4d9" />
+HTML parsing is not blocked while downloading, but parsing pauses briefly during execution.
+
+<img width="367" height="292" alt="image" src="https://github.com/user-attachments/assets/aa4a7687-5d97-4c90-a136-adb9f881efec" />
+
+Both async and defer avoid blocking HTML parsing. defer preserves order and runs after DOM parsing, while async runs as soon as the script is ready, without order guarantees
+
+
