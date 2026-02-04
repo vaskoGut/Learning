@@ -6,6 +6,8 @@
 
 ## 4. [BROWSER & Web Apis](https://github.com/vaskoGut/Learning/tree/main/other/projectStructure/Readme.md)                                     |
 
+## 5 [BROWSER & Web Apis](https://github.com/vaskoGut/Learning/tree/main/other//browser%20web%20api/Readme.md)                                     |
+
 # JAVASCRIPT TYPESCRIPT GENERAL QUESTIONS
 | Nm | #Question   |
 | :---:   | :---: |
