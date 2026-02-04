@@ -1,8 +1,8 @@
-[PATTERNS(react, js) questions](https://github.com/vaskoGut/Learning/blob/main/patternsJSreact/Readme.md)                                     |
+1. [PATTERNS(react, js) questions](https://github.com/vaskoGut/Learning/blob/main/patternsJSreact/Readme.md)                                     |
 
-[NEXT.js questions](https://github.com/vaskoGut/Learning/blob/main/frameworks/next.js/Readme.md)                                     |
+2. [NEXT.js questions](https://github.com/vaskoGut/Learning/blob/main/frameworks/next.js/Readme.md)                                     |
 
-[Project structure](https://github.com/vaskoGut/Learning/tree/main/other/projectStructure/Readme.md)                                     |
+3. [Project structure](https://github.com/vaskoGut/Learning/tree/main/other/projectStructure/Readme.md)                                     |
 
 # JAVASCRIPT TYPESCRIPT GENERAL QUESTIONS
 | Nm | #Question   |
