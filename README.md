@@ -75,6 +75,7 @@
 | 65   | [What happens inside Promise.then()](#promise-then-happens)                                     |
 | 66   | [How does async/await work under the hood? What async function does return?](#async-await-under-hood)                                     |
 | 67   | [Reflow and repaint diff? List examples](#reflow-repeaint-diff)                                     |
+| 68   | [How does run browser rendering pipeline?](#browser-rendering-pipeline)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1327,6 +1328,13 @@ An async function always returns a Promise.
 67. ### ##reflow-repeaint-diff
 <img width="445" height="166" alt="image" src="https://github.com/user-attachments/assets/86c28b40-9e5b-4447-870e-0e5b8550d8b7" />
 <img width="467" height="225" alt="image" src="https://github.com/user-attachments/assets/8fc509b5-edad-43c9-b46d-bb214d99db94" />
+
+68. ### #browser-rendering-pipeline
+The browser rendering pipeline starts by parsing HTML into the DOM and CSS into the CSSOM.
+These are combined to create the render tree, which contains only visible elements. 
+The browser then performs layout (pozitions,sizes) to calculate element sizes and positions, paints pixels like text and colors,
+and finally composites layers using the GPU to display the page.
+JavaScript can modify the DOM or styles and trigger parts of this pipeline again.
 
 
 __________________________________________________________________________________________________________________________________________
