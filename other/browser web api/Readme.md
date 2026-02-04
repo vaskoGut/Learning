@@ -44,6 +44,7 @@ async → run ASAP, unordered
 
 7. ### script-async-defer-diff
 <img width="222" height="42" alt="image" src="https://github.com/user-attachments/assets/7aa36db3-809e-406c-a261-b35814e45d19" />
+
 Normally this blocks rendering html.
 
 <img width="257" height="62" alt="image" src="https://github.com/user-attachments/assets/ed76c293-df36-4f22-9028-6a7b8e2a9147" />
