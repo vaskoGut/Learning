@@ -59,6 +59,7 @@ const user = {
 <img width="540" height="147" alt="image" src="https://github.com/user-attachments/assets/e780c2f3-9b3b-4f2b-9497-8d1e964b9444" />
 
 | 31  | [What will be order of execution of next code ?](#async-microtask-exmpl)                                                            |
+
 <img width="311" height="202" alt="image" src="https://github.com/user-attachments/assets/28e7a9ab-9661-4b50-b73f-014fe8e974dd" />
 
 
