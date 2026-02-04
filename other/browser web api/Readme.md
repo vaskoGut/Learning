@@ -7,7 +7,7 @@
 | 4   | [What is CORS and how does it work simply speaking? Why CORS important, what can be without it, what is default mechanism? Why not to use * sign](#cors-explanation)                               |
 | 5   | [How browser works when it parsing html to dom and see <script> tag?](#parsing-html-script)                               |
 | 6   | [What if used async or defer?](#parsing-html-async-defer)                               |
-| 7   | [Normal script, defer, async diff?](#script-async-defer-diff)                               |
+| 7   | [Normal script, defer, async diff? What are best real  life cases for defer, best for async?](#script-async-defer-diff)                               |
 
 1. ### domain-explanatio
 A domain is basically a human-readable name for an IP address.
@@ -57,5 +57,8 @@ HTML parsing is not blocked.
 HTML parsing is not blocked while downloading, but parsing pauses briefly during execution.
 
 Both async and defer avoid blocking HTML parsing. defer preserves order and runs after DOM parsing, while async runs as soon as the script is ready, without order guarantees
+
+<img width="677" height="462" alt="image" src="https://github.com/user-attachments/assets/7e8530ca-0ac5-444a-817c-5607c19a2cdf" />
+
 
 
