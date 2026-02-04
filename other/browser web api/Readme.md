@@ -50,9 +50,11 @@ Normally this blocks rendering html.
 <img width="257" height="62" alt="image" src="https://github.com/user-attachments/assets/ed76c293-df36-4f22-9028-6a7b8e2a9147" />
 <img width="287" height="137" alt="image" src="https://github.com/user-attachments/assets/609c5d74-2e54-4311-819a-a19156d3e4d9" />
 
-HTML parsing is not blocked while downloading, but parsing pauses briefly during execution.
+HTML parsing is not blocked.
 
 <img width="367" height="292" alt="image" src="https://github.com/user-attachments/assets/aa4a7687-5d97-4c90-a136-adb9f881efec" />
+
+HTML parsing is not blocked while downloading, but parsing pauses briefly during execution.
 
 Both async and defer avoid blocking HTML parsing. defer preserves order and runs after DOM parsing, while async runs as soon as the script is ready, without order guarantees
 
