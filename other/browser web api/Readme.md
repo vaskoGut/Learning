@@ -1,4 +1,4 @@
-# PROJECT STRUCTURE
+# BROWSWER API
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [What is packages json? what does it include?](#package-json)                               |
