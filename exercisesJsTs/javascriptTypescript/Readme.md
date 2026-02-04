@@ -782,3 +782,12 @@ throttledHello();
 
 30. ### microtasks-macrotasks
 <img width="173" height="90" alt="image" src="https://github.com/user-attachments/assets/6fc687cd-e9c5-4122-b149-f35a49886d1a" />
+
+31. ### async-microtask-exmpl
+<img width="457" height="118" alt="image" src="https://github.com/user-attachments/assets/b98c93a2-bfff-4ba6-bb01-a38f8127d192" />
+explanation:
+1. Synchronous code starts - A
+2. Test is called, more sycch code - B
+3. Await promise.Promise resolved. Await pauses async code and evrth that runs after. Await puts it in microtask queue.
+4. Execution continues with the next synchronous line - D
+5. Call stack is empty → microtasks run - C
