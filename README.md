@@ -74,6 +74,7 @@
 | 64   | [Diff between throttle and debounce?](#debounce-throttle-difference)                                     |
 | 65   | [What happens inside Promise.then()](#promise-then-happens)                                     |
 | 66   | [How does async/await work under the hood? What async function does return?](#async-await-under-hood)                                     |
+| 67   | [Reflow and repaint diff? List examples](#reflow-repeaint-diff)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1322,6 +1323,11 @@ async/await is syntax sugar on top of Promises.
 It lets you write asynchronous code that looks synchronous, but nothing is actually blocking.
 When you use await it means “Pause this function here, let other stuff run, and come back when this Promise settles.”
 An async function always returns a Promise.
+
+67. ### ##reflow-repeaint-diff
+<img width="445" height="166" alt="image" src="https://github.com/user-attachments/assets/86c28b40-9e5b-4447-870e-0e5b8550d8b7" />
+<img width="467" height="225" alt="image" src="https://github.com/user-attachments/assets/8fc509b5-edad-43c9-b46d-bb214d99db94" />
+
 
 __________________________________________________________________________________________________________________________________________
 
