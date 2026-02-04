@@ -1768,15 +1768,14 @@ It's worth to mention we use high order components with keyword with.
 Storing business logic that can be shared across the application (not just in React components).
 
   44. ### #virtual-dom-shadow-dom-difference
-      Virtual dom - The Virtual DOM is a tree of JavaScript objects that represent the real DOM elements
-      Shadow dom-is a form of encapsulation on our element. In simple words, Shadow DOM is a way to create a "mini DOM" inside a web component that is hidden and separated from the rest of the page.
-      This means that the styles and elements inside the shadow DOM are encapsulated (protected or isolated) so they don’t get affected by, or affect, anything outside of it
+      ***Virtual DOM*** is a JavaScript abstraction used by frameworks like React to efficiently update the real DOM by diffing changes.
+      ***Shadow DOM*** is a browser feature used by Web Components to encapsulate markup and styles so they don’t leak or get affected by the outside page. They solve different problems and are often used independently
 
-  45. ### #react-create-element-react-dom
+  46. ### #react-create-element-react-dom
       At first we creating elment with React.createElement() then we render it with ReactDOM.render(ourElmenet, mountElemnent). Now is used jsx. Youjust render elment in that way:
       function renderElement() { return <div><p>test<p></div> }. Main reason why it's better- it's syntax. You can create element a lot easier.
 
-  46. ### #react-proptypes-question
+  47. ### #react-proptypes-question
       We dont use react proptypes ( which were running during runtime ). Cause in new projects we can use typescript and static types in development process.
 
   
