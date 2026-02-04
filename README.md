@@ -4,7 +4,7 @@
 
 ## 3. [Project structure](https://github.com/vaskoGut/Learning/tree/main/other/projectStructure/Readme.md)                                     |
 
-## 4. [BROWSER & Web Apis](https://github.com/vaskoGut/Learning/tree/main/other/projectStructure/Readme.md)                                     |
+## 4. [Architecture, project structure, project build](https://github.com/vaskoGut/Learning/tree/main/other/projectStructure/Readme.md)                                     |
 
 ## 5 [BROWSER & Web Apis](https://github.com/vaskoGut/Learning/tree/main/other//browser%20web%20api/Readme.md)                                     |
 
