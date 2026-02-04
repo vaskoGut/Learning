@@ -274,6 +274,7 @@ Can be installed on a user's home screen like a native app and can run independe
 |11   | [What is tailwind.css?](#tailwind-css)                                     | 
 |12   | [Srcset advantage?](#srcset-advantage)                                     |
 |13   | [What is generally speaking grid in css? What is advantage of grid according to the flex?](#grid-css)                                     | 
+|14   | [Display none and visib hidden diff?](#display-none-visi-hidden)                                     | 
 
 # HTML
 | Nm | #Question   |
@@ -2564,8 +2565,11 @@ ______________
    1. CSS Grid is a 2-dimensional layout system (rows + columns) used to create complex, responsive layouts easily.
    An example of 3 columns layout:
    <img width="1639" height="408" alt="image" src="https://github.com/user-attachments/assets/35656b40-6d9c-43bf-9093-9f8fc08a0a2a" />
-   2. Flexbox is 1 dimensional. Grid is 2 dimensia ( You control rows AND columns together ). 
-       
+   2. Flexbox is 1 dimensional. Grid is 2 dimensia ( You control rows AND columns together ).
+
+13. ### #display-none-visi-hidden
+**display none**: The element is completely removed from the layout.
+**visibility hidden**: Element isnt removed it's just hidden. It takes space but it's not visible
     
 ______________ ______________ ______________ ______________ __________________________________________
 ______________ ______________ ______________ ______________ __________________________________________
