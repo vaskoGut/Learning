@@ -64,6 +64,7 @@ const user = {
 <img width="311" height="202" alt="image" src="https://github.com/user-attachments/assets/28e7a9ab-9661-4b50-b73f-014fe8e974dd" />
 
 | 32  | [whyt it doesnt work? fix it](#recursive-flatten-deep)                                                            |
+
 ```javascript
 function flattenDeep(arr) {
   return arr.reduce((acc, curr) => {
