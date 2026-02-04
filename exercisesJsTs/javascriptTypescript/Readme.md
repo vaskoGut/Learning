@@ -807,3 +807,20 @@ explanation:
 3. Await promise.Promise resolved. Await pauses async code and evrth that runs after. Await puts it in microtask queue.
 4. Execution continues with the next synchronous line - D
 5. Call stack is empty → microtasks run - C
+
+32. ### recursive-flatten-deep
+
+```javascript
+// it doesnt work because of lack of  returns
+function flattenDeep(arr) {
+  return arr.reduce((acc, curr) => {
+    if(Array.isArray(curr)) {
+      return acc.concat(flattenDeep(curr))
+    }
+    else { 
+      return acc.concat(curr);
+    }
+  }, [])
+}
+console.log(flattenDeep([1, [2, 3, 4]]));
+```
