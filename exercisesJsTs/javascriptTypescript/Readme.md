@@ -98,6 +98,9 @@ console.log(flattenDeep([1, [2, 3, 4]]));
   .then(res => console.log(res.json())) // why its bad? how to do it correctly?
 ```
 
+| 36  | [Write in useEffect fetch with then and async await?](#fetchh-then-async-await-approach)                                                            |
+
+
 1. ### reverse string
    Using **map** method:
    
@@ -892,4 +895,34 @@ async function getPost() {
     console.error(err);
   }
 }
+```
+
+36. ### fetchh-then-async-await-approach
+```javascript
+  // async await approach
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          'https://jsonplaceholder.typicode.com/posts/1'
+        );
+        const data = await response.json();
+        setData(data);
+      } catch (erro) {
+        console.log(erro);
+      }
+    };
+
+    fetchData();
+  }, []);
+```
+
+```javascript
+// fetch then approach
+useEffect(() => {
+ fetch('https://jsonplaceholder.typicode.com/posts/1')
+   .then((res) => res.json())
+   .then((data) => setData(data))
+   .catch((err) => console.error(err));
+}, []);
 ```
