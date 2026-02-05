@@ -79,6 +79,7 @@
 | 67   | [Reflow and repaint diff? List examples](#reflow-repeaint-diff)                                     |
 | 68   | [How does run browser rendering pipeline?](#browser-rendering-pipeline)                                     |
 | 69   | [what is pick utility in typescript?](#typescript-pick-utility)                                     |
+| 70   | [Implement pick utility?](#typescript-pick-utility-implementation)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1356,6 +1357,13 @@ const todo: TodoPreview = {
 };
 ```
 
+70. ### #ypescript-pick-utility-implementation
+```javascript
+  type PickMine<T, K extends keyof T> = {
+    [key in K]: T[K]
+  }
+  // “Given a type T and a set of its keys K, build a new object type with only those keys, preserving their original types.”
+```
 __________________________________________________________________________________________________________________________________________
 
 # Exercises Javascript Typescript
