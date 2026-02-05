@@ -78,6 +78,7 @@
 | 66   | [How does async/await work under the hood? What async function does return?](#async-await-under-hood)                                     |
 | 67   | [Reflow and repaint diff? List examples](#reflow-repeaint-diff)                                     |
 | 68   | [How does run browser rendering pipeline?](#browser-rendering-pipeline)                                     |
+| 69   | [what is pick utility in typescript?](#typescript-pick-utility)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1339,6 +1340,21 @@ The browser then performs layout (pozitions,sizes) to calculate element sizes an
 and finally composites layers using the GPU to display the page.
 JavaScript can modify the DOM or styles and trigger parts of this pipeline again.
 
+69. ### #typescript-pick-utility
+```javascript
+interface Todo {
+  title: string;
+  description: string;
+  completed: boolean;
+}
+ 
+type TodoPreview = Pick<Todo, "title" | "completed">;
+ 
+const todo: TodoPreview = {
+  title: "Clean room",
+  completed: false,
+};
+```
 
 __________________________________________________________________________________________________________________________________________
 
