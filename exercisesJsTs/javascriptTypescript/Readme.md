@@ -93,6 +93,10 @@ console.log(flattenDeep([1, [2, 3, 4]]));
    }
 ```
 
+| 35  | [Explain code below - why it better to place res.json() in 2 different thens or what is alternative?](#fetch-tehn-json)                                                            |
+```javascript
+  .then(res => console.log(res.json())) // why its bad? how to do it correctly?
+```
 
 1. ### reverse string
    Using **map** method:
@@ -866,3 +870,26 @@ console.log(flattenDeep([1, [2, 3, 4]]));
    }
 ```
 Answer: **return fn(...args)** returns result of function. If we keep just **fn(...args)** without return, we will just execute function nothing more.
+
+35. ### fetch-tehn-json
+Answer: it's bad cause res.json() resolves promise. You dont have result immidiately. Correct ways:
+
+```javascript
+fetch('https://jsonplaceholder.typicode.com/posts/1')
+  .then(res => res.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err));
+```
+
+or
+```javascript
+async function getPost() {
+  try {
+    const res = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+    const data = await res.json();
+    console.log(data);
+  } catch (err) {
+    console.error(err);
+  }
+}
+```
