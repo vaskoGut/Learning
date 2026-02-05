@@ -80,6 +80,8 @@
 | 68   | [How does run browser rendering pipeline?](#browser-rendering-pipeline)                                     |
 | 69   | [what is pick utility in typescript?](#typescript-pick-utility)                                     |
 | 70   | [Implement pick utility?](#typescript-pick-utility-implementation)                                     |
+| 71   | [What are generics?](#ts-generics)                                     |
+
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1364,6 +1366,11 @@ const todo: TodoPreview = {
   }
   // “Given a type T and a set of its keys K, build a new object type with only those keys, preserving their original types.”
 ```
+
+71. ### #ts-generics
+<img width="636" height="682" alt="image" src="https://github.com/user-attachments/assets/70e3b8a5-bc6c-4a04-b933-ae40809b2ad0" />
+
+
 __________________________________________________________________________________________________________________________________________
 
 # Exercises Javascript Typescript
