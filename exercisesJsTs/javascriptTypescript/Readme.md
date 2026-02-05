@@ -78,7 +78,7 @@ function flattenDeep(arr) {
 }
 console.log(flattenDeep([1, [2, 3, 4]]));
 ```
-
+| 33  | [Implement once function](#once-functino)                                                            |
 
 1. ### reverse string
    Using **map** method:
@@ -823,4 +823,18 @@ function flattenDeep(arr) {
   }, [])
 }
 console.log(flattenDeep([1, [2, 3, 4]]));
+```
+
+33. ### once-functino
+
+```javascript
+   function once(fn) {
+     let run = false; // track if already called
+   
+     return function(...args) {
+       if (run) return; // check on every call
+       run = true;
+       return fn(...args);
+     };
+   }
 ```
