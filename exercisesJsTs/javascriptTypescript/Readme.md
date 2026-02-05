@@ -79,6 +79,20 @@ function flattenDeep(arr) {
 console.log(flattenDeep([1, [2, 3, 4]]));
 ```
 | 33  | [Implement once function](#once-functino)                                                            |
+| 34  | [Difference in implementetnion - what changes if we return or not return our function inside once?](#once-functino-difference)                                                            |
+
+```javascript
+   function once(fn) {
+     let run = false; // track if already called
+   
+     return function(...args) {
+       if (run) return; // check on every call
+       run = true;
+       return fn(...args);
+     };
+   }
+```
+
 
 1. ### reverse string
    Using **map** method:
@@ -826,7 +840,6 @@ console.log(flattenDeep([1, [2, 3, 4]]));
 ```
 
 33. ### once-functino
-
 ```javascript
    function once(fn) {
      let run = false; // track if already called
@@ -838,3 +851,18 @@ console.log(flattenDeep([1, [2, 3, 4]]));
      };
    }
 ```
+
+34. ### once-functino-difference
+```javascript
+   // solution taken from above question
+   function once(fn) {
+     let run = false;
+   
+     return function(...args) {
+       if (run) return; 
+       run = true;
+       return fn(...args);
+     };
+   }
+```
+Answer: **return fn(...args)** returns result of function. If we keep just **fn(...args)** without return, we will just execute function nothing more.
