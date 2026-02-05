@@ -159,7 +159,7 @@ let result = value ?? "default";
 | 56   | [What are advantages of using react over vanillajs ?](#react-vanilla-js)                                     |
 | 57   | [Why do we say React is declarative rather than imperative?](#declarative-imperative-react)                                     |
 | 58   | [Settimeout setinterval difference?](#setimeout-setinterval)                                     |
-
+| 59   | [What is react hydration?](#react-hydration)                                     |
 
 
 # Redux
@@ -1943,6 +1943,10 @@ This makes state changes predictable and easier to debug
  57. ### #declarative-imperative-react
    React automatically manages DOM updates and re-rendering. So you generally speaking are describing what you want. Not doing it yourself.
    Vanila js - is more imperative approach. When you doing things 'by your hand'.
+
+
+ 59. ### #react-hydration
+<img width="653" height="373" alt="image" src="https://github.com/user-attachments/assets/15992152-c638-4696-8b6f-9b5d5923ff00" />
       
  ________________________________________________________________________________________________________________________________
   1. ### #what-is-redux
