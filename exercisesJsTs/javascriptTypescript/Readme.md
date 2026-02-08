@@ -99,7 +99,7 @@ console.log(flattenDeep([1, [2, 3, 4]]));
 ```
 
 | 36  | [Write in useEffect fetch with then and async await?](#fetchh-then-async-await-approach)                                                            |
-
+| 37  | [Null and undefined equality?](#null-undefined)
 
 1. ### reverse string
    Using **map** method:
@@ -926,3 +926,9 @@ useEffect(() => {
    .catch((err) => console.error(err));
 }, []);
 ```
+
+37. ### null-undefined
+null == undefined // true
+null === undefined // false.
+null and undefined are only equal to each other (and to nothing else)
+
