@@ -12,6 +12,7 @@
 | 8   | [How you can comparare objects?](#object-comparizing)                                                                                                |
 | 9   | [Is nAn equall to nAn?](#nan-equality)                                                                                                |
 | 10  | [[] + [] result and why?](#empty-array-equality)                                                                                                |
+| 11  | [what is flat object?](#flat-object)                                                                                                |
 
  nan-equality
 
@@ -58,5 +59,5 @@ result of comparing 2 arrays or 2 objects will be false cause objects are compar
 10.  ### empty-array-equality
 <img width="838" height="665" alt="image" src="https://github.com/user-attachments/assets/319bd834-064e-40ba-a46d-0ae2b2136f87" />
 
-
-
+11.  ### flat-object
+flat-object is object without nested objects.
