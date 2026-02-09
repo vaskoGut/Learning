@@ -928,8 +928,4 @@ useEffect(() => {
 }, []);
 ```
 
-37. ### null-undefined
-null == undefined // true
-null === undefined // false.
-null and undefined are only equal to each other (and to nothing else)
 
