@@ -1,6 +1,6 @@
 ##  1. [Javascript type equality questions](https://github.com/vaskoGut/Learning/blob/main/exercisesJsTs/javascriptTypescript/ReadmyTypes.md)                                     |
 
-##  2. [Objects questions](https://github.com/vaskoGut/Learning/blob/main/exercisesJsTs/javascriptTypescript/ReadmyTypes.md)                                     |
+##  2. [Objects questions](https://github.com/vaskoGut/Learning/blob/main/exercisesJsTs/javascriptTypescript/Objects.mdd)                                     |
 
 # JAVASCRIPT TYPESCRIPT
 | Nm | #Question   |
