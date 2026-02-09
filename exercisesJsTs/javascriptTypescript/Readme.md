@@ -102,7 +102,10 @@ console.log(flattenDeep([1, [2, 3, 4]]));
 
 | 36  | [Write in useEffect fetch with then and async await?](#fetchh-then-async-await-approach)                                                            |
 
-| 37  | [Null and undefined equality?](#null-undefined)
+| 37  | [why code below doesn't iterates through all elemnents?](#every-method)                                                            |
+```javascript
+   Object.keys(obj2).every(elem => console.log(elem));
+```
 
 1. ### reverse string
    Using **map** method:
@@ -930,4 +933,7 @@ useEffect(() => {
 }, []);
 ```
 
+36. ### every-method
+Because .every() stops as soon as its callback returns a falsy value, and
+console.log() returns undefined, which is falsy.
 
