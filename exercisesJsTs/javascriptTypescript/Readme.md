@@ -933,7 +933,7 @@ useEffect(() => {
 }, []);
 ```
 
-36. ### every-method
+37. ### every-method
 Because .every() stops as soon as its callback returns a falsy value, and
 console.log() returns undefined, which is falsy.
 
