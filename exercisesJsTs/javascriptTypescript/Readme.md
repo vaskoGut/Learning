@@ -1,4 +1,4 @@
-##  1. [JS EQUALITY QUESTIONS]([https://github.com/vaskoGut/Learning/blob/main/patternsJSreact/Readme.md](https://github.com/vaskoGut/Learning/blob/main/exercisesJsTs/javascriptTypescript/ReadmyTypes.md))                                     |
+##  1. [Javascript type equality questions](https://github.com/vaskoGut/Learning/blob/main/patternsJSreact/Readme.md)                                     |
 
 # JAVASCRIPT TYPESCRIPT
 | Nm | #Question   |
