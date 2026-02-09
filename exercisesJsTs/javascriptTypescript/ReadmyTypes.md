@@ -9,8 +9,6 @@
 | 5   | [Implement write example, when 2 objects will be equal](#objects-equality)                                                                                                |
 | 6   | [What is output 0 == '0' and 0 === '0'](#zero-equlatiy)                                                                                                |
 
-0 == "0"
-
 1. ### null-undefined
 null == undefined // true
 null === undefined // false.
