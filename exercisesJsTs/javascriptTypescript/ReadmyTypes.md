@@ -8,6 +8,8 @@
 | 4   | [what is result of comparing 2 empty arrays and 2 empty objects?](#arrays-objects)                                                                                                |
 | 5   | [Implement write example, when 2 objects will be equal](#objects-equality)                                                                                                |
 | 6   | [What is output 0 == '0' and 0 === '0'](#zero-equlatiy)                                                                                                |
+| 7   | [What is output 0 == false ](#zero-false-equlatiy)                                                                                                |
+
 
 1. ### null-undefined
 null == undefined // true
@@ -37,4 +39,9 @@ result of comparing 2 arrays or 2 objects will be false cause objects are compar
 
 6.  ### zero-equality
 <img width="326" height="261" alt="image" src="https://github.com/user-attachments/assets/db3e2a80-a9e7-4463-8c99-13bbee6e50ce" />
+
+7.  ### zero-false-equlatiy
+```javascript
+  0 == false // true
+```
 
