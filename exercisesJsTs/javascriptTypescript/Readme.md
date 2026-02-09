@@ -99,6 +99,7 @@ console.log(flattenDeep([1, [2, 3, 4]]));
 ```
 
 | 36  | [Write in useEffect fetch with then and async await?](#fetchh-then-async-await-approach)                                                            |
+
 | 37  | [Null and undefined equality?](#null-undefined)
 
 1. ### reverse string
