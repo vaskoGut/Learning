@@ -56,6 +56,7 @@ result of comparing 2 arrays or 2 objects will be false cause objects are compar
 <img width="400" height="287" alt="image" src="https://github.com/user-attachments/assets/d9df33ce-9de7-4346-9a78-f16213b5654b" />
 
 10.  ### empty-array-equality
-<img width="400" height="287" alt="image" src="https://github.com/user-attachments/assets/d9df33ce-9de7-4346-9a78-f16213b5654b" />
+<img width="838" height="665" alt="image" src="https://github.com/user-attachments/assets/319bd834-064e-40ba-a46d-0ae2b2136f87" />
+
 
 
