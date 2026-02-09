@@ -9,7 +9,7 @@
 | 5   | [Implement write example, when 2 objects will be equal](#objects-equality)                                                                                                |
 | 6   | [What is output 0 == '0' and 0 === '0'](#zero-equlatiy)                                                                                                |
 | 7   | [What is output 0 == false ](#zero-false-equlatiy)                                                                                                |
-
+| 8   | [How you can comparare objects?](#object-comparizing)                                                                                                |
 
 1. ### null-undefined
 null == undefined // true
@@ -45,3 +45,5 @@ result of comparing 2 arrays or 2 objects will be false cause objects are compar
   0 == false // true
 ```
 
+8.  ### object-comparizing
+<img width="306" height="131" alt="image" src="https://github.com/user-attachments/assets/3e36d2da-d0b7-4a60-9aea-f25a59aa8183" />
