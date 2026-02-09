@@ -11,6 +11,7 @@
 | 7   | [What is output 0 == false ](#zero-false-equlatiy)                                                                                                |
 | 8   | [How you can comparare objects?](#object-comparizing)                                                                                                |
 | 9   | [Is nAn equall to nAn?](#nan-equality)                                                                                                |
+| 10  | [[] + [] result and why?](#empty-array-equality)                                                                                                |
 
  nan-equality
 
@@ -53,4 +54,8 @@ result of comparing 2 arrays or 2 objects will be false cause objects are compar
 
 9.  ### nan-equality
 <img width="400" height="287" alt="image" src="https://github.com/user-attachments/assets/d9df33ce-9de7-4346-9a78-f16213b5654b" />
+
+10.  ### empty-array-equality
+<img width="400" height="287" alt="image" src="https://github.com/user-attachments/assets/d9df33ce-9de7-4346-9a78-f16213b5654b" />
+
 
