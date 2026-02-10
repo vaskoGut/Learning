@@ -7,17 +7,21 @@
 
 1. ### compare-flat-objects
 ```javascript
- function isObject(obj) {
+ function isObjectValid(obj) {
   return typeof obj == 'object' && obj !== null;
 }
 
-function compareFlatObject(obj1, obj2) {
-  if(!isObject(obj1) || (!isObject(obj2))) return 'its not objects';
+function compareObject(obj1, obj2) {
+  if(!isObjectValid(obj1) || !isObjectValid(obj2)) return false;
 
-  if(Object.keys(obj1).length !== Object.keys(obj2).length) return 'objects have diff number of keys';
+  const keysObj1 = Object.keys(obj1);
+  const keysObj2 = Object.keys(obj2);
 
-  return (Object.keys(obj2).every(elem => obj1[elem] === obj2[elem]));
+  if(keysObj1.length !== keysObj2.length) return false;
+
+  return keysObj1.every(key => obj1[key] === obj2[key]);
 }
 
-console.log(compareFlatObject({ name: 'vasyl', surname: 'gutnyk'}, { name: 'vasyl', surname: 'gutnyk'}));
+
+console.log(compareObject({ name: 'vasyl', surname: 'gutnyk'}, { name: 'vasyl', surname: 'gutnyk'}));
 ```
