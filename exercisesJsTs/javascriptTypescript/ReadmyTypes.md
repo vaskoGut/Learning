@@ -13,8 +13,7 @@
 | 9   | [Is nAn equall to nAn?](#nan-equality)                                                                                                |
 | 10  | [[] + [] result and why?](#empty-array-equality)                                                                                                |
 | 11  | [what is flat object?](#flat-object)                                                                                                |
-
- nan-equality
+| 12  | [what is result of null == null](#null-equality)                                                                                                |
 
 1. ### null-undefined
 null == undefined // true
@@ -61,3 +60,8 @@ result of comparing 2 arrays or 2 objects will be false cause objects are compar
 
 11.  ### flat-object
 flat-object is object without nested objects.
+
+12.  ### null-equality
+```javascript
+ null === null // true
+```
