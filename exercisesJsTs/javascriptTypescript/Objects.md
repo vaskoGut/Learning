@@ -61,7 +61,7 @@ console.log(compareObject({name: 'Vasyl', job: {
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [How do you access and update values in an object?](#access-object)                                                                                                |
-
+| 2   | [How do you add or remove properties from an object?](#add-remove-object)                                                                                                |
 
 1. ### access-object
 by dot or by array notation
@@ -70,3 +70,11 @@ const user = { name: "Alex", age: 25 };
 user.age = 26;
 user["name"] = "Alexa";
 ```
+
+2. ### add-remove-object
+```javascript
+user.email = "alex@email.com";
+delete user.age;
+```
+if proper doesn't exist, nothing happening
+
