@@ -3,7 +3,7 @@
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [Write function to compare flatten objects](#compare-flat-objects)                                                                                                |
-
+| 2   | [Refactor code from example above to care nested objects](#compare-nested-objects)                                                                                                |
 
 1. ### compare-flat-objects
 ```javascript
