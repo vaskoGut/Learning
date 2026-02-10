@@ -57,3 +57,16 @@ console.log(compareObject({name: 'Vasyl', job: {
 
 
 #  OBJECT QUESTIONS TEORY
+
+| Nm | #Question   |
+| :---:   | :---: |
+| 1   | [How do you access and update values in an object?](#access-object)                                                                                                |
+
+
+1. ### access-object
+by dot or by array notation
+```javascript
+const user = { name: "Alex", age: 25 };
+user.age = 26;
+user["name"] = "Alexa";
+```
