@@ -52,3 +52,8 @@ console.log(compareObject({name: 'Vasyl', job: {
   position: 'doctor'
 } }));
 ```
+
+
+
+
+#  OBJECT QUESTIONS TEORY
