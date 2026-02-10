@@ -62,6 +62,7 @@ console.log(compareObject({name: 'Vasyl', job: {
 | :---:   | :---: |
 | 1   | [How do you access and update values in an object?](#access-object)                                                                                                |
 | 2   | [How do you add or remove properties from an object?](#add-remove-object)                                                                                                |
+| 3   | [How to list properties of object?](#list-object-properties)                                                                                                |
 
 1. ### access-object
 by dot or by array notation
@@ -76,5 +77,21 @@ user["name"] = "Alexa";
 user.email = "alex@email.com";
 delete user.age;
 ```
-if proper doesn't exist, nothing happening
+3. ### list-object-propertie
+```javascript
+for (var k in obj) {
+  console.log('k', k);
+}
 
+Object.keys
+Object.values
+Object.entries
+```
+4. ### result-object-entries
+```javascript
+const obj = {
+  name: 'vasyl',
+}
+
+// result: [["name", "vasyl"]]
+```
