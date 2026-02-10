@@ -34,7 +34,7 @@ function isObjectValid(obj) {
 
 // make simple object flat comparison
 function compareObject(obj1, obj2) {
-  if(obj1 === obj2) return true;
+  if(obj1 === obj2) return true; // here we compare values of objects. If its equall. Code will go deeper till the line with return
 
   if(!isObjectValid(obj1) || !isObjectValid(obj2)) return false;
 
