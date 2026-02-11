@@ -68,6 +68,8 @@ console.log(compareObject({name: 'Vasyl', job: {
 | 6   | [How do u clone object?](#clonning-object)                                                                                                |
 | 7   | [Why spread clonning object is shallow? What does it mean?](#shallow-clonning)                                                                                                |
 | 8   | [Merge 2 objects and resolve conflicts?](#resolve-confclits)                                                                                                |
+| 9   | [Update a deeply nested property without mutation the original object](#update-deeply-nested-property)                                                                                                |
+
 
 1. ### access-object
 by dot or by array notation
@@ -139,3 +141,6 @@ const b = { y: 3, z: 4 };
 const merged = { ...a, ...b };
 // { x: 1, y: 3, z: 4 }
 // las 1 object most important, so that's why we have y 3
+
+9. ### update-deeply-nested-property
+<img width="630" height="377" alt="image" src="https://github.com/user-attachments/assets/1e12e144-c0a5-40ef-a948-ff5a8e21c83a" />
