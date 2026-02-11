@@ -67,7 +67,7 @@ console.log(compareObject({name: 'Vasyl', job: {
 | 5   | [Difference between in and hasownpropertyt?](#in-hasownproperty)                                                                                                |
 | 6   | [How do u clone object?](#clonning-object)                                                                                                |
 | 7   | [Why spread clonning object is shallow? What does it mean?](#shallow-clonning)                                                                                                |
-
+| 8   | [Merge 2 objects and resolve conflicts?](#resolve-confclits)                                                                                                |
 
 1. ### access-object
 by dot or by array notation
@@ -132,4 +132,10 @@ const copy = { ...user };
 ```
 <img width="630" height="298" alt="image" src="https://github.com/user-attachments/assets/19ebcc3f-a349-4dc3-9a42-53f17af10755" />
 
+8. ### resolve-confclits
+const a = { x: 1, y: 2 };
+const b = { y: 3, z: 4 };
 
+const merged = { ...a, ...b };
+// { x: 1, y: 3, z: 4 }
+// las 1 object most important, so that's why we have y 3
