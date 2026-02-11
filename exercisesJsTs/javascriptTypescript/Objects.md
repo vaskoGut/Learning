@@ -138,6 +138,7 @@ const user = {
 const copy = { ...user };
 ```
 <img width="630" height="298" alt="image" src="https://github.com/user-attachments/assets/19ebcc3f-a349-4dc3-9a42-53f17af10755" />
+Better to use immer library
 
 8. ### resolve-confclits
 const a = { x: 1, y: 2 };
