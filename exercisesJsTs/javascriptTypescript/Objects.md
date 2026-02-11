@@ -69,7 +69,12 @@ console.log(compareObject({name: 'Vasyl', job: {
 | 7   | [Why spread clonning object is shallow? What does it mean?](#shallow-clonning)                                                                                                |
 | 8   | [Merge 2 objects and resolve conflicts?](#resolve-confclits)                                                                                                |
 | 9   | [Update a deeply nested property without mutation the original object](#update-deeply-nested-property)                                                                                                |
-
+| 10   | [What is now a and b ?](resolve-equal-objects)                                                                                                |
+```javascript
+const a = { count: 1 };
+const b = a;
+b.count = 2;
+```
 
 1. ### access-object
 by dot or by array notation
@@ -144,3 +149,8 @@ const merged = { ...a, ...b };
 
 9. ### update-deeply-nested-property
 <img width="630" height="377" alt="image" src="https://github.com/user-attachments/assets/1e12e144-c0a5-40ef-a948-ff5a8e21c83a" />
+
+10. ### resolve-equal-objects
+Answer:
+Both a and b now have count = 2
+Objects are passed by reference
