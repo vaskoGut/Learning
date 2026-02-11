@@ -63,6 +63,8 @@ console.log(compareObject({name: 'Vasyl', job: {
 | 1   | [How do you access and update values in an object?](#access-object)                                                                                                |
 | 2   | [How do you add or remove properties from an object?](#add-remove-object)                                                                                                |
 | 3   | [How to list properties of object?](#list-object-properties)                                                                                                |
+| 4   | [What is object.entries result?](#object-entries)                                                                                                |
+| 5   | [Difference between in and hasownpropertyt?](#in-hasownproperty)                                                                                                |
 
 1. ### access-object
 by dot or by array notation
@@ -87,7 +89,7 @@ Object.keys
 Object.values
 Object.entries
 ```
-4. ### result-object-entries
+4. ### object-entries
 ```javascript
 const obj = {
   name: 'vasyl',
@@ -95,3 +97,14 @@ const obj = {
 
 // result: [["name", "vasyl"]]
 ```
+
+5. ### in-hasownproperty
+In checks anywehre in the object, including its prototype chain.
+```javascript
+const obj = { name: "Alice" };
+
+console.log("name" in obj);        // true
+console.log("toString" in obj);    // true
+```
+hasOwnProperty - checks only directly inside of object.
+
