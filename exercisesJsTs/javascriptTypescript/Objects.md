@@ -65,6 +65,9 @@ console.log(compareObject({name: 'Vasyl', job: {
 | 3   | [How to list properties of object?](#list-object-properties)                                                                                                |
 | 4   | [What is object.entries result?](#object-entries)                                                                                                |
 | 5   | [Difference between in and hasownpropertyt?](#in-hasownproperty)                                                                                                |
+| 6   | [How do u clone object?](#clonning-object)                                                                                                |
+| 7   | [Why spread clonning object is shallow? What does it mean?](#shallow-clonning)                                                                                                |
+
 
 1. ### access-object
 by dot or by array notation
@@ -107,4 +110,26 @@ console.log("name" in obj);        // true
 console.log("toString" in obj);    // true
 ```
 hasOwnProperty - checks only directly inside of object.
+
+6. ### clonning-object
+```javascript
+const copy = { ...user };
+```
+```javascript
+const deepCopy = JSON.parse(JSON.stringify(user));
+```
+
+7. ### shallow-clonning
+```javascript
+const user = {
+  name: "Alice",
+  address: {
+    city: "New York"
+  }
+};
+
+const copy = { ...user };
+```
+<img width="630" height="298" alt="image" src="https://github.com/user-attachments/assets/19ebcc3f-a349-4dc3-9a42-53f17af10755" />
+
 
