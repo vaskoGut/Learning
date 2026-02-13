@@ -94,9 +94,9 @@ console.log(compareObject({name: 'Vasyl', job: {
 | 8   | [Merge 2 objects and resolve conflicts?](#resolve-confclits)                                                                                                |
 | 9   | [Update a deeply nested property without mutation the original object](#update-deeply-nested-property)                                                                                                |
 | 10   | [What is now a and b ?](resolve-equal-objects)                                                                                                |
-| 11   | [How to freeze or seal objects? [additional info]](freeze-seal-objects)                                                                                                |
-| 12   | What  is Map object in js?](map-object)                                                                                                |
-| 13   | Can you same way to map throguh normal object?](object-loop)                                                                                                |
+| 11   | [How to freeze or seal objects? [additional info]](#freeze-seal-objects)                                                                                                |
+| 12   | What  is Map object in js?](#map-object)                                                                                                |
+| 13   | Can you same way to map throguh normal object?](#object-loop)                                                                                                |
 
 ```javascript
 const a = { count: 1 };
