@@ -197,6 +197,10 @@ const entries = new Map([
   ["foo", "bar"],
   ["baz", 42],
 ]);
+
+for (let i of entries) {
+   console.log('i', i);
+}
 ```
 
 13. ### object-loop
