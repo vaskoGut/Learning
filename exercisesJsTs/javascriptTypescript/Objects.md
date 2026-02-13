@@ -3,7 +3,31 @@
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [Write function to compare flatten objects](#compare-flat-objects)                                                                                                |
-| 2   | [Refactor code from example above to care nested objects](#compare-nested-objects)                                                                                                |
+| 2   | [Refactor code from example above to care nested objects](#compare-nested-objects)                                                                                                ||
+| 3   | [why 2nd version of code ( exercise is to count letters) is better?](#count-letter)                                                                                                ||
+```javascript
+function stringToArray(arr) {
+  const arrResult = {};
+  arr.split('').map(elem => {
+    arrResult[elem] = arrResult[elem] ? arrResult[elem] + 1 : 1;
+  });
+  
+  return arrResult;
+}
+
+console.log(stringToArray('apple'));
+
+// this version is better, cause we don't need map, we need just to iterate through array
+function stringToObject(str) {
+  const result = {};
+
+  for (const char of str) {
+    result[char] = (result[char] || 0) + 1;
+  }
+
+  return result;
+}
+```
 
 1. ### compare-flat-objects
 ```javascript
