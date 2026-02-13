@@ -95,6 +95,8 @@ console.log(compareObject({name: 'Vasyl', job: {
 | 9   | [Update a deeply nested property without mutation the original object](#update-deeply-nested-property)                                                                                                |
 | 10   | [What is now a and b ?](resolve-equal-objects)                                                                                                |
 | 11   | [How to freeze or seal objects? [additional info]](freeze-seal-objects)                                                                                                |
+| 12   | What  is Map object in js?](map-object)                                                                                                |
+| 13   | Can you same way to map throguh normal object?](object-loop)                                                                                                |
 
 ```javascript
 const a = { count: 1 };
@@ -187,3 +189,17 @@ Objects are passed by reference
 Object.freeze(obj); // no add/update/delete
 Object.seal(obj);  // update allowed, no add/delete
 ```
+
+12. ### map-object
+The Map object holds key-value pairs and remembers the original insertion order of the keys. Any value (both objects and primitive values) may be used as either a key or a value.
+```javascript
+const entries = new Map([
+  ["foo", "bar"],
+  ["baz", 42],
+]);
+```
+
+13. ### object-loop
+<img width="661" height="657" alt="image" src="https://github.com/user-attachments/assets/ee4ed26e-d12e-4b8d-bf38-2e65f0aeb908" />
+
+
