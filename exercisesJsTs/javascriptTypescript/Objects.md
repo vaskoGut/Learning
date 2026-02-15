@@ -97,6 +97,8 @@ console.log(compareObject({name: 'Vasyl', job: {
 | 11   | [How to freeze or seal objects? [additional info](#freeze-seal-objects)                                                                                                |
 | 12   | [What  is Map object in js?](#map-object)                                                                                                |
 | 13   | [Can you same way to map throguh normal object?](#object-loop)                                                                                                |
+| 14   | [Has own property example?](#hasown-property)                                                                                                |
+
 
 ```javascript
 const a = { count: 1 };
@@ -207,3 +209,25 @@ for (let i of entries) {
 <img width="661" height="657" alt="image" src="https://github.com/user-attachments/assets/ee4ed26e-d12e-4b8d-bf38-2e65f0aeb908" />
 
 
+```javascript
+const person = {
+  name: "Anna",
+  age: 25
+};
+
+console.log(person.hasOwnProperty("name")); // true
+console.log(person.hasOwnProperty("age"));  // true
+console.log(person.hasOwnProperty("city")); // false
+```
+
+14. ### hasown-property
+```javascript
+  const person = {
+  name: "Anna",
+  age: 25
+};
+
+console.log(person.hasOwnProperty("name")); // true
+console.log(person.hasOwnProperty("age"));  // true
+console.log(person.hasOwnProperty("city")); // false
+```
