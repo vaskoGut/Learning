@@ -82,13 +82,14 @@ console.log(compareObject({name: 'Vasyl', job: {
 ```
 
 4. ### array-to-object-with-indexes
+```javascript
 const test = ['a', 'b', 'c'];
 
 const result = test.reduce((tot, curr, index) => {
   tot[index] = curr;
   return tot;
 }, {});
-
+```
 
 
 
