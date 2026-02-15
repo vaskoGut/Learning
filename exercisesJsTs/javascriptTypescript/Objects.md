@@ -29,6 +29,10 @@ function stringToObject(str) {
 }
 ```
 
+| 4   | [Convert array to object (  index as key ) ?](#array-to-object-with-indexes)                                                                                                ||
+<img width="243" height="192" alt="image" src="https://github.com/user-attachments/assets/510086dd-101e-47e7-b70f-c8dcdd8ab7a3" />
+
+
 1. ### compare-flat-objects
 ```javascript
  function isObjectValid(obj) {
@@ -76,6 +80,14 @@ console.log(compareObject({name: 'Vasyl', job: {
   position: 'doctor'
 } }));
 ```
+
+4. ### array-to-object-with-indexes
+const test = ['a', 'b', 'c'];
+
+const result = test.reduce((tot, curr, index) => {
+  tot[index] = curr;
+  return tot;
+}, {});
 
 
 
