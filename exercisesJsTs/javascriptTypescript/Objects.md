@@ -32,6 +32,9 @@ function stringToObject(str) {
 | 4   | [Convert array to object (  index as key ) ?](#array-to-object-with-indexes)                                                                                                ||
 <img width="243" height="192" alt="image" src="https://github.com/user-attachments/assets/510086dd-101e-47e7-b70f-c8dcdd8ab7a3" />
 
+| 5   | [Convert array to object ?](#array-to-object-true)                                                                                                ||
+<img width="292" height="148" alt="image" src="https://github.com/user-attachments/assets/7fec86ee-252d-495b-ade8-a65eba665df8" />
+
 
 1. ### compare-flat-objects
 ```javascript
@@ -91,7 +94,15 @@ const result = test.reduce((tot, curr, index) => {
 }, {});
 ```
 
-
+5. ### array-to-object-true
+```javascript
+const arr = ["apple", "banana"];
+const result = arr.reduce((total, curr) => {
+  total[curr] = true;
+  return total;
+}, {});
+console.log('result', result)
+```
 
 #  OBJECT QUESTIONS TEORY
 
