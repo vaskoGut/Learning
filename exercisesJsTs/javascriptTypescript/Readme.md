@@ -109,6 +109,9 @@ console.log(flattenDeep([1, [2, 3, 4]]));
    Object.keys(obj2).every(elem => console.log(elem));
 ```
 
+| 38  | [Write fib algorithm simple method ( n-1, n-2 recursion and with memoization )](#fib-algor)                                                            |
+
+
 1. ### reverse string
    Using **map** method:
    
@@ -939,3 +942,15 @@ useEffect(() => {
 Because .every() stops as soon as its callback returns a falsy value, and
 console.log() returns undefined, which is falsy.
 
+38. ### fib-algor
+```javascript
+   function runFib(n) {
+     if (n <= 1) return n;
+     return runFib(n - 1) + runFib(n - 2);
+   }
+
+   console.log(runFib(5));
+```
+
+```javascript
+```
