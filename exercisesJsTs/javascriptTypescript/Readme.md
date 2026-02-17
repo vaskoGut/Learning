@@ -111,6 +111,8 @@ console.log(flattenDeep([1, [2, 3, 4]]));
 
 | 38  | [Write fib algorithm simple method ( n-1, n-2 recursion and with memoization )](#fib-algor)                                                            |
 
+| 39  | [Check if specific prop is true in js object? )](#js-property)                                                            |
+
 
 1. ### reverse string
    Using **map** method:
@@ -953,4 +955,11 @@ console.log() returns undefined, which is falsy.
 ```
 
 ```javascript
+```
+
+39. ### js-propert
+```javascript
+   const car = { make: "Honda", model: "Accord", year: 1998 };
+   console.log("make" in car);
+   // Expected output: true
 ```
