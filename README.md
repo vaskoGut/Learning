@@ -82,6 +82,8 @@
 | 70   | [Implement pick utility?](#typescript-pick-utility-implementation)                                     |
 | 71   | [What are generics?](#ts-generics)                                     |
 | 72   | [How to manage asynchronous tasks?](#async-tasks)                                     |
+| 73   | [How to improve sluggish behaviour during initial app load?](#improving-app-loading)                                     |
+
 
 
 # Exercises Javascript Typescript
@@ -1372,9 +1374,10 @@ const todo: TodoPreview = {
 <img width="636" height="682" alt="image" src="https://github.com/user-attachments/assets/70e3b8a5-bc6c-4a04-b933-ae40809b2ad0" />
 
 72. ### #async-tasks
-| 72   | [How to manage asynchronous tasks?](#async-tasks)                                     |
-
 Use async/await for cleaner flow, handle failures with try/catch, cancel unnecessary requests using AbortController, and optimize frequent calls with debouncing or throttling.
+
+73. ### #improving-app-loading
+Reduce the initial bundle using code splitting, lazy load non-critical components, defer heavy scripts, enable caching, and use skeleton loaders to improve perceived performance.
 
 __________________________________________________________________________________________________________________________________________
 
