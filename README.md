@@ -83,7 +83,7 @@
 | 71   | [What are generics?](#ts-generics)                                     |
 | 72   | [How to manage asynchronous tasks?](#async-tasks)                                     |
 | 73   | [How to improve sluggish behaviour during initial app load?](#improving-app-loading)                                     |
-
+| 74   | [How does work lazy loading of components?](#lazy-loading-components)                                     |
 
 
 # Exercises Javascript Typescript
@@ -1378,6 +1378,9 @@ Use async/await for cleaner flow, handle failures with try/catch, cancel unneces
 
 73. ### #improving-app-loading
 Reduce the initial bundle using code splitting, lazy load non-critical components, defer heavy scripts, enable caching, and use skeleton loaders to improve perceived performance.
+
+74. ### #lazy-loading-components
+Lazy loading delays loading of components, images, or data until they are actually needed (for example, when a component enters the viewport). This reduces initial load time, lowers memory usage, and improves overall app responsiveness.
 
 __________________________________________________________________________________________________________________________________________
 
