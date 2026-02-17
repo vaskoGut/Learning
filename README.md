@@ -84,6 +84,7 @@
 | 72   | [How to manage asynchronous tasks?](#async-tasks)                                     |
 | 73   | [How to improve sluggish behaviour during initial app load?](#improving-app-loading)                                     |
 | 74   | [How does work lazy loading of components?](#lazy-loading-components)                                     |
+| 75   | [Diff betweeen custom hook and normal function?](#custom-hook-normal-function)                                     |
 
 
 # Exercises Javascript Typescript
@@ -1382,6 +1383,8 @@ Reduce the initial bundle using code splitting, lazy load non-critical component
 74. ### #lazy-loading-components
 Lazy loading delays loading of components, images, or data until they are actually needed (for example, when a component enters the viewport). This reduces initial load time, lowers memory usage, and improves overall app responsiveness.
 
+75. ### #custom-hook-normal-function
+A custom hook encapsulates reusable, stateful React logic using hooks, while a normal function is stateless, reusable utility logic that cannot access React lifecycle or hooks.
 __________________________________________________________________________________________________________________________________________
 
 # Exercises Javascript Typescript
