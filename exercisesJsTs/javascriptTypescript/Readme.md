@@ -955,6 +955,15 @@ console.log() returns undefined, which is falsy.
 ```
 
 ```javascript
+   function runFib(n, memo) {
+     if(n in memo) return memo[n];
+   
+     if (n <= 1) return n;
+     memo[n] = runFib(n - 1, memo) + runFib(n - 2, memo);
+   
+     return memo[n];
+   }
+   console.log(runFib(5,  {}));
 ```
 
 39. ### js-propert
