@@ -85,7 +85,7 @@
 | 73   | [How to improve sluggish behaviour during initial app load?](#improving-app-loading)                                     |
 | 74   | [How does work lazy loading of components?](#lazy-loading-components)                                     |
 | 75   | [Diff betweeen custom hook and normal function?](#custom-hook-normal-function)                                     |
-
+| 76   | [What is a snapshot test?](#snapshot-testing)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1385,6 +1385,16 @@ Lazy loading delays loading of components, images, or data until they are actual
 
 75. ### #custom-hook-normal-function
 A custom hook encapsulates reusable, stateful React logic using hooks, while a normal function is stateless, reusable utility logic that cannot access React lifecycle or hooks.
+
+76. ### #snapshot-testing
+Snapshot test checks that a component's rendered outpout doesn not change unexpectedly.
+When you run a snapshot test
+1. The component is rendered
+2. Its outup is serialized into a string
+3. string is saved in snapshot file
+4. On future test runs: jest renders component agains, compares new output with the saved snapshot
+So generally it checks if structure changed compared to before
+
 __________________________________________________________________________________________________________________________________________
 
 # Exercises Javascript Typescript
