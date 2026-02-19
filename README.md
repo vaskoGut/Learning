@@ -86,6 +86,8 @@
 | 74   | [How does work lazy loading of components?](#lazy-loading-components)                                     |
 | 75   | [Diff betweeen custom hook and normal function?](#custom-hook-normal-function)                                     |
 | 76   | [What is a snapshot test?](#snapshot-testing)                                     |
+| 77   | [What ui test does look for simple select component?](#ui-test-select-component)                                     |
+
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1394,6 +1396,15 @@ When you run a snapshot test
 3. string is saved in snapshot file
 4. On future test runs: jest renders component agains, compares new output with the saved snapshot
 So generally it checks if structure changed compared to before
+
+77. ### #ui-test-select-component
+A good unit test checks:
+Component renders
+Options are displayed
+Selected value is correct
+onChange is called when user changes selection
+
+Senior answer: For a select component I would test rendering of options, correct selected value, and user interaction using React Testing Library. I would simulate user selection with userEvent.selectOptions and verify that onChange is called with the expected value. Snapshot tests can be added for structure, but behavioral tests are more important.
 
 __________________________________________________________________________________________________________________________________________
 
