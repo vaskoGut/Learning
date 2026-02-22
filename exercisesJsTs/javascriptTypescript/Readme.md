@@ -2,6 +2,9 @@
 
 ##  2. [Objects questions](https://github.com/vaskoGut/Learning/blob/main/exercisesJsTs/javascriptTypescript/Objects.md)                                     |
 
+##  3. [Explain why](https://github.com/vaskoGut/Learning/blob/main/exercisesJsTs/javascriptTypescript/Objects.md)                                     |
+
+
 # JAVASCRIPT TYPESCRIPT
 | Nm | #Question   |
 | :---:   | :---: |
