@@ -26,6 +26,19 @@
   const c = 3;
 ```
 
+| 3  | [Why you have results ln loop like that?](#loop-results)                                                                                                |
+```javascript
+// var - function scoped
+for (var i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 100); // Prints: 3, 3, 3
+}
+
+// let - block scoped
+for (let j = 0; j < 3; j++) {
+  setTimeout(() => console.log(j), 100); // Prints: 0, 1, 2
+}
+```
+
 
 1. ### functional scope variables
 ```javascript
@@ -34,9 +47,12 @@
   console.log(z); // ReferenceError (block-scoped)
 ```
 
-2. ### hoisting-variables-explanation)
+2. ### hoisting-variables-explanation
 ```javascript
   console.log(a); // undefined (hoisted)
   console.log(b); // ReferenceError: Cannot access 'b' before initialization
   console.log(c); // ReferenceError: Cannot access 'c' before initialization
 ```
+
+3. ### loop-results
+<img width="689" height="617" alt="image" src="https://github.com/user-attachments/assets/b38d8bb5-0624-4a8a-bcfd-1896d54b5b77" />
