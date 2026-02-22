@@ -2,7 +2,7 @@
 
 | Nm | #Question   |
 | :---:   | :---: |
-| 1   | [What will be result?](#hoisting-exercise)                                                                                                |
+| 1   | [What will be result?](#functional-scope-exercise)                                                                                                |
 ```javascript
   function example() {
     if (true) {
@@ -17,7 +17,7 @@
 ```
 
 
-hoisting-exercise
+1. ### object-entries
 ```javascript
 console.log(x); // 1 (function-scoped)
 console.log(y); // ReferenceError (block-scoped)
