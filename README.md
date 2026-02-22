@@ -11,7 +11,7 @@
 # JAVASCRIPT TYPESCRIPT GENERAL QUESTIONS
 | Nm | #Question   |
 | :---:   | :---: |
-| 1   | [Difference let const var](#what-is-difference-between-let-const-var)                                     |
+| 1   | [Difference let const var? Hoisting - what is inial value when we use var and const, let?](#what-is-difference-between-let-const-var)                                     |
 | 2   | [Difference between arrow function and function declaration, expressions](#arrow-function-explanation)                                                                             |
 | 3   | [What is generator ](#generator-function)                                                                             |
 | 4   | [Types Enums Interface. What for are used types? What are tuples? What is union, intersection? What is intersection types? What is record type - provide example](#types-enums-interfaces)                                                                             |
@@ -326,8 +326,12 @@ Can be installed on a user's home screen like a native app and can run independe
     ```
    **Let** - can be reasigned.
    **Const** - can't be reasigned.
+
+   ***Hoisting***:
+    - var: Hoisted and initialized with undefined (can be accessed before declaration)
+    - let/const: Hoisted but not initialized
    
-2. ### arrow function explanation
+3. ### arrow function explanation
    **Functional expression** - function defined inside an expression. Example:
 
     ```javascript
