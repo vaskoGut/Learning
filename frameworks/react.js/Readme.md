@@ -16,6 +16,7 @@ doesn't have it.
 
 5. to avoid memory leaks you need to clear useEffect timers or subscribiers.
 
+
 2. ### useEffect-infinite-loops
 An effect updates state → state causes re-render → effect runs again → updates state again → repeat forever.
 
