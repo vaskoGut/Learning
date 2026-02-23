@@ -11,5 +11,6 @@
 UseEffect  has built-in error handling, so it doesn't crush entire application,whiel  useLayoutEffect
 doesn't have it.
 4.
-  <img width="593" height="129" alt="image" src="https://github.com/user-attachments/assets/9d167758-0a08-405a-9d31-172c82bc6f75" />
+<img width="593" height="129" alt="image" src="https://github.com/user-attachments/assets/9d167758-0a08-405a-9d31-172c82bc6f75" />
+
 5. to avoid memory leaks you need to clear useEffect timers or subscribiers.
