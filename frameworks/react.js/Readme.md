@@ -1,4 +1,4 @@
-# NEXT JS
+# REACT JS
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [What is Next.js, and how is it different from Reac? Server site rendering. Static site generation. File based routing and api Routes outof the box. Difference SSR, CSR, SSG, ISR](#react-next-difference)                               |
