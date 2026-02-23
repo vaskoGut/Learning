@@ -168,7 +168,7 @@ let result = value ?? "default";
 | 57   | [Why do we say React is declarative rather than imperative?](#declarative-imperative-react)                                     |
 | 58   | [Settimeout setinterval difference?](#setimeout-setinterval)                                     |
 | 59   | [What is react hydration?](#react-hydration)                                     |
-
+| 60   | [What causes component rerendering?](#component-rerendering)                                     |
 
 # Redux
 | Nm | #Question   |
@@ -1996,7 +1996,10 @@ This makes state changes predictable and easier to debug
 
  59. ### #react-hydration
 <img width="653" height="373" alt="image" src="https://github.com/user-attachments/assets/15992152-c638-4696-8b6f-9b5d5923ff00" />
-      
+
+ 60. ### #component-rerendering
+<img width="1536" height="1024" alt="ChatGPT Image Feb 23, 2026, 03_08_47 PM" src="https://github.com/user-attachments/assets/f6bdbd71-048a-436c-917d-8721826127a5" />
+
  ________________________________________________________________________________________________________________________________
   1. ### #what-is-redux
       Redux is library for managing global application state.
