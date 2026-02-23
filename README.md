@@ -1999,6 +1999,7 @@ This makes state changes predictable and easier to debug
 
  60. ### #component-rerendering
 <img width="1536" height="1024" alt="ChatGPT Image Feb 23, 2026, 03_08_47 PM" src="https://github.com/user-attachments/assets/f6bdbd71-048a-436c-917d-8721826127a5" />
+A component re-renders when its state changes, when it receives new props from a parent, when the context it consumes changes, or when a force update is triggered. Additionally, re-rendering can propagate from parent re-renders unless memoization is used.
 
  ________________________________________________________________________________________________________________________________
   1. ### #what-is-redux
