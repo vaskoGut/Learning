@@ -8,7 +8,7 @@
 
 ## 5 [BROWSER & Web Apis](https://github.com/vaskoGut/Learning/tree/main/other//browser%20web%20api/Readme.md)                                     |
 
-## 6 [React]([https://github.com/vaskoGut/Learning/tree/main/other//browser%20web%20api/Readme.md](https://github.com/vaskoGut/Learning/tree/main/frameworks/react.js)                                     |
+## 6 [React](https://github.com/vaskoGut/Learning/tree/main/other//browser%20web%20api/Readme.md](https://github.com/vaskoGut/Learning/tree/main/frameworks/react.js)                                     |
 
 # JAVASCRIPT TYPESCRIPT GENERAL QUESTIONS
 | Nm | #Question   |
