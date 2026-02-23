@@ -4,6 +4,7 @@
 | 1   | [1. What for is used useEffect? When useEffectIsCalled? 3. Diff between useEffect and useLayoutEffect? 4. Lifecycle phases of useEffect? 5. How to avoid memory leaks in useEffect? ](#react-useEffect)                               |
 | 2   | [2. What causes infinite loops inside useEffect? ](#useEffect-infinite-loops)                               |
 | 3   | [3. Does react compare dependencies lusing shallow comparison or deep comparison? ](#shallow-deep-comparison)                               |
+| 4   | [4. Are props and state immutable in React? ](#props-state)                               |
 
 1. ### react-useEffect
 
@@ -58,3 +59,7 @@ Fix you can use useMemo to prevent that.
 And in the end React thinks dependency changed
 ➡️ Effect runs again
 Even though { x: 1 } looks the same!
+
+4. ### props-state
+***props*** can't be modified. Props are immutable
+***state*** is immutable. We shouldn't mutate it directly. We should mutate/replace it with set functions.
