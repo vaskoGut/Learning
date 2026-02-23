@@ -16,3 +16,29 @@ doesn't have it.
 
 5. to avoid memory leaks you need to clear useEffect timers or subscribiers.
 
+2. ### useEffect-infinite-loops
+An effect updates state → state causes re-render → effect runs again → updates state again → repeat forever.
+
+Missing depend array:
+<img width="606" height="176" alt="image" src="https://github.com/user-attachments/assets/d517c93b-a552-47ee-8623-897a15174e0b" />
+1. Fix add empty dependency:
+```javascript
+  useEffect(() => {
+    setCount(count + 1);
+  }, []);
+```
+2. If effect changes smth that is also a dependency. It keeps retrigerring:
+```javascript
+  useEffect(() => {
+    setCount(count + 1);
+  }, [count]); // ❌ loop
+```
+3.
+```javascript
+  const obj = { value: 1 };
+
+  useEffect(() => {
+    console.log("runs every render");
+  }, [obj]); // ❌ new reference each render
+```
+Fix you can use useMemo to prevent that.
