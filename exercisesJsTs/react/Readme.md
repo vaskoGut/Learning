@@ -4,7 +4,7 @@
 | 1   | [What is better way to toggle state in React?](#state-toggle)                               |
 | 2   | [Why in react strict mode useState works twice?](#strict-mode-twice)                               |
 | 3   | [Why example with prev is betther than without it?](#counter-prev)                               |
-| 4   | [Searchbar component?](#searchbar-react-component)                               |
+| 4   | [Searchbar component with 'loading text' disappearing after some time. Remember to clear timer on unmount?](#searchbar-react-component)                               |
 
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
