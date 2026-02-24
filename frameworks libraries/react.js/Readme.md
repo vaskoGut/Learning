@@ -5,6 +5,8 @@
 | 2   | [2. What causes infinite loops inside useEffect? ](#useEffect-infinite-loops)                               |
 | 3   | [3. Does react compare dependencies lusing shallow comparison or deep comparison? ](#shallow-deep-comparison)                               |
 | 4   | [4. Are props and state immutable in React? ](#props-state)                               |
+| 5   | [5. Give examples of how you would replicate componentDidMount, componentDidUpdate, and componentWillUnmount? ](#lifecycle-react-useEffect)                               |
+
 
 1. ### react-useEffect
 
@@ -63,3 +65,8 @@ Even though { x: 1 } looks the same!
 4. ### props-state
 ***props*** can't be modified. Props are immutable
 ***state*** is immutable. We shouldn't mutate it directly. We should mutate/replace it with set functions.
+
+5. ### lifecycle-react-useEffect
+componentDidMount	useEffect(() => { ... }, []) (empty dependency array)
+componentDidUpdate	useEffect(() => { ... }, [dep1, dep2]) (dependencies array)
+componentWillUnmount	useEffect(() => { return () => { ... } }, []) (cleanup function)
