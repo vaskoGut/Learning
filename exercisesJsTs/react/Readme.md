@@ -83,4 +83,5 @@ export default function App() {
 }
 ```
 
-5. answer: setLoading false finishes faster that fetch, it doesnt wait for fetch. You need to wait. That's is main problem.
+5. ### searchbar-react-componen
+answer: setLoading false finishes faster that fetch, it doesnt wait for fetch. You need to wait. That's is main problem.
