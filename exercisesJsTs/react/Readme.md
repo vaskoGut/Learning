@@ -7,6 +7,7 @@
 | 4   | [Searchbar component with 'loading text' disappearing after some time. Remember to clear timer on unmount?](#searchbar-react-component)                               |
 | 5   | [What is wrong with code below? Why setLoading is used not properly?](#searchbar-react-component)                               |
 <img width="431" height="180" alt="image" src="https://github.com/user-attachments/assets/adda7c20-3dd4-4ce4-884a-2137d1ab2c47" />
+| 6   | [Write search input with fetch and debounce effectinside. Handle isLoading, isActive to prevent unnecessary data rewritting?](#searchbar-fetch-component)                               |
 
 
 1. ### state-toggle
@@ -85,3 +86,48 @@ export default function App() {
 
 5. ### searchbar-react-componen
 answer: setLoading false finishes faster that fetch, it doesnt wait for fetch. You need to wait. That's is main problem.
+
+6. ### searchbar-fetch-component
+```javascript
+  import { useState, useEffect } from 'react';
+  
+  export default function App() { 
+      const [isLoading, setLoading] = useState(false);
+      const [searchString, setSearchString] = useState('');
+      const [results, setResults] = useState([]);
+      
+      const handleChange = (value: React.ChangeEvent<HTMLInputElement>) => {
+          setSearchString(value.target.value);
+      }
+      
+      useEffect(() => {
+           if(!searchString) return;
+  
+           let isActive = true;
+          
+          const timer =  setTimeout(() => {
+              setLoading(true);
+              fetch('https://dummyjson.com/users').then(data => data.json()).then((data) => {
+                  if(isActive)  { 
+                      setResults(data);  
+                       setLoading(false); 
+                   }
+              }).catch(error => console.error(error).finally(() => {
+                  if(isActive) setLoading(false);
+              })
+              );}, 400)
+  
+          return () => {
+              clearTimeout(timer);
+              isActive = false;
+          }
+      }, [searchString]);
+      
+    return (
+      <div>
+          <input onChange={handleChange} type="search" />
+          {isLoading && <span>loading...</span>}
+      </div>
+    );
+  }
+```
