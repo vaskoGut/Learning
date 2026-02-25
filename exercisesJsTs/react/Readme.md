@@ -5,6 +5,9 @@
 | 2   | [Why in react strict mode useState works twice?](#strict-mode-twice)                               |
 | 3   | [Why example with prev is betther than without it?](#counter-prev)                               |
 | 4   | [Searchbar component with 'loading text' disappearing after some time. Remember to clear timer on unmount?](#searchbar-react-component)                               |
+| 5   | [What is wrong with code below?](#searchbar-react-component)                               |
+<img width="431" height="180" alt="image" src="https://github.com/user-attachments/assets/adda7c20-3dd4-4ce4-884a-2137d1ab2c47" />
+
 
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
@@ -80,3 +83,4 @@ export default function App() {
 }
 ```
 
+5. answer: setLoading false finishes faster that fetch, it doesnt wait for fetch. You need to wait. That's is main problem.
