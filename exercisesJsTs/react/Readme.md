@@ -16,6 +16,10 @@
 Implement a reusable useDebounce React hook that delays updating a value until a specified amount of time has passed without further changes.
 The hook should prevent rapid state updates (e.g., during user typing) and help reduce unnecessary side effects such as API calls.
 
+| 9   | [When is useMemo useless? provide simple example of good useMemo example](#useMemo-useless)                               |
+
+
+
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
 So better choice is:
@@ -173,3 +177,8 @@ useEffect(() => {
   fetchData(debouncedSearch);
 }, [debouncedSearch]);
 ```
+
+9. ### useMemo-useless
+useMemo is useless when the computation is cheap or when the memoized value doesn’t prevent any real re-render or performance issue. Since useMemo itself has overhead, using it unnecessarily can actually make performance worse instead of better.
+
+<img width="645" height="554" alt="image" src="https://github.com/user-attachments/assets/932688e9-4976-4048-9580-2cae048a7d46" />
