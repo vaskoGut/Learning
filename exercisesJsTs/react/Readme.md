@@ -10,7 +10,9 @@
 
 | 6   | [Write search input with fetch and debounce effectinside. Handle isLoading, isActive to prevent unnecessary data rewritting?](#searchbar-fetch-component)                               |
 | 7   | [Write useToggle hook](#useToggle-hook)                               |
-
+| 8   | [Write debounce hook](#debounce-hook)                               |
+Implement a reusable useDebounce React hook that delays updating a value until a specified amount of time has passed without further changes.
+The hook should prevent rapid state updates (e.g., during user typing) and help reduce unnecessary side effects such as API calls.
 
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
@@ -143,4 +145,29 @@ answer: setLoading false finishes faster that fetch, it doesnt wait for fetch. Y
 
     return [isToggle, toggle];
   };
+```
+
+8. ### debounce-hook
+```javascript
+const useDebounce = (searchValue, delay = 500) => {
+  const [debounceValue, setValue] = useState(searchValue);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setValue(searchValue);
+    }, delay);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [searchValue]);
+
+  return debounceValue;
+};
+
+useEffect(() => {
+  if (!debouncedSearch) return;
+
+  fetchData(debouncedSearch);
+}, [debouncedSearch]);
 ```
