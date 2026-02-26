@@ -9,7 +9,9 @@
 <img width="431" height="180" alt="image" src="https://github.com/user-attachments/assets/adda7c20-3dd4-4ce4-884a-2137d1ab2c47" />
 
 | 6   | [Write search input with fetch and debounce effectinside. Handle isLoading, isActive to prevent unnecessary data rewritting?](#searchbar-fetch-component)                               |
+
 | 7   | [Write useToggle hook](#useToggle-hook)                               |
+
 | 8   | [Write debounce hook](#debounce-hook)                               |
 Implement a reusable useDebounce React hook that delays updating a value until a specified amount of time has passed without further changes.
 The hook should prevent rapid state updates (e.g., during user typing) and help reduce unnecessary side effects such as API calls.
