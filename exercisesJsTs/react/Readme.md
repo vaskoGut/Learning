@@ -9,6 +9,7 @@
 <img width="431" height="180" alt="image" src="https://github.com/user-attachments/assets/adda7c20-3dd4-4ce4-884a-2137d1ab2c47" />
 
 | 6   | [Write search input with fetch and debounce effectinside. Handle isLoading, isActive to prevent unnecessary data rewritting?](#searchbar-fetch-component)                               |
+| 7   | [Write useToggle hook](#useToggle-hook)                               |
 
 
 1. ### state-toggle
@@ -131,4 +132,15 @@ answer: setLoading false finishes faster that fetch, it doesnt wait for fetch. Y
       </div>
     );
   }
+```
+
+7. ### useToggle-hook
+```javascript
+  const useToggle = (initialValue = false) => {
+    const [isToggle, setToggle] = useState(initialValue);
+
+    const toggle = () => setToggle((prev) => !prev);
+
+    return [isToggle, toggle];
+  };
 ```
