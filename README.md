@@ -89,7 +89,7 @@
 | 75   | [Diff betweeen custom hook and normal function?](#custom-hook-normal-function)                                     |
 | 76   | [What is a snapshot test?](#snapshot-testing)                                     |
 | 77   | [What ui test does look for simple select component?](#ui-test-select-component)                                     |
-
+| 78   | [What is diff between call, apply bind?](#call-apply-bind-diff-functions)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1414,6 +1414,35 @@ Selected value is correct
 onChange is called when user changes selection
 
 Senior answer: For a select component I would test rendering of options, correct selected value, and user interaction using React Testing Library. I would simulate user selection with userEvent.selectOptions and verify that onChange is called with the expected value. Snapshot tests can be added for structure, but behavioral tests are more important.
+
+78. ### #call-apply-bind-diff-functions
+They all deal with changing the this context of a function, but they work slightly differently.
+
+***call***
+Calls a function immediately. Arguments are passed one by one.
+```javascript
+  syntax: func.call(thisArg, arg1, arg2, ...)
+  function greet(greeting, punctuation) {
+    console.log(greeting + ', ' + this.name + punctuation);
+  }
+  const person = { name: 'Alice' };
+  greet.call(person, 'Hello', '!'); // Hello, Alice!
+```
+
+***apply***
+Calls a function immediately. Arguments are passed as array
+```javascript
+  syntax: func.apply(thisArg, [arg1, arg2, ...])
+  greet.apply(person, ['Hi', '?']); // Hi, Alice?
+```
+
+***bind***
+Function call is delayed for later.
+```javascript
+Syntax:const newFunc = func.bind(thisArg, arg1, arg2, ...)
+const greetAlice = greet.bind(person, 'Hey');
+greetAlice('!!'); // Hey, Alice!!
+```
 
 __________________________________________________________________________________________________________________________________________
 
