@@ -116,6 +116,26 @@ console.log(flattenDeep([1, [2, 3, 4]]));
 
 | 39  | [Check if specific prop is true in js object? )](#js-property)                                                            |
 
+| 40  | [Why in code below this is 0? )](#this-map-custom-method)                                                            |
+```javascript
+const arr = [1, 2, 3, 4];
+
+Array.prototype.customMap = (arr, callback) => {
+  console.log('this', this.length);
+
+  if(typeof callback !== 'function') { return new Error('smth bad') }
+
+  const newArr = new Array(arr.length);
+
+  for(let i = 0; i < newArr.length; i++) {
+    newArr[i] = callback(newArr[i]);
+  }
+
+  return newarr;
+}
+
+arr.customMap(elem => elem + 1);
+```
 
 1. ### reverse string
    Using **map** method:
@@ -975,3 +995,6 @@ console.log() returns undefined, which is falsy.
    console.log("make" in car);
    // Expected output: true
 ```
+
+40. ### this-map-custom-method
+Because of using arrow function this is taken from outside scope and is equall to undefined. (undefined).length = 0. That's why we've got 0.
