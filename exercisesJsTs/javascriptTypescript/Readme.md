@@ -1002,7 +1002,7 @@ console.log() returns undefined, which is falsy.
 40. ### this-map-custom-method
 Because of using arrow function this is taken from outside scope and is equall to undefined in strict mode. Or window if its not strict mode.
 
-41. ### this-map-custom-method
+41. ### own-map-method-implementation
 ```javascript
 const arr = [1, 2, 3, 4];
 
