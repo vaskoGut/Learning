@@ -137,6 +137,9 @@ Array.prototype.customMap = (arr, callback) => {
 arr.customMap(elem => elem + 1);
 ```
 
+41  | [Write map implementation ( remember to check if call back is func ). Write simple solution and with .call method to handle reassigning this argument](#own-map-method-implementation)                               |
+
+
 1. ### reverse string
    Using **map** method:
    
@@ -998,3 +1001,28 @@ console.log() returns undefined, which is falsy.
 
 40. ### this-map-custom-method
 Because of using arrow function this is taken from outside scope and is equall to undefined in strict mode. Or window if its not strict mode.
+
+41. ### this-map-custom-method
+```javascript
+const arr = [1, 2, 3, 4];
+
+Array.prototype.customMap = function(callback) {
+  if(typeof callback !== 'function') { return new Error('smth bad') }
+
+  const newArr = new Array(this.length);
+
+  for(let i = 0; i < newArr.length; i++) {
+    newArr[i] = callback(this[i], i, this);
+  }
+
+  return newArr;
+}
+```
+
+```javascript
+   if we want to handle thisARg we just do it with call method:
+
+   Array.prototype.customMap = function(callback, thisARg) {...
+   ...
+   newArr[i] = callback.call(thisARg, this[i], i, this);
+```
