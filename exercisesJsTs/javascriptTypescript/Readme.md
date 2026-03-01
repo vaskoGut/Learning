@@ -138,7 +138,8 @@ arr.customMap(elem => elem + 1);
 ```
 
 41  | [Write map implementation ( remember to check if call back is func ). Write simple solution and with .call method to handle reassigning this argument](#own-map-method-implementation)                               |
-
+42  | [Write reduce implementation ?](#own-reduce-implementation)                               |
+43  | [Explain initial value check](#explain-that-line-reduce)                               |
 
 1. ### reverse string
    Using **map** method:
@@ -1026,3 +1027,34 @@ Array.prototype.customMap = function(callback) {
    ...
    newArr[i] = callback.call(thisARg, this[i], i, this);
 ```
+
+42. ### own-reduce-implementation
+
+```javascript
+   Array.prototype.customReduce = function(callback, initialValue) {
+     const array = this;
+     if(typeof callback !== 'function' || array.length === 0) throw new Error('lool, there is error');
+   
+   
+     let accumulator = initialValue !== undefined ? initialValue : array[0];
+     const startIndex = initialValue ? 0 : 1;
+     const newArr = new Array(this.length);
+     
+   
+     for(let i = startIndex; i < newArr.length; i++) {
+       if (!(i in array)) continue;
+       accumulator = callback(accumulator, array[i], i, array);
+     }
+   
+     return accumulator;
+   }
+   
+   const arr = [1, 2, 3, 4];
+   const result = arr.customReduce(5, {});
+   console.log('result', result);
+```
+
+43. ### explain-that-line-reduce
+let accumulator = initialValue !== undefined ? initialValue : array[0];
+just initialValue ? ... check will not work correctly, cause it will not handle cases when initial value is false or 0 for example.
+ 
