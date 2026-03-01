@@ -206,8 +206,8 @@ useMemo is useless when the computation is cheap or when the memoized value does
 <img width="645" height="554" alt="image" src="https://github.com/user-attachments/assets/932688e9-4976-4048-9580-2cae048a7d46" />
 
 10. ### usetoggle-debug
-1. useUseToggle outside of your component
-2. const switchToggle = setToggle((prev) => !prev); You are calling setToggle immediately instead of creating a function
+    1. useUseToggle outside of your component
+    2. const switchToggle = setToggle((prev) => !prev); You are calling setToggle immediately instead of creating a function
 
 So correct version:
 ```javascript
