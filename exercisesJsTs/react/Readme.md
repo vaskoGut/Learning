@@ -17,6 +17,7 @@ Implement a reusable useDebounce React hook that delays updating a value until a
 The hook should prevent rapid state updates (e.g., during user typing) and help reduce unnecessary side effects such as API calls.
 
 | 9   | [When is useMemo useless? provide simple example of good useMemo example](#useMemo-useless)                               |
+
 | 10  | [Review code below](#usetoggle-debug)                               |
 ```javascript
 export default function App() {
