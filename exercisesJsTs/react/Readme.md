@@ -17,7 +17,28 @@ Implement a reusable useDebounce React hook that delays updating a value until a
 The hook should prevent rapid state updates (e.g., during user typing) and help reduce unnecessary side effects such as API calls.
 
 | 9   | [When is useMemo useless? provide simple example of good useMemo example](#useMemo-useless)                               |
+| 10  | [Review code below](#usetoggle-debug)                               |
+```javascript
+export default function App() {
+  const useToggle = () => {
+    const [isToggle, setToggle] = useState(false);
+    const switchToggle = setToggle((prev) => !prev);
 
+    return [isToggle, switchToggle];
+  };
+
+  const [isToggle, switchToggle] = useToggle();
+
+  return (
+    <>
+      <button aria-label="toggle-button" onClick={switchToggle}>
+        toggle
+      </button>
+      {isToggle ? "on" : "off"}
+    </>
+  );
+}
+```
 
 
 1. ### state-toggle
@@ -182,3 +203,35 @@ useEffect(() => {
 useMemo is useless when the computation is cheap or when the memoized value doesn’t prevent any real re-render or performance issue. Since useMemo itself has overhead, using it unnecessarily can actually make performance worse instead of better.
 
 <img width="645" height="554" alt="image" src="https://github.com/user-attachments/assets/932688e9-4976-4048-9580-2cae048a7d46" />
+
+10. ### usetoggle-debug
+1. useUseToggle outside of your component
+2. const switchToggle = setToggle((prev) => !prev); You are calling setToggle immediately instead of creating a function
+
+So correct version:
+```javascript
+import { useState } from "react";
+
+const useToggle = () => {
+  const [isToggle, setToggle] = useState(false);
+
+  const switchToggle = () => {
+    setToggle(prev => !prev);
+  };
+
+  return [isToggle, switchToggle];
+};
+
+export default function App() {
+  const [isToggle, switchToggle] = useToggle();
+
+  return (
+    <>
+      <button aria-label="toggle-button" onClick={switchToggle}>
+        toggle
+      </button>
+      {isToggle ? "on" : "off"}
+    </>
+  );
+}
+```
