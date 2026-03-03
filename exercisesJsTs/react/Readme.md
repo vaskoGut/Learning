@@ -41,6 +41,26 @@ export default function App() {
 }
 ```
 
+| 11  | [Explain why code below doesnt update input](#input-explain)                               |
+```javascript
+  import { useState, ChangeEvent } from "react";
+  
+  export function ToDoInput() {
+    const [task, setTask] = useState<string>(""); // initialize as empty string
+  
+    const handleTask = (e: ChangeEvent<HTMLInputElement>) => {
+      setTimeout(() => setTask(e.target.value), 200);
+    };
+  
+    return (
+      <>
+        <input value={task} onChange={handleTask} type="text" />
+        <button onClick={() => console.log("add task", task)}>add task</button>
+      </>
+    );
+  }
+```
+
 
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
@@ -236,3 +256,6 @@ export default function App() {
   );
 }
 ```
+
+11. ### input-explain
+In React (especially in versions before React 17+), SyntheticEvents are recycled for performance. That means the e object is cleared after the event handler finishes.
