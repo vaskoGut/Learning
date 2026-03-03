@@ -1,8 +1,8 @@
+
 # PROJECT STRUCTURE
 | Nm | #Question   |
 | :---:   | :---: |
-| 1   | [How does work CSR? How does work SSR? how does work SSG? What about performance? What about SEO?  What about Interactivity? What about development complexity? Which projects fit better for
-each technique?](#ssr-ssg-isr-difference)                               |
+| 1   | [How does work CSR? How does work SSR? how does work SSG? What about performance? What about SEO?  What about Interactivity? What about development complexity?which type of project/app/website is better for each type of rendering?](#ssr-ssg-isr-difference)                                     |
 
  1. ###  ssr-ssg-isr-difference
      ***CSR*** (Client-Side Rendering): The browser downloads a minimal HTML file and uses JavaScript to build and render the page.
