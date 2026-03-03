@@ -221,6 +221,7 @@ let result = value ?? "default";
 | 3   | [ARCHITECTURE: what is iSR? what is main advantage of ISR? What is disadvantages of ISR - problem with partially stale page? ](#ISR-explanation)      |
 | 4   | [ARCHITECTURE: what is edge computing? ](#edge-computing)      |
 | 5   | [ARCHITECTURE: How would you approach defining a technical vision for a React-based ecommerce ecosystem (online shop, offline-online integration, membership, etc.)? ](#technical-vision-react-ecosystem)      |
+| 6   | [ARCHITECTURE: What is CRM? ](#crm-explanation)      |
 
 # Other
 | Nm | #Question   |
@@ -2834,6 +2835,10 @@ A technical vision should take long-term growth into account. That includes CI/C
 🤝 Team and Communication
 
 The vision must be understandable to the team. I ensure it’s well documented, and that everyone knows the technological priorities. We regularly review progress and adjust the plan as needed.
+
+6. ### crm-explanation
+<img width="577" height="547" alt="image" src="https://github.com/user-attachments/assets/8711c741-a5f2-469f-885f-2d40d797b710" />
+
 
 ________________________________________________________________________________________________________________________________
 
