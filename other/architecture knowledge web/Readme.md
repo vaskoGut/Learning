@@ -1,5 +1,5 @@
 
-# PROJECT STRUCTURE
+# ARCHITECTURE Questions
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [How does work CSR? How does work SSR? how does work SSG? What about performance? What about SEO?  What about Interactivity? What about development complexity?which type of project/app/website is better for each type of rendering?](#ssr-ssg-isr-difference)                                     |
