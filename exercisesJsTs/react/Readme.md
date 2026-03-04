@@ -61,6 +61,11 @@ export default function App() {
   }
 ```
 
+| 12  | [Why code below doesnt work?](#fix-handle-task)                               |
+```javascript
+  const handleTask = (e: ChangeEvent<HTMLInputElement>) => { () => setTask(e.target.value); };
+  <input value={task} onChange={handleTask} type="text" />
+```
 
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
@@ -259,3 +264,11 @@ export default function App() {
 
 11. ### input-explain
 In React (especially in versions before React 17+), SyntheticEvents are recycled for performance. That means the e object is cleared after the event handler finishes.
+
+12. ### fix-handle-task
+```javascript
+const handleTask = (e: ChangeEvent<HTMLInputElement>) => {
+  () => setTask(e.target.value);
+};
+// () => setTask(e.target.value); function is created but not called. so it should be just setTask(e.target.value);
+```
