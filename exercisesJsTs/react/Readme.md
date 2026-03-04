@@ -67,6 +67,10 @@ export default function App() {
   <input value={task} onChange={handleTask} type="text" />
 ```
 
+| 13  | [Fix type error? Dhy did it happen?](#fix-red-type-error)                               |
+<img width="363" height="92" alt="image" src="https://github.com/user-attachments/assets/6ba8bb27-b4fe-41f8-94b2-93389897cb18" />
+
+
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
 So better choice is:
@@ -272,3 +276,31 @@ const handleTask = (e: ChangeEvent<HTMLInputElement>) => {
 };
 // () => setTask(e.target.value); function is created but not called. so it should be just setTask(e.target.value);
 ```
+
+13. ### fix-red-type-error
+```javascript
+import { useState } from "react";
+import { ToDoInput } from "./TodoInput";
+
+export function TodoList() {
+  const [tasks, setTasks] = useState<string[]>([]);
+  const handleSetTasks = (task: string) => {
+    setTasks([...tasks, task]);
+  };
+
+  console.log("tasks", tasks);
+
+  return (
+    <>
+      <p>List of tasks</p>
+      <div>
+        {tasks.map((elem) => (
+          <p>{elem}</p>
+        ))}
+      </div>
+      <ToDoInput addTaskToList={handleSetTasks} />
+    </>
+  );
+}
+```
+
