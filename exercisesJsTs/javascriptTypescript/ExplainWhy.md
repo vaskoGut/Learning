@@ -39,6 +39,15 @@ for (let j = 0; j < 3; j++) {
 }
 ```
 
+| 4  | [Why you have 3 times 3, and how to fix it?](#event-loop-ex4)     
+```javascript
+  for (var i = 0; i < 3; i++) {
+    setTimeout(() => {
+      console.log(i);
+    }, 1000);
+  }
+```
+
 
 1. ### functional scope variables
 ```javascript
@@ -56,3 +65,14 @@ for (let j = 0; j < 3; j++) {
 
 3. ### loop-results
 <img width="689" height="617" alt="image" src="https://github.com/user-attachments/assets/b38d8bb5-0624-4a8a-bcfd-1896d54b5b77" />
+
+4. ### event-loop-ex4
+Because synchronous code runs before asynchronous code. And because functional scope of var.
+Fix is simple, just swap var with let:
+```javascript
+  for (let i = 0; i < 3; i++) {
+    setTimeout(() => {
+      console.log(i);
+    }, 1000);
+  }
+```
