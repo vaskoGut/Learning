@@ -72,6 +72,12 @@ export default function App() {
 
 | 14  | [Imagine you have array of objects. And want to change 1 of the object in array. How to do it?](#mutate-objects-react)                               |
 
+| 15  | [Why filter below is ok? No need to reasign tasks?](#react-filter-method-thing)                               |
+```javascript 
+const filteredTasks = tasks.filter((elem) => elem.id !== id);
+setTasks(filteredTasks);
+```
+
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
 So better choice is:
@@ -305,7 +311,7 @@ export function TodoList() {
 }
 ```
 
-13. ### mutate-objects-react
+14. ### mutate-objects-react
 ```javascript
   setUsers(prev =>
     prev.map(user =>
@@ -316,3 +322,5 @@ export function TodoList() {
   );
 ```
 
+15. ### react-filter-method-thing
+we just use filter method - cause it's creating new array. Now need to do smth lik [...filteredTasks]
