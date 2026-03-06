@@ -70,6 +70,7 @@ export default function App() {
 | 13  | [Fix type error? Dhy did it happen?](#fix-red-type-error)                               |
 <img width="363" height="92" alt="image" src="https://github.com/user-attachments/assets/6ba8bb27-b4fe-41f8-94b2-93389897cb18" />
 
+| 14  | [Imagine you have array of objects. And want to change 1 of the object in array. How to do it?](#mutate-objects-react)                               |
 
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
@@ -302,5 +303,16 @@ export function TodoList() {
     </>
   );
 }
+```
+
+13. ### mutate-objects-react
+```javascript
+  setUsers(prev =>
+    prev.map(user =>
+      user.id === 2
+        ? { ...user, age: 30 }
+        : user
+    )
+  );
 ```
 
