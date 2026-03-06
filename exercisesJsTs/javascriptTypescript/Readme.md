@@ -9,7 +9,7 @@
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [Write reverse string function using map, reduce methods, memoization, for loop](#reverse-string)                                                                                                |
-| 2   | [Write palindrom function - with regular aproach and with help of recursion](#palindrom-recursion-solving)                                                                             |
+| 2   | [Write palindrom function - with regular aproach (oop, with reverse array) and with help of recursion](#palindrom-recursion-solving)                                                                             |
 | 3   | [Remove duplicates from array. What is difference in complexity or reduce and map solution ( check code below )?](#remove-duplicates)                                                            |
 | 4   | [Flatten 1 level array ( with simple looping )?](#flatten-array)                                                            |
 | 5   | [Check similarity of arrays. Bonus question - does return breaks for loop?](#similarity-arrays)                                                            |
