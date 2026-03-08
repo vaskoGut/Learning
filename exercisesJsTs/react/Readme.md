@@ -78,6 +78,10 @@ const filteredTasks = tasks.filter((elem) => elem.id !== id);
 setTasks(filteredTasks);
 ```
 
+| 16 | [Is it ok saving filters like that? or better to do it outside of useEffect? ](#use-effect-calculating-smth)                               |
+<img width="547" height="205" alt="image" src="https://github.com/user-attachments/assets/942fb2fb-0ea7-4f10-b503-220c82960616" />
+
+
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
 So better choice is:
@@ -324,3 +328,7 @@ export function TodoList() {
 
 15. ### react-filter-method-thing
 we just use filter method - cause it's creating new array. Now need to do smth lik [...filteredTasks]
+
+16. ### use-effect-calculating-smth
+✅ Best practice: leave it as a derived variable outside of useEffect. Only use useEffect for side effects (API calls, localStorage sync, subscriptions, etc.), not for calculating values for rendering.
+
