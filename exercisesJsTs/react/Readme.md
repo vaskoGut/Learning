@@ -82,6 +82,7 @@ setTasks(filteredTasks);
 <img width="547" height="205" alt="image" src="https://github.com/user-attachments/assets/942fb2fb-0ea7-4f10-b503-220c82960616" />
 
 | 17 | [Create array in react with any value. Save it to localStorage and then read from localstorage and save value to some state variable](#localStorage-exercise)                               |
+Remember to handle edge case. If no value saved to Localstorage
 
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
@@ -332,4 +333,8 @@ we just use filter method - cause it's creating new array. Now need to do smth l
 
 16. ### use-effect-calculating-smth
 ✅ Best practice: leave it as a derived variable outside of useEffect. Only use useEffect for side effects (API calls, localStorage sync, subscriptions, etc.), not for calculating values for rendering.
+
+17. ### localStorage-exercise
+<img width="583" height="164" alt="image" src="https://github.com/user-attachments/assets/cc80a822-14ad-4df4-b7ba-341ae4c8dce4" />
+
 
