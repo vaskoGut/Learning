@@ -87,6 +87,15 @@ Remember to handle edge case. If no value saved to Localstorage
 | 18 | [you want to tye setState action in react. And sent that from parent to child. How to do it?](#typin-setstate-action-react)                               |
 | 19 | [Type e event in React](#typing-event-react)                               |
 
+| 20 |  [What is wrong here with all case?](#filter-method-fix-wrong)                               |
+```javascript
+  const filteredTasks = tasks.filter((task) => {
+    if (filter === TASKS_STATUS.completed) return task.completed === true;
+    if (filter === TASKS_STATUS.all) return task;
+    if (filter === TASKS_STATUS.toDo) return task.completed !== true;
+  });
+```
+
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
 So better choice is:
@@ -352,3 +361,14 @@ React.Dispatch<React.SetState.Action<TaskType[]>
 // import { ChangeEvent } from "react";
 e: ChangeEvent<HTMLInputElement>
 ```
+
+20. ### filter-method-fix-wrong
+```javascript
+  const filteredTasks = tasks.filter((task) => {
+    if (filter === TASKS_STATUS.completed) return task.completed === true;
+    if (filter === TASKS_STATUS.all) return task; // here should be returned true/false not a task
+    if (filter === TASKS_STATUS.toDo) return task.completed !== true;
+  });
+```
+
+
