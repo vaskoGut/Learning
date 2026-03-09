@@ -84,6 +84,9 @@ setTasks(filteredTasks);
 | 17 | [Create array in react with any value. Save it to localStorage and then read from localstorage and save value to some state variable](#localStorage-exercise)                               |
 Remember to handle edge case. If no value saved to Localstorage
 
+| 18 | [you want to tye setState action in react. And sent that from parent to child. How to do it?](#typin-setstate-action-react)                               |
+
+
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
 So better choice is:
@@ -337,4 +340,8 @@ we just use filter method - cause it's creating new array. Now need to do smth l
 17. ### localStorage-exercise
 <img width="583" height="164" alt="image" src="https://github.com/user-attachments/assets/cc80a822-14ad-4df4-b7ba-341ae4c8dce4" />
 
-
+18. ### typin-setstate-action-react
+```javascript
+// task type is just default start state value
+React.Dispatch<React.SetState.Action<TaskType[]>
+```
