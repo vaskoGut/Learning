@@ -81,6 +81,7 @@ setTasks(filteredTasks);
 | 16 | [Is it ok saving filters like that? or better to do it outside of useEffect? ](#use-effect-calculating-smth)                               |
 <img width="547" height="205" alt="image" src="https://github.com/user-attachments/assets/942fb2fb-0ea7-4f10-b503-220c82960616" />
 
+| 17 | [Create array in react with any value. Save it to localStorage and then read from localstorage and save value to some state variable](#localStorage-exercise)                               |
 
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
