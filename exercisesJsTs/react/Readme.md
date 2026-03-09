@@ -85,7 +85,7 @@ setTasks(filteredTasks);
 Remember to handle edge case. If no value saved to Localstorage
 
 | 18 | [you want to tye setState action in react. And sent that from parent to child. How to do it?](#typin-setstate-action-react)                               |
-
+| 19 | [Type e event in React](#typing-event-react)                               |
 
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
@@ -344,4 +344,11 @@ we just use filter method - cause it's creating new array. Now need to do smth l
 ```javascript
 // task type is just default start state value
 React.Dispatch<React.SetState.Action<TaskType[]>
+```
+
+19. ### typing-event-react
+```javascript
+// input value={currentTask} onChange={handleTask} type="text" />
+// import { ChangeEvent } from "react";
+e: ChangeEvent<HTMLInputElement>
 ```
