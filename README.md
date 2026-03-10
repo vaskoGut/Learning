@@ -2033,6 +2033,34 @@ This makes state changes predictable and easier to debug
 <img width="1536" height="1024" alt="ChatGPT Image Feb 23, 2026, 03_08_47 PM" src="https://github.com/user-attachments/assets/f6bdbd71-048a-436c-917d-8721826127a5" />
 A component re-renders when its state changes, when it receives new props from a parent, when the context it consumes changes, or when a force update is triggered. Additionally, re-rendering can propagate from parent re-renders unless memoization is used.
 
+ 61. ### #client-server-components
+***Server Components*** run on the server (Node.js or edge runtime) and send already-rendered HTML to the browser.
+
+Key characteristics
+Execute only on the server
+No JavaScript sent to the client for that component
+Can directly access databases, files, or backend APIs
+Cannot use browser APIs like window or document
+Cannot use React hooks like useState or useEffect
+
+example - fetching users and rendering users list. Just simple example
+
+Advantages
+Smaller client-side bundle
+Better performance
+Faster initial page load
+Secure access to backend resources
+
+***Client Components*** run in the browser and allow interactivity.
+Run in the browser
+Support state and lifecycle hooks
+Can use event handlers
+Can access DOM and browser APIs
+
+***SIMPLE RULE OF USING***:
+If you need interactivity → Client Component
+If you only need data rendering → Server Component
+
  ________________________________________________________________________________________________________________________________
   1. ### #what-is-redux
       Redux is library for managing global application state.
