@@ -85,7 +85,7 @@ setTasks(filteredTasks);
 Remember to handle edge case. If no value saved to Localstorage
 
 | 18 | [you want to tye setState action in react. And sent that from parent to child. How to do it?](#typin-setstate-action-react)                               |
-| 19 | [Type e event in React](#typing-event-react)                               |
+| 19 | [1. Type e event in React. 2. type onKeyDown button event ](#typing-event-react)                               |
 
 | 20 |  [What is wrong here with all case?](#filter-method-fix-wrong)                               |
 ```javascript
@@ -367,6 +367,11 @@ React.Dispatch<React.SetState.Action<TaskType[]>
 // input value={currentTask} onChange={handleTask} type="text" />
 // import { ChangeEvent } from "react";
 e: ChangeEvent<HTMLInputElement>
+```
+```javascript
+  onKeyDown={(e: React.KeyboardEvent<HTMLButtonElement>) => {
+    if (e.key === "enter") handleAddTaskToList();
+  }}
 ```
 
 20. ### filter-method-fix-wrong
