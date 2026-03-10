@@ -96,6 +96,13 @@ Remember to handle edge case. If no value saved to Localstorage
   });
 ```
 
+| 21 |  [Why code below is bad? How to do it in better way?](#correct-localstorage-file)                               |
+```javascript
+  const tasksFromStore = JSON.parse(
+    localStorage.getItem(LOCAL_STOR_KEY) || "[]"
+  );
+```
+
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
 So better choice is:
@@ -369,6 +376,26 @@ e: ChangeEvent<HTMLInputElement>
     if (filter === TASKS_STATUS.all) return task; // here should be returned true/false not a task
     if (filter === TASKS_STATUS.toDo) return task.completed !== true;
   });
+```
+
+21. ### correct-localstorage-file
+```javascript
+const tasksFromStore = JSON.parse(
+  localStorage.getItem(LOCAL_STOR_KEY) || "[]"
+);
+
+// so localstorage can crash, if json data are corrupted in some way
+// better approach:
+
+```javascript
+  try {
+    const tasksFromStore = JSON.parse(
+      localStorage.getItem(LOCAL_STOR_KEY)
+    );
+    if (tasksFromStore) setTodos(JSON.parse(data));
+  } catch {
+  ssetTodos("[]");
+}
 ```
 
 
