@@ -104,6 +104,10 @@ Remember to handle edge case. If no value saved to Localstorage
   );
 ```
 
+| 22 | [ Why using useReducer like that is bad? ](#correct-localstorage-file)                               |
+<img width="646" height="283" alt="image" src="https://github.com/user-attachments/assets/7fb9da42-8c54-4f3b-8d2a-0847fdcf86cb" />
+
+
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
 So better choice is:
@@ -403,5 +407,13 @@ const tasksFromStore = JSON.parse(
   ssetTodos("[]");
 }
 ```
+
+22. #correct-localstorage-file
+<img width="646" height="283" alt="image" src="https://github.com/user-attachments/assets/9ea5f8a7-d62d-442c-a215-547c75de9512" />
+```javascript
+  cause we directly mutating state
+```
+// correct way:
+<img width="541" height="403" alt="image" src="https://github.com/user-attachments/assets/75c4b495-e66b-4e7a-97fd-5f6c40847461" />
 
 
