@@ -171,7 +171,7 @@ let result = value ?? "default";
 | 58   | [Settimeout setinterval difference?](#setimeout-setinterval)                                     |
 | 59   | [What is react hydration?](#react-hydration)                                     |
 | 60   | [What causes component rerendering?](#component-rerendering)                                     |
-
+| 61   | [Server client components difference?](#client-server-components)                                     |
 # Redux
 | Nm | #Question   |
 | :---:   | :---: |
