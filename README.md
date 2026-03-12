@@ -10,6 +10,9 @@
 
 ## 6 [React](https://github.com/vaskoGut/Learning/tree/main/frameworks/react.js)                                     |
 
+## 7 [Soft Skill](https://github.com/vaskoGut/Learning/tree/main/frameworks/react.js)                                     |
+
+
 # JAVASCRIPT TYPESCRIPT GENERAL QUESTIONS
 | Nm | #Question   |
 | :---:   | :---: |
