@@ -2,6 +2,7 @@
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [Write simple reducer to add, withdraw, clear your money in bank? Type initial state and reducer](#reducer-simple)                               |
+| 2   | [You have players list with some scores. Use useReduce to check their score changes. REnder list playerss. Remember to type everything](#reducer-simple)                               |
 
 1. ### reducer-simple
 ```javascript
