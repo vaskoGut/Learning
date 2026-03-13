@@ -1,7 +1,7 @@
 # USE REDUCER
 | Nm | #Question   |
 | :---:   | :---: |
-| 1   | [Write simple reducer to add, withdraw, clear your money in bank?](#reducer-simple)                               |
+| 1   | [Write simple reducer to add, withdraw, clear your money in bank? Type initial state and reducer](#reducer-simple)                               |
 
 1. ### reducer-simple
 ```javascript
