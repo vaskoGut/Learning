@@ -1,3 +1,6 @@
+# useReducer
+https://github.com/vaskoGut/Learning/blob/main/exercisesJsTs/react/useReducer/Readme.md
+
 # REACT
 | Nm | #Question   |
 | :---:   | :---: |
