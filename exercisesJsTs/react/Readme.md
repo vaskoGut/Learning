@@ -115,6 +115,16 @@ Remember to handle edge case. If no value saved to Localstorage
   return [todos, setTodos]
 ```
 
+| 24 | [ This code increases value for 10 after each click. How can it be refactored with help of Math object?](#state-update-math-obj)                               |
+```javascript
+   const increase = () => {
+        setProgress((prev) => {
+            if (prev === 100) return 100;
+            return prev + 10;
+        })
+    };
+```
+
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
 So better choice is:
@@ -428,3 +438,22 @@ const tasksFromStore = JSON.parse(
   return [todos, setTodos] as const;
 ```
 without it typescript expects smth array[0], array[1], not a tupled array
+
+24. ##state-update-math-obj
+```javascript
+   // exercise
+   const increase = () => {
+        setProgress((prev) => {
+            if (prev === 100) return 100;
+            return prev + 10;
+        })
+    };
+```
+
+```javascript
+   // solution
+   setProgress((prev) => {
+      return Math.min(prev + 10, 100);
+   })
+   // if prev value is bigger than 100, Math.min will set it to 100. So we dont need additional comparison.
+```
