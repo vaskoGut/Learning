@@ -179,6 +179,8 @@ let result = value ?? "default";
 | 59   | [What is react hydration?](#react-hydration)                                     |
 | 60   | [What causes component rerendering?](#component-rerendering)                                     |
 | 61   | [Server client components difference?](#client-server-components)                                     |
+| 62   | [When should we use useCallback?](#useCallback-react)                                     |
+
 # Redux
 | Nm | #Question   |
 | :---:   | :---: |
@@ -2084,6 +2086,48 @@ Can access DOM and browser APIs
 ***SIMPLE RULE OF USING***:
 If you need interactivity → Client Component
 If you only need data rendering → Server Component
+
+62. ### #useCallback-react
+Use useCallback only if:
+you're passing a function to memoized components
+you're solving a real rerender problem
+
+Example:
+```javascript
+ return (
+    <div>
+      <button onClick={() => setCount(c => c + 1)}>
+        rerender parent
+      </button>
+
+      <Child onIncrease={increase} />
+    </div>
+  );
+```
+
+```javascript
+  // child is memoized:
+const Child = ({ onIncrease }) => {
+  console.log("Child render");
+
+  return (
+    <button onClick={onIncrease}>
+      Increase
+    </button>
+  );
+};
+
+export default React.memo(Child);
+```
+
+***The problem***: Every time the parent renders, this function is recreated:
+```javascript
+const increase = () => {
+  setCount(c => c + 1);
+};
+```
+Since Child receives a different function reference, child component will be rerendered.
+So in that case we need useCallback - with use of it you send all time same function to child. And component stopps to rerender.
 
  ________________________________________________________________________________________________________________________________
   1. ### #what-is-redux
