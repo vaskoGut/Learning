@@ -466,3 +466,16 @@ without it typescript expects smth array[0], array[1], not a tupled array
     fetch("url", { signal: controller.signal }).then((data) => data.json().then(() => setData(data)) );
     return () => { controller.abort(); }; }, []);
 ```
+
+```javascript
+  // example wit use Ref. but in most Cases example above is good
+  useEffect(() => {
+  controllerRef.current = new AbortController();
+
+  fetch(`url/${postId}`, { signal: controllerRef.current.signal })
+    .then((res) => res.json())
+    .then(setData);
+
+  return () => controllerRef.current.abort();
+}, [postId]);
+```
