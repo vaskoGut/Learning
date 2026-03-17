@@ -1,6 +1,6 @@
 import { useState, useMemo } from "react";
 import { ToDoInput } from "./TodoInput";
-import { TaskType, TASKS_STATUS, TodoListProps } from "./TodoListTypes";
+import { TaskType, TASKS_STATUS, TodoListProps } from "./ToDoListType";
 
 export function TodoList({ setTasks, tasks }: TodoListProps) {
   const [filter, setFilter] = useState<string>(TASKS_STATUS.all);

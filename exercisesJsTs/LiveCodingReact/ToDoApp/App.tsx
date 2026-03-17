@@ -1,5 +1,5 @@
 import { TodoList } from "./TodoList";
-import { TaskType } from "./TodoListTypes";
+import { TaskType } from "./ToDoListType";
 
 import { useState, useEffect } from "react";
 import "./styles.css";
