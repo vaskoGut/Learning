@@ -124,6 +124,7 @@ Remember to handle edge case. If no value saved to Localstorage
         })
     };
 ```
+| 25 | [Write caceling request with abrotController inside fetch?](#cancel-fetch-request-abort)                               |
 
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
@@ -456,4 +457,12 @@ without it typescript expects smth array[0], array[1], not a tupled array
       return Math.min(prev + 10, 100);
    })
    // if prev value is bigger than 100, Math.min will set it to 100. So we dont need additional comparison.
+```
+
+24. ##cancel-fetch-request-abort
+```javascript
+  useEffect(
+    () => { const controller = new AbortController();
+    fetch("url", { signal: controller.signal }).then((data) => data.json().then(() => setData(data)) );
+    return () => { controller.abort(); }; }, []);
 ```
