@@ -459,7 +459,7 @@ without it typescript expects smth array[0], array[1], not a tupled array
    // if prev value is bigger than 100, Math.min will set it to 100. So we dont need additional comparison.
 ```
 
-24. #cancel-fetch-request-abort
+25. #cancel-fetch-request-abort
 ```javascript
   useEffect(
     () => { const controller = new AbortController();
