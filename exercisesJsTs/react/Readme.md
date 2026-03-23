@@ -434,13 +434,13 @@ const tasksFromStore = JSON.parse(
 // correct way:
 <img width="541" height="403" alt="image" src="https://github.com/user-attachments/assets/75c4b495-e66b-4e7a-97fd-5f6c40847461" />
 
-23. #type-array-in-hook
+23. ### type-array-in-hook
 ```javascript
   return [todos, setTodos] as const;
 ```
 without it typescript expects smth array[0], array[1], not a tupled array
 
-24. ##state-update-math-obj
+24. ### state-update-math-obj
 ```javascript
    // exercise
    const increase = () => {
@@ -459,7 +459,7 @@ without it typescript expects smth array[0], array[1], not a tupled array
    // if prev value is bigger than 100, Math.min will set it to 100. So we dont need additional comparison.
 ```
 
-25. ###cancel-fetch-request-abort
+25. ### cancel-fetch-request-abort
 ```javascript
   useEffect(() => {
     const abort = new AbortController();
