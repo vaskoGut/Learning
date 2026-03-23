@@ -459,13 +459,33 @@ without it typescript expects smth array[0], array[1], not a tupled array
    // if prev value is bigger than 100, Math.min will set it to 100. So we dont need additional comparison.
 ```
 
-25. #cancel-fetch-request-abort
+25. ###cancel-fetch-request-abort
 ```javascript
-  useEffect(
-    () => { const controller = new AbortController();
-    fetch("url", { signal: controller.signal }).then((data) => data.json().then(() => setData(data)) );
-    return () => { controller.abort(); }; }, []);
+  useEffect(() => {
+    const abort = new AbortController();
+    setLoading(true);
+
+    fetch(URL, { signal: abort.signal })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`error while fetching data" ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setData(data);
+      })
+      .catch((error) => console.error(error))
+      .finally(() => {
+        setLoading(false);
+      });
+
+    return () => {
+      abort.abort();
+    };
+  }, []);
 ```
+
 
 ```javascript
   // example wit use Ref. but in most Cases example above is good
@@ -478,4 +498,39 @@ without it typescript expects smth array[0], array[1], not a tupled array
 
   return () => controllerRef.current.abort();
 }, [postId]);
+```
+
+```javascript
+  useEffect(() => {
+  const abortController = new AbortController();
+
+  const fetchData = async () => {
+    try {
+      setLoading(true);
+
+      const response = await fetch(URL, {
+        signal: abortController.signal,
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      setData(data);
+    } catch (error) {
+      if (error.name !== "AbortError") {
+        console.error(error);
+      }
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  fetchData();
+
+  return () => {
+    abortController.abort();
+  };
+}, [URL]);
 ```
