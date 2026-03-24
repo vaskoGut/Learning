@@ -125,6 +125,7 @@ Remember to handle edge case. If no value saved to Localstorage
     };
 ```
 | 25 | [Write caceling request with abrotController inside fetch?](#cancel-fetch-request-abort)                               |
+| 26 | [How do you decide whether a piece of UI should be a separate React component?](#react-seperate-component)                               |
 
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
@@ -534,3 +535,13 @@ without it typescript expects smth array[0], array[1], not a tupled array
   };
 }, [URL]);
 ```
+
+| 1 | [How do you decide whether a piece of UI should be a separate React component?](#react-seperate-component)                               |
+| 2 | [How do you decide where to store state in a React app?](#react-store-state)                               |
+
+1. ### react-seperate-component
+I usually evaluate based on reusability, complexity, and separation of concerns. If a UI element is used in multiple places, has its own state or behavior, or could become too complex if embedded in a parent, I create a separate component. For example, in a dashboard project, I created a Card component that handled both layout and dynamic content; this allowed other pages to reuse it with different data. I also make sure the component is configurable via props without tightly coupling it to a specific page."
+✅ Key points: reusability, maintainability, prop-driven, separation of concerns.
+
+2. ### react-store-state
+I distinguish between local state, shared state, and server state. Local UI state, like toggles and form inputs, stays in the component. Shared state, like user authentication or theme settings, goes into a global store, e.g., Context API or Redux/Zustand. Server state fetched from APIs usually stays in React Query or SWR. For example, in our wellness app, the ‘user workouts’ data is fetched via REST API and stored in React Query, while form inputs for creating a new workout are local to the form component. This approach prevents unnecessary re-renders and keeps state predictable."
