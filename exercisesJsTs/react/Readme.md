@@ -143,6 +143,8 @@ Remember to handle edge case. If no value saved to Localstorage
   }
 ```
 
+| 29 | [How to type initial object state with string properties and boolean values?](#typing-initial-react-state)                               |
+
 
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
@@ -576,6 +578,10 @@ const handleClick = (id: string) => {
   });
 };
 ```
+
+29. ### typing-initial-react-state
+const [activeIds, setActiveIds] = useState<Record<string, boolean>>({});
+
 
 
 | 1 | [How do you decide whether a piece of UI should be a separate React component?](#react-seperate-component)                               |
