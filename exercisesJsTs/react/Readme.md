@@ -125,8 +125,24 @@ Remember to handle edge case. If no value saved to Localstorage
     };
 ```
 | 25 | [Write caceling request with abrotController inside fetch?](#cancel-fetch-request-abort)                               |
+
 | 26 | [How do you decide whether a piece of UI should be a separate React component?](#react-seperate-component)                               |
+
 | 27 | [Imagine you have search input with add button, and want to handle adding new item to list - how to handle empty value??](#react-handling-empty-value)                               |
+
+| 28 | [Why code below doesn't work? What 1 of the most important react rules does it break?](#changing-react-object-state)                               |
+```javascript
+  const handleClick = (id:string) => {
+    setActiveIds(prev  => {
+      console.log('prev', prev);
+      if(prev[id]) {
+        prev[id] = null
+      } else prev[id] = id;
+      return prev;
+    });
+  }
+```
+
 
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
@@ -546,6 +562,21 @@ without it typescript expects smth array[0], array[1], not a tupled array
     setInputValue("");
   };
 ```
+
+28. ### changing-react-object-state
+It breaks rule - don't mutate react state directly!
+
+```javascript
+const handleClick = (id: string) => {
+  setActiveIds(prev => {
+    return {
+      ...prev,
+      [id]: prev[id] ? null : id
+    };
+  });
+};
+```
+
 
 | 1 | [How do you decide whether a piece of UI should be a separate React component?](#react-seperate-component)                               |
 | 2 | [How do you decide where to store state in a React app?](#react-store-state)                               |
