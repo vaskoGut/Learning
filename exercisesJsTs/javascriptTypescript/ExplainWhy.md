@@ -48,6 +48,8 @@ for (let j = 0; j < 3; j++) {
   }
 ```
 
+| 5  | [create generic function that filters objects by a key and value](#generic-object-user) 
+
 
 1. ### functional scope variables
 ```javascript
@@ -75,4 +77,32 @@ Fix is simple, just swap var with let:
       console.log(i);
     }, 1000);
   }
+```
+
+4. ### generic-object-user
+```javascript
+// generic function that filters objects by a key and value
+
+type User = {
+  id: number;
+  name: string;
+  active: boolean;
+}
+
+
+function filterObjects<T, K extends keyof T>(
+  array: T[],
+  key: K,
+  value: T[K]
+): T[] {
+  return array.filter(elem => elem[key] === value )
+}
+
+const users: User[] = [
+  { id: 1, name: "Alice", active: true },
+  { id: 2, name: "Bob", active: false },
+  { id: 3, name: "Charlie", active: true }
+];
+
+console.log(filterObjects(users, 'active', true));
 ```
