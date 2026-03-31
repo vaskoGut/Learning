@@ -92,11 +92,12 @@
 | 76   | [What is a snapshot test?](#snapshot-testing)                                     |
 | 77   | [What ui test does look for simple select component?](#ui-test-select-component)                                     |
 | 78   | [What is diff between call, apply bind?](#call-apply-bind-diff-functions)                                     |
-| 79   | [1. What is Temporal dead zone? 2. What will be result of code below and why? 3. what is difference between let,const,var in terms of Temporal dead zone?](#temporal-dead-zone)                                     |
+| 79   | [What is Temporal dead zone? 2. What will be result of code below and why? 3. what is difference between let,const,var in terms of Temporal dead zone?](#temporal-dead-zone)                                     |
 ```javascript
 console.log(a);
 let a = 10;
 ```
+| 80   | [ What are generics?](#generics-explanation)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1470,6 +1471,8 @@ greetAlice('!!'); // Hey, Alice!!
    3. 
    <img width="522" height="135" alt="image" src="https://github.com/user-attachments/assets/97553b81-7da8-4c11-b6f5-7e53db750dba" />
 
+80.  ### #generics-explanation
+They let you write code that works with different types without losing type information.
 
 __________________________________________________________________________________________________________________________________________
 
