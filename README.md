@@ -98,6 +98,9 @@ console.log(a);
 let a = 10;
 ```
 | 80   | [ What are generics?](#generics-explanation)                                     |
+| 81   | [ What does mean this extends example here?](#generics-extends)                                     |
+<img width="860" height="137" alt="image" src="https://github.com/user-attachments/assets/01fc6d20-7c7b-4226-85a1-ac361da9f448" />
+
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1477,6 +1480,10 @@ greetAlice('!!'); // Hey, Alice!!
 
 80.  ### #generics-explanation
 They let you write code that works with different types without losing type information.
+
+81.  ### #generics-extends
+It means data should be object. If you pass string or number it will not work
+
 
 __________________________________________________________________________________________________________________________________________
 
