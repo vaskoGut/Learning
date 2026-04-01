@@ -15,7 +15,7 @@
 # JAVASCRIPT TYPESCRIPT GENERAL QUESTIONS
 | Nm | #Question   |
 | :---:   | :---: |
-| 1   | [Difference let const var? Hoisting - what is inial value when we use var and const, let? Does const make object immutable? Can you explain what block scope actually means in practice?](#what-is-difference-between-let-const-var)                                     |
+| 1   | [Difference let const var? Hoisting - what is inial value when we use var and const, let? Does const make object immutable? Can you explain what block scope actually means in practice? If const cannt be reasigned, why can we still modify objects or arrays declared with const?](#what-is-difference-between-let-const-var)                                     |
 | 2   | [Difference between arrow function and function declaration, expressions](#arrow-function-explanation)                                                                             |
 | 3   | [What is generator ](#generator-function)                                                                             |
 | 4   | [Types Enums Interface. What for are used types? What are tuples? What is union, intersection? What is intersection types? What is record type - provide example](#types-enums-interfaces)                                                                             |
@@ -348,6 +348,8 @@ Can be installed on a user's home screen like a native app and can run independe
 
    ***Block scope*** - block scope means that a variable declared with let or const is only accessible inside the neareast pair  curly braces {} like in an if statement or loop
 
+   Const prevents reassignment of the varaible binding,, not mutation of the value. In the case of objects and arrays,the varaible hold a reference to a memory location
+   We cannot change that reference, but we can still modify the contents of the objects.
    
 3. ### arrow function explanation
    **Functional expression** - function defined inside an expression. Example:
