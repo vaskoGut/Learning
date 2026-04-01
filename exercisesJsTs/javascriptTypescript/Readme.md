@@ -141,6 +141,12 @@ arr.customMap(elem => elem + 1);
 42  | [Write reduce implementation ?](#own-reduce-implementation)                               |
 43  | [Explain initial value check](#explain-that-line-reduce)                               |
 
+44  | [Explain difference in results these for loops](#for-loops-differences)                               |
+```javascript
+for (let i = 0; i < 3; i++) { setTimeout(() => console.log(i), 100); } // 0, 1, 2
+for (var i = 0; i < 3; i++) { setTimeout(() => console.log(i), 100); } // 3
+```
+
 1. ### reverse string
    Using **map** method:
    
@@ -1057,4 +1063,13 @@ Array.prototype.customMap = function(callback) {
 43. ### explain-that-line-reduce
 let accumulator = initialValue !== undefined ? initialValue : array[0];
 just initialValue ? ... check will not work correctly, cause it will not handle cases when initial value is false or 0 for example.
- 
+
+44. ### for-loops-differences
+Main difference is, var has functional scope and let, const have block scope.
+We have ***3*** result because After a for loop ends, the counter is usually one step past the limit
+
+var i is not block-scoped, so there is only one shared i variable for all iterations.
+
+Think of var i like a single shared box.
+All callbacks look into that same box later — and by then, it contains 3.
+With let, each loop iteration gets its own box, so values stay 0, 1, 2.
