@@ -15,7 +15,7 @@
 # JAVASCRIPT TYPESCRIPT GENERAL QUESTIONS
 | Nm | #Question   |
 | :---:   | :---: |
-| 1   | [Difference let const var? Hoisting - what is inial value when we use var and const, let? Does const make object immutable?](#what-is-difference-between-let-const-var)                                     |
+| 1   | [Difference let const var? Hoisting - what is inial value when we use var and const, let? Does const make object immutable? Can you explain what block scope actually means in practice?](#what-is-difference-between-let-const-var)                                     |
 | 2   | [Difference between arrow function and function declaration, expressions](#arrow-function-explanation)                                                                             |
 | 3   | [What is generator ](#generator-function)                                                                             |
 | 4   | [Types Enums Interface. What for are used types? What are tuples? What is union, intersection? What is intersection types? What is record type - provide example](#types-enums-interfaces)                                                                             |
@@ -329,7 +329,7 @@ Can be installed on a user's home screen like a native app and can run independe
 
 
 1. ### what is difference between let const var
-   **Var** - scope is global or function ( if var's used inside function ).
+   **Var** - scope is functino scoped.
    Let, const - they have block scope.
 
     ```javascript
@@ -338,13 +338,15 @@ Can be installed on a user's home screen like a native app and can run independe
      }
     ```
    **Let** - can be reasigned.
-   **Const** - can't be reasigned.
+   **Const** - can't be reasigned. But objects , arrays declared with const can be still muated.
 
    ***Hoisting***:
     - var: Hoisted and initialized with undefined (can be accessed before declaration)
-    - let/const: Hoisted but not initialized
+    - let/const: while lest and const are hosted but stay in Tempora Dead Zonekl
 
     Const doesn't make object immutable. You still can change properties of that object
+
+   ***Block scope*** - block scope means that a variable declared with let or const is only accessible inside the neareast pair  curly braces {} like in an if statement or loop
 
    
 3. ### arrow function explanation
