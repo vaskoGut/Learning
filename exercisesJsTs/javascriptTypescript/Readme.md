@@ -147,6 +147,9 @@ for (let i = 0; i < 3; i++) { setTimeout(() => console.log(i), 100); } // 0, 1, 
 for (var i = 0; i < 3; i++) { setTimeout(() => console.log(i), 100); } // 3
 ```
 
+45  | [Reimplement Pick type](#pick-type-reimplementing)                               |
+
+
 1. ### reverse string
    Using **map** method:
    
@@ -1073,3 +1076,27 @@ var i is not block-scoped, so there is only one shared i variable for all iterat
 Think of var i like a single shared box.
 All callbacks look into that same box later — and by then, it contains 3.
 With let, each loop iteration gets its own box, so values stay 0, 1, 2.
+
+45. ### pick-type-reimplementing
+```javascript
+   type MyPick<T, K extends keyof T> = {
+     [key in K]: T[key]
+   }
+```
+```javascript
+   // code for testing test cases:
+interface Todo {
+  title: string
+  description: string
+  completed: boolean
+}
+
+interface Expected1 {
+  title: string
+}
+
+interface Expected2 {
+  title: string
+  completed: boolean
+}
+```
