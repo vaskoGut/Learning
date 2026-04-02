@@ -1099,4 +1099,7 @@ interface Expected2 {
   title: string
   completed: boolean
 }
+
+// testing result
+type Test = MyPick<Todo, 'title'|'completed'>
 ```
