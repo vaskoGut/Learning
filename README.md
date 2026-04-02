@@ -101,6 +101,7 @@ let a = 10;
 | 81   | [ What does mean this extends example here?](#generics-extends)                                     |
 <img width="860" height="137" alt="image" src="https://github.com/user-attachments/assets/01fc6d20-7c7b-4226-85a1-ac361da9f448" />
 | 82   | [ Write simple example of geneirc type. ApiResponse with data(genericType), isError, userResponse using this ApiResponseGenerirc, response using this UserResponse](#generics-type)                                     |
+| 83   | [ Write a function returning element of array with generic type - it means it can take as param f.e. both strings and nubmers?](#generics-array-exercise)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1500,6 +1501,16 @@ It means data should be object. If you pass string or number it will not work
     },
     isError: true
   }
+```
+
+83.  ### #generics-array-exercise
+```javascript
+function getArrayElem<T>(array: T[]) {
+  return array[0];
+}
+
+const nums = [1,2,3];
+const strings = ['df', 'er', 'ert'];
 ```
 
 __________________________________________________________________________________________________________________________________________
