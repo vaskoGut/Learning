@@ -67,7 +67,7 @@
 | 51   | [what is scope in js?](#scope-js)                                     |
 | 52   | [what is event loop? What are microtasks and macrotasks when we speak about event loop?](#event-loop)                                     |
 | 53   | [what is hoisting? How are hoisted let, var, const? What happens when you access a var variable before it is declared? Do function declaration hoisted? How about function expression and arrow functions?](#hoisting)                                     |
-| 54   | [Javascript datatypes and how they're checked?](#javascript-datatypes)                                     |
+| 54   | [Javascript datatypes and how they're checked? What for can be used primitive type of data Symbol?](#javascript-datatypes)                                     |
 | 55   | [Difference null and undefined?](#null-undefined-diff)                                     |
 | 56   | [What is callback function in js?](#callback-function)                                     |
 | 57   | [How you handle errors in Javascript?What about axios and react-query?Erorr boundary in react?](#errors-javascript)                                     |
@@ -1270,6 +1270,11 @@ It runs console.log('Second');
 54. ### ##javascript-datatypes
 JavaScript has 8 data types: 7 primitive types (number, string, boolean, undefined, null, symbol, bigint)  and 1 non-primitive type, which is object. Arrays, functions, and everything else besides primitives are objects
 
+Symbol is a primitive data type that can be used as a unique property key for objects.
+```javascript
+  const uniqueKey = Symbol('myUniqueProperty');
+  obj[uniqueKey] = 42;
+```
 55. ### ##null-undefined-diff
 <img width="512" height="91" alt="image" src="https://github.com/user-attachments/assets/6d1b17f2-6d81-45fc-b332-5bf5b30fcc8e" />
 
