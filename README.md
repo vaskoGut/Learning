@@ -542,7 +542,7 @@ obj.greet(); // Output: Alice
   
    5. ### types enums interfaces
       1. What are types, when do we use it? 
-       **Types** are definitions of data type. Both're used to define type of data. Typescript compiler use it to  detect errors.
+       **Types** can be used to describe almost any kind of data,  not only objects. ***INterfaces***are mainly used to describethe shapeofobjects. Both're used to define type of data. Typescript compiler use it to  detect errors.
       2. What are **Tuples**? 
           ```javascript
             let ourTuple: [number, boolean, string];
@@ -555,7 +555,7 @@ obj.greet(); // Output: Alice
               console.log(`My status code is ${code}.`)
             }
           ```
-      5. An **intersection type** is a type that merges several kinds into one.
+      5. An **intersection type** is a type that merges, combines several kinds into one.
          ```javascript   
           interface Student { 
             student_id: number; 
@@ -580,7 +580,7 @@ obj.greet(); // Output: Alice
           console.log(obj1.name)
          ```
       6. What are  enums? When to use?
-         **Enums** are collection of constants
+         **Enums** are used to define aset of named constant values.
       7. Types is used to type your values, to avoid errors and bugs.
       Here more:  https://blog.logrocket.com/typescript-enums-vs-types
       8. Enums example:
@@ -595,7 +595,7 @@ obj.greet(); // Output: Alice
       ```
 
       9. Interface: An interface is used to define a structure for an object.
-      10. Record is a utility type in TypeScript that constructs an object type with keys of type K and values of type T. An example:
+      10. Record is used when you need to define an objct with specific key and value types. An example:
           Record<string, any> is a mapped type that creates an object type where the keys are strings, and the values can be of any type.
           So, generally speaking, Record is type that helps to define an object with specific keys and values.
           
