@@ -462,7 +462,8 @@ obj.greet(); // Output: undefined or global object, because `this` is inherited 
 obj.greet(); // Output: Alice
 
  3. ### Generator function
-    **Generator**  is a process that can be paused and resumed and can yield multiple values. Generator returns iterable Geneartor object.
+    **Generator**  is a special type of function that can be paused and resumed and can yield multiple values. Generator returns an iterable object, iterator. IT uses the function* (asterisk)) syntax  and the yield keyword
+    to return values one by one.  WHen generator called, it doesn't execute immidiately - instead it returns an iterator, and each call to next() continues the executition from the last paused point.
        ```javascript
          function* generator(i) {
             yield i;
@@ -510,7 +511,7 @@ obj.greet(); // Output: Alice
       ```
 
   
-   4. ### types enums interfaces
+   5. ### types enums interfaces
       1. What are types, when do we use it? 
        **Types** are definitions of data type. Both're used to define type of data. Typescript compiler use it to  detect errors.
       2. What are **Tuples**? 
@@ -570,13 +571,13 @@ obj.greet(); // Output: Alice
           So, generally speaking, Record is type that helps to define an object with specific keys and values.
           
 
-  5. ### map-foreach-difference
+  6. ### map-foreach-difference
       **Map** return NEW array. It doesn't modify initial array.
       **ForEach** doesn't return array. But runs function for each element of array. Foreach returns original array.
       **Filter, slice** returns new array. They dont mutate initial array.
       **Reduce** returns single accumulated value not an array.
 
-  6. ### this-meaning
+  7. ### this-meaning
 
      1. This is keyword refers to the context where a piece of code, such as a function's body, is supposed to run. It refers to different objects depending on how and where it used.
      2. You can explicitly control or change the value of this using methods like .call(), .apply(), or .bind(). For instance, using .bind() creates a new function with this permanently set to a specific value:
@@ -611,7 +612,7 @@ obj.greet(); // Output: Alice
 
       5. in strict mode, if you console.log inside function - you will get undefined.
     
-  7. ### settimeout-async
+  8. ### settimeout-async
       1. setTiimeout is function used to scheduling code for some specific delay, time.
       2. Yes setTimeout is async functino. 
 
