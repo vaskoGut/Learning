@@ -601,10 +601,10 @@ obj.greet(); // Output: Alice
           
 
   6. ### map-foreach-difference
-      **Map** return NEW array. It doesn't modify initial array.
+      **Map** returns, creates NEW array bytransforming eachelement. It doesn't modify initial array.
       **ForEach** doesn't return array. But runs function for each element of array. Foreach returns original array.
-      **Filter, slice** returns new array. They dont mutate initial array.
-      **Reduce** returns single accumulated value not an array.
+      **Filter, slice** returns new array,but it onlyincludes elements that meet a certain condition
+      **Reduce** returns single accumulated value not an array, not necessarily an array.
 
   7. ### this-meaning
 
