@@ -105,6 +105,8 @@ let a = 10;
 
 | 83   | [ Write a function returning element of array with generic type - it means it can take as param f.e. both strings and nubmers?](#generics-array-exercise)                                     |
 | 84   | [ What is prototype in js?](#prototype-js)                                     |
+| 85   | [ What generally means class Student extends Person? (JTR)](#class-js)                                     |
+
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1555,6 +1557,39 @@ const strings = ['df', 'er', 'ert'];
 In JavaScript, a prototype is the mechanism that allows objects to inherit properties and methods from other objects. It’s a core concept behind how JavaScript handles inheritance.
 <img width="887" height="547" alt="image" src="https://github.com/user-attachments/assets/34bf2e16-57f9-4554-a961-fbfad11fd679" />
 
+85.  ### #class-js
+class Student extends Person
+Mentally translate it to:
+“Create a new prototype object that inherits from Person.prototype”
+
+Example
+```javascript
+  class Person {
+  constructor(name) {
+    this.name = name;
+  }
+
+  sayHello() {
+    console.log("Hello, my name is " + this.name);
+  }
+}
+
+class Student extends Person {
+  constructor(name, grade) {
+    super(name);
+    this.grade = grade;
+  }
+
+  study() {
+    console.log(this.name + " is studying");
+  }
+}
+
+const s1 = new Student("Alice", "A");
+
+s1.sayHello();
+s1.study();
+```
 
 __________________________________________________________________________________________________________________________________________
 
