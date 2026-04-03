@@ -1553,6 +1553,8 @@ const strings = ['df', 'er', 'ert'];
 
 84.  ### #prototype-js
 In JavaScript, a prototype is the mechanism that allows objects to inherit properties and methods from other objects. It’s a core concept behind how JavaScript handles inheritance.
+<img width="887" height="547" alt="image" src="https://github.com/user-attachments/assets/34bf2e16-57f9-4554-a961-fbfad11fd679" />
+
 
 __________________________________________________________________________________________________________________________________________
 
