@@ -17,7 +17,7 @@
 | :---:   | :---: |
 | 1   | [Difference let const var? Hoisting - what is inial value when we use var and const, let? Does const make object immutable? Can you explain what block scope actually means in practice? If const cannt be reasigned, why can we still modify objects or arrays declared with const?](#what-is-difference-between-let-const-var)                                     |
 | 2   | [Difference between arrow function and function declaration, expressions](#arrow-function-explanation)                                                                             |
-| 3   | [What is generator ](#generator-function)                                                                             |
+| 3   | [What is generator. Write example of generator iterationg throgh arary. Write example of generator and for loop. ](#generator-function)                                                                             |
 | 4   | [Types Enums Interface. What for are used types? What are tuples? What is union, intersection? What is intersection types? What is record type - provide example](#types-enums-interfaces)                                                                             |
 | 5   | [Difference between map, filter and forEach. Does filter, slice methods create new array or mutating source? What about reduce? ](#map-foreach-difference)                                                                             |
 | 6   | [What is this in js? Can you change value of this? What is this alone, inside object, inside event handler, inside function? What is for are used call,apply methods? If yout type this in console - what will you get? What if funcion is called as object property? What will be result of console.log this in strict mode function?](#this-meaning)                                                                             |
@@ -509,7 +509,36 @@ obj.greet(); // Output: Alice
         console.log(gen.next()); // { value: 3, done: false }
         console.log(gen.next()); // { value: undefined, done: true }
       ```
+       
+      ```javascript
+        // example iterating through array
+        function* generator(array) {
+          for(let i in array) {
+            yield i;
+          }
+        }
+        
+        const test = generator([1,2,3]);
+        console.log(test.next());
+        console.log(test.next());
+        console.log(test.next());
+        console.log(test.next());
+      ```
 
+      ```javascript
+        // example iterating through some n
+        function* generator(n) {
+          for(let i = 0; i < n; i++) {
+            yield i;
+          }
+        }
+        
+        const test = generator(3);
+        console.log(test.next());
+        console.log(test.next());
+        console.log(test.next());
+        console.log(test.next());
+      ```
   
    5. ### types enums interfaces
       1. What are types, when do we use it? 
