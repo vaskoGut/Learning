@@ -105,6 +105,7 @@ let a = 10;
 
 | 83   | [ Write a function returning element of array with generic type - it means it can take as param f.e. both strings and nubmers?](#generics-array-exercise)                                     |
 | 84   | [ What is prototype in js?](#prototype-js)                                     |
+
 | 85   | [ What generally means class Student extends Person? (JTR)](#class-js)                                     |
 
 
