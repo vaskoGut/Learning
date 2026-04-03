@@ -104,6 +104,7 @@ let a = 10;
 | 82   | [ Write simple example of geneirc type. ApiResponse with data(genericType), isError, userResponse using this ApiResponseGenerirc, response using this UserResponse](#generics-type)                                     |
 
 | 83   | [ Write a function returning element of array with generic type - it means it can take as param f.e. both strings and nubmers?](#generics-array-exercise)                                     |
+| 84   | [ What is prototype in js?](#prototype-js)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1549,6 +1550,9 @@ function getArrayElem<T>(array: T[]) {
 const nums = [1,2,3];
 const strings = ['df', 'er', 'ert'];
 ```
+
+84.  ### #prototype-js
+In JavaScript, a prototype is the mechanism that allows objects to inherit properties and methods from other objects. It’s a core concept behind how JavaScript handles inheritance.
 
 __________________________________________________________________________________________________________________________________________
 
