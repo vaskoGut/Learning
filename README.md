@@ -22,7 +22,7 @@
 | 5   | [Difference between map, filter and forEach. Does filter, slice methods create new array or mutating source? What about reduce? ](#map-foreach-difference)                                                                             |
 | 6   | [What is this in js? Can you change value of this? What is this alone, inside object, inside event handler, inside function? What is for are used call,apply methods? If yout type this in console - what will you get? What if funcion is called as object property? What will be result of console.log this in strict mode function?](#this-meaning)                                                                             |
 | 7  | [What is setTimeout? Is setTimeOut async?](#settimeout-async)                                                                             |
-| 8  | [What is Promise? Example of promise? What status promis returns? Is promise aycnronious? Name wayss of handling promises. What is promise all? Make a simple example of promise and promise.all. What does return .then while working with Promise? What is difference between promise.all and promise.race? What is then method in promise?](#example-promise)                                                                             |
+| 8  | [What is Promise? Example of promise? What status promis returns? Is promise aycnronious? Name wayss of handling promises. What is promise all? Make a simple example of promise and promise.all. What does return .then while working with Promise? What is difference between promise.all and promise.race? What is then method in promise? What happens if 1 promise in promise all fails?](#example-promise)                                                                             |
 | 9  | [What is Closure? Please provide examples. When closure is created when we speak about functions? If variable is declared without keyword, is it global? Does inner function has an access to outer function? ](#closure-explanation)                                                                             |
 | 10  | [What is differene between sppread and rest operator - name practical examples?](#rest-spread-operator-difference)                                                                             |
 | 11  | [What are sets? How to convert Set type to the array? Example.](#set-object)                                                                             |
@@ -665,7 +665,21 @@ obj.greet(); // Output: Alice
 
 
   10. ### example-promise
+        A Promise is like a “future value”:
+
+        It starts pending
+        Then it either:
+        ✅ resolves (success)
+        ❌ rejects (error)
+
         Promise object represents eventual completion or failure of asynchronous function. Whenever tasks should be executed asynchronously.
+
+      ❌ What happens if one Promise fails?
+
+        If any single promise inside Promise.all() rejects, then:
+        👉 The whole Promise.all() immediately rejects
+        👉 It skips .then()
+        👉 It goes straight to .catch()
 
         <img width="639" height="389" alt="image" src="https://github.com/user-attachments/assets/5da1eb2c-5bd5-4a74-852a-fc3e0f8526a7" />
       
