@@ -150,6 +150,24 @@ for (var i = 0; i < 3; i++) { setTimeout(() => console.log(i), 100); } // 3
 ```
 
 45  | [Reimplement Pick type](#pick-type-reimplementing)                               |
+46  | [Delay with forEach-exercise](#delay-foreach)                               |
+```javascript
+const delay = (ms, returnValue) => {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve(returnValue);
+    }, ms)
+  });
+}
+
+const values = [1, 2, 3];
+
+
+values.forEach(async (elem) => {
+  const result = await delay(4000 , elem);
+  console.log(result);
+});
+```
 
 
 1. ### reverse string
