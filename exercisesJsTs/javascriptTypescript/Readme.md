@@ -1137,3 +1137,20 @@ array.forEach(async ...) // 🚩 That’s almost always a mistake.
 
 Foreach doesn't wait for 
 _______________________________________________________________
+   1) Promise.all solution
+      ```javascript
+         const run = async () => {
+             const results = await Promise.all(values.map((elem) => {
+                return delay(1000, elem)
+              }));
+            
+              return results;
+         }
+
+      run()
+      ```
+    2) then() solution
+       ```javascript
+          const results = Promise.all(values.map((elem) => delay(1000, elem))).then(result => console.log(result));
+       ```
+    
