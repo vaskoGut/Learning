@@ -138,7 +138,9 @@ arr.customMap(elem => elem + 1);
 ```
 
 41  | [Write map implementation ( remember to check if call back is func ). Write simple solution and with .call method to handle reassigning this argument](#own-map-method-implementation)                               |
+
 42  | [Write reduce implementation ?](#own-reduce-implementation)                               |
+
 43  | [Explain initial value check](#explain-that-line-reduce)                               |
 
 44  | [Explain difference in results these for loops](#for-loops-differences)                               |
