@@ -150,6 +150,7 @@ for (var i = 0; i < 3; i++) { setTimeout(() => console.log(i), 100); } // 3
 ```
 
 45  | [Reimplement Pick type](#pick-type-reimplementing)                               |
+
 46  | [Delay with forEach-exercise](#delay-foreach)                               |
 ```javascript
 const delay = (ms, returnValue) => {
