@@ -151,7 +151,8 @@ for (var i = 0; i < 3; i++) { setTimeout(() => console.log(i), 100); } // 3
 
 45  | [Reimplement Pick type](#pick-type-reimplementing)                               |
 
-46  | [Delay with forEach-exercise](#delay-foreach)                               |
+46  | [Delay with forEach-exercise - why code below doesnt work? Write fixed code:  1. with promise.all and map async/awaiit 2. with promise.all and map then syntax,. 3. simple for loop -
+so code waits for each callbeck not returning all params at once](#delay-foreach)                               |
 ```javascript
 const delay = (ms, returnValue) => {
   return new Promise(resolve => {
@@ -1124,3 +1125,15 @@ interface Expected2 {
 // testing result
 type Test = MyPick<Todo, 'title'|'completed'>
 ```
+
+46. ### delay-foreach
+______________________________________________________________
+array.forEach(async ...) // 🚩 That’s almost always a mistake.
+
+***forEach*** is like saying:
+“Run this function on each item”
+—not—
+“Run this and wait for each one to finish”
+
+Foreach doesn't wait for 
+_______________________________________________________________
