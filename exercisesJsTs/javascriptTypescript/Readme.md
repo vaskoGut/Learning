@@ -1153,6 +1153,7 @@ _______________________________________________________________
        ```javascript
           const results = Promise.all(values.map((elem) => delay(1000, elem))).then(result => console.log(result));
        ```
+
     3) for loop solution
        ```javascript
          const values = [1, 2, 3];
