@@ -142,4 +142,14 @@ Type coercion can behave unexpectedly in comparisons.
         }, i.length * 1000)
     }
   ```
+  4. why is it bad?
+  ```javascript
+    for(var i = []; i < 3; i.push(2)) {
+      setTimeout(() => {
+          const copy = [...i];
+          console.log(copy);
+      }, i.length * 1000)
+    }
+    // Inside setTimeout → too late, you only see the array after the loop finishes.
+  ```
      
