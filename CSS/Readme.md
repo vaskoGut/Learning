@@ -2,6 +2,10 @@
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [What is cumulative layout shift? and how to fix it?](#cumulative-layout-shift)                                                                                                |
+| 2   | [What are mixins and functions in sass? Examples](#Sass-mixins-functions)                                                                                                |
+
+Mixin → generates CSS
+Function → generates a value to use inside CSS
 
 1. ### cumulative-layout-shift
 CLS most often occurs when dynamically loaded elements don’t have a predefined size.  
@@ -13,3 +17,25 @@ CLS most often occurs when dynamically loaded elements don’t have a predefined
     use flex: 0 0 auto; or grid-template-columns with defined widths,
     4. Lazy loading and placeholders. use a placeholder of the same size,
     5. Debugging CLS In Chrome DevTools: Performance → Web Vitals. In Lighthouse: check Cumulative Layout Shift
+
+2. ### Sass-mixins-functions
+***Mixin*** → generates CSS
+    ```javascript
+    @mixin flex-center($direction: row) {
+      display: flex;
+      flex-direction: $direction;
+      justify-content: center;
+      align-items: center;
+    }
+    ```
+    
+***Function*** → generates a value to use inside CSS
+```javascript
+    @function px-to-rem($px) {
+      @return $px / 16 * 1rem;
+    }
+    
+    body {
+      font-size: px-to-rem(18); // returns 1.125rem
+    }
+```
