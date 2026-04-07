@@ -49,6 +49,9 @@ for (let j = 0; j < 3; j++) {
 ```
 
 | 5  | [create generic function that filters objects by a key and value](#generic-object-user) 
+| 6 | [Explain for loop below](#for-loop-explain) 
+
+
 
 
 1. ### functional scope variables
@@ -106,3 +109,37 @@ const users: User[] = [
 
 console.log(filterObjects(users, 'active', true));
 ```
+
+5. ### for-loop-explain
+```javascript
+for(var i = []; i < 3; i.push(2)) {
+    setTimeout(() => {
+        console.log(i);
+    }, i.length * 1000)
+}
+```
+Answer this:
+
+Arrays are objects → mutations affect all references.
+var is function-scoped, let/const is block-scoped.
+setTimeout callbacks capture references, not snapshots.
+Type coercion can behave unexpectedly in comparisons.
+
+  1. if yuou change on let still will get  [2,2] because of i is an array/object, but mutating an object still points to the same object
+  2. explanation why loop runs 2 times not 3:
+    ```javascript
+      Iteration 1: [] < 3 → 0 < 3 → true ✅
+      Iteration 2: [2] < 3 → coerced [2] → "2" → 2 < 3 → true ✅
+      Iteration 3: [2,2] < 3 → coerced [2,2] → "2,2" → "2,2" < 3?
+      "2,2" → NaN in numeric comparison → NaN < 3 → false ❌
+    ```
+  3. Fixed version with copy i:
+  ```javascript
+    for(var i = []; i < 3; i.push(2)) {
+        const copy = [...i];
+        setTimeout(() => {
+            console.log(copy);
+        }, i.length * 1000)
+    }
+  ```
+     
