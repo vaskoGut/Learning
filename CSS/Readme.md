@@ -3,7 +3,6 @@
 | :---:   | :---: |
 | 1   | [What is cumulative layout shift? and how to fix it?](#cumulative-layout-shift)                                                                                                |
 | 2   | [What are mixins and functions in sass? Examples](#Sass-mixins-functions)                                                                                                |
-
 | 3   | [How to use variables in sass?](#sass-variables)                                                                                                |
 
 1. ### cumulative-layout-shift
