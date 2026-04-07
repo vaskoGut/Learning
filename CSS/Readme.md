@@ -4,8 +4,7 @@
 | 1   | [What is cumulative layout shift? and how to fix it?](#cumulative-layout-shift)                                                                                                |
 | 2   | [What are mixins and functions in sass? Examples](#Sass-mixins-functions)                                                                                                |
 
-Mixin → generates CSS
-Function → generates a value to use inside CSS
+| 3   | [How to use variables in sass?](#sass-variables)                                                                                                |
 
 1. ### cumulative-layout-shift
 CLS most often occurs when dynamically loaded elements don’t have a predefined size.  
@@ -19,6 +18,9 @@ CLS most often occurs when dynamically loaded elements don’t have a predefined
     5. Debugging CLS In Chrome DevTools: Performance → Web Vitals. In Lighthouse: check Cumulative Layout Shift
 
 2. ### Sass-mixins-functions
+***Mixin*** → generates CSS
+***Function*** → generates a value to use inside CSS
+
 ***Mixin*** → generates CSS
     ```javascript
     @mixin flex-center($direction: row) {
@@ -39,3 +41,13 @@ CLS most often occurs when dynamically loaded elements don’t have a predefined
       font-size: px-to-rem(18); // returns 1.125rem
     }
 ```
+
+3. ### sass-variables
+Variables can store almost any type of value:
+Colors
+Fonts
+Sizes (px, em, rem)
+Spacing
+URLs
+
+
