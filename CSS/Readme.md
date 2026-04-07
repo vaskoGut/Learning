@@ -4,6 +4,7 @@
 | 1   | [What is cumulative layout shift? and how to fix it?](#cumulative-layout-shift)                                                                                                |
 | 2   | [What are mixins and functions in sass? Examples](#Sass-mixins-functions)                                                                                                |
 | 3   | [How to use variables in sass?](#sass-variables)                                                                                                |
+| 4   | [What are pros of nesting in sass?](#pros-nesting)                                                                                                |
 
 1. ### cumulative-layout-shift
 CLS most often occurs when dynamically loaded elements don’t have a predefined size.  
@@ -49,4 +50,13 @@ Sizes (px, em, rem)
 Spacing
 URLs
 
-
+4. ### pros-nesting
+***Pros of Nesting***
+Better readability: Nesting reflects the HTML structure, so it’s easier to see the relationships between elements.
+Reduced repetition: Avoid repeating parent selectors multiple times.
+Organized styles: Group related styles together, making your SCSS cleaner.
+Easy pseudo-class management: Use & for :hover, :focus, :active without repeating the full selector.
+***Cons of nesting***
+Hard to override styles: Very specific selectors make overriding in other CSS tricky.
+Reduced reusability: Styles tied to a specific hierarchy are harder to reuse in different contexts.
+Performance concern (minor): Extremely deep nesting may slightly affect rendering, though modern browsers handle it well.
