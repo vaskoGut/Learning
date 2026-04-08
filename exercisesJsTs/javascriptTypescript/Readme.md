@@ -186,11 +186,18 @@ for (var i = 1; i <= 3; i++) {
 }
 // 4, 4 4
 
+49  | [1. run each function. 2. fix result ](#push-funciton-fix-let-var)                               |
 ```javascript
-for (let i = 1; i <= 3; i++) {
-    setTimeout(() => console.log(i), i * 500);
-}
-// 1, 2, ,3
+   function makeFuncs() {
+    var funcs = [];
+    for (var i = 0; i < 3; i++) {
+        funcs.push(() => console.log(i));
+    }
+    return funcs;
+   }
+   const f = makeFuncs();
+```
+
 
 
 1. ### reverse string
@@ -1228,4 +1235,20 @@ why? Tests that objects/arrays are mutated by reference. So
           setTimeout(() => console.log(i), i * 500);
       }
     ```
+
+49. ### push-funciton-fix-let-var
+```javascript
+function makeFuncs() {
+    var funcs = [];
+    for (var i = 0; i < 3; i++) {
+        funcs.push(() => console.log(i));
+    }
+    return funcs;
+}
+const f = makeFuncs();
+```
+```javascript
+   1. to run it: f.forEach(fn => fn());
+   2. to fix result: change var on let. Var because of functional socpe will not work
+```
 
