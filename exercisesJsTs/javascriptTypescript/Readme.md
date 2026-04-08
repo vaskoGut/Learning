@@ -185,7 +185,7 @@ for (var i = 1; i <= 3; i++) {
     setTimeout(() => console.log(i), i * 500);
 }
 // 4, 4 4
-
+```
 
 49  | [1. run each function. 2. fix result](#push-funciton-fix-let-var)                               |
 ```javascript
