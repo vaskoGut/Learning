@@ -14,6 +14,8 @@
 | 10  | [[] + [] result and why?](#empty-array-equality)                                                                                                |
 | 11  | [what is flat object?](#flat-object)                                                                                                |
 | 12  | [what is result of null == null](#null-equality)                                                                                                |
+| 13  | [what is result of 1. `[] < 1 2. [2] > 1, 3. [2,2] > 1] 4. [2.2] > 1. 5. [1,2] > 2`](#array-correlation)                                                                                                |
+
 
 1. ### null-undefined
 null == undefined // true
@@ -65,3 +67,14 @@ flat-object is object without nested objects.
 ```javascript
  null === null // true
 ```
+
+13.  ### array-correlation                                                                                          |
+1. `[] < 1 2. [2] > 1, 3. [2,2] > 1] 4. [2.2] > 1. 5. [1,2] > 2
+
+```javascript
+  1. `[] < 1 // [] -> '0'. '0' < 1 -> 0 < 1. result: true
+  2. `[2] > 1` -> '2' > 1 -> 2>1 -> true
+  3.  [2,2] > 1 -> '2,2' > 1 -> NaN > 1 -> false //Notice [2,2] behaves differently because "2,2" cannot become a valid number → NaN
+  4. [2.22] > 1 -> true
+  5. [1.2] > 2 false
+ ```
