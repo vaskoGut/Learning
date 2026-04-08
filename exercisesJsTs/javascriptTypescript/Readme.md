@@ -177,7 +177,7 @@ for (let i = 0; i < 3; i++) {
     setTimeout(() => console.log(arr), 100);
 }
 /// [0, 1 ,2],[0,1,2] [0,1,2]
-
+```
 
 48  | [Explain difference in results. why 4not 3 in first case? Why in case with let we get 1, 2, 3](#let-var-loop)                               |
 ```javascript
