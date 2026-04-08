@@ -1198,10 +1198,10 @@ why? Tests that objects/arrays are mutated by reference. So
 
 ```javascript
    const arr = [];
-for (let i = 0; i < 3; i++) {
-    arr.push(i);
-    setTimeout((b) => console.log(b), 100, [...arr]); // yopu can pass 3rd argument to setTimeout
-}
+   for (let i = 0; i < 3; i++) {
+       arr.push(i);
+       setTimeout((b) => console.log(b), 100, [...arr]); // yopu can pass 3rd argument to setTimeout
+   }
 ```
 
 
