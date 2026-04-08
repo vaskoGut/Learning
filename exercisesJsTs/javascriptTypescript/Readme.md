@@ -163,14 +163,21 @@ const delay = (ms, returnValue) => {
 }
 
 const values = [1, 2, 3];
-
-
 values.forEach(async (elem) => {
   const result = await delay(4000 , elem);
   console.log(result);
 });
 ```
 
+47  | [Fix code below right now it consolling all time same array. why? Fix it. Try to fix it with addition setTimeout argument.](#object-inside-loop)                               |
+```javascript
+const arr = [];
+for (let i = 0; i < 3; i++) {
+    arr.push(i);
+    setTimeout(() => console.log(arr), 100);
+}
+/// [0, 1 ,2],[0,1,2] [0,1,2]
+```
 
 1. ### reverse string
    Using **map** method:
@@ -1167,3 +1174,34 @@ _______________________________________________________________
          
          run()
        ```
+
+47. ### object-inside-loop
+const arr = [];
+for (let i = 0; i < 3; i++) {
+    arr.push(i);
+    setTimeout(() => console.log(arr), 100);
+}
+/// [0, 1 ,2],[0,1,2] [0,1,2]
+why? Tests that objects/arrays are mutated by reference. So
+
+// fix
+```javascript
+   const arr = [];
+   for (let i = 0; i < 3; i++) {
+       const copy = [...arr]
+       arr.push(i);
+       setTimeout(() => console.log(arr), 100);
+   }
+```
+
+//fix with setTimeout argument
+
+```javascript
+   const arr = [];
+for (let i = 0; i < 3; i++) {
+    arr.push(i);
+    setTimeout((b) => console.log(b), 100, [...arr]); // yopu can pass 3rd argument to setTimeout
+}
+```
+
+
