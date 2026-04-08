@@ -5,6 +5,8 @@
 | 2   | [What are mixins and functions in sass? Examples](#Sass-mixins-functions)                                                                                                |
 | 3   | [How to use variables in sass?](#sass-variables)                                                                                                |
 | 4   | [What are pros of nesting in sass?](#pros-nesting)                                                                                                |
+| 5   | [What is BEM CSS naming approach?](#bem-naming)                                                                                                |
+
 
 1. ### cumulative-layout-shift
 CLS most often occurs when dynamically loaded elements don’t have a predefined size.  
@@ -60,3 +62,20 @@ Easy pseudo-class management: Use & for :hover, :focus, :active without repeatin
 Hard to override styles: Very specific selectors make overriding in other CSS tricky.
 Reduced reusability: Styles tied to a specific hierarchy are harder to reuse in different contexts.
 Performance concern (minor): Extremely deep nesting may slightly affect rendering, though modern browsers handle it well.
+
+5. ### bem-naming
+
+***Block*** – the main component, like header, button, or card.
+***Element*** – a part of the block, like title or icon inside a card.
+***Modifier*** – a variant or state of a block or element, like card--large or button--active.
+
+Example:
+```javascript
+<div class="card card--large">
+  <h2 class="card__title">Hello</h2>
+  <p class="card__text">Some text</p>
+</div>
+card → Block
+card__title → Element of the block
+card--large → Modifier of the block
+```
