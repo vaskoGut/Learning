@@ -1221,6 +1221,7 @@ why? Tests that objects/arrays are mutated by reference. So
 48. ### let-var-loop
     1. explanation
     <img width="623" height="193" alt="image" src="https://github.com/user-attachments/assets/a7e88e7b-3869-4d5e-8528-d82fa1a9645b" />
+
     2. fix with let. 
     ```javascript
       for (let i = 1; i <= 3; i++) {
