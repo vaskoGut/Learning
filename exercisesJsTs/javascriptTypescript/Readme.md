@@ -199,7 +199,15 @@ for (var i = 1; i <= 3; i++) {
    const f = makeFuncs();
 ```
 
-
+50  | [Fix this problem. Will solution with {... work for nested objects?](#copy-loop-loop)                               |
+```javascript
+  const obj = { val: 0 };
+   for (let i = 0; i < 3; i++) {
+       obj.val = i;
+       setTimeout(() => console.log(obj.val), 100);
+   }
+   // Output: 2 2 2
+```
 
 1. ### reverse string
    Using **map** method:
@@ -1253,3 +1261,14 @@ const f = makeFuncs();
    2. to fix result: change var on let. Var because of functional socpe will not work
 ```
 
+50. ### copy-loop-loop
+```javascript
+   const obj = { val: 0 };
+   for (let i = 0; i < 3; i++) {
+       obj.val = i;
+       const copy = {...obj};
+       setTimeout(() => console.log(copy.val), 100);
+   }
+
+   // it will work only for flat objects. For nested one you will need structuredClone() method
+```
