@@ -177,7 +177,21 @@ for (let i = 0; i < 3; i++) {
     setTimeout(() => console.log(arr), 100);
 }
 /// [0, 1 ,2],[0,1,2] [0,1,2]
-```
+
+
+48  | [Explain difference in results. why 4not 3 in first case? Why in case with let we get 1, 2, 3](#let-var-loop)                               |
+```javascript
+for (var i = 1; i <= 3; i++) {
+    setTimeout(() => console.log(i), i * 500);
+}
+// 4, 4 4
+
+```javascript
+for (let i = 1; i <= 3; i++) {
+    setTimeout(() => console.log(i), i * 500);
+}
+// 1, 2, ,3
+
 
 1. ### reverse string
    Using **map** method:
@@ -1204,4 +1218,13 @@ why? Tests that objects/arrays are mutated by reference. So
    }
 ```
 
+48. ### let-var-loop
+    1. explanation
+    <img width="623" height="193" alt="image" src="https://github.com/user-attachments/assets/a7e88e7b-3869-4d5e-8528-d82fa1a9645b" />
+    2. fix with let. 
+    ```javascript
+      for (let i = 1; i <= 3; i++) {
+          setTimeout(() => console.log(i), i * 500);
+      }
+    ```
 
