@@ -255,6 +255,12 @@ for (var i = 1; i <= 3; i++) {
 }, 100);
 ```
 
+56  | [What will be loogged here ?](#type-converting)                               |
+```javascript
+   1. [] + []
+   2. console.log([] + {});       // ?
+   3. console.log({} + []);       // ?
+```
 
 
 1. ### reverse string
