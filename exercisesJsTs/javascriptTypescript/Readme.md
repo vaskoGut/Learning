@@ -229,6 +229,14 @@ for (var i = 1; i <= 3; i++) {
    console.log('B')
 ```
 
+53  | [Explain this example microtasks, macrotasks](#microtasks-macrotasks-eventLoop)                               |
+```javascript
+   console.log('Script start');
+   setTimeout(() => console.log('Macrotask: setTimeout'), 0);
+   Promise.resolve().then(() => console.log('Microtask: Promise'));
+   console.log('Script end');
+```
+
 1. ### reverse string
    Using **map** method:
    
@@ -1325,3 +1333,7 @@ const f = makeFuncs();
       Even setTimeout(..., 0) will always run after synchronous code.
    */
 ```
+
+52. ### microtasks-macrotasks-eventLoop
+<img width="566" height="206" alt="image" src="https://github.com/user-attachments/assets/8325fc37-92af-4070-89c4-bc4a8c6a0000" />
+
