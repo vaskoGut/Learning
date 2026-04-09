@@ -223,6 +223,12 @@ for (var i = 1; i <= 3; i++) {
    obj.f(); //undefined
 ```
 
+52  | [Explain what will be  consolled first and why](#event-loop-exer-52)                               |
+```javascript
+   setTimeout(() => console.log('A'), 0);
+   console.log('B')
+```
+
 1. ### reverse string
    Using **map** method:
    
@@ -1306,4 +1312,16 @@ const f = makeFuncs();
    }};
    obj.f(); //undefined. Cause with normal function declaratoin this is not inherited from outer context
 ```
+
+52. ### event-loop-exer-52
+```javascript
+   setTimeout(() => console.log('A'), 0);
+   console.log('B');
+   // answer: b than a because of how event loop works.
+
+   /*
+      Call Stack always runs synchronous code first.
+      Task Queue (macro-tasks like setTimeout) waits until the call stack is empty.
+      Even setTimeout(..., 0) will always run after synchronous code.
+   */
 ```
