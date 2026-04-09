@@ -216,6 +216,12 @@ for (var i = 1; i <= 3; i++) {
    }};
    obj.f();
 ```
+```javascript
+   const obj = { i: 1, f: function() {
+     setTimeout(function() { console.log(this.i) }, 100);
+   }};
+   obj.f(); //undefined
+```
 
 1. ### reverse string
    Using **map** method:
@@ -1293,4 +1299,11 @@ const f = makeFuncs();
    obj.f();
 
    answer: Arrow functions inherit this from the surrounding scope.
+
+```javascript
+   const obj = { i: 1, f: function() {
+     setTimeout(function() { console.log(this.i) }, 100);
+   }};
+   obj.f(); //undefined. Cause with normal function declaratoin this is not inherited from outer context
+```
 ```
