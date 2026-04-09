@@ -1245,6 +1245,10 @@ why? Tests that objects/arrays are mutated by reference. So
       }
     ```
 
+   ```javascript
+      for (var i = 0; i < 3; i++) { ((x) => setTimeout(() => console.log(x), 100))(i); }
+      // IIFE can also solve problem with var. Cause x is a parameter local to this function, so each iteration gets its own copy.
+   ```
 49. ### push-funciton-fix-let-var
 ```javascript
 function makeFuncs() {
