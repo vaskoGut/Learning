@@ -237,6 +237,14 @@ for (var i = 1; i <= 3; i++) {
    console.log('Script end');
 ```
 
+54  | [Explain results of this event loops exercise](#microtasks-macrotasks-eventLoop-exer-54)                               |
+```javascript
+   console.log('Script start');
+   setTimeout(() => console.log('Macrotask: setTimeout'), 0);
+   Promise.resolve().then(() => console.log('Microtask: Promise'));
+   console.log('Script end');
+```
+
 1. ### reverse string
    Using **map** method:
    
@@ -1334,7 +1342,7 @@ const f = makeFuncs();
    */
 ```
 
-52. ### microtasks-macrotasks-eventLoop
+53. ### microtasks-macrotasks-eventLoop
 <img width="566" height="206" alt="image" src="https://github.com/user-attachments/assets/8325fc37-92af-4070-89c4-bc4a8c6a0000" />
 result:
 ```javascript
@@ -1342,4 +1350,11 @@ Script start
 Script end
 Microtask: Promise
 Macrotask: setTimeout
+```
+
+54. ### microtasks-macrotasks-eventLoop-exer-54
+```javascript
+[LOG]: "Immediate" 
+[LOG]: "Outer" 
+[LOG]: "Inner"
 ```
