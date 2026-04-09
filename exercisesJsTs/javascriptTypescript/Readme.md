@@ -245,6 +245,18 @@ for (var i = 1; i <= 3; i++) {
    console.log('Script end');
 ```
 
+55  | [What will be loogged here?](#set-interval-logging)                               |
+```javascript
+   let i = 0;
+   const id = setInterval(() => {
+   console.log(i);
+   i++;
+   if (i === 3) clearInterval(id);
+}, 100);
+```
+
+
+
 1. ### reverse string
    Using **map** method:
    
@@ -1357,4 +1369,11 @@ Macrotask: setTimeout
 [LOG]: "Immediate" 
 [LOG]: "Outer" 
 [LOG]: "Inner"
+```
+
+55. ### set-interval-logging
+```javascript
+   [LOG]: 0 
+   [LOG]: 1 
+   [LOG]: 2 
 ```
