@@ -1,4 +1,4 @@
-# JS TYPES QUESIONNS
+<img width="781" height="662" alt="image" src="https://github.com/user-attachments/assets/bd549ef4-d77c-4a5f-9772-35163d8ac28b" /># JS TYPES QUESIONNS
 
 | Nm | #Question   |
 | :---:   | :---: |
@@ -15,7 +15,12 @@
 | 11  | [what is flat object?](#flat-object)                                                                                                |
 | 12  | [what is result of null == null](#null-equality)                                                                                                |
 | 13  | [what is result of 1. `[] < 1 2. [2] > 1, 3. [2,2] > 1] 4. [2.2] > 1. 5. [1,2] > 2`](#array-correlation)                                                                                                |
-
+| 14  | [What will be loogged here ?](#type-converting)                               |
+```javascript
+   1. [] + []
+   2. console.log([] + {});       // ?
+   3. console.log({} + []);       // ?
+```
 
 1. ### null-undefined
 null == undefined // true
@@ -78,3 +83,6 @@ flat-object is object without nested objects.
   4. [2.22] > 1 -> true
   5. [1.2] > 2 false
  ```
+
+14. ### type-converting
+<img width="781" height="662" alt="image" src="https://github.com/user-attachments/assets/132d998b-5b49-41a9-b5c4-8f92af03f78b" />
