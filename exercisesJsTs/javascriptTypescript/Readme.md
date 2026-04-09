@@ -1336,4 +1336,10 @@ const f = makeFuncs();
 
 52. ### microtasks-macrotasks-eventLoop
 <img width="566" height="206" alt="image" src="https://github.com/user-attachments/assets/8325fc37-92af-4070-89c4-bc4a8c6a0000" />
-
+result:
+```javascript
+Script start
+Script end
+Microtask: Promise
+Macrotask: setTimeout
+```
