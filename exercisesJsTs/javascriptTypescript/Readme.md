@@ -209,6 +209,14 @@ for (var i = 1; i <= 3; i++) {
    // Output: 2 2 2
 ```
 
+51  | [Arrow functino context fix](#arrow-function-context)                               |
+```javascript
+   const obj = { i: 1, f: function() {
+     setTimeout(() => console.log(this.i), 100);
+   }};
+   obj.f();
+```
+
 1. ### reverse string
    Using **map** method:
    
@@ -1275,4 +1283,14 @@ const f = makeFuncs();
    }
 
    // it will work only for flat objects. For nested one you will need structuredClone() method
+```
+
+51. ### arrow-function-context
+```javascript
+   const obj = { i: 1, f: function() {
+     setTimeout(() => console.log(this.i), 100);
+   }};
+   obj.f();
+
+   answer: Arrow functions inherit this from the surrounding scope.
 ```
