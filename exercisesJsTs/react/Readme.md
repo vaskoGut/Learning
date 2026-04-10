@@ -147,7 +147,9 @@ Remember to handle edge case. If no value saved to Localstorage
 | 30 | [Why state isnt updated her ecorrectly?](#state-update-correctly)                               |
 <img width="352" height="208" alt="image" src="https://github.com/user-attachments/assets/d4497aac-5f87-46d5-9cb1-abebdfa9ffde" />
 | 31 | [Why asumc awaot dpesn't work with setState?](#async-await-setState)                               |
+
 | 32 | [Explain what is batching in React?](#batching-react)                               |
+
 | 33 | [Why u think useCallback here is needed?](#use-callback-using)                               |
 ```javascript
   function Counter() {
@@ -164,6 +166,8 @@ Remember to handle edge case. If no value saved to Localstorage
       setInputCount("");
     }, []);
 ```
+
+| 34 | [Do we need react.memo with component like counter?](#use-memo-34r)                               |
 
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
@@ -652,6 +656,14 @@ React combines them into a single update → only one DOM render happens.
 33. ### use-callback-using
 Because reset function is recreated each rerender.
 
+34. ### use-memo-34r
+It’s worth using if:
+
+The component is large or expensive to render (heavy calculations, large DOM tree).
+The component is re-rendered often because the parent updates, but the props rarely change.
+You have memoized children that would otherwise re-render unnecessarily.
+
+IN case with with counter, its overkill.
 
 ✅ This is much faster and avoids unnecessary re-renders.
 | 1 | [How do you decide whether a piece of UI should be a separate React component?](#react-seperate-component)                               |
