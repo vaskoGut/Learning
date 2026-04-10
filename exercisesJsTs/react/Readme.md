@@ -144,6 +144,8 @@ Remember to handle edge case. If no value saved to Localstorage
 ```
 
 | 29 | [How to type initial object state with string properties and boolean values?](#typing-initial-react-state)                               |
+| 30 | [Why state isnt updated her ecorrectly?](#state-update-correctly)                               |
+<img width="352" height="208" alt="image" src="https://github.com/user-attachments/assets/d4497aac-5f87-46d5-9cb1-abebdfa9ffde" />
 
 
 1. ### state-toggle
@@ -582,7 +584,19 @@ const handleClick = (id: string) => {
 29. ### typing-initial-react-state
 const [activeIds, setActiveIds] = useState<Record<string, boolean>>({});
 
-
+30. ### state-update-correctly
+In React, state updates are asynchronous. When you call setInputCount(e.target.value), the inputCount variable does not immediately change.
+Fix:
+```javascript
+   <input
+        type="number"
+        value={inputCount}
+        onChange={(e) => {
+          setInputCount(e.target.value);
+          setCounter(inputCount);
+        }}
+      />
+```
 
 | 1 | [How do you decide whether a piece of UI should be a separate React component?](#react-seperate-component)                               |
 | 2 | [How do you decide where to store state in a React app?](#react-store-state)                               |
