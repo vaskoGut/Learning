@@ -148,6 +148,22 @@ Remember to handle edge case. If no value saved to Localstorage
 <img width="352" height="208" alt="image" src="https://github.com/user-attachments/assets/d4497aac-5f87-46d5-9cb1-abebdfa9ffde" />
 | 31 | [Why asumc awaot dpesn't work with setState?](#async-await-setState)                               |
 | 32 | [Explain what is batching in React?](#batching-react)                               |
+| 33 | [Why u think useCallback here is needed?](#use-callback-using)                               |
+```javascript
+  function Counter() {
+    const [counter, setCounter] = useState(0);
+    const [step, setStep] = useState(2);
+    const [inputCount, setInputCount] = useState("");
+  
+    useEffect(() => {
+      console.log("value changed", counter);
+    }, [counter]);
+  
+    const resetCounter = useCallback(() => {
+      setCounter(0);
+      setInputCount("");
+    }, []);
+```
 
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
@@ -632,6 +648,9 @@ With batching:
 ```
 
 React combines them into a single update → only one DOM render happens.
+
+33. ### use-callback-using
+Because reset function is recreated each rerender.
 
 
 ✅ This is much faster and avoids unnecessary re-renders.
