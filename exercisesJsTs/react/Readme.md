@@ -147,7 +147,7 @@ Remember to handle edge case. If no value saved to Localstorage
 | 30 | [Why state isnt updated her ecorrectly?](#state-update-correctly)                               |
 <img width="352" height="208" alt="image" src="https://github.com/user-attachments/assets/d4497aac-5f87-46d5-9cb1-abebdfa9ffde" />
 | 31 | [Why asumc awaot dpesn't work with setState?](#async-await-setState)                               |
-
+| 32 | [Explain what is batching in React?](#batching-react)                               |
 
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
@@ -611,6 +611,30 @@ Example that won’t work:
   }}
 ```
 
+32. ### batching-react
+
+Batching is when React groups multiple state updates together and then processes them all at once, instead of updating the DOM immediately for each setState call.
+
+Think of it like this:
+
+Without batching:
+```javascript
+  setInputCount(1) → DOM updates
+  setCounter(1)    → DOM updates again
+```
+
+Two separate updates → two DOM renders.
+
+With batching:
+```javascript
+  setInputCount(1)
+  setCounter(1)
+```
+
+React combines them into a single update → only one DOM render happens.
+
+
+✅ This is much faster and avoids unnecessary re-renders.
 | 1 | [How do you decide whether a piece of UI should be a separate React component?](#react-seperate-component)                               |
 | 2 | [How do you decide where to store state in a React app?](#react-store-state)                               |
 
