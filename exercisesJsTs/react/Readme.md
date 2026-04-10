@@ -146,6 +146,7 @@ Remember to handle edge case. If no value saved to Localstorage
 | 29 | [How to type initial object state with string properties and boolean values?](#typing-initial-react-state)                               |
 | 30 | [Why state isnt updated her ecorrectly?](#state-update-correctly)                               |
 <img width="352" height="208" alt="image" src="https://github.com/user-attachments/assets/d4497aac-5f87-46d5-9cb1-abebdfa9ffde" />
+| 31 | [Why asumc awaot dpesn't work with setState?](#async-await-setState)                               |
 
 
 1. ### state-toggle
@@ -596,6 +597,18 @@ Fix:
           setCounter(inputCount);
         }}
       />
+```
+
+31. ### async-await-setState
+Key point:
+React state updates (via setState or setInputCount) are not asynchronous in the sense of returning a promise. They are batched and scheduled by React, but setState doesn’t return a Promise, so await has no effect.
+
+Example that won’t work:
+```javascript
+  onChange={async (e) => {
+    await setInputCount(e.target.value); // ❌ This does nothing
+    setCounter(inputCount); // still gets old inputCount
+  }}
 ```
 
 | 1 | [How do you decide whether a piece of UI should be a separate React component?](#react-seperate-component)                               |
