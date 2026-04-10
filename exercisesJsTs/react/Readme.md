@@ -169,6 +169,11 @@ Remember to handle edge case. If no value saved to Localstorage
 
 | 34 | [Do we need react.memo with component like counter?](#use-memo-34r)                               |
 
+| 35 | [Why math.random is bad for react keys?](#react-keys-math-random)                               |
+```javascript
+  items.map((item, index) => <li key={Math.random()}>{item}</li>);
+```
+
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
 So better choice is:
@@ -664,6 +669,9 @@ The component is re-rendered often because the parent updates, but the props rar
 You have memoized children that would otherwise re-render unnecessarily.
 
 IN case with with counter, its overkill.
+
+35. ### react-keys-math-random
+that keys change on every render.
 
 ✅ This is much faster and avoids unnecessary re-renders.
 | 1 | [How do you decide whether a piece of UI should be a separate React component?](#react-seperate-component)                               |
