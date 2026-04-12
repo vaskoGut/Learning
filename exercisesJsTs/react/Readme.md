@@ -174,6 +174,19 @@ Remember to handle edge case. If no value saved to Localstorage
   items.map((item, index) => <li key={Math.random()}>{item}</li>);
 ```
 
+| 36 | [Why we dont need ...prev below?](#updating-prev-state)                               |
+```javascript
+  return [
+      ...prev.map((elem, index) =>
+        id === index ? (value ? (elem = value) : (elem += step)) : elem
+      ),
+    ];
+```
+
+
+
+
+
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
 So better choice is:
@@ -672,6 +685,17 @@ IN case with with counter, its overkill.
 
 35. ### react-keys-math-random
 that keys change on every render.
+
+36. ### updating-prev-state
+```javascript
+  return [
+      ...prev.map((elem, index) =>
+        id === index ? (value ? (elem = value) : (elem += step)) : elem
+      ),
+    ];
+  // ... is redundant here, cause map creating new array.
+```
+
 
 ✅ This is much faster and avoids unnecessary re-renders.
 | 1 | [How do you decide whether a piece of UI should be a separate React component?](#react-seperate-component)                               |
