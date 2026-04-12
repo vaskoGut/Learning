@@ -2749,7 +2749,15 @@ ________________________________________________________________________________
 
        ****SSR****: News websites, e-commerce sites where SEO is critical and content updates frequently. 
 
-       ****CSR****: Single-page applications (SPAs), dashboards, and applications with a lot of dynamic content and user interaction. 
+       ****CSR****: Single-page applications (SPAs), dashboards, and applications with a lot of dynamic content and user interaction.
+
+       ****ISR**** (Incremental Static Regeneration) sits in between SSG and SSR. The idea is: you get mostly static pages (fast, cached, low server cost) but can update them incrementally without rebuilding the whole site.
+      ISR is ideal for pages that: Are mostly static, but content updates occasionally.Benefit from fast load times and caching. Need SEO-friendly content.
+      Typical use cases:
+      Product pages on e-commerce sites (lots of pages, not all updated every second).
+      Blog posts where new articles are added regularly.
+      Marketing or landing pages with frequently updated content blocks.
+      News articles where most stories are static after publishing but occasionally need updates.
 
        Static Site Generation (SSG) pre-renders all pages at build time for fast loads, while Incremental Static Regeneration (ISR) updates static content dynamically without rebuilding the entire site.
        ****How ISR Works****
