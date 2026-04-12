@@ -1360,8 +1360,11 @@ Note: Error boundary ( it's taken from rEact docs ), using for handling error - 
 <img width="884" height="802" alt="image" src="https://github.com/user-attachments/assets/81f313a2-c55a-483b-946e-e88d32c83681" />
 
 58. ### ##settimeout-setinterval-difference
-***setTimeout*** executes a function once after a specified delay (in milliseconds).
+***setTimeout*** executes a function once after a specified delay (in milliseconds) after last event.
 ***setInterval*** executes a function repeatedly at a specified intervall.
+
+<img width="750" height="191" alt="image" src="https://github.com/user-attachments/assets/158ed302-b4b2-4d87-a540-bd5bc1b22348" />
+
 
 59. ### ##multiple-promises
 with promise.all and promise.race we can handle multiple promises.
