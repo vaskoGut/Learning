@@ -3054,13 +3054,6 @@ ___________
    performance:
    Initial Load Time	Extremely fast (HTML served instantly)	Slower (HTML generated on request)
 
-2. ### SSR-CSR-SSG
-   A normal React SPA (Single Page Application) — the kind you build with create-react-app, Vite, or similar, without frameworks like Next.js — is **CSR** (Client-Side Rendering) by default.
-   The server usually just serves a single index.html file with an empty <div id="root"></div>.
-   The React bundle (bundle.js) is loaded in the browser.
-   React then builds the UI entirely in the client’s browser, fetching data as needed.
-   Until the JS runs, the user might just see a blank page or loading spinner (this is why CSR apps can have poor SEO if not handled carefully).
-
 3. ### ISR-explanation
    ISR lets you statically generate pages at build time and update them later in the background — without rebuilding the whole site.
    You set a revalidate time in getStaticProps. After that interval, the next request will trigger a background regeneration.
