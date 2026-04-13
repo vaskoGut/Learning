@@ -109,6 +109,7 @@ let a = 10;
 | 84   | [ What is prototype in js?](#prototype-js)                                     |
 
 | 85   | [ What generally means class Student extends Person? (JTR)](#class-js)                                     |
+| 86   | [Short circuit evaluation)](#short-circuit-evaluation)                                     |
 
 
 # Exercises Javascript Typescript
@@ -1610,6 +1611,21 @@ const s1 = new Student("Alice", "A");
 s1.sayHello();
 s1.study();
 ```
+
+86.  ### #short-circuit-evaluation
+Short-circuit ['sirkuit] evaluation happens when JavaScript stops evaluating an expression as soon as it knows the result.
+
+It mainly applies to the logical operators:
+
+|| (OR) Returns the first truthy value it finds, or the last value if none are truthy.
+&& (AND) Returns the first falsy value it finds, or the last value if all are truthy.
+
+
+let a = 1;
+let b = 0;
+let c = a && b;   // AND operator
+console.log(c);   // 0
+
 
 __________________________________________________________________________________________________________________________________________
 
