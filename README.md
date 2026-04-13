@@ -109,6 +109,7 @@ let a = 10;
 | 84   | [ What is prototype in js?](#prototype-js)                                     |
 
 | 85   | [ What generally means class Student extends Person? (JTR)](#class-js)                                     |
+
 | 86   | [Short circuit evaluation)](#short-circuit-evaluation)                                     |
 
 
