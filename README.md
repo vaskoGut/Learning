@@ -1996,7 +1996,6 @@ It's worth to mention we use high order components with keyword with.
          2. Gatsby.js and Next.js supports both CSR and SSR.
          3. Static Pages are built during build time. SSR allow to render a page during run-time. You can deal with data  that is fetched when a user visits the page.
          4. 1 of the most importa benefits oF SSR can be improving performance of your website. You can reduce the amount of work the users's browser needs to do.
-         5. Practical example: you need to call some script and add smth to the header only after some behaviour user on page.  In gatsby.js pages are rendered statically during build, to do smth like that you need SSR.
 
 
    35. ###  fragment-explanation
