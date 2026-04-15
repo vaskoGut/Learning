@@ -2,7 +2,7 @@
 https://github.com/vaskoGut/Learning/blob/main/exercisesJsTs/react/useReducer/Readme.md
 
 # react fix exercises
-## [React fix](https://github.com/vaskoGut/Learning/blob/main/other/projectStructure/Readme.md )                                    |
+## [React fix](https://github.com/vaskoGut/Learning/blob/main/exercisesJsTs/react/ReadmeFix.md )                                    |
 
 # REACT
 | Nm | #Question   |
