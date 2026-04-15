@@ -3,7 +3,7 @@
 # React Fix
 | Nm | #Question   |
 | :---:   | :---: |
-| 1   | [Check state update problem. WHy isn't this increased to 2?](#state-update-ex)                               |
+| 1   | [Check state update problem. WHy isn't this increasing to 2?](#state-update-ex)                               |
 
 
 1. ### state-update-ex
