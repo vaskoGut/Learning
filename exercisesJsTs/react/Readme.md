@@ -1,6 +1,9 @@
 # useReducer
 https://github.com/vaskoGut/Learning/blob/main/exercisesJsTs/react/useReducer/Readme.md
 
+# react fix exercises
+## 3. [React fix](https://github.com/vaskoGut/Learning/blob/main/other/projectStructure/Readme.md )                                    |
+
 # REACT
 | Nm | #Question   |
 | :---:   | :---: |
