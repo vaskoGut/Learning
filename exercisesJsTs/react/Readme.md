@@ -186,9 +186,12 @@ Remember to handle edge case. If no value saved to Localstorage
     ];
 ```
 
-
-
-
+| 37 | [Explain what better option for filter method here?](#updating-prev-state)                               |
+```javascript
+  const filteredUsers = users.filter((elem) =>
+    filterValue ? elem === filterValue : elem // it can lead to unexpected errors
+  );
+```
 
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
@@ -699,6 +702,19 @@ that keys change on every render.
   // ... is redundant here, cause map creating new array.
 ```
 
+37. ### updating-prev-state
+```javascript
+  const filteredUsers = users.filter((elem) =>
+    filterValue ? elem === filterValue : true // just use true to avoid unexpected problems with empty strings for example
+  );
+```
+
+```javascript
+  // Or even better (more realistic search):
+  const filteredUsers = users.filter((elem) =>
+    elem.toLowerCase().includes(filterValue.toLowerCase())
+  );
+```
 
 ✅ This is much faster and avoids unnecessary re-renders.
 | 1 | [How do you decide whether a piece of UI should be a separate React component?](#react-seperate-component)                               |
