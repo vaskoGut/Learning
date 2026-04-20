@@ -1,8 +1,7 @@
 # Architecture design questions
 | Nm | #Question   |
 | :---:   | :---: |
-| 1   | [Practical example: you need to call some script and add smth to the header only after some behaviour user on page. In gatsby.js pages are rendered statically during build, to do smth like that you need SSR.
-what better option here, what to use?](#script-interaction-load)                               |
+| 1   | [Practical example: you need to call some script and add smth to the header only after some behaviour user on page. In gatsby.js pages are rendered statically during build, to do smth like that you need SSR.What better option here, what to use?](#script-interaction-load)                               |
 
 
 # PROJECT STRUCTURE
