@@ -36,6 +36,7 @@
 
   return <div>My page</div>
 }
+```
 
 If you want this ***globally***:
 export const onClientEntry = () => {
@@ -48,14 +49,11 @@ export const onClientEntry = () => {
   })
 }
 
-
-
 You need ***SSR*** (gatsby-ssr.js) only if:
 •	The script/meta must be present in the initial HTML
 •	It depends on request-time data (cookies, auth, geo, etc.)
 •	It must be visible to SEO crawlers immediately
 
-```
 
 1. ### package-json
 Package.json files includes metadata of your project, also list of project dependencies.
