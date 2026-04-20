@@ -1,7 +1,8 @@
 # Architecture design questions
 | Nm | #Question   |
 | :---:   | :---: |
-| 1   | [Practical example: you need to call some script and add smth to the header only after some behaviour user on page. In gatsby.js pages are rendered statically during build, to do smth like that you need SSR?](#package-json)                               |
+| 1   | [Practical example: you need to call some script and add smth to the header only after some behaviour user on page. In gatsby.js pages are rendered statically during build, to do smth like that you need SSR.
+what better option here, what to use?](#script-interaction-load)                               |
 
 
 # PROJECT STRUCTURE
@@ -10,6 +11,34 @@
 | 1   | [What is packages json? what does it include?](#package-json)                               |
 | 2   | [What is package.lock file? what does it include?](#package-lock)                               |
 | 3   | [Npm and yarn diff?](#npm-yarn-diff)                               |
+
+1. ### script-interaction-load
+```javascript
+  export default function Page() {
+  const [loaded, setLoaded] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!loaded) {
+        const script = document.createElement("script")
+        script.src = "https://example.com/script.js"
+        script.async = true
+        document.head.appendChild(script)
+
+        setLoaded(true)
+        window.removeEventListener("scroll", handleScroll)
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll)
+
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [loaded])
+
+  return <div>My page</div>
+}
+
+```
 
 1. ### package-json
 Package.json files includes metadata of your project, also list of project dependencies.
