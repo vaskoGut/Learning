@@ -37,6 +37,24 @@
   return <div>My page</div>
 }
 
+If you want this ***globally***:
+export const onClientEntry = () => {
+  window.addEventListener("scroll", function handler() {
+    const script = document.createElement("script")
+    script.src = "https://example.com/script.js"
+    document.head.appendChild(script)
+
+    window.removeEventListener("scroll", handler)
+  })
+}
+
+
+
+You need ***SSR*** (gatsby-ssr.js) only if:
+•	The script/meta must be present in the initial HTML
+•	It depends on request-time data (cookies, auth, geo, etc.)
+•	It must be visible to SEO crawlers immediately
+
 ```
 
 1. ### package-json
