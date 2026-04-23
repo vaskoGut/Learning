@@ -2,6 +2,7 @@
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [Practical example: you need to call some script and add smth to the header only after some behaviour user on page. In gatsby.js pages are rendered statically during build, to do smth like that you need SSR.What better option here, what to use?](#script-interaction-load)                               |
+| 2   | [You open the browser console and see this:❌ Access to XMLHttpRequest blocked by CORS policy. Front-end is on 1 localhost, and back-end on another.](#cors-localhost-problem)                               |
 
 
 # PROJECT STRUCTURE
@@ -53,6 +54,12 @@ You need ***SSR*** (gatsby-ssr.js) only if:
 •	The script/meta must be present in the initial HTML
 •	It depends on request-time data (cookies, auth, geo, etc.)
 •	It must be visible to SEO crawlers immediately
+
+2. ### cors-localhost-problem
+  1. If you use vite, you can fix it in config by adding proxy: server: { proxy: { '/api': 'http://localhost:8000' }}
+  2. Backend CORS middleware — the proper fix app.use(cors({ origin: 'http://localhost:3000' }))
+  3. Manual headers - you can change it on back-end side. res.header('Access-Control-Allow-Origin', 'http://localhost:3000')
+res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE')
 
 
 1. ### package-json
