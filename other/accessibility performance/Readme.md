@@ -7,6 +7,8 @@
 | 2   | [Difference between contrasts for your page](#contrasts-differences)                                     |
 | 3   | [How many h1 you can use on yoru page?](#h1-using)                                     |
 | 4   | [Name some semantic tags](#semantic-tags)                                     |
+| 5   | [What is eslint plugin jsx ally?](#eslint-plugin-jsx-a11y)                                     |
+
 
 1. ###  aria-live-explanation
   1. ***aria-live*** is an accessibility feature for screen readers.
@@ -30,3 +32,6 @@ Only 1 h1 through the page can be used.
 
 4. ### semantic-tags
 <img width="412" height="395" alt="image" src="https://github.com/user-attachments/assets/687dc90f-a8a1-41f3-a8d1-9e844d8c01ab" />
+
+5. ### eslint-plugin-jsx-a11y
+is a tool that checks your React JSX code for accessibility problems.
