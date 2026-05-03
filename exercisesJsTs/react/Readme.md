@@ -13,6 +13,28 @@ https://github.com/vaskoGut/Learning/blob/main/exercisesJsTs/react/useReducer/Re
 | 4   | [Searchbar component with 'loading text' disappearing after some time. Remember to clear timer on unmount?](#searchbar-react-component)                               |
 | 5   | [What is wrong with code below? Why setLoading is used not properly?](#searchbar-react-component)                               |
 <img width="431" height="180" alt="image" src="https://github.com/user-attachments/assets/adda7c20-3dd4-4ce4-884a-2137d1ab2c47" />
+```javascript
+  useEffect(() => {
+  let isActive = true;
+
+  setLoading(true);
+
+  fetch('https://dummyjson.com/users')
+    .then(res => res.json())
+    .then(data => {
+      if (isActive) setResults(data);
+    })
+    .catch(err => console.error(err))
+    .finally(() => {
+      if (isActive) setLoading(false);
+    });
+
+  return () => {
+    isActive = false;
+  };
+}, []);
+```
+
 
 | 6   | [Write search input with fetch and debounce effectinside. Handle isLoading, isActive to prevent unnecessary data rewritting?](#searchbar-fetch-component)                               |
 
