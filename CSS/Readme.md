@@ -6,7 +6,7 @@
 | 3   | [How to use variables in sass?](#sass-variables)                                                                                                |
 | 4   | [What are pros of nesting in sass?](#pros-nesting)                                                                                                |
 | 5   | [What is BEM CSS naming approach?](#bem-naming)                                                                                                |
-
+| 6   | [What is focal point?](#focal-point)                                                                                                |
 
 1. ### cumulative-layout-shift
 CLS most often occurs when dynamically loaded elements don’t have a predefined size.  
@@ -79,3 +79,14 @@ card → Block
 card__title → Element of the block
 card--large → Modifier of the block
 ```
+
+6. ### focal-point
+
+Web layouts are responsive, meaning images often get:
+cropped (different screen sizes)
+resized (mobile vs desktop)
+repositioned (flex/grid layouts)
+
+Without a focal point, you might accidentally cut off something important—like a face, product, or subject.
+A ***focal point*** tells the browser or design system:
+“This is the part of the image you should prioritize keeping visible.”
