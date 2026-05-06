@@ -111,6 +111,7 @@ let a = 10;
 | 85   | [ What generally means class Student extends Person? (JTR)](#class-js)                                     |
 
 | 86   | [Short circuit evaluation)](#short-circuit-evaluation)                                     |
+| 87   | [When to use nullish and when or operator?)](#nullish-or-operator)                                     |
 
 
 # Exercises Javascript Typescript
@@ -1627,6 +1628,9 @@ let b = 0;
 let c = a && b;   // AND operator
 console.log(c);   // 0
 
+87.  ### #nullish-or-operator
+Use ?? when you only want to handle missing values (null or undefined)
+Use || when you want to handle any falsy value
 
 __________________________________________________________________________________________________________________________________________
 
