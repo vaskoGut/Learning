@@ -4,7 +4,7 @@
 | 1   | [Practical example: you need to call some script and add smth to the header only after some behaviour user on page. In gatsby.js pages are rendered statically during build, to do smth like that you need SSR.What better option here, what to use?](#script-interaction-load)                               |
 | 2   | [You open the browser console and see this:❌ Access to XMLHttpRequest blocked by CORS policy. Front-end is on 1 localhost, and back-end on another.](#cors-localhost-problem)                               |
 | 3   | [What happens when a URL is entered into the browser?](#url-browser)                               |
-
+| 4   | [An example of clear react architecture, naming](#react-architecture)                               |
 
 
 A clean, simple way to answer this in a front-end interview is to walk through the big steps without getting lost in low-level details. Something like this works well:
@@ -103,3 +103,6 @@ Package lock file includes version of npm packages
 3. ### npm-yarn-diff
 npm – the default package manager that comes with Node.js.
 yarn – an alternative package manager created by Facebook (Meta) to fix early npm issues.
+
+4. ### react-architecture
+<img width="541" height="667" alt="ClearArchitecture" src="https://github.com/user-attachments/assets/d00e7604-6977-4879-abef-6566586a0819" />
