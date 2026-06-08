@@ -255,6 +255,47 @@ for (var i = 1; i <= 3; i++) {
 }, 100);
 ```
 
+56  | [Write lerp function. Explain](#lerp-function)                               |
+```javascript
+   let i = 0;
+   const id = setInterval(() => {
+   console.log(i);
+   i++;
+   if (i === 3) clearInterval(id);
+}, 100);
+```
+
+
+/*
+This function performs linear interpolation ("lerp" for short) between two values.
+
+export function lerp(start, end, value, noExtrapolation = false) {
+    if (noExtrapolation) {
+        if (value < 0) {
+            return start;
+        }
+
+        if (value > 1) {
+            return end;
+        }
+    }
+
+    return start + (end - start) * value;
+}
+The core formula
+
+The important line is:
+
+start + (end - start) * value
+
+This computes a point between start and end.
+
+value = 0 → returns start
+value = 1 → returns end
+value = 0.5 → returns the midpoint
+value = 0.25 → returns a point 25% of the way from start to end
+*/
+
 
 1. ### reverse string
    Using **map** method:
@@ -1376,3 +1417,7 @@ Macrotask: setTimeout
    [LOG]: 1 
    [LOG]: 2 
 ```
+
+56. ### lerp-function
+<img width="828" height="727" alt="image" src="https://github.com/user-attachments/assets/91be3aaf-7e36-43cc-834e-529f29865fc0" />
+
