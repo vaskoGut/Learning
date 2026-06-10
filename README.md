@@ -112,6 +112,7 @@ let a = 10;
 
 | 86   | [Short circuit evaluation)](#short-circuit-evaluation)                                     |
 | 87   | [When to use nullish and when or operator?)](#nullish-or-operator)                                     |
+| 88   | [requestAnimationFrame explaining and to run update function on scroll while handling animation)](#handling-animation-request-animation)                                     |
 
 
 # Exercises Javascript Typescript
@@ -1632,6 +1633,26 @@ console.log(c);   // 0
 Use ?? when you only want to handle missing values (null or undefined)
 Use || when you want to handle any falsy value
 
+
+88.  ### handling-animation-request-animation
+```javascript
+  const update = () => console.log('test');
+
+  let tickling = false;
+  
+  function onScroll() {
+      if(tickling) return;
+  
+      ticking = true;
+  
+      requestAnimationFrame(() => {
+          updaet();
+          ticlking = false;
+      })
+  };
+
+  window.addEventListener('scroll', onScroll)
+```
 __________________________________________________________________________________________________________________________________________
 
 # Exercises Javascript Typescript
