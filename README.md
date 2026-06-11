@@ -113,6 +113,8 @@ let a = 10;
 | 86   | [Short circuit evaluation)](#short-circuit-evaluation)                                     |
 | 87   | [When to use nullish and when or operator?)](#nullish-or-operator)                                     |
 | 88   | [requestAnimationFrame explaining and to run update function on scroll while handling animation)](#handling-animation-request-animation)                                     |
+| 89   | [why forEach with empty nodeList works, and map no)](#node-list-empty-foreach-map)                                     |
+
 
 
 # Exercises Javascript Typescript
@@ -1653,6 +1655,10 @@ Use || when you want to handle any falsy value
 
   window.addEventListener('scroll', onScroll)
 ```
+
+89. ### node-list-empty-foreach-map
+<img width="417" height="207" alt="image" src="https://github.com/user-attachments/assets/f5905973-9ec4-4905-831e-123ba6bfb00c" />
+
 __________________________________________________________________________________________________________________________________________
 
 # Exercises Javascript Typescript
