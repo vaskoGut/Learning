@@ -114,7 +114,7 @@ let a = 10;
 | 87   | [When to use nullish and when or operator?)](#nullish-or-operator)                                     |
 | 88   | [requestAnimationFrame explaining and to run update function on scroll while handling animation)](#handling-animation-request-animation)                                     |
 | 89   | [why forEach with empty nodeList works, and map no)](#node-list-empty-foreach-map)                                     |
-
+| 90   | [Find closest element by selector in node tree ( just see )](#closest-element)                                     |
 
 
 # Exercises Javascript Typescript
@@ -1659,6 +1659,19 @@ Use || when you want to handle any falsy value
 89. ### node-list-empty-foreach-map
 <img width="417" height="207" alt="image" src="https://github.com/user-attachments/assets/f5905973-9ec4-4905-831e-123ba6bfb00c" />
 
+90. ### #closest-elemen
+
+```javascript
+  function closest(element, selector) {
+    while (element) {
+      if (element.matches(selector)) {
+        return element;
+      }
+      element = element.parentElement;
+    }
+    return null;
+  }
+```
 __________________________________________________________________________________________________________________________________________
 
 # Exercises Javascript Typescript
