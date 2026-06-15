@@ -7,6 +7,8 @@
 | 4   | [What are pros of nesting in sass?](#pros-nesting)                                                                                                |
 | 5   | [What is BEM CSS naming approach?](#bem-naming)                                                                                                |
 | 6   | [What is focal point?](#focal-point)                                                                                                |
+| 7   | [What is aspect ratio in css?](#aspect-ratio)                                                                                                |
+
 
 1. ### cumulative-layout-shift
 CLS most often occurs when dynamically loaded elements don’t have a predefined size.  
@@ -90,3 +92,8 @@ repositioned (flex/grid layouts)
 Without a focal point, you might accidentally cut off something important—like a face, product, or subject.
 A ***focal point*** tells the browser or design system:
 “This is the part of the image you should prioritize keeping visible.”
+
+7. ### aspect-ratio
+
+<img width="604" height="290" alt="image" src="https://github.com/user-attachments/assets/f353214d-955f-41c4-b2de-9648cda055e2" />
+
