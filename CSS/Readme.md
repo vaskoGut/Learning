@@ -94,6 +94,6 @@ A ***focal point*** tells the browser or design system:
 “This is the part of the image you should prioritize keeping visible.”
 
 7. ### aspect-ratio
+<img width="803" height="466" alt="image" src="https://github.com/user-attachments/assets/70191949-172f-47c3-af7d-99bdb39d92cf" />
 
-<img width="604" height="290" alt="image" src="https://github.com/user-attachments/assets/f353214d-955f-41c4-b2de-9648cda055e2" />
 
