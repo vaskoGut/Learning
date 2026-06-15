@@ -7,7 +7,9 @@
 | 4   | [What are pros of nesting in sass?](#pros-nesting)                                                                                                |
 | 5   | [What is BEM CSS naming approach?](#bem-naming)                                                                                                |
 | 6   | [What is focal point?](#focal-point)                                                                                                |
-| 7   | [What is aspect ratio in css?](#aspect-ratio)                                                                                                |
+| 7   | [What is aspect ratio in css? And what if width and height is set? do we need still it?](#aspect-ratio)                                                                                                |
+
+
 
 
 1. ### cumulative-layout-shift
@@ -95,5 +97,7 @@ A ***focal point*** tells the browser or design system:
 
 7. ### aspect-ratio
 <img width="803" height="466" alt="image" src="https://github.com/user-attachments/assets/70191949-172f-47c3-af7d-99bdb39d92cf" />
+<img width="837" height="563" alt="image" src="https://github.com/user-attachments/assets/0d799a29-bff3-4d11-aec9-1a1da9d62bb9" />
+
 
 
