@@ -199,6 +199,7 @@ let result = value ?? "default";
 | 60   | [What causes component rerendering?](#component-rerendering)                                     |
 | 61   | [Server client components difference?](#client-server-components)                                     |
 | 62   | [When should we use useCallback?](#useCallback-react)                                     |
+| 63   | [Two way data binding](#one-twh-way-databinding)                                     |
 
 # Redux
 | Nm | #Question   |
@@ -1760,7 +1761,8 @@ ________________________________________________________________________________
 
    2. Components - we create reusable, independent components.
    3. Virtual DOM - it's virtual copy of DOM, with help of it preformance is improved. With help of that we update only necessary things in DOM, not rebuilding all DOM tree.
-   4. One way data-binding.
+   4. One way data-binding. One-way data binding describes the direction of data binding between a data source and a UI/view. Example: State/Data  ───────>  UI/View
+The UI receives data from the state, but changes in the UI do not automatically update the state.
    5. high performance - while updating components - we don't refresh, update all application.
       
    ______________
@@ -2328,6 +2330,22 @@ const increase = () => {
 ```
 Since Child receives a different function reference, child component will be rerendered.
 So in that case we need useCallback - with use of it you send all time same function to child. And component stopps to rerender.
+
+63. ### one-twh-way-databinding
+***One-way data binding:***
+State/Data  ───────>  UI/View
+The UI receives data from the state, but changes in the UI do not automatically update the state.
+
+***Two-way data binding:***
+Data flows in both directions:
+Data/State  <──────>  UI
+Changes in the data update the UI, and changes in the UI update the data automatically.
+Example:
+name = "John";
+<input [(ngModel)]="name" />
+If the user types "Mike":
+Input updates → name becomes "Mike"
+name changes → input updates
 
  ________________________________________________________________________________________________________________________________
   1. ### #what-is-redux
