@@ -1779,7 +1779,7 @@ The UI receives data from the state, but changes in the UI do not automatically 
    Remember not to mutate directly React's state, cause it can lead to different problems, bugs.
    When state's updated, react calls render() method and component's updated.
 
-   Generally speaking, any time a component needs to hold a dnynamic piece of data - you need a state to use it.
+   Generally speaking, any time a component needs to hold a dnynamic piece of data - you need a state to use it. Never mutate React state directly. Create a new value and pass it to the state updater.
    ______________
 
 5. ### Can browser read jsx
