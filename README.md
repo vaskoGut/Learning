@@ -1771,9 +1771,10 @@ The UI receives data from the state, but changes in the UI do not automatically 
    Children component're placed inside parent component. Data's transfered from parent component to child component. Benefits unindirectional data-flow:
        1. Easy to debug - cause we know how and frome where data is coming.
        2. Less errors - more control on data.
+   Additional info: Angular traditionally supports two-way data binding (especially with forms) and also uses one-way binding in many places.Angular traditionally supports two-way data binding (especially with forms) and also uses one-way binding in many places.
    ______________
 
-3. ### What is state in react
+4. ### What is state in react
    State in React - is object containing component an information. It can be changed. When state's changed, component is rerendered.
    Remember not to mutate directly React's state, cause it can lead to different problems, bugs.
    When state's updated, react calls render() method and component's updated.
