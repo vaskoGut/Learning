@@ -292,6 +292,7 @@ let result = value ?? "default";
 | 35   | [What is firebase generally speaking?](#firebase-description)      |
 | 36   | [What is brandwidth?](#brandwidth-explanation)      |
 | 37   | [Difference between declarative-imperative?](#declarative-imperative)      |
+| 38   | [Does lit have lifecycle methods?](#lit-lifecycle-methods)      |
 
 SPA:
 Works by loading a single HTML page and dynamically updating the content as the user interacts with the app.
@@ -2881,6 +2882,9 @@ ________________________________________________________________________________
   **Imperative**: A recipe — "First chop the onions, then heat the pan, then fry..."
   
   **Declarative**: Ordering food — "I want a veggie burger."
+
+   38. ### lit-lifecycle-methods
+  Yes lit have lifecycle methods which help you to create reusable components.
 
 ________________________________________________________________________________________________________________________________
    1. ### box-model
