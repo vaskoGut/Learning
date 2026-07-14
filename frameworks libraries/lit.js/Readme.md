@@ -1,4 +1,4 @@
-# REACT JS
+# LIT JS
 | Nm | #Question   |
 | :---:   | :---: |
 | 1   | [1. What is lit.js? What are advantages? Does it have smth like virtual dom?](#lit-library)                               |
