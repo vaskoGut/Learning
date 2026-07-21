@@ -1,8 +1,8 @@
 # LIT JS
 | Nm | #Question   |
 | :---:   | :---: |
-| 1   | [1. What is lit.js? What are advantages? Does it have smth like virtual dom? Some basic elements (just watch )](#lit-library)                               |
-
+| 1   | [What is lit.js? What are advantages? Does it have smth like virtual dom? Some basic elements (just watch )](#lit-library)                               |
+| 2   | [Is lit component html element?](#lit-html)                               |
 
 
 1. ### lit-library
@@ -14,6 +14,9 @@ comparison lit and virtual dom ( react )
 Some basic elements,functionality of vit:
 <img width="1009" height="348" alt="image" src="https://github.com/user-attachments/assets/2e0b0806-01c3-4b25-89d8-c53858026968" />
 
+2. ### lit-html
+Yes lit component is actually html element.So a Lit component inherits all of the standard HTMLElement properties and methods
+<img width="547" height="417" alt="image" src="https://github.com/user-attachments/assets/ca38fe29-3ab4-4d28-b1f8-12b0582c72ec" />
 
 
 ```javascript
