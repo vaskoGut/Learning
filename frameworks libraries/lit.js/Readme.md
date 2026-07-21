@@ -3,6 +3,8 @@
 | :---:   | :---: |
 | 1   | [What is lit.js? What are advantages? Does it have smth like virtual dom? Some basic elements (just watch )](#lit-library)                               |
 | 2   | [Is lit component html element?](#lit-html)                               |
+| 3   | [Reactive properties. What does happen when property is changed? Attribute handling - its observed by default.  Supperclass propertyies. Element upgdade](#reactive-properties)                               |
+| 4   | [Lifecycle methods lit](#lit-lifecycle-methods)      
 
 
 1. ### lit-library
@@ -18,7 +20,106 @@ Some basic elements,functionality of vit:
 Yes lit component is actually html element.So a Lit component inherits all of the standard HTMLElement properties and methods
 <img width="547" height="417" alt="image" src="https://github.com/user-attachments/assets/ca38fe29-3ab4-4d28-b1f8-12b0582c72ec" />
 
+3. ### reactive-properties
+Reactive updates
+Lit generates a getter/setter pair for each reactive property. When a reactive property changes, the component schedules an update.
 
+```javascript
+// so when you do this, comopnente is rerendered
+this.title = 'New title';
+```
+
+![alt text](image.png)
+
+```javascript
+@property({ reflect: true })
+title = '';
+
+// when you change Now:
+
+this.title = "New";
+// updates the DOM to:
+<my-card title="New"></my-card>
+```
+![alt text](image-1.png)
+
+Element upgdade:
+
+Lit guarantees that reactive properties still behave correctly even if someone assigns values before the custom element is fully defined
+
+![alt text](image-2.png)
+
+
+4. ### lit-lifecycle-methods
+after first render:
+
+![alt text](image-3.png)
+
+reacting on state change:
+![alt text](image-4.png)
+![alt text](image-5.png)
+![alt text](image-6.png)
+![alt text](image-7.png)
+
+connectedCallback() and firstUpdated()
+![alt text](image-8.png)
+
+1more example
+```javascript
+// Example side-by-side
+// React
+function UserCard({id}) {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    fetchUser(id).then(setUser);
+
+    return () => {
+      console.log('cleanup');
+    };
+  }, [id]);
+
+  return <div>{user?.name}</div>;
+}
+// Lit
+class UserCard extends LitElement {
+
+  @property()
+  id = '';
+
+  @state()
+  user = null;
+
+  connectedCallback() {
+    super.connectedCallback();
+    this.loadUser();
+  }
+
+  updated(changed) {
+    if (changed.has('id')) {
+      this.loadUser();
+    }
+  }
+
+  disconnectedCallback() {
+    super.disconnectedCallback();
+    console.log('cleanup');
+  }
+
+  render() {
+    return html`
+      <div>${this.user?.name}</div>
+    `;
+  }
+}
+```
+
+firstupdate / connect difference:
+![alt text](image-10.png)
+
+summary:
+
+![alt text](image-9.png)
 ```javascript
 // BASIC EXAMPLE
 
