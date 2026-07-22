@@ -7,6 +7,12 @@
 | 4   | [Lifecycle methods lit](#lit-lifecycle-methods)      
 
 
+when(
+  condition,
+  () => truthyTemplate,
+  () => falsyTemplate // optional
+)
+
 1. ### lit-library
 Lit is library used for building web components.
 Wit lit you have more boilerplate. Lifecycle methods. Cleaner sytnax
@@ -210,4 +216,14 @@ export class ToDoList extends LitElement {
   }
 }
 
+```
+
+```javascript
+// condition rendering with Lit:
+
+when(
+  condition,
+  () => truthyTemplate,
+  () => falsyTemplate // optional
+)
 ```
