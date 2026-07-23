@@ -95,10 +95,6 @@
 | 77   | [What ui test does look for simple select component?](#ui-test-select-component)                                     |
 | 78   | [What is diff between call, apply bind?](#call-apply-bind-diff-functions)                                     |
 | 79   | [What is Temporal dead zone? 2. What will be result of code below and why? 3. what is difference between let,const,var in terms of Temporal dead zone?](#temporal-dead-zone)                                     |
-```javascript
-console.log(a);
-let a = 10;
-```
 | 80   | [ What are generics?](#generics-explanation)                                     |
 | 81   | [ What does mean this extends example here?](#generics-extends)                                     |
 <img width="860" height="137" alt="image" src="https://github.com/user-attachments/assets/01fc6d20-7c7b-4226-85a1-ac361da9f448" />
@@ -115,7 +111,7 @@ let a = 10;
 | 88   | [requestAnimationFrame explaining and to run update function on scroll while handling animation)](#handling-animation-request-animation)                                     |
 | 89   | [why forEach with empty nodeList works, and map no)](#node-list-empty-foreach-map)                                     |
 | 90   | [Find closest element by selector in node tree ( just see )](#closest-element)                                     |
-
+| 91   | [What is mutation observer?](#mutation-observer)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1674,6 +1670,10 @@ Use || when you want to handle any falsy value
     return null;
   }
 ```
+91. ### #mutation-observer
+new MutationObserver() is a JavaScript API that lets you watch for changes made to the DOM (Document Object Model) and run code automatically when those changes happen.
+<img width="813" height="540" alt="image" src="https://github.com/user-attachments/assets/e2449e7c-6cad-4d74-a873-022c076b5408" />
+
 __________________________________________________________________________________________________________________________________________
 
 # Exercises Javascript Typescript
