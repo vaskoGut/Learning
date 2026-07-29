@@ -296,6 +296,20 @@ value = 0.5 → returns the midpoint
 value = 0.25 → returns a point 25% of the way from start to end
 */
 
+57  | [Why this will not work in example below?](#arrow-function-this)                               |
+```javascript
+   Array.prototype.customMap = (callback:any) => {
+     if(typeof callback !== 'function') return new Error('smth is wrong');
+     let result = [];
+     const array = this;
+   
+     for(let i = 0; i < array.length; i++) {
+       result.push(callback(array[i]));
+     }
+   
+     return result;
+   };
+```
 
 1. ### reverse string
    Using **map** method:
@@ -1420,4 +1434,7 @@ Macrotask: setTimeout
 
 56. ### lerp-function
 <img width="828" height="727" alt="image" src="https://github.com/user-attachments/assets/91be3aaf-7e36-43cc-834e-529f29865fc0" />
+
+57. ### arrow-function-this
+Arrow functions dont have its own this, they inherit it from surrounding lexical scope.
 
