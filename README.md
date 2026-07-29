@@ -289,6 +289,8 @@ let result = value ?? "default";
 | 36   | [What is brandwidth?](#brandwidth-explanation)      |
 | 37   | [Difference between declarative-imperative?](#declarative-imperative)      |
 | 38   | [Does lit have lifecycle methods?](#lit-lifecycle-methods)      |
+| 39   | [Difference between build time - run time](#buildTime-runTime-diff)      |
+
 
 SPA:
 Works by loading a single HTML page and dynamically updating the content as the user interacts with the app.
@@ -2891,6 +2893,8 @@ ________________________________________________________________________________
    38. ### lit-lifecycle-methods
   Yes lit have lifecycle methods which help you to create reusable components.
 
+ 39. ### buildTime-runTime-diff
+<img width="851" height="166" alt="BuildtimeRuntime difference" src="https://github.com/user-attachments/assets/b9c326a2-bcbc-48c0-a162-3e3a630f2a10" />
 
 ________________________________________________________________________________________________________________________________
    1. ### box-model
