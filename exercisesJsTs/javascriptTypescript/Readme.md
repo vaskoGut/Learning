@@ -1207,7 +1207,7 @@ Array.prototype.customMap = function(callback) {
    
    
      let accumulator = initialValue !== undefined ? initialValue : array[0];
-     const startIndex = initialValue ? 0 : 1;
+     const startIndex =  arguments.length > 1 ? 0 : 1;
      const newArr = new Array(this.length);
      
    
