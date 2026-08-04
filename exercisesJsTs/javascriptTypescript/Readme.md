@@ -308,6 +308,7 @@ value = 0.25 → returns a point 25% of the way from start to end
      }
    
      return result;
+```
 
 58  | [Exaplain how reduce works here with 1 parameter](#reduce-1paramater-case)                               |
 ```javascript
