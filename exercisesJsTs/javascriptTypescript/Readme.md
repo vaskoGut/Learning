@@ -308,7 +308,11 @@ value = 0.25 → returns a point 25% of the way from start to end
      }
    
      return result;
-   };
+
+58  | [Exaplain how reduce works here with 1 parameter](#reduce-1paramater-case)                               |
+```javascript
+   const testObj2 = [1, 2, 3, 4];
+   const reduceResult = testObj2.reduce((elem) => elem + 5);
 ```
 
 1. ### reverse string
@@ -1437,4 +1441,18 @@ Macrotask: setTimeout
 
 57. ### arrow-function-this
 Arrow functions dont have its own this, they inherit it from surrounding lexical scope.
+
+58. ### reduce-1paramater-case
+```javascript
+const testObj2 = [1, 2, 3, 4];
+const reduceResult = testObj2.reduce((elem) => elem + 5);
+console.log('reduceResult', reduceResult);
+
+1. JavaScript uses the first array element as the initial accumulator:
+The remaining array is: [2, 3, 4].
+So we have 3 steps of our iteration.
+<img width="802" height="604" alt="image" src="https://github.com/user-attachments/assets/f74d91cd-0724-44a2-b855-efad4dfba3cd" />
+
+```
+
 
