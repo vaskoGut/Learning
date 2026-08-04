@@ -316,6 +316,11 @@ value = 0.25 → returns a point 25% of the way from start to end
    const reduceResult = testObj2.reduce((elem) => elem + 5);
 ```
 
+59  | [Write filter method custom.](#filter-method)                               |
+
+const result = ourArray.customFilter(elem => elem > 2);
+console.log('result', result);
+
 1. ### reverse string
    Using **map** method:
    
@@ -1455,4 +1460,19 @@ The remaining array is: [2, 3, 4].
 So we have 3 steps of our iteration.
 <img width="802" height="604" alt="image" src="https://github.com/user-attachments/assets/f74d91cd-0724-44a2-b855-efad4dfba3cd" />
 
+59. ### filter-method
+```javascript
+Array.prototype.customFilter = function(callback) {
+  if(typeof callback !== 'function') return new Error('wrong type of callback');
 
+  const result = [];
+  const arr = this;
+
+  for(let i = 0; i < arr.length; i++) {
+    if(callback([arr[i]])) result.push(arr[i]);
+  }
+
+  console.log('result', result);
+  return result;
+};
+```
