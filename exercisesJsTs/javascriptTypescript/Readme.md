@@ -1447,12 +1447,11 @@ Arrow functions dont have its own this, they inherit it from surrounding lexical
 const testObj2 = [1, 2, 3, 4];
 const reduceResult = testObj2.reduce((elem) => elem + 5);
 console.log('reduceResult', reduceResult);
+```
 
-1. JavaScript uses the first array element as the initial accumulator:
+JavaScript uses the first array element as the initial accumulator:
 The remaining array is: [2, 3, 4].
 So we have 3 steps of our iteration.
 <img width="802" height="604" alt="image" src="https://github.com/user-attachments/assets/f74d91cd-0724-44a2-b855-efad4dfba3cd" />
-
-```
 
 
