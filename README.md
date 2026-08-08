@@ -1400,11 +1400,14 @@ Event delegation example:
 
 64. ### ##debounce-throttle-difference
 <img width="650" height="390" alt="image" src="https://github.com/user-attachments/assets/2e20fb1e-26ef-4275-bd13-b4eb20e1b8dc" />
-Debounce - runs once after delay. THrottle runs every some time span.
-Throttle allows the first event, then ignores the others until the delay passes.
+Debounce - runs once after delay. debounce means: “cancel the previous scheduled call when a new call comes in.” That's why debounce is perfect for things like search inputs.
+
+THrottle runs every some time span. Throttle allows the first event, then ignores the others until the delay passes.
 After the delay, the next event is allowed again
 Using throttle and debounce diff:
 <img width="466" height="433" alt="image" src="https://github.com/user-attachments/assets/d009beeb-b477-4b7f-b940-7223556ea6af" />
+<img width="819" height="275" alt="image" src="https://github.com/user-attachments/assets/bccc5989-d8f1-48bf-af4d-aaab4f87f54f" />
+
 
 65. ### ##promise-then-happens
 Promise.then() registers fulfillment and rejection handlers that are executed asynchronously as microtasks once the promise settles. It returns a new promise whose state depends on the return value or error thrown by the handler.
