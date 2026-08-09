@@ -1408,6 +1408,13 @@ Using throttle and debounce diff:
 <img width="466" height="433" alt="image" src="https://github.com/user-attachments/assets/d009beeb-b477-4b7f-b940-7223556ea6af" />
 <img width="819" height="275" alt="image" src="https://github.com/user-attachments/assets/bccc5989-d8f1-48bf-af4d-aaab4f87f54f" />
 
+So difference is when we use debounce - last function is called during timestamp.
+When we use throggle first call of function is executed, other are avoided.
+
+Throttle:
+"You can call me once every X milliseconds."
+Debounce:
+"I'll wait until you stop calling me for X milliseconds."
 
 65. ### ##promise-then-happens
 Promise.then() registers fulfillment and rejection handlers that are executed asynchronously as microtasks once the promise settles. It returns a new promise whose state depends on the return value or error thrown by the handler.
