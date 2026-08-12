@@ -112,6 +112,7 @@
 | 89   | [why forEach with empty nodeList works, and map no)](#node-list-empty-foreach-map)                                     |
 | 90   | [Find closest element by selector in node tree ( just see )](#closest-element)                                     |
 | 91   | [What is mutation observer?](#mutation-observer)                                     |
+| 92   | [What is returning new Date?](#new-date)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1686,6 +1687,8 @@ Use || when you want to handle any falsy value
 new MutationObserver() is a JavaScript API that lets you watch for changes made to the DOM (Document Object Model) and run code automatically when those changes happen.
 <img width="813" height="540" alt="image" src="https://github.com/user-attachments/assets/e2449e7c-6cad-4d74-a873-022c076b5408" />
 
+91. ### #new-date
+new date returning current date.
 __________________________________________________________________________________________________________________________________________
 
 # Exercises Javascript Typescript
