@@ -60,7 +60,7 @@ const user = {
   }
 };
 ```
-| 29  | [1) Write your own throttle function implementation? 2) Write throttle when 1st call callback is executed after some time. 3) write throttle when 1st callback is called executed immidiately. 4) What happens to arguments from calls during the throttle period. Whether this needs to be preserved.](#throttle-implementation)                                                            |
+| 29  | [1) Write your own throttle function implementation? 2) Write throttle when 1st call callback is executed after some time. 3) write throttle when 1st callback is called executed immidiately (1 variant with timer and 1 without). 4) Why does the closure preserve isThrottled  5) Does this need to be preserved? ](#throttle-implementation)                                                            |
 
 | 30  | [In which order does it run ?](#microtasks-macrotasks)                                                            |
 
@@ -1042,6 +1042,44 @@ call 3 ──X
                          ↑
                       first call
 ```
+
+```javascript
+   // example with Date.now
+   const useThrottle = function(func, delay) {
+     let lastCall = 0;
+   
+     return function(...args) {
+       const now = Date.now();
+       
+       if(now - lastCall >= delay ) {
+         func(...args);
+         lastCall = now;
+      }
+     }
+   }
+```
+
+```javascript
+   // example without date.now
+
+   const useThrottle = function (func, delay) {
+     let isThrottled = false;
+   
+     return function (...args) {
+       if (isThrottled) return;
+   
+       func(...args);
+       isThrottled = true;
+   
+       setTimeout(() => {
+         isThrottled = false;
+       }, delay);
+     };
+   };
+```
+   4. Why does the closure preserve isThrottled
+      <img width="744" height="110" alt="image" src="https://github.com/user-attachments/assets/c820ce8e-f4d4-4b2d-8e32-1943dd0928e5" />
+   5. Should we preserve this? yes, cause function can use it.
 
 
 30. ### microtasks-macrotasks
