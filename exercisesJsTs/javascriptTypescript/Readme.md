@@ -60,7 +60,7 @@ const user = {
   }
 };
 ```
-| 29  | [Write your own throttle function implementation ?](#throttle-implementation)                                                            |
+| 29  | [1) Write your own throttle function implementation? 2) Write throttle when 1st call callback is executed after some time. 3) write throttle when 1st callback is called executed immidiately. 4) What happens to arguments from calls during the throttle period. Whether this needs to be preserved.](#throttle-implementation)                                                            |
 
 | 30  | [In which order does it run ?](#microtasks-macrotasks)                                                            |
 
@@ -1016,26 +1016,33 @@ console.log(user.greet());
 
 29. ### throttle-implementation
 ```javascript
-function throttle(fn, delay) {
-  let timer = null;
+const useThrottle = function(func, delay) {
+  let isThrottle = null;
 
-  return function (...args) {
-    if (timer) return;
+  return function(...args) {
+    if(isThrottle) return;
 
-    timer = setTimeout(() => {
-      fn(...args);
-      timer = null;
-    }, delay);
-  };
+    isThrottle = setTimeout(() => {
+      func(...args);
+      isThrottle = null;
+    }, delay)
+  }
 }
 
-const sayHello = () => {
-  console.log('hello');
-};
+const throttled = useThrottle(() => console.log("run"), 1000);
 
-const throttledHello = throttle(sayHello, 100); // 2 seconds delay
-throttledHello();
+throttled(); // runs after 1s
+throttled(); // ignored
+throttled(); // ignored
+
+
+call 1 ────────────────> execute after delay
+call 2 ──X
+call 3 ──X
+                         ↑
+                      first call
 ```
+
 
 30. ### microtasks-macrotasks
 <img width="173" height="90" alt="image" src="https://github.com/user-attachments/assets/6fc687cd-e9c5-4122-b149-f35a49886d1a" />
