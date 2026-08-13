@@ -321,6 +321,8 @@ value = 0.25 → returns a point 25% of the way from start to end
 const result = ourArray.customFilter(elem => elem > 2);
 console.log('result', result);
 
+60  | [Implement find method.](#find-method)                               |
+
 1. ### reverse string
    Using **map** method:
    
@@ -1520,4 +1522,26 @@ Array.prototype.customFilter = function(callback) {
   console.log('result', result);
   return result;
 };
+```
+
+60. ### find-method
+```javascript
+   Array.prototype.ourFind = function(callback) {
+       if(typeof callback !== 'function') throw new TypeError('callback is not a function');
+   
+       const arr = this;
+   
+       for(let i = 0; i < arr.length; i++) {
+         if(!(i in arr)) continue;
+         if(callback(arr[i], i, arr)) {
+           return arr[i]
+         }
+       }
+   
+       return undefined;
+   }
+   
+   const arr = [1, 2 ,3];
+   const ourNumb = arr.ourFind((ele) => ele === 3);
+   console.log('ourNumb', ourNumb);
 ```
