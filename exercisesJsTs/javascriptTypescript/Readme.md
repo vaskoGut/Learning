@@ -322,6 +322,20 @@ const result = ourArray.customFilter(elem => elem > 2);
 console.log('result', result);
 
 60  | [Implement find method.](#find-method)                               |
+61  | [Why u need console.log here to show result?](#call-result)                               |
+```javascript
+const sayHi = function(hiText) {
+    return 'hi ' + this.name + ' ' + hiText;
+}
+
+const Person = {
+    name: 'Vasyl'
+}
+
+console.log(sayHi.call(Person, 'nice'));
+```
+
+
 
 1. ### reverse string
    Using **map** method:
@@ -1545,3 +1559,6 @@ Array.prototype.customFilter = function(callback) {
    const ourNumb = arr.ourFind((ele) => ele === 3);
    console.log('ourNumb', ourNumb);
 ```
+
+61. ### call-result
+Cause return doesn't print anything by defuault. It returns result
