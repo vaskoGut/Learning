@@ -334,7 +334,7 @@ const Person = {
 
 console.log(sayHi.call(Person, 'nice'));
 ```
-
+62  | [Write simple class inheritance. Animal and instances](#class-inheritance)                               |
 
 
 1. ### reverse string
@@ -1562,3 +1562,39 @@ Array.prototype.customFilter = function(callback) {
 
 61. ### call-result
 Cause return doesn't print anything by defuault. It returns result
+
+62. ### class-inheritance
+```javascript
+   class Animal {
+     name: string;
+   
+     constructor(name: string) {
+       this.name = name;
+     }
+   
+     makeSound(): void {
+       console.log("Some sound");
+     }
+   }
+   
+   class Dog extends Animal {
+     makeSound(): void {
+       console.log("Woof!");
+     }
+   }
+   
+   class Cat extends Animal {
+     makeSound(): void {
+       console.log("Meow!");
+     }
+   }
+   
+   const dog = new Dog("Buddy");
+   const cat = new Cat("Mittens");
+   
+   console.log(dog.name); // Buddy
+   dog.makeSound();      // Woof!
+   
+   console.log(cat.name); // Mittens
+   cat.makeSound();       // Meow!
+```
