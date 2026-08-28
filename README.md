@@ -200,6 +200,8 @@ let result = value ?? "default";
 | 64   | [What is process of transpilation in simply words?](#process-transpilation)                                     |
 | 65   | [What we use instead of React.create element to make life easier??](#react-create-element-alternative)                                     |
 | 66   | [What is a way to set default props in react 19?](#react-19-default-props)                                     |
+| 67   | [Saving props inside state in react - is it anti pattern??](#react-props-state-antipattern)                                     |
+
 
 
 
@@ -2383,6 +2385,10 @@ name changes → input updates
 66. ### react-19-default-props
 <img width="462" height="137" alt="image" src="https://github.com/user-attachments/assets/7ff7099e-0cc8-4281-ba35-bcaa21a237ae" />
 React 19 doesnt have default props. You can define it like above.
+
+67. ### react-props-state-antipattern
+<img width="834" height="493" alt="image" src="https://github.com/user-attachments/assets/4a4ef68b-4523-4319-956b-4c5004cfc93d" />
+
 
 
 
