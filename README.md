@@ -197,6 +197,7 @@ let result = value ?? "default";
 | 61   | [Server client components difference?](#client-server-components)                                     |
 | 62   | [When should we use useCallback?](#useCallback-react)                                     |
 | 63   | [Two way data binding](#one-twh-way-databinding)                                     |
+| 64   | [What is process of transpilation in simply words?](#process-transpilation)                                     |
 
 # Redux
 | Nm | #Question   |
@@ -2352,6 +2353,10 @@ So in that case we need useCallback - with use of it you send all time same func
 ***One-way data binding:***
 State/Data  ───────>  UI/View
 The UI receives data from the state, but changes in the UI do not automatically update the state.
+
+64. ### process-transpilation
+The process of transpilation is a process of taking source code and rewriting it to
+accomplish the same results but using syntax that’s understood by older browsers.
 
 ***Two-way data binding:***
 Data flows in both directions:
