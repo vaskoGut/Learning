@@ -198,6 +198,9 @@ let result = value ?? "default";
 | 62   | [When should we use useCallback?](#useCallback-react)                                     |
 | 63   | [Two way data binding](#one-twh-way-databinding)                                     |
 | 64   | [What is process of transpilation in simply words?](#process-transpilation)                                     |
+| 65   | [What we use instead of React.create element to make life easier??](#react-create-element-alternative)                                     |
+
+
 
 # Redux
 | Nm | #Question   |
@@ -2358,6 +2361,9 @@ The UI receives data from the state, but changes in the UI do not automatically 
 The process of transpilation is a process of taking source code and rewriting it to
 accomplish the same results but using syntax that’s understood by older browsers.
 
+65. ### react-create-element-alternative
+To not use reactcreateelement we use JSX.
+
 ***Two-way data binding:***
 Data flows in both directions:
 Data/State  <──────>  UI
@@ -2369,6 +2375,7 @@ If the user types "Mike":
 Input updates → name becomes "Mike"
 name changes → input updates
 
+65. ### process-transpilation
  ________________________________________________________________________________________________________________________________
   1. ### #what-is-redux
       Redux is library for managing global application state.
