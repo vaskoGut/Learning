@@ -201,8 +201,8 @@ let result = value ?? "default";
 | 65   | [What we use instead of React.create element to make life easier??](#react-create-element-alternative)                                     |
 | 66   | [What is a way to set default props in react 19?](#react-19-default-props)                                     |
 | 67   | [Saving props inside state in react - is it anti pattern??](#react-props-state-antipattern)                                     |
-
-
+| 68   | [When is update ref? in which moment](#ref-update-question)                                     |
+<img width="813" height="663" alt="image" src="https://github.com/user-attachments/assets/553c5a85-f08c-4996-90a8-fe6b617d2e5c" />
 
 
 
@@ -2389,8 +2389,8 @@ React 19 doesnt have default props. You can define it like above.
 67. ### react-props-state-antipattern
 <img width="834" height="493" alt="image" src="https://github.com/user-attachments/assets/4a4ef68b-4523-4319-956b-4c5004cfc93d" />
 
-
-
+68. ### ref-update-question
+useEffect updates ref after render. its why you can get old value
 
  ________________________________________________________________________________________________________________________________
   1. ### #what-is-redux
