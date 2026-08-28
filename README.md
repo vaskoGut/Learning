@@ -1942,6 +1942,8 @@ It's worth to mention we use high order components with keyword with.
   ![image](https://github.com/vaskoGut/Learning/assets/7413864/58c5e8a2-5102-4f45-a6c9-8b5ba7ce6ca7)
 
   **Uncontrolled** components hold their state internally. And you query DOM using a ref to find its current value when you need it.
+  <img width="820" height="776" alt="image" src="https://github.com/user-attachments/assets/e9dc055b-1c7f-40be-aade-a766a6520672" />
+
 
   19. ###  react-hooks
   Hooks was added in React 16.8 to allow  function components to have access to state and other React features.
