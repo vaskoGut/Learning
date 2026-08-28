@@ -2380,7 +2380,7 @@ name changes → input updates
 
 66. ### react-19-default-props
 <img width="462" height="137" alt="image" src="https://github.com/user-attachments/assets/7ff7099e-0cc8-4281-ba35-bcaa21a237ae" />
-
+React 19 doesnt have default props. You can define it like above.
 
 
 
