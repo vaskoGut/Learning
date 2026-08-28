@@ -199,6 +199,9 @@ let result = value ?? "default";
 | 63   | [Two way data binding](#one-twh-way-databinding)                                     |
 | 64   | [What is process of transpilation in simply words?](#process-transpilation)                                     |
 | 65   | [What we use instead of React.create element to make life easier??](#react-create-element-alternative)                                     |
+| 66   | [What is a way to set default props in react 19?](#react-19-default-props)                                     |
+
+
 
 
 
@@ -2375,7 +2378,12 @@ If the user types "Mike":
 Input updates → name becomes "Mike"
 name changes → input updates
 
-65. ### process-transpilation
+66. ### react-19-default-props
+<img width="462" height="137" alt="image" src="https://github.com/user-attachments/assets/7ff7099e-0cc8-4281-ba35-bcaa21a237ae" />
+
+
+
+
  ________________________________________________________________________________________________________________________________
   1. ### #what-is-redux
       Redux is library for managing global application state.
