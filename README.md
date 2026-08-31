@@ -204,9 +204,8 @@ let result = value ?? "default";
 | 68   | [When is update ref? in which moment](#ref-update-question)                                     |
 <img width="813" height="663" alt="image" src="https://github.com/user-attachments/assets/553c5a85-f08c-4996-90a8-fe6b617d2e5c" />
 | 69   | [Write your own force update function](#force-update-function)                                     |      
-| 70   | [Which 3 main categories of React lifecycle methods can you name](#life-cycle-methods-react)                                     |      
-
-
+| 70   | [Which 3 main categories of React lifecycle methods can you name](#life-cycle-methods-react)                                     |
+| 71   | [How with react memo restrict rendering component if for example text length more than 3 ? (LT)](#react-memo)                                     |
 
 
 # Redux
@@ -2399,6 +2398,19 @@ useEffect updates ref after render. its why you can get old value
 
 70. ### life-cycle-methods-react
 - mounting; - unmounting; - updating;
+
+71. ### react-memo
+```javascript
+  const MyComponent = React.memo(
+    function MyComponent({ text }) {
+      return <div>{text}</div>;
+    },
+    (prevProps, nextProps) => {
+      return prevProps.text === nextProps.text;
+    }
+  );
+```
+
 
  ________________________________________________________________________________________________________________________________
   1. ### #what-is-redux
