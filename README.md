@@ -203,8 +203,8 @@ let result = value ?? "default";
 | 67   | [Saving props inside state in react - is it anti pattern??](#react-props-state-antipattern)                                     |
 | 68   | [When is update ref? in which moment](#ref-update-question)                                     |
 <img width="813" height="663" alt="image" src="https://github.com/user-attachments/assets/553c5a85-f08c-4996-90a8-fe6b617d2e5c" />
-| 69   | [Write your own force update function](#force-update-function)      
-
+| 69   | [Write your own force update function](#force-update-function)                                     |      
+| 70   | [Which 3 main categories of React lifecycle methods can you name](#life-cycle-methods-react)                                     |      
 
 
 
@@ -2396,6 +2396,9 @@ useEffect updates ref after render. its why you can get old value
 
 69. ### force-update-function
 <img width="294" height="267" alt="image" src="https://github.com/user-attachments/assets/98f2152d-a61c-4604-b2d2-ef0abd4a037f" />
+
+70. ### life-cycle-methods-react
+- mounting; - unmounting; - updating;
 
  ________________________________________________________________________________________________________________________________
   1. ### #what-is-redux
