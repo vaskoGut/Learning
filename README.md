@@ -1892,6 +1892,8 @@ import { useEffect } from 'react';
 
 export function withLogger(Component, name) {
   return function WithLogger(props) {
+    const isLoggerEnabled = true;
+
     useEffect(() => {
       console.log(`component ${name} mounted`);
 
@@ -1904,7 +1906,7 @@ export function withLogger(Component, name) {
       console.log(`[${name}] updated props`, props);
     });
 
-    return <Component {...props} />;
+    return <Component isEnabled={isLoggerEnabled} {...props} />;
   };
 }
 
@@ -1913,6 +1915,8 @@ export function Hello(props) {
 }
 
 const LoggedHello = withLogger(Hello, 'Hello');
+
+<LoggedHello name="John" />
 ```
 
 It's worth to mention we use high order components with keyword with.
