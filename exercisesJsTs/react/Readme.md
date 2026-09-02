@@ -215,6 +215,47 @@ Remember to handle edge case. If no value saved to Localstorage
   );
 ```
 
+| 38 | [Explain what better option for filter method here?](#updating-prev-state)                               |
+```javascript
+  const filteredUsers = users.filter((elem) =>
+    filterValue ? elem === filterValue : elem // it can lead to unexpected errors
+  );
+```
+
+| 39 | [WithLogger hoc. 1)Why [] inside useEffect? 2. how useEffect withot depend array work? 3. Can we imlement this functionality without HOC? 4. What happens in React Strict Mode?](#log-hoc)                               |
+```javascript
+import { useEffect } from 'react';
+
+export function withLogger(Component, name) {
+  return function WithLogger(props) {
+    const isLoggerEnabled = true;
+
+    useEffect(() => {
+      console.log(`component ${name} mounted`);
+
+      return () => {
+        console.log(`component ${name} unmounted`);
+      };
+    }, []);
+
+    useEffect(() => {
+      console.log(`[${name}] updated props`, props);
+    });
+
+    return <Component isEnabled={isLoggerEnabled} {...props} />;
+  };
+}
+
+export function Hello(props) {
+  return <div>{props.name}</div>;
+}
+
+const LoggedHello = withLogger(Hello, 'Hello');
+
+<LoggedHello name="John" />
+```
+
+
 1. ### state-toggle
 React state updates are asynchronous. If you ever have multiple state updates queued (or the component re-renders before your click is processed), using !good might read a stale value, causing unexpected behavior.
 So better choice is:
@@ -737,6 +778,14 @@ that keys change on every render.
     elem.toLowerCase().includes(filterValue.toLowerCase())
   );
 ```
+
+37. ### log-hoc
+<img width="812" height="590" alt="image" src="https://github.com/user-attachments/assets/9851cc0d-96fa-4456-b3b0-8a9cb26e0509" />
+<img width="852" height="345" alt="image" src="https://github.com/user-attachments/assets/6e552086-0154-47c6-a00f-f3e9b2cbb44a" />
+<img width="676" height="460" alt="image" src="https://github.com/user-attachments/assets/f47f96fe-4766-4564-bd59-f8cc692013ce" />
+<img width="859" height="499" alt="image" src="https://github.com/user-attachments/assets/7dbab1e4-c3ad-4a8f-9c9e-7099c335607f" />
+
+
 
 ✅ This is much faster and avoids unnecessary re-renders.
 | 1 | [How do you decide whether a piece of UI should be a separate React component?](#react-seperate-component)                               |
