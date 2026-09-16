@@ -5,6 +5,7 @@
 | 2   | [You open the browser console and see this:❌ Access to XMLHttpRequest blocked by CORS policy. Front-end is on 1 localhost, and back-end on another.](#cors-localhost-problem)                               |
 | 3   | [What happens when a URL is entered into the browser?](#url-browser)                               |
 | 4   | [An example of clear react architecture, naming](#react-architecture)                               |
+| 5   | [IF cms throws exception during process of publishing page. Should we stop publishing or continue?](#cms-publishing-page)                               |
 
 
 A clean, simple way to answer this in a front-end interview is to walk through the big steps without getting lost in low-level details. Something like this works well:
@@ -106,3 +107,6 @@ yarn – an alternative package manager created by Facebook (Meta) to fix early 
 
 4. ### react-architecture
 <img width="541" height="667" alt="ClearArchitecture" src="https://github.com/user-attachments/assets/d00e7604-6977-4879-abef-6566586a0819" />
+
+5. ### cms-publishing-page
+We should continue publishing. Publishing should be stopped, if user clicked 'no'
