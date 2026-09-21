@@ -6,7 +6,8 @@
 | 3   | [What happens when a URL is entered into the browser?](#url-browser)                               |
 | 4   | [An example of clear react architecture, naming](#react-architecture)                               |
 | 5   | [IF cms throws exception during process of publishing page. Should we stop publishing or continue?](#cms-publishing-page)                               |
-
+| 6   | [IF cms throws exception during process of publishing page. Should we stop publishing or continue?](#cms-publishing-page)                               |
+| 7   | [Too many emails coming. what can be problem in forma (captcha)?](#captcha-issue)                               |
 
 A clean, simple way to answer this in a front-end interview is to walk through the big steps without getting lost in low-level details. Something like this works well:
 
@@ -110,3 +111,6 @@ yarn – an alternative package manager created by Facebook (Meta) to fix early 
 
 5. ### cms-publishing-page
 We should continue publishing. Publishing should be stopped, if user clicked 'no'
+
+7. ### captcha-issue
+it can be problem with configuration Captcha.
