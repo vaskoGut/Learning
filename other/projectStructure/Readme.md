@@ -9,6 +9,11 @@
 | 6   | [IF cms throws exception during process of publishing page. Should we stop publishing or continue?](#cms-publishing-page)                               |
 | 7   | [Too many emails coming. what can be problem in forma (captcha)?](#captcha-issue)                               |
 
+***AUTHENTIFICATION*** ***AUTHENTIFICATION*** ***AUTHENTIFICATION*** ***AUTHENTIFICATION*** ***AUTHENTIFICATION*** ***AUTHENTIFICATION***
+| Nm | #Question   |
+| :---:   | :---: |
+| 1   | [Difference between SSO/MFA?](#mfa-sso-difference)                               |
+
 A clean, simple way to answer this in a front-end interview is to walk through the big steps without getting lost in low-level details. Something like this works well:
 
 “When you enter a URL in the browser, a few key things happen:”
@@ -114,3 +119,12 @@ We should continue publishing. Publishing should be stopped, if user clicked 'no
 
 7. ### captcha-issue
 it can be problem with configuration Captcha.
+
+1. ### mfa-sso-difference
+SSO and MFA solve different problems:
+***SSO*** (Single Sign-On) = how you log in to multiple applications.
+You authenticate once with an identity provider (e.g. Microsoft Entra ID/Okta).
+Then you can access multiple connected apps without logging in separately to each one.
+***MFA*** (Multi-Factor Authentication) = how strongly your identity is verified when you log in.
+Requires 2+ factors, e.g. password + authenticator app, security key, or biometric.
+
