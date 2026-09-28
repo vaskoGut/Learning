@@ -113,6 +113,7 @@
 | 90   | [Find closest element by selector in node tree ( just see )](#closest-element)                                     |
 | 91   | [What is mutation observer?](#mutation-observer)                                     |
 | 92   | [What is returning new Date?](#new-date)                                     |
+| 93   | [How does a closure retain access to variables after the outer function finishes?](#closure-outer-function-access)                                     |
 
 # Exercises Javascript Typescript
 | Nm | #Question   |
@@ -1702,6 +1703,9 @@ new MutationObserver() is a JavaScript API that lets you watch for changes made 
 
 91. ### #new-date
 new date returning current date.
+
+92. ### closure-outer-function-access
+A closure retains access to outer variables because the inner function maintains a reference to its lexical environment, keeping the referenced variables alive even after the outer function has returned
 __________________________________________________________________________________________________________________________________________
 
 # Exercises Javascript Typescript
