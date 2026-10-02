@@ -8,6 +8,7 @@
 | 5   | [IF cms throws exception during process of publishing page. Should we stop publishing or continue?](#cms-publishing-page)                               |
 | 6   | [IF cms throws exception during process of publishing page. Should we stop publishing or continue?](#cms-publishing-page)                               |
 | 7   | [Too many emails coming. what can be problem in forma (captcha)?](#captcha-issue)                               |
+| 8   | [Load balancer?](#load-balancer)                               |
 
 ***AUTHENTIFICATION*** ***AUTHENTIFICATION*** ***AUTHENTIFICATION*** ***AUTHENTIFICATION*** ***AUTHENTIFICATION*** ***AUTHENTIFICATION***
 | Nm | #Question   |
@@ -119,6 +120,15 @@ We should continue publishing. Publishing should be stopped, if user clicked 'no
 
 7. ### captcha-issue
 it can be problem with configuration Captcha.
+
+8. ### load-balancer
+Load Balancer корисний під час міграції не стільки для перенесення даних, скільки для керування трафіком під час переходу.
+Він дає тобі:
+поступове переключення;
+мінімальний downtime;
+тестування нової системи на частині трафіку;
+швидкий rollback;
+можливість тримати old і new environments паралельно.
 
 1. ### mfa-sso-difference
 SSO and MFA solve different problems:
