@@ -2243,6 +2243,11 @@ ________________________________________________________________________________
   **Imperative**: You directly tell the browser how to update the DOM (e.g., locate an element by ID, change its class, and update its inner text)
   **Declarative**: You define the desired visual state for your UI, and the framework figures out exactly how to update the underlying DOM to match it.
 
+  A simple way to remember it:
+
+  Imperative: “Do these steps.”
+  Declarative: “This is what I want.”
+
    38. ### lit-lifecycle-methods
   Yes lit have lifecycle methods which help you to create reusable components.
 
