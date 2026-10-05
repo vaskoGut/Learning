@@ -95,11 +95,12 @@ The UI receives data from the state, but changes in the UI do not automatically 
       
    ______________
 
-3. ### What is unindirectional data flow
+2. ### What is unindirectional data flow
    Children component're placed inside parent component. Data's transfered from parent component to child component. Benefits unindirectional data-flow:
        1. Easy to debug - cause we know how and frome where data is coming.
        2. Less errors - more control on data.
    Additional info: Angular traditionally supports two-way data binding (especially with forms) and also uses one-way binding in many places.Angular traditionally supports two-way data binding (especially with forms) and also uses one-way binding in many places.
+   Data usually coming from parent to the child with help of props.
    ______________
 
 4. ### What is state in react
