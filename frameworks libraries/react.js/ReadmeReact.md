@@ -79,11 +79,14 @@
 
 
 1. ### What is react
-   **React** - is library. Main React features:
+   **React** - is library for building user interfaces, primarily using a component-based architecture. The main idea is that we describe what the ui should look based
+   on the current state, rather than manipulating on real DOM.
+   React using declarative programming model and reconciliation process to efficiently update the actual DOM when state or props  change. Components can encapsulate
+   their own state and behaviour, which makes application easier to compose and maintain.
+   
+   Main React features:
    1. JSX - js extension. We can write HTML structures inside JS. For example use HTML structures inside if structure:
    ![image](https://github.com/vaskoGut/Learning/assets/7413864/7c2ec527-a760-46bf-ae67-a8d2e10d6f4b)
-
-
    2. Components - we create reusable, independent components.
    3. Virtual DOM - it's virtual copy of DOM, with help of it preformance is improved. With help of that we update only necessary things in DOM, not rebuilding all DOM tree.
    4. One way data-binding. One-way data binding describes the direction of data binding between a data source and a UI/view. Example: State/Data  ───────>  UI/View
@@ -92,7 +95,7 @@ The UI receives data from the state, but changes in the UI do not automatically 
       
    ______________
 
-2. ### What is unindirectional data flow
+3. ### What is unindirectional data flow
    Children component're placed inside parent component. Data's transfered from parent component to child component. Benefits unindirectional data-flow:
        1. Easy to debug - cause we know how and frome where data is coming.
        2. Less errors - more control on data.
