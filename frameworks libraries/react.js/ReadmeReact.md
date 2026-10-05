@@ -103,12 +103,14 @@ The UI receives data from the state, but changes in the UI do not automatically 
    Data usually coming from parent to the child with help of props.
    ______________
 
-4. ### What is state in react
+3. ### What is state in react
    State in React - is object containing component an information. It can be changed. When state's changed, component is rerendered.
    Remember not to mutate directly React's state, cause it can lead to different problems, bugs.
    When state's updated, react calls render() method and component's updated.
 
    Generally speaking, any time a component needs to hold a dnynamic piece of data - you need a state to use it. Never mutate React state directly. Create a new value and pass it to the state updater.
+
+   You can also have shared or global state in an application. Depending on the use case, you can use Context or a dedicated state-management solution (redux for example).
    ______________
 
 5. ### Can browser read jsx
