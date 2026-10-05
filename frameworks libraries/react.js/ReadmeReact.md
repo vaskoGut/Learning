@@ -64,6 +64,18 @@
 | 61   | [Server client components difference?](#client-server-components)                                     |
 | 62   | [When should we use useCallback?](#useCallback-react)                                     |
 | 63   | [Two way data binding](#one-twh-way-databinding)                                     |                          |
+| 64   | [What is process of transpilation in simply words?](#process-transpilation)                                     |
+| 65   | [What we use instead of React.create element to make life easier??](#react-create-element-alternative)                                     |
+| 66   | [What is a way to set default props in react 19?](#react-19-default-props)                                     |
+| 67   | [Saving props inside state in react - is it anti pattern??](#react-props-state-antipattern)                                     |
+| 68   | [When is update ref? in which moment](#ref-update-question)                                     |
+<img width="813" height="663" alt="image" src="https://github.com/user-attachments/assets/553c5a85-f08c-4996-90a8-fe6b617d2e5c" />
+
+| 69   | [Write your own force update function](#force-update-function)                                     |
+
+| 70   | [Which 3 main categories of React lifecycle methods can you name](#life-cycle-methods-react)                                     |
+
+| 71   | [How with react memo restrict rendering component if for example text length more than 3 ? (LT)](#react-memo)                                     |
 
 
 1. ### What is react
@@ -660,3 +672,49 @@ name = "John";
 If the user types "Mike":
 Input updates → name becomes "Mike"
 name changes → input updates
+
+64. ### process-transpilation
+The process of transpilation is a process of taking source code and rewriting it to
+accomplish the same results but using syntax that’s understood by older browsers.
+
+65. ### react-create-element-alternative
+To not use reactcreateelement we use JSX.
+
+***Two-way data binding:***
+Data flows in both directions:
+Data/State  <──────>  UI
+Changes in the data update the UI, and changes in the UI update the data automatically.
+Example:
+name = "John";
+<input [(ngModel)]="name" />
+If the user types "Mike":
+Input updates → name becomes "Mike"
+name changes → input updates
+
+66. ### react-19-default-props
+<img width="462" height="137" alt="image" src="https://github.com/user-attachments/assets/7ff7099e-0cc8-4281-ba35-bcaa21a237ae" />
+React 19 doesnt have default props. You can define it like above.
+
+67. ### react-props-state-antipattern
+<img width="834" height="493" alt="image" src="https://github.com/user-attachments/assets/4a4ef68b-4523-4319-956b-4c5004cfc93d" />
+
+68. ### ref-update-question
+useEffect updates ref after render. its why you can get old value
+
+69. ### force-update-function
+<img width="294" height="267" alt="image" src="https://github.com/user-attachments/assets/98f2152d-a61c-4604-b2d2-ef0abd4a037f" />
+
+70. ### life-cycle-methods-react
+- mounting; - unmounting; - updating;
+
+71. ### react-memo
+```javascript
+  const MyComponent = React.memo(
+    function MyComponent({ text }) {
+      return <div>{text}</div>;
+    },
+    (prevProps, nextProps) => {
+      return prevProps.text === nextProps.text;
+    }
+  );
+```
