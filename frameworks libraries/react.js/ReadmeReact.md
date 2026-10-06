@@ -166,7 +166,7 @@ The UI receives data from the state, but changes in the UI do not automatically 
  13. ###  props in react
      Props are short for properties. In React it's object, storing value of attributes, smth. like html attributes. We need it to pass data from component to the component.
      Inside component we have an access to props in similar way as we have an access to the function parameters.
-     Props aren't mutable in React.
+     Props aren't mutable in React. A child component normally re-renders when the parent passes it new props.
 
  14. ###  state props difference
      State is muttable. Props are unmutable. State refers to internal data of component. Props are date transfered from parent component to the child.
