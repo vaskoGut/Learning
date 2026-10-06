@@ -122,7 +122,7 @@ The UI receives data from the state, but changes in the UI do not automatically 
    ![image](https://github.com/vaskoGut/Learning/assets/7413864/6c69442b-2d90-40a8-898d-f3e9d695c19a)
    **Virtual DOM** - it's virtual copy of DOM, with help of it preformance is improved. When state or props change, React creates new representation, compares it with previouse one, determines what actually needs to change in real DOM.
    React **Reconciliation** process of updating DOM. It updates the virtual DOM first and then uses the diffing algorithm to make efficient and optimized updates in the Real DOM.
-
+   The main benefit is that React abstracts and optimizes DOM updates, rather than requiring developer to manually manipulate the DOM.
    
    ______________
 8. ### difference between es5 es6
