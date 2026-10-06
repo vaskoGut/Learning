@@ -120,10 +120,12 @@ The UI receives data from the state, but changes in the UI do not automatically 
 6. ### what is dom
    **Document Object Model** - is interface, representation that treats HTML as a tree structure, in which each node is object representing a part of the document. DOM defines a way nodes are accessed and manipulated.
    ![image](https://github.com/vaskoGut/Learning/assets/7413864/6c69442b-2d90-40a8-898d-f3e9d695c19a)
-   **Virtual DOM** - it's virtual copy of DOM, with help of it preformance is improved. With help of that we update only necessary things in DOM, not rebuilding all DOM tree.  
+   **Virtual DOM** - it's virtual copy of DOM, with help of it preformance is improved. When state or props change, React creates new representation, compares it with previouse one, determines what actually needs to change in real DOM.
    React **Reconciliation** process of updating DOM. It updates the virtual DOM first and then uses the diffing algorithm to make efficient and optimized updates in the Real DOM.
+
+   
    ______________
-7. ### difference between es5 es6
+8. ### difference between es5 es6
    - es6 ins newest version of js
    - es6 has additional type Symbol
    - es6 has 2 new ways of declaring variables: let and const
@@ -134,10 +136,10 @@ The UI receives data from the state, but changes in the UI do not automatically 
    - spread operator
    - template operator
    ______________
- 8. ### basic react app
+ 9. ### basic react app
     Install node, instal crea-react-app. It's ready to use.
     ______________
- 9. ###  what is event in react
+ 10. ###  what is event in react
      Event in React is action triggered on some change in the user interface. It can be click or key pressing for example.
      **Synthetic event** - synthetic event is object we get after triggering some event. An example:
 
