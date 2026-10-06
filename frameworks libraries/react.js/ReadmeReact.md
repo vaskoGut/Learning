@@ -172,8 +172,8 @@ The UI receives data from the state, but changes in the UI do not automatically 
      State is muttable. Props are unmutable. State refers to internal data of component. When state updates, React schedules a rerender of component. We shouldnt mutate state directly. Instead, we use mechanics such as useState hook.
      Props and state are both usedto provide data to react components. Props are inputes passed to a component, usually form a paretn to a child, and the receiving component shoult treat them as read only.
 
-16. ### high ordered component
-High-order components (HOCs) are wrappers for other components. They allow you to reuse logic across different components. 
+15. ### high ordered component
+High-order components (HOCs) are wrappers for other components. It takes a react component as an argument and returns a new component with additional behaviour or functionality. They allow you to reuse logic across different components. 
 
 For example, you might want to add a logger HOC, which logs information about mounting and unmounting of a component:
 
