@@ -14,6 +14,8 @@
 
 ## 8 [Soft Skill](https://github.com/vaskoGut/Learning/blob/main/other/softSkills/1.%20interviewQuestion)                                     |
 
+## 9 [AI things](https://github.com/vaskoGut/Learning/blob/main/other/softSkills/1.%20interviewQuestion)                                     |
+
 # JAVASCRIPT TYPESCRIPT GENERAL QUESTIONS
 | Nm | #Question   |
 | :---:   | :---: |
