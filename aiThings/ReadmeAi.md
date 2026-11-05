@@ -4,6 +4,7 @@
 | 1   | [What is cursor. What is difference between cursor and AI sdk](#what-is-cursor)                                     |
 | 2   | [Difference between Narrow AI, generative Ai, Agentic AI](#types-ai)                                     |
 | 3   | [AI Model, local LLM, MCP Server](#ai-model-local-llm-mcp-server)                                     |
+| 4   | [AI Shadowing](#ai-shadowing)                                     |
 
 1. ### what-is-cursor
 
@@ -23,3 +24,6 @@ Agentic AI - Ai that can plan tasks, use tools etc.
 Ai-model - is engine of AI tool.
 LOCAL LLM - model running locally on your computer.
 MCP (MODEL CONTEXT Protocol) - a way for a model or agent to access data
+
+4. ### ai-shadowing
+Using ai Tools, models, agents for work without required approval.
