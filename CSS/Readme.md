@@ -10,6 +10,7 @@
 | 7   | [What is aspect ratio in css? And what if width and height is set? do we need still it?](#aspect-ratio)                                                                                                |
 | 8   | [Grid, flex difference](#grid-vs-flexbox)                                                                                                |
 | 9   | [Grid properties explanation](#grid-properties)                                                                                                |
+| 10   | [Grid fr meaning](#grid-fr)                                                                                                |
 
 1. ### cumulative-layout-shift
 CLS most often occurs when dynamically loaded elements don’t have a predefined size.  
@@ -109,4 +110,7 @@ grid-template-rows: controls row sizing.
 grid-template-areas: controls the position of elements.
 grid-area: assigns an element to a named area.
 @media: changes the layout at different screen widths.
+
+10. ### grid-fr
+<img width="857" height="414" alt="image" src="https://github.com/user-attachments/assets/28b54ce7-e8c1-4079-84ee-e866d12aad08" />
 
