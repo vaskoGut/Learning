@@ -9,7 +9,7 @@
 | 6   | [What is focal point?](#focal-point)                                                                                                |
 | 7   | [What is aspect ratio in css? And what if width and height is set? do we need still it?](#aspect-ratio)                                                                                                |
 | 8   | [Grid, flex difference](#grid-vs-flexbox)                                                                                                |
-
+| 9   | [Grid properties explanation](#grid-properties)                                                                                                |
 
 1. ### cumulative-layout-shift
 CLS most often occurs when dynamically loaded elements don’t have a predefined size.  
@@ -102,4 +102,11 @@ A ***focal point*** tells the browser or design system:
 Grid vs. Flexbox
 CSS Grid is used for two-dimensional layout, with rows AND columns.
 CSS Flexbox is used for one-dimensional layout, with rows OR columns.
+
+9. ### grid-properties
+grid-template-columns: controls the number and width of columns.
+grid-template-rows: controls row sizing.
+grid-template-areas: controls the position of elements.
+grid-area: assigns an element to a named area.
+@media: changes the layout at different screen widths.
 
